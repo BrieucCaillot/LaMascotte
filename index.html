@@ -11,44 +11,160 @@
 =============================================================-->
 
 <html lang="en">
-    <head> 
-        <!--META-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta name="description" content="Prototype of website with Bootstrap & SASS" />
-        <meta name="keywords" content="Cuda, Bootstrap, SASS">
+<head> 
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Prototype of website with Bootstrap & SASS" />
+    <meta name="keywords" content="Cuda, Bootstrap, SASS">
 
-        <!--FONTS-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-        
-        <!--LINK-->
-        <link rel="icon" href="images/cuda.png">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css"/>
-        <link rel="stylesheet" href="css/reset.css"/>
-        <!--JQUERY-->
-        <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script type="text/javascript" src="js/scripthome.js"></script>
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-        <title>La Mascote</title>
-    </head>
+    <!--LINK-->
+    <link rel="icon" href="images/cuda.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <!--JQUERY-->
+    <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripthome.js"></script>
 
-    <body>
+    <title>La Mascote</title>
+</head>
 
-        <header>
+<body>
 
-        </header>
+    <header>
+        <div id="logo">
+            <img src="images/logomascotteclair.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>ACCUEIL</li>
+                <li>HISTOIRE</li>
+                <li>MENU</li>
+                <li>RÉSERVER</li>
+                <li>COMMANDER</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>       
 
-        <main>
-            <section>
-                
-            </section>
-        </main>
+    <main>
+        <section>
+            <h1>LA MASCOTTE</h1>
+            <h2>RESTAURANT, BAR</h2>
+            <button>
+                <a href="#">RÉSERVER</a>
+            </button>
+            <!-- Swiper -->
+            <div class="swiper-container swiper-container-horizontal fixed">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/mascotte4.jpg" alt="homme qui paint-silveract'"></div>
+                    <div class="swiper-slide"><img src="images/oysters.jpg" alt="activité de groupe silveract"></div>
+                    <div class="swiper-slide"><img src="images/plateau.jpg" alt="activité theatre silver act"></div>
+                </div>
+            </div>
 
-        <footer>
+            <script type="text/javascript" src="js/swiper.min.js"></script>
 
-        </footer>
+            <script>
+               var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                speed: 900,
+                keyboardControl: true,
+                freeMode: true,
+                loop: true,
+                autoplay: 3000
+            });
+        </script>
+    </section>
 
-    </body>
+    <section id="features-boxes" class="home-section " >
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="small-feature">
+                                <div class="small-feature-icon">
+                                    <img src="images/crevette.svg" alt="icon-1" width="48" height="48" class="alignnone size-full wp-image-451" />
+                                </div>
+                                <div class="small-feature-desc">
+                                    <h3>Produits frais</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, culpa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="small-feature">
+                                <div class="small-feature-icon">
+                                    <img src="images/food.png" alt="icon-2" width="48" height="48" class="size-full wp-image-449" />
+                                </div>
+                                <div class="small-feature-desc">
+                                    <h3>HISTORIQUE</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, dolore!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="small-feature">
+                                <div class="small-feature-icon">
+                                    <img src="images/wine.svg" alt="icon-3" width="48" height="48" class="alignnone size-full wp-image-449" />
+                                </div>
+                                <div class="small-feature-desc">
+                                    <h3>BONS VINS</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, quo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="home-section " >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="home-subtitle">History</h3>
+                            <h2 class="home-title margin-b24 title-headline">About Us</h2>
+                            <p>
+                                Welcome to Dina, a modern restaurant with a focus on premium food tastes
+                            <p>
+                            <p>
+                                We invite you to celebrate our restaurant&#8217;s delicious recipes whether you are here for a business lunch or dinner. Discover new tastes and inspired recipes from all over the world.
+                            </p>
+                            <p>
+                            <a href="#" class="view-more margin-t36">Find More
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                           <img src="images/equipe.jpg" alt="" width="800" height="548" class="alignnone size-full wp-image-456"  sizes="(max-width: 800px) 100vw, 800px" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+
+<footer>
+
+</footer>
+
+</body>
 </html>
