@@ -56,6 +56,8 @@
     </header>       
 
     <main>
+
+        <!--SWIPER HEADER-->
         <section>
             <h1>LA MASCOTTE</h1>
             <h2>RESTAURANT, BAR</h2>
@@ -74,97 +76,187 @@
             <script type="text/javascript" src="js/swiper.min.js"></script>
 
             <script>
-               var swiper = new Swiper('.swiper-container', {
-                pagination: '.swiper-pagination',
-                paginationClickable: true,
-                speed: 900,
-                keyboardControl: true,
-                freeMode: true,
-                loop: true,
-                autoplay: 3000
-            });
-        </script>
-    </section>
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    speed: 900,
+                    keyboardControl: true,
+                    freeMode: true,
+                    loop: true,
+                    autoplay: 3000
+                });
+            </script>
+        </section>
 
-    <section id="features-boxes" class="home-section " >
+        <!--BOXES-->
+        <section>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="small-feature">
-                                <div class="small-feature-icon">
-                                    <img src="images/crevette.svg" alt="icon-1" width="48" height="48" class="alignnone size-full wp-image-451" />
-                                </div>
-                                <div class="small-feature-desc">
-                                    <h3>Produits frais</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, culpa.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="small-feature">
+                                    <div class="small-feature-icon">
+                                        <img src="images/crevette.svg" alt="icon-1" width="48" height="48" class="alignnone size-full wp-image-451" />
+                                    </div>
+                                    <div class="small-feature-desc">
+                                        <h3>Produits frais</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, culpa.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="small-feature">
-                                <div class="small-feature-icon">
-                                    <img src="images/food.png" alt="icon-2" width="48" height="48" class="size-full wp-image-449" />
-                                </div>
-                                <div class="small-feature-desc">
-                                    <h3>HISTORIQUE</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, dolore!</p>
+                            <div class="col-md-4">
+                                <div class="small-feature">
+                                    <div class="small-feature-icon">
+                                        <img src="images/food.png" alt="icon-2" width="48" height="48" class="size-full wp-image-449" />
+                                    </div>
+                                    <div class="small-feature-desc">
+                                        <h3>HISTORIQUE</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, dolore!</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="small-feature">
-                                <div class="small-feature-icon">
-                                    <img src="images/wine.svg" alt="icon-3" width="48" height="48" class="alignnone size-full wp-image-449" />
-                                </div>
-                                <div class="small-feature-desc">
-                                    <h3>BONS VINS</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, quo!</p>
+                            <div class="col-md-4">
+                                <div class="small-feature">
+                                    <div class="small-feature-icon">
+                                        <img src="images/wine.svg" alt="icon-3" width="48" height="48" class="alignnone size-full wp-image-449" />
+                                    </div>
+                                    <div class="small-feature-desc">
+                                        <h3>BONS VINS</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, quo!</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about-us" class="home-section " >
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3 class="home-subtitle">History</h3>
-                            <h2 class="home-title margin-b24 title-headline">About Us</h2>
-                            <p>
-                                Welcome to Dina, a modern restaurant with a focus on premium food tastes
-                            <p>
-                            <p>
-                                We invite you to celebrate our restaurant&#8217;s delicious recipes whether you are here for a business lunch or dinner. Discover new tastes and inspired recipes from all over the world.
-                            </p>
-                            <p>
-                            <a href="#" class="view-more margin-t36">Find More
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                           <img src="images/equipe.jpg" alt="" width="800" height="548" class="alignnone size-full wp-image-456"  sizes="(max-width: 800px) 100vw, 800px" />
+        <!--ABOUT-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="home-subtitle">Histoire</h3>
+                                <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
+                                <svg viewbox="0 0 100 20">
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                            <stop offset="5%" stop-color="#326384"/>
+                                            <stop offset="95%" stop-color="#123752"/>
+                                        </linearGradient>
+                                        <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                            <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                                <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                            </path>
+                                        </pattern>
+                                    </defs>
+                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">À PROPOS</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.1">À PROPOS</text>
+                                </svg>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, labore!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quibusdam repudiandae nemo, nisi eaque ipsam impedit quasi voluptate atque nostrum quae sint nulla debitis dolorum, ipsum harum. Dolores, eum asperiores?
+                                </p>
+
+                                <a href="#" class="view-more margin-t36">Find More
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/equipe.jpg" alt="" width="800" height="548" class="alignnone size-full wp-image-456"  sizes="(max-width: 800px) 100vw, 800px" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
+        <!--BOOK HERE-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Taste Food</h2>
+                        <div>
+                            <img src="images/logomascottefonce.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
 
-</main>
+        <!--MENU-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="images/menu.jpg" alt="" width="800" height="548" class="alignnone size-full wp-image-456"  sizes="(max-width: 800px) 100vw, 800px" />
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="home-subtitle">Découvrez</h3>
+                                <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
+                                <svg viewbox="0 0 100 20">
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                            <stop offset="5%" stop-color="#326384"/>
+                                            <stop offset="95%" stop-color="#123752"/>
+                                        </linearGradient>
+                                        <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                            <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                                <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite"/>
+                                            </path>
+                                        </pattern>
+                                    </defs>
+                                    <text 
+                                        text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LE MENU
+                                    </text>
+                                    <text 
+                                        text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.1">LE MENU
+                                    </text>
+                                </svg>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dolores.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error deleniti odio perspiciatis cum ab, quidem repellendus a quae. Quo id, libero provident ipsam itaque suscipit eaque accusamus molestiae illo deleniti!
+                                </p>
+                                <a href="#" class="view-more margin-t36">Find More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--GET DELIVER-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Taste Food</h2>
+                        <div>
+                            <img src="images/logomascottefonce.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+    </main>
 
 
 
-<footer>
+    <footer>
 
-</footer>
+    </footer>
 
 </body>
 </html>
