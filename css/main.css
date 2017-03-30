@@ -104,17 +104,21 @@ main section:nth-child(2) {
     text-transform: uppercase; }
 main section:nth-child(3) {
   padding: 72px 0;
-  height: 800px;
   background-color: #FFF;
   font-family: Montserrat; }
+  main section:nth-child(3) svg {
+    font-weight: bold;
+    max-width: 400px;
+    height: auto; }
   main section:nth-child(3) img {
     width: 530px;
     height: 350px; }
   main section:nth-child(3) h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    margin-bottom: 20px; }
   main section:nth-child(3) h2 {
     position: relative;
     display: inline-block;
@@ -125,5 +129,50 @@ main section:nth-child(3) {
     font-size: 15px;
     font-style: italic;
     margin-bottom: 24px; }
+main section:nth-child(4) {
+  background: url("../images/facadenuit.jpg") no-repeat;
+  background-color: white;
+  background-attachment: fixed !important;
+  background-size: cover;
+  height: 300px; }
+  main section:nth-child(4) img {
+    margin: 0 auto;
+    display: block; }
+main section:nth-child(5) {
+  background-color: #F4F4F4;
+  padding: 54px 0;
+  font-family: Montserrat; }
+  main section:nth-child(5) svg {
+    font-weight: bold;
+    max-width: 400px;
+    height: auto; }
+  main section:nth-child(5) img {
+    width: 530px;
+    height: 350px; }
+  main section:nth-child(5) h3 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px; }
+  main section:nth-child(5) h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+    font-size: 40px; }
+  main section:nth-child(5) p:last-child {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 24px; }
+main section:nth-child(6) {
+  background: url("../images/facadenuit.jpg") no-repeat;
+  background-color: white;
+  background-attachment: fixed !important;
+  background-size: cover;
+  height: 300px; }
+  main section:nth-child(6) img {
+    margin: 0 auto;
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */
