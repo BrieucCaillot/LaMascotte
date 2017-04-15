@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!--LINK-->
-    <link rel="icon" href="images/cuda.png">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/swiper.min.css">
@@ -39,6 +39,7 @@
 
 <body>
 
+    <!--HEADER-->
     <header>
         <div id="logo">
             <img src="images/logomascotteclair.png" alt="">
@@ -53,10 +54,10 @@
                 <li>CONTACT</li>
             </ul>
         </nav>
-    </header>       
-
+    </header> 
+     
+    <!--MAIN-->
     <main>
-
         <!--SWIPER HEADER-->
         <section>
             <h1>LA MASCOTTE</h1>
@@ -79,11 +80,11 @@
                 var swiper = new Swiper('.swiper-container', {
                     pagination: '.swiper-pagination',
                     paginationClickable: true,
-                    speed: 900,
+                    speed: 1200,
                     keyboardControl: true,
                     freeMode: true,
                     loop: true,
-                    autoplay: 3000
+                    autoplay: 4000
                 });
             </script>
         </section>
@@ -146,7 +147,7 @@
                                 <svg viewbox="0 0 100 20">
                                     <defs>
                                         <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-                                            <stop offset="5%" stop-color="#326384"/>
+                                            <stop offset="5%" stop-color="skyblue"/>
                                             <stop offset="95%" stop-color="#123752"/>
                                         </linearGradient>
                                         <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
@@ -156,17 +157,19 @@
                                         </pattern>
                                     </defs>
                                     <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">À PROPOS</text>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.1">À PROPOS</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">À PROPOS</text>
                                 </svg>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, labore!
+                                <p class="title text-left">
+                                    Restaurant historique au coeur de Montmartre 
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quibusdam repudiandae nemo, nisi eaque ipsam impedit quasi voluptate atque nostrum quae sint nulla debitis dolorum, ipsum harum. Dolores, eum asperiores?
+                                <p class="desc">
+                                    La création de « La Mascotte » semble remonter à 1889 à l’époque où son grand comptoir occupait tout le rez de chaussée d’un hôtel de deux étages, « Le Pompéa ».
                                 </p>
 
-                                <a href="#" class="view-more margin-t36">Find More
-                                </a>
+                                <button>
+                                    <a href="#" class="view-more margin-t36">En savoir plus
+                                    </a>
+                                </button>
                             </div>
                             <div class="col-md-6">
                                 <img src="images/equipe.jpg" alt="" width="800" height="548" class="alignnone size-full wp-image-456"  sizes="(max-width: 800px) 100vw, 800px" />
@@ -177,14 +180,31 @@
             </div>
         </section>
         
-        <!--BOOK HERE-->
+        <!--DELIVER-->
         <section>
             <div class="container">
                 <div class="row">
+                    <img src="images/logoecaillefonce.png" alt="">
                     <div class="col-md-12">
-                        <h2>Taste Food</h2>
-                        <div>
-                            <img src="images/logomascottefonce.png" alt=""/>
+                        <div class="row">
+                            <div class="col-md-4">
+                                    <h3 class="text-center">DEGUSTATION</h3>
+                                    <p>
+                                        De 10h à 23h30 en dégustation sur place, les meilleurs produits de nos “ terroirs maritimes “ 
+                                    </p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3 class="text-center">LIVRAISON</h3>
+                                <p>
+                                    Livraison de nos produits frais à Domicile ou Retrait en boutique dans les 8ème, 9ème, 17ème et 18ème arrondissements.
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <h3 class="text-center">VENTE À EMPORTER</h3>
+                                <p>
+                                    Produits à emporter parmi la carte des fruits de mer, et de "l'épicerie de la mer" 
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -193,69 +213,159 @@
 
         <!--MENU-->
         <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <h3 class="home-subtitle">Découvrez</h3>
+                            <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
+                            <svg viewbox="0 0 100 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite"/>
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text 
+                                    text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LE MENU
+                                </text>
+                                <text 
+                                    text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LE MENU
+                                </text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin: 70px 0 35px 0">
+                    <div class="col-md-6 hovermenu1">
+                            <img src="images/soup.svg" alt="">
+                            <h2>ENTRÉE</h2>
+                            <button>
+                                <a href="#">VOIR PLUS</a>
+                            </button>
+                            <img src="images/bg-1.jpg" alt="">
+                    </div>
+    
+                    <div class="col-md-6 hovermenu2">
+                            <img src="images/cooking.svg" alt="">
+                            <h2>PLAT</h2>
+                            <button>
+                                <a href="#">VOIR PLUS</a>
+                            </button>
+                            <img src="images/plat.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="row" style="margin: 35px 0 35px 0">
+                    <div class="col-md-6 hovermenu3">
+                        <img src="images/dessert.svg" alt="">
+                        <h2>DESSERT</h2>
+                        <button>
+                            <a href="#">VOIR PLUS</a>
+                        </button>
+                        <img src="images/bg-3.jpg" alt="">
+                    </div>
+
+                    <div class="col-md-6 hovermenu4">
+                        <img src="images/bar.svg" alt="">
+                        <h2>BAR</h2>
+                        <button>
+                            <a href="#">VOIR PLUS</a>
+                        </button>
+                        <img src="images/bg-4.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--OPEN HOURS-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>HORAIRES D'OUVERTURE</h2>
+                        <p>Ouvert 7/7 Jours</p>
+                        <p>Monday – Sunday: 8H – 23h30</p>
+                    
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+        <!--BAR-->
+        <section>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="images/menu.jpg" alt="" width="800" height="548" class="alignnone size-full wp-image-456"  sizes="(max-width: 800px) 100vw, 800px" />
+                                <img src="images/bar1.jpg" alt="" width="800" height="548" class="alignnone size-full wp-image-456"  sizes="(max-width: 800px) 100vw, 800px" />
                             </div>
                             <div class="col-md-6">
-                                <h3 class="home-subtitle">Découvrez</h3>
+                                <h3 class="home-subtitle">Voyagez</h3>
                                 <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
                                 <svg viewbox="0 0 100 20">
                                     <defs>
                                         <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-                                            <stop offset="5%" stop-color="#326384"/>
+                                            <stop offset="5%" stop-color="skyblue"/>
                                             <stop offset="95%" stop-color="#123752"/>
                                         </linearGradient>
                                         <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
                                             <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
-                                                <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite"/>
+                                                <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
                                             </path>
                                         </pattern>
                                     </defs>
-                                    <text 
-                                        text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LE MENU
-                                    </text>
-                                    <text 
-                                        text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.1">LE MENU
-                                    </text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LE BAR</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LE BAR</text>
                                 </svg>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dolores.
+                                <p class="title text-left">
+                                    Venez découvrir nos alcool au bar
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error deleniti odio perspiciatis cum ab, quidem repellendus a quae. Quo id, libero provident ipsam itaque suscipit eaque accusamus molestiae illo deleniti!
+                                <p class="desc">
+                                    C’est un zinc de quartier, à la clientèle mélangée et haute en couleur. On y retrouve l’ambiance d’un Montmartre de légende, sans la nostalgie d’un passé qui est ici toujours bien vivant. Et bon vivant.
                                 </p>
-                                <a href="#" class="view-more margin-t36">Find More</a>
+
+                                <button>
+                                    <a href="#" class="view-more margin-t36">En savoir plus
+                                    </a>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!--GET DELIVER-->
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>Taste Food</h2>
-                        <div>
-                            <img src="images/logomascottefonce.png" alt=""/>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-        </section>
-
     </main>
 
-
-
+    <!--FOOTER-->
     <footer>
-
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <button>
+                        <a href="#">RÉSERVER</a>
+                    </button>
+                    <button>
+                        <a href="#">COMMANDER</a>
+                    </button>
+                    <h4>52 Rue des Abbesses,<br>75018 Paris<br>18e arrondissement,<br>France</h4>
+                    <p>01 46 06 28 15</p>
+                    
+                    <img src="images/logomascotteclair.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJue8o9E9u5kcRJ2G1N7QaShw&key=AIzaSyBEp_uq8_BW0a7INepol4BVdqfnNZnflDs" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>

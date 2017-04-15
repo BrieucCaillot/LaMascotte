@@ -6,6 +6,7 @@
 	
 }
 
+/* HEADER */
 header {
 	width: 100%;
     min-height: 106px;
@@ -24,7 +25,7 @@ header {
 	nav {
 		font-family: Quicksand;
 		color: #fff;
-		font-size: 17px; 
+		font-size: 18px; 
 		width: 70%;
 		position: absolute;        
 		left: 50%;
@@ -44,14 +45,17 @@ header {
 		}
 	}
 }
+
+/* MAIN */
 main {
 
+	/* SWIPER HEADER*/
 	section:first-child {
 		position: relative;
 
 		h1 {
 			font-family: Montserrat;
-			color: #fff;
+			color: #ffffff;
 			font-size: 90px;
 			position: absolute;
 		    top: 40%;
@@ -72,7 +76,7 @@ main {
 		}
 
 		button {
-			border: 5px solid #ffffff;
+			border: 2px solid #ffffff;
 			z-index: 2;
 			position: absolute;
 		    top: 65%;
@@ -88,9 +92,8 @@ main {
 			    font-weight: initial;
 			    display: inline-block;
 			    text-transform: uppercase;
-			    padding: 10px 24px;
+			    padding: 17px 28px;
 			}
-
 		}
 
 		.fixed {
@@ -121,14 +124,11 @@ main {
 		}
 	}
 
+	/* BOXES */
 	section:nth-child(2) {
 		background-color: #F4F4F4;
-		padding: 54px 0;
+		padding: 75px 0;
 		font-family: Montserrat;
-
-		.container {
-			width: 1170px;
-		}
 
 		.small-feature-icon {
 			float: left;
@@ -136,7 +136,7 @@ main {
 		}
 
 		.small-feature-desc {
-			margin-left: 64px;
+			margin-left: 75px;
 		}
 
 		h3 {
@@ -145,6 +145,7 @@ main {
 		}
 	}
 
+	/* ABOUT */
 	section:nth-child(3) {
 		padding: 72px 0;
 		background-color: #FFF;
@@ -154,10 +155,13 @@ main {
 			font-weight:bold;
 			max-width:400px;
 			height:auto;
+			margin-bottom: 3%;
+			margin-left:-16px;
 		}
+
 		img {
-			width: 530px;
-			height: 350px;
+			width: auto;
+			height: 380px;
 		}
 
 		h3 {
@@ -175,40 +179,211 @@ main {
 		    text-transform: uppercase;
 		    font-size: 40px;
 		}
+
+		.title {
+			font-size: 25px;
+			margin-bottom: 6%;
+			line-height: 30px;
+		}
+		
+		.desc {
+			font-size: 18px;
+		    line-height: 35px;
+		    margin-bottom: 24px;
+		}
+
+		button {
+		    border: 2px solid #000000;
+		    background-color: transparent;
+
+			a {
+				text-decoration: none;
+			    color: #000;
+			    font-size: 11px;
+			    letter-spacing: 2px;
+			    font-weight: initial;
+			    display: inline-block;
+			    text-transform: uppercase;
+			    padding: 14px 28px;
+			}
+		}
+	}
+
+	/* DELIVER */
+	section:nth-child(4) {
+		background:url('../images/ecaille5.jpg') no-repeat; 
+		background-color: white; 
+		background-attachment: fixed !important;
+		background-size: cover;
+		height: 350px;
+		padding: 90px 0;
+		color: #fff;
+		font-family: Montserrat;
+		position: relative;
+
+		.container {
+			margin-top: 33px;
+		}
+
+		h3 {
+			font-size: 40px;
+   			text-transform: uppercase;
+   			margin-bottom: 40px;
+		}
+
+		p {
+			line-height: 30px;
+
+		}
+	
+		img {
+			position: absolute;
+		    top: 0%;
+		    left: 50%;
+		    transform: translate(-50%, -150%);
+		}
+	}
+
+	/* MENU */
+	section:nth-child(5) {
+		background-color: #F4F4F4;
+		padding: 54px 0;
+		height: 1000px;
+		font-family: Montserrat;
+		width: 100%;
+
+		svg {
+			font-weight:bold;
+			max-width:480px;
+			height:auto;
+		}
+
+		img:first-child {
+			position: absolute;
+		    top: 21%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    z-index: 3;
+			color: #ffffff;
+			width: 85px;
+		}
+
+		img:last-child {
+			background-size: cover;
+			height: 310px;
+			width: inherit;
+		}
+
+		.menuhover {
+		    -webkit-transition: all 0.3s ease;
+		    -moz-transition: all 0.3s ease;
+		    -o-transition: all 0.3s ease;
+		    -ms-transition: all 0.3s ease;
+		    transition: all 0.3s ease;
+		    z-index: 2;
+		    opacity: (0.8);
+		}
+
+		h3 {
+			font-size: 18px;
+		    font-weight: 400;
+		    text-transform: uppercase;
+		    letter-spacing: 2px;
+		    margin-bottom: 20px;
+		}
+
+		h2 {
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    z-index: 3;
+		    font-size: 50px;
+		    color: #fff;
+		    font-weight: lighter;
+		    letter-spacing: 10px;
+		}
+
+		/*h2 {
+			position: relative;
+		    display: inline-block;
+		    margin-bottom: 36px;
+		    text-transform: uppercase;
+		    font-size: 40px;
+		}*/
 		
 		p:last-child {
 			font-size: 15px;
 		    font-style: italic;
 		    margin-bottom: 24px;
 		}
-	}
 
-	section:nth-child(4) {
-		background:url('../images/facadenuit.jpg') no-repeat; 
-		background-color: white; 
-		background-attachment: fixed !important;
-		background-size: cover;
-		height: 300px;
+		button {
+			border: 2px solid #ffffff;
+			z-index: 2;
+			position: absolute;
+		    top: 71%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    background-color: transparent;
+			
+			a {
+				text-decoration: none;
+				color: #fff;
+				font-size: 11px;
+			    letter-spacing: 2px;
+			    font-weight: initial;
+			    display: inline-block;
+			    text-transform: uppercase;
+			    padding: 14px 28px;
+			}
+		}
 
-		img {
-			margin: 0 auto;
-			display: block;
+		button:hover {
+			background-color: #000;
+			color: #fff;
 		}
 	}
 
-	section:nth-child(5) {
-		background-color: #F4F4F4;
-		padding: 54px 0;
+	/* OPEN HOURS */
+	section:nth-child(6) {
+		background:url('../images/interieur1.jpg') no-repeat; 
+		background-color: white; 
+		background-attachment: fixed !important;
+		background-size: cover;
+		height: 350px;
+		padding: 90px 0;
+		font-family: Montserrat;
+		color: white;
+
+		h2 {
+			font-size: 45px;
+			margin-bottom: 4%;
+		}
+
+		p {
+			font-size: 27px;
+			padding: 16px 0px;
+		}
+	}
+
+	/* ABOUT */
+	section:nth-child(7) {
+		padding: 72px 0;
+		background-color: #FFF;
 		font-family: Montserrat;
 
 		svg {
 			font-weight:bold;
 			max-width:400px;
 			height:auto;
+			margin-bottom: 3%;
+			margin-left:-39px;
 		}
+
 		img {
-			width: 530px;
-			height: 350px;
+			width: auto;
+			height: 380px;
 		}
 
 		h3 {
@@ -216,7 +391,7 @@ main {
 		    font-weight: 400;
 		    text-transform: uppercase;
 		    letter-spacing: 2px;
-		    margin-bottom: 20px;
+		    margin: 0 0 20px 40px;
 		}
 
 		h2 {
@@ -226,27 +401,120 @@ main {
 		    text-transform: uppercase;
 		    font-size: 40px;
 		}
-		
-		p:last-child {
-			font-size: 15px;
-		    font-style: italic;
-		    margin-bottom: 24px;
+
+		.title {
+			font-size: 25px;
+			line-height: 30px;
+			margin: 0 0 6% 40px;
 		}
-	}
+		
+		.desc {
+			font-size: 18px;
+		    line-height: 35px;
+			margin: 0 0 24px 40px;
+		}
 
-	section:nth-child(6) {
-		background:url('../images/facadenuit.jpg') no-repeat; 
-		background-color: white; 
-		background-attachment: fixed !important;
-		background-size: cover;
-		height: 300px;
+		button {
+		    border: 2px solid #000000;
+		    background-color: transparent;
+		    margin-left: 40px;;
 
-		img {
-			margin: 0 auto;
-			display: block;
+			a {
+				text-decoration: none;
+			    color: #000;
+			    font-size: 11px;
+			    letter-spacing: 2px;
+			    font-weight: initial;
+			    display: inline-block;
+			    text-transform: uppercase;
+			    padding: 14px 28px;
+			}
 		}
 	}
 
 }
+
+/* FOOTER */
+footer {
+	height: 350px;
+	background-color: #4c4444;
+	color: #fff;
+	
+	.row {
+
+		div:first-child {
+			position: relative;
+			font-family: Montserrat;
+
+			h4 {
+				position: absolute;
+				top: 40%;
+				left: 8%;
+				line-height: 26px;
+				font-size: 20px;
+			}
+
+			p {
+				position: absolute;
+				top: 41%;
+				left: 63%;
+				font-size: 27px;
+			}
+
+			button:first-child {
+				border: 4px solid #ffffff;
+				z-index: 2;
+				position: absolute;
+			    top: 65%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			    background-color: transparent;
+			
+				a {
+					text-decoration: none;
+					color: #fff;
+					font-size: 14px;
+				    letter-spacing: 2px;
+				    font-weight: initial;
+				    display: inline-block;
+				    text-transform: uppercase;
+				    padding: 10px 24px;
+				}
+			}
+			
+			button:last-child {
+				border: 4px solid #ffffff;
+				z-index: 2;
+				position: absolute;
+			    top: 65%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			    background-color: transparent;
+			
+				a {
+					text-decoration: none;
+					color: #fff;
+					font-size: 14px;
+				    letter-spacing: 2px;
+				    font-weight: initial;
+				    display: inline-block;
+				    text-transform: uppercase;
+				    padding: 10px 24px;
+				}
+			}
+			
+			img {
+				position: absolute;
+				top: 7%;
+				left: 39%;
+			}
+		}
+
+		div:last-child {
+			padding-right: 0px;
+		}
+	}
+}
+
 
 
