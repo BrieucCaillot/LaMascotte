@@ -1,0 +1,181 @@
+<!-- 
+
+#title            : LA MASCOTTE RESTAURANT HISTORY PAGE
+#description      : La Mascotte's Website proudly made by:
+#author           : Brieuc CAILLOT
+#date             : 2017 16 04
+#version          : V1
+#usage            : HTML
+#notes            : Only working on search engine
+
+=============================================================-->
+
+<html lang="en">
+<head> 
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Prototype of website with Bootstrap & SASS" />
+    <meta name="keywords" content="Cuda, Bootstrap, SASS">
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!--LINK-->
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/booking.css"/>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <!--JQUERY-->
+    <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/datepicker.js"></script>
+
+    <title>Réservation - La Mascotte</title>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header>
+        <div id="logo">
+            <img src="../images/logomascotteclair.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">ACCUEIL</a></li>
+                <li><a href="history.html">HISTOIRE</a></li>
+                <li>MENU</li>
+                <li>RÉSERVER</li>
+                <li>COMMANDER</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header> 
+     
+    <!--MAIN-->
+    <main>
+    
+        <!--BOOK A TABLE-->
+        <section>
+            <h1>RÉSERVER UNE TABLE</h1>
+            <button>
+                <a href="#">RÉSERVER</a>
+            </button>
+        </section>
+
+        <!--FORM TEXT-->
+        <section>
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <svg viewbox="-10 0 120 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">FORMULAIRE</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">FORMULAIRE</text>
+                            </svg>
+                            <h3>
+                                Venez découvrir nos plats de fruits de mer préparés par nos soins avec des produits frais.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--FORM-->
+        <section>
+            <div class="container">
+                <!--for redirect in a new page change : 'action="#"' with : 'action="send-reservation.php"'-->
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="#" method="post">
+                                <!-- Col Left-->
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <input type="text" name="date" id="reservation-date" placeholder="Date">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="text" name="persone" id="persone" placeholder="Pers">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="text" name="time" id="reservation-time" placeholder="Heure">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="text" name="" id="name" placeholder="Nom">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" id="phone" placeholder="Téléphone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" name="email" id="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <textarea class="col-md-12" name="notice" id="notice" placeholder="Informations complémentaires"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="submit" value="Réserver">
+                                    </div>
+                                </div>
+                                <!--<span class="form-info">Please note that we can only hold your reservation for 15 minutes. Sorry.</span>-->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <button>
+                        <a href="#">RÉSERVER</a>
+                    </button>
+                    <button>
+                        <a href="#">COMMANDER</a>
+                    </button>
+                    <h4>52 Rue des Abbesses,<br>75018 Paris<br>18e arrondissement,<br>France</h4>
+                    <p>01 46 06 28 15</p>
+                    
+                    <img src="../images/logomascotteclair.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJue8o9E9u5kcRJ2G1N7QaShw&key=AIzaSyBEp_uq8_BW0a7INepol4BVdqfnNZnflDs" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

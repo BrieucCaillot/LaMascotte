@@ -19,7 +19,7 @@ header {
 
     #logo {
     	float: left;
-    	padding: 10px 52px;
+    	padding: 10px 52px;;;
     }
 
 	nav {
@@ -31,8 +31,8 @@ header {
 		left: 50%;
 	    -webkit-transform: translateX(-50%);
 	    transform: translateX(-50%);
-		padding: 20px 0;
 		text-align: center;
+		padding: 20px 0;
 
 			ul {
 
@@ -41,6 +41,13 @@ header {
 				display: inline-block;
 				list-style-type: none;
 				padding: 20px 20px;
+				font-size: 19px;
+				color: #fff;
+
+				a {
+					text-decoration: none;
+					color: inherit;
+				}
 			}
 		}
 	}
@@ -133,14 +140,21 @@ main {
 		.small-feature-icon {
 			float: left;
     		display: block;
+			margin-top: 13px;
 		}
 
 		.small-feature-desc {
 			margin-left: 75px;
+
+			p {
+				padding-top: 15px;
+				font-size: 14px;
+				line-height: 24px;
+			}
 		}
 
 		h3 {
-			font-size: 30px;
+			font-size: 27px;
 			text-transform: uppercase;
 		}
 	}
@@ -165,7 +179,7 @@ main {
 		}
 
 		h3 {
-			font-size: 18px;
+			font-size: 16px;
 		    font-weight: 400;
 		    text-transform: uppercase;
 		    letter-spacing: 2px;
@@ -181,13 +195,13 @@ main {
 		}
 
 		.title {
-			font-size: 25px;
+			font-size: 22px;
 			margin-bottom: 6%;
 			line-height: 30px;
 		}
 		
 		.desc {
-			font-size: 18px;
+			font-size: 17px;
 		    line-height: 35px;
 		    margin-bottom: 24px;
 		}
@@ -285,7 +299,7 @@ main {
 		}
 
 		h3 {
-			font-size: 18px;
+			font-size: 16px;
 		    font-weight: 400;
 		    text-transform: uppercase;
 		    letter-spacing: 2px;
@@ -378,7 +392,6 @@ main {
 			max-width:400px;
 			height:auto;
 			margin-bottom: 3%;
-			margin-left:-39px;
 		}
 
 		img {
@@ -387,7 +400,7 @@ main {
 		}
 
 		h3 {
-			font-size: 18px;
+			font-size: 16px;
 		    font-weight: 400;
 		    text-transform: uppercase;
 		    letter-spacing: 2px;
@@ -403,13 +416,13 @@ main {
 		}
 
 		.title {
-			font-size: 25px;
+			font-size: 22px;
 			line-height: 30px;
 			margin: 0 0 6% 40px;
 		}
 		
 		.desc {
-			font-size: 18px;
+			font-size: 17px;
 		    line-height: 35px;
 			margin: 0 0 24px 40px;
 		}
@@ -451,25 +464,25 @@ footer {
 				top: 40%;
 				left: 8%;
 				line-height: 26px;
-				font-size: 20px;
+				font-size: 18px;
 			}
 
 			p {
 				position: absolute;
-				top: 41%;
-				left: 63%;
-				font-size: 27px;
+				top: 47%;
+				left: 54%;
+				font-size: 22px;
 			}
 
 			button:first-child {
-				border: 4px solid #ffffff;
+				border: 2px solid #ffffff;
 				z-index: 2;
 				position: absolute;
-			    top: 65%;
+			    top: 78%;
 			    left: 50%;
 			    transform: translate(-50%, -50%);
 			    background-color: transparent;
-			
+				
 				a {
 					text-decoration: none;
 					color: #fff;
@@ -478,19 +491,19 @@ footer {
 				    font-weight: initial;
 				    display: inline-block;
 				    text-transform: uppercase;
-				    padding: 10px 24px;
+				    padding: 17px 28px;
 				}
 			}
 			
-			button:last-child {
-				border: 4px solid #ffffff;
+			button:nth-child(2) {
+				border: 2px solid #ffffff;
 				z-index: 2;
 				position: absolute;
-			    top: 65%;
-			    left: 50%;
+			    top: 78%;
+			    left: 81%;
 			    transform: translate(-50%, -50%);
 			    background-color: transparent;
-			
+				
 				a {
 					text-decoration: none;
 					color: #fff;
@@ -499,7 +512,7 @@ footer {
 				    font-weight: initial;
 				    display: inline-block;
 				    text-transform: uppercase;
-				    padding: 10px 24px;
+				    padding: 17px 28px;
 				}
 			}
 			
