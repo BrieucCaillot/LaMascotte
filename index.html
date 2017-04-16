@@ -1,9 +1,9 @@
 <!-- 
 
-#title            : Exercise 3: WEBSITE CUDA
+#title            : LA MASCOTTE RESTAURANT HOME PAGE
 #description      : La Mascotte's Website proudly made by:
 #author           : Brieuc CAILLOT
-#date             : 20161030
+#date             : 2017 16 04
 #version          : V1
 #usage            : HTML
 #notes            : Only working on search engine
@@ -34,7 +34,7 @@
     <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/scripthome.js"></script>
 
-    <title>La Mascote</title>
+    <title>Accueil - La Mascotte</title>
 </head>
 
 <body>
@@ -46,10 +46,10 @@
         </div>
         <nav>
             <ul>
-                <li>ACCUEIL</li>
-                <li>HISTOIRE</li>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="html/history.html">HISTOIRE</a></li>
                 <li>MENU</li>
-                <li>RÉSERVER</li>
+                <li><a href="html/booking.html">RÉSERVER</a></li>
                 <li>COMMANDER</li>
                 <li>CONTACT</li>
             </ul>
@@ -58,6 +58,7 @@
      
     <!--MAIN-->
     <main>
+
         <!--SWIPER HEADER-->
         <section>
             <h1>LA MASCOTTE</h1>
@@ -68,9 +69,9 @@
             <!-- Swiper -->
             <div class="swiper-container swiper-container-horizontal fixed">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/mascotte4.jpg" alt="homme qui paint-silveract'"></div>
-                    <div class="swiper-slide"><img src="images/oysters.jpg" alt="activité de groupe silveract"></div>
-                    <div class="swiper-slide"><img src="images/plateau.jpg" alt="activité theatre silver act"></div>
+                    <div class="swiper-slide"><img src="images/mascotte4.jpg" alt="la mascotte"></div>
+                    <div class="swiper-slide"><img src="images/oysters.jpg" alt="la mascotte"></div>
+                    <div class="swiper-slide"><img src="images/plateau.jpg" alt="la mascotte"></div>
                 </div>
             </div>
 
@@ -101,20 +102,20 @@
                                     <div class="small-feature-icon">
                                         <img src="images/crevette.svg" alt="icon-1" width="48" height="48" class="alignnone size-full wp-image-451" />
                                     </div>
-                                    <div class="small-feature-desc">
+                                    <div class="small-feature-desc text">
                                         <h3>Produits frais</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, culpa.</p>
+                                        <p>Venez deguster nos plats préparés avec des produits frais.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="small-feature">
                                     <div class="small-feature-icon">
-                                        <img src="images/food.png" alt="icon-2" width="48" height="48" class="size-full wp-image-449" />
+                                        <img src="images/like.svg" alt="icon-2" width="48" height="48" class="size-full wp-image-449" />
                                     </div>
                                     <div class="small-feature-desc">
-                                        <h3>HISTORIQUE</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, dolore!</p>
+                                        <h3>AMBIANCE</h3>
+                                        <p>Le dimanche, de midi à 15h, c’est ambiance musette. Il n’est pas rare que les clients poussent la chansonnette.</p>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +126,7 @@
                                     </div>
                                     <div class="small-feature-desc">
                                         <h3>BONS VINS</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, quo!</p>
+                                        <p>Venez découvrir au bar nos vins d'exceptions à la carte </p>
                                     </div>
                                 </div>
                             </div>
@@ -138,42 +139,40 @@
         <!--ABOUT-->
         <section>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="home-subtitle">Histoire</h3>
-                                <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
-                                <svg viewbox="0 0 100 20">
-                                    <defs>
-                                        <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-                                            <stop offset="5%" stop-color="skyblue"/>
-                                            <stop offset="95%" stop-color="#123752"/>
-                                        </linearGradient>
-                                        <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-                                            <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
-                                                <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
-                                            </path>
-                                        </pattern>
-                                    </defs>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">À PROPOS</text>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">À PROPOS</text>
-                                </svg>
-                                <p class="title text-left">
-                                    Restaurant historique au coeur de Montmartre 
-                                </p>
-                                <p class="desc">
-                                    La création de « La Mascotte » semble remonter à 1889 à l’époque où son grand comptoir occupait tout le rez de chaussée d’un hôtel de deux étages, « Le Pompéa ».
-                                </p>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="home-subtitle">Histoire</h3>
+                            <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
+                            <svg viewbox="0 0 110 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">À PROPOS</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">À PROPOS</text>
+                            </svg>
+                            <p class="title text-left">
+                                Restaurant historique au coeur de Montmartre 
+                            </p>
+                            <p class="desc">
+                                La mascotte est un restaurant, bar dont la création semble remonter à la fin du XIXème siècle. Celui-ci se situe dans le quartier de Montmarte à Paris 18ème arrondissement.
+                            </p>
 
-                                <button>
-                                    <a href="#" class="view-more margin-t36">En savoir plus
-                                    </a>
-                                </button>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="images/equipe.jpg" alt="" width="800" height="548" class="alignnone size-full wp-image-456"  sizes="(max-width: 800px) 100vw, 800px" />
-                            </div>
+                            <button>
+                                <a href="#" class="view-more margin-t36">En savoir plus
+                                </a>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/equipe.jpg" alt="equipe la mascotte" width="100%" height="100%"/>
                         </div>
                     </div>
                 </div>
@@ -183,28 +182,26 @@
         <!--DELIVER-->
         <section>
             <div class="container">
-                <div class="row">
-                    <img src="images/logoecaillefonce.png" alt="">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-4">
-                                    <h3 class="text-center">DEGUSTATION</h3>
-                                    <p>
-                                        De 10h à 23h30 en dégustation sur place, les meilleurs produits de nos “ terroirs maritimes “ 
-                                    </p>
-                            </div>
-                            <div class="col-md-4">
-                                <h3 class="text-center">LIVRAISON</h3>
+                <img src="images/logoecaillefonce.png" alt="">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                                <h3 class="text-center">DEGUSTATION</h3>
                                 <p>
-                                    Livraison de nos produits frais à Domicile ou Retrait en boutique dans les 8ème, 9ème, 17ème et 18ème arrondissements.
+                                    De 10h à 23h30 en dégustation sur place, les meilleurs produits de nos “ terroirs maritimes “ 
                                 </p>
-                            </div>
-                            <div class="col-md-4">
-                                <h3 class="text-center">VENTE À EMPORTER</h3>
-                                <p>
-                                    Produits à emporter parmi la carte des fruits de mer, et de "l'épicerie de la mer" 
-                                </p>
-                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="text-center">LIVRAISON</h3>
+                            <p>
+                                Livraison de nos produits frais à Domicile ou Retrait en boutique dans les 8ème, 9ème, 17ème et 18ème arrondissements.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="text-center">VENTE À EMPORTER</h3>
+                            <p>
+                                Produits à emporter parmi la carte des fruits de mer, et de "l'épicerie de la mer" 
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -219,7 +216,7 @@
                         <div class="text-center">
                             <h3 class="home-subtitle">Découvrez</h3>
                             <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
-                            <svg viewbox="0 0 100 20">
+                            <svg viewbox="-5 0 110 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
@@ -292,7 +289,6 @@
                         <h2>HORAIRES D'OUVERTURE</h2>
                         <p>Ouvert 7/7 Jours</p>
                         <p>Monday – Sunday: 8H – 23h30</p>
-                    
                     </div>
                 </div>
             </div>  
@@ -305,15 +301,15 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-6">
-                                <img src="images/bar1.jpg" alt="" width="800" height="548" class="alignnone size-full wp-image-456"  sizes="(max-width: 800px) 100vw, 800px" />
+                                <img src="images/bar1.jpg" alt="" width="100%" height="100%"/>
                             </div>
                             <div class="col-md-6">
                                 <h3 class="home-subtitle">Voyagez</h3>
                                 <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
-                                <svg viewbox="0 0 100 20">
+                                <svg viewbox="9 0 110 20">
                                     <defs>
                                         <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-                                            <stop offset="5%" stop-color="skyblue"/>
+                                            <stop offset="5%" stop-color="#326384"/>
                                             <stop offset="95%" stop-color="#123752"/>
                                         </linearGradient>
                                         <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
@@ -342,6 +338,7 @@
                 </div>
             </div>
         </section>
+        
     </main>
 
     <!--FOOTER-->
