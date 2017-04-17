@@ -11,7 +11,10 @@ header {
   top: 0;
   z-index: 3;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  -webkit-transition: 0.5s;
+  /* Safari */
+  transition: 0.5s; }
   header #logo {
     float: left;
     padding: 10px 52px; }
@@ -30,18 +33,22 @@ header {
       display: inline-block;
       list-style-type: none;
       padding: 20px 20px;
-      font-size: 19px; }
+      font-size: 19px;
+      font-weight: 500; }
 
 /* MAIN */
 main {
   /* HISTOIRE */
+  /* RESTAURANT */
+  /* BAR */
+  /*L'ECAILLE */
   /* 1935 */
   /* 2000 */
   /* 2006 */
   /* 2017 */ }
   main section:first-child {
-    background: url("../images/facade.jpg") no-repeat;
-    background-size: 100% 142%;
+    background: url("../images/facade2.jpg") no-repeat;
+    background-size: 100% 100%;
     height: 400px; }
     main section:first-child h1 {
       font-family: Montserrat;
@@ -75,13 +82,45 @@ main {
     font-family: Montserrat; }
     main section:nth-child(2) svg {
       font-weight: bold;
-      max-width: 400px;
+      max-width: 500px;
       height: auto;
       margin-bottom: 3%;
-      margin-left: -16px; }
+      margin-left: -4px; }
+    main section:nth-child(2) img {
+      width: auto;
+      height: 380px; }
     main section:nth-child(2) h3 {
-      font-size: 17px;
-      line-height: 35px; }
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px; }
+    main section:nth-child(2) h2 {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 36px;
+      text-transform: uppercase;
+      font-size: 40px; }
+    main section:nth-child(2) .title {
+      font-size: 20px;
+      margin-bottom: 6%;
+      line-height: 30px; }
+    main section:nth-child(2) .desc {
+      font-size: 15px;
+      line-height: 35px;
+      margin-bottom: 24px; }
+    main section:nth-child(2) button {
+      border: 2px solid #000000;
+      background-color: transparent; }
+      main section:nth-child(2) button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: initial;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 14px 28px; }
   main section:nth-child(3) {
     padding: 72px 0;
     background-color: #FFF;
@@ -90,11 +129,43 @@ main {
       font-weight: bold;
       max-width: 400px;
       height: auto;
-      margin-bottom: 3%;
-      margin-left: -16px; }
+      margin-bottom: 3%; }
+    main section:nth-child(3) img {
+      width: auto;
+      height: 380px; }
     main section:nth-child(3) h3 {
-      font-size: 17px;
-      line-height: 35px; }
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0 0 20px 40px; }
+    main section:nth-child(3) h2 {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 36px;
+      text-transform: uppercase;
+      font-size: 40px; }
+    main section:nth-child(3) .title {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 0 6% 40px; }
+    main section:nth-child(3) .desc {
+      font-size: 15px;
+      line-height: 35px;
+      margin: 0 0 24px 40px; }
+    main section:nth-child(3) button {
+      border: 2px solid #000000;
+      background-color: transparent;
+      margin-left: 40px; }
+      main section:nth-child(3) button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: initial;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 14px 28px; }
   main section:nth-child(4) {
     padding: 72px 0;
     background-color: #FFF;
@@ -104,10 +175,42 @@ main {
       max-width: 400px;
       height: auto;
       margin-bottom: 3%;
-      margin-left: -16px; }
+      margin-left: -34px; }
+    main section:nth-child(4) img {
+      width: auto;
+      height: 380px; }
     main section:nth-child(4) h3 {
-      font-size: 17px;
-      line-height: 35px; }
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px; }
+    main section:nth-child(4) h2 {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 36px;
+      text-transform: uppercase;
+      font-size: 40px; }
+    main section:nth-child(4) .title {
+      font-size: 20px;
+      margin-bottom: 6%;
+      line-height: 30px; }
+    main section:nth-child(4) .desc {
+      font-size: 15px;
+      line-height: 35px;
+      margin-bottom: 24px; }
+    main section:nth-child(4) button {
+      border: 2px solid #000000;
+      background-color: transparent; }
+      main section:nth-child(4) button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: initial;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 14px 28px; }
   main section:nth-child(5) {
     padding: 72px 0;
     background-color: #FFF;
@@ -119,7 +222,46 @@ main {
       margin-bottom: 3%;
       margin-left: -16px; }
     main section:nth-child(5) h3 {
-      font-size: 17px;
+      font-size: 15px;
+      line-height: 35px; }
+  main section:nth-child(6) {
+    padding: 72px 0;
+    background-color: #FFF;
+    font-family: Montserrat; }
+    main section:nth-child(6) svg {
+      font-weight: bold;
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 3%;
+      margin-left: -16px; }
+    main section:nth-child(6) h3 {
+      font-size: 15px;
+      line-height: 35px; }
+  main section:nth-child(7) {
+    padding: 72px 0;
+    background-color: #FFF;
+    font-family: Montserrat; }
+    main section:nth-child(7) svg {
+      font-weight: bold;
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 3%;
+      margin-left: -16px; }
+    main section:nth-child(7) h3 {
+      font-size: 15px;
+      line-height: 35px; }
+  main section:last-child {
+    padding: 72px 0;
+    background-color: #FFF;
+    font-family: Montserrat; }
+    main section:last-child svg {
+      font-weight: bold;
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 3%;
+      margin-left: -16px; }
+    main section:last-child h3 {
+      font-size: 15px;
       line-height: 35px; }
 
 /* FOOTER */
