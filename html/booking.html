@@ -26,8 +26,6 @@
     <!--LINK-->
     <link rel="icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/swiper.css">
-    <link rel="stylesheet" href="../css/swiper.min.css">
     <link rel="stylesheet" href="../css/reset.css"/>
     <link rel="stylesheet" href="../css/booking.css"/>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
@@ -47,15 +45,15 @@
     <!--HEADER-->
     <header>
         <div id="logo">
-            <img src="../images/logomascotteclair.png" alt="">
+            <a href="../index.html"><img src="../images/logomascotteclair.png" alt="logo la mascotte"></a>
         </div>
         <nav>
             <ul>
                 <li><a href="../index.html">ACCUEIL</a></li>
-                <li><a href="history.html">HISTOIRE</a></li>
+                <li><a href="about.html">À PROPOS</a></li>
                 <li>MENU</li>
-                <li>RÉSERVER</li>
-                <li>COMMANDER</li>
+                <li><a href="booking.html">RÉSERVER</a></li>
+                <a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/"><li>LIVRAISON</li></a>
                 <li>CONTACT</li>
             </ul>
         </nav>
@@ -78,7 +76,7 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <svg viewbox="-10 0 120 20">
+                            <svg viewbox="-15 0 130 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
@@ -108,43 +106,60 @@
                 <!--for redirect in a new page change : 'action="#"' with : 'action="send-reservation.php"'-->
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-12">
-                            <form action="#" method="post">
-                                <!-- Col Left-->
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <input type="text" name="date" id="reservation-date" placeholder="Date">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <input type="text" name="persone" id="persone" placeholder="Pers">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <input type="text" name="time" id="reservation-time" placeholder="Heure">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <input type="text" name="" id="name" placeholder="Nom">
-                                    </div>
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>HORAIRES D'OUVERTURE</h3>
+                                    <p>
+                                        Ouvert 7/7 Jours
+                                        <br>Lundi - Samedi : 8H – 23h30
+                                    </p>
+
+
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="text" name="phone" id="phone" placeholder="Téléphone">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="email" name="email" id="email" placeholder="Email">
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 offset-md-1">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form action="#" method="post">
+                                        <!-- Col Left-->
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <input type="text" name="date" id="reservation-date" placeholder="Date">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="text" name="persone" id="persone" placeholder="Pers">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="text" name="time" id="reservation-time" placeholder="Heure">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="text" name="" id="name" placeholder="Nom">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" name="phone" id="phone" placeholder="Téléphone">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="email" name="email" id="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <textarea class="col-md-12" name="notice" id="notice" placeholder="Informations complémentaires"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="submit" value="Réserver">
+                                            </div>
+                                        </div>
+                                        <!--<span class="form-info">Please note that we can only hold your reservation for 15 minutes. Sorry.</span>-->
+                                    </form>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <textarea class="col-md-12" name="notice" id="notice" placeholder="Informations complémentaires"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <input type="submit" value="Réserver">
-                                    </div>
-                                </div>
-                                <!--<span class="form-info">Please note that we can only hold your reservation for 15 minutes. Sorry.</span>-->
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>

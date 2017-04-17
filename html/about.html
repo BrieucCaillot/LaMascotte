@@ -26,10 +26,9 @@
     <!--LINK-->
     <link rel="icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/swiper.css">
-    <link rel="stylesheet" href="../css/swiper.min.css">
-    <link rel="stylesheet" href="../css/history.css"/>
     <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/history.css"/>
+    
     <!--JQUERY-->
     <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
@@ -42,15 +41,15 @@
     <!--HEADER-->
     <header>
         <div id="logo">
-            <img src="../images/logomascotteclair.png" alt="">
+            <a href="../index.html"><img src="../images/logomascotteclair.png" alt="logo la mascotte"></a>
         </div>
         <nav>
             <ul>
                 <li><a href="../index.html">ACCUEIL</a></li>
-                <li><a href="history.html">HISTOIRE</a></li>
+                <li><a href="about.html">À PROPOS</a></li>
                 <li>MENU</li>
                 <li><a href="booking.html">RÉSERVER</a></li>
-                <li>COMMANDER</li>
+                <a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/"><li>LIVRAISON</li></a>
                 <li>CONTACT</li>
             </ul>
         </nav>
@@ -61,10 +60,143 @@
     
         <!--ABOUT-->
         <section>
-            <h1>HISTOIRE</h1>
+            <h1>À PROPOS</h1>
             <button>
                 <a href="#">RÉSERVER</a>
             </button>
+        </section>
+
+        <!--RESTAURANT-->
+        <section>
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="home-subtitle">APPRÉCIEZ</h3>
+                            <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
+                            <svg viewbox="-21 0 160 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LE RESTAURANT</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LE RESTAURANT</text>
+                            </svg>
+                            <p class="title text-left">
+                                Venez passer un bon moment tout seul ou en famille 
+                            </p>
+                            <p class="desc">
+                                Service continu 7/7 de 12h à 24h.
+                                <br>
+                                Le restaurant est doté d’une salle privatisable indépendante pouvant accueillir jusqu’à 40 couverts. Un espace idéal pour vos événements familiaux, repas d'affaire ou amicaux..
+                            </p>
+
+                            <button>
+                                <a href="history.html" class="view-more margin-t36">En savoir plus
+                                </a>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="../images/interieur3.jpg" alt="equipe la mascotte" width="100%" height="100%"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--BAR-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="../images/bar1.jpg" alt="" width="100%" height="100%"/>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="home-subtitle">Sympathique</h3>
+                                <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
+                                <svg viewbox="9 0 120 20">
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                            <stop offset="5%" stop-color="#326384"/>
+                                            <stop offset="95%" stop-color="#123752"/>
+                                        </linearGradient>
+                                        <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                            <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                                <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                            </path>
+                                        </pattern>
+                                    </defs>
+                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LE BAR</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LE BAR</text>
+                                </svg>
+                                <p class="title text-left">
+                                    Venez découvrir nos alcool au bar
+                                </p>
+                                <p class="desc">
+                                    C’est un zinc de quartier, à la clientèle mélangée et haute en couleur. On y retrouve l’ambiance d’un Montmartre de légende, sans la nostalgie d’un passé qui est ici toujours bien vivant. Et bon vivant.
+                                </p>
+
+                                <button>
+                                    <a href="#" class="view-more margin-t36">En savoir plus
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--L'ÉCAILLE-->
+        <section>
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="home-subtitle">DÉGUSTEZ</h3>
+                            <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
+                            <svg viewbox="0 0 120 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">L'ÉCAILLE</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">L'ÉCAILLE</text>
+                            </svg>
+                            <p class="title text-left">
+                                Dégustations, ventes à emporter, livraison de fruits de mer 
+                            </p>
+                            <p class="desc">
+                                L’Écaille c’est sans doute le plus beau « banc » de fruits de mer de Paris (donc du monde…). C’est l’annexe de la brasserie, l’endroit où sont concoctés les plateaux et assiettes de fruits de mers et crustacés.
+                            </p>
+
+                            <button>
+                                <a href="html/history.html" class="view-more margin-t36">En savoir plus
+                                </a>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="../images/ecaille1.jpg" alt="equipe la mascotte" width="100%" height="100%"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--1935-->
@@ -73,7 +205,7 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
-                            <svg viewbox="5 0 90 20">
+                            <svg viewbox="-20 0 110 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
@@ -109,7 +241,7 @@
                             <img src="../images/histoire2.jpg" alt="la mascotte 2000" width="100%" height="300px" >
                         </div>
                         <div class="col-md-6">
-                            <svg viewbox="5 0 90 20">
+                            <svg viewbox="-20 0 110 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
@@ -139,7 +271,7 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
-                            <svg viewbox="4 0 90 20">
+                            <svg viewbox="-20 0 110 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
@@ -178,7 +310,7 @@
                             <img src="../images/equipe.jpg" alt="la mascotte 2017" width="100%" height="300px" >
                         </div>
                         <div class="col-md-6">
-                            <svg viewbox="5 0 90 20">
+                            <svg viewbox="-20 0 110 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
