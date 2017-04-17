@@ -4,7 +4,8 @@ $(document).ready(function() {
 
     $(document).on("scroll", function() {
 
-        if ($(document).scrollTop()>50) {
+        if ($(document).scrollTop()>100) {
+
             $("header").css({
                 "position": "fixed",
                 "z-index": "200",
@@ -26,7 +27,7 @@ $(document).ready(function() {
             
         } else {
             $("header").css({
-                "position": " ",
+                "position": "",
                 "z-index": "",
                 "background-color": "rgba(0, 0, 0, 0)",
                 "min-height" : "106px"

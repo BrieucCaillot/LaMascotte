@@ -16,6 +16,8 @@ header {
     z-index: 3;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: 0.5s; /* Safari */
+    	transition: 0.5s;
 
     #logo {
     	float: left;
@@ -43,6 +45,7 @@ header {
 				padding: 20px 20px;
 				font-size: 19px;
 				color: #fff;
+				font-weight: 500;
 
 				a {
 					text-decoration: none;
@@ -134,13 +137,13 @@ main {
 	/* BOXES */
 	section:nth-child(2) {
 		background-color: #F4F4F4;
-		padding: 75px 0;
+		padding: 60px 0;
 		font-family: Montserrat;
 
 		.small-feature-icon {
 			float: left;
     		display: block;
-			margin-top: 13px;
+			margin-top: 48px;
 		}
 
 		.small-feature-desc {
@@ -148,7 +151,7 @@ main {
 
 			p {
 				padding-top: 15px;
-				font-size: 14px;
+				font-size: 15px;
 				line-height: 24px;
 			}
 		}
@@ -179,7 +182,7 @@ main {
 		}
 
 		h3 {
-			font-size: 16px;
+			font-size: 14px;
 		    font-weight: 400;
 		    text-transform: uppercase;
 		    letter-spacing: 2px;
@@ -195,13 +198,13 @@ main {
 		}
 
 		.title {
-			font-size: 22px;
+			font-size: 20px;
 			margin-bottom: 6%;
 			line-height: 30px;
 		}
 		
 		.desc {
-			font-size: 17px;
+			font-size: 15px;
 		    line-height: 35px;
 		    margin-bottom: 24px;
 		}
@@ -230,7 +233,7 @@ main {
 		background-attachment: fixed !important;
 		background-size: cover;
 		height: 350px;
-		padding: 90px 0;
+		padding: 85px 0;
 		color: #fff;
 		font-family: Montserrat;
 		position: relative;
@@ -240,7 +243,7 @@ main {
 		}
 
 		h3 {
-			font-size: 40px;
+			font-size: 32px;
    			text-transform: uppercase;
    			margin-bottom: 40px;
 		}
@@ -274,12 +277,12 @@ main {
 
 		img:first-child {
 			position: absolute;
-		    top: 21%;
+		    top: 28%;
 		    left: 50%;
 		    transform: translate(-50%, -50%);
 		    z-index: 3;
 			color: #ffffff;
-			width: 85px;
+			width: 55px;
 		}
 
 		img:last-child {
@@ -299,7 +302,7 @@ main {
 		}
 
 		h3 {
-			font-size: 16px;
+			font-size: 14px;
 		    font-weight: 400;
 		    text-transform: uppercase;
 		    letter-spacing: 2px;
@@ -312,7 +315,7 @@ main {
 		    left: 50%;
 		    transform: translate(-50%, -50%);
 		    z-index: 3;
-		    font-size: 50px;
+		    font-size: 35px;
 		    color: #fff;
 		    font-weight: lighter;
 		    letter-spacing: 10px;
@@ -365,13 +368,13 @@ main {
 		background-color: white; 
 		background-attachment: fixed !important;
 		background-size: cover;
-		height: 350px;
-		padding: 90px 0;
+		/*height: 300px;*/
+		padding: 52px 0;
 		font-family: Montserrat;
 		color: white;
 
 		h2 {
-			font-size: 45px;
+			font-size: 35px;
 			margin-bottom: 4%;
 		}
 
@@ -381,7 +384,7 @@ main {
 		}
 	}
 
-	/* ABOUT */
+	/* L'ECAILLE */
 	section:nth-child(7) {
 		padding: 72px 0;
 		background-color: #FFF;
@@ -392,6 +395,7 @@ main {
 			max-width:400px;
 			height:auto;
 			margin-bottom: 3%;
+			margin-left:7%;
 		}
 
 		img {
@@ -400,7 +404,7 @@ main {
 		}
 
 		h3 {
-			font-size: 16px;
+			font-size: 14px;
 		    font-weight: 400;
 		    text-transform: uppercase;
 		    letter-spacing: 2px;
@@ -416,13 +420,13 @@ main {
 		}
 
 		.title {
-			font-size: 22px;
+			font-size: 20px;
 			line-height: 30px;
 			margin: 0 0 6% 40px;
 		}
 		
 		.desc {
-			font-size: 17px;
+			font-size: 15px;
 		    line-height: 35px;
 			margin: 0 0 24px 40px;
 		}
@@ -527,6 +531,7 @@ footer {
 			padding-right: 0px;
 		}
 	}
+
 }
 
 
