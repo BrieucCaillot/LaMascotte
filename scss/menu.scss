@@ -44,13 +44,7 @@ header {
 				list-style-type: none;
 				padding: 20px 20px;
 				font-size: 19px;
-				color: #fff;
 				font-weight: 500;
-
-				a {
-					text-decoration: none;
-					color: inherit;
-				}
 			}
 		}
 	}
@@ -59,27 +53,19 @@ header {
 /* MAIN */
 main {
 
-	/* SWIPER HEADER*/
+	/* LA CARTE */
 	section:first-child {
-		position: relative;
+		background: url("../images/plat.jpg") no-repeat;
+		background-size: 100% 150%;
+		background-attachment: fixed;
+		height: 500px;
 
 		h1 {
 			font-family: Montserrat;
-			color: #ffffff;
-			font-size: 90px;
+			font-size: 60px;
+			color: #FFF;
 			position: absolute;
-		    top: 40%;
-		    left: 50%;
-		    transform: translate(-50%, -50%);
-			z-index: 2;
-		}
-
-		h2 {
-			font-family: Montserrat;
-			font-size: 30px;
-			color: white;
-			position: absolute;
-		    top: 55%;
+		    top: 25%;
 		    left: 50%;
 		    transform: translate(-50%, -50%);
 			z-index: 2;
@@ -89,7 +75,7 @@ main {
 			border: 2px solid #ffffff;
 			z-index: 2;
 			position: absolute;
-		    top: 65%;
+		    top: 37%;
 		    left: 50%;
 		    transform: translate(-50%, -50%);
 		    background-color: transparent;
@@ -105,75 +91,37 @@ main {
 			    padding: 17px 28px;
 			}
 		}
-
-		.fixed {
-			background-attachment: fixed;
-		}
-
-		.swiper-container {
-	        height: auto;
-	        width: 100%;
-	    }
-		.swiper-slide {
-		    text-align: center;
-		    font-size: 18px;
-		    background: #fff;
-		    /* Center slide text vertically */
-		    display: -webkit-box;
-		    display: -ms-flexbox;
-		    display: flex;
-		    -webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		    justify-content: center;
-		    -webkit-box-align: center;
-		    -ms-flex-align: center;
-		    align-items: center;
-		}
-		.swiper-slide img {
-		    width: 100%;
-		}
 	}
 
-	/* BOXES */
+	/* LES MENUS */
 	section:nth-child(2) {
-		background-color: #F4F4F4;
-		padding: 60px 0;
-		font-family: Montserrat;
-
-		.small-feature-icon {
-			float: left;
-    		display: block;
-			margin-top: 48px;
-		}
-
-		.small-feature-desc {
-			margin-left: 75px;
-
-			p {
-				padding-top: 15px;
-				font-size: 15px;
-				line-height: 24px;
-			}
-		}
-
-		h3 {
-			font-size: 27px;
-			text-transform: uppercase;
-		}
-	}
-
-	/* ABOUT */
-	section:nth-child(3) {
-		padding: 72px 0;
+		padding: 71px 0 0 0;
 		background-color: #FFF;
 		font-family: Montserrat;
+		position: relative;
+
+		.arrow {
+			width: 40px;
+			height: 40px;
+			margin: 0 0 15% 50%;
+		}
+
+		#btn1up, #btn2up, #btn3up {
+			display: none;
+		}
+
+		#entree1, #entree2, #plats1, #plats2, #plats3, #dessert1, #dessert2, #dessert3 {
+			display: none;
+		}
 
 		svg {
 			font-weight:bold;
-			max-width:400px;
+			max-width: 500px;
 			height:auto;
 			margin-bottom: 3%;
-			margin-left:-16px;
+			margin-left:-4px;
+			/*position:absolute;
+			top: 50%;*/
 		}
 
 		img {
@@ -183,10 +131,12 @@ main {
 
 		h3 {
 			font-size: 14px;
-		    font-weight: 400;
 		    text-transform: uppercase;
 		    letter-spacing: 2px;
 		    margin-bottom: 20px;
+			font-weight: 400;
+			/*position: absolute;
+			top: 45%;*/
 		}
 
 		h2 {
@@ -194,13 +144,24 @@ main {
 		    display: inline-block;
 		    margin-bottom: 36px;
 		    text-transform: uppercase;
-		    font-size: 40px;
+		    font-size: 26px;
+		}
+
+		p {
+			text-align: center;
+			margin-bottom: 4%;
+			line-height: 30px;
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
 		}
 
 		.title {
 			font-size: 20px;
-			margin-bottom: 6%;
 			line-height: 30px;
+			margin-bottom: 4%;
 		}
 		
 		.desc {
@@ -226,127 +187,70 @@ main {
 		}
 	}
 
-	/* DELIVER */
-	section:nth-child(4) {
-		background:url('../images/ecaille5.jpg') no-repeat; 
-		background-color: white; 
-		background-attachment: fixed !important;
-		background-size: cover;
-		height: 350px;
-		padding: 85px 0;
-		color: #fff;
+	/* LES ENTREES */
+	section:nth-child(3) {
+		padding: 72px 0;
+		background-color: #FFF;
 		font-family: Montserrat;
-		position: relative;
-
-		.container {
-			margin-top: 33px;
-		}
-
-		h3 {
-			font-size: 32px;
-   			text-transform: uppercase;
-   			margin-bottom: 40px;
-		}
-
-		p {
-			line-height: 30px;
-
-		}
-	
-		img {
-			position: absolute;
-		    top: 0%;
-		    left: 50%;
-		    transform: translate(-50%, -150%);
-		}
-	}
-
-	/* MENU */
-	section:nth-child(5) {
-		background-color: #F4F4F4;
-		padding: 54px 0;
-		height: 1000px;
-		font-family: Montserrat;
-		width: 100%;
 
 		svg {
 			font-weight:bold;
-			max-width:480px;
+			max-width: 500px;
 			height:auto;
+			margin-bottom: 3%;
+			margin-left:-4px;
+			position:absolute;
+			top: 50%;
 		}
 
-		img:first-child {
-			position: absolute;
-		    top: 28%;
-		    left: 50%;
-		    transform: translate(-50%, -50%);
-		    z-index: 3;
-			color: #ffffff;
-			width: 55px;
-		}
-
-		img:last-child {
-			height: 310px;
-			width: inherit;
-		}
-
-		.menuhover {
-		    -webkit-transition: all 0.3s ease;
-		    -moz-transition: all 0.3s ease;
-		    -o-transition: all 0.3s ease;
-		    -ms-transition: all 0.3s ease;
-		    transition: all 0.3s ease;
-		    z-index: 2;
-		    opacity: (0.8);
+		img {
+			width: auto;
+			height: 380px;
 		}
 
 		h3 {
 			font-size: 14px;
-		    font-weight: 400;
 		    text-transform: uppercase;
 		    letter-spacing: 2px;
 		    margin-bottom: 20px;
+			font-weight: 400;
+			position: absolute;
+			top: 45%;
 		}
 
 		h2 {
-		    position: absolute;
-		    top: 50%;
-		    left: 50%;
-		    transform: translate(-50%, -50%);
-		    z-index: 3;
-		    font-size: 35px;
-		    color: #fff;
-		    font-weight: lighter;
-		    letter-spacing: 10px;
-		}
-
-		/*h2 {
 			position: relative;
 		    display: inline-block;
 		    margin-bottom: 36px;
 		    text-transform: uppercase;
 		    font-size: 40px;
-		}*/
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
+		}
+
+		.title {
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 4%;
+		}
 		
-		p:last-child {
+		.desc {
 			font-size: 15px;
-		    font-style: italic;
+		    line-height: 35px;
 		    margin-bottom: 24px;
 		}
 
 		button {
-			border: 2px solid #ffffff;
-			z-index: 2;
-			position: absolute;
-		    top: 71%;
-		    left: 50%;
-		    transform: translate(-50%, -50%);
+		    border: 2px solid #000000;
 		    background-color: transparent;
-			
+
 			a {
 				text-decoration: none;
-				color: #fff;
-				font-size: 11px;
+			    color: #000;
+			    font-size: 11px;
 			    letter-spacing: 2px;
 			    font-weight: initial;
 			    display: inline-block;
@@ -354,60 +258,52 @@ main {
 			    padding: 14px 28px;
 			}
 		}
-
-		button:hover {
-			background-color: #000;
-			color: #fff;
-		}
 	}
 
-	/* OPEN HOURS */
-	section:nth-child(6) {
-		background:url('../images/interieur1.jpg') no-repeat; 
-		background-color: white; 
-		background-attachment: fixed !important;
-		background-size: cover;
-		/*height: 300px;*/
-		padding: 52px 0;
-		font-family: Montserrat;
-		color: white;
-
-		h2 {
-			font-size: 35px;
-			margin-bottom: 4%;
-		}
-
-		p {
-			font-size: 27px;
-			padding: 16px 0px;
-		}
-	}
-
-	/* L'ECAILLE */
-	section:nth-child(7) {
+	/* LES ENTREES */
+	section:last-child {
 		padding: 72px 0;
 		background-color: #FFF;
 		font-family: Montserrat;
 
+		.arrow {
+			width: 40px;
+			height: 40px;
+			margin: 0 0 10% 50%;
+		}
+
+		#btn4up, #btn5up, #btn6up, #btn7up, #btn8up, #btn9up {
+			display: none;
+		}
+
+		#compo1, #compo2, #compo3, #compo4, #compo5, #compo6 {
+			display: none;
+		}
+
+
 		svg {
 			font-weight:bold;
-			max-width:400px;
+			max-width: 500px;
 			height:auto;
 			margin-bottom: 3%;
-			margin-left:7%;
+			margin-left:-4px;
+			position:absolute;
+			top: 50%;
 		}
 
 		img {
-			height: 380px;
 			width: auto;
+			height: 380px;
 		}
 
 		h3 {
 			font-size: 14px;
-		    font-weight: 400;
 		    text-transform: uppercase;
 		    letter-spacing: 2px;
-		    margin: 0 0 20px 40px;
+		    margin-bottom: 20px;
+			font-weight: 400;
+			position: absolute;
+			top: 45%;
 		}
 
 		h2 {
@@ -415,25 +311,29 @@ main {
 		    display: inline-block;
 		    margin-bottom: 36px;
 		    text-transform: uppercase;
-		    font-size: 40px;
+		    font-size: 26px;
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
 		}
 
 		.title {
 			font-size: 20px;
 			line-height: 30px;
-			margin: 0 0 6% 40px;
+			margin-bottom: 4%;
 		}
 		
 		.desc {
 			font-size: 15px;
 		    line-height: 35px;
-			margin: 0 0 24px 40px;
+		    margin-bottom: 24px;
 		}
 
 		button {
 		    border: 2px solid #000000;
 		    background-color: transparent;
-		    margin-left: 40px;;
 
 			a {
 				text-decoration: none;
@@ -478,14 +378,13 @@ footer {
 			}
 
 			button:first-child {
-				border: 2px solid #ffffff;
+				border: 4px solid #ffffff;
 				z-index: 2;
 				position: absolute;
-			    top: 78%;
-			    left: 50%;
-			    transform: translate(-50%, -50%);
+			    top: 72%;
+			    left: 38%;
 			    background-color: transparent;
-				
+			
 				a {
 					text-decoration: none;
 					color: #fff;
@@ -494,19 +393,18 @@ footer {
 				    font-weight: initial;
 				    display: inline-block;
 				    text-transform: uppercase;
-				    padding: 17px 28px;
+				    padding: 10px 24px;
 				}
 			}
 			
 			button:nth-child(2) {
-				border: 2px solid #ffffff;
+				border: 4px solid #ffffff;
 				z-index: 2;
 				position: absolute;
-			    top: 78%;
-			    left: 81%;
-			    transform: translate(-50%, -50%);
+			    top: 72%;
+			    left: 69%;
 			    background-color: transparent;
-				
+			
 				a {
 					text-decoration: none;
 					color: #fff;
@@ -515,7 +413,7 @@ footer {
 				    font-weight: initial;
 				    display: inline-block;
 				    text-transform: uppercase;
-				    padding: 17px 28px;
+				    padding: 10px 24px;
 				}
 			}
 			
@@ -530,7 +428,6 @@ footer {
 			padding-right: 0px;
 		}
 	}
-
 }
 
 

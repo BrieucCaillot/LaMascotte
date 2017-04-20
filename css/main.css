@@ -218,7 +218,6 @@ main {
       color: #ffffff;
       width: 55px; }
     main section:nth-child(5) img:last-child {
-      background-size: cover;
       height: 310px;
       width: inherit; }
     main section:nth-child(5) .menuhover {
@@ -295,8 +294,8 @@ main {
       margin-bottom: 3%;
       margin-left: 7%; }
     main section:nth-child(7) img {
-      width: auto;
-      height: 380px; }
+      height: 380px;
+      width: auto; }
     main section:nth-child(7) h3 {
       font-size: 14px;
       font-weight: 400;
