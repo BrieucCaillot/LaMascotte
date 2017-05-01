@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0; }
 
+body {
+  -webkit-transition: 0.5s;
+  /* Safari */
+  transition: 0.5s; }
+
 /* HEADER */
 header {
   width: 100%;
@@ -18,6 +23,8 @@ header {
   header #logo {
     float: left;
     padding: 10px 52px; }
+  header #logo img {
+    width: 210px; }
   header nav {
     font-family: Quicksand;
     color: #fff;
@@ -41,12 +48,12 @@ main {
   /* LA CARTE */
   /* LES MENUS */
   /* LES ENTREES */
-  /* LES ENTREES */ }
+  /* LES PLATS */ }
   main section:first-child {
-    background: url("../images/plat.jpg") no-repeat;
-    background-size: 100% 150%;
+    height: 500px;
+    background: url("../images/bigmenu.jpg") no-repeat;
     background-attachment: fixed;
-    height: 500px; }
+    background-size: 100% 100%; }
     main section:first-child h1 {
       font-family: Montserrat;
       font-size: 60px;
@@ -79,12 +86,11 @@ main {
     font-family: Montserrat;
     position: relative; }
     main section:nth-child(2) .arrow {
-      width: 40px;
-      height: 40px;
-      margin: 0 0 15% 50%; }
-    main section:nth-child(2) #btn1up, main section:nth-child(2) #btn2up, main section:nth-child(2) #btn3up {
-      display: none; }
-    main section:nth-child(2) #entree1, main section:nth-child(2) #entree2, main section:nth-child(2) #plats1, main section:nth-child(2) #plats2, main section:nth-child(2) #plats3, main section:nth-child(2) #dessert1, main section:nth-child(2) #dessert2, main section:nth-child(2) #dessert3 {
+      width: 19px;
+      height: 21px;
+      display: none;
+      padding: 1px 0 0 4px; }
+    main section:nth-child(2) #menus p, main section:nth-child(2) #menus h2, main section:nth-child(2) #menus ul, main section:nth-child(2) #menus li, main section:nth-child(2) #btn1up, main section:nth-child(2) #btn2up, main section:nth-child(2) #btn3up #entree1, main section:nth-child(2) #entree2, main section:nth-child(2) #plats1, main section:nth-child(2) #plats2, main section:nth-child(2) #plats3, main section:nth-child(2) #dessert1, main section:nth-child(2) #dessert2, main section:nth-child(2) #dessert3 {
       display: none; }
     main section:nth-child(2) svg {
       font-weight: bold;
@@ -108,9 +114,9 @@ main {
     main section:nth-child(2) h2 {
       position: relative;
       display: inline-block;
-      margin-bottom: 36px;
       text-transform: uppercase;
-      font-size: 26px; }
+      font-size: 29px;
+      margin: 48px 0 36px 0; }
     main section:nth-child(2) p {
       text-align: center;
       margin-bottom: 4%;
@@ -139,17 +145,22 @@ main {
         text-transform: uppercase;
         padding: 14px 28px; }
   main section:nth-child(3) {
-    padding: 72px 0;
+    padding: 71px 0 0 0;
     background-color: #FFF;
     font-family: Montserrat; }
+    main section:nth-child(3) .arrow {
+      width: 19px;
+      height: 21px;
+      display: none;
+      padding: 1px 0 0 4px; }
+    main section:nth-child(3) #entreeid h2, main section:nth-child(3) #btn3up, main section:nth-child(3) #btn3down, main section:nth-child(3) #entreeid ul, main section:nth-child(3) #entreeid li {
+      display: none; }
     main section:nth-child(3) svg {
       font-weight: bold;
       max-width: 500px;
       height: auto;
       margin-bottom: 3%;
-      margin-left: -4px;
-      position: absolute;
-      top: 50%; }
+      margin-left: -4; }
     main section:nth-child(3) img {
       width: auto;
       height: 380px; }
@@ -158,22 +169,15 @@ main {
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 20px;
-      font-weight: 400;
-      position: absolute;
-      top: 45%; }
+      font-weight: 400; }
     main section:nth-child(3) h2 {
       position: relative;
-      display: inline-block;
-      margin-bottom: 36px;
       text-transform: uppercase;
-      font-size: 40px; }
+      font-size: 29px;
+      margin: 46px 0 36px 0; }
     main section:nth-child(3) li {
       padding-bottom: 15px;
       list-style-type: circle; }
-    main section:nth-child(3) .title {
-      font-size: 20px;
-      line-height: 30px;
-      margin-bottom: 4%; }
     main section:nth-child(3) .desc {
       font-size: 15px;
       line-height: 35px;
@@ -190,58 +194,58 @@ main {
         display: inline-block;
         text-transform: uppercase;
         padding: 14px 28px; }
-  main section:last-child {
+  main section:nth-child(4) {
     padding: 72px 0;
-    background-color: #FFF;
-    font-family: Montserrat; }
-    main section:last-child .arrow {
-      width: 40px;
-      height: 40px;
-      margin: 0 0 10% 50%; }
-    main section:last-child #btn4up, main section:last-child #btn5up, main section:last-child #btn6up, main section:last-child #btn7up, main section:last-child #btn8up, main section:last-child #btn9up {
+    font-family: Montserrat;
+    background-color: #FFF; }
+    main section:nth-child(4) .home-subtitle {
+      font-size: 14px; }
+    main section:nth-child(4) .arrow {
+      width: 19px;
+      height: 21px;
+      display: none;
+      padding: 1px 0 0 4px; }
+    main section:nth-child(4) .compotitle {
       display: none; }
-    main section:last-child #compo1, main section:last-child #compo2, main section:last-child #compo3, main section:last-child #compo4, main section:last-child #compo5, main section:last-child #compo6 {
+    main section:nth-child(4) #platsid h2, main section:nth-child(4) #compositions h3, main section:nth-child(4) #huitres h3, main section:nth-child(4) #btn4up, main section:nth-child(4) #btn5up, main section:nth-child(4) #btn6up, main section:nth-child(4) #btn7up, main section:nth-child(4) #btn8up, main section:nth-child(4) #btn9up, main section:nth-child(4) #compo1, main section:nth-child(4) #compo2, main section:nth-child(4) #compo3, main section:nth-child(4) #compo4, main section:nth-child(4) #compo5, main section:nth-child(4) #compo6 {
       display: none; }
-    main section:last-child svg {
+    main section:nth-child(4) svg {
       font-weight: bold;
       max-width: 500px;
       height: auto;
       margin-bottom: 3%;
-      margin-left: -4px;
-      position: absolute;
-      top: 50%; }
-    main section:last-child img {
+      margin-left: -4px; }
+    main section:nth-child(4) img {
       width: auto;
       height: 380px; }
-    main section:last-child h3 {
-      font-size: 14px;
+    main section:nth-child(4) h3 {
+      font-size: 22px;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 20px;
-      font-weight: 400;
-      position: absolute;
-      top: 45%; }
-    main section:last-child h2 {
+      font-weight: 400; }
+    main section:nth-child(4) h2 {
       position: relative;
       display: inline-block;
-      margin-bottom: 36px;
       text-transform: uppercase;
-      font-size: 26px; }
-    main section:last-child li {
+      font-size: 29px;
+      margin: 48px 0 35px 0; }
+    main section:nth-child(4) li {
       padding-bottom: 15px;
-      list-style-type: circle; }
-    main section:last-child .title {
-      font-size: 20px;
+      list-style-type: circle;
+      text-align: left; }
+    main section:nth-child(4) .title {
+      font-size: 17px;
       line-height: 30px;
-      margin-bottom: 4%; }
-    main section:last-child .desc {
+      margin-bottom: 6%; }
+    main section:nth-child(4) .desc {
       font-size: 15px;
       line-height: 35px;
       margin-bottom: 24px; }
-    main section:last-child button {
+    main section:nth-child(4) button {
       border: 2px solid #000000;
       background-color: transparent; }
-      main section:last-child button a {
+      main section:nth-child(4) button a {
         text-decoration: none;
         color: #000;
         font-size: 11px;

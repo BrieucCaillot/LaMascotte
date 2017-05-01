@@ -43,7 +43,8 @@ main {
   /* FORM */ }
   main section:first-child {
     background: url("../images/interieur2.jpg") no-repeat;
-    background-size: 100% 130%;
+    background-size: cover;
+    background-attachment: fixed;
     height: 500px; }
     main section:first-child h1 {
       font-family: Montserrat;
