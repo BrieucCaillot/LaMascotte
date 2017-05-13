@@ -12,50 +12,61 @@ body {
 
 /* HEADER */
 header {
-	width: 100%;
-	min-height: 106px;
-	background-color: transparent;
-	position: absolute;
+	position: fixed;
 	top: 0;
-	z-index: 3;
-	margin-left: auto;
-	margin-right: auto;
-    -webkit-transition: 0.5s; /* Safari */
-    transition: 0.5s;
+	width: 100%;
+    min-height: 90px;
+    background-color: rgb(107, 151, 127);
+    z-index: 3;
+    -webkit-transition:  0.3s;
+    -moz-transition:  0.3s;
+    -ms-transition:  0.3s;
+    -o-transition: 0.3s;
+    transition:  0.3s;
+    color: #fff;
+    border-bottom: 5px solid #e0d2b1;
 
-    #logo {
-    	float: left;
-    	padding: 10px 52px;
+    .container {
+    	width: 1280px;
     }
+	
+	#logo {
+		padding: 15px 0 0 0;
+	}
 
     #logo img {
-    	width: 210px;
+		width: 250px; 
     }
 
-    nav {
-    	font-family: Quicksand;
-    	color: #fff;
-    	font-size: 18px; 
-    	width: 70%;
-    	position: absolute;        
-    	left: 50%;
-    	-webkit-transform: translateX(-50%);
-    	transform: translateX(-50%);
-    	text-align: center;
-    	padding: 20px 0;
+	nav {
+		font-family: Montserrat;
+		padding: 50px 0px 0px 0px;
+		text-align: center;
 
-    	ul {
+			ul {
 
 
-    		li {
-    			display: inline-block;
-    			list-style-type: none;
-    			padding: 20px 20px;
-    			font-size: 19px;
-    			font-weight: 500;
-    		}
-    	}
-    }
+			li {
+				display: inline-block;
+				list-style-type: none;
+				padding: 11px 13px;
+				font-size: 17px;
+
+				a {
+					text-decoration: none;
+					color: inherit;
+				}
+			}
+		}
+	}
+
+	#headersocial {
+		padding: 41px 0 0 0;
+
+		img {
+			width: 30px;
+		}
+	}
 }
 
 /* MAIN */
@@ -73,7 +84,7 @@ main {
 			font-size: 60px;
 			color: #FFF;
 			position: absolute;
-			top: 25%;
+			top: 35%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			z-index: 2;
@@ -83,7 +94,7 @@ main {
 			border: 2px solid #ffffff;
 			z-index: 2;
 			position: absolute;
-			top: 37%;
+			top: 47%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			background-color: transparent;
