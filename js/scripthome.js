@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-/* FIXED MENU */
-
+    /* FIXED MENU */
     $(document).on("scroll", function() {
 
         if ($(document).scrollTop()>80) {
@@ -60,8 +59,7 @@ $(document).ready(function() {
         }
     }); 
 
-/* HOVER MENU */
-
+    /* HOVER MENU */
 	$(".hovermenu1").hover(function(){
 
     	if ($('.hovermenu1').hasClass('menuhover')){

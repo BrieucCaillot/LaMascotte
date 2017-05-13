@@ -1,42 +1,43 @@
-* {
+body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: Roboto; }
 
 /* HEADER */
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  min-height: 90px;
-  background-color: #6b977f;
+  min-height: 128px;
   z-index: 3;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  color: #fff;
-  border-bottom: 5px solid #e0d2b1; }
+  color: #fff; }
   header .container {
-    width: 1280px; }
+    width: 1350px; }
   header #logo {
     padding: 15px 0 0 0; }
   header #logo img {
     width: 250px; }
   header nav {
-    font-family: Montserrat;
     padding: 50px 0px 0px 0px;
-    text-align: center; }
+    text-align: center;
+    font-family: roboto;
+    font-weight: bold; }
     header nav ul li {
       display: inline-block;
       list-style-type: none;
       padding: 11px 13px;
-      font-size: 17px; }
+      font-size: 18px;
+      letter-spacing: 2px; }
       header nav ul li a {
         text-decoration: none;
         color: inherit; }
   header #headersocial {
-    padding: 41px 0 0 0; }
+    padding: 50px 0 0 0; }
     header #headersocial img {
       width: 30px; }
 
@@ -44,8 +45,6 @@ header {
 main {
   /* HISTOIRE */
   /* RESTAURANT */
-  /* BAR */
-  /*L'ECAILLE */
   /* 1935 */
   /* 2000 */
   /* 2006 */
@@ -56,14 +55,14 @@ main {
     background-attachment: fixed;
     height: 500px; }
     main section:first-child h1 {
-      font-family: Montserrat;
       font-size: 60px;
       color: #FFF;
       position: absolute;
       top: 35%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 2; }
+      z-index: 2;
+      font-family: Montserrat; }
     main section:first-child button {
       border: 2px solid #ffffff;
       z-index: 2;
@@ -83,19 +82,19 @@ main {
         padding: 17px 28px; }
   main section:nth-child(2) {
     padding: 72px 0;
-    background-color: #FFF;
-    font-family: Montserrat; }
+    background-color: #FFF; }
     main section:nth-child(2) svg {
       font-weight: bold;
       max-width: 500px;
       height: auto;
-      margin-bottom: 3%;
-      margin-left: 6%; }
+      margin-bottom: 6%;
+      margin-left: 6%;
+      font-family: Montserrat; }
     main section:nth-child(2) img {
       width: auto;
       height: 380px; }
     main section:nth-child(2) h3 {
-      font-size: 14px;
+      font-size: 17px;
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -107,8 +106,8 @@ main {
       text-transform: uppercase;
       font-size: 40px; }
     main section:nth-child(2) .title {
-      font-size: 20px;
-      margin-bottom: 6%;
+      font-size: 30px;
+      margin-bottom: 4%;
       line-height: 30px; }
     main section:nth-child(2) .desc {
       font-size: 15px;
@@ -130,139 +129,43 @@ main {
         padding: 14px 28px; }
   main section:nth-child(3) {
     padding: 72px 0;
-    background-color: #FFF;
-    font-family: Montserrat; }
+    background-color: #FFF; }
     main section:nth-child(3) svg {
-      font-weight: bold;
-      max-width: 400px;
-      height: auto;
-      margin-bottom: 3%; }
-    main section:nth-child(3) img {
-      width: auto;
-      height: 380px; }
-    main section:nth-child(3) h3 {
-      font-size: 14px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin: 0 0 20px 40px; }
-    main section:nth-child(3) h2 {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 36px;
-      text-transform: uppercase;
-      font-size: 40px; }
-    main section:nth-child(3) .title {
-      font-size: 20px;
-      line-height: 30px;
-      margin: 0 0 4.7% 40px; }
-    main section:nth-child(3) .desc {
-      font-size: 15px;
-      line-height: 35px;
-      margin: 0 0 24px 40px; }
-    main section:nth-child(3) button {
-      border: 2px solid #000000;
-      background-color: transparent;
-      margin-left: 40px; }
-      main section:nth-child(3) button a {
-        text-decoration: none;
-        color: #000;
-        font-size: 11px;
-        letter-spacing: 2px;
-        font-weight: initial;
-        display: inline-block;
-        text-transform: uppercase;
-        padding: 14px 28px; }
-  main section:nth-child(4) {
-    padding: 72px 0;
-    background-color: #FFF;
-    font-family: Montserrat; }
-    main section:nth-child(4) svg {
-      font-weight: bold;
-      max-width: 400px;
-      height: auto;
-      margin-bottom: 3%;
-      margin-left: 24%; }
-    main section:nth-child(4) img {
-      width: auto;
-      height: 380px; }
-    main section:nth-child(4) h3 {
-      font-size: 14px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 20px; }
-    main section:nth-child(4) h2 {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 36px;
-      text-transform: uppercase;
-      font-size: 40px; }
-    main section:nth-child(4) .title {
-      font-size: 20px;
-      margin-bottom: 6%;
-      line-height: 30px; }
-    main section:nth-child(4) .desc {
-      font-size: 15px;
-      line-height: 35px;
-      margin-bottom: 24px; }
-    main section:nth-child(4) button {
-      border: 2px solid #000000;
-      background-color: transparent;
-      position: absolute;
-      right: 15px; }
-      main section:nth-child(4) button a {
-        text-decoration: none;
-        color: #000;
-        font-size: 11px;
-        letter-spacing: 2px;
-        font-weight: initial;
-        display: inline-block;
-        text-transform: uppercase;
-        padding: 14px 28px; }
-  main section:nth-child(5) {
-    padding: 72px 0;
-    background-color: #FFF;
-    font-family: Montserrat; }
-    main section:nth-child(5) svg {
       font-weight: bold;
       max-width: 400px;
       height: auto;
       margin-bottom: 3%;
       margin-left: 25%; }
+    main section:nth-child(3) h3 {
+      font-size: 15px;
+      line-height: 35px; }
+  main section:nth-child(4) {
+    padding: 72px 0;
+    background-color: #FFF; }
+    main section:nth-child(4) svg {
+      font-weight: bold;
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 3%;
+      margin-left: -16px; }
+    main section:nth-child(4) h3 {
+      font-size: 15px;
+      line-height: 35px; }
+  main section:nth-child(5) {
+    padding: 72px 0;
+    background-color: #FFF; }
+    main section:nth-child(5) svg {
+      font-weight: bold;
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 3%;
+      margin-left: -16px; }
     main section:nth-child(5) h3 {
-      font-size: 15px;
-      line-height: 35px; }
-  main section:nth-child(6) {
-    padding: 72px 0;
-    background-color: #FFF;
-    font-family: Montserrat; }
-    main section:nth-child(6) svg {
-      font-weight: bold;
-      max-width: 400px;
-      height: auto;
-      margin-bottom: 3%;
-      margin-left: -16px; }
-    main section:nth-child(6) h3 {
-      font-size: 15px;
-      line-height: 35px; }
-  main section:nth-child(7) {
-    padding: 72px 0;
-    background-color: #FFF;
-    font-family: Montserrat; }
-    main section:nth-child(7) svg {
-      font-weight: bold;
-      max-width: 400px;
-      height: auto;
-      margin-bottom: 3%;
-      margin-left: -16px; }
-    main section:nth-child(7) h3 {
       font-size: 15px;
       line-height: 35px; }
   main section:last-child {
     padding: 72px 0;
-    background-color: #FFF;
-    font-family: Montserrat; }
+    background-color: #FFF; }
     main section:last-child svg {
       font-weight: bold;
       max-width: 400px;
@@ -279,8 +182,7 @@ footer {
   background-color: #4c4444;
   color: #fff; }
   footer .row div:first-child {
-    position: relative;
-    font-family: Montserrat; }
+    position: relative; }
     footer .row div:first-child h4 {
       position: absolute;
       top: 40%;

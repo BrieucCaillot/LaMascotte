@@ -1,18 +1,19 @@
 $(document).ready(function() {
 
-/* FIXED MENU */
-
+    /* FIXED MENU */
     $(document).on("scroll", function() {
 
         if ($(document).scrollTop()>80) {
 
             $("header").css({
                 "z-index": "200",
-                "min-height": "7%"
+                "min-height": "60px",
+                "background-color": "rgb(107, 151, 127)",
+                "border-bottom": "5px solid #e0d2b1"
             });
 
             $("header nav").css({
-                "padding": "22px 0px 0px 0px"
+                "padding": "19px 0px 0px 0px"
             });
 
             $("#logo img").css({
@@ -20,7 +21,7 @@ $(document).ready(function() {
             });
 
             $("header #logo").css({
-                "padding": "15px 0 0 0",
+                "padding": "10px 0 0 0",
             });
 
             $("header #headersocial").css({
@@ -56,5 +57,5 @@ $(document).ready(function() {
                 "padding": '',
             });
         }
-    });  
+    });
 });
