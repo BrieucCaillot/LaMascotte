@@ -43,25 +43,26 @@ header {
 
 /* MAIN */
 main {
-  margin-bottom: 3.5%;
-  /* BOOK A TABLE */
-  /* FORM TEXT */
-  /* FORM */ }
+  /* HISTOIRE */
+  /* RESTAURANT */
+  /* 1935 */
+  /* 2000 */
+  /* 2006 */
+  /* 2017 */ }
   main section:first-child {
-    background: url("../images/interieur2.jpg") no-repeat;
-    background-size: cover;
+    background: url("../images/facade2.jpg") no-repeat;
+    background-size: 100% 70%;
     background-attachment: fixed;
     height: 500px; }
     main section:first-child h1 {
-      font-family: Montserrat;
       font-size: 60px;
       color: #FFF;
       position: absolute;
-      top: 37%;
+      top: 35%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
-      width: 684px; }
+      font-family: Montserrat; }
     main section:first-child button {
       border: 2px solid #ffffff;
       z-index: 2;
@@ -80,50 +81,51 @@ main {
         text-transform: uppercase;
         padding: 17px 28px; }
   main section:nth-child(2) {
-    padding: 72px 0;
+    padding: 72px 0 0 0;
     background-color: #FFF; }
     main section:nth-child(2) svg {
       font-weight: bold;
-      max-width: 450px;
+      max-width: 500px;
       height: auto;
-      margin-bottom: 3%;
-      margin-left: -16px;
+      margin-bottom: 6%;
       font-family: Montserrat; }
+    main section:nth-child(2) img {
+      width: auto;
+      height: 380px; }
     main section:nth-child(2) h3 {
       font-size: 17px;
-      line-height: 35px; }
-  main section:nth-child(3) {
-    background-color: #FFF; }
-    main section:nth-child(3) h3 {
-      font-size: 27px;
+      font-weight: 400;
       text-transform: uppercase;
-      padding: 8% 0%;
-      text-align: center; }
-    main section:nth-child(3) p {
-      font-size: 15px;
-      text-transform: uppercase;
-      line-height: 30px;
-      text-align: center; }
-    main section:nth-child(3) input, main section:nth-child(3) textarea {
-      border: 2px solid;
-      border-color: #6b97ac;
-      background-color: transparent;
-      padding: 19px 16px;
-      font-family: 'Montserrat', sans-serif;
       letter-spacing: 2px;
-      font-size: 14px;
-      font-weight: 900;
-      color: #333333;
-      width: 100%;
-      height: 55px;
-      margin: 0;
-      text-overflow: ellipsis;
-      text-align: center;
-      outline: none; }
-    main section:nth-child(3) input {
-      margin: 8px 0px; }
-    main section:nth-child(3) textarea {
-      height: 103px; }
+      margin-bottom: 20px; }
+    main section:nth-child(2) h2 {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 36px;
+      text-transform: uppercase;
+      font-size: 40px; }
+    main section:nth-child(2) .title {
+      font-size: 30px;
+      margin-bottom: 4%;
+      line-height: 30px; }
+    main section:nth-child(2) .desc {
+      font-size: 15px;
+      line-height: 35px;
+      margin-bottom: 24px; }
+    main section:nth-child(2) button {
+      border: 2px solid #000000;
+      background-color: transparent;
+      position: absolute;
+      right: 15px; }
+      main section:nth-child(2) button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: initial;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 14px 28px; }
 
 /* FOOTER */
 footer {
@@ -214,4 +216,7 @@ footer {
     right: 0;
     bottom: -20px; }
 
-/*# sourceMappingURL=booking.css.map */
+/************** RESPONSIVE ***************/
+/* MEDIA QUERIES MAX WIDTH 1100px */
+
+/*# sourceMappingURL=about.css.map */
