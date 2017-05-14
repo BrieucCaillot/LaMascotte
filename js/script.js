@@ -9,7 +9,7 @@ $(document).ready(function() {
                 "z-index": "200",
                 "min-height": "60px",
                 "background-color": "rgb(107, 151, 127)",
-                "border-bottom": "5px solid #e0d2b1"
+                "border-bottom": "3px solid #e0d2b1"
             });
 
             $("header nav").css({

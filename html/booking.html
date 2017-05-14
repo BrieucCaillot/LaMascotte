@@ -45,42 +45,42 @@
     <!--HEADER-->
     <header>
         <div class="container">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-3 text-center">
-                            <div id="logo">
-                                <a href="../index.html">
-                                    <img src="../images/logomascotte.png" alt="logo la mascotte">
-                                </a>
-                            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <div id="logo">
+                            <a href="../index.html">
+                                <img src="../images/logobeige.png" alt="logo la mascotte">
+                            </a>
                         </div>
-                        <div class="col-md-7 text-center">
-                            <nav>
-                                <ul>
-                                <li><a href="../index.html">ACCUEIL</a></li>
-                                <li><a href="about.html">À PROPOS</a></li>
-                                <li><a href="menu.html">MENU</a></li>
-                                <li><a href="booking.html">RÉSERVER</a></li>
-                                <li><a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/">LIVRAISON</a></li>
-                                <li>CONTACT</li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="col-md-2 text-center">
-                            <div id="headersocial">
-                                <a href="#">
-                                    <img src="../images/facebook.svg" alt="facebook">
-                                </a>
-                                <a href="#">
-                                    <img src="../images/instagram.svg" alt="facebook">
-                                </a>
-                                <a href="">
-                                    <img src="../images/engflag.png" alt="english">
-                                </a>
-                            </div>
+                    </div>
+                    <div class="col-md-7 text-center">
+                        <nav>
+                            <ul>
+                            <li><a href="../index.html">ACCUEIL</a></li>
+                            <li><a href="about.html">À PROPOS</a></li>
+                            <li><a href="menu.html">MENU</a></li>
+                            <li><a href="booking.html">RÉSERVER</a></li>
+                            <li><a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/">LIVRAISON</a></li>
+                            <li>CONTACT</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <div id="headersocial">
+                            <a href="#">
+                                <img src="../images/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="#">
+                                <img src="../images/instagram.svg" alt="facebook">
+                            </a>
+                            <a href="">
+                                <img src="../images/engflag.png" alt="english">
+                            </a>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </header> 
      
@@ -113,11 +113,11 @@
                                         </path>
                                     </pattern>
                                 </defs>
-                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">FORMULAIRE</text>
-                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">FORMULAIRE</text>
+                                <text text-anchor="middle" x="50" y="15" fill="url(#wave)"  fill-opacity="0.6">FORMULAIRE</text>
+                                <text text-anchor="middle" x="50" y="15" fill="url(#gradient)" fill-opacity="0.5">FORMULAIRE</text>
                             </svg>
                             <h3>
-                                Réservez une table 
+                                REMPLISSEZ LE FORMULAIRE<br>POUR RÉSERVER
                             </h3>
                         </div>
                     </div>
@@ -194,23 +194,38 @@
 
     <!--FOOTER-->
     <footer>
-        <div class="container-fluid">
+        <div class="container text-center">
             <div class="row">
-                <div class="col-md-6">
-                    <button>
-                        <a href="booking.html">RÉSERVER</a>
-                    </button>
-                    <button>
-                        <a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/">COMMANDER</a>
-                    </button>
-                    <h4>52 Rue des Abbesses,<br>75018 Paris<br>18e arrondissement,<br>France</h4>
-                    <p>01 46 06 28 15</p>
-                    
-                    <img src="../images/logomascotteclair.png" alt="">
+                <div class="col-md-5">
+                    <a href="credits.html" class="btn btn-credits">Crédits &amp; Mentions légales</a>
                 </div>
-                <div class="col-md-6">
-                    <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJue8o9E9u5kcRJ2G1N7QaShw&key=AIzaSyBEp_uq8_BW0a7INepol4BVdqfnNZnflDs" allowfullscreen>
-                    </iframe>
+                <div class="col-md-5">
+                    <form class="form-newsletter" method="post" action="">
+                    <label for="email">Newsletter :</label>
+                    <input type="text" class="form-email input-text" placeholder="Votre email" name="ne" id="ne">
+                    <span class="border-newsletter"><span class="border"></span></span>
+                    <input type="submit" class="btn btn-submit" value="OK">
+                    <div class="form-message valid">
+                        <p>
+                            Votre inscription a bien &eacute;t&eacute; prise en compte.
+                        </p>
+                    </div>
+                    <div class="form-message error valid-error">
+                        <p>
+                            Merci de saisir un e-mail valide.
+                        </p>
+                    </div>
+                    <div class="form-message error post-error">
+                        <p>
+                            Probl&egrave;me technique, veuillez r&eacute;essayer ult&eacute;rieurement.
+                        </p>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <a href="index.html#">
+                        <img src="../images/logobrown.png" alt="Restaurant La Mascotte" class="footer-logo">
+                    </a>
                 </div>
             </div>
         </div>

@@ -45,8 +45,9 @@ header {
 main {
   /* LA MASCOTTE RESTAURANT BRASSERIE */
   /* BOXES */
-  /* ABOUT */
-  /* MENU */ }
+  /* SWIPER */
+  /* MENU */
+  /* SWIPER ABOUT */ }
   main #header {
     height: 100%;
     background: url("../images/swiper2.jpg") no-repeat;
@@ -60,7 +61,9 @@ main {
       position: absolute;
       top: 40%;
       left: 50%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      width: 83%;
+      text-align: center; }
     main #header h2 {
       font-size: 30px;
       color: white;
@@ -107,160 +110,93 @@ main {
       align-items: center; }
     main #header .swiper-slide img {
       width: 100%; }
-  main section:nth-child(2) {
+  main #description {
     background-color: #F4F4F4;
     padding: 60px 0;
     font-family: roboto; }
-    main section:nth-child(2) .container {
+    main #description .container {
       width: 90%; }
-    main section:nth-child(2) img {
+    main #description img {
       width: 76%;
       margin-left: 45px; }
-    main section:nth-child(2) span {
+    main #description span {
       font-size: 22px;
       font-weight: bold; }
-    main section:nth-child(2) p {
+    main #description p {
       line-height: 36px;
       padding-top: 32px;
       font-weight: 100;
       font-size: 17px; }
-  main #about {
-    background-color: #FFF;
-    padding: 15px 0; }
-    main #about svg {
-      font-weight: bold;
-      height: auto;
-      margin-bottom: 3%;
-      margin-left: 26%;
-      font-size: 14px; }
-    main #about img {
-      width: 100%;
-      height: 380px; }
-    main #about h3 {
-      font-size: 17px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin: 3% 40px 4% 0; }
-    main #about h2 {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 36px;
-      text-transform: uppercase;
-      font-size: 40px; }
-    main #about .title {
-      font-size: 20px;
-      margin-bottom: 6%;
-      line-height: 30px;
-      margin: 0 43px 0 6%; }
-    main #about .desc {
-      font-size: 15px;
-      line-height: 35px;
-      margin-bottom: 24px;
-      margin: 0 42px 24px 0; }
-    main #about .swiper-container {
-      width: 100%;
-      height: 100%;
-      margin-left: auto;
-      margin-right: auto; }
-    main #about .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center; }
-    main #about button {
-      border: 2px solid #000000;
-      background-color: transparent;
-      position: absolute;
-      right: 60px; }
-      main #about button a {
-        text-decoration: none;
-        color: #000;
-        font-size: 11px;
-        letter-spacing: 2px;
-        font-weight: initial;
-        display: inline-block;
-        text-transform: uppercase;
-        padding: 14px 28px; }
-  main #ecaille {
-    background-color: #FFF;
-    padding: 15px 0; }
-    main #ecaille svg {
-      font-weight: bold;
-      height: auto;
-      margin-bottom: 3%;
-      margin-left: 3%;
-      font-size: 12px; }
-    main #ecaille img {
-      height: 380px;
-      width: 100%; }
-    main #ecaille h3 {
-      font-size: 17px;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin: 0 0 9px 40px; }
-    main #ecaille h2 {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 36px;
-      text-transform: uppercase;
-      font-size: 40px; }
-    main #ecaille .title {
-      font-size: 20px;
-      line-height: 30px;
-      margin: 0 0 4% 7%; }
-    main #ecaille .desc {
-      font-size: 15px;
-      line-height: 35px;
-      margin: 0 0 24px 40px; }
-    main #ecaille .swiper-container {
-      width: 100%;
-      height: 100%;
-      margin-left: auto;
-      margin-right: auto; }
-    main #ecaille .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center; }
-    main #ecaille button {
-      border: 2px solid #000000;
-      background-color: transparent;
-      margin-left: 40px; }
-      main #ecaille button a {
-        text-decoration: none;
-        color: #000;
-        font-size: 11px;
-        letter-spacing: 2px;
-        font-weight: initial;
-        display: inline-block;
-        text-transform: uppercase;
-        padding: 14px 28px; }
+  main #swiper .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto; }
+  main #swiper .swiper-slide {
+    cursor: pointer;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  main #swiper .gallery-top {
+    height: 80%;
+    width: 100%; }
+  main #swiper .gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0; }
+  main #swiper .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+    background-size: cover;
+    cursor: pointer; }
+  main #swiper .gallery-thumbs .swiper-slide-active {
+    opacity: 1; }
+  main #swiper .close-button {
+    display: none;
+    height: 45px;
+    width: 45px;
+    color: #fff;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    font-size: 32px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: .75; }
+  main #swiper .close-button:before {
+    content: ''; }
+  main #swiper .close-button:hover,
+  main #swiper .close-button:active {
+    opacity: 1; }
+  main #swiper .fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #161418; }
+  main #swiper .fullscreen .gallery-top .swiper-slide {
+    cursor: default;
+    background-size: contain; }
+  main #swiper .fullscreen .close-button {
+    display: block; }
+  main #swiper .fullscreen .gallery-top {
+    height: 100%; }
+  main #swiper .fullscreen .gallery-thumbs {
+    background-color: #000;
+    height: 20%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 10;
+    transition: opacity .3s ease-in-out;
+    transition-delay: .5s; }
+  main #swiper .fullscreen .gallery-thumbs:hover {
+    opacity: 1;
+    transition-delay: 0s; }
   main #menuu {
     background-color: #fff;
     padding: 54px 0;
@@ -272,6 +208,8 @@ main {
         text-transform: uppercase;
         font-size: 40px;
     }*/ }
+    main #menuu .container {
+      width: 1360px; }
     main #menuu svg {
       font-family: montserrat;
       font-weight: bold;
@@ -337,64 +275,235 @@ main {
     main #menuu button:hover {
       background-color: #000;
       color: #fff; }
+  main #swiperabout {
+    height: 500px;
+    /* LA MASCOTTE */
+    /* L'ECAILLE*/ }
+    main #swiperabout #about {
+      background-color: #FFF;
+      padding: 15px 0; }
+      main #swiperabout #about svg {
+        font-weight: bold;
+        height: auto;
+        margin-bottom: 3%;
+        margin-left: 26%;
+        font-size: 14px; }
+      main #swiperabout #about img {
+        width: 100%;
+        height: 380px; }
+      main #swiperabout #about h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 3% 40px 4% 0; }
+      main #swiperabout #about h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main #swiperabout #about .title {
+        font-size: 20px;
+        margin-bottom: 6%;
+        line-height: 30px;
+        margin: 0 43px 0 6%; }
+      main #swiperabout #about .desc {
+        font-size: 15px;
+        line-height: 35px;
+        margin-bottom: 24px;
+        margin: 0 42px 24px 0; }
+      main #swiperabout #about .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto; }
+      main #swiperabout #about .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center; }
+      main #swiperabout #about button {
+        border: 2px solid #000000;
+        background-color: transparent;
+        position: absolute;
+        right: 60px; }
+        main #swiperabout #about button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+    main #swiperabout #ecaille {
+      background-color: #FFF;
+      padding: 15px 0; }
+      main #swiperabout #ecaille svg {
+        font-weight: bold;
+        height: auto;
+        margin-bottom: 3%;
+        margin-left: 3%;
+        font-size: 12px; }
+      main #swiperabout #ecaille img {
+        height: 380px;
+        width: 100%; }
+      main #swiperabout #ecaille h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 0 9px 40px; }
+      main #swiperabout #ecaille h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main #swiperabout #ecaille .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 0 4% 7%; }
+      main #swiperabout #ecaille .desc {
+        font-size: 15px;
+        line-height: 35px;
+        margin: 0 0 24px 40px; }
+      main #swiperabout #ecaille .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto; }
+      main #swiperabout #ecaille .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center; }
+      main #swiperabout #ecaille button {
+        border: 2px solid #000000;
+        background-color: transparent;
+        margin-left: 40px; }
+        main #swiperabout #ecaille button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
 
 /* FOOTER */
 footer {
-  height: 350px;
-  background-color: #4c4444;
-  color: #fff; }
-  footer .row div:first-child {
+  margin: 1.5% 0%; }
+  footer img {
+    width: 145px; }
+  footer input {
+    background: #F6F6F6;
+    border: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 11px;
+    line-height: normal;
+    font-family: "Lato", sans-serif;
+    padding: 14px;
+    margin: 0; }
+  footer .btn-credits {
+    display: inline-block;
+    margin-right: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0e2046; }
+  footer .form-newsletter {
+    display: inline-block;
+    margin-right: 25px;
     position: relative; }
-    footer .row div:first-child h4 {
-      position: absolute;
-      top: 40%;
-      left: 8%;
-      line-height: 26px;
-      font-size: 18px; }
-    footer .row div:first-child p {
-      position: absolute;
-      top: 47%;
-      left: 54%;
-      font-size: 22px; }
-    footer .row div:first-child button:first-child {
-      border: 2px solid #ffffff;
-      z-index: 2;
-      position: absolute;
-      top: 78%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: transparent; }
-      footer .row div:first-child button:first-child a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 14px;
-        letter-spacing: 2px;
-        font-weight: initial;
-        display: inline-block;
-        text-transform: uppercase;
-        padding: 17px 28px; }
-    footer .row div:first-child button:nth-child(2) {
-      border: 2px solid #ffffff;
-      z-index: 2;
-      position: absolute;
-      top: 78%;
-      left: 81%;
-      transform: translate(-50%, -50%);
-      background-color: transparent; }
-      footer .row div:first-child button:nth-child(2) a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 14px;
-        letter-spacing: 2px;
-        font-weight: initial;
-        display: inline-block;
-        text-transform: uppercase;
-        padding: 17px 28px; }
-    footer .row div:first-child img {
-      position: absolute;
-      top: 7%;
-      left: 39%; }
-  footer .row div:last-child {
-    padding-right: 0px; }
+  footer .form-newsletter label {
+    text-transform: uppercase;
+    color: #7b7b7b;
+    margin-right: 22px;
+    font-size: 13px; }
+  footer .form-newsletter input.input-text {
+    padding: 14px 14px 14px 19px;
+    width: auto; }
+  footer .form-newsletter input {
+    background: #F6F6F6;
+    border: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 11px;
+    line-height: normal;
+    font-family: "Lato", sans-serif;
+    padding: 14px;
+    margin: 0; }
+  footer .form-newsletter .border-newsletter {
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    padding: 14px 0;
+    margin: 0 0 0 -3px; }
+  footer .form-newsletter input.btn-submit {
+    cursor: pointer;
+    color: #040404;
+    margin-left: -2px;
+    margin-top: 0px; }
+  footer .form-newsletter input {
+    background: #F6F6F6;
+    border: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 11px;
+    line-height: normal;
+    font-family: "Lato", sans-serif;
+    padding: 14px;
+    margin: 0; }
+  footer .form-newsletter .form-message.valid {
+    color: #145214; }
+  footer .form-newsletter .form-message {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: -20px; }
+  footer .form-newsletter .form-message.valid-error, footer footer .form-newsletter .form-message.error {
+    color: #B20000; }
+  footer .form-newsletter .form-message {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: -20px; }
+  footer .form-newsletter .form-message.error {
+    color: #B20000; }
+  footer .form-newsletter .form-message {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: -20px; }
 
 /*# sourceMappingURL=main.css.map */
