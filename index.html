@@ -126,41 +126,46 @@
             </div>
         </section>
     
-        <!-- SWIPER INSIDE -->
-        <section id="swiper">
+        <!--SWIPER IMAGES RESTAURANT -->
+        <!-- Swiper -->
+        <div id="swiperrestaurant">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-push-3">
-                    <!-- Swiper -->
-                        <div class="swiper-container">
-                            <span class="close-button"></span>
-                            <div class="gallery-top">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
-                                    <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
-                                    <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/equipe.jpg" alt="" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="images/facadenuit.jpg" alt="" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="images/interieur1.jpg" alt="" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="images/interieur2.jpg" alt="" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="images/bar1.jpg" alt="" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="images/ecaille1.jpg" alt="" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="images/ecaille2.jpg" alt="" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="images/ecaille4.jpg" alt="" width="100%" height="100%"></div>
+                        <div class="swiper-slide"><img src="images/ecaille5.jpg" alt="" width="100%" height="100%"></div>
                     </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 col-sm-push-3">
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next swiper-button-white"></div>
-                        <div class="swiper-button-prev swiper-button-white"></div>
-                        <div class="gallery-thumbs">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080) no-repeat"></div>
-                                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080) no-repeat"></div>
-                                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080) no-repeat"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <script>
+                        var swiper = new Swiper('.swiper-container', {
+                            pagination: '.swiper-pagination',
+                            slidesPerView: 1,
+                            paginationClickable: true,
+                            spaceBetween: 10,
+                            keyboardControl: true,
+                            nextButton: '.swiper-button-next',
+                            prevButton: '.swiper-button-prev',
+                            loop: true,
+                            autoplay: 3000,
+                            speed: 3000
+                        });
+                    </script>
             </div>
-        </section>
-
+        </div>
+        
         <!--MENU-->
         <section id="menuu">
             <div class="container">
@@ -242,7 +247,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="row">
-                                        <div class="col-md-5">
+                                        <div class="col-md-5 text-right">
                                             <h3 class="home-subtitle text-right">Histoire</h3>
                                             <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
                                             <svg viewbox="-7 0 120 20">
@@ -264,13 +269,16 @@
                                             text-anchor="middle" x="50" y="15" font-family="Montserrat" fill="url(#gradient)" fill-opacity="0.5">LA MASCOTTE
                                         </text>
                                     </svg>
-                                    <p class="title text-right">
+                                    <p class="title">
                                         Restaurant historique au coeur de Montmartre 
                                     </p>
-                                    <p class="desc text-right">
+                                    <p class="desc">
                                         La mascotte est un restaurant, bar dont la création semble remonter à la fin du XIXème siècle. Celui-ci se situe dans le quartier de Montmarte à Paris 18ème arrondissement.
                                     </p>
-
+                                    <button>
+                                        <a href="html/about.html" class="view-more margin-t36">Réserver
+                                        </a>
+                                    </button>
                                     <button>
                                         <a href="html/about.html" class="view-more margin-t36">En savoir plus
                                         </a>
