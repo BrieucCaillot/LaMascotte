@@ -73,7 +73,7 @@ header {
 /* MAIN */
 main {
 
-	/* LA CARTE */
+	/* HEADER LA CARTE */
 	section:first-child {
 		height: 500px;
 		background: url("../images/bigmenu.jpg") no-repeat;
@@ -114,12 +114,15 @@ main {
 		}
 	}
 
-	/* LES MENUS */
+	/* LA CARTE */
 	section:nth-child(2) {
 		padding: 71px 0 0 0;
 		background-color: #FFF;
-		
 		position: relative;
+
+		.row {
+			padding: 5% 0;
+		}
 
 		.arrow {
 			width: 19px;
@@ -204,7 +207,7 @@ main {
 		}
 	}
 
-	/* LES ENTREES */
+	/* LES MENUS */
 	section:nth-child(3) {
 		padding: 71px 0 0 0;
 		background-color: #FFF;
@@ -278,8 +281,277 @@ main {
 		}
 	}
 
-	/* LES PLATS */
+	/* LES ENTREES */
 	section:nth-child(4) {
+		padding: 72px 0;
+		
+		background-color: #FFF;
+
+		.home-subtitle {
+			font-size: 17px;
+		}
+
+		.arrow {
+			width: 19px;
+			height: 21px;
+			display: none;
+			padding: 1px 0 0 4px;
+		}
+
+		.compotitle {
+			display: none;
+		}
+
+		#platsid h2, #compositions h3, #huitres h3, #btn4up, #btn5up, #btn6up, #btn7up, #btn8up, #btn9up, #compo1, #compo2, #compo3, #compo4, #compo5, #compo6 {
+			display: none;
+		}
+
+		svg {
+			font-weight:bold;
+			max-width: 500px;
+			height:auto;
+			margin-bottom: 3%;
+			margin-left:-4px;
+			font-family: Montserrat;
+		}
+
+		img {
+			width: auto;
+			height: 380px;
+		}
+
+		h3 {
+			font-size: 22px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+			font-weight: 400;
+		}
+
+		h2 {
+			position: relative;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 29px;
+			margin: 48px 0 35px 0;
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
+			text-align: left;
+		}
+
+		.title {
+			font-size: 17px;
+			line-height: 30px;
+			margin-bottom: 6%;
+		}
+		
+		.desc {
+			font-size: 15px;
+			line-height: 35px;
+			margin-bottom: 24px;
+		}
+
+		button {
+			border: 2px solid #000000;
+			background-color: transparent;
+
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 11px;
+				letter-spacing: 2px;
+				font-weight: initial;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 14px 28px;
+			}
+		}
+	}
+
+	/* LES PLATS */
+	section:nth-child(5) {
+		padding: 72px 0;
+		background-color: #FFF;
+
+		.home-subtitle {
+			font-size: 17px;
+		}
+
+		.arrow {
+			width: 19px;
+			height: 21px;
+			display: none;
+			padding: 1px 0 0 4px;
+		}
+
+		.compotitle {
+			display: none;
+		}
+
+		#platsid h2, #compositions h3, #huitres h3, #btn4up, #btn5up, #btn6up, #btn7up, #btn8up, #btn9up, #compo1, #compo2, #compo3, #compo4, #compo5, #compo6 {
+			display: none;
+		}
+
+		svg {
+			font-weight:bold;
+			max-width: 500px;
+			height:auto;
+			margin-bottom: 3%;
+			margin-left:-4px;
+			font-family: Montserrat;
+		}
+
+		img {
+			width: auto;
+			height: 380px;
+		}
+
+		h3 {
+			font-size: 22px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+			font-weight: 400;
+		}
+
+		h2 {
+			position: relative;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 29px;
+			margin: 48px 0 35px 0;
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
+			text-align: left;
+		}
+
+		.title {
+			font-size: 17px;
+			line-height: 30px;
+			margin-bottom: 6%;
+		}
+		
+		.desc {
+			font-size: 15px;
+			line-height: 35px;
+			margin-bottom: 24px;
+		}
+
+		button {
+			border: 2px solid #000000;
+			background-color: transparent;
+
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 11px;
+				letter-spacing: 2px;
+				font-weight: initial;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 14px 28px;
+			}
+		}
+	}
+
+	/* LES DESSERTS */
+	section:nth-child(6) {
+		padding: 72px 0;
+		
+		background-color: #FFF;
+
+		.home-subtitle {
+			font-size: 17px;
+		}
+
+		.arrow {
+			width: 19px;
+			height: 21px;
+			display: none;
+			padding: 1px 0 0 4px;
+		}
+
+		.compotitle {
+			display: none;
+		}
+
+		#platsid h2, #compositions h3, #huitres h3, #btn4up, #btn5up, #btn6up, #btn7up, #btn8up, #btn9up, #compo1, #compo2, #compo3, #compo4, #compo5, #compo6 {
+			display: none;
+		}
+
+		svg {
+			font-weight:bold;
+			max-width: 500px;
+			height:auto;
+			margin-bottom: 3%;
+			margin-left:-4px;
+			font-family: Montserrat;
+		}
+
+		img {
+			width: auto;
+			height: 380px;
+		}
+
+		h3 {
+			font-size: 22px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+			font-weight: 400;
+		}
+
+		h2 {
+			position: relative;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 29px;
+			margin: 48px 0 35px 0;
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
+			text-align: left;
+		}
+
+		.title {
+			font-size: 17px;
+			line-height: 30px;
+			margin-bottom: 6%;
+		}
+		
+		.desc {
+			font-size: 15px;
+			line-height: 35px;
+			margin-bottom: 24px;
+		}
+
+		button {
+			border: 2px solid #000000;
+			background-color: transparent;
+
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 11px;
+				letter-spacing: 2px;
+				font-weight: initial;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 14px 28px;
+			}
+		}
+	}
+	
+	/* LES BOISSONS */
+	section:last-child {
 		padding: 72px 0;
 		
 		background-color: #FFF;

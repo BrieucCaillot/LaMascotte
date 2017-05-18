@@ -47,7 +47,8 @@ main {
   /* BOXES */
   /* SWIPER RESTAURANT */
   /* MENU */
-  /* SWIPER ABOUT */ }
+  /* SWIPER ABOUT */
+  /* GOOOGLE MAP API*/ }
   main #header {
     height: 100%;
     background: url("../images/swiper2.jpg") no-repeat;
@@ -89,6 +90,11 @@ main {
         display: inline-block;
         text-transform: uppercase;
         padding: 17px 28px; }
+    main #header button:hover {
+      background-color: #6B614D;
+      color: #fff; }
+      main #header button:hover a {
+        color: #fff; }
     main #header .fixed {
       background-attachment: fixed; }
     main #header .swiper-container {
@@ -271,7 +277,7 @@ main {
         -webkit-align-items: center;
         align-items: center; }
       main #swiperabout #about button {
-        border: 2px solid #000000;
+        border: 2px solid #6B6148;
         background-color: transparent;
         margin-right: 40px; }
         main #swiperabout #about button a {
@@ -283,6 +289,11 @@ main {
           display: inline-block;
           text-transform: uppercase;
           padding: 14px 28px; }
+      main #swiperabout #about button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main #swiperabout #about button:hover a {
+          color: #fff; }
     main #swiperabout #ecaille {
       background-color: #FFF;
       padding: 15px 0; }
@@ -338,7 +349,7 @@ main {
         -webkit-align-items: center;
         align-items: center; }
       main #swiperabout #ecaille button {
-        border: 2px solid #000000;
+        border: 2px solid #6B6148;
         background-color: transparent;
         margin-left: 40px; }
         main #swiperabout #ecaille button a {
@@ -350,6 +361,10 @@ main {
           display: inline-block;
           text-transform: uppercase;
           padding: 14px 28px; }
+      main #swiperabout #ecaille button:hover {
+        background-color: #6B614D; }
+        main #swiperabout #ecaille button:hover a {
+          color: #fff; }
   main section:last-child {
     height: 570px;
     position: relative;

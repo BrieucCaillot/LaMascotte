@@ -118,6 +118,14 @@ main {
 			    padding: 17px 28px;
 			}
 		}
+		button:hover {
+			background-color: #6B614D;
+			color: #fff;
+
+			a {
+				color: #fff;
+			}
+		}
 
 		.fixed {
 			background-attachment: fixed;
@@ -368,7 +376,7 @@ main {
 		    }
 
 			button {
-			    border: 2px solid #000000;
+			    border: 2px solid #6B6148;
 			    background-color: transparent;
 			    margin-right: 40px;
 
@@ -381,6 +389,15 @@ main {
 				    display: inline-block;
 				    text-transform: uppercase;
 				    padding: 14px 28px;
+				}
+			}
+
+			button:hover {
+				background-color: #6B614D;
+				color: #fff;
+
+				a {
+					color: #fff;
 				}
 			}
 		}
@@ -458,7 +475,7 @@ main {
 		    }
 
 			button {
-			    border: 2px solid #000000;
+			    border: 2px solid #6B6148;
 			    background-color: transparent;
 			    margin-left: 40px;;
 
@@ -473,9 +490,18 @@ main {
 				    padding: 14px 28px;
 				}
 			}
+
+			button:hover {
+				background-color: #6B614D;
+
+				a {
+					color: #fff;
+				}
+			}
 		}
 	}
-
+	
+	/* GOOOGLE MAP API*/
 	section:last-child {
 		height: 570px;
 		position: relative;
