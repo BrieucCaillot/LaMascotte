@@ -350,6 +350,34 @@ main {
           display: inline-block;
           text-transform: uppercase;
           padding: 14px 28px; }
+  main section:last-child {
+    height: 570px;
+    position: relative;
+    width: 100%; }
+    main section:last-child #contact {
+      position: absolute;
+      left: 18%;
+      top: 70px;
+      width: 330px;
+      height: 419px;
+      background-color: #fff;
+      z-index: 2;
+      padding: 3%;
+      line-height: 25px; }
+      main section:last-child #contact h4 {
+        font-size: 37px;
+        padding: 10px 0; }
+      main section:last-child #contact h5 {
+        font-size: 20px;
+        padding: 10px 0; }
+      main section:last-child #contact p {
+        padding: 10px 0; }
+        main section:last-child #contact p span {
+          font-size: 18px;
+          font-weight: bold; }
+    main section:last-child #map {
+      height: 100%;
+      width: 100%; }
 
 /* FOOTER */
 footer {

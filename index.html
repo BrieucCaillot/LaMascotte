@@ -23,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+
     <!--LINK-->
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -33,6 +34,9 @@
     <!--JQUERY-->
     <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/scriptmain.js"></script>
+
+    <!--GOOGLE MAP-->
+    <script type="text/javascript" src="js/googleapistyle.js"></script>
 
     <title>Accueil - La Mascotte</title>
 </head>
@@ -239,7 +243,7 @@
 
         <!--SWIPER ABOUT -->
         <!-- Swiper -->
-        <div id="swiperabout">
+        <section id="swiperabout">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div id="about" class="swiper-slide">
@@ -341,16 +345,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-        </div>    
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        </div>
-        </div>
+            </div>
+            </div>    
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+        </section>
         <!-- Swiper JS -->
         <script src="js/swiper.min.js"></script>
 
@@ -369,6 +373,31 @@
                 speed: 3000
             });
         </script>
+
+        <!--CONTACT-->
+
+        <section id="googlemap">
+            <div id="contact">
+                <div class="contact-inside">
+
+                    <h4>CONTACT</h4>
+
+                    <h5>Restaurant<br>La Mascotte</h6>
+                    <p>
+                        52 Rue des Abbesses<br>
+                        75018 Paris
+                    </p>
+                    <p><span>Ouvert</span> tous les jours<br>
+                        de 8h à 23h30
+                    </p>
+                    <p><span>Réservation</span>sur le site ou par téléphone au 01 46 06 28 15.</p>
+                </div>
+            </div>
+            <div id="map"></div>          
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ-djaWFBSh9dK9sL7fCH5eeu1DmK6hd4&callback=initMap" async defer></script>
+        </section>
+
+
 
     </main>
 
