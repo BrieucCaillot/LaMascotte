@@ -28,6 +28,20 @@ header {
     .container {
     	width: 1350px;
     }
+
+    .progressContainer{
+	  	position: fixed;
+	  	top: 72px;
+	  	left: 0;
+	  	width: 100%;
+	}
+
+	.progress{
+	  	height: 5px;
+	  	background: #e0d2b1 ;
+	  	width: 0;
+	  	transition: width 0.5s;
+	}
 	
 	#logo {
 		padding: 15px 0 0 0;
@@ -116,8 +130,8 @@ main {
 
 	/* LA CARTE */
 	section:nth-child(2) {
-		padding: 71px 0 0 0;
-		background-color: #FFF;
+		padding: 50px 0 50px 0;
+		background-color: #F4F4F4;
 		position: relative;
 
 		.row {
@@ -669,12 +683,13 @@ footer {
 	    text-transform: uppercase;
 	    text-decoration: none;
 	    color: #0e2046;
+	    padding: 3.5%;
 	}
 
 	.form-newsletter {
 	    display: inline-block;
-	    margin-right: 25px;
 	    position: relative;
+	    margin: 3px 25px 0 0;
 	}
 
 	.form-newsletter label {
