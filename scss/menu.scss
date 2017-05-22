@@ -1,0 +1,780 @@
+@import "variables";
+
+body {
+	margin : 0;
+	padding: 0;
+	font-family: Roboto;
+}
+
+body {
+	-webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s;
+}
+
+/* HEADER */
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+    min-height: 128px;
+    z-index: 3;
+    -webkit-transition:  0.3s;
+    -moz-transition:  0.3s;
+    -ms-transition:  0.3s;
+    -o-transition: 0.3s;
+    transition:  0.3s;
+    color: #fff;
+
+    .container {
+    	width: 1350px;
+    }
+
+    .progressContainer{
+	  	position: fixed;
+	  	top: 72px;
+	  	left: 0;
+	  	width: 100%;
+	}
+
+	.progress{
+	  	height: 5px;
+	  	background: #e0d2b1 ;
+	  	width: 0;
+	  	transition: width 0.5s;
+	}
+	
+	#logo {
+		padding: 15px 0 0 0;
+	}
+
+    #logo img {
+		width: 250px; 
+    }
+
+	nav {
+		padding: 50px 0px 0px 0px;
+		text-align: center;
+		font-family: roboto;
+		font-weight: bold;
+
+			ul {
+
+
+			li {
+				display: inline-block;
+				list-style-type: none;
+				padding: 11px 13px;
+				font-size: 18px;
+				letter-spacing: 2px;
+
+				a {
+					text-decoration: none;
+					color: inherit;
+				}
+			}
+		}
+	}
+
+	#headersocial {
+		padding: 50px 0 0 0;
+
+		img {
+			width: 30px;
+		}
+	}
+}
+
+/* MAIN */
+main {
+
+	/* HEADER LA CARTE */
+	section:first-child {
+		height: 500px;
+		background: url("../images/bigmenu.jpg") no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+
+		h1 {
+			
+			font-size: 60px;
+			color: #FFF;
+			position: absolute;
+			top: 35%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+			font-family: Montserrat;
+		}
+
+		button {
+			border: 2px solid #ffffff;
+			z-index: 2;
+			position: absolute;
+			top: 47%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: transparent;
+			
+			a {
+				text-decoration: none;
+				color: #fff;
+				font-size: 14px;
+				letter-spacing: 2px;
+				font-weight: initial;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 17px 28px;
+			}
+		}
+	}
+
+	/* LA CARTE */
+	section:nth-child(2) {
+		padding: 50px 0 50px 0;
+		background-color: #F4F4F4;
+		position: relative;
+
+		.row {
+			padding: 5% 0;
+		}
+
+		.arrow {
+			width: 19px;
+		    height: 21px;
+		    display: none;
+		    padding: 1px 0 0 4px;
+		}
+
+		#menus p, #menus h2, #menus ul, #menus li, #btn1up, #btn2up, #btn3up #entree1, #entree2, #plats1, #plats2, #plats3, #dessert1, #dessert2, #dessert3 {
+			display: none;
+		}
+
+		svg {
+			font-weight:bold;
+			max-width: 500px;
+			height:auto;
+			margin-bottom: 3%;
+			margin-left:-4px;
+			font-family: Montserrat;
+		}
+
+		img {
+			width: auto;
+			height: 380px;
+		}
+
+		h3 {
+			font-size: 17px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+			font-weight: 400;
+			/*position: absolute;
+			top: 45%;*/
+		}
+
+		h2 {
+			position: relative;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 29px;
+			margin: 48px 0 36px 0;
+		}
+
+		p {
+			text-align: center;
+			margin-bottom: 4%;
+			line-height: 30px;
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
+		}
+
+		.title {
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 4%;
+		}
+		
+		.desc {
+			font-size: 15px;
+			line-height: 35px;
+			margin-bottom: 24px;
+		}
+
+		button {
+			border: 2px solid #000000;
+			background-color: transparent;
+
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 11px;
+				letter-spacing: 2px;
+				font-weight: initial;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 14px 28px;
+			}
+		}
+	}
+
+	/* LES MENUS */
+	section:nth-child(3) {
+		padding: 71px 0 0 0;
+		background-color: #FFF;
+		
+
+		.arrow {
+			width: 19px;
+		    height: 21px;
+		    display: none;
+		    padding: 1px 0 0 4px;
+		}
+
+		#entreeid h2, #btn3up, #btn3down, #entreeid ul, #entreeid li {
+			display: none;
+		}
+
+		svg {
+			font-weight:bold;
+			max-width: 500px;
+			height:auto;
+			margin-bottom: 3%;
+			margin-left:-4;
+			font-family: Montserrat;
+		}
+
+		img {
+			width: auto;
+			height: 380px;
+		}
+
+		h3 {
+			font-size: 17px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+			font-weight: 400;
+		}
+
+		h2 {
+			position: relative;
+			text-transform: uppercase;
+			font-size: 29px;
+			margin: 46px 0 36px 0;
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
+		}
+
+		.desc {
+			font-size: 15px;
+			line-height: 35px;
+			margin-bottom: 24px;
+		}
+
+		button {
+			border: 2px solid #000000;
+			background-color: transparent;
+
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 11px;
+				letter-spacing: 2px;
+				font-weight: initial;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 14px 28px;
+			}
+		}
+	}
+
+	/* LES ENTREES */
+	section:nth-child(4) {
+		padding: 72px 0;
+		
+		background-color: #FFF;
+
+		.home-subtitle {
+			font-size: 17px;
+		}
+
+		.arrow {
+			width: 19px;
+			height: 21px;
+			display: none;
+			padding: 1px 0 0 4px;
+		}
+
+		.compotitle {
+			display: none;
+		}
+
+		#platsid h2, #compositions h3, #huitres h3, #btn4up, #btn5up, #btn6up, #btn7up, #btn8up, #btn9up, #compo1, #compo2, #compo3, #compo4, #compo5, #compo6 {
+			display: none;
+		}
+
+		svg {
+			font-weight:bold;
+			max-width: 500px;
+			height:auto;
+			margin-bottom: 3%;
+			margin-left:-4px;
+			font-family: Montserrat;
+		}
+
+		img {
+			width: auto;
+			height: 380px;
+		}
+
+		h3 {
+			font-size: 22px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+			font-weight: 400;
+		}
+
+		h2 {
+			position: relative;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 29px;
+			margin: 48px 0 35px 0;
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
+			text-align: left;
+		}
+
+		.title {
+			font-size: 17px;
+			line-height: 30px;
+			margin-bottom: 6%;
+		}
+		
+		.desc {
+			font-size: 15px;
+			line-height: 35px;
+			margin-bottom: 24px;
+		}
+
+		button {
+			border: 2px solid #000000;
+			background-color: transparent;
+
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 11px;
+				letter-spacing: 2px;
+				font-weight: initial;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 14px 28px;
+			}
+		}
+	}
+
+	/* LES PLATS */
+	section:nth-child(5) {
+		padding: 72px 0;
+		background-color: #FFF;
+
+		.home-subtitle {
+			font-size: 17px;
+		}
+
+		.arrow {
+			width: 19px;
+			height: 21px;
+			display: none;
+			padding: 1px 0 0 4px;
+		}
+
+		.compotitle {
+			display: none;
+		}
+
+		#platsid h2, #compositions h3, #huitres h3, #btn4up, #btn5up, #btn6up, #btn7up, #btn8up, #btn9up, #compo1, #compo2, #compo3, #compo4, #compo5, #compo6 {
+			display: none;
+		}
+
+		svg {
+			font-weight:bold;
+			max-width: 500px;
+			height:auto;
+			margin-bottom: 3%;
+			margin-left:-4px;
+			font-family: Montserrat;
+		}
+
+		img {
+			width: auto;
+			height: 380px;
+		}
+
+		h3 {
+			font-size: 22px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+			font-weight: 400;
+		}
+
+		h2 {
+			position: relative;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 29px;
+			margin: 48px 0 35px 0;
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
+			text-align: left;
+		}
+
+		.title {
+			font-size: 17px;
+			line-height: 30px;
+			margin-bottom: 6%;
+		}
+		
+		.desc {
+			font-size: 15px;
+			line-height: 35px;
+			margin-bottom: 24px;
+		}
+
+		button {
+			border: 2px solid #000000;
+			background-color: transparent;
+
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 11px;
+				letter-spacing: 2px;
+				font-weight: initial;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 14px 28px;
+			}
+		}
+	}
+
+	/* LES DESSERTS */
+	section:nth-child(6) {
+		padding: 72px 0;
+		
+		background-color: #FFF;
+
+		.home-subtitle {
+			font-size: 17px;
+		}
+
+		.arrow {
+			width: 19px;
+			height: 21px;
+			display: none;
+			padding: 1px 0 0 4px;
+		}
+
+		.compotitle {
+			display: none;
+		}
+
+		#platsid h2, #compositions h3, #huitres h3, #btn4up, #btn5up, #btn6up, #btn7up, #btn8up, #btn9up, #compo1, #compo2, #compo3, #compo4, #compo5, #compo6 {
+			display: none;
+		}
+
+		svg {
+			font-weight:bold;
+			max-width: 500px;
+			height:auto;
+			margin-bottom: 3%;
+			margin-left:-4px;
+			font-family: Montserrat;
+		}
+
+		img {
+			width: auto;
+			height: 380px;
+		}
+
+		h3 {
+			font-size: 22px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+			font-weight: 400;
+		}
+
+		h2 {
+			position: relative;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 29px;
+			margin: 48px 0 35px 0;
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
+			text-align: left;
+		}
+
+		.title {
+			font-size: 17px;
+			line-height: 30px;
+			margin-bottom: 6%;
+		}
+		
+		.desc {
+			font-size: 15px;
+			line-height: 35px;
+			margin-bottom: 24px;
+		}
+
+		button {
+			border: 2px solid #000000;
+			background-color: transparent;
+
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 11px;
+				letter-spacing: 2px;
+				font-weight: initial;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 14px 28px;
+			}
+		}
+	}
+	
+	/* LES BOISSONS */
+	section:last-child {
+		padding: 72px 0;
+		
+		background-color: #FFF;
+
+		.home-subtitle {
+			font-size: 17px;
+		}
+
+		.arrow {
+			width: 19px;
+			height: 21px;
+			display: none;
+			padding: 1px 0 0 4px;
+		}
+
+		.compotitle {
+			display: none;
+		}
+
+		#platsid h2, #compositions h3, #huitres h3, #btn4up, #btn5up, #btn6up, #btn7up, #btn8up, #btn9up, #compo1, #compo2, #compo3, #compo4, #compo5, #compo6 {
+			display: none;
+		}
+
+		svg {
+			font-weight:bold;
+			max-width: 500px;
+			height:auto;
+			margin-bottom: 3%;
+			margin-left:-4px;
+			font-family: Montserrat;
+		}
+
+		img {
+			width: auto;
+			height: 380px;
+		}
+
+		h3 {
+			font-size: 22px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+			font-weight: 400;
+		}
+
+		h2 {
+			position: relative;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 29px;
+			margin: 48px 0 35px 0;
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
+			text-align: left;
+		}
+
+		.title {
+			font-size: 17px;
+			line-height: 30px;
+			margin-bottom: 6%;
+		}
+		
+		.desc {
+			font-size: 15px;
+			line-height: 35px;
+			margin-bottom: 24px;
+		}
+
+		button {
+			border: 2px solid #000000;
+			background-color: transparent;
+
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 11px;
+				letter-spacing: 2px;
+				font-weight: initial;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 14px 28px;
+			}
+		}
+	}
+
+}
+
+/* FOOTER */
+footer {
+	margin: 1.5% 0%;
+
+	img {
+		width: 145px;
+	}
+	
+	input {
+	    background: #F6F6F6;
+	    border: none;
+	    -webkit-appearance: none;
+	    -webkit-border-radius: 0;
+	    border-radius: 0;
+	    font-size: 11px;
+	    line-height: normal;
+	    font-family: "Lato", sans-serif;
+	    padding: 14px;
+	    margin: 0;
+	}
+
+	.btn-credits {
+	    display: inline-block;
+	    margin-right: 50px;
+	    text-transform: uppercase;
+	    text-decoration: none;
+	    color: #0e2046;
+	    padding: 3.5%;
+	}
+
+	.form-newsletter {
+	    display: inline-block;
+	    position: relative;
+	    margin: 3px 25px 0 0;
+	}
+
+	.form-newsletter label {
+	    text-transform: uppercase;
+	    color: #7b7b7b;
+	    margin-right: 22px;
+	    font-size: 13px;
+	}
+
+	.form-newsletter input.input-text {
+    	padding: 14px 14px 14px 19px;
+    	width: auto;
+	}
+
+	.form-newsletter input {
+	    background: #F6F6F6;
+	    border: none;
+	    -webkit-appearance: none;
+	    -webkit-border-radius: 0;
+	    border-radius: 0;
+	    font-size: 11px;
+	    line-height: normal;
+	    font-family: "Lato", sans-serif;
+	    padding: 14px;
+	    margin: 0;
+	}
+
+	.form-newsletter .border-newsletter {
+	    display: inline-block;
+	    width: 1px;
+	    height: 20px;
+	    padding: 14px 0;
+	    margin: 0 0 0 -3px;
+   	}
+
+   	.form-newsletter input.btn-submit {
+	    cursor: pointer;
+	    color: #040404;
+	    margin-left: -2px;
+	    margin-top: 0px;
+	}
+	
+	.form-newsletter input {
+	    background: #F6F6F6;
+	    border: none;
+	    -webkit-appearance: none;
+	    -webkit-border-radius: 0;
+	    border-radius: 0;
+	    font-size: 11px;
+	    line-height: normal;
+	    font-family: "Lato", sans-serif;
+	    padding: 14px;
+	    margin: 0;
+	}
+
+	.form-newsletter .form-message.valid {
+    	color: #145214;
+	}
+
+	.form-newsletter .form-message {
+	    display: none;
+	    position: absolute;
+	    right: 0;
+	    bottom: -20px;
+	}
+
+	.form-newsletter .form-message.valid-error, footer .form-newsletter .form-message.error {
+    	color: #B20000;
+	}
+
+	.form-newsletter .form-message {
+	    display: none;
+	    position: absolute;
+	    right: 0;
+	    bottom: -20px;
+	}
+
+	.form-newsletter .form-message.error {
+    	color: #B20000;
+	}
+
+	.form-newsletter .form-message {
+	    display: none;
+	    position: absolute;
+	    right: 0;
+	    bottom: -20px;
+	}
+}

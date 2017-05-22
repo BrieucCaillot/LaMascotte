@@ -1,4 +1,4 @@
-<!-- 
+<!--
 
 #title            : LA MASCOTTE RESTAURANT HISTORY PAGE
 #description      : La Mascotte's Website proudly made by:
@@ -11,7 +11,7 @@
 =============================================================-->
 
 <html lang="en">
-<head> 
+<head>
     <!--META-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -27,42 +27,67 @@
     <link rel="icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/reset.css"/>
-    <link rel="stylesheet" href="../css/history.css"/>
-    
+    <link rel="stylesheet" href="../css/about.css"/>
+
     <!--JQUERY-->
     <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
 
-    <title>Histoire - La Mascotte</title>
+    <title>À propos - La Mascotte</title>
 </head>
 
 <body>
 
     <!--HEADER-->
     <header>
-        <div id="logo">
-            <a href="../index.html"><img src="../images/logomascotteclair.png" alt="logo la mascotte"></a>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <div id="logo">
+                            <a href="../index.html">
+                                <img src="../images/logobeige.png" alt="logo la mascotte">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 text-center">
+                        <nav>
+                            <ul>
+                                <li><a href="../index.html">ACCUEIL</a></li>
+                                <li><a href="about.html">À PROPOS</a></li>
+                                <li><a href="menu.html">MENU</a></li>
+                                <li><a href="booking.html">RÉSERVER</a></li>
+                                <li><a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/">LIVRAISON</a></li>
+                                <li><a href="../index.html#googlemap">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <div id="headersocial">
+                            <a href="#">
+                                <img src="../images/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="#">
+                                <img src="../images/instagram.svg" alt="facebook">
+                            </a>
+                            <a href="">
+                                <img src="../images/engflag.png" alt="english">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="progressContainer"><div id="progress" class="progress"></div></div>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">ACCUEIL</a></li>
-                <li><a href="about.html">À PROPOS</a></li>
-                <li>MENU</li>
-                <li><a href="booking.html">RÉSERVER</a></li>
-                <a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/"><li>LIVRAISON</li></a>
-                <li>CONTACT</li>
-            </ul>
-        </nav>
-    </header> 
-     
-    <!--MAIN-->
+    </header>
+
     <main>
-    
+
         <!--ABOUT-->
-        <section>
+        <section id="about">
             <h1>À PROPOS</h1>
             <button>
-                <a href="#">RÉSERVER</a>
+                <a href="booking.html">RÉSERVER</a>
             </button>
         </section>
 
@@ -72,16 +97,16 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
-                            <h3 class="home-subtitle">APPRÉCIEZ</h3>
+                            <h3 class="home-subtitle text-right">APPRÉCIEZ</h3>
                             <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
-                            <svg viewbox="-21 0 160 20">
+                            <svg viewbox="-39 0 160 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
                                         <stop offset="95%" stop-color="#123752"/>
                                     </linearGradient>
                                     <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
                                             <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
                                         </path>
                                     </pattern>
@@ -89,13 +114,12 @@
                                 <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LE RESTAURANT</text>
                                 <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LE RESTAURANT</text>
                             </svg>
-                            <p class="title text-left">
-                                Venez passer un bon moment tout seul ou en famille 
+                            <p class="title text-right">
+                                Venez passer un bon moment tout seul <br>ou en famille
                             </p>
-                            <p class="desc">
+                            <p class="desc text-right">
                                 Service continu 7/7 de 12h à 24h.
-                                <br>
-                                Le restaurant est doté d’une salle privatisable indépendante pouvant accueillir jusqu’à 40 couverts. Un espace idéal pour vos événements familiaux, repas d'affaire ou amicaux..
+                                Le restaurant est doté d’une salle privatisable indépendante pouvant accueillir jusqu’à 40 couverts. <br>Un espace idéal pour vos événements familiaux, repas d'affaire ou amicaux..
                             </p>
 
                             <button>
@@ -123,14 +147,14 @@
                             <div class="col-md-6">
                                 <h3 class="home-subtitle">Sympathique</h3>
                                 <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
-                                <svg viewbox="9 0 120 20">
+                                <svg viewbox="8 0 120 20">
                                     <defs>
                                         <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                             <stop offset="5%" stop-color="#326384"/>
                                             <stop offset="95%" stop-color="#123752"/>
                                         </linearGradient>
                                         <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-                                            <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
                                                 <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
                                             </path>
                                         </pattern>
@@ -157,21 +181,21 @@
         </section>
 
         <!--L'ÉCAILLE-->
-        <section>
+        <section id="ecaille">
             <div class="container">
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
-                            <h3 class="home-subtitle">DÉGUSTEZ</h3>
+                            <h3 class="home-subtitle text-right">DÉGUSTEZ</h3>
                             <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
-                            <svg viewbox="0 0 120 20">
+                            <svg viewbox="-29 0 120 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
                                         <stop offset="95%" stop-color="#123752"/>
                                     </linearGradient>
                                     <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
                                             <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
                                         </path>
                                     </pattern>
@@ -179,15 +203,15 @@
                                 <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">L'ÉCAILLE</text>
                                 <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">L'ÉCAILLE</text>
                             </svg>
-                            <p class="title text-left">
-                                Dégustations, ventes à emporter, livraison de fruits de mer 
+                            <p class="title text-right">
+                                Dégustations, ventes à emporter,<br> livraison de fruits de mer
                             </p>
-                            <p class="desc">
+                            <p class="desc text-right">
                                 L’Écaille c’est sans doute le plus beau « banc » de fruits de mer de Paris (donc du monde…). C’est l’annexe de la brasserie, l’endroit où sont concoctés les plateaux et assiettes de fruits de mers et crustacés.
                             </p>
 
                             <button>
-                                <a href="html/history.html" class="view-more margin-t36">En savoir plus
+                                <a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/" class="view-more margin-t36">En savoir plus
                                 </a>
                             </button>
                         </div>
@@ -204,15 +228,15 @@
             <div class="container">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-6">
-                            <svg viewbox="-20 0 110 20">
+                        <div class="col-md-6 text-right">
+                            <svg viewbox="-39 0 110 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
                                         <stop offset="95%" stop-color="#123752"/>
                                     </linearGradient>
                                     <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
                                             <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
                                         </path>
                                     </pattern>
@@ -221,7 +245,7 @@
                                 <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">1935</text>
                             </svg>
                             <h3>
-                                La création de « La Mascotte » semble remonter à 1889 à l’époque où son grand comptoir occupait tout le rez de chaussée d’un hôtel de deux étages, « Le Pompéa ». <br> Son propriétaire, le Père Teissier, le fit surélever de trois nouveaux étages, qu’il baptisa « Hôtel Antinéa », pour y établir chacun de ses deux fils.
+                                La création de « La Mascotte » semble remonter à 1889 à l’époque où son grand comptoir occupait tout le rez de chaussée d’un hôtel <br>de deux étages, « Le Pompéa ». <br>Son propriétaire, le Père Teissier, le fit surélever de trois nouveaux étages, qu’il baptisa « Hôtel Antinéa », pour y établir chacun de ses deux fils.
                             </h3>
                         </div>
                         <div class="col-md-6">
@@ -241,14 +265,14 @@
                             <img src="../images/histoire2.jpg" alt="la mascotte 2000" width="100%" height="300px" >
                         </div>
                         <div class="col-md-6">
-                            <svg viewbox="-20 0 110 20">
+                            <svg viewbox="21 0 110 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
                                         <stop offset="95%" stop-color="#123752"/>
                                     </linearGradient>
                                     <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
                                             <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
                                         </path>
                                     </pattern>
@@ -270,15 +294,15 @@
             <div class="container">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-6">
-                            <svg viewbox="-20 0 110 20">
+                        <div class="col-md-6 text-right">
+                            <svg viewbox="-39 0 110 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
                                         <stop offset="95%" stop-color="#123752"/>
                                     </linearGradient>
                                     <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
                                             <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
                                         </path>
                                     </pattern>
@@ -288,7 +312,7 @@
                             </svg>
                             <h3>
                                 Monsieur Laurent, originaire de Fleurie, y servait le vin nouveau à sa clientèle de commerçants du quartier et d’artistes locaux : Toppa, Lecomte, Gen Paul…
-                                <br> 
+                                <br>
                                 Puis la famille Conte lui succéda jusqu’en septembre 1965 où Maurice et Irène Campion s’y établirent.
                                 C’est leur fils Thierry qui perpétue la tradition Montmartro-Aveyronnaise en 2006.
                             <h3>
@@ -309,15 +333,15 @@
                         <div class="col-md-6">
                             <img src="../images/equipe.jpg" alt="la mascotte 2017" width="100%" height="300px" >
                         </div>
-                        <div class="col-md-6">
-                            <svg viewbox="-20 0 110 20">
+                        <div class="col-md-6 text-left">
+                            <svg viewbox="29 0 110 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
                                         <stop offset="95%" stop-color="#123752"/>
                                     </linearGradient>
                                     <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
                                             <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
                                         </path>
                                     </pattern>
@@ -327,7 +351,7 @@
                             </svg>
                             <h3>
                                 Thierry perpétue encore aujourd'hui la tradition du restaurant La Mascotte.
-                                <br> 
+                                <br>
                                 En attendant la relève..
                             </h3>
                         </div>
@@ -335,28 +359,43 @@
                 </div>
             </div>
         </section>
-        
     </main>
+
 
     <!--FOOTER-->
     <footer>
-        <div class="container-fluid">
+        <div class="container text-center">
             <div class="row">
-                <div class="col-md-6">
-                    <button>
-                        <a href="#">RÉSERVER</a>
-                    </button>
-                    <button>
-                        <a href="#">COMMANDER</a>
-                    </button>
-                    <h4>52 Rue des Abbesses,<br>75018 Paris<br>18e arrondissement,<br>France</h4>
-                    <p>01 46 06 28 15</p>
-                    
-                    <img src="../images/logomascotteclair.png" alt="">
+                <div class="col-md-5">
+                    <a href="credits.html" class="btn btn-credits">Crédits &amp; Mentions légales</a>
                 </div>
-                <div class="col-md-6">
-                    <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJue8o9E9u5kcRJ2G1N7QaShw&key=AIzaSyBEp_uq8_BW0a7INepol4BVdqfnNZnflDs" allowfullscreen>
-                    </iframe>
+                <div class="col-md-5">
+                    <form class="form-newsletter" method="post" action="">
+                    <label for="email">Newsletter :</label>
+                    <input type="text" class="form-email input-text" placeholder="Votre email" name="ne" id="ne">
+                    <span class="border-newsletter"><span class="border"></span></span>
+                    <input type="submit" class="btn btn-submit" value="OK">
+                    <div class="form-message valid">
+                        <p>
+                            Votre inscription a bien &eacute;t&eacute; prise en compte.
+                        </p>
+                    </div>
+                    <div class="form-message error valid-error">
+                        <p>
+                            Merci de saisir un e-mail valide.
+                        </p>
+                    </div>
+                    <div class="form-message error post-error">
+                        <p>
+                            Probl&egrave;me technique, veuillez r&eacute;essayer ult&eacute;rieurement.
+                        </p>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <a href="index.html#">
+                        <img src="../images/logobrown.png" alt="Restaurant La Mascotte" class="footer-logo">
+                    </a>
                 </div>
             </div>
         </div>
