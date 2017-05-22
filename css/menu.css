@@ -23,6 +23,16 @@ header {
   color: #fff; }
   header .container {
     width: 1350px; }
+  header .progressContainer {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%; }
+  header .progress {
+    height: 5px;
+    background: #e0d2b1;
+    width: 0;
+    transition: width 0.5s; }
   header #logo {
     padding: 15px 0 0 0; }
   header #logo img {
@@ -48,10 +58,13 @@ header {
 
 /* MAIN */
 main {
+  /* HEADER LA CARTE */
   /* LA CARTE */
   /* LES MENUS */
   /* LES ENTREES */
-  /* LES PLATS */ }
+  /* LES PLATS */
+  /* LES DESSERTS */
+  /* LES BOISSONS */ }
   main section:first-child {
     height: 500px;
     background: url("../images/bigmenu.jpg") no-repeat;
@@ -84,9 +97,11 @@ main {
         text-transform: uppercase;
         padding: 17px 28px; }
   main section:nth-child(2) {
-    padding: 71px 0 0 0;
-    background-color: #FFF;
+    padding: 50px 0 50px 0;
+    background-color: #F4F4F4;
     position: relative; }
+    main section:nth-child(2) .row {
+      padding: 5% 0; }
     main section:nth-child(2) .arrow {
       width: 19px;
       height: 21px;
@@ -255,6 +270,186 @@ main {
         display: inline-block;
         text-transform: uppercase;
         padding: 14px 28px; }
+  main section:nth-child(5) {
+    padding: 72px 0;
+    background-color: #FFF; }
+    main section:nth-child(5) .home-subtitle {
+      font-size: 17px; }
+    main section:nth-child(5) .arrow {
+      width: 19px;
+      height: 21px;
+      display: none;
+      padding: 1px 0 0 4px; }
+    main section:nth-child(5) .compotitle {
+      display: none; }
+    main section:nth-child(5) #platsid h2, main section:nth-child(5) #compositions h3, main section:nth-child(5) #huitres h3, main section:nth-child(5) #btn4up, main section:nth-child(5) #btn5up, main section:nth-child(5) #btn6up, main section:nth-child(5) #btn7up, main section:nth-child(5) #btn8up, main section:nth-child(5) #btn9up, main section:nth-child(5) #compo1, main section:nth-child(5) #compo2, main section:nth-child(5) #compo3, main section:nth-child(5) #compo4, main section:nth-child(5) #compo5, main section:nth-child(5) #compo6 {
+      display: none; }
+    main section:nth-child(5) svg {
+      font-weight: bold;
+      max-width: 500px;
+      height: auto;
+      margin-bottom: 3%;
+      margin-left: -4px;
+      font-family: Montserrat; }
+    main section:nth-child(5) img {
+      width: auto;
+      height: 380px; }
+    main section:nth-child(5) h3 {
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-weight: 400; }
+    main section:nth-child(5) h2 {
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 29px;
+      margin: 48px 0 35px 0; }
+    main section:nth-child(5) li {
+      padding-bottom: 15px;
+      list-style-type: circle;
+      text-align: left; }
+    main section:nth-child(5) .title {
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 6%; }
+    main section:nth-child(5) .desc {
+      font-size: 15px;
+      line-height: 35px;
+      margin-bottom: 24px; }
+    main section:nth-child(5) button {
+      border: 2px solid #000000;
+      background-color: transparent; }
+      main section:nth-child(5) button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: initial;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 14px 28px; }
+  main section:nth-child(6) {
+    padding: 72px 0;
+    background-color: #FFF; }
+    main section:nth-child(6) .home-subtitle {
+      font-size: 17px; }
+    main section:nth-child(6) .arrow {
+      width: 19px;
+      height: 21px;
+      display: none;
+      padding: 1px 0 0 4px; }
+    main section:nth-child(6) .compotitle {
+      display: none; }
+    main section:nth-child(6) #platsid h2, main section:nth-child(6) #compositions h3, main section:nth-child(6) #huitres h3, main section:nth-child(6) #btn4up, main section:nth-child(6) #btn5up, main section:nth-child(6) #btn6up, main section:nth-child(6) #btn7up, main section:nth-child(6) #btn8up, main section:nth-child(6) #btn9up, main section:nth-child(6) #compo1, main section:nth-child(6) #compo2, main section:nth-child(6) #compo3, main section:nth-child(6) #compo4, main section:nth-child(6) #compo5, main section:nth-child(6) #compo6 {
+      display: none; }
+    main section:nth-child(6) svg {
+      font-weight: bold;
+      max-width: 500px;
+      height: auto;
+      margin-bottom: 3%;
+      margin-left: -4px;
+      font-family: Montserrat; }
+    main section:nth-child(6) img {
+      width: auto;
+      height: 380px; }
+    main section:nth-child(6) h3 {
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-weight: 400; }
+    main section:nth-child(6) h2 {
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 29px;
+      margin: 48px 0 35px 0; }
+    main section:nth-child(6) li {
+      padding-bottom: 15px;
+      list-style-type: circle;
+      text-align: left; }
+    main section:nth-child(6) .title {
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 6%; }
+    main section:nth-child(6) .desc {
+      font-size: 15px;
+      line-height: 35px;
+      margin-bottom: 24px; }
+    main section:nth-child(6) button {
+      border: 2px solid #000000;
+      background-color: transparent; }
+      main section:nth-child(6) button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: initial;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 14px 28px; }
+  main section:last-child {
+    padding: 72px 0;
+    background-color: #FFF; }
+    main section:last-child .home-subtitle {
+      font-size: 17px; }
+    main section:last-child .arrow {
+      width: 19px;
+      height: 21px;
+      display: none;
+      padding: 1px 0 0 4px; }
+    main section:last-child .compotitle {
+      display: none; }
+    main section:last-child #platsid h2, main section:last-child #compositions h3, main section:last-child #huitres h3, main section:last-child #btn4up, main section:last-child #btn5up, main section:last-child #btn6up, main section:last-child #btn7up, main section:last-child #btn8up, main section:last-child #btn9up, main section:last-child #compo1, main section:last-child #compo2, main section:last-child #compo3, main section:last-child #compo4, main section:last-child #compo5, main section:last-child #compo6 {
+      display: none; }
+    main section:last-child svg {
+      font-weight: bold;
+      max-width: 500px;
+      height: auto;
+      margin-bottom: 3%;
+      margin-left: -4px;
+      font-family: Montserrat; }
+    main section:last-child img {
+      width: auto;
+      height: 380px; }
+    main section:last-child h3 {
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-weight: 400; }
+    main section:last-child h2 {
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 29px;
+      margin: 48px 0 35px 0; }
+    main section:last-child li {
+      padding-bottom: 15px;
+      list-style-type: circle;
+      text-align: left; }
+    main section:last-child .title {
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 6%; }
+    main section:last-child .desc {
+      font-size: 15px;
+      line-height: 35px;
+      margin-bottom: 24px; }
+    main section:last-child button {
+      border: 2px solid #000000;
+      background-color: transparent; }
+      main section:last-child button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: initial;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 14px 28px; }
 
 /* FOOTER */
 footer {
@@ -277,11 +472,12 @@ footer {
     margin-right: 50px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #0e2046; }
+    color: #0e2046;
+    padding: 3.5%; }
   footer .form-newsletter {
     display: inline-block;
-    margin-right: 25px;
-    position: relative; }
+    position: relative;
+    margin: 3px 25px 0 0; }
   footer .form-newsletter label {
     text-transform: uppercase;
     color: #7b7b7b;

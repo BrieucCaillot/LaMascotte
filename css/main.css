@@ -18,6 +18,16 @@ header {
   color: #fff; }
   header .container {
     width: 1350px; }
+  header .progressContainer {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%; }
+  header .progress {
+    height: 5px;
+    background: #e0d2b1;
+    width: 0;
+    transition: width 0.5s; }
   header #logo {
     padding: 15px 0 0 0; }
   header #logo img {
@@ -25,8 +35,7 @@ header {
   header nav {
     padding: 50px 0px 0px 0px;
     text-align: center;
-    font-family: roboto;
-    font-weight: bold; }
+    font-family: roboto; }
     header nav ul li {
       display: inline-block;
       list-style-type: none;
@@ -45,9 +54,10 @@ header {
 main {
   /* LA MASCOTTE RESTAURANT BRASSERIE */
   /* BOXES */
-  /* SWIPER */
+  /* SWIPER RESTAURANT */
   /* MENU */
-  /* SWIPER ABOUT */ }
+  /* SWIPER ABOUT */
+  /* GOOOGLE MAP API*/ }
   main #header {
     height: 100%;
     background: url("../images/swiper2.jpg") no-repeat;
@@ -89,6 +99,11 @@ main {
         display: inline-block;
         text-transform: uppercase;
         padding: 17px 28px; }
+    main #header button:hover {
+      background-color: #6B614D;
+      color: #fff; }
+      main #header button:hover a {
+        color: #fff; }
     main #header .fixed {
       background-attachment: fixed; }
     main #header .swiper-container {
@@ -120,87 +135,25 @@ main {
       width: 76%;
       margin-left: 45px; }
     main #description span {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: bold; }
     main #description p {
       line-height: 36px;
       padding-top: 32px;
       font-weight: 100;
       font-size: 17px; }
-  main #swiper .swiper-container {
-    width: 100%;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto; }
-  main #swiper .swiper-slide {
-    cursor: pointer;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; }
-  main #swiper .gallery-top {
-    height: 80%;
-    width: 100%; }
-  main #swiper .gallery-thumbs {
-    height: 20%;
-    box-sizing: border-box;
-    padding: 10px 0; }
-  main #swiper .gallery-thumbs .swiper-slide {
-    width: 25%;
-    height: 100%;
-    opacity: 0.4;
-    background-size: cover;
-    cursor: pointer; }
-  main #swiper .gallery-thumbs .swiper-slide-active {
-    opacity: 1; }
-  main #swiper .close-button {
-    display: none;
-    height: 45px;
-    width: 45px;
-    color: #fff;
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    font-size: 32px;
-    text-align: center;
-    cursor: pointer;
-    z-index: 9999;
-    opacity: .75; }
-  main #swiper .close-button:before {
-    content: ''; }
-  main #swiper .close-button:hover,
-  main #swiper .close-button:active {
-    opacity: 1; }
-  main #swiper .fullscreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #161418; }
-  main #swiper .fullscreen .gallery-top .swiper-slide {
-    cursor: default;
-    background-size: contain; }
-  main #swiper .fullscreen .close-button {
-    display: block; }
-  main #swiper .fullscreen .gallery-top {
+  main #swiperrestaurant {
     height: 100%; }
-  main #swiper .fullscreen .gallery-thumbs {
-    background-color: #000;
-    height: 20%;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    opacity: 0;
-    z-index: 10;
-    transition: opacity .3s ease-in-out;
-    transition-delay: .5s; }
-  main #swiper .fullscreen .gallery-thumbs:hover {
-    opacity: 1;
-    transition-delay: 0s; }
+    main #swiperrestaurant .next {
+      background: url("../images/arrowrightfirst.svg") no-repeat;
+      background-size: 100% 100%; }
+    main #swiperrestaurant .prev {
+      background: url("../images/arrowleftfirst.svg") no-repeat;
+      background-size: 100% 100%; }
   main #menuu {
     background-color: #fff;
-    padding: 54px 0;
     width: 100%;
+    margin: 5% 0;
     /*h2 {
     	position: relative;
         display: inline-block;
@@ -209,7 +162,7 @@ main {
         font-size: 40px;
     }*/ }
     main #menuu .container {
-      width: 1360px; }
+      width: 1435px; }
     main #menuu svg {
       font-family: montserrat;
       font-weight: bold;
@@ -276,9 +229,17 @@ main {
       background-color: #000;
       color: #fff; }
   main #swiperabout {
-    height: 500px;
+    height: 470px;
     /* LA MASCOTTE */
     /* L'ECAILLE*/ }
+    main #swiperabout .next {
+      background: url(../images/arrowright.svg) no-repeat;
+      background-size: 100% 100%;
+      top: 42%; }
+    main #swiperabout .prev {
+      background: url(../images/arrowleft.svg) no-repeat;
+      background-size: 100% 100%;
+      top: 42%; }
     main #swiperabout #about {
       background-color: #FFF;
       padding: 15px 0; }
@@ -315,9 +276,7 @@ main {
         margin: 0 42px 24px 0; }
       main #swiperabout #about .swiper-container {
         width: 100%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto; }
+        height: 100%; }
       main #swiperabout #about .swiper-slide {
         text-align: center;
         font-size: 18px;
@@ -336,10 +295,9 @@ main {
         -webkit-align-items: center;
         align-items: center; }
       main #swiperabout #about button {
-        border: 2px solid #000000;
+        border: 2px solid #6B6148;
         background-color: transparent;
-        position: absolute;
-        right: 60px; }
+        margin-right: 40px; }
         main #swiperabout #about button a {
           text-decoration: none;
           color: #000;
@@ -349,6 +307,11 @@ main {
           display: inline-block;
           text-transform: uppercase;
           padding: 14px 28px; }
+      main #swiperabout #about button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main #swiperabout #about button:hover a {
+          color: #fff; }
     main #swiperabout #ecaille {
       background-color: #FFF;
       padding: 15px 0; }
@@ -404,7 +367,7 @@ main {
         -webkit-align-items: center;
         align-items: center; }
       main #swiperabout #ecaille button {
-        border: 2px solid #000000;
+        border: 2px solid #6B6148;
         background-color: transparent;
         margin-left: 40px; }
         main #swiperabout #ecaille button a {
@@ -416,6 +379,38 @@ main {
           display: inline-block;
           text-transform: uppercase;
           padding: 14px 28px; }
+      main #swiperabout #ecaille button:hover {
+        background-color: #6B614D; }
+        main #swiperabout #ecaille button:hover a {
+          color: #fff; }
+  main section:last-child {
+    height: 570px;
+    position: relative;
+    width: 100%; }
+    main section:last-child #contact {
+      position: absolute;
+      left: 18%;
+      top: 70px;
+      width: 330px;
+      height: 419px;
+      background-color: #fff;
+      z-index: 2;
+      padding: 3%;
+      line-height: 25px; }
+      main section:last-child #contact h4 {
+        font-size: 37px;
+        padding: 10px 0; }
+      main section:last-child #contact h5 {
+        font-size: 20px;
+        padding: 10px 0; }
+      main section:last-child #contact p {
+        padding: 10px 0; }
+        main section:last-child #contact p span {
+          font-size: 18px;
+          font-weight: bold; }
+    main section:last-child #map {
+      height: 100%;
+      width: 100%; }
 
 /* FOOTER */
 footer {
@@ -438,11 +433,12 @@ footer {
     margin-right: 50px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #0e2046; }
+    color: #0e2046;
+    padding: 3.5%; }
   footer .form-newsletter {
     display: inline-block;
-    margin-right: 25px;
-    position: relative; }
+    position: relative;
+    margin: 3px 25px 0 0; }
   footer .form-newsletter label {
     text-transform: uppercase;
     color: #7b7b7b;

@@ -23,6 +23,20 @@ header {
     .container {
     	width: 1350px;
     }
+
+	.progressContainer{
+	  	position: fixed;
+	  	top: 72px;
+	  	left: 0;
+	  	width: 100%;
+	}
+
+	.progress{
+	  	height: 5px;
+	  	background: #e0d2b1 ;
+	  	width: 0;
+	  	transition: width 0.5s;
+	}
 	
 	#logo {
 		padding: 15px 0 0 0;
@@ -36,7 +50,6 @@ header {
 		padding: 50px 0px 0px 0px;
 		text-align: center;
 		font-family: roboto;
-		font-weight: bold;
 
 			ul {
 
@@ -118,6 +131,14 @@ main {
 			    padding: 17px 28px;
 			}
 		}
+		button:hover {
+			background-color: #6B614D;
+			color: #fff;
+
+			a {
+				color: #fff;
+			}
+		}
 
 		.fixed {
 			background-attachment: fixed;
@@ -163,8 +184,8 @@ main {
 		}
 
 		span {
-			font-size: 22px;
-			font-weight: bold
+			font-size: 20px;
+			font-weight: bold;
 		}
 
 		p {
@@ -175,117 +196,29 @@ main {
 		}
 	}
 
-	/* SWIPER */
-	#swiper {
-		.swiper-container {
-	      	width: 100%;
-	      	height: 300px;
-	      	margin-left: auto;
-	      	margin-right: auto;
-   		}
-   
-	   	.swiper-slide {
-	      	cursor: pointer;
-	      	background-size: cover;
-	      	background-position: center center;
-	      	background-repeat: no-repeat;
-	   	}
-	   
-	   	.gallery-top {
-	      	height: 80%;
-	      	width: 100%;
-	   	}
-	   
-	   	.gallery-thumbs {
-	      	height: 20%;
-	      	box-sizing: border-box;
-	      	padding: 10px 0;
-	   	}
-	   
-	   .gallery-thumbs .swiper-slide {
-	      width: 25%;
-	      height: 100%;
-	      opacity: 0.4;
-	      background-size: cover;
-	      cursor: pointer;
-	   }
-   
-	   .gallery-thumbs .swiper-slide-active {
-	      opacity: 1;
-	   }
-   
-	   .close-button {
-	      	display: none;
-	      	height: 45px;
-	      	width: 45px;
-	      	color: #fff;
-	      	position: fixed;
-	      	top: 15px;
-	      	right: 15px;
-	      	font-size: 32px;
-	      	text-align: center;
-	      	cursor: pointer;
-	      	z-index: 9999;
-	      	opacity: .75;
-	   }
-   
-	   .close-button:before {
-	      	content: '';
-	   }
-   
-	   .close-button:hover,
-	   .close-button:active {
-	      	opacity: 1;
-	   }
-   
-	   .fullscreen {
-      		position: fixed;
-      		top: 0;
-      		left: 0;
-      		width: 100%;
-      		height: 100%;
-      		background-color: #161418;
-	   }
-   
-	   	.fullscreen .gallery-top .swiper-slide {
-	      cursor: default;
-	      background-size: contain;
-	   	}
-	   
-	   	.fullscreen .close-button {
-	      display: block;
-	   	}
-   
-	   	.fullscreen .gallery-top {
-	      height: 100%
-	   	}
-	   
-	   	.fullscreen .gallery-thumbs {
-	      	background-color: #000;
-	      	height: 20%;
-	      	position: fixed;
-	      	bottom: 0;
-	      	width: 100%;
-	      	opacity: 0;
-	      	z-index: 10;
-	      	transition: opacity .3s ease-in-out;
-	      	transition-delay: .5s;
-	   	}
-   
-	   	.fullscreen .gallery-thumbs:hover {
-	      	opacity: 1;	
-	      	transition-delay: 0s;
-	   	}
+	/* SWIPER RESTAURANT */
+	#swiperrestaurant {	
+		height: 100%;
+
+		.next {
+			background:url("../images/arrowrightfirst.svg") no-repeat;
+			background-size: 100% 100%;
+		}
+
+		.prev {
+			background:url("../images/arrowleftfirst.svg") no-repeat;
+			background-size: 100% 100%;
+		}
 	}
 
 	/* MENU */
 	#menuu {
 		background-color: #fff;
-		padding: 54px 0;
 		width: 100%;
+		margin: 5% 0;
 
 		.container {
-			width: 1360px;
+			width: 1435px;
 		}
 
 		svg {
@@ -384,7 +317,19 @@ main {
 
 	/* SWIPER ABOUT */
 	#swiperabout {
-		height: 500px;
+		height: 470px;
+
+		.next {
+			background: url(../images/arrowright.svg) no-repeat;
+			background-size: 100% 100%;
+			top: 42%;
+		}
+
+		.prev {
+			background: url(../images/arrowleft.svg) no-repeat;
+			background-size: 100% 100%;
+			top: 42%;
+		}
 		
 		/* LA MASCOTTE */
 		#about {
@@ -437,9 +382,7 @@ main {
 			.swiper-container {
 		        width: 100%;
 		        height: 100%;
-		        margin-left: auto;
-		        margin-right: auto;
-	    	}
+    		}
 
 		    .swiper-slide {
 		        text-align: center;
@@ -461,10 +404,9 @@ main {
 		    }
 
 			button {
-			    border: 2px solid #000000;
+			    border: 2px solid #6B6148;
 			    background-color: transparent;
-			    position: absolute;
-			    right: 60px;
+			    margin-right: 40px;
 
 				a {
 					text-decoration: none;
@@ -475,6 +417,15 @@ main {
 				    display: inline-block;
 				    text-transform: uppercase;
 				    padding: 14px 28px;
+				}
+			}
+
+			button:hover {
+				background-color: #6B614D;
+				color: #fff;
+
+				a {
+					color: #fff;
 				}
 			}
 		}
@@ -552,7 +503,7 @@ main {
 		    }
 
 			button {
-			    border: 2px solid #000000;
+			    border: 2px solid #6B6148;
 			    background-color: transparent;
 			    margin-left: 40px;;
 
@@ -567,6 +518,58 @@ main {
 				    padding: 14px 28px;
 				}
 			}
+
+			button:hover {
+				background-color: #6B614D;
+
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+	
+	/* GOOOGLE MAP API*/
+	section:last-child {
+		height: 570px;
+		position: relative;
+		width: 100%;
+
+		#contact {
+			position: absolute;
+		    left: 18%;
+		    top: 70px;
+			width: 330px;
+			height: 419px;
+			background-color: #fff;
+			z-index: 2;
+			padding: 3%;
+			line-height: 25px;
+
+			h4 {
+				font-size: 37px;
+				padding: 10px 0;
+			}
+
+			h5 {
+				font-size: 20px;
+				padding: 10px 0;
+			}
+
+			p {
+				padding: 10px 0;
+				
+
+				span {
+				    font-size: 18px;
+				    font-weight: bold;
+				}
+			}
+		}
+
+		#map {
+			height: 100%;
+			width: 100%;
 		}
 	}
 }
@@ -598,12 +601,13 @@ footer {
 	    text-transform: uppercase;
 	    text-decoration: none;
 	    color: #0e2046;
+	    padding: 3.5%;
 	}
 
 	.form-newsletter {
 	    display: inline-block;
-	    margin-right: 25px;
 	    position: relative;
+	    margin: 3px 25px 0 0;
 	}
 
 	.form-newsletter label {

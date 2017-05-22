@@ -23,6 +23,20 @@ header {
     .container {
     	width: 1350px;
     }
+
+    .progressContainer{
+	  	position: fixed;
+	  	top: 72px;
+	  	left: 0;
+	  	width: 100%;
+	}
+
+	.progress{
+	  	height: 5px;
+	  	background: #e0d2b1 ;
+	  	width: 0;
+	  	transition: width 0.5s;
+	}
 	
 	#logo {
 		padding: 15px 0 0 0;
@@ -69,28 +83,28 @@ header {
 main {
 
 	/* HISTOIRE */
-	section:first-child {
+	#about {
 		background: url("../images/facade2.jpg") no-repeat;
 		background-size: 100% 70%;
 		background-attachment: fixed;
 		height: 500px;
 
 		h1 {
+			font-family: Montserrat;
 			font-size: 60px;
 			color: #FFF;
 			position: absolute;
-		    top: 35%;
+		    top: 25%;
 		    left: 50%;
 		    transform: translate(-50%, -50%);
 			z-index: 2;
-			font-family: Montserrat;
 		}
 
 		button {
 			border: 2px solid #ffffff;
 			z-index: 2;
 			position: absolute;
-		    top: 47%;
+		    top: 37%;
 		    left: 50%;
 		    transform: translate(-50%, -50%);
 		    background-color: transparent;
@@ -110,7 +124,7 @@ main {
 
 	/* RESTAURANT */
 	section:nth-child(2) {
-		padding: 72px 0 0 0;
+		padding: 72px 0;
 		background-color: #FFF;
 		
 
@@ -118,7 +132,8 @@ main {
 			font-weight:bold;
 			max-width: 500px;
 			height:auto;
-			margin-bottom: 6%;
+			margin-bottom: 3%;
+			margin-left:6%;
 			font-family:Montserrat;
 		}
 
@@ -128,7 +143,7 @@ main {
 		}
 
 		h3 {
-			font-size: 17px;
+			font-size: 14px;
 		    font-weight: 400;
 		    text-transform: uppercase;
 		    letter-spacing: 2px;
@@ -144,8 +159,140 @@ main {
 		}
 
 		.title {
-			font-size: 30px;
-			margin-bottom: 4%;
+			font-size: 20px;
+			margin-bottom: 6%;
+			line-height: 30px;
+		}
+		
+		.desc {
+			font-size: 15px;
+		    line-height: 35px;
+		    margin-bottom: 24px;
+		}
+
+		button {
+		    border: 2px solid #000000;
+		    background-color: transparent;
+		    position: absolute;
+		    right: 15px;
+
+			a {
+				text-decoration: none;
+			    color: #000;
+			    font-size: 11px;
+			    letter-spacing: 2px;
+			    font-weight: initial;
+			    display: inline-block;
+			    text-transform: uppercase;
+			    padding: 14px 28px;
+			}
+		}
+	}
+
+	/* BAR */
+	section:nth-child(3) {
+		padding: 72px 0;
+		background-color: #FFF;
+		
+
+		svg {
+			font-weight:bold;
+			max-width:400px;
+			height:auto;
+			margin-bottom: 3%;
+			font-family:Montserrat;
+		}
+
+		img {
+			width: auto;
+			height: 380px;
+		}
+
+		h3 {
+			font-size: 14px;
+		    font-weight: 400;
+		    text-transform: uppercase;
+		    letter-spacing: 2px;
+		    margin: 0 0 20px 40px;
+		}
+
+		h2 {
+			position: relative;
+		    display: inline-block;
+		    margin-bottom: 36px;
+		    text-transform: uppercase;
+		    font-size: 40px;
+		}
+
+		.title {
+			font-size: 20px;
+			line-height: 30px;
+			margin: 0 0 4.7% 40px;
+		}
+		
+		.desc {
+			font-size: 15px;
+		    line-height: 35px;
+			margin: 0 0 24px 40px;
+		}
+
+		button {
+		    border: 2px solid #000000;
+		    background-color: transparent;
+		    margin-left: 40px;;
+
+			a {
+				text-decoration: none;
+			    color: #000;
+			    font-size: 11px;
+			    letter-spacing: 2px;
+			    font-weight: initial;
+			    display: inline-block;
+			    text-transform: uppercase;
+			    padding: 14px 28px;
+			}
+		}
+	}
+
+	/*L'ECAILLE */
+	section:nth-child(4) {
+		padding: 72px 0;
+		background-color: #FFF;
+		
+
+		svg {
+			font-weight:bold;
+			max-width:400px;
+			height:auto;
+			margin-bottom: 3%;
+			margin-left: 24%;
+			font-family:Montserrat;
+		}
+
+		img {
+			width: auto;
+			height: 380px;
+		}
+
+		h3 {
+			font-size: 14px;
+		    font-weight: 400;
+		    text-transform: uppercase;
+		    letter-spacing: 2px;
+		    margin-bottom: 20px;
+		}
+
+		h2 {
+			position: relative;
+		    display: inline-block;
+		    margin-bottom: 36px;
+		    text-transform: uppercase;
+		    font-size: 40px;
+		}
+
+		.title {
+			font-size: 20px;
+			margin-bottom: 6%;
 			line-height: 30px;
 		}
 		
@@ -175,86 +322,86 @@ main {
 	}
 
 	/* 1935 */
-	// section:nth-child(3) {
-	// 	padding: 72px 0;
-	// 	background-color: #FFF;
+	section:nth-child(5) {
+		padding: 72px 0;
+		background-color: #FFF;
 		
 
-	// 	svg {
-	// 		font-weight:bold;
-	// 		max-width:400px;
-	// 		height:auto;
-	// 		margin-bottom: 3%;
-	// 		margin-left:25%;
-	// 	}
+		svg {
+			font-weight:bold;
+			max-width:400px;
+			height:auto;
+			margin-left:28%;
+			font-family:Montserrat;
+			margin:9% 0 3% 28%;
+		}
 
-	// 	h3 {
-	// 		font-size: 15px;
- //    		line-height: 35px;
-	// 	}
-	// }
+		h3 {
+			font-size: 15px;
+    		line-height: 35px;
+		}
+	}
 
 	/* 2000 */
-	// section:nth-child(4) {
-	// 	padding: 72px 0;
-	// 	background-color: #FFF;
+	section:nth-child(6) {
+		padding: 72px 0;
+		background-color: #FFF;
 		
 
-	// 	svg {
-	// 		font-weight:bold;
-	// 		max-width:400px;
-	// 		height:auto;
-	// 		margin-bottom: 3%;
-	// 		margin-left:-16px;
-	// 	}
+		svg {
+			font-weight:bold;
+			max-width:400px;
+			height:auto;
+			margin-left:-28px;
+			font-family:Montserrat;
+			margin:8% 0 3% -28px;
+		}
 
-	// 	h3 {
-	// 		font-size: 15px;
- //    		line-height: 35px;
-	// 	}
-	// }
+		h3 {
+			font-size: 15px;
+    		line-height: 35px;
+		}
+	}
 
 	/* 2006 */
-	// section:nth-child(5) {
-	// 	padding: 72px 0;
-	// 	background-color: #FFF;
+	section:nth-child(7) {
+		padding: 72px 0;
+		background-color: #FFF;
 		
 
-	// 	svg {
-	// 		font-weight:bold;
-	// 		max-width:400px;
-	// 		height:auto;
-	// 		margin-bottom: 3%;
-	// 		margin-left:-16px;
-	// 	}
+		svg {
+			font-weight:bold;
+			max-width:400px;
+			height:auto;
+			font-family:Montserrat;
+			margin:7% 0 3% 3%;
+		}
 
-	// 	h3 {
-	// 		font-size: 15px;
- //    		line-height: 35px;
-	// 	}
-	// }
+		h3 {
+			font-size: 15px;
+    		line-height: 35px;
+		}
+	}
 
 	/* 2017 */
-	// section:last-child {
-	// 	padding: 72px 0;
-	// 	background-color: #FFF;
+	section:last-child {
+		padding: 72px 0;
+		background-color: #FFF;
 		
 
-	// 	svg {
-	// 		font-weight:bold;
-	// 		max-width:400px;
-	// 		height:auto;
-	// 		margin-bottom: 3%;
-	// 		margin-left:-16px;
-	// 		font-size:20px;
-	// 	}
+		svg {
+			font-weight:bold;
+			max-width:400px;
+			height:auto;
+			font-family:Montserrat;
+			margin:12% 0 3% 0;
+		}
 
-	// 	h3 {
-	// 		font-size: 15px;
- //    		line-height: 35px;
-	// 	}
-	// }
-
+		h3 {
+			font-size: 15px;
+    		line-height: 35px;
+		}
+	}
 }
 
 /* FOOTER */
@@ -284,12 +431,13 @@ footer {
 	    text-transform: uppercase;
 	    text-decoration: none;
 	    color: #0e2046;
+	    padding: 3.5%;
 	}
 
 	.form-newsletter {
 	    display: inline-block;
-	    margin-right: 25px;
 	    position: relative;
+	    margin: 3px 25px 0 0;
 	}
 
 	.form-newsletter label {
@@ -378,27 +526,3 @@ footer {
 	    bottom: -20px;
 	}
 }
-
-/************** RESPONSIVE ***************/
-
-/* MEDIA QUERIES MAX WIDTH 1100px */
-
-// @media screen and (max-device-width : 1100px)
-//   	{
-
-//   	}
-
-// /* MEDIA QUERIES MAX WIDTH 780px */
-
-// @media screen and (max-device-width : 780px)
-//   	{
-
-//   	}
-
-// /* MEDIA QUERIES MAX WIDTH 380px */
-
-// @media screen and (max-device-width : 380px) 
-//   	{
-
-// 	}
-

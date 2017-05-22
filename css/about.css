@@ -18,6 +18,16 @@ header {
   color: #fff; }
   header .container {
     width: 1350px; }
+  header .progressContainer {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%; }
+  header .progress {
+    height: 5px;
+    background: #e0d2b1;
+    width: 0;
+    transition: width 0.5s; }
   header #logo {
     padding: 15px 0 0 0; }
   header #logo img {
@@ -45,33 +55,35 @@ header {
 main {
   /* HISTOIRE */
   /* RESTAURANT */
+  /* BAR */
+  /*L'ECAILLE */
   /* 1935 */
   /* 2000 */
   /* 2006 */
   /* 2017 */ }
-  main section:first-child {
+  main #about {
     background: url("../images/facade2.jpg") no-repeat;
     background-size: 100% 70%;
     background-attachment: fixed;
     height: 500px; }
-    main section:first-child h1 {
+    main #about h1 {
+      font-family: Montserrat;
       font-size: 60px;
       color: #FFF;
       position: absolute;
-      top: 35%;
+      top: 25%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: 2;
-      font-family: Montserrat; }
-    main section:first-child button {
+      z-index: 2; }
+    main #about button {
       border: 2px solid #ffffff;
       z-index: 2;
       position: absolute;
-      top: 47%;
+      top: 37%;
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: transparent; }
-      main section:first-child button a {
+      main #about button a {
         text-decoration: none;
         color: #fff;
         font-size: 14px;
@@ -81,19 +93,20 @@ main {
         text-transform: uppercase;
         padding: 17px 28px; }
   main section:nth-child(2) {
-    padding: 72px 0 0 0;
+    padding: 72px 0;
     background-color: #FFF; }
     main section:nth-child(2) svg {
       font-weight: bold;
       max-width: 500px;
       height: auto;
-      margin-bottom: 6%;
+      margin-bottom: 3%;
+      margin-left: 6%;
       font-family: Montserrat; }
     main section:nth-child(2) img {
       width: auto;
       height: 380px; }
     main section:nth-child(2) h3 {
-      font-size: 17px;
+      font-size: 14px;
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -105,8 +118,8 @@ main {
       text-transform: uppercase;
       font-size: 40px; }
     main section:nth-child(2) .title {
-      font-size: 30px;
-      margin-bottom: 4%;
+      font-size: 20px;
+      margin-bottom: 6%;
       line-height: 30px; }
     main section:nth-child(2) .desc {
       font-size: 15px;
@@ -126,6 +139,148 @@ main {
         display: inline-block;
         text-transform: uppercase;
         padding: 14px 28px; }
+  main section:nth-child(3) {
+    padding: 72px 0;
+    background-color: #FFF; }
+    main section:nth-child(3) svg {
+      font-weight: bold;
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 3%;
+      font-family: Montserrat; }
+    main section:nth-child(3) img {
+      width: auto;
+      height: 380px; }
+    main section:nth-child(3) h3 {
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0 0 20px 40px; }
+    main section:nth-child(3) h2 {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 36px;
+      text-transform: uppercase;
+      font-size: 40px; }
+    main section:nth-child(3) .title {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 0 4.7% 40px; }
+    main section:nth-child(3) .desc {
+      font-size: 15px;
+      line-height: 35px;
+      margin: 0 0 24px 40px; }
+    main section:nth-child(3) button {
+      border: 2px solid #000000;
+      background-color: transparent;
+      margin-left: 40px; }
+      main section:nth-child(3) button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: initial;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 14px 28px; }
+  main section:nth-child(4) {
+    padding: 72px 0;
+    background-color: #FFF; }
+    main section:nth-child(4) svg {
+      font-weight: bold;
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 3%;
+      margin-left: 24%;
+      font-family: Montserrat; }
+    main section:nth-child(4) img {
+      width: auto;
+      height: 380px; }
+    main section:nth-child(4) h3 {
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px; }
+    main section:nth-child(4) h2 {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 36px;
+      text-transform: uppercase;
+      font-size: 40px; }
+    main section:nth-child(4) .title {
+      font-size: 20px;
+      margin-bottom: 6%;
+      line-height: 30px; }
+    main section:nth-child(4) .desc {
+      font-size: 15px;
+      line-height: 35px;
+      margin-bottom: 24px; }
+    main section:nth-child(4) button {
+      border: 2px solid #000000;
+      background-color: transparent;
+      position: absolute;
+      right: 15px; }
+      main section:nth-child(4) button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: initial;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 14px 28px; }
+  main section:nth-child(5) {
+    padding: 72px 0;
+    background-color: #FFF; }
+    main section:nth-child(5) svg {
+      font-weight: bold;
+      max-width: 400px;
+      height: auto;
+      margin-left: 28%;
+      font-family: Montserrat;
+      margin: 9% 0 3% 28%; }
+    main section:nth-child(5) h3 {
+      font-size: 15px;
+      line-height: 35px; }
+  main section:nth-child(6) {
+    padding: 72px 0;
+    background-color: #FFF; }
+    main section:nth-child(6) svg {
+      font-weight: bold;
+      max-width: 400px;
+      height: auto;
+      margin-left: -28px;
+      font-family: Montserrat;
+      margin: 8% 0 3% -28px; }
+    main section:nth-child(6) h3 {
+      font-size: 15px;
+      line-height: 35px; }
+  main section:nth-child(7) {
+    padding: 72px 0;
+    background-color: #FFF; }
+    main section:nth-child(7) svg {
+      font-weight: bold;
+      max-width: 400px;
+      height: auto;
+      font-family: Montserrat;
+      margin: 7% 0 3% 3%; }
+    main section:nth-child(7) h3 {
+      font-size: 15px;
+      line-height: 35px; }
+  main section:last-child {
+    padding: 72px 0;
+    background-color: #FFF; }
+    main section:last-child svg {
+      font-weight: bold;
+      max-width: 400px;
+      height: auto;
+      font-family: Montserrat;
+      margin: 12% 0 3% 0; }
+    main section:last-child h3 {
+      font-size: 15px;
+      line-height: 35px; }
 
 /* FOOTER */
 footer {
@@ -148,11 +303,12 @@ footer {
     margin-right: 50px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #0e2046; }
+    color: #0e2046;
+    padding: 3.5%; }
   footer .form-newsletter {
     display: inline-block;
-    margin-right: 25px;
-    position: relative; }
+    position: relative;
+    margin: 3px 25px 0 0; }
   footer .form-newsletter label {
     text-transform: uppercase;
     color: #7b7b7b;
@@ -215,8 +371,5 @@ footer {
     position: absolute;
     right: 0;
     bottom: -20px; }
-
-/************** RESPONSIVE ***************/
-/* MEDIA QUERIES MAX WIDTH 1100px */
 
 /*# sourceMappingURL=about.css.map */

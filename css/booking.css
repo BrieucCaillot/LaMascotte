@@ -18,6 +18,16 @@ header {
   color: #fff; }
   header .container {
     width: 1350px; }
+  header .progressContainer {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%; }
+  header .progress {
+    height: 5px;
+    background: #e0d2b1;
+    width: 0;
+    transition: width 0.5s; }
   header #logo {
     padding: 15px 0 0 0; }
   header #logo img {
@@ -146,11 +156,12 @@ footer {
     margin-right: 50px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #0e2046; }
+    color: #0e2046;
+    padding: 3.5%; }
   footer .form-newsletter {
     display: inline-block;
-    margin-right: 25px;
-    position: relative; }
+    position: relative;
+    margin: 3px 25px 0 0; }
   footer .form-newsletter label {
     text-transform: uppercase;
     color: #7b7b7b;
