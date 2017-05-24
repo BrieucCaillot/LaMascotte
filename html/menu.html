@@ -77,7 +77,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="progressContainer"><div id="progress" class="progress"></div></div>
+                <div class="row">
+                    <div class="progressContainer"><div id="progress" class="progress"></div></div>
+                </div>
             </div>
         </div>
     </header> 
@@ -87,18 +89,25 @@
 
         <!--HEADER LA CARTE-->
         <section>
-            <h1>
-                LA CARTE
-            </h1>
-            <button>
-                <a href="booking.html">
-                    RÉSERVER
-                </a>
-            </button>
+            <div class="container">
+                <div id="headerdesc" class="col-md-12 text-center">
+                    <div class="row">
+                        <h1>
+                            LA CARTE
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <button>
+                            <a href="booking.html">
+                            RÉSERVER
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--LA CARTE-->
-
         <section id="carte">
             <div class="container text-center">
                 <div class="col-md-12">
@@ -108,7 +117,7 @@
                             <h3  id="h3menu" class="home-subtitle">
                                 MENUS
                             </h3>
-                            <svg id="menusvg" viewbox="-21 0 160 20">
+                            <svg id="menusvg" viewbox="-30 0 160 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
@@ -168,7 +177,7 @@
                         <!--DESSERTS-->
                         <div class="col-md-4 offset-md-2">
                             <h3 class="home-subtitle">DESSERTS</h3>
-                            <svg id="platssvg" viewbox="-27 0 153 20">
+                            <svg id="platssvg" viewbox="-26 0 153 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
@@ -187,7 +196,7 @@
                         <div class="col-md-4 offset-md-1">
                             <h3 class="home-subtitle">DRINKS</h3>
                             <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
-                            <svg id="platssvg" viewbox="-26 0 153 20">
+                            <svg id="platssvg" viewbox="-28 0 153 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
@@ -217,7 +226,7 @@
                             MENUS
                         </h3>
                         <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
-                        <svg id="menusvg" viewbox="-21 0 160 20">
+                        <svg id="menusvg" viewbox="-28 0 160 20">
                             <defs>
                                 <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                     <stop offset="5%" stop-color="#326384"/>
@@ -235,12 +244,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div id="menus" class="col-md-12 text-center">
+                    <div id="menus" class="col-md-6 offset-4 text-left">
                         <!--MENU "LA MASCOTTE"-->
                         <article id="menu1">
                             <h2 class="text-center">
                                 Le menu "Mascotte" 49€
-                                <img id="btn1down" class="arrow" src="../images/arrowright.png" alt="">
+                                <img id="btn1down" class="arrow" src="../images/arrowright.svg" alt="">
                                 <img id="btn1up" class="arrow" src="../images/arrowtop.png" alt="">
                             </h2>
                             <p>
@@ -336,7 +345,7 @@
                         <article id="menu2">
                             <h2 class="text-center">
                                 Le menu "Cocotte" : 32€
-                                <img id="btn1down" class="arrow" src="../images/arrowright.png" alt="">
+                                <img id="btn1down" class="arrow" src="../images/arrowright.svg" alt="">
                                 <img id="btn1up" class="arrow" src="../images/arrowtop.png" alt="">
                             </h2>
 
@@ -436,12 +445,12 @@
                         <!--MENU "MARMOTTE"--> 
                         <article id="menu3">
                             <h2 class="text-center">
-                                Le menu "Cocotte" : 22€
-                                <img id="btn1down" class="arrow" src="../images/arrowright.png" alt="">
+                                Le menu "Marmotte" : 22€
+                                <img id="btn1down" class="arrow" src="../images/arrowright.svg" alt="">
                                 <img id="btn1up" class="arrow" src="../images/arrowtop.png" alt="">
                             </h2>
                             <p>
-                                Un plat, un dessert 
+                                Un plat, un dessert, une boisson
                                 <br>
                                 Pour les petits
                             </p>
@@ -502,12 +511,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div id="entreeid" class="col-md-12 text-center">
+                        <div id="entreeid" class="col-md-6 offset-4 text-center">
                             <!--ENTRÉE FROIDE-->
                             <article id="entreecold">
                                 <h2 class="title text-center">
                                     ENTRÉE FROIDE
-                                    <img id="btn3down" class="arrow" src="../images/arrowright.png" alt="">
+                                    <img id="btn3down" class="arrow" src="../images/arrowright.svg" alt="">
                                     <img id="btn3up" class="arrow" src="../images/arrowtop.png" alt=""> 
                                 </h2>
                                 <ul class="desc">
@@ -526,7 +535,7 @@
                             <article id="entreehot">
                                 <h2 class="title text-center">
                                     ENTRÉE CHAUDE
-                                    <img id="btn3down" class="arrow" src="../images/arrowright.png" alt="">
+                                    <img id="btn3down" class="arrow" src="../images/arrowright.svg" alt="">
                                     <img id="btn3up" class="arrow" src="../images/arrowtop.png" alt="">
                                 </h2>
                                 <ul class="desc">
@@ -573,12 +582,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 text-center" id="platsid"> 
+                        <div class="col-md-6 offset-4 text-center" id="platsid"> 
                             <!--FRUITS DE MER -->
                             <article id="fdm1">
                                 <h2>
                                     LES FRUITS DE MER
-                                    <img id="btn3down" class="arrow" src="../images/arrowright.png" alt="">
+                                    <img id="btn3down" class="arrow" src="../images/arrowright.svg" alt="">
                                     <img id="btn3up" class="arrow" src="../images/arrowtop.png" alt=""> 
                                 </h2>
                                 <!--LES HUITRES-->
@@ -588,10 +597,9 @@
                                 <!--COMPOSITIONS--> 
                                 <div id="compositions">
                                     <h3>LES COMPOSITIONS</h3>
-
                                     <p class="title text-center compotitle">
                                         Le royal mascotte : 185 €
-                                        <img id="btn4down" class="arrow" src="../images/arrowright.png" alt="">
+                                        <img id="btn4down" class="arrow" src="../images/arrowright.svg" alt="">
                                         <img id="btn4up" class="arrow" src="../images/arrowtop.png" alt="">
                                     </p>
                                     <div id="compo1">
@@ -656,7 +664,7 @@
 
                                     <p class="title text-center compotitle">
                                         Le plateau mascotte : 145 €
-                                        <img id="btn5down" class="arrow" src="../images/arrowright.png" alt="">
+                                        <img id="btn5down" class="arrow" src="../images/arrowright.svg" alt="">
                                         <img id="btn5up" class="arrow" src="../images/arrowtop.png" alt="">
                                     </p>
                                     <div id="compo2">
@@ -718,7 +726,7 @@
 
                                     <p class="title text-center compotitle">
                                         L'escale de la mascotte : 95 €
-                                        <img id="btn6down" class="arrow" src="../images/arrowright.png" alt="">
+                                        <img id="btn6down" class="arrow" src="../images/arrowright.svg" alt="">
                                         <img id="btn6up" class="arrow" src="../images/arrowtop.png" alt="">
                                     </p>
                                     <div id="compo3">
@@ -762,7 +770,7 @@
 
                                     <p class="title text-center compotitle">
                                         À la decouverte des crus d'exceptions : 87 €
-                                        <img id="btn7down" class="arrow" src="../images/arrowright.png" alt="">
+                                        <img id="btn7down" class="arrow" src="../images/arrowright.svg" alt="">
                                         <img id="btn7up" class="arrow" src="../images/arrowtop.png" alt="">
                                     </p>
                                     <div id="compo4">
@@ -791,7 +799,7 @@
 
                                     <p class="title text-center compotitle">
                                         Le tour des parc à huîtres : 68 €
-                                        <img id="btn8down" class="arrow" src="../images/arrowright.png" alt="">
+                                        <img id="btn8down" class="arrow" src="../images/arrowright.svg" alt="">
                                         <img id="btn8up" class="arrow" src="../images/arrowtop.png" alt="">
                                     </p>
                                     <div id="compo5">
@@ -814,7 +822,221 @@
 
                                     <p class="title text-center compotitle">
                                         L'assiette de fruits de mer : 33 €
-                                        <img id="btn9down" class="arrow" src="../images/arrowright.png" alt="">
+                                        <img id="btn9down" class="arrow" src="../images/arrowright.svg" alt="">
+                                        <img id="btn9up" class="arrow" src="../images/arrowtop.png" alt="">
+                                    </p>
+                                    <div id="compo6">
+                                        <ul class="desc">
+                                            <li>
+                                                3 Fines de Cancale n°4
+                                            </li>
+                                            <li>
+                                                3 Palourdes
+                                            </li>
+                                            <li>
+                                                3 Moules
+                                            </li>
+                                            <li>
+                                                3 Amandes
+                                            </li>
+                                            <li>
+                                                3 Crevettes Roses
+                                            </li>
+                                            <li>
+                                                1 Portion de bulots
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img id="btn9up" class="arrow" src="../images/arrowtop.png" alt="">
+                                </div>
+                                <!--LES POISSONS DE MER--> 
+                                <div id="pdm">
+                                    <h3>POISSONS DE MER</h3>
+                                    <div id="pdmlist">
+                                        <ul class="desc">
+                                            <li>
+                                                Choucroute de La Mascotte aux poissons 35€
+                                            </li>
+                                            <li>
+                                                Epais de colin en croûte de noisette, épinards frais à la crème 29€
+                                            </li>
+                                            <li>
+                                                Pétales de lotte braisées au Sauternes, riso liées aux sucs d’étrille et brunoise maraîchère 33€
+                                            </li>
+                                            <li>
+                                                Fish and chips, vinaigre de malt et sauce tartare, frites maison 28€
+                                            </li>
+                                            <li>
+                                                Belle sole de Bretagne en meunière et purée à l’ancienne 44€
+                                            </li>
+                                            <li>
+                                                Le « litre » de moules à la Normande et frites maison 25€
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img id="btn4up" class="arrow" src="../images/arrowtop.png" alt="">
+
+                                    <p class="title text-center compotitle">
+                                        Le plateau mascotte : 145 €
+                                        <img id="btn5down" class="arrow" src="../images/arrowright.svg" alt="">
+                                        <img id="btn5up" class="arrow" src="../images/arrowtop.png" alt="">
+                                    </p>
+                                    <div id="compo2">
+                                        <ul class="desc">
+                                            <li>
+                                                2 Belons n° 00
+                                            </li>
+                                            <li>
+                                                4 Fines de Bouzigues n° 3
+                                            </li>
+                                            <li>
+                                                4 Huîtres de Cancale n° 1
+                                            </li>
+                                            <li>
+                                                4 Fines de Claire n° 3
+                                            </li>
+                                            <li>
+                                                4 Pleine Mer de Blainville n° 2
+                                            </li>
+                                            <li>
+                                                2 Clams
+                                            </li>
+                                            <li>
+                                                2 Praires
+                                            </li>
+                                            <li>
+                                                2 Palourdes
+                                            </li>
+                                            <li>
+                                                4 Moules
+                                            </li>
+                                            <li>
+                                                4 Amandes
+                                            </li>
+                                            <li>
+                                                6 Crevettes roses de Madagascar
+                                            </li>
+                                            <li>
+                                                1 Portion de grosses crevettes grises
+                                            </li>
+                                            <li>
+                                                1 Portion de gros bigorneaux
+                                            </li>
+                                            <li>
+                                                1 Portion de bulots
+                                            </li>
+                                            <li>
+                                                4 Langoustines
+                                            </li>
+                                            <li>
+                                                2 Demi tourteaux
+                                            </li>
+                                            <li>
+                                                Supplément Homard : + 35€
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img id="btn5up" class="arrow" src="../images/arrowtop.png" alt="">
+
+                                    <p class="title text-center compotitle">
+                                        L'escale de la mascotte : 95 €
+                                        <img id="btn6down" class="arrow" src="../images/arrowright.svg" alt="">
+                                        <img id="btn6up" class="arrow" src="../images/arrowtop.png" alt="">
+                                    </p>
+                                    <div id="compo3">
+                                        <ul class="desc">
+                                            <li>
+                                                6 Fines de Cancale n° 4
+                                            </li>
+                                            <li>
+                                                6 Pleine Mer de Blainville n° 2
+                                            </li>
+                                            <li>
+                                                2 Palourdes
+                                            </li>
+                                            <li>
+                                                6 Moules
+                                            </li>
+                                            <li>
+                                                6 Amandes
+                                            </li>
+                                            <li>
+                                                6 Crevettes roses
+                                            </li>
+                                            <li>
+                                                1 Portion de grosses crevettes grises
+                                            </li>
+                                            <li>
+                                                1 Portion de gros bigorneaux
+                                            </li>
+                                            <li>
+                                                1 Portion de bulots
+                                            </li>
+                                            <li>
+                                                2 Langoustines
+                                            </li>
+                                            <li>
+                                                2 Demi tourteaux
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img id="btn6up" class="arrow" src="../images/arrowtop.png" alt="">
+
+                                    <p class="title text-center compotitle">
+                                        À la decouverte des crus d'exceptions : 87 €
+                                        <img id="btn7down" class="arrow" src="../images/arrowright.svg" alt="">
+                                        <img id="btn7up" class="arrow" src="../images/arrowtop.png" alt="">
+                                    </p>
+                                    <div id="compo4">
+                                        <ul class="desc">
+                                            <li>
+                                                3 Belons n° 00
+                                            </li>
+                                            <li>
+                                                3 Spéciales Tarbouriech n° 2
+                                            </li>
+                                            <li>
+                                                3 Spéciales « Ostra Regal » n° 3
+                                            </li>
+                                            <li>
+                                                3 Seven ou papillon rose
+                                            </li>
+                                            <li>
+                                                3 Huîtres de Cancale n° 1
+                                            </li>
+                                            <li>
+                                                3 Spéciales d’Isigny n° 3
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img id="btn7up" class="arrow" src="../images/arrowtop.png" alt="">
+
+                                    <p class="title text-center compotitle">
+                                        Le tour des parc à huîtres : 68 €
+                                        <img id="btn8down" class="arrow" src="../images/arrowright.svg" alt="">
+                                        <img id="btn8up" class="arrow" src="../images/arrowtop.png" alt="">
+                                    </p>
+                                    <div id="compo5">
+                                        <ul class="desc">
+                                            <li>
+                                                6 Pleine Mer de Blainville n° 2
+                                            </li>
+                                            <li>
+                                                6 Fines de Cancale n° 4
+                                            </li>
+                                            <li>
+                                                6 Fines de Bouzigues n° 3
+                                            </li>
+                                            <li>
+                                                6 Fines de Claire n° 3
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <img id="btn8up" class="arrow" src="../images/arrowtop.png" alt="">
+
+                                    <p class="title text-center compotitle">
+                                        L'assiette de fruits de mer : 33 €
+                                        <img id="btn9down" class="arrow" src="../images/arrowright.svg" alt="">
                                         <img id="btn9up" class="arrow" src="../images/arrowtop.png" alt="">
                                     </p>
                                     <div id="compo6">
@@ -843,7 +1065,40 @@
                                 </div>
                             </article>
                             <article id="meat">
-                                
+                                <h2>
+                                    LES VIANDES
+                                    <img id="btn3down" class="arrow" src="../images/arrowright.svg" alt="">
+                                    <img id="btn3up" class="arrow" src="../images/arrowtop.png" alt=""> 
+                                </h2>
+                                <!--LES VIANDES-->
+                                <div id="meatlist">
+                                    <ul class="desc">
+                                        <li>
+                                            Beau cassoulet maison 34€
+                                        </li>
+                                        <li>
+                                            Paleron de bœuf, confit au vin rouge, carottes des sables en mousseline infusée au thym 29€
+                                        </li>
+                                        <li>
+                                            Canard français laqué par nos soins aux quatre épices, jus kécap, aligot de l’Aubrac 32€
+                                        </li>
+                                        <li>
+                                            Belle entrecôte d’Angus à la plancha, crème de camembert et frites maison 33€
+                                        </li>
+                                        <li>
+                                            Palette de porc fermier confite, jus et endives chicorée au pommeau 29€
+                                        </li>
+                                        <li>
+                                            Tartare de bœuf d’Aubrac, frites maison ou salades mélées 28€
+                                        </li>
+                                        <li>
+                                            L’ assiette d’aligot ou de légumes de saison 12€
+                                        </li>
+                                        <li>
+                                            Changement de garniture aligot ou légumes de saison 7€
+                                        </li>
+                                    </ul>
+                                </div>
                             </article>
                         </div>
                     </div>
@@ -858,7 +1113,6 @@
                     <div class="row">
                         <div class="col-md-6">
                             <h3 class="home-subtitle">DESSERTS</h3>
-                            <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
                             <svg id="dessertsvg" viewbox="-29 0 160 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -877,42 +1131,63 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div id="entreeid" class="col-md-12 text-center">
-                            <!--ENTRÉE FROIDE-->
-                            <article id="entreecold">
+                        <div id="entreeid" class="col-md-6 offset-4 text-center">
+                            <!--FAITS MAISONS-->
+                            <article id="homemade">
                                 <h2 class="title text-center">
-                                    ENTRÉE FROIDE
-                                    <img id="btn3down" class="arrow" src="../images/arrowright.png" alt="">
+                                    Faits maisons
+                                    <img id="btn3down" class="arrow" src="../images/arrowright.svg" alt="">
                                     <img id="btn3up" class="arrow" src="../images/arrowtop.png" alt=""> 
                                 </h2>
                                 <ul class="desc">
                                     <li>
-                                        Mariné de Saint Jacques de Granville au ponzu et sel bleu de Perse, crumpet servi chaud 18€
+                                        Caillé de chèvre frais de la « Fromagerie du Tertre » à Fougeré en Anjou ... façon sucrée : coulis de fruits rouges ou miel 10€
                                     </li>
                                     <li>
-                                        Vol au vent de ris de veau aux champignons 18 €
+                                        Crêpes flambées au Grand Marnier 14 €
                                     </li>
                                     <li>
-                                        Pizzette de langoustines bretonnes, caviar d'aubergines fumées, lamelles de truffes noires mélanosporum 22 €
+                                        Profitéroles aux choux croquants et glace vanille de la maison Berthillon, sauce au chocolat 22€
+                                    </li>
+                                    <li>
+                                        Poire Williams en verrine rafraîchit par son coulis, chocolat chaud « Guayaquil » 14€
+                                    </li>
+                                    <li>
+                                        Cœur coulant au praliné noisette et sa glace de la maison Berthillon 15€
+                                    </li>
+                                    <li>
+                                        Millefeuille à la crème légère vanillée de Madagascar 15€
+                                    </li>
+                                    <li>
+                                        Le café gourmand de La Mascotte 14€
                                     </li>
                                 </ul>
                             </article>
-                            <!--ENTRÉE CHAUD-->
-                            <article id="entreehot">
+                            <!--GLACES ET SORBETS-->
+                            <article id="icecream">
                                 <h2 class="title text-center">
-                                    ENTRÉE CHAUDE
-                                    <img id="btn3down" class="arrow" src="../images/arrowright.png" alt="">
+                                    Glaces et sorbets Berthillon
+                                    <img id="btn3down" class="arrow" src="../images/arrowright.svg" alt="">
                                     <img id="btn3up" class="arrow" src="../images/arrowtop.png" alt="">
                                 </h2>
                                 <ul class="desc">
                                     <li>
-                                        Mariné de Saint Jacques de Granville au ponzu et sel bleu de Perse, crumpet servi chaud 18€
+                                        La coupe trois parfums 15€
                                     </li>
                                     <li>
-                                        Vol au vent de ris de veau aux champignons 18 €
+                                        Vol au vent de ris de veau aux champignons 18€
                                     </li>
                                     <li>
-                                        Pizzette de langoustines bretonnes, caviar d'aubergines fumées, lamelles de truffes noires mélanosporum 22 €
+                                        La palette de Montmartre : 4 parfums au choix, coulis de fruits rouges ou chocolat chaud, chantilly 18€
+                                    </li>
+                                    <li>
+                                        Le sorbet poire et son verre d’alcool de poire 16€
+                                    </li>
+                                    <li>
+                                        Le sorbet pomme verte et son verre de Calvados 16€
+                                    </li>
+                                    <li>
+                                        Le sorbet cassis et son verre de crème de cassis 16€
                                     </li>
                                 </ul>
                             </article>
@@ -928,8 +1203,7 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
-                            <h3 class="home-subtitle">DESSERTS</h3>
-                            <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
+                            <h3 class="home-subtitle">DRINKS</h3>
                             <svg id="dessertsvg" viewbox="-29 0 160 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -948,13 +1222,38 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div id="entreeid" class="col-md-12 text-center">
-                            <!--ENTRÉE FROIDE-->
-                            <article id="entreecold">
+                        <div id="boissons" class="col-md-6 offset-4 text-center">
+                            <!--À DECOUVRIR-->
+                            <article id="boisson1">
                                 <h2 class="title text-center">
-                                    ENTRÉE FROIDE
-                                    <img id="btn3down" class="arrow" src="../images/arrowright.png" alt="">
+                                    À DECOUVRIR
+                                    <img id="btn3down" class="arrow" src="../images/arrowright.svg" alt="">
                                     <img id="btn3up" class="arrow" src="../images/arrowtop.png" alt=""> 
+                                </h2>
+                                <ul class="desc">
+                                    <li>
+                                        Absinthe de Montmartre à la "Fontaine" 8.35€
+                                    </li>
+                                    <li>
+                                        Muscat du Cap Corse - Domaine de Catarelli 2015 9€
+                                    </li>
+                                    <li>
+                                        Coteaux de l’Aubance - Domaine Richou 8.5€
+                                    </li>
+                                    <li>
+                                        Rivesaltes 2012 – Domaine Vaquer à Tresserre 11€
+                                    </li>
+                                    <li>
+                                        Rivesaltes Ambré Hors d’Age – 25 ans – Domaine de Vaquer à Tresserre 15€
+                                    </li>
+                                </ul>
+                            </article>
+                            <!--CHAMPAGNE-->
+                            <article id="boisson2">
+                                <h2 class="title text-center">
+                                    CHAMPAGNE
+                                    <img id="btn3down" class="arrow" src="../images/arrowright.svg" alt="">
+                                    <img id="btn3up" class="arrow" src="../images/arrowtop.png" alt="">
                                 </h2>
                                 <ul class="desc">
                                     <li>
@@ -968,22 +1267,35 @@
                                     </li>
                                 </ul>
                             </article>
-                            <!--ENTRÉE CHAUD-->
-                            <article id="entreehot">
+                            <!--KIRS-->
+                            <article id="boisson3">
                                 <h2 class="title text-center">
-                                    ENTRÉE CHAUDE
-                                    <img id="btn3down" class="arrow" src="../images/arrowright.png" alt="">
+                                    KIRS
+                                    <img id="btn3down" class="arrow" src="../images/arrowright.svg" alt="">
                                     <img id="btn3up" class="arrow" src="../images/arrowtop.png" alt="">
                                 </h2>
                                 <ul class="desc">
                                     <li>
-                                        Mariné de Saint Jacques de Granville au ponzu et sel bleu de Perse, crumpet servi chaud 18€
+                                       Le Kir « Mascotte » Blanc pétillant à la crème de cassis, de mûre ou de pêche 10€
                                     </li>
                                     <li>
-                                        Vol au vent de ris de veau aux champignons 18 €
+                                        Le Kir Royal Champagne à la crème de cassis, de mûre ou de pêche 13.5€
+                                    </li>
+                                </ul>
+                            </article>
+                            <!--COCKTAILS-->
+                            <article id="boisson4">
+                                <h2 class="title text-center">
+                                    LES COCKTAILS
+                                    <img id="btn3down" class="arrow" src="../images/arrowright.svg" alt="">
+                                    <img id="btn3up" class="arrow" src="../images/arrowtop.png" alt="">
+                                </h2>
+                                <ul class="desc">
+                                    <li>
+                                       L'Americano 13.5€
                                     </li>
                                     <li>
-                                        Pizzette de langoustines bretonnes, caviar d'aubergines fumées, lamelles de truffes noires mélanosporum 22 €
+                                        Le Spritz 11€
                                     </li>
                                 </ul>
                             </article>

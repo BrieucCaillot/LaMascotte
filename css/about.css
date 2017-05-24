@@ -61,29 +61,26 @@ main {
   /* 2000 */
   /* 2006 */
   /* 2017 */ }
-  main #about {
+  main section:first-child {
     background: url("../images/facade2.jpg") no-repeat;
     background-size: 100% 70%;
     background-attachment: fixed;
     height: 500px; }
-    main #about h1 {
-      font-family: Montserrat;
+    main section:first-child #headerdesc {
+      padding: 185px 0px; }
+    main section:first-child h1 {
       font-size: 60px;
       color: #FFF;
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2; }
-    main #about button {
+      z-index: 2;
+      font-family: Montserrat;
+      margin: 0 auto;
+      padding: 20px 0; }
+    main section:first-child button {
       border: 2px solid #ffffff;
       z-index: 2;
-      position: absolute;
-      top: 37%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      margin: 0 auto;
       background-color: transparent; }
-      main #about button a {
+      main section:first-child button a {
         text-decoration: none;
         color: #fff;
         font-size: 14px;
@@ -92,6 +89,11 @@ main {
         display: inline-block;
         text-transform: uppercase;
         padding: 17px 28px; }
+    main section:first-child button:hover {
+      background-color: #6B614D;
+      color: #fff; }
+      main section:first-child button:hover a {
+        color: #fff; }
   main section:nth-child(2) {
     padding: 72px 0;
     background-color: #FFF; }
@@ -126,7 +128,7 @@ main {
       line-height: 35px;
       margin-bottom: 24px; }
     main section:nth-child(2) button {
-      border: 2px solid #000000;
+      border: 2px solid #6B614D;
       background-color: transparent;
       position: absolute;
       right: 15px; }
@@ -139,6 +141,11 @@ main {
         display: inline-block;
         text-transform: uppercase;
         padding: 14px 28px; }
+    main section:nth-child(2) button:hover {
+      background-color: #6B614D;
+      color: #fff; }
+      main section:nth-child(2) button:hover a {
+        color: #fff; }
   main section:nth-child(3) {
     padding: 72px 0;
     background-color: #FFF; }
@@ -172,7 +179,7 @@ main {
       line-height: 35px;
       margin: 0 0 24px 40px; }
     main section:nth-child(3) button {
-      border: 2px solid #000000;
+      border: 2px solid #6B614D;
       background-color: transparent;
       margin-left: 40px; }
       main section:nth-child(3) button a {
@@ -184,6 +191,11 @@ main {
         display: inline-block;
         text-transform: uppercase;
         padding: 14px 28px; }
+    main section:nth-child(3) button:hover {
+      background-color: #6B614D;
+      color: #fff; }
+      main section:nth-child(3) button:hover a {
+        color: #fff; }
   main section:nth-child(4) {
     padding: 72px 0;
     background-color: #FFF; }
@@ -218,7 +230,7 @@ main {
       line-height: 35px;
       margin-bottom: 24px; }
     main section:nth-child(4) button {
-      border: 2px solid #000000;
+      border: 2px solid #6B614D;
       background-color: transparent;
       position: absolute;
       right: 15px; }
@@ -231,6 +243,11 @@ main {
         display: inline-block;
         text-transform: uppercase;
         padding: 14px 28px; }
+    main section:nth-child(4) button:hover {
+      background-color: #6B614D;
+      color: #fff; }
+      main section:nth-child(4) button:hover a {
+        color: #fff; }
   main section:nth-child(5) {
     padding: 72px 0;
     background-color: #FFF; }

@@ -83,41 +83,49 @@ header {
 main {
 
 	/* HISTOIRE */
-	#about {
+	section:first-child {
 		background: url("../images/facade2.jpg") no-repeat;
 		background-size: 100% 70%;
 		background-attachment: fixed;
 		height: 500px;
 
+		#headerdesc {
+			padding: 185px 0px;
+		}
+
 		h1 {
-			font-family: Montserrat;
 			font-size: 60px;
 			color: #FFF;
-			position: absolute;
-		    top: 25%;
-		    left: 50%;
-		    transform: translate(-50%, -50%);
 			z-index: 2;
+			font-family: Montserrat;
+			margin: 0 auto;
+			padding: 20px 0;
 		}
 
 		button {
 			border: 2px solid #ffffff;
 			z-index: 2;
-			position: absolute;
-		    top: 37%;
-		    left: 50%;
-		    transform: translate(-50%, -50%);
-		    background-color: transparent;
+			margin: 0 auto;
+			background-color: transparent;
 			
 			a {
 				text-decoration: none;
 				color: #fff;
 				font-size: 14px;
-			    letter-spacing: 2px;
-			    font-weight: initial;
-			    display: inline-block;
-			    text-transform: uppercase;
-			    padding: 17px 28px;
+				letter-spacing: 2px;
+				font-weight: initial;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 17px 28px;
+			}
+		}
+
+		button:hover {
+			background-color: #6B614D;
+			color: #fff;
+
+			a {
+				color: #fff;
 			}
 		}
 	}
@@ -126,8 +134,7 @@ main {
 	section:nth-child(2) {
 		padding: 72px 0;
 		background-color: #FFF;
-		
-
+	
 		svg {
 			font-weight:bold;
 			max-width: 500px;
@@ -171,7 +178,7 @@ main {
 		}
 
 		button {
-		    border: 2px solid #000000;
+		    border: 2px solid #6B614D;
 		    background-color: transparent;
 		    position: absolute;
 		    right: 15px;
@@ -187,13 +194,21 @@ main {
 			    padding: 14px 28px;
 			}
 		}
+
+		button:hover {
+			background-color: #6B614D;
+			color: #fff;
+
+			a {
+				color: #fff;
+			}
+		}
 	}
 
 	/* BAR */
 	section:nth-child(3) {
 		padding: 72px 0;
 		background-color: #FFF;
-		
 
 		svg {
 			font-weight:bold;
@@ -237,7 +252,7 @@ main {
 		}
 
 		button {
-		    border: 2px solid #000000;
+		    border: 2px solid #6B614D;
 		    background-color: transparent;
 		    margin-left: 40px;;
 
@@ -252,13 +267,21 @@ main {
 			    padding: 14px 28px;
 			}
 		}
+
+		button:hover {
+			background-color: #6B614D;
+			color: #fff;
+
+			a {
+				color: #fff;
+			}
+		}
 	}
 
 	/*L'ECAILLE */
 	section:nth-child(4) {
 		padding: 72px 0;
 		background-color: #FFF;
-		
 
 		svg {
 			font-weight:bold;
@@ -303,7 +326,7 @@ main {
 		}
 
 		button {
-		    border: 2px solid #000000;
+		    border: 2px solid #6B614D;
 		    background-color: transparent;
 		    position: absolute;
 		    right: 15px;
@@ -317,6 +340,15 @@ main {
 			    display: inline-block;
 			    text-transform: uppercase;
 			    padding: 14px 28px;
+			}
+		}
+
+		button:hover {
+			background-color: #6B614D;
+			color: #fff;
+
+			a {
+				color: #fff;
 			}
 		}
 	}
