@@ -147,14 +147,7 @@ main {
   main #menuu {
     background-color: #fff;
     width: 100%;
-    margin: 5% 0;
-    /*h2 {
-    	position: relative;
-        display: inline-block;
-        margin-bottom: 36px;
-        text-transform: uppercase;
-        font-size: 40px;
-    }*/ }
+    margin: 5% 0; }
     main #menuu .container {
       width: 1435px; }
     main #menuu svg {
@@ -189,7 +182,7 @@ main {
       margin-bottom: 20px; }
     main #menuu h2 {
       position: absolute;
-      top: 50%;
+      top: 37%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 3;
@@ -206,7 +199,7 @@ main {
       border: 2px solid #ffffff;
       z-index: 2;
       position: absolute;
-      top: 71%;
+      top: 61%;
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: transparent; }
@@ -220,8 +213,10 @@ main {
         text-transform: uppercase;
         padding: 14px 28px; }
     main #menuu button:hover {
-      background-color: #000;
+      background-color: #556147;
       color: #fff; }
+      main #menuu button:hover a {
+        color: #fff; }
   main #swiperabout {
     height: 470px;
     /* LA MASCOTTE */

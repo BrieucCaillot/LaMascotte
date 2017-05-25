@@ -27,7 +27,7 @@
     <link rel="icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/reset.css"/>
-    <link rel="stylesheet" href="../css/booking.css"/>
+    <link rel="stylesheet" href="../css/credits.css"/>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
     <!--JQUERY-->
@@ -37,7 +37,7 @@
     <script type="text/javascript" src="../js/script.js"></script>
     <script type="text/javascript" src="../js/datepicker.js"></script>
 
-    <title>Réservation - La Mascotte</title>
+    <title>Crédits & Mentions légales - La Mascotte</title>
 </head>
 
 <body>
@@ -85,117 +85,46 @@
             </div>
         </div>
     </header> 
-     
+
     <!--MAIN-->
     <main>
-        <!--BOOK A TABLE-->
+        <!--CRÉDITS ET MENTIONS LEGALES HEADER-->
         <section>
             <div class="container">
                 <div id="headerdesc" class="col-md-12 text-center">
                     <div class="row">
                         <h1>
-                            RÉSERVER UNE TABLE
+                            CRÉDITS & MENTIONS LEGALES
                         </h1>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!--FORM TEXT-->
-        <section>
+        
+        <section id="description">
             <div class="container">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <svg viewbox="-16 0 130 20">
-                                <defs>
-                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-                                        <stop offset="5%" stop-color="#326384"/>
-                                        <stop offset="95%" stop-color="#123752"/>
-                                    </linearGradient>
-                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
-                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
-                                        </path>
-                                    </pattern>
-                                </defs>
-                                <text text-anchor="middle" x="50" y="15" fill="url(#wave)"  fill-opacity="0.6">FORMULAIRE</text>
-                                <text text-anchor="middle" x="50" y="15" fill="url(#gradient)" fill-opacity="0.5">FORMULAIRE</text>
-                            </svg>
-                            <h3>
-                                REMPLISSEZ LE FORMULAIRE<br>POUR RÉSERVER
-                            </h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4 offset-2">
+                                <img src="../images/mascottelogo.png" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    Tous droits réservés © Brieuc Caillot
+                                    <br>
+                                    Direction artistique : Brieuc Caillot
+                                    <br>
+                                    Conception maquettes : Brieuc Caillot
+                                    <br>
+                                    Développement : Brieuc Caillot
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!--FORM-->
-        <section>
-            <div class="container">
-                <!--for redirect in a new page change : 'action="#"' with : 'action="send-reservation.php"'-->
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h3>HORAIRES D'OUVERTURE</h3>
-                                    <p>
-                                        Ouvert 7/7 Jours
-                                        <br>Lundi - Samedi : 8H – 23h30
-                                    </p>
-
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8 offset-md-1">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <form action="#" method="post">
-                                        <!-- Col Left-->
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <input type="text" name="date" id="reservation-date" placeholder="Date">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <input type="text" name="persone" id="persone" placeholder="Pers">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <input type="text" name="time" id="reservation-time" placeholder="Heure">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <input type="text" name="" id="name" placeholder="Nom">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <input type="text" name="phone" id="phone" placeholder="Téléphone">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="email" name="email" id="email" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <textarea class="col-md-12" name="notice" id="notice" placeholder="Informations complémentaires"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <input type="submit" value="Réserver">
-                                            </div>
-                                        </div>
-                                        <!--<span class="form-info">Please note that we can only hold your reservation for 15 minutes. Sorry.</span>-->
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>  
     </main>
 
     <!--FOOTER-->

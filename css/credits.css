@@ -1,7 +1,8 @@
+/* FOOTER */
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto; }
+  font-family: roboto; }
 
 /* HEADER */
 header {
@@ -35,8 +36,7 @@ header {
   header nav {
     padding: 50px 0px 0px 0px;
     text-align: center;
-    font-family: roboto;
-    font-weight: bold; }
+    font-family: roboto; }
     header nav ul li {
       display: inline-block;
       list-style-type: none;
@@ -51,70 +51,38 @@ header {
     header #headersocial img {
       width: 30px; }
 
-/* MAIN */
-main {
-  margin-bottom: 3.5%;
-  /* BOOK A TABLE */
-  /* FORM TEXT */
-  /* FORM */ }
-  main section:first-child {
-    background: url("../images/swiper1.jpg") no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-    background-position: 50% 100%; }
-    main section:first-child #headerdesc {
-      padding: 185px 0px; }
-    main section:first-child h1 {
-      font-size: 60px;
-      color: #FFF;
-      z-index: 2;
-      font-family: Montserrat;
-      margin: 0 auto;
-      padding: 20px 0; }
-  main section:nth-child(2) {
-    padding: 72px 0;
-    background-color: #FFF; }
-    main section:nth-child(2) svg {
-      font-weight: bold;
-      max-width: 450px;
-      height: auto;
-      margin-bottom: 3%;
-      margin-left: -16px;
-      font-family: Montserrat; }
-    main section:nth-child(2) h3 {
-      font-size: 22px;
-      line-height: 35px; }
-  main section:nth-child(3) {
-    background-color: #FFF; }
-    main section:nth-child(3) h3 {
-      font-size: 27px;
-      text-transform: uppercase;
-      padding: 8% 0%;
-      text-align: center; }
-    main section:nth-child(3) p {
-      font-size: 15px;
-      text-transform: uppercase;
-      line-height: 30px;
-      text-align: center; }
-    main section:nth-child(3) input, main section:nth-child(3) textarea {
-      border: 2px solid;
-      border-color: #6b97ac;
-      background-color: transparent;
-      padding: 19px 16px;
-      font-family: 'Montserrat', sans-serif;
-      letter-spacing: 2px;
-      font-size: 14px;
-      width: 100%;
-      height: 55px;
-      margin: 0;
-      text-overflow: ellipsis;
-      text-align: center;
-      outline: none; }
-    main section:nth-child(3) input {
-      margin: 8px 0px; }
-    main section:nth-child(3) textarea {
-      height: 103px; }
+main section:first-child {
+  background: url("../images/facade2.jpg") no-repeat;
+  background-attachment: fixed;
+  height: 500px; }
+  main section:first-child #headerdesc {
+    padding: 185px 0px; }
+  main section:first-child h1 {
+    font-size: 60px;
+    color: #FFF;
+    z-index: 2;
+    font-family: Montserrat;
+    margin: 0 auto;
+    padding: 50px 0; }
+main #description {
+  background-color: #F4F4F4;
+  padding: 60px 0;
+  font-family: roboto; }
+  main #description img {
+    width: 76%;
+    margin-left: 45px; }
+  main #description span {
+    font-size: 20px;
+    font-weight: bold; }
+  main #description p {
+    line-height: 36px;
+    font-weight: 100;
+    font-size: 17px;
+    padding: 90px; }
+
+/* FOOTER */
+main #description .container {
+  width: 90%; }
 
 /* FOOTER */
 footer {
@@ -206,4 +174,4 @@ footer {
     right: 0;
     bottom: -20px; }
 
-/*# sourceMappingURL=booking.css.map */
+/*# sourceMappingURL=credits.css.map */

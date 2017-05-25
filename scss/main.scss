@@ -127,7 +127,7 @@ main {
 			    padding: 17px 28px;
 			}
 		}
-		
+
 		button:hover {
 			background-color: #6B614D;
 			color: #fff;
@@ -166,7 +166,7 @@ main {
 	}
 
 	/* BOXES */
-	 #description {
+	#description {
 		background-color: #F4F4F4;
 	 	padding: 60px 0;
 	 	font-family: roboto;
@@ -260,7 +260,7 @@ main {
 
 		h2 {
 		    position: absolute;
-		    top: 50%;
+		    top: 37%;
 		    left: 50%;
 		    transform: translate(-50%, -50%);
 		    z-index: 3;
@@ -270,14 +270,6 @@ main {
 		    letter-spacing: 10px;
 		    font-family: montserrat;
 		}
-
-		/*h2 {
-			position: relative;
-		    display: inline-block;
-		    margin-bottom: 36px;
-		    text-transform: uppercase;
-		    font-size: 40px;
-		}*/
 		
 		p:last-child {
 			font-size: 15px;
@@ -289,7 +281,7 @@ main {
 			border: 2px solid #ffffff;
 			z-index: 2;
 			position: absolute;
-		    top: 71%;
+		    top: 61%;
 		    left: 50%;
 		    transform: translate(-50%, -50%);
 		    background-color: transparent;
@@ -307,8 +299,12 @@ main {
 		}
 
 		button:hover {
-			background-color: #000;
+			background-color: #556147;
 			color: #fff;
+
+			a {
+				color: #fff;
+			}
 		}
 	}
 
