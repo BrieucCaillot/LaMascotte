@@ -42,7 +42,6 @@
 </head>
 
 <body>
-
     <!--HEADER-->
     <header>
         <div class="container">
@@ -56,7 +55,7 @@
                         </div>
                     </div>
                     <div class="col-md-7 text-center">
-                        <nav>
+                        <nav class="hover-effect">
                             <ul>
                                 <li><a href="index.html">ACCUEIL</a></li>
                                 <li><a href="html/about.html">À PROPOS</a></li>
@@ -99,8 +98,17 @@
                         <h2>RESTAURANT, BRASSERIE</h2>
                     </div>
                     <div class="row">
-                        <button>
-                            <a href="html/booking.html">RÉSERVER</a>
+                        <button class="button button--nina" data-text="R É S E R V E R">
+                            <!-- <a href="html/booking.html"> -->
+                                <span>R</span>
+                                <span>É</span>
+                                <span>S</span>
+                                <span>E</span>
+                                <span>R</span>
+                                <span>V</span>
+                                <span>E</span>
+                                <span>R</span>
+                            <!-- </a> -->
                         </button>
                     </div>
                 </div>
@@ -109,12 +117,12 @@
 
         <!--DESCRIPTION-->
         <section id="description">
-            <div class="container">
+            <div class="container scrollme">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-4">
-                                <img src="images/mascottelogo.png" alt="">
+                            <div class="col-md-4 animateme data-when="view" data-from="0.5" data-to="0" data-opacity="0" data-translatex="-200" data-rotatez="90"">
+                                <img  src="images/mascottelogo.png" alt="">
                             </div>
                             <div class="col-md-4">
                                 <p>
@@ -439,6 +447,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/scrollme.min.js"></script>
 
 </body>
 </html>

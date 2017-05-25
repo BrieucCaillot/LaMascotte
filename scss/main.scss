@@ -46,14 +46,12 @@ header {
 		width: 250px; 
     }
 
-	nav {
-		padding: 50px 0px 0px 0px;
+    nav {
+		padding: 48px 0px 0px 0px;
 		text-align: center;
 		font-family: roboto;
 
-			ul {
-
-
+		ul {
 			li {
 				display: inline-block;
 				list-style-type: none;
@@ -64,9 +62,76 @@ header {
 				a {
 					text-decoration: none;
 					color: inherit;
+					outline: none;
+					color: #fff;
+					text-decoration: none;
+					text-shadow: 0 0 1px rgba(255,255,255,0.3);
+					position: relative;
+
+					:hover,:focus {
+						outline: none;
+					}
 				}
 			}
 		}
+	}
+
+	/*Hover effect*/
+	.hover-effect {
+		a {
+			padding: 10px 0 10px 0;
+			color: #fff;
+			text-shadow: none;
+			-webkit-transition: color 0.3s;
+			-moz-transition: color 0.3s;
+			transition: color 0.3s;
+		}
+	}
+
+	.hover-effect a::before,
+	.hover-effect a::after {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: #fff;
+		content: '';
+		opacity: 0;
+		-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+		-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+		transition: opacity 0.3s, transform 0.3s;
+		-webkit-transform: translateY(-10px);
+		-moz-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	.hover-effect a::before {
+		top: 0;
+		-webkit-transform: translateY(-10px);
+		-moz-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	.hover-effect a::after {
+		bottom: 0;
+		-webkit-transform: translateY(10px);
+		-moz-transform: translateY(10px);
+		transform: translateY(10px);
+	}
+
+	.hover-effect a:hover,
+	.hover-effect a:focus {
+		color: #fff;
+	}
+
+	.hover-effect a:hover::before,
+	.hover-effect a:focus::before,
+	.hover-effect a:hover::after,
+	.hover-effect a:focus::after {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		transform: translateY(0px);
 	}
 
 	#headersocial {
@@ -109,32 +174,134 @@ main {
 			margin: 0 auto;
 			padding: 35px 0;
 		}
-
-		button {
+		
+		.button {
+			position: relative;
+		    display: block;
+		    color: inherit;
+		    -webkit-backface-visibility: hidden;
+		    -moz-osx-font-smoothing: grayscale;
+		}
+		.button--nina {
 			border: 2px solid #ffffff;
 			z-index: 2;
 		    background-color: transparent;
+		    color: #fff;
 		    margin: 0 auto;
-			
-			a {
+			overflow: hidden;
+			font-family: Roboto;;
+			-webkit-transition: background-color 0.3s;
+			transition: background-color 0.3s;
+			padding: 4px 28px;
+			-webkit-backface-visibility: hidden;
+		    -moz-osx-font-smoothing: grayscale;
+
+			span {
 				text-decoration: none;
 				color: #fff;
 				font-size: 14px;
 			    letter-spacing: 2px;
-			    font-weight: initial;
 			    display: inline-block;
 			    text-transform: uppercase;
-			    padding: 17px 28px;
 			}
 		}
-
-		button:hover {
+		.button--nina.button--inverted {
 			background-color: #6B614D;
 			color: #fff;
+		}
+		.button--nina > span {
+			display: inline-block;
+			padding: 1em 0;
+			opacity: 0;
+			color: #fff;
+			-webkit-transform: translate3d(0, -10px, 0);
+			transform: translate3d(0, -10px, 0);
+			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+			transition: transform 0.3s, opacity 0.3s;
+			-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+		}
+		.button--nina::before {
+			content: attr(data-text);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 1em 0;
+			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+			transition: transform 0.3s, opacity 0.3s;
+			-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+			transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+		}
+		.button--nina:hover {
+			background-color: #6b614d;
+		}
+		.button--nina:hover::before {
+			opacity: 0;
+			-webkit-transform: translate3d(0, 100%, 0);
+			transform: translate3d(0, 100%, 0);
+		}
+		.button--nina:hover > span {
+			opacity: 1;
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+		.button--nina:hover > span:nth-child(1) {
+			-webkit-transition-delay: 0.045s;
+			transition-delay: 0.045s;
+		}
+		.button--nina:hover > span:nth-child(2) {
+			-webkit-transition-delay: 0.09s;
+			transition-delay: 0.09s;
+		}
+		.button--nina:hover > span:nth-child(3) {
+			-webkit-transition-delay: 0.135s;
+			transition-delay: 0.135s;
+		}
+		.button--nina:hover > span:nth-child(4) {
+			-webkit-transition-delay: 0.18s;
+			transition-delay: 0.18s;
+		}
+		.button--nina:hover > span:nth-child(5) {
+			-webkit-transition-delay: 0.225s;
+			transition-delay: 0.225s;
+		}
+		.button--nina:hover > span:nth-child(6) {
+			-webkit-transition-delay: 0.27s;
+			transition-delay: 0.27s;
+		}
+		.button--nina:hover > span:nth-child(7) {
+			-webkit-transition-delay: 0.315s;
+			transition-delay: 0.315s;
+		}
+		.button--nina:hover > span:nth-child(8) {
+			-webkit-transition-delay: 0.36s;
+			transition-delay: 0.36s;
+		}
+		.button--nina:hover > span:nth-child(9) {
+			-webkit-transition-delay: 0.405s;
+			transition-delay: 0.405s;
+		}
+		.button--nina:hover > span:nth-child(10) {
+			-webkit-transition-delay: 0.45s;
+			transition-delay: 0.45s;
+		}
 
-			a {
-				color: #fff;
-			}
+		button, html input[type="button"], input[type="reset"], input[type="submit"] {
+		    -webkit-appearance: button;
+		    cursor: pointer;
+		}
+		button, select {
+		    text-transform: none;
+		}
+		button, input {
+    		line-height: normal;
+		}
+		button, input, select, textarea {
+		    font-family: inherit;
+		    font-size: 100%;
+		    margin: 0;
 		}
 
 		.fixed {
