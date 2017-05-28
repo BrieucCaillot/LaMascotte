@@ -1183,7 +1183,7 @@ h2.title .text {
 
   .mobile-nav {
     position: fixed;
-    z-index: 99999;
+    z-index: 9;
     bottom: 0;
     left: 0;
     right: 0;
@@ -1198,7 +1198,8 @@ h2.title .text {
     background: #081838;
     text-decoration: none;
     text-align: center;
-    font-size: 9px; }
+    font-size: 9px;
+    border-radius: 0px; }
   .mobile-nav .btn .btn-inside {
     display: block;
     height: 100%;
@@ -1219,14 +1220,13 @@ h2.title .text {
     padding-top: 18px; }
   .mobile-nav .btn.btn-carte .icon {
     margin-bottom: 10px;
-    background-image: url("../img/skin/x1-sprite.png");
-    background-position: 0px -141px;
+    background-image: url("../images/mobilenav/house.png");
     width: 29px;
     height: 15px; } }
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
   .mobile-nav .btn.btn-carte .icon {
-    background-image: url("../img/skin/x2-sprite.png");
-    background-size: 52px 1081px; } }
+    background: url("../images/mobilenav/fish.png");
+    background-size: cover; }
 @media screen and (max-width: 767px) {
   .mobile-nav .btn.btn-restaurant {
     left: 20%; }
@@ -1234,14 +1234,14 @@ h2.title .text {
     padding-top: 14px; }
   .mobile-nav .btn.btn-restaurant .icon {
     margin-bottom: 10px;
-    background-image: url("../img/skin/x1-sprite.png");
-    background-position: 0px -291px;
+    background-image: url("../images/mobilenav/fish.png");
+    background-size: cover;
     width: 21px;
     height: 19px; } }
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
   .mobile-nav .btn.btn-restaurant .icon {
-    background-image: url("../img/skin/x2-sprite.png");
-    background-size: 52px 1081px; } }
+    background-image: url("../images/mobilenav/home.png");
+    background-size: cover; } }
 @media screen and (max-width: 767px) {
   .mobile-nav .btn.btn-contact {
     left: 40%; }
@@ -1249,14 +1249,14 @@ h2.title .text {
     padding-top: 12px; }
   .mobile-nav .btn.btn-contact .icon {
     margin-bottom: 10px;
-    background-image: url("../img/skin/x1-sprite.png");
-    background-position: 0px -334px;
+    background-image: url("../images/mobilenav/marker.png");
+    background-size: cover;
     width: 14px;
     height: 21px; } }
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
   .mobile-nav .btn.btn-contact .icon {
-    background-image: url("../img/skin/x2-sprite.png");
-    background-size: 52px 1081px; } }
+    background-image: url("../images/mobilenav/marker.png");
+    background-size: cover; } }
 @media screen and (max-width: 767px) {
   .mobile-nav .btn.btn-news {
     left: 60%; }
@@ -1270,8 +1270,8 @@ h2.title .text {
     height: 19px; } }
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
   .mobile-nav .btn.btn-news .icon {
-    background-image: url("../img/skin/x2-sprite.png");
-    background-size: 52px 1081px; } }
+    background: url("../images/mobilenav/delivery2.png") no-repeat;
+    background-size: cover; } }
 @media screen and (max-width: 767px) {
   .mobile-nav .btn.btn-phone {
     left: 80%;
@@ -1280,14 +1280,14 @@ h2.title .text {
     padding-top: 14px; }
   .mobile-nav .btn.btn-phone .icon {
     margin-bottom: 9px;
-    background-image: url("../img/skin/x1-sprite.png");
-    background-position: 0px -312px;
+    background: url("../images/mobilenav/phone.png") no-repeat;
+    background-size: cover;
     width: 20px;
     height: 20px; } }
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 767px) and (min-device-pixel-ratio: 1.5) {
   .mobile-nav .btn.btn-phone .icon {
-    background-image: url("../img/skin/x2-sprite.png");
-    background-size: 52px 1081px; } }
+    background: url("../images/mobilenav/phone.png") no-repeat;
+    background-size: cover; } }
 @media screen and (max-width: 767px) {
   .mobile-nav .btn.btn-phone .btn-inside {
     border-right: none; }
