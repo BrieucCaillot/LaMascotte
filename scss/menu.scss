@@ -4,6 +4,8 @@ body {
 	margin : 0;
 	padding: 0;
 	font-family : roboto;
+	-webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s;
 
 	.button {
 		position: relative;
@@ -149,11 +151,7 @@ body {
 	    font-size: 100%;
 	    margin: 0;
 	}
-}
 
-body {
-	-webkit-transition: 0.5s; /* Safari */
-    transition: 0.5s;
 }
 
 /* HEADER */
@@ -350,7 +348,7 @@ main {
 		}
 	}
 
-	/* LA CARTE */
+	/* NAV CARTE */
 	section:nth-child(2) {
 		padding: 50px 0 50px 0;
 		background-color: #F4F4F4;
@@ -387,8 +385,6 @@ main {
 			letter-spacing: 2px;
 			margin-bottom: 20px;
 			font-weight: 400;
-			/*position: absolute;
-			top: 45%;*/
 		}
 
 		h2 {
@@ -443,7 +439,8 @@ main {
 		.title {
 			font-size: 20px;
 			line-height: 30px;
-			margin-bottom: 4%;
+			font-family: Montserrat;
+			margin: 2% 0%;
 		}
 		
 		.desc {
@@ -452,13 +449,12 @@ main {
 			margin-bottom: 24px;
 		}
 
-		#entree1, #plats1, #dessert1, #entree2, #plats2, #dessert2, #plats3, #dessert3 {
+		#entree2, #plats2, #dessert2, #plats3, #dessert3, #entree2desc, #plats2desc, #dessert2desc, #plats3desc, #dessert3desc {
 			display: none;
 		}
 
-		article {
-			display: inline-block;
-			float: left;
+		#menus {
+			margin: 47px 0;
 		}
 
 		svg {
@@ -487,26 +483,26 @@ main {
 			position: relative;
 			text-transform: uppercase;
 			font-size: 22px;
-			margin: 46px 0 36px 0;
+			font-family: Montserrat;
 		}
 
 		p {
 			text-align: center;
-			margin-bottom: 4%;
 			line-height: 30px;
 			font-size: 14px;
+			margin: 5% 0;
 		}
 
 		li {
 			padding-bottom: 15px;
 			list-style-type: circle;
+			font-size: 14px;
+			line-height: 29px;
 		}
 
 		.desc {
 			font-size: 15px;
 			line-height: 35px;
-			margin-bottom: 24px;
-			margin-left: 60px;
 		}
 
 		button {
@@ -548,12 +544,6 @@ main {
 
 		#entreecold ul, #entreehot ul {
 			display: none;
-		}
-
-		article {
-			display: inline-block;
-			float: left;
-			margin-right: 14%;
 		}
 
 		svg {

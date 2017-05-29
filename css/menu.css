@@ -1,7 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: roboto; }
+  font-family: roboto;
+  -webkit-transition: 0.5s;
+  /* Safari */
+  transition: 0.5s; }
   body .button {
     position: relative;
     display: block;
@@ -118,11 +121,6 @@ body {
     font-size: 100%;
     margin: 0; }
 
-body {
-  -webkit-transition: 0.5s;
-  /* Safari */
-  transition: 0.5s; }
-
 /* HEADER */
 header {
   position: fixed;
@@ -224,7 +222,7 @@ header {
 /* MAIN */
 main {
   /* HEADER LA CARTE */
-  /* LA CARTE */
+  /* NAV CARTE */
   /* LES MENUS */
   /* LES ENTREES */
   /* LES PLATS */
@@ -293,9 +291,7 @@ main {
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 20px;
-      font-weight: 400;
-      /*position: absolute;
-      top: 45%;*/ }
+      font-weight: 400; }
     main section:nth-child(2) h2 {
       position: relative;
       display: inline-block;
@@ -332,16 +328,16 @@ main {
     main section:nth-child(3) .title {
       font-size: 20px;
       line-height: 30px;
-      margin-bottom: 4%; }
+      font-family: Montserrat;
+      margin: 2% 0%; }
     main section:nth-child(3) .desc {
       font-size: 15px;
       line-height: 35px;
       margin-bottom: 24px; }
-    main section:nth-child(3) #entree1, main section:nth-child(3) #plats1, main section:nth-child(3) #dessert1, main section:nth-child(3) #entree2, main section:nth-child(3) #plats2, main section:nth-child(3) #dessert2, main section:nth-child(3) #plats3, main section:nth-child(3) #dessert3 {
+    main section:nth-child(3) #entree2, main section:nth-child(3) #plats2, main section:nth-child(3) #dessert2, main section:nth-child(3) #plats3, main section:nth-child(3) #dessert3, main section:nth-child(3) #entree2desc, main section:nth-child(3) #plats2desc, main section:nth-child(3) #dessert2desc, main section:nth-child(3) #plats3desc, main section:nth-child(3) #dessert3desc {
       display: none; }
-    main section:nth-child(3) article {
-      display: inline-block;
-      float: left; }
+    main section:nth-child(3) #menus {
+      margin: 47px 0; }
     main section:nth-child(3) svg {
       font-weight: bold;
       max-width: 500px;
@@ -362,20 +358,20 @@ main {
       position: relative;
       text-transform: uppercase;
       font-size: 22px;
-      margin: 46px 0 36px 0; }
+      font-family: Montserrat; }
     main section:nth-child(3) p {
       text-align: center;
-      margin-bottom: 4%;
       line-height: 30px;
-      font-size: 14px; }
+      font-size: 14px;
+      margin: 5% 0; }
     main section:nth-child(3) li {
       padding-bottom: 15px;
-      list-style-type: circle; }
+      list-style-type: circle;
+      font-size: 14px;
+      line-height: 29px; }
     main section:nth-child(3) .desc {
       font-size: 15px;
-      line-height: 35px;
-      margin-bottom: 24px;
-      margin-left: 60px; }
+      line-height: 35px; }
     main section:nth-child(3) button {
       border: 2px solid #000000;
       background-color: transparent; }
@@ -402,10 +398,6 @@ main {
       display: none; }
     main section:nth-child(4) #entreecold ul, main section:nth-child(4) #entreehot ul {
       display: none; }
-    main section:nth-child(4) article {
-      display: inline-block;
-      float: left;
-      margin-right: 14%; }
     main section:nth-child(4) svg {
       font-weight: bold;
       max-width: 500px;
