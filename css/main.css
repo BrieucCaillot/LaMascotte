@@ -644,11 +644,10 @@ footer {
     margin: 0; }
   footer .btn-credits {
     display: inline-block;
-    margin-right: 50px;
     text-transform: uppercase;
     text-decoration: none;
     color: #0e2046;
-    padding: 3.5%; }
+    padding: 3.5% 0; }
   footer .form-newsletter {
     display: inline-block;
     position: relative;
@@ -717,7 +716,23 @@ footer {
     bottom: -20px; }
 
 /************** RESPONSIVE ***************/
-/* MEDIA QUERIES MAX WIDTH 1100PX */
+/* MEDIA QUERIES MAX WIDTH 1319PX */
+@media all and (max-width: 1319px) and (min-width: 992px) {
+  #headersocial {
+    position: absolute;
+    right: -290%; }
+
+  .show {
+    display: block; }
+
+  .hide {
+    display: none; }
+
+  header .progressContainer {
+    top: 69px; }
+
+  footer {
+    height: 110px; } }
 /* MEDIA QUERIES MAX WIDTH 950PX */
 @media all and (max-width: 992px) {
   .show {
@@ -732,6 +747,9 @@ footer {
   #swiperrestaurant {
     height: 300px; }
 
+  header .progressContainer {
+    top: 69px; }
+
   main section:first-child h1 {
     font-size: 60px; }
 
@@ -742,20 +760,28 @@ footer {
     height: 550px; }
     main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
       display: none; }
+    main section:nth-child(5) div.img {
+      display: none; }
+    main section:nth-child(5) img {
+      display: none; }
     main section:nth-child(5) button {
       width: 100%;
       margin-top: 10px; }
-    main section:nth-child(5) img {
-      display: none; }
 
   main section:last-child {
     height: 980px; }
     main section:last-child #contact {
       position: absolute;
       top: 600px;
-      left: 20px; }
+      left: 20px;
+      height: 400px; }
     main section:last-child #map {
-      height: 570px; } }
+      height: 570px; }
+
+  footer {
+    height: 130px; }
+    footer .btn-credits {
+      padding: 10% 0; } }
 @media all and (max-width: 992px) and (min-width: 768px) {
   #headersocial {
     position: absolute;
@@ -767,11 +793,12 @@ footer {
 
   main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
     display: none; }
-  main section:nth-child(5) img {
-    display: none; }
   main section:nth-child(5) button {
     width: 70%;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+
+  footer .btn-credits {
+    padding: 6% 0; } }
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width: 780px) {
   .show {
@@ -786,6 +813,9 @@ footer {
   #swiperrestaurant {
     height: 300px; }
 
+  header .progressContainer {
+    top: 69px; }
+
   main section:first-child h1 {
     font-size: 60px; }
 
@@ -796,8 +826,10 @@ footer {
     margin: 0% 40%;
     width: 72%; }
 
+  main section:nth-child(3) #swiperrestaurant {
+    height: 75%; }
+
   main section:nth-child(5) {
-    height: 870px;
     margin-top: 10px; }
     main section:nth-child(5) .description {
       margin: 40px 0; }
@@ -812,7 +844,12 @@ footer {
       width: 75%; }
 
   main section:last-child #contact {
-    height: 400px; } }
+    height: 370px; }
+
+  footer {
+    height: 160px; }
+    footer .btn-credits {
+      padding: 7% 0; } }
 /* MEDIA QUERIES MAX WIDTH 380PX */
 @media all and (max-width: 380px) {
   .hovermenu2, .hovermenu4 {
@@ -824,10 +861,16 @@ footer {
   section:first-child h2 {
     font-size: 20px; }
 
-  main section:nth-child(5) {
-    height: 820px; }
-    main section:nth-child(5) button {
-      margin-top: 10px;
-      width: 75%; } }
+  main section:nth-child(5) button {
+    margin-top: 10px;
+    width: 75%; } }
+/* MEDIA QUERIES MAX WIDTH 380PX */
+@media all and (max-width: 992px) {
+  /* MEDIA QUERIES MAX WIDTH 380PX */ }
+/* MEDIA QUERIES MAX WIDTH 380PX */
+@media all and (max-width: 992px) {
+  /* MEDIA QUERIES MAX WIDTH 380PX */
+  footer {
+    height: 130px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -332,8 +332,10 @@ main {
       margin: 2% 0%; }
     main section:nth-child(3) .desc {
       font-size: 15px;
-      line-height: 35px;
-      margin-bottom: 24px; }
+      line-height: 30px;
+      margin-bottom: 24px;
+      font-family: Montserrat;
+      margin: 2% 0%; }
     main section:nth-child(3) #entree2, main section:nth-child(3) #plats2, main section:nth-child(3) #dessert2, main section:nth-child(3) #plats3, main section:nth-child(3) #dessert3, main section:nth-child(3) #entree2desc, main section:nth-child(3) #plats2desc, main section:nth-child(3) #dessert2desc, main section:nth-child(3) #plats3desc, main section:nth-child(3) #dessert3desc {
       display: none; }
     main section:nth-child(3) #menus {
@@ -361,17 +363,14 @@ main {
       font-family: Montserrat; }
     main section:nth-child(3) p {
       text-align: center;
+      font-size: 16px;
       line-height: 30px;
-      font-size: 14px;
-      margin: 5% 0; }
+      font-family: Montserrat; }
     main section:nth-child(3) li {
       padding-bottom: 15px;
       list-style-type: circle;
       font-size: 14px;
       line-height: 29px; }
-    main section:nth-child(3) .desc {
-      font-size: 15px;
-      line-height: 35px; }
     main section:nth-child(3) button {
       border: 2px solid #000000;
       background-color: transparent; }
@@ -422,16 +421,17 @@ main {
       margin: 48px 0 35px 0; }
     main section:nth-child(4) li {
       padding-bottom: 15px;
-      list-style-type: circle;
-      text-align: left; }
+      list-style-type: circle; }
     main section:nth-child(4) .title {
-      font-size: 22px;
+      font-size: 20px;
       line-height: 30px;
-      margin-bottom: 6%; }
+      font-family: Montserrat;
+      margin: 2% 0%; }
     main section:nth-child(4) .desc {
       font-size: 15px;
-      line-height: 35px;
-      margin-bottom: 24px; }
+      line-height: 30px;
+      font-family: Montserrat;
+      margin: 2% 0%; }
     main section:nth-child(4) button {
       border: 2px solid #000000;
       background-color: transparent; }
@@ -449,19 +449,8 @@ main {
     background-color: #FFF; }
     main section:nth-child(5) .home-subtitle {
       font-size: 17px; }
-    main section:nth-child(5) .arrow {
-      width: 19px;
-      height: 21px;
-      display: none;
-      padding: 1px 0 0 4px; }
-    main section:nth-child(5) .compotitle {
+    main section:nth-child(5) #compo2, main section:nth-child(5) #compo3, main section:nth-child(5) #compo4, main section:nth-child(5) #compo5, main section:nth-child(5) #compo6, main section:nth-child(5) #meatlist, main section:nth-child(5) #poissonsdemer {
       display: none; }
-    main section:nth-child(5) #compo1, main section:nth-child(5) #compo2, main section:nth-child(5) #compo3, main section:nth-child(5) #compo4, main section:nth-child(5) #compo5, main section:nth-child(5) #compo6, main section:nth-child(5) #pdmlist, main section:nth-child(5) #meatlist {
-      display: none; }
-    main section:nth-child(5) article {
-      display: inline-block;
-      float: left;
-      margin-right: 14%; }
     main section:nth-child(5) svg {
       font-weight: bold;
       max-width: 500px;
@@ -473,30 +462,30 @@ main {
       width: auto;
       height: 380px; }
     main section:nth-child(5) h3 {
-      font-size: 18px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 33px;
-      font-weight: 400; }
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 30px;
+      font-family: Montserrat;
+      margin: 6% 0%; }
     main section:nth-child(5) h2 {
       position: relative;
-      display: inline-block;
-      text-transform: uppercase;
-      font-size: 27px;
-      margin: 48px 0 35px 0; }
+      font-size: 32px;
+      line-height: 30px;
+      font-family: Montserrat;
+      margin: 6% 0 4% 0; }
     main section:nth-child(5) li {
       padding-bottom: 15px;
-      list-style-type: circle;
-      text-align: left; }
+      list-style-type: circle; }
     main section:nth-child(5) .title {
-      font-size: 17px;
+      font-size: 18px;
       line-height: 30px;
-      margin-bottom: 6%; }
+      font-family: Montserrat;
+      margin: 2% 0%; }
     main section:nth-child(5) .desc {
       font-size: 15px;
-      line-height: 35px;
-      margin-bottom: 24px;
-      margin-left: 60px; }
+      line-height: 30px;
+      font-family: Montserrat;
+      margin: 2% 0%; }
     main section:nth-child(5) button {
       border: 2px solid #000000;
       background-color: transparent; }
@@ -523,10 +512,6 @@ main {
       display: none; }
     main section:nth-child(6) #platsid h2, main section:nth-child(6) #compositions h3, main section:nth-child(6) #huitres h3, main section:nth-child(6) #btn4up, main section:nth-child(6) #btn5up, main section:nth-child(6) #btn6up, main section:nth-child(6) #btn7up, main section:nth-child(6) #btn8up, main section:nth-child(6) #btn9up, main section:nth-child(6) #compo1, main section:nth-child(6) #compo2, main section:nth-child(6) #compo3, main section:nth-child(6) #compo4, main section:nth-child(6) #compo5, main section:nth-child(6) #compo6, main section:nth-child(6) #homemade ul, main section:nth-child(6) #icecream ul {
       display: none; }
-    main section:nth-child(6) article {
-      display: inline-block;
-      float: left;
-      margin-right: 14%; }
     main section:nth-child(6) svg {
       font-weight: bold;
       max-width: 500px;
@@ -554,13 +539,15 @@ main {
       list-style-type: circle;
       text-align: left; }
     main section:nth-child(6) .title {
-      font-size: 22px;
+      font-size: 20px;
       line-height: 30px;
-      margin-bottom: 6%; }
+      font-family: Montserrat;
+      margin: 2% 0%; }
     main section:nth-child(6) .desc {
       font-size: 15px;
-      line-height: 35px;
-      margin-bottom: 24px; }
+      line-height: 30px;
+      font-family: Montserrat;
+      margin: 2% 0%; }
     main section:nth-child(6) button {
       border: 2px solid #000000;
       background-color: transparent; }
@@ -587,10 +574,8 @@ main {
       display: none; }
     main section:last-child #platsid h2, main section:last-child #compositions h3, main section:last-child #huitres h3, main section:last-child #btn4up, main section:last-child #btn5up, main section:last-child #btn6up, main section:last-child #btn7up, main section:last-child #btn8up, main section:last-child #btn9up, main section:last-child #compo1, main section:last-child #compo2, main section:last-child #compo3, main section:last-child #compo4, main section:last-child #compo5, main section:last-child #compo6, main section:last-child #boisson1 ul, main section:last-child #boisson2 ul, main section:last-child #boisson3 ul, main section:last-child #boisson4 ul {
       display: none; }
-    main section:last-child article {
-      display: inline-block;
-      float: left;
-      margin-right: 7%; }
+    main section:last-child #drink {
+      margin: 3% 0; }
     main section:last-child svg {
       font-weight: bold;
       max-width: 500px;
@@ -618,13 +603,15 @@ main {
       list-style-type: circle;
       text-align: left; }
     main section:last-child .title {
-      font-size: 22px;
+      font-size: 25px;
       line-height: 30px;
-      margin-bottom: 6%; }
+      font-family: Montserrat;
+      margin: 2% 0%; }
     main section:last-child .desc {
       font-size: 15px;
-      line-height: 35px;
-      margin-bottom: 24px; }
+      line-height: 30px;
+      font-family: Montserrat;
+      margin: 2% 0%; }
     main section:last-child button {
       border: 2px solid #000000;
       background-color: transparent; }

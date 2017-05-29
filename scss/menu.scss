@@ -445,8 +445,10 @@ main {
 		
 		.desc {
 			font-size: 15px;
-			line-height: 35px;
+			line-height: 30px;
 			margin-bottom: 24px;
+			font-family: Montserrat;
+			margin: 2% 0%;
 		}
 
 		#entree2, #plats2, #dessert2, #plats3, #dessert3, #entree2desc, #plats2desc, #dessert2desc, #plats3desc, #dessert3desc {
@@ -488,9 +490,9 @@ main {
 
 		p {
 			text-align: center;
+			font-size: 16px;
 			line-height: 30px;
-			font-size: 14px;
-			margin: 5% 0;
+			font-family: Montserrat;
 		}
 
 		li {
@@ -501,8 +503,6 @@ main {
 		}
 
 		.desc {
-			font-size: 15px;
-			line-height: 35px;
 		}
 
 		button {
@@ -578,20 +578,21 @@ main {
 
 		li {
 			padding-bottom: 15px;
-			list-style-type: circle;
-			text-align: left;
+    		list-style-type: circle;
 		}
 
 		.title {
-			font-size: 22px;
+			font-size: 20px;
 			line-height: 30px;
-			margin-bottom: 6%;
+			font-family: Montserrat;
+			margin: 2% 0%;
 		}
 		
 		.desc {
 			font-size: 15px;
-			line-height: 35px;
-			margin-bottom: 24px;
+		    line-height: 30px;
+		    font-family: Montserrat;
+		    margin: 2% 0%;
 		}
 
 		button {
@@ -619,26 +620,9 @@ main {
 		.home-subtitle {
 			font-size: 17px;
 		}
-
-		.arrow {
-			width: 19px;
-			height: 21px;
-			display: none;
-			padding: 1px 0 0 4px;
-		}
-
-		.compotitle {
-			display: none;
-		}
 		
-		#compo1, #compo2, #compo3, #compo4, #compo5, #compo6, #pdmlist, #meatlist {
+		#compo2, #compo3, #compo4, #compo5, #compo6, #meatlist, #poissonsdemer {
 			display: none;
-		}
-
-		article {
-			display: inline-block;
-			float: left;
-			margin-right: 14%;
 		}
 
 		svg {
@@ -656,38 +640,38 @@ main {
 		}
 
 		h3 {
-			font-size: 18px;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			margin-bottom: 33px;
 			font-weight: 400;
+			font-size: 26px;
+			line-height: 30px;
+			font-family: Montserrat;
+			margin: 6% 0%;
 		}
 
 		h2 {
 			position: relative;
-			display: inline-block;
-			text-transform: uppercase;
-			font-size: 27px;
-			margin: 48px 0 35px 0;
+			font-size: 32px;
+			line-height: 30px;
+			font-family: Montserrat;
+			margin: 6% 0 4% 0;
 		}
 
 		li {
 			padding-bottom: 15px;
 			list-style-type: circle;
-			text-align: left;
 		}
 
 		.title {
-			font-size: 17px;
+		    font-size: 18px;
 			line-height: 30px;
-			margin-bottom: 6%;
+			font-family: Montserrat;
+			margin: 2% 0%;
 		}
 		
 		.desc {
-			font-size: 15px;
-			line-height: 35px;
-			margin-bottom: 24px;
-			margin-left: 60px;
+		    font-size: 15px;
+		    line-height: 30px;
+		    font-family: Montserrat;
+		    margin: 2% 0%;
 		}
 
 		button {
@@ -731,12 +715,6 @@ main {
 			display: none;
 		}
 
-		article {
-			display: inline-block;
-			float: left;
-			margin-right: 14%;
-		}
-
 		svg {
 			font-weight:bold;
 			max-width: 500px;
@@ -774,15 +752,17 @@ main {
 		}
 
 		.title {
-			font-size: 22px;
-			line-height: 30px;
-			margin-bottom: 6%;
+			font-size: 20px;
+		    line-height: 30px;
+		    font-family: Montserrat;
+		    margin: 2% 0%;
 		}
 		
 		.desc {
 			font-size: 15px;
-			line-height: 35px;
-			margin-bottom: 24px;
+		    line-height: 30px;
+		    font-family: Montserrat;
+		    margin: 2% 0%;
 		}
 
 		button {
@@ -827,10 +807,8 @@ main {
 			display: none;
 		}
 
-		article {
-			display: inline-block;
-			float: left;
-			margin-right: 7%;
+		#drink {
+			margin: 3% 0;
 		}
 
 		svg {
@@ -870,15 +848,17 @@ main {
 		}
 
 		.title {
-			font-size: 22px;
-			line-height: 30px;
-			margin-bottom: 6%;
+			font-size: 25px;
+		    line-height: 30px;
+		    font-family: Montserrat;
+		    margin: 2% 0%;
 		}
 		
 		.desc {
 			font-size: 15px;
-			line-height: 35px;
-			margin-bottom: 24px;
+		    line-height: 30px;
+		    font-family: Montserrat;
+		    margin: 2% 0%;
 		}
 
 		button {
