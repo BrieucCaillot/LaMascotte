@@ -23,16 +23,17 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-
     <!--LINK-->
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <!--<link rel="stylesheet" href="css/leduc.css">-->
     
     <!--JQUERY-->
-    <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
     <script type="text/javascript" src="js/scriptmain.js"></script>
 
     <!--GOOGLE MAP-->
@@ -42,36 +43,36 @@
 </head>
 
 <body>
-
     <!--HEADER-->
     <header>
         <div class="container">
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-3 text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
                         <div id="logo">
                             <a href="index.html">
                                 <img src="images/logobeige.png" alt="logo la mascotte">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-7 text-center">
-                        <nav>
+                    <div class="hide col-md-7 text-center">
+                        <nav class="hover-effect">
                             <ul>
                                 <li><a href="index.html">ACCUEIL</a></li>
                                 <li><a href="html/about.html">À PROPOS</a></li>
                                 <li><a href="html/menu.html">MENU</a></li>
                                 <li><a href="html/booking.html">RÉSERVER</a></li>
-                                <li><a href="index.html#googlemap">CONTACT</a></li>
+                                <li><a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/">LIVRAISON</a></li>
+                                <li><a id="contact" href="#">CONTACT</a></li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-md-2 text-center">
+                    <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 text-center">
                         <div id="headersocial">
-                            <a href="#">
+                            <a href="https://www.facebook.com/LaMascotteMontmartre/" target="_blank">
                                 <img src="images/facebook.svg" alt="facebook">
                             </a>
-                            <a href="#">
+                            <a href="https://www.instagram.com/lamascottemontmartre/" target="_blank">
                                 <img src="images/instagram.svg" alt="facebook">
                             </a>
                             <a href="">
@@ -80,38 +81,107 @@
                         </div>
                     </div>
                 </div>
-                <div class="progressContainer"><div id="progress" class="progress"></div></div>
+                <div class="row">
+                    <div class="progressContainer"><div id="progress" class="progress"></div></div>
+                </div>
             </div>
         </div>
-    </header> 
+    </header>
+    <div class="mobile-nav text-center show">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="index.html" class="col-2 btn btn-accueil">
+                    <span class="btn-inside">
+                        <img src="images/mobilenav/home.png" alt="accueil">
+                        <span class="text">Accueil</span>
+                    </span>
+                </a>
+                <a href="html/about.html" class="col-2 btn btn-about">
+                    <span class="btn-inside">
+                        <img src="images/mobilenav/about.png" alt="a propos">
+                        <span class="text">À propos</span>
+                    </span>
+                </a>
+                <a href="html/menu.html" class="col-2 btn btn-menu">
+                    <span class="btn-inside">
+                        <img src="images/mobilenav/fish.png" alt="menu">
+                        <span class="text">La Carte</span>
+                    </span>
+                </a>
+                <a href="html/booking.html" class="col-2 btn btn-booking">
+                    <span class="btn-inside">
+                        <img src="images/mobilenav/phone.png" alt="reservation">
+                        <span class="text">Réserver</span>
+                    </span>
+                </a>
+                <a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/" class="col-2 btn btn-delivery">
+                    <span class="btn-inside">
+                        <img src="images/mobilenav/delivery2.png" alt="livraison">
+                        <span class="text">Livraison</span>
+                    </span>
+                </a>
+                <a href="index.html#contact" class="col-2 btn btn-contact">
+                    <span class="btn-inside">
+                        <img src="images/mobilenav/marker.png" alt="localisation">
+                        <span class="text">Contact</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!--MAIN-->
-    <main>
-
+    <main>  
         <!-- LA MASCOTTE RESTAURANT BRASSERIE -->
-        <section id="header">
-            <h1>LA MASCOTTE</h1>
-            <h2>RESTAURANT, BRASSERIE</h2>
-            <button>
-                <a href="html/booking.html">RÉSERVER</a>
-            </button>
+        <section>
+            <div class="container">
+                <div id="headerdesc" class="col-md-12 text-center">
+                    <div class="row">
+                        <h1>LA MASCOTTE</h1>
+                    </div>
+                    <div class="row">
+                        <h2>RESTAURANT, BRASSERIE</h2>
+                    </div>
+                    <div class="row">
+                        <a href="html/booking.html">
+                            <button class="button button--nina" data-text="R É S E R V E R">
+                                <span>R</span>
+                                <span>É</span>
+                                <span>S</span>
+                                <span>E</span>
+                                <span>R</span>
+                                <span>V</span>
+                                <span>E</span>
+                                <span>R</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--DESCRIPTION-->
-        <section id="description">
-            <div class="container">
+        <section>
+            <div class="container scrollme">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-4">
-                                <img src="images/mascottelogo.png" alt="">
+                            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-lg-4 scrollme animateme">
+                                <!-- data-when="view" 
+                                data-from="0" 
+                                data-to="1" 
+                                data-opacity="0.8" 
+                                data-translatey="-105" 
+                                data-translateX="-105"
+                                style="opacity: 1; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);"> -->
+                                <img  src="images/mascottelogo.png" alt="">
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                 <p>
                                     Restaurant de poissons et fruits de mer depuis la fin XIXème siècle, La Mascotte est un rendez vous gastronomique immanquable pour tout amateur de bonne pêche. <br>Un lieu de caractère installé à deux pas du Sacré Coeur au coeur de Montmartre dans le 18ème arrondissement de Paris.
                                 </p>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                 <div class="small-feature">   
                                     <p>
                                         <span>Ouvert</span> tous les jours sauf le dimanche, lundi et jours fériés.
@@ -120,7 +190,7 @@
                                         <span>Réservation</span> sur le site ou par téléphone <br>au 01 46 06 28 15.
                                     </p>
                                     <p>
-                                        <span>Situé</span> au 52 Rue des Abbesses 75018 Paris 18ème arrondissement.
+                                        <span>Situé</span> à Montmartre au 52 Rue des Abbesses 75018 - Paris 18ème arrondissement.
                                     </p>
                                 </div>
                             </div>
@@ -132,53 +202,53 @@
     
         <!--SWIPER IMAGES RESTAURANT -->
         <!-- Swiper -->
-        <div id="swiperrestaurant">
-            <div id="first" class="swiper-container">
+        <section>
+            <div id="swiperrestaurant">
+                <div id="first" class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/facadenuit.jpg" alt="" width="100%" height="100%"></div>
-                    <div class="swiper-slide"><img src="images/interieur1.jpg" alt="" width="100%" height="100%"></div>
                     <div class="swiper-slide"><img src="images/interieur2.jpg" alt="" width="100%" height="100%"></div>
+                    <div class="swiper-slide"><img src="images/interieur1.jpg" alt="" width="100%" height="100%"></div>
                     <div class="swiper-slide"><img src="images/bar1.jpg" alt="" width="100%" height="100%"></div>
+                    <div class="swiper-slide"><img src="images/facadenuit2.jpg" alt="" width="100%" height="100%"></div>
+                    <div class="swiper-slide"><img src="images/equipe.jpg" alt="" width="100%" height="100%"></div>
                     <div class="swiper-slide"><img src="images/ecaille1.jpg" alt="" width="100%" height="100%"></div>
                     <div class="swiper-slide"><img src="images/ecaille2.jpg" alt="" width="100%" height="100%"></div>
-                    <div class="swiper-slide"><img src="images/ecaille4.jpg" alt="" width="100%" height="100%"></div>
                     <div class="swiper-slide"><img src="images/ecaille5.jpg" alt="" width="100%" height="100%"></div>
-                    <div class="swiper-slide"><img src="images/equipe.jpg" alt="" width="100%" height="100%"></div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
                 <!-- Add Arrows -->
                 <div class="swiper-button-next next"></div>
                 <div class="swiper-button-prev prev"></div>
+                </div>
             </div>
-        </div>
-        <!-- Swiper JS -->
-        <script src="js/swiper.min.js"></script>
+            <!-- Swiper JS -->
+            <script src="js/swiper.min.js"></script>
 
-        <!-- Initialize Swiper -->
-        <script>
-        var swiper1 = new Swiper('#first', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            loop: true,
-            keyboardControl: true,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            spaceBetween: 30,
-            effect: 'fade',
-            autoplay: 6000,
-            speed: 2000
-        });
-        </script>
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper1 = new Swiper('#first', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                loop: true,
+                keyboardControl: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 30,
+                effect: 'fade',
+                autoplay: 6000,
+                speed: 2000
+                });
+            </script> 
+        </section>
         
         <!--MENU-->
-        <section id="menuu">
+        <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="text-center">
                             <h3 class="home-subtitle">Découvrez</h3>
-                            <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
                             <svg viewbox="-10 0 120 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -202,49 +272,87 @@
                     </div>
                 </div>
                 <div class="row" style="margin: 70px 0 35px 0">
-                    <div class="col-md-6 hovermenu1">
-                        <img src="images/soup.svg" alt="">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 hovermenu1">
+                        <!-- <img src="images/soup.svg" alt=""> -->
                         <h2>ENTRÉE</h2>
-                        <button>
-                            <a href="#">VOIR PLUS</a>
-                        </button>
+                        <a href="html/menu.html">
+                            <button class="button button--nina" data-text="V O I R &nbsp; P L U S">
+                                <span>V</span>
+                                <span>O</span>
+                                <span>I</span>
+                                <span>R</span>
+                                <span> </span>
+                                <span>P</span>
+                                <span>L</span>
+                                <span>U</span>
+                                <span>S</span>
+                            </button>
+                        </a>
                         <img src="images/bg-1.jpg" alt="">
                     </div>
-
-                    <div class="col-md-6 hovermenu2">
-                        <img src="images/cooking.svg" alt="">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 hovermenu2">
+                        <!-- <img src="images/cooking.svg" alt=""> -->
                         <h2>PLAT</h2>
-                        <button>
-                            <a href="#">VOIR PLUS</a>
-                        </button>
-                        <img src="images/bg-22.jpg" alt="">
+                        <a href="html/menu.html">
+                            <button class="button button--nina" data-text="V O I R &nbsp; P L U S">
+                                <span>V</span>
+                                <span>O</span>
+                                <span>I</span>
+                                <span>R</span>
+                                <span> </span>
+                                <span>P</span>
+                                <span>L</span>
+                                <span>U</span>
+                                <span>S</span>
+                            </button>
+                        </a>
+                        <img src="images/bg-2.jpg" alt="">
                     </div>
                 </div>
                 <div class="row" style="margin: 35px 0 35px 0">
-            <div class="col-md-6 hovermenu3">
-                <img src="images/dessert.svg" alt="">
-                <h2>DESSERT</h2>
-                <button>
-                    <a href="#">VOIR PLUS</a>
-                </button>
-                <img src="images/bg-3.jpg" alt="">
-            </div>
-
-            <div class="col-md-6 hovermenu4">
-                <img src="images/bar.svg" alt="">
-                <h2>BOISSONS</h2>
-                <button>
-                    <a href="#">VOIR PLUS</a>
-                </button>
-                <img src="images/bg-4.jpg" alt="">
-            </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 hovermenu3">
+                        <!-- <img src="images/dessert.svg" alt=""> -->
+                        <h2>DESSERT</h2>
+                        <a href="html/menu.html">
+                            <button class="button button--nina" data-text="V O I R &nbsp; P L U S">
+                                <span>V</span>
+                                <span>O</span>
+                                <span>I</span>
+                                <span>R</span>
+                                <span> </span>
+                                <span>P</span>
+                                <span>L</span>
+                                <span>U</span>
+                                <span>S</span>
+                            </button>
+                        </a>
+                        <img src="images/bg-3.jpg" alt="">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 hovermenu4">
+                        <!-- <img src="images/bar.svg" alt=""> -->
+                        <h2>BOISSONS</h2>
+                        <a href="html/menu.html">
+                            <button class="button button--nina" data-text="V O I R &nbsp; P L U S">
+                                <span>V</span>
+                                <span>O</span>
+                                <span>I</span>
+                                <span>R</span>
+                                <span> </span>
+                                <span>P</span>
+                                <span>L</span>
+                                <span>U</span>
+                                <span>S</span>
+                            </button>
+                        </a>
+                        <img src="images/bg-4.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </section>
 
         <!--SWIPER ABOUT -->
         <!-- Swiper -->
-        <section id="swiperabout">
+        <section id="googlemap">
             <div id="second" class="swiper-container">
                 <div class="swiper-wrapper">
                     <div id="about" class="swiper-slide">
@@ -252,7 +360,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="row">
-                                        <div class="col-md-5 text-right">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 text-right description">
                                             <h3 class="home-subtitle text-right">Histoire</h3>
                                             <svg viewbox="-7 0 120 20">
                                                 <defs>
@@ -279,16 +387,38 @@
                                             <p class="desc">
                                                 La mascotte est un restaurant, bar dont la création semble remonter à la fin du XIXème siècle. Celui-ci se situe dans le quartier de Montgmarte à Paris 18ème arrondissement.
                                             </p>
-                                            <button>
-                                                <a href="html/booking.html" class="view-more margin-t36">Réserver
-                                                </a>
-                                            </button>
-                                            <button>
-                                                <a href="html/about.html" class="view-more margin-t36">En savoir plus
-                                                </a>
-                                            </button>
+                                            <a href="html/booking.html">
+                                                <button class="button button--nina" data-text="R É S E R V E R">
+                                                    <span>R</span>
+                                                    <span>É</span>
+                                                    <span>S</span>
+                                                    <span>E</span>
+                                                    <span>R</span>
+                                                    <span>V</span>
+                                                    <span>E</span>
+                                                    <span>R</span>
+                                                </button>
+                                            </a>
+                                            <a href="html/about.html">
+                                                <button class="button button--nina" data-text="E N &nbsp; S A V O I R &nbsp; P L U S">
+                                                    <span>E</span>
+                                                    <span>N</span>
+                                                    <span> </span>
+                                                    <span>S</span>
+                                                    <span>A</span>
+                                                    <span>V</span>
+                                                    <span>O</span>
+                                                    <span>I</span>
+                                                    <span>R</span>
+                                                    <span> </span>
+                                                    <span>P</span>
+                                                    <span>L</span>
+                                                    <span>U</span>
+                                                    <span>S</span>
+                                                </button>
+                                            </a>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 img">
                                             <img src="images/equipe.jpg" alt="equipe la mascotte" width="100%" height="100%"/>
                                         </div>
                                     </div>
@@ -301,10 +431,10 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 img">
                                             <img src="images/ecaille3.jpg" alt="" width="100%" height="100%"/>
                                         </div>
-                                        <div class="col-md-5">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 description">
                                             <h3 class="home-subtitle">Dégustez</h3>
                                             <svg viewbox="16.5 0 120 20">
                                                 <defs>
@@ -331,14 +461,31 @@
                                             <p class="desc">
                                                 C’est un zinc de quartier, à la clientèle mélangée et haute en couleur. On y retrouve l’ambiance d’un Montmartre de légende, sans la nostalgie d’un passé qui est ici toujours bien vivant. Et bon vivant.
                                             </p>
-                                            <button>
-                                                <a href="html/about.html#ecaille" class="view-more margin-t36">En savoir plus
-                                                </a>
-                                            </button>
-                                            <button>
-                                                <a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/" class="view-more margin-t36">Commander
-                                                </a>
-                                            </button>
+                                            <a href="html/booking.html">
+                                                <button class="button button--nina" data-text="R É S E R V E R">
+                                                    <span>R</span>
+                                                    <span>É</span>
+                                                    <span>S</span>
+                                                    <span>E</span>
+                                                    <span>R</span>
+                                                    <span>V</span>
+                                                    <span>E</span>
+                                                    <span>R</span>
+                                                </button>
+                                            </a>
+                                            <a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/">
+                                                <button class="button button--nina" data-text="C O M M A N D E R">
+                                                    <span>C</span>
+                                                    <span>O</span>
+                                                    <span>M</span>
+                                                    <span>M</span>
+                                                    <span>A</span>
+                                                    <span>N</span>
+                                                    <span>D</span>
+                                                    <span>E</span>
+                                                    <span>R</span>
+                                                </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -373,7 +520,7 @@
         </section>
 
         <!--CONTACT-->
-        <section id="googlemap">
+        <section>
             <div id="contact">
                 <div class="contact-inside">
 
@@ -393,47 +540,50 @@
             <div id="map"></div>          
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ-djaWFBSh9dK9sL7fCH5eeu1DmK6hd4&callback=initMap" async defer></script>
         </section>
-
     </main>
 
     <!--FOOTER-->
     <footer>
         <div class="container text-center">
-            <div class="row">
-                <div class="col-md-5">
-                    <a href="html/credits.html" class="btn btn-credits">Crédits &amp; Mentions légales</a>
-                </div>
-                <div class="col-md-5">
-                    <form class="form-newsletter" method="post" action="">
-                    <label for="email">Newsletter :</label>
-                    <input type="text" class="form-email input-text" placeholder="Votre email" name="ne" id="ne">
-                    <span class="border-newsletter"><span class="border"></span></span>
-                    <input type="submit" class="btn btn-submit" value="OK">
-                    <div class="form-message valid">
-                        <p>
-                            Votre inscription a bien &eacute;t&eacute; prise en compte.
-                        </p>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-5">
+                        <a href="html/credits.html" class="btn btn-credits">Crédits &amp; Mentions légales</a>
                     </div>
-                    <div class="form-message error valid-error">
-                        <p>
-                            Merci de saisir un e-mail valide.
-                        </p>
+                    <div class="col-xs-4 col-sm-4 col-md-5 col-lg-5">
+                        <form class="form-newsletter" method="post" action="">
+                        <label for="email">Newsletter :</label>
+                        <input type="text" class="form-email input-text" placeholder="Votre email" name="ne" id="ne">
+                        <span class="border-newsletter"><span class="border"></span></span>
+                        <input type="submit" class="btn btn-submit" value="OK">
+                        <div class="form-message valid">
+                            <p>
+                                Votre inscription a bien &eacute;t&eacute; prise en compte.
+                            </p>
+                        </div>
+                        <div class="form-message error valid-error">
+                            <p>
+                                Merci de saisir un e-mail valide.
+                            </p>
+                        </div>
+                        <div class="form-message error post-error">
+                            <p>
+                                Probl&egrave;me technique, veuillez r&eacute;essayer ult&eacute;rieurement.
+                            </p>
+                        </div>
+                        </form>
                     </div>
-                    <div class="form-message error post-error">
-                        <p>
-                            Probl&egrave;me technique, veuillez r&eacute;essayer ult&eacute;rieurement.
-                        </p>
+                    <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                        <a href="index.html">
+                            <img src="images/logobrown.png" alt="Restaurant La Mascotte" class="footer-logo">
+                        </a>
                     </div>
-                    </form>
-                </div>
-                <div class="col-md-2">
-                    <a href="index.html">
-                        <img src="images/logobrown.png" alt="Restaurant La Mascotte" class="footer-logo">
-                    </a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="js/scrollme.min.js"></script>
 
 </body>
 </html>

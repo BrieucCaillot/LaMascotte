@@ -23,11 +23,11 @@ How to download :
 > - Clone via terminal.
 > - Download it via github.
 
-You can check them out [here][3]. 
+You can check them out [here][2]. 
 	
-  [1]: http://www.brieuc.tk
-  [2]: https://github.com/BrieucKyo?tab=repositories
-  [3]: https://help.github.com/articles/cloning-a-repository/
+  [1]: https://github.com/BrieucKyo?tab=repositories
+  [2]: https://help.github.com/articles/cloning-a-repository/
+  [3]: http://www.brieuc.tk
   
 Socials :
 -------------
@@ -35,7 +35,7 @@ Socials :
 
 [![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=social&label=Follow)](https://github.com/BrieucKyo)
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/brieucclt)
-[My Website](www.brieuc.tk)
+[My Website][3]
 
 
   

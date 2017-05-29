@@ -1,7 +1,122 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto; }
+  font-family: roboto; }
+  body .button {
+    position: relative;
+    display: block;
+    color: inherit;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale; }
+  body .button--nina {
+    border: 2px solid #ffffff;
+    z-index: 2;
+    background-color: transparent;
+    color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: Roboto;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    padding: 4px 28px;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale; }
+    body .button--nina span {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 2px;
+      display: inline-block;
+      text-transform: uppercase; }
+  body .button--nina.button--inverted {
+    background-color: #6B614D;
+    color: #fff; }
+  body .button--nina > span {
+    display: inline-block;
+    padding: 1em 0;
+    opacity: 0;
+    color: #fff;
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+  body .button--nina::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1em 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+  body .button--nina:hover {
+    background-color: #6b614d; }
+  body .button--nina:hover::before {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  body .button--nina:hover > span {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  body .button--nina:hover > span:nth-child(1) {
+    -webkit-transition-delay: 0.045s;
+    transition-delay: 0.045s; }
+  body .button--nina:hover > span:nth-child(2) {
+    -webkit-transition-delay: 0.09s;
+    transition-delay: 0.09s; }
+  body .button--nina:hover > span:nth-child(3) {
+    -webkit-transition-delay: 0.135s;
+    transition-delay: 0.135s; }
+  body .button--nina:hover > span:nth-child(4) {
+    -webkit-transition-delay: 0.18s;
+    transition-delay: 0.18s; }
+  body .button--nina:hover > span:nth-child(5) {
+    -webkit-transition-delay: 0.225s;
+    transition-delay: 0.225s; }
+  body .button--nina:hover > span:nth-child(6) {
+    -webkit-transition-delay: 0.27s;
+    transition-delay: 0.27s; }
+  body .button--nina:hover > span:nth-child(7) {
+    -webkit-transition-delay: 0.315s;
+    transition-delay: 0.315s; }
+  body .button--nina:hover > span:nth-child(8) {
+    -webkit-transition-delay: 0.36s;
+    transition-delay: 0.36s; }
+  body .button--nina:hover > span:nth-child(9) {
+    -webkit-transition-delay: 0.405s;
+    transition-delay: 0.405s; }
+  body .button--nina:hover > span:nth-child(10) {
+    -webkit-transition-delay: 0.45s;
+    transition-delay: 0.45s; }
+  body .button--nina:hover > span:nth-child(11) {
+    -webkit-transition-delay: 0.495s;
+    transition-delay: 0.49 0.5s; }
+  body .button--nina:hover > span:nth-child(12) {
+    -webkit-transition-delay: 0.54s;
+    transition-delay: 0.54s; }
+  body .button--nina:hover > span:nth-child(13) {
+    -webkit-transition-delay: 0.585s;
+    transition-delay: 0.58 0.5s; }
+  body .button--nina:hover > span:nth-child(14) {
+    -webkit-transition-delay: 0.63s;
+    transition-delay: 0.63s; }
+  body button, body html input[type="button"], body input[type="reset"], body input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer; }
+  body button, body select {
+    text-transform: none; }
+  body button, body input {
+    line-height: normal; }
+  body button, body input, body select, body textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0; }
 
 /* HEADER */
 header {
@@ -15,7 +130,8 @@ header {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  color: #fff; }
+  color: #fff;
+  /*Hover effect*/ }
   header .container {
     width: 1350px; }
   header .progressContainer {
@@ -33,10 +149,9 @@ header {
   header #logo img {
     width: 250px; }
   header nav {
-    padding: 50px 0px 0px 0px;
+    padding: 48px 0px 0px 0px;
     text-align: center;
-    font-family: roboto;
-    font-weight: bold; }
+    font-family: roboto; }
     header nav ul li {
       display: inline-block;
       list-style-type: none;
@@ -45,7 +160,57 @@ header {
       letter-spacing: 2px; }
       header nav ul li a {
         text-decoration: none;
-        color: inherit; }
+        color: inherit;
+        outline: none;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+        position: relative; }
+        header nav ul li a :hover, header nav ul li a :focus {
+          outline: none; }
+  header .hover-effect a {
+    padding: 10px 0 10px 0;
+    color: #fff;
+    text-shadow: none;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s; }
+  header .hover-effect a::before,
+  header .hover-effect a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  header .hover-effect a::before {
+    top: 0;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  header .hover-effect a::after {
+    bottom: 0;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px); }
+  header .hover-effect a:hover,
+  header .hover-effect a:focus {
+    color: #fff; }
+  header .hover-effect a:hover::before,
+  header .hover-effect a:focus::before,
+  header .hover-effect a:hover::after,
+  header .hover-effect a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px); }
   header #headersocial {
     padding: 50px 0 0 0; }
     header #headersocial img {
@@ -53,37 +218,32 @@ header {
 
 /* MAIN */
 main {
+  /* A PROPOS*/
+  /* NAV */
+  /* LE LIEU */
   /* HISTOIRE */
-  /* RESTAURANT */
-  /* BAR */
-  /*L'ECAILLE */
-  /* 1935 */
-  /* 2000 */
-  /* 2006 */
-  /* 2017 */ }
-  main #about {
+  /* LE LIEU */ }
+  main .container {
+    width: 1275px; }
+  main section:first-child {
     background: url("../images/facade2.jpg") no-repeat;
-    background-size: 100% 70%;
     background-attachment: fixed;
-    height: 500px; }
-    main #about h1 {
-      font-family: Montserrat;
+    background-size: cover; }
+    main section:first-child #headerdesc {
+      padding: 185px 0px; }
+    main section:first-child h1 {
       font-size: 60px;
       color: #FFF;
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2; }
-    main #about button {
+      z-index: 2;
+      font-family: Montserrat;
+      margin: 0 auto;
+      padding: 20px 0; }
+    main section:first-child button {
       border: 2px solid #ffffff;
       z-index: 2;
-      position: absolute;
-      top: 37%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      margin: 0 auto;
       background-color: transparent; }
-      main #about button a {
+      main section:first-child button a {
         text-decoration: none;
         color: #fff;
         font-size: 14px;
@@ -92,44 +252,58 @@ main {
         display: inline-block;
         text-transform: uppercase;
         padding: 17px 28px; }
+    main section:first-child button:hover {
+      background-color: #6B614D;
+      color: #fff; }
+      main section:first-child button:hover a {
+        color: #fff; }
+    main section:first-child a {
+      margin: 0 auto; }
   main section:nth-child(2) {
-    padding: 72px 0;
-    background-color: #FFF; }
+    padding: 50px 0 50px 0;
+    background-color: #F4F4F4;
+    position: relative; }
+    main section:nth-child(2) .row {
+      padding: 5% 0; }
+    main section:nth-child(2) .arrow {
+      width: 19px;
+      height: 21px;
+      display: none;
+      padding: 1px 0 0 4px; }
     main section:nth-child(2) svg {
       font-weight: bold;
       max-width: 500px;
       height: auto;
       margin-bottom: 3%;
-      margin-left: 6%;
+      margin-left: -5px;
       font-family: Montserrat; }
     main section:nth-child(2) img {
       width: auto;
       height: 380px; }
     main section:nth-child(2) h3 {
-      font-size: 14px;
-      font-weight: 400;
+      font-size: 17px;
       text-transform: uppercase;
       letter-spacing: 2px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-weight: 400;
+      /*position: absolute;
+      top: 45%;*/ }
     main section:nth-child(2) h2 {
       position: relative;
       display: inline-block;
-      margin-bottom: 36px;
       text-transform: uppercase;
-      font-size: 40px; }
-    main section:nth-child(2) .title {
-      font-size: 20px;
-      margin-bottom: 6%;
+      font-size: 29px;
+      margin: 48px 0 36px 0; }
+    main section:nth-child(2) p {
+      text-align: center;
+      margin-bottom: 4%;
       line-height: 30px; }
-    main section:nth-child(2) .desc {
-      font-size: 15px;
-      line-height: 35px;
-      margin-bottom: 24px; }
+    main section:nth-child(2) li {
+      padding-bottom: 15px;
+      list-style-type: circle; }
     main section:nth-child(2) button {
       border: 2px solid #000000;
-      background-color: transparent;
-      position: absolute;
-      right: 15px; }
+      background-color: transparent; }
       main section:nth-child(2) button a {
         text-decoration: none;
         color: #000;
@@ -140,147 +314,465 @@ main {
         text-transform: uppercase;
         padding: 14px 28px; }
   main section:nth-child(3) {
-    padding: 72px 0;
-    background-color: #FFF; }
+    margin: 72px 0;
+    /* RESTAURANT */
+    /* BAR */
+    /*L'ECAILLE */ }
     main section:nth-child(3) svg {
+      font-family: montserrat;
       font-weight: bold;
-      max-width: 400px;
-      height: auto;
-      margin-bottom: 3%;
-      font-family: Montserrat; }
-    main section:nth-child(3) img {
-      width: auto;
-      height: 380px; }
+      max-width: 480px;
+      height: auto; }
     main section:nth-child(3) h3 {
-      font-size: 14px;
+      font-size: 17px;
       font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin: 0 0 20px 40px; }
-    main section:nth-child(3) h2 {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 36px;
-      text-transform: uppercase;
-      font-size: 40px; }
-    main section:nth-child(3) .title {
-      font-size: 20px;
-      line-height: 30px;
-      margin: 0 0 4.7% 40px; }
-    main section:nth-child(3) .desc {
-      font-size: 15px;
-      line-height: 35px;
-      margin: 0 0 24px 40px; }
-    main section:nth-child(3) button {
-      border: 2px solid #000000;
-      background-color: transparent;
-      margin-left: 40px; }
-      main section:nth-child(3) button a {
-        text-decoration: none;
-        color: #000;
-        font-size: 11px;
-        letter-spacing: 2px;
-        font-weight: initial;
-        display: inline-block;
+      margin-bottom: 20px;
+      letter-spacing: 2px; }
+    main section:nth-child(3) article:nth-child(2) {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:nth-child(3) article:nth-child(2) svg {
+        font-weight: bold;
+        max-width: 500px;
+        height: auto;
+        font-family: Montserrat;
+        margin: 0 0 4.7% 9%; }
+      main section:nth-child(3) article:nth-child(2) img {
+        width: 100%;
+        height: 380px; }
+      main section:nth-child(3) article:nth-child(2) h3 {
+        font-size: 17px;
+        font-weight: 400;
         text-transform: uppercase;
-        padding: 14px 28px; }
+        letter-spacing: 2px;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(3) article:nth-child(2) h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main section:nth-child(3) article:nth-child(2) .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(3) article:nth-child(2) .desc {
+        font-size: 15px;
+        line-height: 35px;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(3) article:nth-child(2) .button--nina {
+        padding: 3.5px 28px;
+        color: #6B614D;
+        font-size: 14px;
+        margin-right: 40px;
+        outline: 0; }
+        main section:nth-child(3) article:nth-child(2) .button--nina span {
+          font-size: 12px; }
+      main section:nth-child(3) article:nth-child(2) button {
+        border: 2px solid #6B614D;
+        background-color: transparent;
+        position: absolute;
+        right: 15px; }
+        main section:nth-child(3) article:nth-child(2) button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+      main section:nth-child(3) article:nth-child(2) button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main section:nth-child(3) article:nth-child(2) button:hover a {
+          color: #fff; }
+    main section:nth-child(3) article:nth-child(3) {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:nth-child(3) article:nth-child(3) svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        font-family: Montserrat;
+        margin: 0 0 3% 40px; }
+      main section:nth-child(3) article:nth-child(3) img {
+        height: 380px;
+        width: 100%; }
+      main section:nth-child(3) article:nth-child(3) h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 0 20px 40px; }
+      main section:nth-child(3) article:nth-child(3) h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main section:nth-child(3) article:nth-child(3) .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 0 4.7% 40px; }
+      main section:nth-child(3) article:nth-child(3) .desc {
+        font-size: 15px;
+        line-height: 35px;
+        margin: 0 0 24px 40px; }
+      main section:nth-child(3) article:nth-child(3) .button--nina {
+        padding: 3.5px 28px;
+        color: #6B614D;
+        font-size: 14px;
+        outline: 0; }
+        main section:nth-child(3) article:nth-child(3) .button--nina span {
+          font-size: 12px; }
+      main section:nth-child(3) article:nth-child(3) button {
+        border: 2px solid #6B614D;
+        background-color: transparent;
+        margin-left: 40px; }
+        main section:nth-child(3) article:nth-child(3) button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+      main section:nth-child(3) article:nth-child(3) button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main section:nth-child(3) article:nth-child(3) button:hover a {
+          color: #fff; }
+    main section:nth-child(3) article:last-child {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:nth-child(3) article:last-child svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 3%;
+        margin-left: 26%;
+        font-family: Montserrat; }
+      main section:nth-child(3) article:last-child img {
+        width: 100%;
+        height: 380px; }
+      main section:nth-child(3) article:last-child h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(3) article:last-child h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main section:nth-child(3) article:last-child .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(3) article:last-child .desc {
+        font-size: 15px;
+        line-height: 35px;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(3) article:last-child .button--nina {
+        padding: 3.5px 28px;
+        color: #6B614D;
+        font-size: 14px;
+        margin-right: 40px;
+        outline: 0; }
+        main section:nth-child(3) article:last-child .button--nina span {
+          font-size: 12px; }
+      main section:nth-child(3) article:last-child button {
+        border: 2px solid #6B614D;
+        background-color: transparent;
+        position: absolute;
+        right: 15px; }
+        main section:nth-child(3) article:last-child button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+      main section:nth-child(3) article:last-child button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main section:nth-child(3) article:last-child button:hover a {
+          color: #fff; }
   main section:nth-child(4) {
-    padding: 72px 0;
-    background-color: #FFF; }
+    margin: 72px 0;
+    /* 1935 */
+    /* 2000 */
+    /* 2006 */
+    /* 2017 */ }
     main section:nth-child(4) svg {
+      font-family: montserrat;
       font-weight: bold;
-      max-width: 400px;
-      height: auto;
-      margin-bottom: 3%;
-      margin-left: 24%;
-      font-family: Montserrat; }
-    main section:nth-child(4) img {
-      width: auto;
-      height: 380px; }
+      max-width: 480px;
+      height: auto; }
     main section:nth-child(4) h3 {
-      font-size: 14px;
+      font-size: 17px;
       font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 20px; }
-    main section:nth-child(4) h2 {
-      position: relative;
-      display: inline-block;
-      margin-bottom: 36px;
-      text-transform: uppercase;
-      font-size: 40px; }
-    main section:nth-child(4) .title {
-      font-size: 20px;
-      margin-bottom: 6%;
-      line-height: 30px; }
-    main section:nth-child(4) .desc {
-      font-size: 15px;
-      line-height: 35px;
-      margin-bottom: 24px; }
-    main section:nth-child(4) button {
-      border: 2px solid #000000;
-      background-color: transparent;
-      position: absolute;
-      right: 15px; }
-      main section:nth-child(4) button a {
-        text-decoration: none;
-        color: #000;
-        font-size: 11px;
-        letter-spacing: 2px;
-        font-weight: initial;
-        display: inline-block;
-        text-transform: uppercase;
-        padding: 14px 28px; }
-  main section:nth-child(5) {
-    padding: 72px 0;
-    background-color: #FFF; }
-    main section:nth-child(5) svg {
-      font-weight: bold;
-      max-width: 400px;
-      height: auto;
-      margin-left: 28%;
-      font-family: Montserrat;
-      margin: 9% 0 3% 28%; }
-    main section:nth-child(5) h3 {
-      font-size: 15px;
-      line-height: 35px; }
-  main section:nth-child(6) {
-    padding: 72px 0;
-    background-color: #FFF; }
-    main section:nth-child(6) svg {
-      font-weight: bold;
-      max-width: 400px;
-      height: auto;
-      margin-left: -28px;
-      font-family: Montserrat;
-      margin: 8% 0 3% -28px; }
-    main section:nth-child(6) h3 {
-      font-size: 15px;
-      line-height: 35px; }
-  main section:nth-child(7) {
-    padding: 72px 0;
-    background-color: #FFF; }
-    main section:nth-child(7) svg {
-      font-weight: bold;
-      max-width: 400px;
-      height: auto;
-      font-family: Montserrat;
-      margin: 7% 0 3% 3%; }
-    main section:nth-child(7) h3 {
-      font-size: 15px;
-      line-height: 35px; }
+      margin-bottom: 20px;
+      letter-spacing: 2px; }
+    main section:nth-child(4) article:nth-child(2) {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:nth-child(4) article:nth-child(2) svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        font-family: Montserrat;
+        margin: 9% 6% 3% 28%; }
+      main section:nth-child(4) article:nth-child(2) h3 {
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: 0;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(4) article:nth-child(2) img {
+        width: 100%; }
+    main section:nth-child(4) article:nth-child(3) {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:nth-child(4) article:nth-child(3) svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        margin-left: -28px;
+        font-family: Montserrat;
+        margin: 8% 0 3% 1%; }
+      main section:nth-child(4) article:nth-child(3) h3 {
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: 0;
+        margin: 0 0 4.7% 40px; }
+      main section:nth-child(4) article:nth-child(3) img {
+        width: 100%; }
+    main section:nth-child(4) article:nth-child(4) {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:nth-child(4) article:nth-child(4) svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        font-family: Montserrat;
+        margin: 7% 6% 3% 3%; }
+      main section:nth-child(4) article:nth-child(4) h3 {
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: 0;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(4) article:nth-child(4) img {
+        width: 100%; }
+    main section:nth-child(4) article:last-child {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:nth-child(4) article:last-child svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        font-family: Montserrat;
+        margin: 12% 0 3% 7%; }
+      main section:nth-child(4) article:last-child h3 {
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: 0;
+        margin: 0 0 4.7% 40px; }
+      main section:nth-child(4) article:last-child img {
+        width: 100%; }
   main section:last-child {
-    padding: 72px 0;
-    background-color: #FFF; }
+    margin: 72px 0;
+    /* RESTAURANT */
+    /* BAR */
+    /*L'ECAILLE */ }
     main section:last-child svg {
+      font-family: montserrat;
       font-weight: bold;
-      max-width: 400px;
-      height: auto;
-      font-family: Montserrat;
-      margin: 12% 0 3% 0; }
+      max-width: 480px;
+      height: auto; }
     main section:last-child h3 {
-      font-size: 15px;
-      line-height: 35px; }
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      letter-spacing: 2px; }
+    main section:last-child article:nth-child(2) {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:last-child article:nth-child(2) svg {
+        font-weight: bold;
+        height: auto;
+        font-family: Montserrat;
+        margin: 0 0 4.7% 17%;
+        max-width: 450px; }
+      main section:last-child article:nth-child(2) img {
+        width: 100%;
+        height: 380px; }
+      main section:last-child article:nth-child(2) h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 40px 4.7% 0; }
+      main section:last-child article:nth-child(2) h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main section:last-child article:nth-child(2) .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 40px 4.7% 0; }
+      main section:last-child article:nth-child(2) .desc {
+        font-size: 15px;
+        line-height: 35px;
+        margin: 0 40px 4.7% 0; }
+      main section:last-child article:nth-child(2) .button--nina {
+        padding: 3.5px 28px;
+        color: #6B614D;
+        font-size: 14px;
+        margin-right: 40px; }
+        main section:last-child article:nth-child(2) .button--nina span {
+          font-size: 12px; }
+      main section:last-child article:nth-child(2) button {
+        border: 2px solid #6B614D;
+        background-color: transparent;
+        position: absolute;
+        right: 15px; }
+        main section:last-child article:nth-child(2) button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+      main section:last-child article:nth-child(2) button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main section:last-child article:nth-child(2) button:hover a {
+          color: #fff; }
+    main section:last-child article:nth-child(3) {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:last-child article:nth-child(3) svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        font-family: Montserrat;
+        margin: 0 0 3% 40px; }
+      main section:last-child article:nth-child(3) img {
+        height: 380px;
+        width: 100%; }
+      main section:last-child article:nth-child(3) h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 0 20px 40px; }
+      main section:last-child article:nth-child(3) h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main section:last-child article:nth-child(3) .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 0 4.7% 40px; }
+      main section:last-child article:nth-child(3) .desc {
+        font-size: 15px;
+        line-height: 35px;
+        margin: 0 0 24px 40px; }
+      main section:last-child article:nth-child(3) .button--nina {
+        padding: 3.5px 28px;
+        color: #6B614D;
+        font-size: 14px; }
+        main section:last-child article:nth-child(3) .button--nina span {
+          font-size: 12px; }
+      main section:last-child article:nth-child(3) button {
+        border: 2px solid #6B614D;
+        background-color: transparent;
+        margin-left: 40px; }
+        main section:last-child article:nth-child(3) button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+      main section:last-child article:nth-child(3) button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main section:last-child article:nth-child(3) button:hover a {
+          color: #fff; }
+    main section:last-child article:last-child {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:last-child article:last-child svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 3%;
+        margin-left: 26%;
+        font-family: Montserrat; }
+      main section:last-child article:last-child img {
+        width: 100%;
+        height: 380px; }
+      main section:last-child article:last-child h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 40px 4.7% 0; }
+      main section:last-child article:last-child h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main section:last-child article:last-child .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 40px 4.7% 0; }
+      main section:last-child article:last-child .desc {
+        font-size: 15px;
+        line-height: 35px;
+        margin: 0 40px 4.7% 0; }
+      main section:last-child article:last-child .button--nina {
+        padding: 3.5px 28px;
+        color: #6B614D;
+        font-size: 14px;
+        margin-right: 40px; }
+        main section:last-child article:last-child .button--nina span {
+          font-size: 12px; }
+      main section:last-child article:last-child button {
+        border: 2px solid #6B614D;
+        background-color: transparent;
+        position: absolute;
+        right: 15px; }
+        main section:last-child article:last-child button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+      main section:last-child article:last-child button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main section:last-child article:last-child button:hover a {
+          color: #fff; }
 
 /* FOOTER */
 footer {
