@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+    // SCROLL DIV
+    $("#about").click(function() {
+        $(document).scrollTo("#placesection", 1000);
+    });
+
+    $("#history").click(function() {
+        $(document).scrollTo("#historysection", 1000);
+    });1
+    $("#news").click(function() {
+        $(document).scrollTo("#newssection", 1000);
+    });
+
     /* FIXED MENU */
     $(document).on("scroll", function() {
 

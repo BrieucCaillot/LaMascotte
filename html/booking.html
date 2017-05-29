@@ -1,6 +1,6 @@
 <!-- 
 
-#title            : LA MASCOTTE RESTAURANT HISTORY PAGE
+#title            : LA MASCOTTE RESTAURANT BOOKING PAGE
 #description      : La Mascotte's Website proudly made by:
 #author           : Brieuc CAILLOT
 #date             : 2017 16 04
@@ -34,7 +34,7 @@
     <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/scriptbooking.js"></script>
     <script type="text/javascript" src="../js/datepicker.js"></script>
 
     <title>Réservation - La Mascotte</title>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                     <div class="col-md-7 text-center">
-                        <nav>
+                        <nav class="hover-effect">
                             <ul>
                             <li><a href="../index.html">ACCUEIL</a></li>
                             <li><a href="about.html">À PROPOS</a></li>
@@ -67,10 +67,10 @@
                     </div>
                     <div class="col-md-2 text-center">
                         <div id="headersocial">
-                            <a href="#">
+                            <a href="https://www.facebook.com/LaMascotteMontmartre/" target="_blank">
                                 <img src="../images/facebook.svg" alt="facebook">
                             </a>
-                            <a href="#">
+                            <a href="https://www.instagram.com/lamascottemontmartre/" target="_blank">
                                 <img src="../images/instagram.svg" alt="facebook">
                             </a>
                             <a href="">
@@ -79,21 +79,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="progressContainer"><div id="progress" class="progress"></div></div>
+                <div class="row">
+                    <div class="progressContainer"><div id="progress" class="progress"></div></div>
+                </div>
             </div>
         </div>
-
     </header> 
      
     <!--MAIN-->
     <main>
-    
         <!--BOOK A TABLE-->
         <section>
-            <h1>RÉSERVER UNE TABLE</h1>
-            <!--<button>
-                <a href="#">RÉSERVER</a>
-            </button>-->
+            <div class="container">
+                <div id="headerdesc" class="col-md-12 text-center">
+                    <div class="row">
+                        <h1>
+                            RÉSERVER UNE TABLE
+                        </h1>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--FORM TEXT-->
@@ -102,7 +107,7 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <svg viewbox="-15 0 130 20">
+                            <svg viewbox="-16 0 130 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
@@ -140,8 +145,6 @@
                                         Ouvert 7/7 Jours
                                         <br>Lundi - Samedi : 8H – 23h30
                                     </p>
-
-
                                 </div>
                             </div>
                         </div>
@@ -152,34 +155,99 @@
                                         <!-- Col Left-->
                                         <div class="row">
                                             <div class="col-md-3">
-                                                <input type="text" name="date" id="reservation-date" placeholder="Date">
+                                                <span class="input input--shoko">
+                                                    <input class="input__field input__field--shoko" type="text" name="date" id="reservation-date">
+                                                    <label class="input__label input__label--shoko" for="reservation-date">
+                                                        <span class="input__label-content input__label-content--shoko">Dâte</span>
+                                                    </label>
+                                                    <svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                    </svg>
+                                                </span>
                                             </div>
                                             <div class="col-md-3">
-                                                <input type="text" name="persone" id="persone" placeholder="Pers">
+                                                <span class="input input--shoko">
+                                                    <input class="input__field input__field--shoko" type="text" name="personne" id="personne">
+                                                    <label class="input__label input__label--shoko" for="reservation-date">
+                                                        <span class="input__label-content input__label-content--shoko">Personne</span>
+                                                    </label>
+                                                    <svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                    </svg>
+                                                </span>
                                             </div>
                                             <div class="col-md-3">
-                                                <input type="text" name="time" id="reservation-time" placeholder="Heure">
+                                                <span class="input input--shoko">
+                                                    <input class="input__field input__field--shoko" type="text" name="time" id="reservation-time">
+                                                    <label class="input__label input__label--shoko" for="reservation-date">
+                                                        <span class="input__label-content input__label-content--shoko">Heure</span>
+                                                    </label>
+                                                    <svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                    </svg>
+                                                </span>
                                             </div>
                                             <div class="col-md-3">
-                                                <input type="text" name="" id="name" placeholder="Nom">
+                                                <span class="input input--shoko">
+                                                    <input class="input__field input__field--shoko" type="text" name="name" id="name">
+                                                    <label class="input__label input__label--shoko" for="reservation-date">
+                                                        <span class="input__label-content input__label-content--shoko">Nom</span>
+                                                    </label>
+                                                    <svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                    </svg>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <input type="text" name="phone" id="phone" placeholder="Téléphone">
+                                                <span class="input input--shoko">
+                                                    <input class="input__field input__field--shoko" type="text" name="phone" id="phone">
+                                                    <label class="input__label input__label--shoko" for="reservation-date">
+                                                        <span class="input__label-content input__label-content--shoko">Téléphone</span>
+                                                    </label>
+                                                    <svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                    </svg>
+                                                </span>
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="email" name="email" id="email" placeholder="Email">
+                                                <span class="input input--shoko">
+                                                    <input class="input__field input__field--shoko" type="text" name="email" id="email">
+                                                    <label class="input__label input__label--shoko" for="reservation-date">
+                                                        <span class="input__label-content input__label-content--shoko">Email</span>
+                                                    </label>
+                                                    <svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                                                        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+                                                    </svg>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <textarea class="col-md-12" name="notice" id="notice" placeholder="Informations complémentaires"></textarea>
+                                                <textarea class="col-md-12" name="notice" id="notice" placeholder="INFORMATIONS COMPLÉMENTAIRES"></textarea>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <input type="submit" value="Réserver">
+                                                <button type="submit" name="submit" class="button button--nina" data-text="R É S E R V E R">
+                                                <!-- <a href="html/booking.html"> -->
+                                                    <span>R</span>
+                                                    <span>É</span>
+                                                    <span>S</span>
+                                                    <span>E</span>
+                                                    <span>R</span>
+                                                    <span>V</span>
+                                                    <span>E</span>
+                                                    <span>R</span>    
+                                                <!-- </a> -->
+                                                </button>
                                             </div>
                                         </div>
                                         <!--<span class="form-info">Please note that we can only hold your reservation for 15 minutes. Sorry.</span>-->
@@ -224,7 +292,7 @@
                     </form>
                 </div>
                 <div class="col-md-2">
-                    <a href="index.html#">
+                    <a href="../index.html">
                         <img src="../images/logobrown.png" alt="Restaurant La Mascotte" class="footer-logo">
                     </a>
                 </div>

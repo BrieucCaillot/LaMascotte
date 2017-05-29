@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    // SCROLL DIV
+    $("#contact").click(function() {
+        $(document).scrollTo('#googlemap', 500);
+    });
+
     // FIXED MENU 
     $(document).on("scroll", function() {
 
@@ -9,6 +14,7 @@ $(document).ready(function() {
                 "z-index": "200",
                 "min-height": "60px",
                 "background-color": "rgb(107, 151, 127)",
+                // "background-color": "#556147"
             });
 
             $("header nav").css({
@@ -154,5 +160,4 @@ $(document).ready(function() {
     		$('.hovermenu4').addClass('menuhover');
     	}
 	});
-
 });

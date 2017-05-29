@@ -1,7 +1,6 @@
 jQuery(document).ready(function($) {
-
-/* LES MENUS */
 	
+	// LES MENUS 
 	$("#menusvg").click(function(){
 			$("#menus h2, #menus p, #btn1down, #btn2down, #btn3down").fadeToggle(600);
 			$("#entree1, #entree2, #plats1, #plats2, #plats3, #dessert1, #dessert2, #dessert3").fadeOut(600);
