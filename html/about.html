@@ -31,6 +31,7 @@
 
     <!--JQUERY-->
     <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
 
     <title>À propos - La Mascotte</title>
@@ -84,8 +85,7 @@
     </header>
 
     <main>
-
-        <!--ABOUT-->
+        <!--À PROPOS-->
         <section>
             <div class="container">
                 <div id="headerdesc" class="col-md-12 text-center">
@@ -112,8 +112,81 @@
             </div>
         </section>
 
+        <!--NAV-->
         <section>
-            <!--L'HISTOIRE-->
+            <div class="container text-center">
+                <div class="col-md-12">
+                    <div class="row">
+                        <!--LIEU-->
+                        <div class="col-md-4">
+                            <h3 id="h3menu" class="home-subtitle">
+                                PLACE
+                            </h3>
+                            <svg id="about" viewBox="-30 0 160 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"></stop>
+                                        <stop offset="95%" stop-color="#123752"></stop>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)" transform="translate(2.66667 0)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite"></animateTransform>
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)" fill-opacity="0.6">LE LIEU</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LE LIEU</text>
+                            </svg>
+                        </div>
+                        <!--HISTOIRE-->
+                        <div class="col-md-4">
+                            <h3 class="home-subtitle">
+                                HISTORIQUE
+                            </h3>
+                            <svg id="history" viewBox="-29 0 160 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"></stop>
+                                        <stop offset="95%" stop-color="#123752"></stop>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)" transform="translate(2.66667 0)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite"></animateTransform>
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)" fill-opacity="0.6">HISTOIRE</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">HISTOIRE</text>
+                            </svg>
+                        </div>
+                        <!--NEWS-->
+                        <div class="col-md-4">
+                            <h3 class="home-subtitle">
+                                ACTUALITÉ
+                            </h3>
+                            <svg id="news" viewBox="-26 0 153 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"></stop>
+                                        <stop offset="95%" stop-color="#123752"></stop>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)" transform="translate(2.66667 0)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite"></animateTransform>
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)" fill-opacity="0.6">ACTUALITÉ</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">ACTUALITÉ</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--LE LIEU-->
+        <section id="placesection">
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center">
@@ -302,9 +375,9 @@
                 </div>
             </article>
         </section>
-
-        <section>
-            <!--L'HISTOIRE-->
+        
+        <!--L'HISTOIRE-->
+        <section id="historysection">
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center">
@@ -458,6 +531,72 @@
                                     <br>
                                     En attendant la relève..
                                 </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--L'ACTUALITÉ-->
+        <section id="newssection">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h3 class="home-subtitle">L'ACTUALITÉ</h3>
+                        <svg viewBox="-10 0 120 20">
+                            <defs>
+                                <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="5%" stop-color="#326384"></stop>
+                                    <stop offset="95%" stop-color="#123752"></stop>
+                                </linearGradient>
+                                <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                    <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)" transform="translate(29.3333 0)"> 
+                                        <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite"></animateTransform>
+                                    </path>
+                                </pattern>
+                            </defs>
+                            <text text-anchor="middle" x="50" y="15" fill="url(#wave)" fill-opacity="0.6">L'ACTUALITÉ
+                            </text>
+                            <text text-anchor="middle" x="50" y="15" fill="url(#gradient)" fill-opacity="0.5">L'ACTUALITÉ
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!--RESTAURANT-->
+            <article>
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="home-subtitle text-right">
+                                    ACTUALITÉ
+                                </h3>
+                                <svg viewbox="-33 0 160 20">
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                            <stop offset="5%" stop-color="#326384"/>
+                                            <stop offset="95%" stop-color="#123752"/>
+                                        </linearGradient>
+                                        <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                            <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
+                                                <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                            </path>
+                                        </pattern>
+                                    </defs>
+                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">VENDREDI 12 MAI</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">VENDREDI 12 MAI</text>
+                                </svg>
+                                <p class="title text-right">
+                                    Rencontre / dédicace / dégustation : André Deyrieux<br>À la rencontre des cépages modestes et oubliés
+                                </p>
+                                <p class="desc text-right">
+                                    Vendredi 12 mai 2017, à partir de 18h, La Mascotte vous invite à une rencontre avec André Deyrieux, à l’occasion de la sortie de son livre : À la rencontre des cépages modestes et oubliés. Cette rencontre / dédicace sera suivie d’une dégustation de cuvées de cépages rares !
+                                </p>
+                            </div>
+                            <div class="col-md-4 offset-1">
+                                <img src="../images/about/actualité1.jpeg" alt="actualité" width="100%" height="100%"/>
                             </div>
                         </div>
                     </div>

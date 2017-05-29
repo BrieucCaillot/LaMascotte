@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    // SCROLL DIV
+    $("#contact").click(function() {
+        $(document).scrollTo('#googlemap', 500);
+    });
+
     // FIXED MENU 
     $(document).on("scroll", function() {
 
@@ -155,5 +160,4 @@ $(document).ready(function() {
     		$('.hovermenu4').addClass('menuhover');
     	}
 	});
-
 });

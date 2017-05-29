@@ -249,7 +249,8 @@ main {
       border: 2px solid #ffffff;
       z-index: 2;
       margin: 0 auto;
-      background-color: transparent; }
+      background-color: transparent;
+      outline: 0; }
       main section:first-child button a {
         text-decoration: none;
         color: #fff;
@@ -338,6 +339,9 @@ main {
       margin-bottom: 24px; }
     main section:nth-child(3) #entree1, main section:nth-child(3) #plats1, main section:nth-child(3) #dessert1, main section:nth-child(3) #entree2, main section:nth-child(3) #plats2, main section:nth-child(3) #dessert2, main section:nth-child(3) #plats3, main section:nth-child(3) #dessert3 {
       display: none; }
+    main section:nth-child(3) article {
+      display: inline-block;
+      float: left; }
     main section:nth-child(3) svg {
       font-weight: bold;
       max-width: 500px;
@@ -357,13 +361,13 @@ main {
     main section:nth-child(3) h2 {
       position: relative;
       text-transform: uppercase;
-      font-size: 29px;
+      font-size: 22px;
       margin: 46px 0 36px 0; }
     main section:nth-child(3) p {
       text-align: center;
       margin-bottom: 4%;
       line-height: 30px;
-      font-size: 20px; }
+      font-size: 14px; }
     main section:nth-child(3) li {
       padding-bottom: 15px;
       list-style-type: circle; }
@@ -398,6 +402,10 @@ main {
       display: none; }
     main section:nth-child(4) #entreecold ul, main section:nth-child(4) #entreehot ul {
       display: none; }
+    main section:nth-child(4) article {
+      display: inline-block;
+      float: left;
+      margin-right: 14%; }
     main section:nth-child(4) svg {
       font-weight: bold;
       max-width: 500px;
@@ -458,6 +466,10 @@ main {
       display: none; }
     main section:nth-child(5) #compo1, main section:nth-child(5) #compo2, main section:nth-child(5) #compo3, main section:nth-child(5) #compo4, main section:nth-child(5) #compo5, main section:nth-child(5) #compo6, main section:nth-child(5) #pdmlist, main section:nth-child(5) #meatlist {
       display: none; }
+    main section:nth-child(5) article {
+      display: inline-block;
+      float: left;
+      margin-right: 14%; }
     main section:nth-child(5) svg {
       font-weight: bold;
       max-width: 500px;
@@ -469,7 +481,7 @@ main {
       width: auto;
       height: 380px; }
     main section:nth-child(5) h3 {
-      font-size: 20px;
+      font-size: 18px;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 33px;
@@ -478,7 +490,7 @@ main {
       position: relative;
       display: inline-block;
       text-transform: uppercase;
-      font-size: 29px;
+      font-size: 27px;
       margin: 48px 0 35px 0; }
     main section:nth-child(5) li {
       padding-bottom: 15px;
@@ -519,6 +531,10 @@ main {
       display: none; }
     main section:nth-child(6) #platsid h2, main section:nth-child(6) #compositions h3, main section:nth-child(6) #huitres h3, main section:nth-child(6) #btn4up, main section:nth-child(6) #btn5up, main section:nth-child(6) #btn6up, main section:nth-child(6) #btn7up, main section:nth-child(6) #btn8up, main section:nth-child(6) #btn9up, main section:nth-child(6) #compo1, main section:nth-child(6) #compo2, main section:nth-child(6) #compo3, main section:nth-child(6) #compo4, main section:nth-child(6) #compo5, main section:nth-child(6) #compo6, main section:nth-child(6) #homemade ul, main section:nth-child(6) #icecream ul {
       display: none; }
+    main section:nth-child(6) article {
+      display: inline-block;
+      float: left;
+      margin-right: 14%; }
     main section:nth-child(6) svg {
       font-weight: bold;
       max-width: 500px;
@@ -579,6 +595,10 @@ main {
       display: none; }
     main section:last-child #platsid h2, main section:last-child #compositions h3, main section:last-child #huitres h3, main section:last-child #btn4up, main section:last-child #btn5up, main section:last-child #btn6up, main section:last-child #btn7up, main section:last-child #btn8up, main section:last-child #btn9up, main section:last-child #compo1, main section:last-child #compo2, main section:last-child #compo3, main section:last-child #compo4, main section:last-child #compo5, main section:last-child #compo6, main section:last-child #boisson1 ul, main section:last-child #boisson2 ul, main section:last-child #boisson3 ul, main section:last-child #boisson4 ul {
       display: none; }
+    main section:last-child article {
+      display: inline-block;
+      float: left;
+      margin-right: 7%; }
     main section:last-child svg {
       font-weight: bold;
       max-width: 500px;
@@ -606,7 +626,7 @@ main {
       list-style-type: circle;
       text-align: left; }
     main section:last-child .title {
-      font-size: 17px;
+      font-size: 22px;
       line-height: 30px;
       margin-bottom: 6%; }
     main section:last-child .desc {

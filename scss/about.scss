@@ -299,7 +299,7 @@ main {
 	section:first-child {
 		background: url("../images/facade2.jpg") no-repeat;
 		background-attachment: fixed;
-		height: 500px;
+		background-size: cover;
 
 		#headerdesc {
 			padding: 185px 0px;
@@ -346,8 +346,85 @@ main {
 		}
 	}
 
-	/* INTERIEUR */
+	/* NAV */
 	section:nth-child(2) {
+		padding: 50px 0 50px 0;
+		background-color: #F4F4F4;
+		position: relative;
+
+		.row {
+			padding: 5% 0;
+		}
+
+		.arrow {
+			width: 19px;
+		    height: 21px;
+		    display: none;
+		    padding: 1px 0 0 4px;
+		}
+
+		svg {
+			font-weight:bold;
+			max-width: 500px;
+			height:auto;
+			margin-bottom: 3%;
+			margin-left:-5px;
+			font-family: Montserrat;
+		}
+
+		img {
+			width: auto;
+			height: 380px;
+		}
+
+		h3 {
+			font-size: 17px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-bottom: 20px;
+			font-weight: 400;
+			/*position: absolute;
+			top: 45%;*/
+		}
+
+		h2 {
+			position: relative;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 29px;
+			margin: 48px 0 36px 0;
+		}
+
+		p {
+			text-align: center;
+			margin-bottom: 4%;
+			line-height: 30px;
+		}
+
+		li {
+			padding-bottom: 15px;
+			list-style-type: circle;
+		}
+
+		button {
+			border: 2px solid #000000;
+			background-color: transparent;
+
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 11px;
+				letter-spacing: 2px;
+				font-weight: initial;
+				display: inline-block;
+				text-transform: uppercase;
+				padding: 14px 28px;
+			}
+		}
+	}
+
+	/* LE LIEU */
+	section:nth-child(3) {
 		margin: 72px 0;
 
 		svg {
@@ -375,6 +452,403 @@ main {
 				height:auto;
 				font-family:Montserrat;
 				margin:0 0 4.7% 9%;
+			}
+
+			img {
+				width: 100%;;
+				height: 380px;
+			}
+
+			h3 {
+				font-size: 17px;
+			    font-weight: 400;
+			    text-transform: uppercase;
+			    letter-spacing: 2px;
+				margin: 0 40px 4.7% 0;
+			}
+
+			h2 {
+				position: relative;
+			    display: inline-block;
+			    margin-bottom: 36px;
+			    text-transform: uppercase;
+			    font-size: 40px;
+			}
+
+			.title {
+				font-size: 20px;
+				line-height: 30px;
+				margin: 0 40px 4.7% 0;
+			}
+			
+			.desc {
+				font-size: 15px;
+			    line-height: 35px;
+				margin: 0 40px 4.7% 0;
+			}
+
+			.button--nina {
+				padding: 3.5px 28px;
+				color: #6B614D;
+				font-size: 14px;
+				margin-right: 40px;
+				outline: 0;
+
+				span {
+					font-size: 12px;
+				}
+			}
+
+			button {
+			    border: 2px solid #6B614D;
+			    background-color: transparent;
+			    position: absolute;
+			    right: 15px;
+
+				a {
+					text-decoration: none;
+				    color: #000;
+				    font-size: 11px;
+				    letter-spacing: 2px;
+				    font-weight: initial;
+				    display: inline-block;
+				    text-transform: uppercase;
+				    padding: 14px 28px;
+				}
+			}
+
+			button:hover {
+				background-color: #6B614D;
+				color: #fff;
+
+				a {
+					color: #fff;
+				}
+			}
+		}
+
+		/* BAR */
+		article:nth-child(3) {
+			padding: 72px 0;
+			background-color: #FFF;
+
+			svg {
+				font-weight:bold;
+				max-width:400px;
+				height:auto;
+				font-family:Montserrat;
+				margin:0 0 3% 40px;
+			}
+
+			img {
+				height: 380px;
+				width: 100%;
+			}
+
+			h3 {
+				font-size: 17px;
+			    font-weight: 400;
+			    text-transform: uppercase;
+			    letter-spacing: 2px;
+			    margin: 0 0 20px 40px;
+			}
+
+			h2 {
+				position: relative;
+			    display: inline-block;
+			    margin-bottom: 36px;
+			    text-transform: uppercase;
+			    font-size: 40px;
+			}
+
+			.title {
+				font-size: 20px;
+				line-height: 30px;
+				margin: 0 0 4.7% 40px;
+			}
+			
+			.desc {
+				font-size: 15px;
+			    line-height: 35px;
+				margin: 0 0 24px 40px;
+			}
+
+			.button--nina {
+				padding: 3.5px 28px;
+				color: #6B614D;
+				font-size: 14px;
+				outline: 0;
+
+				span {
+					font-size: 12px;
+				}
+			}
+
+			button {
+			    border: 2px solid #6B614D;
+			    background-color: transparent;
+			    margin-left: 40px;;
+
+				a {
+					text-decoration: none;
+				    color: #000;
+				    font-size: 11px;
+				    letter-spacing: 2px;
+				    font-weight: initial;
+				    display: inline-block;
+				    text-transform: uppercase;
+				    padding: 14px 28px;
+				}
+			}
+
+			button:hover {
+				background-color: #6B614D;
+				color: #fff;
+
+				a {
+					color: #fff;
+				}
+			}
+		}
+
+		/*L'ECAILLE */
+		article:last-child {
+			padding: 72px 0;
+			background-color: #FFF;
+
+			svg {
+				font-weight:bold;
+				max-width:400px;
+				height:auto;
+				margin-bottom: 3%;
+				margin-left: 26%;
+				font-family:Montserrat;
+			}
+
+			img {
+				width: 100%;
+				height: 380px;
+			}
+
+			h3 {
+				font-size: 17px;
+			    font-weight: 400;
+			    text-transform: uppercase;
+			    letter-spacing: 2px;
+				margin: 0 40px 4.7% 0;
+			}
+
+			h2 {
+				position: relative;
+			    display: inline-block;
+			    margin-bottom: 36px;
+			    text-transform: uppercase;
+			    font-size: 40px;
+			}
+
+			.title {
+				font-size: 20px;
+				line-height: 30px;
+				margin: 0 40px 4.7% 0;
+			}
+			
+			.desc {
+				font-size: 15px;
+			    line-height: 35px;
+				margin: 0 40px 4.7% 0;
+			}
+
+			.button--nina {
+				padding: 3.5px 28px;
+				color: #6B614D;
+				font-size: 14px;
+				margin-right: 40px;
+				outline: 0;
+
+				span {
+					font-size: 12px;
+				}
+			}
+
+			button {
+			    border: 2px solid #6B614D;
+			    background-color: transparent;
+			    position: absolute;
+			    right: 15px;
+
+				a {
+					text-decoration: none;
+				    color: #000;
+				    font-size: 11px;
+				    letter-spacing: 2px;
+				    font-weight: initial;
+				    display: inline-block;
+				    text-transform: uppercase;
+				    padding: 14px 28px;
+				}
+			}
+
+			button:hover {
+				background-color: #6B614D;
+				color: #fff;
+
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+	
+	/* HISTOIRE */
+	section:nth-child(4) {
+		margin: 72px 0;
+
+		svg {
+		    font-family: montserrat;
+		    font-weight: bold;
+		    max-width: 480px;
+		    height: auto;
+		}
+		
+		h3 {
+		    font-size: 17px;
+		    font-weight: 400;
+		    margin-bottom: 20px;
+		    letter-spacing: 2px;
+		}
+
+		/* 1935 */
+		article:nth-child(2) {
+			padding: 72px 0;
+			background-color: #FFF;
+
+			svg {
+				font-weight:bold;
+				max-width:400px;
+				height:auto;
+				font-family:Montserrat;
+				margin:9% 6% 3% 28%;
+			}
+
+			h3 {
+				font-size: 15px;
+	    		line-height: 35px;
+	    		letter-spacing: 0;
+				margin: 0 40px 4.7% 0;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		/* 2000 */
+		article:nth-child(3) {
+			padding: 72px 0;
+			background-color: #FFF;
+			
+			svg {
+				font-weight:bold;
+				max-width:400px;
+				height:auto;
+				margin-left:-28px;
+				font-family:Montserrat;
+				margin:8% 0 3% 1%;
+			}
+
+			h3 {
+				font-size: 15px;
+	    		line-height: 35px;
+				letter-spacing: 0;
+				margin: 0 0 4.7% 40px;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		/* 2006 */
+		article:nth-child(4) {
+			padding: 72px 0;
+			background-color: #FFF;
+
+			svg {
+				font-weight:bold;
+				max-width:400px;
+				height:auto;
+				font-family:Montserrat;
+				margin:7% 6% 3% 3%;
+			}
+
+			h3 {
+				font-size: 15px;
+	    		line-height: 35px;
+	    		letter-spacing: 0;
+				margin: 0 40px 4.7% 0;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		/* 2017 */
+		article:last-child {
+			padding: 72px 0;
+			background-color: #FFF;
+			
+
+			svg {
+				font-weight:bold;
+				max-width:400px;
+				height:auto;
+				font-family:Montserrat;
+				margin:12% 0 3% 7%;
+			}
+
+			h3 {
+				font-size: 15px;
+	    		line-height: 35px;
+	    		letter-spacing: 0;
+				margin: 0 0 4.7% 40px;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	/* LE LIEU */
+	section:last-child {
+		margin: 72px 0;
+
+		svg {
+		    font-family: montserrat;
+		    font-weight: bold;
+		    max-width: 480px;
+		    height: auto;
+		}
+		
+		h3 {
+		    font-size: 17px;
+		    font-weight: 400;
+		    margin-bottom: 20px;
+		    letter-spacing: 2px;
+		}
+
+		/* RESTAURANT */
+		article:nth-child(2) {
+			padding: 72px 0;
+			background-color: #FFF;
+		
+			svg {
+				font-weight:bold;
+				height:auto;
+				font-family:Montserrat;
+				margin:0 0 4.7% 17%;
+				max-width:450px;
 			}
 
 			img {
@@ -615,127 +1089,6 @@ main {
 				a {
 					color: #fff;
 				}
-			}
-		}
-	}
-	
-	/* HISTOIRE */
-	section:nth-child(3) {
-		margin: 72px 0;
-
-		svg {
-		    font-family: montserrat;
-		    font-weight: bold;
-		    max-width: 480px;
-		    height: auto;
-		}
-		
-		h3 {
-		    font-size: 17px;
-		    font-weight: 400;
-		    margin-bottom: 20px;
-		    letter-spacing: 2px;
-		}
-
-		/* 1935 */
-		article:nth-child(2) {
-			padding: 72px 0;
-			background-color: #FFF;
-
-			svg {
-				font-weight:bold;
-				max-width:400px;
-				height:auto;
-				font-family:Montserrat;
-				margin:9% 6% 3% 28%;
-			}
-
-			h3 {
-				font-size: 15px;
-	    		line-height: 35px;
-	    		letter-spacing: 0;
-				margin: 0 40px 4.7% 0;
-			}
-
-			img {
-				width: 100%;
-			}
-		}
-
-		/* 2000 */
-		article:nth-child(3) {
-			padding: 72px 0;
-			background-color: #FFF;
-			
-			svg {
-				font-weight:bold;
-				max-width:400px;
-				height:auto;
-				margin-left:-28px;
-				font-family:Montserrat;
-				margin:8% 0 3% 1%;
-			}
-
-			h3 {
-				font-size: 15px;
-	    		line-height: 35px;
-				letter-spacing: 0;
-				margin: 0 0 4.7% 40px;
-			}
-
-			img {
-				width: 100%;
-			}
-		}
-
-		/* 2006 */
-		article:nth-child(4) {
-			padding: 72px 0;
-			background-color: #FFF;
-
-			svg {
-				font-weight:bold;
-				max-width:400px;
-				height:auto;
-				font-family:Montserrat;
-				margin:7% 6% 3% 3%;
-			}
-
-			h3 {
-				font-size: 15px;
-	    		line-height: 35px;
-	    		letter-spacing: 0;
-				margin: 0 40px 4.7% 0;
-			}
-
-			img {
-				width: 100%;
-			}
-		}
-
-		/* 2017 */
-		article:last-child {
-			padding: 72px 0;
-			background-color: #FFF;
-			
-
-			svg {
-				font-weight:bold;
-				max-width:400px;
-				height:auto;
-				font-family:Montserrat;
-				margin:12% 0 3% 7%;
-			}
-
-			h3 {
-				font-size: 15px;
-	    		line-height: 35px;
-	    		letter-spacing: 0;
-				margin: 0 0 4.7% 40px;
-			}
-
-			img {
-				width: 100%;
 			}
 		}
 	}

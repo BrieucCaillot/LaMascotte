@@ -9,6 +9,7 @@ body {
 		position: relative;
 	    display: block;
 	    color: inherit;
+	    outline: 0;
 	    -webkit-backface-visibility: hidden;
 	    -moz-osx-font-smoothing: grayscale;
 	}
@@ -25,6 +26,7 @@ body {
 		padding: 4px 28px;
 		-webkit-backface-visibility: hidden;
 	    -moz-osx-font-smoothing: grayscale;
+		outline: 0;
 
 		span {
 			text-decoration: none;
@@ -700,12 +702,12 @@ main {
 		    }
 
 			button {
-			    border: 2px solid #6B6148;
 			    background-color: transparent;
 			    float: right;
 			    margin-right: 41px;
 			    color: #6b6148;
 			    font-size: 14px;
+			    border: 2px solid #6B6148;
 
 				a {
 					text-decoration: none;
@@ -1040,6 +1042,19 @@ footer {
 
 	main section:nth-child(5) {
 		height: 550px;
+
+		.swiper-button-next, .swiper-button-prev {
+			display: none;
+		}
+
+		button {
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		img {
+			display: none;
+		}
 	}
 
 	main section:last-child {
@@ -1061,6 +1076,26 @@ footer {
 	#headersocial {
 		position: absolute;
 		right: -290%;
+	}
+
+	main section:nth-child(2) img {
+		width: 90%;
+		margin: 107px 0px;
+	}
+
+	main section:nth-child(5) {
+		.swiper-button-next, .swiper-button-prev {
+			display: none;
+		}
+
+		img {
+			display: none;
+		}
+
+		button {
+			width: 70%;
+			margin-top: 10px;
+		}
 	}
 }
 
@@ -1090,15 +1125,34 @@ footer {
 		font-size: 20px;
 	}
 
+	main section:nth-child(2) img {
+		margin : 0% 40%;
+		width : 72%;;
+	}
+
 	main section:nth-child(5) {
 		height: 870px;
+		margin-top: 10px;
 
 		.description {
 			margin: 40px 0;
 		}
 
+		.swiper-button-next, .swiper-button-prev {
+			display: none;
+		}
+
 		div.swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets {
 			top: 30px;
+		}
+
+		img {
+			display: none;
+		}
+
+		button {
+			padding-top: 10px;
+			width: 75%;
 		}
 	}
 
@@ -1127,6 +1181,11 @@ footer {
 
 	main section:nth-child(5) {
 		height: 820px;
+
+		button {
+			margin-top: 10px;
+			width: 75%;
+		}
 	}
 
 }

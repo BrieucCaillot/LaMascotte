@@ -219,14 +219,16 @@ header {
 /* MAIN */
 main {
   /* A PROPOS*/
-  /* INTERIEUR */
-  /* HISTOIRE */ }
+  /* NAV */
+  /* LE LIEU */
+  /* HISTOIRE */
+  /* LE LIEU */ }
   main .container {
     width: 1275px; }
   main section:first-child {
     background: url("../images/facade2.jpg") no-repeat;
     background-attachment: fixed;
-    height: 500px; }
+    background-size: cover; }
     main section:first-child #headerdesc {
       padding: 185px 0px; }
     main section:first-child h1 {
@@ -258,199 +260,64 @@ main {
     main section:first-child a {
       margin: 0 auto; }
   main section:nth-child(2) {
+    padding: 50px 0 50px 0;
+    background-color: #F4F4F4;
+    position: relative; }
+    main section:nth-child(2) .row {
+      padding: 5% 0; }
+    main section:nth-child(2) .arrow {
+      width: 19px;
+      height: 21px;
+      display: none;
+      padding: 1px 0 0 4px; }
+    main section:nth-child(2) svg {
+      font-weight: bold;
+      max-width: 500px;
+      height: auto;
+      margin-bottom: 3%;
+      margin-left: -5px;
+      font-family: Montserrat; }
+    main section:nth-child(2) img {
+      width: auto;
+      height: 380px; }
+    main section:nth-child(2) h3 {
+      font-size: 17px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-weight: 400;
+      /*position: absolute;
+      top: 45%;*/ }
+    main section:nth-child(2) h2 {
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 29px;
+      margin: 48px 0 36px 0; }
+    main section:nth-child(2) p {
+      text-align: center;
+      margin-bottom: 4%;
+      line-height: 30px; }
+    main section:nth-child(2) li {
+      padding-bottom: 15px;
+      list-style-type: circle; }
+    main section:nth-child(2) button {
+      border: 2px solid #000000;
+      background-color: transparent; }
+      main section:nth-child(2) button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 11px;
+        letter-spacing: 2px;
+        font-weight: initial;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 14px 28px; }
+  main section:nth-child(3) {
     margin: 72px 0;
     /* RESTAURANT */
     /* BAR */
     /*L'ECAILLE */ }
-    main section:nth-child(2) svg {
-      font-family: montserrat;
-      font-weight: bold;
-      max-width: 480px;
-      height: auto; }
-    main section:nth-child(2) h3 {
-      font-size: 17px;
-      font-weight: 400;
-      margin-bottom: 20px;
-      letter-spacing: 2px; }
-    main section:nth-child(2) article:nth-child(2) {
-      padding: 72px 0;
-      background-color: #FFF; }
-      main section:nth-child(2) article:nth-child(2) svg {
-        font-weight: bold;
-        max-width: 500px;
-        height: auto;
-        font-family: Montserrat;
-        margin: 0 0 4.7% 9%; }
-      main section:nth-child(2) article:nth-child(2) img {
-        width: 100%;
-        height: 380px; }
-      main section:nth-child(2) article:nth-child(2) h3 {
-        font-size: 17px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin: 0 40px 4.7% 0; }
-      main section:nth-child(2) article:nth-child(2) h2 {
-        position: relative;
-        display: inline-block;
-        margin-bottom: 36px;
-        text-transform: uppercase;
-        font-size: 40px; }
-      main section:nth-child(2) article:nth-child(2) .title {
-        font-size: 20px;
-        line-height: 30px;
-        margin: 0 40px 4.7% 0; }
-      main section:nth-child(2) article:nth-child(2) .desc {
-        font-size: 15px;
-        line-height: 35px;
-        margin: 0 40px 4.7% 0; }
-      main section:nth-child(2) article:nth-child(2) .button--nina {
-        padding: 3.5px 28px;
-        color: #6B614D;
-        font-size: 14px;
-        margin-right: 40px; }
-        main section:nth-child(2) article:nth-child(2) .button--nina span {
-          font-size: 12px; }
-      main section:nth-child(2) article:nth-child(2) button {
-        border: 2px solid #6B614D;
-        background-color: transparent;
-        position: absolute;
-        right: 15px; }
-        main section:nth-child(2) article:nth-child(2) button a {
-          text-decoration: none;
-          color: #000;
-          font-size: 11px;
-          letter-spacing: 2px;
-          font-weight: initial;
-          display: inline-block;
-          text-transform: uppercase;
-          padding: 14px 28px; }
-      main section:nth-child(2) article:nth-child(2) button:hover {
-        background-color: #6B614D;
-        color: #fff; }
-        main section:nth-child(2) article:nth-child(2) button:hover a {
-          color: #fff; }
-    main section:nth-child(2) article:nth-child(3) {
-      padding: 72px 0;
-      background-color: #FFF; }
-      main section:nth-child(2) article:nth-child(3) svg {
-        font-weight: bold;
-        max-width: 400px;
-        height: auto;
-        font-family: Montserrat;
-        margin: 0 0 3% 40px; }
-      main section:nth-child(2) article:nth-child(3) img {
-        height: 380px;
-        width: 100%; }
-      main section:nth-child(2) article:nth-child(3) h3 {
-        font-size: 17px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin: 0 0 20px 40px; }
-      main section:nth-child(2) article:nth-child(3) h2 {
-        position: relative;
-        display: inline-block;
-        margin-bottom: 36px;
-        text-transform: uppercase;
-        font-size: 40px; }
-      main section:nth-child(2) article:nth-child(3) .title {
-        font-size: 20px;
-        line-height: 30px;
-        margin: 0 0 4.7% 40px; }
-      main section:nth-child(2) article:nth-child(3) .desc {
-        font-size: 15px;
-        line-height: 35px;
-        margin: 0 0 24px 40px; }
-      main section:nth-child(2) article:nth-child(3) .button--nina {
-        padding: 3.5px 28px;
-        color: #6B614D;
-        font-size: 14px; }
-        main section:nth-child(2) article:nth-child(3) .button--nina span {
-          font-size: 12px; }
-      main section:nth-child(2) article:nth-child(3) button {
-        border: 2px solid #6B614D;
-        background-color: transparent;
-        margin-left: 40px; }
-        main section:nth-child(2) article:nth-child(3) button a {
-          text-decoration: none;
-          color: #000;
-          font-size: 11px;
-          letter-spacing: 2px;
-          font-weight: initial;
-          display: inline-block;
-          text-transform: uppercase;
-          padding: 14px 28px; }
-      main section:nth-child(2) article:nth-child(3) button:hover {
-        background-color: #6B614D;
-        color: #fff; }
-        main section:nth-child(2) article:nth-child(3) button:hover a {
-          color: #fff; }
-    main section:nth-child(2) article:last-child {
-      padding: 72px 0;
-      background-color: #FFF; }
-      main section:nth-child(2) article:last-child svg {
-        font-weight: bold;
-        max-width: 400px;
-        height: auto;
-        margin-bottom: 3%;
-        margin-left: 26%;
-        font-family: Montserrat; }
-      main section:nth-child(2) article:last-child img {
-        width: 100%;
-        height: 380px; }
-      main section:nth-child(2) article:last-child h3 {
-        font-size: 17px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin: 0 40px 4.7% 0; }
-      main section:nth-child(2) article:last-child h2 {
-        position: relative;
-        display: inline-block;
-        margin-bottom: 36px;
-        text-transform: uppercase;
-        font-size: 40px; }
-      main section:nth-child(2) article:last-child .title {
-        font-size: 20px;
-        line-height: 30px;
-        margin: 0 40px 4.7% 0; }
-      main section:nth-child(2) article:last-child .desc {
-        font-size: 15px;
-        line-height: 35px;
-        margin: 0 40px 4.7% 0; }
-      main section:nth-child(2) article:last-child .button--nina {
-        padding: 3.5px 28px;
-        color: #6B614D;
-        font-size: 14px;
-        margin-right: 40px; }
-        main section:nth-child(2) article:last-child .button--nina span {
-          font-size: 12px; }
-      main section:nth-child(2) article:last-child button {
-        border: 2px solid #6B614D;
-        background-color: transparent;
-        position: absolute;
-        right: 15px; }
-        main section:nth-child(2) article:last-child button a {
-          text-decoration: none;
-          color: #000;
-          font-size: 11px;
-          letter-spacing: 2px;
-          font-weight: initial;
-          display: inline-block;
-          text-transform: uppercase;
-          padding: 14px 28px; }
-      main section:nth-child(2) article:last-child button:hover {
-        background-color: #6B614D;
-        color: #fff; }
-        main section:nth-child(2) article:last-child button:hover a {
-          color: #fff; }
-  main section:nth-child(3) {
-    margin: 72px 0;
-    /* 1935 */
-    /* 2000 */
-    /* 2006 */
-    /* 2017 */ }
     main section:nth-child(3) svg {
       font-family: montserrat;
       font-weight: bold;
@@ -466,17 +333,60 @@ main {
       background-color: #FFF; }
       main section:nth-child(3) article:nth-child(2) svg {
         font-weight: bold;
-        max-width: 400px;
+        max-width: 500px;
         height: auto;
         font-family: Montserrat;
-        margin: 9% 6% 3% 28%; }
+        margin: 0 0 4.7% 9%; }
+      main section:nth-child(3) article:nth-child(2) img {
+        width: 100%;
+        height: 380px; }
       main section:nth-child(3) article:nth-child(2) h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(3) article:nth-child(2) h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main section:nth-child(3) article:nth-child(2) .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(3) article:nth-child(2) .desc {
         font-size: 15px;
         line-height: 35px;
-        letter-spacing: 0;
         margin: 0 40px 4.7% 0; }
-      main section:nth-child(3) article:nth-child(2) img {
-        width: 100%; }
+      main section:nth-child(3) article:nth-child(2) .button--nina {
+        padding: 3.5px 28px;
+        color: #6B614D;
+        font-size: 14px;
+        margin-right: 40px;
+        outline: 0; }
+        main section:nth-child(3) article:nth-child(2) .button--nina span {
+          font-size: 12px; }
+      main section:nth-child(3) article:nth-child(2) button {
+        border: 2px solid #6B614D;
+        background-color: transparent;
+        position: absolute;
+        right: 15px; }
+        main section:nth-child(3) article:nth-child(2) button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+      main section:nth-child(3) article:nth-child(2) button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main section:nth-child(3) article:nth-child(2) button:hover a {
+          color: #fff; }
     main section:nth-child(3) article:nth-child(3) {
       padding: 72px 0;
       background-color: #FFF; }
@@ -484,32 +394,56 @@ main {
         font-weight: bold;
         max-width: 400px;
         height: auto;
-        margin-left: -28px;
         font-family: Montserrat;
-        margin: 8% 0 3% 1%; }
-      main section:nth-child(3) article:nth-child(3) h3 {
-        font-size: 15px;
-        line-height: 35px;
-        letter-spacing: 0;
-        margin: 0 0 4.7% 40px; }
+        margin: 0 0 3% 40px; }
       main section:nth-child(3) article:nth-child(3) img {
+        height: 380px;
         width: 100%; }
-    main section:nth-child(3) article:nth-child(4) {
-      padding: 72px 0;
-      background-color: #FFF; }
-      main section:nth-child(3) article:nth-child(4) svg {
-        font-weight: bold;
-        max-width: 400px;
-        height: auto;
-        font-family: Montserrat;
-        margin: 7% 6% 3% 3%; }
-      main section:nth-child(3) article:nth-child(4) h3 {
+      main section:nth-child(3) article:nth-child(3) h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 0 20px 40px; }
+      main section:nth-child(3) article:nth-child(3) h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main section:nth-child(3) article:nth-child(3) .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 0 4.7% 40px; }
+      main section:nth-child(3) article:nth-child(3) .desc {
         font-size: 15px;
         line-height: 35px;
-        letter-spacing: 0;
-        margin: 0 40px 4.7% 0; }
-      main section:nth-child(3) article:nth-child(4) img {
-        width: 100%; }
+        margin: 0 0 24px 40px; }
+      main section:nth-child(3) article:nth-child(3) .button--nina {
+        padding: 3.5px 28px;
+        color: #6B614D;
+        font-size: 14px;
+        outline: 0; }
+        main section:nth-child(3) article:nth-child(3) .button--nina span {
+          font-size: 12px; }
+      main section:nth-child(3) article:nth-child(3) button {
+        border: 2px solid #6B614D;
+        background-color: transparent;
+        margin-left: 40px; }
+        main section:nth-child(3) article:nth-child(3) button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+      main section:nth-child(3) article:nth-child(3) button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main section:nth-child(3) article:nth-child(3) button:hover a {
+          color: #fff; }
     main section:nth-child(3) article:last-child {
       padding: 72px 0;
       background-color: #FFF; }
@@ -517,15 +451,328 @@ main {
         font-weight: bold;
         max-width: 400px;
         height: auto;
-        font-family: Montserrat;
-        margin: 12% 0 3% 7%; }
+        margin-bottom: 3%;
+        margin-left: 26%;
+        font-family: Montserrat; }
+      main section:nth-child(3) article:last-child img {
+        width: 100%;
+        height: 380px; }
       main section:nth-child(3) article:last-child h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(3) article:last-child h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main section:nth-child(3) article:last-child .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(3) article:last-child .desc {
+        font-size: 15px;
+        line-height: 35px;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(3) article:last-child .button--nina {
+        padding: 3.5px 28px;
+        color: #6B614D;
+        font-size: 14px;
+        margin-right: 40px;
+        outline: 0; }
+        main section:nth-child(3) article:last-child .button--nina span {
+          font-size: 12px; }
+      main section:nth-child(3) article:last-child button {
+        border: 2px solid #6B614D;
+        background-color: transparent;
+        position: absolute;
+        right: 15px; }
+        main section:nth-child(3) article:last-child button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+      main section:nth-child(3) article:last-child button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main section:nth-child(3) article:last-child button:hover a {
+          color: #fff; }
+  main section:nth-child(4) {
+    margin: 72px 0;
+    /* 1935 */
+    /* 2000 */
+    /* 2006 */
+    /* 2017 */ }
+    main section:nth-child(4) svg {
+      font-family: montserrat;
+      font-weight: bold;
+      max-width: 480px;
+      height: auto; }
+    main section:nth-child(4) h3 {
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      letter-spacing: 2px; }
+    main section:nth-child(4) article:nth-child(2) {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:nth-child(4) article:nth-child(2) svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        font-family: Montserrat;
+        margin: 9% 6% 3% 28%; }
+      main section:nth-child(4) article:nth-child(2) h3 {
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: 0;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(4) article:nth-child(2) img {
+        width: 100%; }
+    main section:nth-child(4) article:nth-child(3) {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:nth-child(4) article:nth-child(3) svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        margin-left: -28px;
+        font-family: Montserrat;
+        margin: 8% 0 3% 1%; }
+      main section:nth-child(4) article:nth-child(3) h3 {
         font-size: 15px;
         line-height: 35px;
         letter-spacing: 0;
         margin: 0 0 4.7% 40px; }
-      main section:nth-child(3) article:last-child img {
+      main section:nth-child(4) article:nth-child(3) img {
         width: 100%; }
+    main section:nth-child(4) article:nth-child(4) {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:nth-child(4) article:nth-child(4) svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        font-family: Montserrat;
+        margin: 7% 6% 3% 3%; }
+      main section:nth-child(4) article:nth-child(4) h3 {
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: 0;
+        margin: 0 40px 4.7% 0; }
+      main section:nth-child(4) article:nth-child(4) img {
+        width: 100%; }
+    main section:nth-child(4) article:last-child {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:nth-child(4) article:last-child svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        font-family: Montserrat;
+        margin: 12% 0 3% 7%; }
+      main section:nth-child(4) article:last-child h3 {
+        font-size: 15px;
+        line-height: 35px;
+        letter-spacing: 0;
+        margin: 0 0 4.7% 40px; }
+      main section:nth-child(4) article:last-child img {
+        width: 100%; }
+  main section:last-child {
+    margin: 72px 0;
+    /* RESTAURANT */
+    /* BAR */
+    /*L'ECAILLE */ }
+    main section:last-child svg {
+      font-family: montserrat;
+      font-weight: bold;
+      max-width: 480px;
+      height: auto; }
+    main section:last-child h3 {
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      letter-spacing: 2px; }
+    main section:last-child article:nth-child(2) {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:last-child article:nth-child(2) svg {
+        font-weight: bold;
+        height: auto;
+        font-family: Montserrat;
+        margin: 0 0 4.7% 17%;
+        max-width: 450px; }
+      main section:last-child article:nth-child(2) img {
+        width: 100%;
+        height: 380px; }
+      main section:last-child article:nth-child(2) h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 40px 4.7% 0; }
+      main section:last-child article:nth-child(2) h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main section:last-child article:nth-child(2) .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 40px 4.7% 0; }
+      main section:last-child article:nth-child(2) .desc {
+        font-size: 15px;
+        line-height: 35px;
+        margin: 0 40px 4.7% 0; }
+      main section:last-child article:nth-child(2) .button--nina {
+        padding: 3.5px 28px;
+        color: #6B614D;
+        font-size: 14px;
+        margin-right: 40px; }
+        main section:last-child article:nth-child(2) .button--nina span {
+          font-size: 12px; }
+      main section:last-child article:nth-child(2) button {
+        border: 2px solid #6B614D;
+        background-color: transparent;
+        position: absolute;
+        right: 15px; }
+        main section:last-child article:nth-child(2) button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+      main section:last-child article:nth-child(2) button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main section:last-child article:nth-child(2) button:hover a {
+          color: #fff; }
+    main section:last-child article:nth-child(3) {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:last-child article:nth-child(3) svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        font-family: Montserrat;
+        margin: 0 0 3% 40px; }
+      main section:last-child article:nth-child(3) img {
+        height: 380px;
+        width: 100%; }
+      main section:last-child article:nth-child(3) h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 0 20px 40px; }
+      main section:last-child article:nth-child(3) h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main section:last-child article:nth-child(3) .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 0 4.7% 40px; }
+      main section:last-child article:nth-child(3) .desc {
+        font-size: 15px;
+        line-height: 35px;
+        margin: 0 0 24px 40px; }
+      main section:last-child article:nth-child(3) .button--nina {
+        padding: 3.5px 28px;
+        color: #6B614D;
+        font-size: 14px; }
+        main section:last-child article:nth-child(3) .button--nina span {
+          font-size: 12px; }
+      main section:last-child article:nth-child(3) button {
+        border: 2px solid #6B614D;
+        background-color: transparent;
+        margin-left: 40px; }
+        main section:last-child article:nth-child(3) button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+      main section:last-child article:nth-child(3) button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main section:last-child article:nth-child(3) button:hover a {
+          color: #fff; }
+    main section:last-child article:last-child {
+      padding: 72px 0;
+      background-color: #FFF; }
+      main section:last-child article:last-child svg {
+        font-weight: bold;
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 3%;
+        margin-left: 26%;
+        font-family: Montserrat; }
+      main section:last-child article:last-child img {
+        width: 100%;
+        height: 380px; }
+      main section:last-child article:last-child h3 {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 40px 4.7% 0; }
+      main section:last-child article:last-child h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 36px;
+        text-transform: uppercase;
+        font-size: 40px; }
+      main section:last-child article:last-child .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 40px 4.7% 0; }
+      main section:last-child article:last-child .desc {
+        font-size: 15px;
+        line-height: 35px;
+        margin: 0 40px 4.7% 0; }
+      main section:last-child article:last-child .button--nina {
+        padding: 3.5px 28px;
+        color: #6B614D;
+        font-size: 14px;
+        margin-right: 40px; }
+        main section:last-child article:last-child .button--nina span {
+          font-size: 12px; }
+      main section:last-child article:last-child button {
+        border: 2px solid #6B614D;
+        background-color: transparent;
+        position: absolute;
+        right: 15px; }
+        main section:last-child article:last-child button a {
+          text-decoration: none;
+          color: #000;
+          font-size: 11px;
+          letter-spacing: 2px;
+          font-weight: initial;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 14px 28px; }
+      main section:last-child article:last-child button:hover {
+        background-color: #6B614D;
+        color: #fff; }
+        main section:last-child article:last-child button:hover a {
+          color: #fff; }
 
 /* FOOTER */
 footer {

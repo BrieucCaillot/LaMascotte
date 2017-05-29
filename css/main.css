@@ -6,6 +6,7 @@ body {
     position: relative;
     display: block;
     color: inherit;
+    outline: 0;
     -webkit-backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale; }
   body .button--nina {
@@ -20,7 +21,8 @@ body {
     transition: background-color 0.3s;
     padding: 4px 28px;
     -webkit-backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale; }
+    -moz-osx-font-smoothing: grayscale;
+    outline: 0; }
     body .button--nina span {
       text-decoration: none;
       color: #fff;
@@ -503,12 +505,12 @@ main {
         -webkit-align-items: center;
         align-items: center; }
       main section:nth-child(5) #about button {
-        border: 2px solid #6B6148;
         background-color: transparent;
         float: right;
         margin-right: 41px;
         color: #6b6148;
-        font-size: 14px; }
+        font-size: 14px;
+        border: 2px solid #6B6148; }
         main section:nth-child(5) #about button a {
           text-decoration: none;
           color: #000;
@@ -738,6 +740,13 @@ footer {
 
   main section:nth-child(5) {
     height: 550px; }
+    main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
+      display: none; }
+    main section:nth-child(5) button {
+      width: 100%;
+      margin-top: 10px; }
+    main section:nth-child(5) img {
+      display: none; }
 
   main section:last-child {
     height: 980px; }
@@ -750,7 +759,19 @@ footer {
 @media all and (max-width: 992px) and (min-width: 768px) {
   #headersocial {
     position: absolute;
-    right: -290%; } }
+    right: -290%; }
+
+  main section:nth-child(2) img {
+    width: 90%;
+    margin: 107px 0px; }
+
+  main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
+    display: none; }
+  main section:nth-child(5) img {
+    display: none; }
+  main section:nth-child(5) button {
+    width: 70%;
+    margin-top: 10px; } }
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width: 780px) {
   .show {
@@ -771,12 +792,24 @@ footer {
   main section:first-child h2 {
     font-size: 20px; }
 
+  main section:nth-child(2) img {
+    margin: 0% 40%;
+    width: 72%; }
+
   main section:nth-child(5) {
-    height: 870px; }
+    height: 870px;
+    margin-top: 10px; }
     main section:nth-child(5) .description {
       margin: 40px 0; }
+    main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
+      display: none; }
     main section:nth-child(5) div.swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets {
       top: 30px; }
+    main section:nth-child(5) img {
+      display: none; }
+    main section:nth-child(5) button {
+      padding-top: 10px;
+      width: 75%; }
 
   main section:last-child #contact {
     height: 400px; } }
@@ -792,6 +825,9 @@ footer {
     font-size: 20px; }
 
   main section:nth-child(5) {
-    height: 820px; } }
+    height: 820px; }
+    main section:nth-child(5) button {
+      margin-top: 10px;
+      width: 75%; } }
 
 /*# sourceMappingURL=main.css.map */
