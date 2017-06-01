@@ -166,11 +166,7 @@ header {
     -o-transition: 0.3s;
     transition:  0.3s;
     color: #fff;
-
-    .container {
-    	width: 1350px;
-    }
-
+    
 	.progressContainer{
 	  	position: fixed;
 	  	top: 72px;
@@ -387,10 +383,6 @@ main {
 		letter-spacing: 9px;
 		font-family: Montserrat;
 
-		.container {
-			width: 900px;
-		}
-
 		#headerdesc {
 			padding: 255px 0px;
 		}
@@ -450,10 +442,6 @@ main {
 	 	padding: 60px 0;
 	 	font-family: roboto;
 
-	 	.container {
-	 		width: 90%;
-	 	}
-
 		img {
 			width: 76%;
 			margin-left: 45px;
@@ -494,10 +482,6 @@ main {
 		background-color: #fff;
 		width: 100%;
 		margin: 5% 0;
-
-		.container {
-			width: 1435px;
-		}
 
 		.button--nina {
 			padding: 3.5px 28px;
@@ -652,7 +636,7 @@ main {
 			    font-weight: 400;
 			    text-transform: uppercase;
 			    letter-spacing: 2px;
-				margin: 3% 40px 4% 0;
+				margin: 3% 40px 9px 0;
 			}
 
 			h2 {
@@ -667,7 +651,7 @@ main {
 				font-size: 20px;
 				margin-bottom: 6%;
 				line-height: 30px;
-				margin: 0 43px 0 6%;
+				margin: 0 7% 4% 0%;
 			}
 			
 			.desc {
@@ -1025,7 +1009,7 @@ footer {
 
 }
 
-/* MEDIA QUERIES MAX WIDTH 950PX */
+/* MEDIA QUERIES MAX WIDTH 992PX */
 @media all and (max-width : 992px) {
 	.show {
 		display: block;
@@ -1211,44 +1195,172 @@ footer {
 /* MEDIA QUERIES MAX WIDTH 380PX */
 @media all and (max-width : 380px) {
 
+	body {
+		overflow-x :hidden;
+	}
+
+	header #headersocial {
+		display: none;
+	}
+
 	.hovermenu2, .hovermenu4 {
 		margin-top: 40px;
 	}
 
-	section:first-child h1 {
-		font-size : 60px;
+	main section:first-child {
+
+		#headerdesc {
+			padding-top: 200px;
+		}
+
+		h1 {
+			font-size : 36px;
+		}
+
+		h2 {
+			font-size : 20px;
+		}
 	}
 
-	section:first-child h2 {
-		font-size : 20px;
+	main section:nth-child(2) {
+
+		img {
+	    	margin: 0% 13%;
+	    	width: 72%;
+    	}
+
+    	span {
+    		font-size: 16px;
+    	}
+
+    	p {
+    		font-size: 13px;
+    	}
+	}
+
+	main section:nth-child(3) #swiperrestaurant {
+		.next {
+			display: none;
+		}
+
+		.prev {
+			display: none;
+		}
+	}
+
+	main section:nth-child(4) {
+
+		h2 {
+			font-size: 30px;
+		}
+
+		.button--nina {
+		    padding: 3.5px 15px;
+		    color: #fff;
+		    font-size: 14px;
+		}
 	}
 
 	main section:nth-child(5) {
 
-		button {
-			margin-top: 10px;
-			width: 75%;
+		height: 425px;
+
+		#about {
+			svg {
+				margin-left : 20%;
+				margin-right : 5%;
+			}
+
+			button {
+				width: 56%;
+			}
+
+			h3 {
+				font-size: 12px;
+			}
+
+			p.title {
+				font-size: 11px;
+				margin-right: 42px;
+			}
+
+			p.desc {
+				font-size: 9px;
+				line-height: 20px;
+			}
+		}
+
+		#ecaille {
+			svg {
+				margin-right : 5%;
+			}
+
+			button {
+				width: 56%;
+				margin-left: 22px;
+			}
+
+			h3 {
+				font-size: 12px;
+				margin-left: 21px;
+			}
+
+			p.title {
+				font-size: 11px;
+			}
+
+			p.desc {
+				font-size: 9px;
+				line-height: 20px;
+				margin-left: 23px;
+			}
+		}
+	}
+
+	#googlemap {
+		#contact {
+			h4 {
+				font-size: 35px;
+			}
+
+			h5 {
+				font-size: 19px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+
+			span {
+				font-size: 18px;
+			}
+		}
+	}
+
+	footer {
+
+		height: 268px;
+
+		.form-newsletter {
+			margin-right: 11px;
+
+			label {
+				margin-right: 0;
+			}
+		}
+
+		img {
+			margin-top: 20px;
 		}
 	}
 }
 
 
 /* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width: 992px) {
+@media all and (max-width: 380px) {
 
 /* MEDIA QUERIES MAX WIDTH 380PX */
-footer {
-}
-}
-
-
-
-/* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width: 992px) {
-
-
-/* MEDIA QUERIES MAX WIDTH 380PX */
-footer {
-	height : 130px;
+main section:first-child h2 {
+	font-size : 19px;
 }
 }
