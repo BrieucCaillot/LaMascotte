@@ -134,8 +134,6 @@ header {
   transition: 0.3s;
   color: #fff;
   /*Hover effect*/ }
-  header .container {
-    width: 1350px; }
   header .progressContainer {
     position: fixed;
     top: 72px;
@@ -286,8 +284,6 @@ main {
     background-size: cover;
     letter-spacing: 9px;
     font-family: Montserrat; }
-    main section:first-child .container {
-      width: 900px; }
     main section:first-child #headerdesc {
       padding: 255px 0px; }
     main section:first-child h1 {
@@ -330,8 +326,6 @@ main {
     background-color: #F4F4F4;
     padding: 60px 0;
     font-family: roboto; }
-    main section:nth-child(2) .container {
-      width: 90%; }
     main section:nth-child(2) img {
       width: 76%;
       margin-left: 45px; }
@@ -355,8 +349,6 @@ main {
     background-color: #fff;
     width: 100%;
     margin: 5% 0; }
-    main section:nth-child(4) .container {
-      width: 1435px; }
     main section:nth-child(4) .button--nina {
       padding: 3.5px 28px;
       color: #fff;
@@ -467,7 +459,7 @@ main {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin: 3% 40px 4% 0; }
+        margin: 3% 40px 9px 0; }
       main section:nth-child(5) #about h2 {
         position: relative;
         display: inline-block;
@@ -478,7 +470,7 @@ main {
         font-size: 20px;
         margin-bottom: 6%;
         line-height: 30px;
-        margin: 0 43px 0 6%; }
+        margin: 0 7% 4% 0%; }
       main section:nth-child(5) #about .desc {
         font-size: 15px;
         line-height: 35px;
@@ -733,7 +725,7 @@ footer {
 
   footer {
     height: 110px; } }
-/* MEDIA QUERIES MAX WIDTH 950PX */
+/* MEDIA QUERIES MAX WIDTH 992PX */
 @media all and (max-width: 992px) {
   .show {
     display: block; }
@@ -852,25 +844,93 @@ footer {
       padding: 7% 0; } }
 /* MEDIA QUERIES MAX WIDTH 380PX */
 @media all and (max-width: 380px) {
+  body {
+    overflow-x: hidden; }
+
+  header #headersocial {
+    display: none; }
+
   .hovermenu2, .hovermenu4 {
     margin-top: 40px; }
 
-  section:first-child h1 {
-    font-size: 60px; }
-
-  section:first-child h2 {
+  main section:first-child #headerdesc {
+    padding-top: 200px; }
+  main section:first-child h1 {
+    font-size: 36px; }
+  main section:first-child h2 {
     font-size: 20px; }
 
-  main section:nth-child(5) button {
-    margin-top: 10px;
-    width: 75%; } }
-/* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width: 992px) {
-  /* MEDIA QUERIES MAX WIDTH 380PX */ }
-/* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width: 992px) {
-  /* MEDIA QUERIES MAX WIDTH 380PX */
+  main section:nth-child(2) img {
+    margin: 0% 13%;
+    width: 72%; }
+  main section:nth-child(2) span {
+    font-size: 16px; }
+  main section:nth-child(2) p {
+    font-size: 13px; }
+
+  main section:nth-child(3) #swiperrestaurant .next {
+    display: none; }
+  main section:nth-child(3) #swiperrestaurant .prev {
+    display: none; }
+
+  main section:nth-child(4) h2 {
+    font-size: 30px; }
+  main section:nth-child(4) .button--nina {
+    padding: 3.5px 15px;
+    color: #fff;
+    font-size: 14px; }
+
+  main section:nth-child(5) {
+    height: 425px; }
+    main section:nth-child(5) #about svg {
+      margin-left: 20%;
+      margin-right: 5%; }
+    main section:nth-child(5) #about button {
+      width: 56%; }
+    main section:nth-child(5) #about h3 {
+      font-size: 12px; }
+    main section:nth-child(5) #about p.title {
+      font-size: 11px;
+      margin-right: 42px; }
+    main section:nth-child(5) #about p.desc {
+      font-size: 9px;
+      line-height: 20px; }
+    main section:nth-child(5) #ecaille svg {
+      margin-right: 5%; }
+    main section:nth-child(5) #ecaille button {
+      width: 56%;
+      margin-left: 22px; }
+    main section:nth-child(5) #ecaille h3 {
+      font-size: 12px;
+      margin-left: 21px; }
+    main section:nth-child(5) #ecaille p.title {
+      font-size: 11px; }
+    main section:nth-child(5) #ecaille p.desc {
+      font-size: 9px;
+      line-height: 20px;
+      margin-left: 23px; }
+
+  #googlemap #contact h4 {
+    font-size: 35px; }
+  #googlemap #contact h5 {
+    font-size: 19px; }
+  #googlemap #contact p {
+    font-size: 16px; }
+  #googlemap #contact span {
+    font-size: 18px; }
+
   footer {
-    height: 130px; } }
+    height: 268px; }
+    footer .form-newsletter {
+      margin-right: 11px; }
+      footer .form-newsletter label {
+        margin-right: 0; }
+    footer img {
+      margin-top: 20px; } }
+/* MEDIA QUERIES MAX WIDTH 380PX */
+@media all and (max-width: 380px) {
+  /* MEDIA QUERIES MAX WIDTH 380PX */
+  main section:first-child h2 {
+    font-size: 19px; } }
 
 /*# sourceMappingURL=main.css.map */
