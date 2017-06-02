@@ -839,7 +839,7 @@ footer {
     width: 50%; }
 
   main section:nth-child(3) #swiperrestaurant {
-    height: 75%; }
+    height: 45%; }
 
   main section:nth-child(5) {
     margin-top: 10px;
@@ -915,10 +915,8 @@ footer {
   main section:nth-child(2) p {
     font-size: 13px; }
 
-  main section:nth-child(3) #swiperrestaurant .next {
-    display: none; }
-  main section:nth-child(3) #swiperrestaurant .prev {
-    display: none; }
+  main section:nth-child(3) #swiperrestaurant {
+    height: 45%; }
 
   main section:nth-child(4) h2 {
     font-size: 30px; }
@@ -965,13 +963,14 @@ footer {
       text-align: center; }
 
   #googlemap #contact h4 {
-    font-size: 35px; }
+    font-size: 27px; }
   #googlemap #contact h5 {
-    font-size: 19px; }
-  #googlemap #contact p {
     font-size: 16px; }
+  #googlemap #contact p {
+    font-size: 13px;
+    width: 89%; }
   #googlemap #contact span {
-    font-size: 18px; }
+    font-size: 16px; }
 
   footer {
     height: 268px; }
