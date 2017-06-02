@@ -394,6 +394,7 @@ main {
 			width: 83%;
 			text-align: center;
 			margin: 0 auto;
+			font-weight: 500;
 		}
 
 		h2 {
@@ -466,12 +467,12 @@ main {
 			height: 670px;
 
 			.next {
-				background:url("../images/arrowrightfirst.svg") no-repeat;
+				background:url("../images/arrowright.svg") no-repeat;
 				background-size: 100% 100%;
 			}
 
 			.prev {
-				background:url("../images/arrowleftfirst.svg") no-repeat;
+				background:url("../images/arrowleft.svg") no-repeat;
 				background-size: 100% 100%;
 			}
 		}
@@ -984,8 +985,9 @@ footer {
 
 /************** RESPONSIVE ***************/
 
-/* MEDIA QUERIES MAX WIDTH 1319PX */
-@media all and (max-width : 1319px) and (min-width: 992px) {
+/* MEDIA QUERIES MAX WIDTH 1319PX MIN WIDTH 920PX */
+@media all and (max-width : 1319px) and (min-width: 920px) {
+
 	#headersocial {
 		position: absolute;
 		right: -290%;
@@ -1006,7 +1008,22 @@ footer {
 	footer {
 		height: 110px;
 	}
+}
 
+/* MEDIA QUERIES MAX WIDTH 1200PX*/
+@media all and (max-width : 1200px) {
+	main section:nth-child(2) {
+		img {
+			margin: 75px 0 0 -30px;
+			width: 260px
+		}
+	}
+
+	main section:nth-child(4) {
+		.container {
+			width: 100%;
+		}
+	}
 }
 
 /* MEDIA QUERIES MAX WIDTH 992PX */
@@ -1084,15 +1101,19 @@ footer {
 	}
 }
 
-@media all and (max-width: 992px) and (min-width: 768px) {
+@media all and (max-width: 992px) and (min-width: 780px) {
 	#headersocial {
 		position: absolute;
 		right: -290%;
 	}
 
+	#progress {
+		display: none;
+	}
+
 	main section:nth-child(2) img {
-		width: 90%;
-		margin: 107px 0px;
+		width: 50%;
+		margin: 9% 24%;
 	}
 
 	main section:nth-child(5) {
@@ -1115,6 +1136,11 @@ footer {
 
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width : 780px) {
+
+	#progress {
+		display: none;
+	}
+
 	.show {
 		display: block;
 	}
@@ -1135,6 +1161,12 @@ footer {
 		top: 69px;
 	}
 
+	header #headersocial {
+		width: 100px;
+		position: absolute;
+		right: -322%;
+	}
+
 	main section:first-child h1 {
 		font-size: 60px;
 	}
@@ -1144,8 +1176,8 @@ footer {
 	}
 
 	main section:nth-child(2) img {
-		margin : 0% 40%;
-		width : 72%;;
+	    margin: 0% 25%;
+   	 	width: 50%;
 	}
 
 	main section:nth-child(3) #swiperrestaurant {
@@ -1154,6 +1186,7 @@ footer {
 
 	main section:nth-child(5) {
 		margin-top: 10px;
+		height: 600px;
 
 		.description {
 			margin: 40px 0;
@@ -1174,6 +1207,53 @@ footer {
 		button {
 			padding-top: 10px;
 			width: 75%;
+		}
+
+		#about {
+			h3 {
+				margin-right: 47.3%;
+			}
+
+			svg {
+				margin: 0 142px 0 70px;
+				width: 65%;
+			}
+
+			p.title {
+				margin-right: 26%;
+			}
+
+			p.desc {
+				margin-right: 10%;
+				text-align: center;
+			}
+
+			button {
+				margin-right: 13%
+			}
+		}
+
+		#ecaille {
+			h3 {
+				margin-left: 40.3%;
+			}
+
+			svg {
+				margin-left: 25.7%;
+			}
+
+			p.title {
+				margin-left: 13%;
+			}
+
+			p.desc {
+				margin-right: 10%;
+				text-align: center;
+			}
+
+			button {
+				margin-right: 13%
+			}
 		}
 	}
 
@@ -1203,6 +1283,10 @@ footer {
 		display: none;
 	}
 
+	#progress {
+		display: none;
+	}
+
 	.hovermenu2, .hovermenu4 {
 		margin-top: 40px;
 	}
@@ -1218,7 +1302,7 @@ footer {
 		}
 
 		h2 {
-			font-size : 20px;
+			font-size : 19px;
 		}
 	}
 
@@ -1262,26 +1346,28 @@ footer {
 	}
 
 	main section:nth-child(5) {
-
 		height: 425px;
 
 		#about {
 			svg {
-				margin-left : 20%;
-				margin-right : 5%;
+				margin-left : 10%;
+				margin-right : 20%;
 			}
 
 			button {
+				margin-right: 18%;
 				width: 56%;
 			}
 
 			h3 {
+				margin-right: 43%;
 				font-size: 12px;
 			}
 
 			p.title {
 				font-size: 11px;
-				margin-right: 42px;
+				margin-right: 40px;
+				text-align: center;
 			}
 
 			p.desc {
@@ -1292,27 +1378,31 @@ footer {
 
 		#ecaille {
 			svg {
-				margin-right : 5%;
+				margin-right : 2%;
 			}
 
 			button {
 				width: 56%;
-				margin-left: 22px;
+				margin-left: 9%;
 			}
 
 			h3 {
 				font-size: 12px;
-				margin-left: 21px;
+				margin-left: 36%;
 			}
 
 			p.title {
 				font-size: 11px;
+				margin-right: 10%;
+				margin-left: 0%;
+				text-align: center;
 			}
 
 			p.desc {
 				font-size: 9px;
 				line-height: 20px;
-				margin-left: 23px;
+				margin-left: 0%;
+				text-align: center;
 			}
 		}
 	}
@@ -1353,14 +1443,4 @@ footer {
 			margin-top: 20px;
 		}
 	}
-}
-
-
-/* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width: 380px) {
-
-/* MEDIA QUERIES MAX WIDTH 380PX */
-main section:first-child h2 {
-	font-size : 19px;
-}
 }
