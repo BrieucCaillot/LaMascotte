@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    // SCROLL DIV
+    // SCROLL DIV DESKTOP
     $("#contact").click(function() {
         $(document).scrollTo('#googlemap', 500);
     });

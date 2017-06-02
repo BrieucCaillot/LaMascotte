@@ -1181,7 +1181,7 @@ footer {
 	}
 
 	main section:nth-child(3) #swiperrestaurant {
-		height: 75%;
+		height: 45%;
 	}
 
 	main section:nth-child(5) {
@@ -1323,13 +1323,7 @@ footer {
 	}
 
 	main section:nth-child(3) #swiperrestaurant {
-		.next {
-			display: none;
-		}
-
-		.prev {
-			display: none;
-		}
+		height: 45%;
 	}
 
 	main section:nth-child(4) {
@@ -1410,19 +1404,20 @@ footer {
 	#googlemap {
 		#contact {
 			h4 {
-				font-size: 35px;
+				font-size: 27px;
 			}
 
 			h5 {
-				font-size: 19px;
-			}
-
-			p {
 				font-size: 16px;
 			}
 
+			p {
+				font-size: 13px;
+				width: 89%;
+			}
+
 			span {
-				font-size: 18px;
+				font-size: 16px;
 			}
 		}
 	}
