@@ -1298,8 +1298,10 @@ footer {
   #progress {
     display: none; }
 
-  .hovermenu2, .hovermenu4 {
-    margin-top: 40px; }
+  main section:first-child #headerdesc {
+    padding-top: 200px; }
+  main section:first-child h1 {
+    font-size: 46px; }
 
   main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
     margin-bottom: 80px; }
@@ -1314,10 +1316,13 @@ footer {
   main section:nth-child(3) article:nth-child(2) .desc {
     text-align: center;
     margin-right: 0; }
+  main section:nth-child(3) article:nth-child(2) img {
+    height: auto; }
   main section:nth-child(3) article:nth-child(2) button {
     right: 8%; }
   main section:nth-child(3) article:nth-child(3) img {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    height: auto; }
   main section:nth-child(3) article:nth-child(3) h3 {
     text-align: center;
     margin-left: 0; }
@@ -1347,6 +1352,8 @@ footer {
   main section:nth-child(3) article:nth-child(4) .desc {
     text-align: center;
     margin-right: 0; }
+  main section:nth-child(3) article:nth-child(4) img {
+    height: auto; }
   main section:nth-child(3) article:nth-child(4) button {
     right: 8%; }
 
@@ -1358,24 +1365,32 @@ footer {
     main section:nth-child(4) article:nth-child(2) h3 {
       text-align: center;
       margin-right: 0; }
+    main section:nth-child(4) article:nth-child(2) img {
+      height: auto; }
     main section:nth-child(4) article:nth-child(3) svg {
       margin-left: 57px;
       margin-right: -120px; }
     main section:nth-child(4) article:nth-child(3) h3 {
       text-align: center;
       margin-left: 0; }
+    main section:nth-child(4) article:nth-child(3) img {
+      height: auto; }
     main section:nth-child(4) article:nth-child(4) svg {
       margin-left: -110px;
       margin-right: 50px; }
     main section:nth-child(4) article:nth-child(4) h3 {
       text-align: center;
       margin-right: 0; }
+    main section:nth-child(4) article:nth-child(4) img {
+      height: auto; }
     main section:nth-child(4) article:nth-child(5) svg {
       margin-left: 90px;
       margin-right: -140px; }
     main section:nth-child(4) article:nth-child(5) h3 {
       text-align: center;
       margin-left: 0; }
+    main section:nth-child(4) article:nth-child(5) img {
+      height: auto; }
 
   main section:last-child article:last-child h3 {
     text-align: center;

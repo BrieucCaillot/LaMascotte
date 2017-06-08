@@ -404,7 +404,6 @@ main {
 		padding: 72px 0;
 		background-color: #FFF;
 		
-
 		svg {
 			font-weight:bold;
 			max-width:450px;
@@ -414,7 +413,7 @@ main {
 			font-family: Montserrat;
 		}
 
-		h3 {
+		p {
 			font-size: 22px;
     		line-height: 35px;
 		}
@@ -858,6 +857,7 @@ footer {
 	}
 
 	footer {
+		margin-top: 30px;
 		height: 160px;
 
 		.btn-credits {
@@ -880,183 +880,38 @@ footer {
 		display: none;
 	}
 
-	.hovermenu2, .hovermenu4 {
-		margin-top: 40px;
-	}
+	main section:first-child {
 
-	main section:nth-child(3) {
-		article:nth-child(2) {
-
-			div:first-child.col-lg-12 {
-				margin-bottom: 80px;
-			}
-			
-			h3 {
-				text-align: center;
-				margin-right: 0;
-			}
-
-			svg {
-				margin-left: -50px;
-			}
-
-			.title {
-				text-align: center;
-				margin-right: 0;
-			}
-
-			.desc {
-				text-align: center;
-				margin-right: 0;
-			}
-
-			button {
-				right: 8%;
-			}
+		#headerdesc {
+			padding-top: 170px;
 		}
 
-		article:nth-child(3) {
-
-			img {
-				margin-bottom: 30px;
-			}
-			
-			h3 {
-				text-align: center;
-				margin-left: 0;
-			}
-
-			svg {
-				margin: 0 auto;
-				margin-left: 80px;
-				margin-right: -70px
-			}
-
-			.title {
-				text-align: center;
-				margin-left: 0;
-			}
-
-			.desc {
-				text-align: center;
-				margin-left: 0;
-			}
-
-			button {
-				left: 8%;
-			}
-		}
-
-		article:nth-child(4) {
-
-			div:first-child.col-lg-12 {
-				margin-bottom: 80px;
-			}
-			
-			h3 {
-				text-align: center;
-				margin-right: 0;
-			}
-
-			svg {
-				margin-left: -35px;
-				margin-right: 60px;
-			}
-
-			.title {
-				text-align: center;
-				margin-right: 0;
-			}
-
-			.desc {
-				text-align: center;
-				margin-right: 0;
-			}
-
-			button {
-				right: 8%;
-			}
+		h1 {
+			font-size : 46px;
+			line-height: 60px;
+			width: 80%;
 		}
 	}
 
-	main section:nth-child(4) {
-		margin-bottom: 0;
-
-		article:nth-child(2){
-			svg {
-				margin-left: -136px;
-				margin-right: 90px;
-			}
-
-			h3 {
-				text-align: center;
-				margin-right: 0;
-			}
-		}
-
-		article:nth-child(3){
-			svg {
-				margin-left: 57px;
-				margin-right: -120px;
-			}
-
-			h3 {
-				text-align: center;
-				margin-left: 0;
-			}
-		}
-
-		article:nth-child(4){
-			svg {
-				margin-left: -110px;
-				margin-right: 50px;
-			}
-
-			h3 {
-				text-align: center;
-				margin-right: 0;
-			}
-		}
-
-		article:nth-child(5){
-			svg {
-				margin-left: 90px;
-				margin-right: -140px;
-			}
-
-			h3 {
-				text-align: center;
-				margin-left: 0;
-			}
+	main section:nth-child(2) {
+		p {
+			font-size: 15px;
 		}
 	}
 
 	main section:last-child {
-		article:last-child {
-			h3 {
-				text-align: center;
-				margin-right: 0;
-			}
+		h3 {
+			font-size: 25px;
+		}
 
-			svg {
-				margin-left: -20px;
-				margin-right: -10px;
-			}
-
-			.title {
-				text-align: center;
-				margin-right: 0;
-			}
-
-			.desc {
-				text-align: center;
-				margin-right: 0;
-			}
+		p {
+			font-size: 15px;
 		}
 	}
 
-	footer {
+	
 
+	footer {
 		height: 268px;
 
 		.form-newsletter {
@@ -1068,7 +923,7 @@ footer {
 		}
 
 		a.btn {
-			padding: 8% 13%;
+			padding: 8% 16%;
 		}
 
 		img {
@@ -1076,6 +931,3 @@ footer {
 		}
 	}
 }
-
-
-

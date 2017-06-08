@@ -46,26 +46,26 @@
         <div class="container">
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-3 text-center">
+                    <div class="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
                         <div id="logo">
                             <a href="../index.html">
                                 <img src="../images/logobeige.png" alt="logo la mascotte">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-7 text-center">
+                    <div class="hide col-md-7 text-center">
                         <nav class="hover-effect">
                             <ul>
-                            <li><a href="../index.html">ACCUEIL</a></li>
-                            <li><a href="about.html">À PROPOS</a></li>
-                            <li><a href="menu.html">MENU</a></li>
-                            <li><a href="booking.html">RÉSERVER</a></li>
-                            <li><a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/">LIVRAISON</a></li>
-                            <li><a href="../index.html#googlemap">CONTACT</a></li>
+                                <li><a href="../index.html">ACCUEIL</a></li>
+                                <li><a href="about.html">À PROPOS</a></li>
+                                <li><a href="menu.html">MENU</a></li>
+                                <li><a href="booking.html">RÉSERVER</a></li>
+                                <li><a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/">LIVRAISON</a></li>
+                                <li><a id="contact" href="../index.html#contact2">CONTACT</a></li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-md-2 text-center">
+                    <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 text-center">
                         <div id="headersocial">
                             <a href="https://www.facebook.com/LaMascotteMontmartre/" target="_blank">
                                 <img src="../images/facebook.svg" alt="facebook">
@@ -84,14 +84,56 @@
                 </div>
             </div>
         </div>
-    </header> 
+    </header>
+    <div class="mobile-nav text-center show">
+        <div class="row">
+            <div class="col-md-12">
+                <a id="homenav" href="../index.html" class="col-2 btn btn-accueil">
+                    <span class="btn-inside">
+                        <img src="../images/mobilenav/home.png" alt="accueil">
+                        <span class="text">Accueil</span>
+                    </span>
+                </a>
+                <a id="aboutnav" href="about.html" class="col-2 btn btn-about">
+                    <span class="btn-inside">
+                        <img src="../images/mobilenav/about.png" alt="a propos">
+                        <span class="text">À propos</span>
+                    </span>
+                </a>
+                <a id="cartenav" href="menu.html" class="col-2 btn btn-menu">
+                    <span class="btn-inside">
+                        <img src="../images/mobilenav/fish.png" alt="menu">
+                        <span class="text">La Carte</span>
+                    </span>
+                </a>
+                <a id="booknav" href="booking.html" class="col-2 btn btn-booking">
+                    <span class="btn-inside">
+                        <img src="../images/mobilenav/phone.png" alt="reservation">
+                        <span class="text">Réserver</span>
+                    </span>
+                </a>
+                <a id="ordernav" href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/" class="col-2 btn btn-delivery">
+                    <span class="btn-inside">
+                        <img src="../images/mobilenav/delivery2.png" alt="livraison">
+                        <span class="text">Livraison</span>
+                    </span>
+                </a>
+                <a id="contactnav" href="../index.html#googlemap" class="col-2 btn btn-contact">
+                    <span class="btn-inside">
+                        <img src="../images/mobilenav/marker.png" alt="localisation">
+                        <span class="text">Contact</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!--MAIN-->
     <main>
         <!--CRÉDITS ET MENTIONS LEGALES HEADER-->
         <section>
             <div class="container">
-                <div id="headerdesc" class="col-md-12 text-center">
+                <div id="headerdesc" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                     <div class="row">
                         <h1>
                             CRÉDITS & MENTIONS LEGALES
@@ -104,12 +146,12 @@
         <section id="description">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="row">
-                            <div class="col-md-4 offset-2">
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 offset-2">
                                 <img src="../images/mascottelogo.png" alt="">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center">
                                 <p>
                                     Tous droits réservés © Brieuc Caillot
                                     <br>
@@ -130,37 +172,39 @@
     <!--FOOTER-->
     <footer>
         <div class="container text-center">
-            <div class="row">
-                <div class="col-md-5">
-                    <a href="credits.html" class="btn btn-credits">Crédits &amp; Mentions légales</a>
-                </div>
-                <div class="col-md-5">
-                    <form class="form-newsletter" method="post" action="">
-                    <label for="email">Newsletter :</label>
-                    <input type="text" class="form-email input-text" placeholder="Votre email" name="ne" id="ne">
-                    <span class="border-newsletter"><span class="border"></span></span>
-                    <input type="submit" class="btn btn-submit" value="OK">
-                    <div class="form-message valid">
-                        <p>
-                            Votre inscription a bien &eacute;t&eacute; prise en compte.
-                        </p>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-5">
+                        <a href="credits.html" class="btn btn-credits">Crédits &amp; Mentions légales</a>
                     </div>
-                    <div class="form-message error valid-error">
-                        <p>
-                            Merci de saisir un e-mail valide.
-                        </p>
+                    <div class="col-xs-4 col-sm-4 col-md-5 col-lg-5">
+                        <form class="form-newsletter" method="post" action="">
+                        <label for="email">Newsletter :</label>
+                        <input type="text" class="form-email input-text" placeholder="Votre email" name="ne" id="ne">
+                        <span class="border-newsletter"><span class="border"></span></span>
+                        <input type="submit" class="btn btn-submit" value="OK">
+                        <div class="form-message valid">
+                            <p>
+                                Votre inscription a bien &eacute;t&eacute; prise en compte.
+                            </p>
+                        </div>
+                        <div class="form-message error valid-error">
+                            <p>
+                                Merci de saisir un e-mail valide.
+                            </p>
+                        </div>
+                        <div class="form-message error post-error">
+                            <p>
+                                Probl&egrave;me technique, veuillez r&eacute;essayer ult&eacute;rieurement.
+                            </p>
+                        </div>
+                        </form>
                     </div>
-                    <div class="form-message error post-error">
-                        <p>
-                            Probl&egrave;me technique, veuillez r&eacute;essayer ult&eacute;rieurement.
-                        </p>
+                    <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                        <a href="../index.html">
+                            <img src="../images/logobrown.png" alt="Restaurant La Mascotte" class="footer-logo">
+                        </a>
                     </div>
-                    </form>
-                </div>
-                <div class="col-md-2">
-                    <a href="index.html#">
-                        <img src="../images/logobrown.png" alt="Restaurant La Mascotte" class="footer-logo">
-                    </a>
                 </div>
             </div>
         </div>
