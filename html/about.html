@@ -15,12 +15,11 @@
     <!--META-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="description" content="Prototype of website with Bootstrap & SASS" />
-    <meta name="keywords" content="Cuda, Bootstrap, SASS">
+    <meta name="description" content="Brasserie typiquement Montmartroise, La Mascotte à Montmartre vous accueille 7 jours sur 7, de 8h à 23h30 au 52 Rue des Abbesses : 01 46 06 28 15." />
+    <meta name="keywords" content="La Mascotte, À propos, Restaurant, Montmartre">
 
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!--LINK-->
@@ -38,20 +37,19 @@
 </head>
 
 <body>
-
     <!--HEADER-->
     <header>
         <div class="container">
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-3 text-center">
+                    <div class="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
                         <div id="logo">
                             <a href="../index.html">
                                 <img src="../images/logobeige.png" alt="logo la mascotte">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-7 text-center">
+                    <div class="hide col-md-7 text-center">
                         <nav class="hover-effect">
                             <ul>
                                 <li><a href="../index.html">ACCUEIL</a></li>
@@ -59,11 +57,11 @@
                                 <li><a href="menu.html">MENU</a></li>
                                 <li><a href="booking.html">RÉSERVER</a></li>
                                 <li><a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/">LIVRAISON</a></li>
-                                <li><a href="../index.html#googlemap">CONTACT</a></li>
+                                <li><a id="contact" href="../index.html#contact2">CONTACT</a></li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-md-2 text-center">
+                    <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 text-center">
                         <div id="headersocial">
                             <a href="https://www.facebook.com/LaMascotteMontmartre/" target="_blank">
                                 <img src="../images/facebook.svg" alt="facebook">
@@ -83,6 +81,48 @@
             </div>
         </div>
     </header>
+    <div class="mobile-nav text-center show">
+        <div class="row">
+            <div class="col-md-12">
+                <a id="homenav" href="../index.html" class="col-2 btn btn-accueil">
+                    <span class="btn-inside">
+                        <img src="../images/mobilenav/home.png" alt="accueil">
+                        <span class="text">Accueil</span>
+                    </span>
+                </a>
+                <a id="aboutnav" href="about.html" class="col-2 btn btn-about">
+                    <span class="btn-inside">
+                        <img src="../images/mobilenav/about.png" alt="a propos">
+                        <span class="text">À propos</span>
+                    </span>
+                </a>
+                <a id="cartenav" href="menu.html" class="col-2 btn btn-menu">
+                    <span class="btn-inside">
+                        <img src="../images/mobilenav/fish.png" alt="menu">
+                        <span class="text">La Carte</span>
+                    </span>
+                </a>
+                <a id="booknav" href="booking.html" class="col-2 btn btn-booking">
+                    <span class="btn-inside">
+                        <img src="../images/mobilenav/phone.png" alt="reservation">
+                        <span class="text">Réserver</span>
+                    </span>
+                </a>
+                <a id="ordernav" href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/" class="col-2 btn btn-delivery">
+                    <span class="btn-inside">
+                        <img src="../images/mobilenav/delivery2.png" alt="livraison">
+                        <span class="text">Livraison</span>
+                    </span>
+                </a>
+                <a id="contactnav" href="../index.html#googlemap" class="col-2 btn btn-contact">
+                    <span class="btn-inside">
+                        <img src="../images/mobilenav/marker.png" alt="localisation">
+                        <span class="text">Contact</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <main>
         <!--À PROPOS-->
@@ -118,7 +158,7 @@
                 <div class="col-md-12">
                     <div class="row">
                         <!--LIEU-->
-                        <div class="col-md-4">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
                             <h3 id="h3menu" class="home-subtitle">
                                 PLACE
                             </h3>
@@ -139,7 +179,7 @@
                             </svg>
                         </div>
                         <!--HISTOIRE-->
-                        <div class="col-md-4">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
                             <h3 class="home-subtitle">
                                 HISTORIQUE
                             </h3>
@@ -160,7 +200,7 @@
                             </svg>
                         </div>
                         <!--NEWS-->
-                        <div class="col-md-4">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
                             <h3 class="home-subtitle">
                                 ACTUALITÉ
                             </h3>
@@ -188,7 +228,7 @@
         <!--LE LIEU-->
         <section id="placesection">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-12 col-xs-12 col-sm-12 col-sm-offset-12 col-md-12 col-lg-12">
                     <div class="text-center">
                         <h3 class="home-subtitle">LE LIEU</h3>
                         <svg viewBox="-10 0 120 20">
@@ -217,9 +257,9 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="home-subtitle text-right">APPRÉCIEZ</h3>
-                                <svg viewbox="-39 0 160 20">
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                <h3 class="home-subtitle">APPRÉCIEZ</h3>
+                                <svg viewbox="-41 0 160 20">
                                     <defs>
                                         <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                             <stop offset="5%" stop-color="#326384"/>
@@ -231,13 +271,13 @@
                                             </path>
                                         </pattern>
                                     </defs>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LE RESTAURANT</text>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LE RESTAURANT</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="14" fill="url(#wave)"  fill-opacity="0.6">LE RESTAURANT</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="14" fill="url(#gradient)" fill-opacity="0.5">LE RESTAURANT</text>
                                 </svg>
-                                <p class="title text-right">
+                                <p class="title">
                                     Venez passer un bon moment tout seul ou en famille
                                 </p>
-                                <p class="desc text-right">
+                                <p class="desc">
                                     Service continu 7/7 de 12h à 24h.
                                     Le restaurant est doté d’une salle privatisable indépendante pouvant accueillir jusqu’à 40 couverts. <br>Un espace idéal pour vos événements familiaux, repas d'affaire ou amicaux..
                                 </p>
@@ -258,7 +298,7 @@
                                     <span>S</span>
                                 </button>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                                 <img src="../images/interieur1.jpg" alt="interieur la mascotte" width="100%" height="100%"/>
                             </div>
                         </div>
@@ -272,12 +312,12 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                                     <img src="../images/bar1.jpg" alt="" width="100%" height="100%"/>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                                     <h3 class="home-subtitle">Sympathique</h3>
-                                    <svg viewbox="20 0 120 20">
+                                    <svg viewbox="17 0 120 20">
                                         <defs>
                                             <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                                 <stop offset="5%" stop-color="#326384"/>
@@ -289,10 +329,10 @@
                                                 </path>
                                             </pattern>
                                         </defs>
-                                        <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LE BAR</text>
-                                        <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LE BAR</text>
+                                        <text text-anchor="middle" x="50" y="15" font-size="14" fill="url(#wave)"  fill-opacity="0.6">LE BAR</text>
+                                        <text text-anchor="middle" x="50" y="15" font-size="14" fill="url(#gradient)" fill-opacity="0.5">LE BAR</text>
                                     </svg>
-                                    <p class="title text-left">
+                                    <p class="title">
                                         Venez découvrir nos alcool au bar
                                     </p>
                                     <p class="desc">
@@ -326,9 +366,8 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="home-subtitle text-right">DÉGUSTEZ</h3>
-                                <!--<h2 class="home-title margin-b24 title-headline">About Us</h2>-->
+                            <div class="col-12 col-xs-12 col-sm-12 col-sm-offset-12 col-md-12 col-lg-6">
+                                <h3 class="home-subtitle">DÉGUSTEZ</h3>
                                 <svg viewbox="-29 0 120 20">
                                     <defs>
                                         <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -341,13 +380,13 @@
                                             </path>
                                         </pattern>
                                     </defs>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">L'ÉCAILLE</text>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">L'ÉCAILLE</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="14" fill="url(#wave)"  fill-opacity="0.6">L'ÉCAILLE</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="14" fill="url(#gradient)" fill-opacity="0.5">L'ÉCAILLE</text>
                                 </svg>
-                                <p class="title text-right">
+                                <p class="title">
                                     Dégustations, ventes à emporter, livraison de fruits de mer
                                 </p>
-                                <p class="desc text-right">
+                                <p class="desc">
                                     L’Écaille c’est sans doute le plus beau « banc » de fruits de mer de Paris (donc du monde…). C’est l’annexe de la brasserie, l’endroit où sont concoctés les plateaux et assiettes de fruits de mers et crustacés.
                                 </p>
                                 <button class="button button--nina" data-text="E N &nbsp; S A V O I R &nbsp; P L U S">
@@ -367,7 +406,7 @@
                                     <span>S</span>
                                 </button>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-12 col-xs-12 col-sm-12 col-sm-offset-12 col-md-12 col-lg-6">
                                 <img src="../images/ecaille1.jpg" alt="equipe la mascotte" width="100%" height="100%"/>
                             </div>
                         </div>
@@ -379,7 +418,7 @@
         <!--L'HISTOIRE-->
         <section id="historysection">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-12 col-xs-12 col-sm-12 col-sm-offset-12 col-md-12 col-lg-12">
                     <div class="text-center">
                         <h3 class="home-subtitle">L'HISTOIRE</h3>
                         <svg viewBox="-10 0 120 20">
@@ -408,7 +447,7 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-6 text-right">
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                                 <svg viewbox="-39 0 110 20">
                                     <defs>
                                         <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -421,15 +460,15 @@
                                             </path>
                                         </pattern>
                                     </defs>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">1935</text>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">1935</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#wave)"  fill-opacity="0.6">1935</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#gradient)" fill-opacity="0.5">1935</text>
                                 </svg>
                                 <h3>
                                     La création de « La Mascotte » semble remonter à 1889 à l’époque où son grand comptoir occupait tout le rez de chaussée d’un hôtel de deux étages, « Le Pompéa ». Son propriétaire, le Père Teissier, le fit surélever de trois nouveaux étages, qu’il baptisa « Hôtel Antinéa », pour y établir chacun de ses deux fils.
                                 </h3>
                             </div>
-                            <div class="col-md-6">
-                                <img src="../images/histoire1.jpg" alt="la mascotte 1935" width="100%" height="350px" >
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                <img src="../images/histoire1.jpg" alt="la mascotte 1935" width="100%" height="100%" >
                             </div>
                         </div>
                     </div>
@@ -441,10 +480,10 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-6">
-                                <img src="../images/histoire2.jpg" alt="la mascotte 2000" width="100%" height="300px" >
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                <img src="../images/histoire2.jpg" alt="la mascotte 2000" width="100%" height="100%" >
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                                 <svg viewbox="21 0 110 20">
                                     <defs>
                                         <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -457,8 +496,8 @@
                                             </path>
                                         </pattern>
                                     </defs>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">2000</text>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">2000</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#wave)"  fill-opacity="0.6">2000</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#gradient)" fill-opacity="0.5">2000</text>
                                 </svg>
                                 <h3>
                                     Quelque peu hôtel de rendez-vous comme son nom l’indique, « Le Pompéa » hébergea dans les années 1930 Edith Piaf et son pianiste, pendant que Messieurs Laurent et Méria tenaient le café et ses quatre billards.
@@ -474,8 +513,8 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-6 text-right">
-                                <svg viewbox="-38 0 110 20">
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                <svg viewbox="-30 0 110 20">
                                     <defs>
                                         <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                             <stop offset="5%" stop-color="#326384"/>
@@ -487,15 +526,15 @@
                                             </path>
                                         </pattern>
                                     </defs>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">2006</text>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">2006</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#wave)"  fill-opacity="0.6">2006</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#gradient)" fill-opacity="0.5">2006</text>
                                 </svg>
                                 <h3>
-                                    Monsieur Laurent, originaire de Fleurie, y servait le vin nouveau à sa clientèle de commerçants du quartier et d’artistes locaux : Toppa, Lecomte, Gen Paul… <br> Puis la famille Conte lui succéda jusqu’en septembre 1965 où Maurice et Irène Campion s’y établirent. C’est leur fils Thierry qui perpétue la tradition Montmartro-Aveyronnaise en 2006.
+                                    Monsieur Laurent, originaire de Fleurie, y servait le vin nouveau à sa clientèle de commerçants du quartier et d’artistes locaux : Toppa, Lecomte, Gen Paul… Puis la famille Conte lui succéda jusqu’en septembre 1965 où Maurice et Irène Campion s’y établirent. C’est leur fils Thierry qui perpétue la tradition Montmartro-Aveyronnaise en 2006.
                                 </h3>
                             </div>
-                            <div class="col-md-6">
-                                <img src="../images/histoire3.jpg" alt="la mascotte 2006" width="100%" height="350px" >
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                <img src="../images/histoire3.jpg" alt="la mascotte 2006" width="100%" height="100%" >
                             </div>
                         </div>
                     </div>
@@ -507,10 +546,10 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-6">
-                                <img src="../images/equipe.jpg" alt="la mascotte 2017" width="100%" height="300px" >
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                <img src="../images/equipe.jpg" alt="la mascotte 2017" width="100%" height="100%" >
                             </div>
-                            <div class="col-md-6 text-left">
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                                 <svg viewbox="29 0 110 20">
                                     <defs>
                                         <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -523,8 +562,8 @@
                                             </path>
                                         </pattern>
                                     </defs>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">2017</text>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">2017</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#wave)"  fill-opacity="0.6">2017</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="15" fill="url(#gradient)" fill-opacity="0.5">2017</text>
                                 </svg>
                                 <h3>
                                     Thierry perpétue encore aujourd'hui la tradition du restaurant La Mascotte.
@@ -541,7 +580,7 @@
         <!--L'ACTUALITÉ-->
         <section id="newssection">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="text-center">
                         <h3 class="home-subtitle">L'ACTUALITÉ</h3>
                         <svg viewBox="-10 0 120 20">
@@ -569,8 +608,8 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="home-subtitle text-right">
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                <h3 class="home-subtitle">
                                     ACTUALITÉ
                                 </h3>
                                 <svg viewbox="-33 0 160 20">
@@ -585,17 +624,17 @@
                                             </path>
                                         </pattern>
                                     </defs>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">VENDREDI 12 MAI</text>
-                                    <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">VENDREDI 12 MAI</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="14" fill="url(#wave)"  fill-opacity="0.6">VENDREDI 12 MAI</text>
+                                    <text text-anchor="middle" x="50" y="15" font-size="14" fill="url(#gradient)" fill-opacity="0.5">VENDREDI 12 MAI</text>
                                 </svg>
-                                <p class="title text-right">
+                                <p class="title">
                                     Rencontre / dédicace / dégustation : André Deyrieux<br>À la rencontre des cépages modestes et oubliés
                                 </p>
-                                <p class="desc text-right">
+                                <p class="desc">
                                     Vendredi 12 mai 2017, à partir de 18h, La Mascotte vous invite à une rencontre avec André Deyrieux, à l’occasion de la sortie de son livre : À la rencontre des cépages modestes et oubliés. Cette rencontre / dédicace sera suivie d’une dégustation de cuvées de cépages rares !
                                 </p>
                             </div>
-                            <div class="col-md-4 offset-1">
+                            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                                 <img src="../images/about/actualité1.jpeg" alt="actualité" width="100%" height="100%"/>
                             </div>
                         </div>
@@ -603,44 +642,45 @@
                 </div>
             </article>
         </section>
-
     </main>
 
 
     <!--FOOTER-->
     <footer>
         <div class="container text-center">
-            <div class="row">
-                <div class="col-md-5">
-                    <a href="credits.html" class="btn btn-credits">Crédits &amp; Mentions légales</a>
-                </div>
-                <div class="col-md-5">
-                    <form class="form-newsletter" method="post" action="">
-                    <label for="email">Newsletter :</label>
-                    <input type="text" class="form-email input-text" placeholder="Votre email" name="ne" id="ne">
-                    <span class="border-newsletter"><span class="border"></span></span>
-                    <input type="submit" class="btn btn-submit" value="OK">
-                    <div class="form-message valid">
-                        <p>
-                            Votre inscription a bien &eacute;t&eacute; prise en compte.
-                        </p>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-5">
+                        <a href="credits.html" class="btn btn-credits">Crédits &amp; Mentions légales</a>
                     </div>
-                    <div class="form-message error valid-error">
-                        <p>
-                            Merci de saisir un e-mail valide.
-                        </p>
+                    <div class="col-xs-4 col-sm-4 col-md-5 col-lg-5">
+                        <form class="form-newsletter" method="post" action="">
+                        <label for="email">Newsletter :</label>
+                        <input type="text" class="form-email input-text" placeholder="Votre email" name="ne" id="ne">
+                        <span class="border-newsletter"><span class="border"></span></span>
+                        <input type="submit" class="btn btn-submit" value="OK">
+                        <div class="form-message valid">
+                            <p>
+                                Votre inscription a bien &eacute;t&eacute; prise en compte.
+                            </p>
+                        </div>
+                        <div class="form-message error valid-error">
+                            <p>
+                                Merci de saisir un e-mail valide.
+                            </p>
+                        </div>
+                        <div class="form-message error post-error">
+                            <p>
+                                Probl&egrave;me technique, veuillez r&eacute;essayer ult&eacute;rieurement.
+                            </p>
+                        </div>
+                        </form>
                     </div>
-                    <div class="form-message error post-error">
-                        <p>
-                            Probl&egrave;me technique, veuillez r&eacute;essayer ult&eacute;rieurement.
-                        </p>
+                    <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                        <a href="../index.html">
+                            <img src="../images/logobrown.png" alt="Restaurant La Mascotte" class="footer-logo">
+                        </a>
                     </div>
-                    </form>
-                </div>
-                <div class="col-md-2">
-                    <a href="index.html#">
-                        <img src="../images/logobrown.png" alt="Restaurant La Mascotte" class="footer-logo">
-                    </a>
                 </div>
             </div>
         </div>
