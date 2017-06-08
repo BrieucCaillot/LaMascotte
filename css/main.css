@@ -370,7 +370,7 @@ main {
       color: #ffffff;
       width: 55px; }
     main section:nth-child(4) img:last-child {
-      height: 310px;
+      height: 60%;
       width: inherit; }
     main section:nth-child(4) .menuhover {
       -webkit-transition: all 0.3s ease;
@@ -802,7 +802,8 @@ footer {
     margin-top: 10px; }
 
   footer .btn-credits {
-    padding: 6% 0; } }
+    padding: 15% 0%;
+    margin-left: -17%; } }
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width: 780px) {
   #progress {
@@ -897,9 +898,6 @@ footer {
   #progress {
     display: none; }
 
-  .hovermenu2, .hovermenu4 {
-    margin-top: 40px; }
-
   main section:first-child #headerdesc {
     padding-top: 200px; }
   main section:first-child h1 {
@@ -907,6 +905,8 @@ footer {
   main section:first-child h2 {
     font-size: 19px; }
 
+  main section:nth-child(2) svg {
+    margin-bottom: 30px; }
   main section:nth-child(2) img {
     margin: 0% 13%;
     width: 72%; }
@@ -915,8 +915,15 @@ footer {
   main section:nth-child(2) p {
     font-size: 13px; }
 
+  main section:nth-child(3) .container {
+    width: 100%;
+    padding: 0; }
   main section:nth-child(3) #swiperrestaurant {
     height: 45%; }
+    main section:nth-child(3) #swiperrestaurant div.swiper-button-prev {
+      margin-left: -10%; }
+    main section:nth-child(3) #swiperrestaurant div.swiper-button-next {
+      margin-right: -10%; }
 
   main section:nth-child(4) h2 {
     font-size: 30px; }
@@ -924,6 +931,8 @@ footer {
     padding: 3.5px 15px;
     color: #fff;
     font-size: 14px; }
+  main section:nth-child(4) img:last-child {
+    height: 30%; }
 
   main section:nth-child(5) {
     height: 425px; }
@@ -931,7 +940,7 @@ footer {
       margin-left: 10%;
       margin-right: 20%; }
     main section:nth-child(5) #about button {
-      margin-right: 18%;
+      margin-right: 17.8%;
       width: 56%; }
     main section:nth-child(5) #about h3 {
       margin-right: 43%;
@@ -978,6 +987,8 @@ footer {
       margin-right: 11px; }
       footer .form-newsletter label {
         margin-right: 0; }
+    footer a.btn {
+      padding: 8% 13%; }
     footer img {
       margin-top: 20px; } }
 

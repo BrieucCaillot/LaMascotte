@@ -167,10 +167,6 @@ header {
     transition:  0.3s;
     color: #fff;
 
-    .container {
-    	width: 1350px;
-    }
-
     .progressContainer{
 	  	position: fixed;
 	  	top: 72px;
@@ -290,6 +286,93 @@ header {
 	}
 }
 
+/*MOBILE NAV*/
+.mobile-nav {
+	position: fixed;
+	bottom: 0;
+	z-index: 9;
+	height: 64px;
+	width: 100%;
+	font-size: 0px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #6B614D;
+	display: none;
+
+	img {
+		width: 24px;
+	}
+
+	.btn {
+		height: 100%;
+		width: 100%;
+		border-radius: 0px;
+	}
+
+	.btn-accueil {
+		border-right: 1px solid #fff;
+		background-color: #e0d2b1;
+	
+		img {
+			width: 20px;
+			padding-top: 5px;
+		}
+	}
+
+	.btn-about {
+		border-right: 1px solid #fff;
+
+		img {
+			width: 21px;
+			padding-top: 6px;
+		}
+	}
+
+	.btn-menu {
+		border-right: 1px solid #fff;
+
+		img {
+			width: 30px;
+			padding-top: 8px;
+		}
+	}
+
+	.btn-booking {
+		border-right: 1px solid #fff;
+		
+		img {
+			width: 21px;
+			padding-top: 5px;
+		}
+	}
+
+	.btn-delivery {
+		border-right: 1px solid #fff;
+	
+		img {
+			width: 25px;
+			padding-top: 7px;
+		}
+	}
+
+	.btn-contact {
+
+		img {
+			width: 17px;
+			padding-top: 4px;
+		}
+	}
+
+	.text {
+		font-size: 10px;
+		bottom: 8px;
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
 /* MAIN */
 main {
 	margin-bottom: 3.5%;
@@ -321,7 +404,6 @@ main {
 		padding: 72px 0;
 		background-color: #FFF;
 		
-
 		svg {
 			font-weight:bold;
 			max-width:450px;
@@ -331,7 +413,7 @@ main {
 			font-family: Montserrat;
 		}
 
-		h3 {
+		p {
 			font-size: 22px;
     		line-height: 35px;
 		}
@@ -646,5 +728,206 @@ footer {
 	}
 }
 
+/************** RESPONSIVE ***************/
 
+/* MEDIA QUERIES MAX WIDTH 1319PX MIN WIDTH 920PX */
+@media all and (max-width : 1319px) and (min-width: 920px) {
 
+	#headersocial {
+		position: absolute;
+		right: -290%;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	header .progressContainer {
+		top: 69px;
+	}
+
+	footer {
+		height: 110px;
+	}
+}
+
+/* MEDIA QUERIES MAX WIDTH 1200PX*/
+@media all and (max-width : 1200px) {
+	
+}
+
+/* MEDIA QUERIES MAX WIDTH 992PX */
+@media all and (max-width : 992px) {
+
+	header .progressContainer {
+		top: 69px;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	footer {
+		height: 130px;
+
+		.btn-credits {
+			padding: 10% 0;
+		}
+	}
+}
+
+@media all and (max-width: 992px) and (min-width: 780px) {
+
+	body {
+		overflow-x :hidden;
+		width: 100%;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	#headersocial {
+		position: absolute;
+		right: -290%;
+	}
+
+	#progress {
+		display: none;
+	}
+
+	footer {
+		.btn-credits {
+			padding: 15% 0%;
+			margin-left: -17%
+		}
+	}
+}
+
+/* MEDIA QUERIES MAX WIDTH 780PX */
+@media all and (max-width : 780px) {
+	overflow-x: hidden;
+
+	#progress {
+		display: none;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	header .progressContainer {
+		top: 69px;
+	}
+
+	header #headersocial {
+		width: 100px;
+		position: absolute;
+		right: -322%;
+	}
+
+	main section:nth-child(2) {
+		padding-bottom: 4%;
+	}
+
+	main section:nth-child(3) {
+		h3 {
+			padding: 4% 0;
+		}
+
+		p {
+			padding-bottom: 3%;
+		}
+	}
+
+	footer {
+		margin-top: 30px;
+		height: 160px;
+
+		.btn-credits {
+			padding: 7% 0;
+		}
+	}
+}
+
+/* MEDIA QUERIES MAX WIDTH 380PX */
+@media all and (max-width : 380px) {
+	body {
+		overflow-x :hidden;
+	}
+
+	header #headersocial {
+		display: none;
+	}
+
+	#progress {
+		display: none;
+	}
+
+	main section:first-child {
+
+		#headerdesc {
+			padding-top: 170px;
+		}
+
+		h1 {
+			font-size : 46px;
+			line-height: 60px;
+			width: 80%;
+		}
+	}
+
+	main section:nth-child(2) {
+		p {
+			font-size: 15px;
+		}
+	}
+
+	main section:last-child {
+		h3 {
+			font-size: 25px;
+		}
+
+		p {
+			font-size: 15px;
+		}
+	}
+
+	
+
+	footer {
+		height: 268px;
+
+		.form-newsletter {
+			margin-right: 11px;
+
+			label {
+				margin-right: 0;
+			}
+		}
+
+		a.btn {
+			padding: 8% 16%;
+		}
+
+		img {
+			margin-top: 20px;
+		}
+	}
+}

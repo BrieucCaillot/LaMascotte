@@ -1,8 +1,14 @@
 $(document).ready(function() {
 
     // SCROLL DIV DESKTOP
-    $("#contact").click(function() {
-        $(document).scrollTo('#googlemap', 500);
+    // $("#contacter").click(function() {
+    //     $(document).scrollTo('#contact', 500);
+    // });
+
+    $("#contacter").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#contact").offset().top},
+          'slow');
     });
 
     // FIXED MENU 

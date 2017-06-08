@@ -22,11 +22,7 @@ header {
     transition:  0.3s;
     color: #fff;
 
-    .container {
-    	width: 1350px;
-    }
-
-	.progressContainer{
+    .progressContainer{
 	  	position: fixed;
 	  	top: 72px;
 	  	left: 0;
@@ -145,6 +141,93 @@ header {
 	}
 }
 
+/*MOBILE NAV*/
+.mobile-nav {
+	position: fixed;
+	bottom: 0;
+	z-index: 9;
+	height: 64px;
+	width: 100%;
+	font-size: 0px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #6B614D;
+	display: none;
+
+	img {
+		width: 24px;
+	}
+
+	.btn {
+		height: 100%;
+		width: 100%;
+		border-radius: 0px;
+	}
+
+	.btn-accueil {
+		border-right: 1px solid #fff;
+		background-color: #e0d2b1;
+	
+		img {
+			width: 20px;
+			padding-top: 5px;
+		}
+	}
+
+	.btn-about {
+		border-right: 1px solid #fff;
+
+		img {
+			width: 21px;
+			padding-top: 6px;
+		}
+	}
+
+	.btn-menu {
+		border-right: 1px solid #fff;
+
+		img {
+			width: 30px;
+			padding-top: 8px;
+		}
+	}
+
+	.btn-booking {
+		border-right: 1px solid #fff;
+		
+		img {
+			width: 21px;
+			padding-top: 5px;
+		}
+	}
+
+	.btn-delivery {
+		border-right: 1px solid #fff;
+	
+		img {
+			width: 25px;
+			padding-top: 7px;
+		}
+	}
+
+	.btn-contact {
+
+		img {
+			width: 17px;
+			padding-top: 4px;
+		}
+	}
+
+	.text {
+		font-size: 10px;
+		bottom: 8px;
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
 main {
 
 	section:first-child {
@@ -167,17 +250,18 @@ main {
 		}
 	}
 
-	#description {
+	section:last-child {
 		background-color: #F4F4F4;
 	 	padding: 60px 0;
 	 	font-family: roboto;
 
 	 	.container {
+	 		width : 90%;
 	 	}
 
 		img {
 			width: 76%;
-			margin-left: 45px;
+			margin: 7%;
 		}
 
 		span {
@@ -189,15 +273,9 @@ main {
 			line-height: 36px;
 			font-weight: 100;
 			font-size: 17px;
-			padding: 90px;
+			padding: 18% 0;
 		}
 	}
-}
-
-
-/* FOOTER */
-main #description .container {
-	width : 90%;
 }
 
 /* FOOTER */
@@ -320,5 +398,186 @@ footer {
 	    position: absolute;
 	    right: 0;
 	    bottom: -20px;
+	}
+}
+
+/************** RESPONSIVE ***************/
+
+/* MEDIA QUERIES MAX WIDTH 1319PX MIN WIDTH 920PX */
+@media all and (max-width : 1319px) and (min-width: 920px) {
+
+	#headersocial {
+		position: absolute;
+		right: -290%;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	header .progressContainer {
+		top: 69px;
+	}
+
+	footer {
+		height: 110px;
+	}
+}
+
+/* MEDIA QUERIES MAX WIDTH 1200PX*/
+@media all and (max-width : 1200px) {
+}
+
+/* MEDIA QUERIES MAX WIDTH 992PX */
+@media all and (max-width : 992px) {
+	.show {
+		display: block;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	header .progressContainer {
+		top: 69px;
+	}
+
+	footer {
+		height: 130px;
+
+		.btn-credits {
+			padding: 10% 0;
+		}
+	}
+}
+
+@media all and (max-width: 992px) and (min-width: 780px) {
+
+	body {
+		overflow-x :hidden;
+		width: 100%;
+	}
+
+	#headersocial {
+		position: absolute;
+		right: -290%;
+	}
+
+	#progress {
+		display: none;
+	}
+
+	main section:last-child {
+		img {
+			width: 50%;
+		}
+	} 
+
+	footer {
+		.btn-credits {
+			padding: 15% 0%;
+			margin-left: -17%
+		}
+	}
+}
+
+/* MEDIA QUERIES MAX WIDTH 780PX */
+@media all and (max-width : 780px) {
+	overflow-x: hidden;
+
+	#progress {
+		display: none;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	main section:last-child {
+		img {
+			width: 50%;
+		}
+
+		p {
+			padding: 5% 0;
+		}
+	} 
+
+
+
+	header .progressContainer {
+		top: 69px;
+	}
+
+	header #headersocial {
+		width: 100px;
+		position: absolute;
+		right: -322%;
+	}
+
+	main 
+
+	footer {
+		height: 160px;
+		margin-top: 400px;
+
+		.btn-credits {
+			padding: 7% 0;
+		}
+	}
+}
+
+/* MEDIA QUERIES MAX WIDTH 380PX */
+@media all and (max-width : 380px) {
+	body {
+		overflow-x :hidden;
+	}
+
+	header #headersocial {
+		display: none;
+	}
+
+	#progress {
+		display: none;
+	}
+	
+	main section:last-child {
+		img {
+			width: 70%;
+			margin-left: -2%
+		}
+
+		p {
+			padding: 5% 0;
+		}
+	} 
+
+	footer {
+
+		height: 268px;
+
+		.form-newsletter {
+			margin-right: 11px;
+
+			label {
+				margin-right: 0;
+			}
+		}
+
+		a.btn {
+			padding: 8% 13%;
+		}
+
+		img {
+			margin-top: 20px;
+		}
 	}
 }
