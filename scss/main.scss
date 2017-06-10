@@ -513,7 +513,7 @@ main {
 		}
 
 		img:last-child {
-			height: 60%;
+			height: 350px;
 			width: inherit;
 		}
 
@@ -1185,8 +1185,14 @@ footer {
    	 	width: 50%;
 	}
 
-	main section:nth-child(3) #swiperrestaurant {
-		height: 45%;
+	main section:nth-child(3) {
+		#swiperrestaurant {
+			height: 35%;
+		}
+	}
+
+	main section:nth-child(4) img:last-child{
+		height: 30%;
 	}
 
 	main section:nth-child(5) {
