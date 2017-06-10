@@ -389,8 +389,6 @@ main {
       margin-bottom: 24px;
       font-family: Montserrat;
       margin: 2% 0%; }
-    main section:nth-child(3) #entree2, main section:nth-child(3) #plats2, main section:nth-child(3) #dessert2, main section:nth-child(3) #plats3, main section:nth-child(3) #dessert3, main section:nth-child(3) #entree2desc, main section:nth-child(3) #plats2desc, main section:nth-child(3) #dessert2desc, main section:nth-child(3) #plats3desc, main section:nth-child(3) #dessert3desc {
-      display: none; }
     main section:nth-child(3) #menus {
       margin: 47px 0; }
     main section:nth-child(3) svg {
@@ -403,27 +401,33 @@ main {
     main section:nth-child(3) img {
       width: auto;
       height: 380px; }
+    main section:nth-child(3) h2 {
+      text-transform: uppercase;
+      font-size: 22px;
+      font-family: Montserrat;
+      margin: 2% 0;
+      line-height: 51px;
+      background-color: #6B614D;
+      color: #fff;
+      border-radius: 2px; }
     main section:nth-child(3) h3 {
       font-size: 17px;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 20px;
       font-weight: 400; }
-    main section:nth-child(3) h2 {
-      position: relative;
-      text-transform: uppercase;
-      font-size: 22px;
-      font-family: Montserrat; }
     main section:nth-child(3) p {
       text-align: center;
       font-size: 16px;
       line-height: 30px;
-      font-family: Montserrat; }
+      font-family: Montserrat;
+      margin: 3% 0; }
     main section:nth-child(3) li {
       padding-bottom: 15px;
       list-style-type: circle;
       font-size: 14px;
-      line-height: 29px; }
+      line-height: 29px;
+      text-align: left; }
     main section:nth-child(3) button {
       border: 2px solid #000000;
       background-color: transparent; }
@@ -460,18 +464,23 @@ main {
     main section:nth-child(4) img {
       width: auto;
       height: 380px; }
-    main section:nth-child(4) h3 {
-      font-size: 22px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 20px;
-      font-weight: 400; }
     main section:nth-child(4) h2 {
       position: relative;
       display: inline-block;
       text-transform: uppercase;
       font-size: 29px;
       margin: 48px 0 35px 0; }
+    main section:nth-child(4) h2:hover {
+      background-color: #6B614D;
+      color: #fff;
+      border-radius: 2px;
+      width: 100%; }
+    main section:nth-child(4) h3 {
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-weight: 400; }
     main section:nth-child(4) li {
       padding-bottom: 15px;
       list-style-type: circle; }
@@ -515,17 +524,27 @@ main {
       width: auto;
       height: 380px; }
     main section:nth-child(5) h3 {
-      font-weight: 400;
-      font-size: 26px;
-      line-height: 30px;
-      font-family: Montserrat;
-      margin: 6% 0%; }
-    main section:nth-child(5) h2 {
+      font-size: 17px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-weight: 400; }
+    main section:nth-child(5) h4 {
       position: relative;
       font-size: 32px;
       line-height: 30px;
       font-family: Montserrat;
       margin: 6% 0 4% 0; }
+    main section:nth-child(5) h5 {
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 30px;
+      font-family: Montserrat;
+      margin: 6% 0%; }
+    main section:nth-child(5) h4:hover, main section:nth-child(5) h5:hover, main section:nth-child(5) p.title:hover {
+      background-color: #6B614D;
+      color: #fff;
+      border-radius: 2px; }
     main section:nth-child(5) li {
       padding-bottom: 15px;
       list-style-type: circle; }
@@ -587,6 +606,11 @@ main {
       text-transform: uppercase;
       font-size: 29px;
       margin: 48px 0 35px 0; }
+    main section:nth-child(6) h2:hover {
+      background-color: #6B614D;
+      color: #fff;
+      border-radius: 2px;
+      width: 100%; }
     main section:nth-child(6) li {
       padding-bottom: 15px;
       list-style-type: circle;
@@ -646,11 +670,14 @@ main {
       margin-bottom: 20px;
       font-weight: 400; }
     main section:last-child h2 {
-      position: relative;
-      display: inline-block;
       text-transform: uppercase;
       font-size: 29px;
       margin: 48px 0 35px 0; }
+    main section:last-child h2:hover {
+      background-color: #6B614D;
+      color: #fff;
+      border-radius: 2px;
+      width: 100%; }
     main section:last-child li {
       padding-bottom: 15px;
       list-style-type: circle;
