@@ -370,7 +370,7 @@ main {
       color: #ffffff;
       width: 55px; }
     main section:nth-child(4) img:last-child {
-      height: 60%;
+      height: 350px;
       width: inherit; }
     main section:nth-child(4) .menuhover {
       -webkit-transition: all 0.3s ease;
@@ -840,7 +840,10 @@ footer {
     width: 50%; }
 
   main section:nth-child(3) #swiperrestaurant {
-    height: 45%; }
+    height: 25%; }
+
+  main section:nth-child(4) img:last-child {
+    height: 30%; }
 
   main section:nth-child(5) {
     margin-top: 10px;
