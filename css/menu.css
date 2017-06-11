@@ -236,8 +236,7 @@ header {
     width: 100%;
     border-radius: 0px; }
   .mobile-nav .btn-accueil {
-    border-right: 1px solid #fff;
-    background-color: #e0d2b1; }
+    border-right: 1px solid #fff; }
     .mobile-nav .btn-accueil img {
       width: 20px;
       padding-top: 5px; }
@@ -247,7 +246,8 @@ header {
       width: 21px;
       padding-top: 6px; }
   .mobile-nav .btn-menu {
-    border-right: 1px solid #fff; }
+    border-right: 1px solid #fff;
+    background-color: #e0d2b1; }
     .mobile-nav .btn-menu img {
       width: 30px;
       padding-top: 8px; }
@@ -320,8 +320,7 @@ main {
       margin: 0 auto; }
   main section:nth-child(2) {
     padding: 50px 0 50px 0;
-    background-color: #F4F4F4;
-    position: relative; }
+    background-color: #F4F4F4; }
     main section:nth-child(2) .row {
       padding: 1% 0; }
     main section:nth-child(2) .arrow {
@@ -346,7 +345,6 @@ main {
       margin-bottom: 20px;
       font-weight: 400; }
     main section:nth-child(2) h2 {
-      position: relative;
       display: inline-block;
       text-transform: uppercase;
       font-size: 29px;
@@ -466,14 +464,15 @@ main {
       max-width: 500px;
       height: auto;
       margin-left: 62px;
-      font-family: Montserrat; }
+      font-family: Montserrat;
+      margin-bottom: 4%; }
     main section:nth-child(4) img {
       width: auto;
       height: 380px; }
     main section:nth-child(4) h2 {
       text-transform: uppercase;
       font-size: 29px;
-      margin: 48px 0 35px 0;
+      margin: 4% 0 0% 0;
       background-color: #6B614D;
       color: #fff;
       border-radius: 2px;
@@ -491,8 +490,7 @@ main {
     main section:nth-child(4) .title {
       font-size: 20px;
       line-height: 51px;
-      font-family: Montserrat;
-      margin: 8% 0%; }
+      font-family: Montserrat; }
     main section:nth-child(4) .desc {
       font-size: 15px;
       line-height: 30px;
@@ -515,9 +513,9 @@ main {
     background-color: #FFF; }
     main section:nth-child(5) .home-subtitle {
       font-size: 17px; }
-    main section:nth-child(5) #compo1, main section:nth-child(5) #compo2, main section:nth-child(5) #compo3, main section:nth-child(5) #compo4, main section:nth-child(5) #compo5, main section:nth-child(5) #compo6,
-    main section:nth-child(5) #huitres, main section:nth-child(5) #crustaces, main section:nth-child(5) #poissonsdemer, main section:nth-child(5) #homards, main section:nth-child(5) #epicerie,
-    main section:nth-child(5) #meatlist, main section:nth-child(5) h5, main section:nth-child(5) p {
+    main section:nth-child(5) #compo1display, main section:nth-child(5) #compo2display, main section:nth-child(5) #compo3display, main section:nth-child(5) #compo4display, main section:nth-child(5) #compo5display, main section:nth-child(5) #compo6display,
+    main section:nth-child(5) #huitresdisplay, main section:nth-child(5) #crustacesdisplay, main section:nth-child(5) #poissonsdemerdisplay, main section:nth-child(5) #homardsdisplay, main section:nth-child(5) #epiceriedisplay,
+    main section:nth-child(5) #meatdisplay, main section:nth-child(5) h5, main section:nth-child(5) p {
       display: none; }
     main section:nth-child(5) svg {
       font-weight: bold;
@@ -539,7 +537,7 @@ main {
       font-size: 32px;
       line-height: 46px;
       font-family: Montserrat;
-      margin: 0% 0 2% 0;
+      margin: 0% 0 3% 0;
       background-color: #6B614D;
       color: #fff;
       border-radius: 2px;
@@ -871,7 +869,9 @@ footer {
     margin-left: -17%; } }
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width: 780px) {
-  overflow-x: hidden;
+  body {
+    overflow-x: hidden; }
+
   #progress {
     display: none; }
 
@@ -890,10 +890,10 @@ footer {
     right: -322%; }
 
   main section:nth-child(5) .title {
-    width: 70%; }
+    width: 65%; }
 
   main section:nth-child(5) h5 {
-    width: 80%; }
+    width: 70%; }
 
   footer {
     height: 160px; }

@@ -1,229 +1,182 @@
 jQuery(document).ready(function($) {
 
-	// SCROLL TO MENUS
-	$("#menusvgnav").click(function() {
-      $('html,body').animate({
-          scrollTop: $("#menusvg").offset().top},
-          'slow');
-    });
+	// SCROLLS
+		// SCROLL TO MENUS
+		$("#menusvgnav").click(function() {
+	      $('html,body').animate({
+	          scrollTop: $("main section:nth-child(3)").offset().top},
+	          'slow');
+	    });
 
-    // SCROLL TO ENTRÉES
-	$("#entreesvgnav").click(function() {
-      $('html,body').animate({
-          scrollTop: $("#entreesvg").offset().top},
-          'slow');
-    });
+	    // SCROLL TO ENTRÉES
+		$("#entreesvgnav").click(function() {
+	      $('html,body').animate({
+	          scrollTop: $("main section:nth-child(4)").offset().top},
+	          'slow');
+	    });
 
-    // SCROLL TO PLATS
-	$("#platsvgnav").click(function() {
-      $('html,body').animate({
-          scrollTop: $("#platsvg").offset().top},
-          'slow');
-    });
+	    // SCROLL TO PLATS
+		$("#platsvgnav").click(function() {
+	      $('html,body').animate({
+	          scrollTop: $("main section:nth-child(5)").offset().top},
+	          'slow');
+	    });
 
-    // SCROLL TO DESSERTS
-	$("#dessertsvgnav").click(function() {
-      $('html,body').animate({
-          scrollTop: $("#dessertsvg").offset().top},
-          'slow');
-    });
+	    // SCROLL TO DESSERTS
+		$("#dessertsvgnav").click(function() {
+	      $('html,body').animate({
+	          scrollTop: $("main section:nth-child(6)").offset().top},
+	          'slow');
+	    });
 
-    // SCROLL TO BOISSONS
-	$("#drinksvgnav").click(function() {
-      $('html,body').animate({
-          scrollTop: $("#drinksvg").offset().top},
-          'slow');
-    });
-
-
+	    // SCROLL TO BOISSONS
+		$("#drinksvgnav").click(function() {
+	      $('html,body').animate({
+	          scrollTop: $("main section:nth-child(7)").offset().top},
+	          'slow');
+	    });
 	
 	// LES MENUS 
-	$("#menusvg").click(function(){
-			$("#menus h2, #menus p, #btn1down, #btn2down, #btn3down").fadeToggle(600);
-			$("#entree1, #entree2, #plats1, #plats2, #plats3, #dessert1, #dessert2, #dessert3").fadeOut(600);
-	});
-
+		// DISPLAY NONE ALL
+		$("#menusvg").click(function() {
+			$("#entree1, #plat1, #dessert1, #entree2, #plat2, #dessert2, #plat3, #dessert3").fadeOut();
+		});
 		/* MENU MASCOTTE */
-		$("#menu1 h2").click(function(){
-			/*TOGGLE*/$("ul, li, #entree1, #plats1, #dessert1").show(600);
-		});
-
+			$("#menu1 h2").click(function(){
+				$("#entree1, #plat1, #dessert1").fadeToggle();
+			});
 		/* MENU COCOTTE */
-		$("#menu2 h2").click(function(){
-			/*TOGGLE*/$("ul, li, #entree2, #plats2, #dessert2").show(600);
-		});
-
+			$("#menu2 h2").click(function(){
+				$("#entree2, #plat2, #dessert2").fadeToggle();
+			});
 		/* MENU MARMOTTE */
-		$("#menu3 h2").click(function(){
-			/*TOGGLE*/$("ul, li, #plats3, #dessert3").show(600);
+			$("#menu3 h2").click(function(){
+				$("#plat3, #dessert3").fadeToggle();
+			});
+
+	// LES ENTRÉES
+		//DISPLAY NONE ALL
+	 	$("#entreesvg").click(function(){
+			$("#entreecold ul, #entreehot ul").fadeOut();
 		});
+		// ENTREEFROIDE
+		$("#entreecold h2").click(function(){
+			$("#entreecold ul").fadeToggle();
+		});	
+		// ENTREECHAUDE
+		$("#entreehot h2").click(function(){
+			$("#entreehot ul").fadeToggle();
+		});	
 
+	// LES PLATS
+		//DISPLAY NONE ALL
+	 	$("#platsvg").click(function(){
+			$("#compo1display, #compo2display, #compo3display, #compo4display, #compo5display, #compo6display ,#fdmdisplay h5, #fdmdisplay p, #pdm h5, #pdmdisplay p, #huitresdisplay, #crustacesdisplay, #poissonsdemerdisplay, #homardsdisplay, #epiceriedisplay, #meatdisplay").fadeOut();
+		}); 	
+		// LES FRUITS DE MER
+			$("#fdm h4").click(function(){
+				$("#fdmdisplay h5").fadeToggle();
+				$("#pdm h5").fadeToggle();
+				$("#fdmdisplay p").fadeOut();
+				$("#pdmdisplay p").fadeOut();
+				$("#compo1display, #compo2display, #compo3display, #compo4display, #compo5display, #compo6display, #huitresdisplay, #crustacesdisplay, #poissonsdemerdisplay, #homardsdisplay, #epiceriedisplay").fadeOut();
+			});
+			// LES COMPOSITIONS
+				// DISPLAY NONE
+				$("#fdmdisplay h5").click(function() {
+					$("#fdmdisplay p").fadeToggle();
+					$("#compo1display, #compo2display, #compo3display, #compo4display, #compo5display, #compo6display").fadeOut();
+				});
+				// COMPO 1
+				$("#compo1").click(function(){
+					$("#compo1display").fadeToggle();
+				});
+				// COMPO 2
+				$("#compo2").click(function(){
+					$("#compo2display").fadeToggle();
+				});
+				// COMPO 3
+				$("#compo3").click(function(){
+					$("#compo3display").fadeToggle();
+				});
+				// COMPO 4
+				$("#compo4").click(function(){
+					$("#compo4display").fadeToggle();
+				});
+				// COMPO 5
+				$("#compo5").click(function(){
+					$("#compo5display").fadeToggle();
+				});
+				// COMPO 6
+				$("#compo6").click(function(){
+					$("#compo6display").fadeToggle();
+				});
+			// POISSONS ET FRUITS DE MER
+				// DISPLAY NONE
+				$("#pdm h5").click(function() {
+					$("#pdmdisplay p").fadeToggle();
+					$("#huitresdisplay, #crustacesdisplay, #poissonsdemerdisplay, #homardsdisplay, #epiceriedisplay").fadeOut();
+				});
+				// HUITRES
+				$("#huitres").click(function(){
+					$("#huitresdisplay").fadeToggle();
+				});
+				// CRUSTACÉS ET COQUILLAGES
+				$("#crustaces").click(function(){
+					$("#crustacesdisplay").fadeToggle();
+				});
+				// POISSONS DE MER
+				$("#poissonsdemer").click(function(){
+					$("#poissonsdemerdisplay").fadeToggle();
+				});
+				// HOMARDS
+				$("#homards").click(function(){
+					$("#homardsdisplay").fadeToggle();
+				});
+				// HOMARDS
+				$("#epicerie").click(function(){
+					$("#epiceriedisplay").fadeToggle();
+				});
+			
+		// LES VIANDES
+			$("#meat h4").click(function(){
+				$("#meatdisplay").fadeToggle();
+			});
 
-		/* MENU MASCOTTE */
-		$("#btn1down").click(function(){
-			$(this).fadeOut(1000);
-			console.log('inside');
-			$("#entree1").show(1000);
-			$("#plats1").show(1000);
-			$("#dessert1").show(1000);
-			$("#btn1up").show(1000);
+	// LES DESSERTS
+		//DISPLAY NONE ALL
+	 	$("#dessertsvg").click(function(){
+			$("#homemade ul, #icecream ul").fadeOut();
 		});
+		// FAITS MAISON
+			$("#homemade").click(function(){
+				$("#homemade ul").fadeToggle();
+			});
+		// GLACES ET SORBETS BERTHILLON
+			$("#icecream").click(function(){
+				$("#icecream ul").fadeToggle();
+			});
 
-		$("#btn1up").click(function(){
-			$(this).fadeOut(1000);
-			console.log('inside');
-			$("#entree1").fadeOut(1000);
-			$("#plats1").fadeOut(1000);
-			$("#dessert1").fadeOut(1000);
-			$("#btn1down").show(1000);
+	// LES BOISSONS
+		//DISPLAY NONE ALL
+	 	$("#drinksvg").click(function(){
+			$("#drink1 ul, #drink2 ul, #drink3 ul, #drink4 ul").fadeOut();
 		});
-
-		/* MENU COCOTTE */
-		$("#btn2down").click(function(){
-			$(this).fadeOut(1000);
-			console.log('inside');
-			$("#entree2").show(1000);
-			$("#plats2").show(1000);
-			$("#dessert2").show(1000);
-			$("#btn2up").show(1000);
-		});
-
-		$("#btn2up").click(function(){
-			$(this).fadeOut(1000);
-			console.log('inside');
-			$("#entree2").fadeOut(1000);
-			$("#plats2").fadeOut(1000);
-			$("#dessert2").fadeOut(1000);
-			$("#btn2down").show(1000);
-		});
-
-		/* MENU MARMOTTE */
-		$("#btn3down").click(function(){
-			$(this).fadeOut(1000);
-			console.log('inside');
-			$("#plats3").show(1000);
-			$("#dessert3").show(1000);
-			$("#btn3up").show(1000);
-		});
-
-		$("#btn3up").click(function(){
-			$(this).fadeOut(1000);
-			console.log('inside');
-			$("#plats3").fadeOut(1000);
-			$("#dessert3").fadeOut(1000);
-			$("#btn3down").show(1000);
-		});
-
-/* LES ENTRÉES */
-
-	$("#entreesvg").click(function(){
-		console.log('mdr');
-		$("#entreeid h2").fadeToggle(600);
-		$("#entreecold ul, #entreehot ul").fadeOut(600);
-	});	
-
-	$("#entreecold h2").click(function(){
-		console.log('mdr');
-		$("#entreecold ul, #entreecold li").fadeToggle(600);
-	});
-
-	$("#entreehot h2").click(function(){
-		console.log('mdr');
-		$("#entreehot ul, #entreehot li").fadeToggle(600);
-	});
-
-/* LES PLATS */
-
-	$("#platssvg").click(function(){
-		$("#platsid h2").fadeToggle(600);
-		$("#huitres h3, #compositions h3,#compo1, #compo2, #compo3, #compo4, #compo5, #compo6, p").fadeOut(600);
-	});
-
-		/* LES FRUITS DE MER */
-
-		$("#platsid h2").click(function(){
-			$("#compositions h3, #huitres h3").fadeToggle(400);
-			$("#btn4down, #btn5down, #btn6down, #btn7down, #btn8down, #btn9down").fadeToggle(600);
-			$("#btn4up, #btn5up, #btn6up, #btn7up, #btn8up, #btn9up, #compo1, #compo2, #compo3, #compo4, #compo5, #compo6, p").fadeOut(600);
-		});
-
-			/* COMPOSITIONS */
-
-			$("#compositions h3").click(function(){
-				$("#btn4down, #btn5down, #btn6down, #btn7down, #btn8down, #btn9down, #compositions p").show(600);
-				$("#btn4up, #btn5up, #btn6up, #btn7up, #btn8up, #btn9up").fadeOut(600);
+		// À DÉCOUVRIR
+			$("#drink1").click(function(){
+				$("#drink1 ul").fadeToggle();
 			});
-
-			/* LE ROYAL MASCOTTE */
-			$("#btn4down").click(function() {
-				$(this).fadeOut(1000);
-				$("#compo1").show(1000);
-				$("#btn4up").show(1000);
+		// CHAMPAGNE
+			$("#drink2").click(function(){
+				$("#drink2 ul").fadeToggle();
 			});
-			$("#btn4up").click(function() {
-				$(this).fadeOut(1000);
-				$("#compo1").fadeOut(1000);
-				$("#btn4down").show(1000);
+		// KIRS
+			$("#drink3").click(function(){
+				$("#drink3 ul").fadeToggle();
 			});
-
-			/* LE PLATEAU MASCOTTE */
-			$("#btn5down").click(function() {
-				$(this).fadeOut(1000);
-				$("#compo2").show(1000);
-				$("#btn5up").show(1000);
-			});
-			$("#btn5up").click(function() {
-				$(this).fadeOut(1000);
-				$("#compo2").fadeOut(1000);
-				$("#btn5down").show(1000);
-			});
-
-			/* L'ESCALLE DE LA MASCOTTE */
-			$("#btn6down").click(function() {
-				$(this).fadeOut(1000);
-				$("#compo3").show(1000);
-				$("#btn6up").show(1000);
-			});
-			$("#btn6up").click(function() {
-				$(this).fadeOut(1000);
-				$("#compo3").fadeOut(1000);
-				$("#btn6down").show(1000);
-			});
-
-			/* A LA DECOUVERTE DE CRUS D'EXCEPTION */
-			$("#btn7down").click(function() {
-				$(this).fadeOut(1000);
-				$("#compo4").show(1000);
-				$("#btn7up").show(1000);
-			});
-			$("#btn7up").click(function() {
-				$(this).fadeOut(1000);
-				$("#compo4").fadeOut(1000);
-				$("#btn7down").show(1000);
-			});
-
-			/* A LA DECOUVERTE DE CRUS D'EXCEPTION */
-			$("#btn8down").click(function() {
-				$(this).fadeOut(1000);
-				$("#compo5").show(1000);
-				$("#btn8up").show(1000);
-			});
-			$("#btn8up").click(function() {
-				$(this).fadeOut(1000);
-				$("#compo5").fadeOut(1000);
-				$("#btn8down").show(1000);
-			});
-
-			/* LE TOUR DES PARC A HUITRES */
-			$("#btn9down").click(function() {
-				$(this).fadeOut(1000);
-				$("#compo6").show(1000);
-				$("#btn9up").show(1000);
-			});
-			$("#btn9up").click(function() {
-				$(this).fadeOut(1000);
-				$("#compo6").fadeOut(1000);
-				$("#btn9down").show(1000);
+		// COCKTAILS
+			$("#drink4").click(function(){
+				$("#drink4 ul").fadeToggle();
 			});
 
 });

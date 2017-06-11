@@ -312,7 +312,6 @@ header {
 
 	.btn-accueil {
 		border-right: 1px solid #fff;
-		background-color: #e0d2b1;
 	
 		img {
 			width: 20px;
@@ -331,6 +330,7 @@ header {
 
 	.btn-menu {
 		border-right: 1px solid #fff;
+		background-color: #e0d2b1;
 
 		img {
 			width: 30px;
@@ -435,7 +435,7 @@ main {
 	section:nth-child(2) {
 		padding: 50px 0 50px 0;
 		background-color: #F4F4F4;
-		position: relative;
+		
 
 		.row {
 			padding: 1% 0;
@@ -471,7 +471,6 @@ main {
 		}
 
 		h2 {
-			position: relative;
 			display: inline-block;
 			text-transform: uppercase;
 			font-size: 29px;
@@ -642,9 +641,10 @@ main {
 		svg {
 			font-weight:bold;
 			max-width: 500px;
-			height:auto;
-			margin-left:62px;
+			height: auto;
+			margin-left: 62px;
 			font-family: Montserrat;
+			margin-bottom: 4%;
 		}
 
 		img {
@@ -655,7 +655,7 @@ main {
 		h2 {
 			text-transform: uppercase;
 			font-size: 29px;
-			margin: 48px 0 35px 0;
+			margin: 4% 0 0% 0;
 			background-color: #6B614D;
 			color: #fff;
 			border-radius: 2px;
@@ -680,7 +680,6 @@ main {
 			font-size: 20px;
 			line-height: 51px;
 			font-family: Montserrat;
-			margin: 8% 0%;
 		}
 		
 		.desc {
@@ -716,9 +715,9 @@ main {
 			font-size: 17px;
 		}
 		
-		#compo1, #compo2, #compo3, #compo4, #compo5, #compo6, 
-		#huitres, #crustaces, #poissonsdemer, #homards, #epicerie,
-		#meatlist, h5, p {
+		#compo1display, #compo2display, #compo3display, #compo4display, #compo5display, #compo6display, 
+		#huitresdisplay, #crustacesdisplay, #poissonsdemerdisplay, #homardsdisplay, #epiceriedisplay,
+		#meatdisplay, h5, p {
 			display: none;
 		}
 
@@ -748,7 +747,7 @@ main {
 			font-size: 32px;
 			line-height: 46px;
 			font-family: Montserrat;
-			margin: 0% 0 2% 0;
+			margin: 0% 0 3% 0;
 			background-color: #6B614D;
 			color: #fff;
 			border-radius: 2px;
@@ -1222,7 +1221,9 @@ footer {
 
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width : 780px) {
-	overflow-x: hidden;
+	body {
+		overflow-x :hidden;
+	}
 
 	#progress {
 		display: none;
@@ -1247,11 +1248,11 @@ footer {
 	}
 
 	main section:nth-child(5) .title {
-		width: 70%;
+		width: 65%;
 	}
 
 	main section:nth-child(5) h5 {
-		width: 80%;
+		width: 70%;
 	}
 
 	footer {

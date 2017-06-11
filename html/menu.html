@@ -497,6 +497,8 @@
                             <p>
                                 Un plat, un dessert, une boisson
                                 <br>
+                                Un jus d’orange ou un Coca
+                                <br>
                                 Pour les petits
                             </p>
                         </div>
@@ -555,7 +557,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div id="entree1" class="row">
+                    <div id="entrees" class="row">
                         <!--ENTRÉE FROIDE-->
                         <div id="entreecold" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                             <h2 class="title text-center">
@@ -639,23 +641,23 @@
                         </div>
                     </div>
                     <!-- FRUITS DE MER-->
-                    <div class="row">
-                        <div id="fdm1" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                    <div id="fdm" class="row">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12" >
                             <h4>
                                 LES FRUITS DE MER
                             </h4>
                         </div>
                     </div>
-                    <div class="row">
+                    <div id="fdmdisplay" class="row">
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h5>LES COMPOSITIONS</h5>
                         </div>
                         <!--#LEFT LES COMPOSITIONS DISPLAY -->
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <p class="title text-center compotitle">
+                            <p id="compo1" class="title text-center compotitle">
                                 Le royal mascotte : 185 €
                             </p>
-                            <div id="compo1" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div id="compo1display" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <ul class="desc">
                                     <li>
                                         3 Belons n° 00
@@ -713,10 +715,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <p class="title text-center compotitle">
+                            <p id="compo2" class="title text-center compotitle">
                                 Le plateau mascotte : 145 €
                             </p>
-                            <div id="compo2" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div id="compo2display" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <ul class="desc">
                                     <li>
                                         2 Belons n° 00
@@ -771,10 +773,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <p class="title text-center compotitle">
+                            <p id="compo3" class="title text-center compotitle">
                                 L'escale de la mascotte : 95 €
                             </p>
-                            <div id="compo3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div id="compo3display" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <ul class="desc">
                                     <li>
                                         6 Fines de Cancale n° 4
@@ -814,10 +816,10 @@
                         </div>
                         <!--#RIGHT LES COMPOSITIONS DISPLAY -->
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <p class="title text-center compotitle">
+                            <p id="compo4" class="title text-center compotitle">
                                 À la decouverte des crus d'exceptions : 87 €
                             </p>
-                            <div id="compo4" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div id="compo4display" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <ul class="desc">
                                     <li>
                                         3 Belons n° 00
@@ -839,10 +841,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <p class="title text-center compotitle">
+                            <p id="compo5" class="title text-center compotitle">
                                 Le tour des parc à huîtres : 68 €
                             </p>
-                            <div id="compo5" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div id="compo5display" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <ul class="desc">
                                     <li>
                                         6 Pleine Mer de Blainville n° 2
@@ -858,10 +860,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <p class="title text-center compotitle">
+                            <p id="compo6" class="title text-center compotitle">
                                 L'assiette de fruits de mer : 33 €
                             </p>
-                            <div id="compo6" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div id="compo6display" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <ul class="desc">
                                     <li>
                                         3 Fines de Cancale n°4
@@ -885,22 +887,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div id="pdm" class="row">
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <!--LES POISSONS ET FRUITS DE MER DISPLAY-->
-                            <div id="pdm">
+                            <div>
                                 <h5>POISSONS ET FRUITS DE MER</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <!--#LEFT FRUITS DE MER-->
+                    <div id="pdmdisplay" class="row">
+                        <!--#LEFT POISSONS DE MER-->
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                             <!--LES HUITRES-->
-                            <p class="title text-center compotitle">
+                            <p id="huitres" class="title text-center compotitle">
                                 Les Huitres  *vendues par 6
                             </p>
-                            <div id="huitres" class="col-md-12">
+                            <div id="huitresdisplay" class="col-md-12">
                                 <strong>
                                     BASSIN DE MARÈNNE-OLÉRON<br>
                                 </strong>
@@ -979,10 +981,10 @@
                                 </ul>
                             </div>
                             <!--CRUSTACÉS ET COQUILLAGES-->      
-                            <p class="title text-center compotitle">
+                            <p id="crustaces" class="title text-center compotitle">
                                 Les crustacés et les coquillages
                             </p>
-                            <div id="crustaces" class="col-md-12">
+                            <div id="crustacesdisplay" class="col-md-12">
                                 <ul class="desc">
                                     <li>Crevettes roses de Dakar 12.5€</li>
                                     <li>La langoustine 4.5€</li>
@@ -1000,10 +1002,10 @@
                                 </ul>
                             </div>
                             <!--LES POISSONS DE MER-->
-                            <p class="title text-center compotitle">
+                            <p id="poissonsdemer" class="title text-center compotitle">
                                 Les Poissons de mer
                             </p>
-                            <div id="poissonsdemer" class="col-md-12">
+                            <div id="poissonsdemerdisplay" class="col-md-12">
                                 <ul class="desc">
                                     <li>
                                         Choucroute de La Mascotte aux poissons 35€
@@ -1026,13 +1028,13 @@
                                 </ul>
                             </div>
                         </div>
-                        <!--#RIGHT FRUITS DE MER-->
+                        <!--#RIGHT POISSONS DE MER-->
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                             <!--LES HOMARDS-->
-                            <p class="title text-center compotitle">
+                            <p id="homards" class="title text-center compotitle">
                                 Les Homards
                             </p>
-                            <div id="homards" class="col-md-12">
+                            <div id="homardsdisplay" class="col-md-12">
                                 <ul class="desc">
                                     <li>Homard Breton vivant Les 100g 14€</li>
                                     <li>Homard Canadien vivant Les 100g 11€</li>
@@ -1040,10 +1042,10 @@
                                 </ul>
                             </div>
                             <!--LES PRODUITS DE NOTRE EPICERIE FINE-->      
-                            <p class="title text-center compotitle">
+                            <p id="epicerie" class="title text-center compotitle">
                                 Les Produits de notre Epicerie Fine de la Mer
                             </p>
-                            <div id="epicerie" class="col-md-12">
+                            <div id="epiceriedisplay" class="col-md-12">
                                 <ul class="desc">
                                     <li>
                                         Mariné de coquilles Saint Jacques de Granville au ponzu et sel bleu de Perse, … crumpet servi chaud 18€
@@ -1064,14 +1066,14 @@
                             </div>  
                         </div>
                     </div>
-                    <div class="row">
+                    <div id="meat" class="row">
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <!--LES VIANDES-->
-                            <div id="viandes">
+                            <div>
                                 <h4>LES VIANDES</h4>
                             </div>
                             <!--LES VIANDES DISPLAY-->
-                            <div id="meatlist" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                            <div id="meatdisplay" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                                 <ul class="desc">
                                     <li>
                                         Beau cassoulet maison 34€
@@ -1131,7 +1133,7 @@
                     </div>
                     <div class="row">
                         <!--FAITS MAISONS-->
-                        <div id="homemade" class="col-md-6">
+                        <div id="homemade" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                             <h2 class="title text-center">
                                 Faits maisons
                             </h2>
@@ -1160,7 +1162,7 @@
                             </ul>
                         </div>
                         <!--GLACES ET SORBETS-->
-                        <div id="icecream" class="col-md-6" > 
+                        <div id="icecream" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6" > 
                             <h2 class="title text-center">
                                 Glaces et sorbets Berthillon
                             </h2>
