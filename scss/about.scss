@@ -309,7 +309,6 @@ header {
 
 	.btn-accueil {
 		border-right: 1px solid #fff;
-		background-color: #e0d2b1;
 	
 		img {
 			width: 20px;
@@ -319,6 +318,7 @@ header {
 
 	.btn-about {
 		border-right: 1px solid #fff;
+		background-color: #e0d2b1;
 
 		img {
 			width: 21px;
@@ -584,8 +584,6 @@ main {
 			button {
 			    border: 2px solid #6B614D;
 			    background-color: transparent;
-			    position: absolute;
-			    right: 15px;
 
 				a {
 					text-decoration: none;
@@ -758,8 +756,6 @@ main {
 			button {
 			    border: 2px solid #6B614D;
 			    background-color: transparent;
-			    position: absolute;
-			    right: 15px;
 
 				a {
 					text-decoration: none;
@@ -993,8 +989,6 @@ main {
 			button {
 			    border: 2px solid #6B614D;
 			    background-color: transparent;
-			    position: absolute;
-			    right: 15px;
 
 				a {
 					text-decoration: none;
@@ -1164,8 +1158,6 @@ main {
 			button {
 			    border: 2px solid #6B614D;
 			    background-color: transparent;
-			    position: absolute;
-			    right: 15px;
 
 				a {
 					text-decoration: none;
@@ -1473,10 +1465,6 @@ footer {
 				text-align: center;
 				margin-right: 0;
 			}
-
-			button {
-				right: 28%;
-			}
 		}
 
 		article:nth-child(3) {
@@ -1503,10 +1491,6 @@ footer {
 				text-align: center;
 				margin-left: 0;
 			}
-
-			button {
-				left: 28%;
-			}
 		}
 
 		article:nth-child(4) {
@@ -1532,10 +1516,6 @@ footer {
 			.desc {
 				text-align: center;
 				margin-right: 0;
-			}
-
-			button {
-				right: 28%;
 			}
 		}
 	}
@@ -1973,7 +1953,6 @@ footer {
 
 	main section:nth-child(3) {
 		article:nth-child(2) {
-
 			div:first-child.col-lg-12 {
 				margin-bottom: 80px;
 			}
@@ -2001,8 +1980,8 @@ footer {
 				height: auto;
 			}
 
-			button {
-				right: 8%;
+			button.button--nina {
+				margin: 0 -90px 30px 140px
 			}
 		}
 
@@ -2034,9 +2013,10 @@ footer {
 				margin-left: 0;
 			}
 
-			button {
-				left: 8%;
+			button.button--nina {
+				margin: 0 90px 30px -30px
 			}
+
 		}
 
 		article:nth-child(4) {
@@ -2069,8 +2049,8 @@ footer {
 				height: auto;
 			}
 
-			button {
-				right: 8%;
+			button.button--nina {
+				margin: 0 -90px 30px 140px
 			}
 		}
 	}

@@ -513,7 +513,7 @@ main {
 		}
 
 		img:last-child {
-			height: 60%;
+			height: 350px;
 			width: inherit;
 		}
 
@@ -1106,6 +1106,8 @@ footer {
 }
 
 @media all and (max-width: 992px) and (min-width: 780px) {
+
+
 	#headersocial {
 		position: absolute;
 		right: -290%;
@@ -1185,8 +1187,15 @@ footer {
    	 	width: 50%;
 	}
 
-	main section:nth-child(3) #swiperrestaurant {
-		height: 45%;
+
+	main section:nth-child(3) {
+		#swiperrestaurant {
+			height: 25%;
+		}
+	}
+
+	main section:nth-child(4) img:last-child{
+		height: 30%;
 	}
 
 	main section:nth-child(5) {
