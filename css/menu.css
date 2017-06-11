@@ -323,7 +323,7 @@ main {
     background-color: #F4F4F4;
     position: relative; }
     main section:nth-child(2) .row {
-      padding: 5% 0; }
+      padding: 1% 0; }
     main section:nth-child(2) .arrow {
       width: 19px;
       height: 21px;
@@ -331,7 +331,7 @@ main {
       padding: 1px 0 0 4px; }
     main section:nth-child(2) svg {
       font-weight: bold;
-      max-width: 500px;
+      max-width: 410px;
       height: auto;
       margin-bottom: 3%;
       margin-left: -5px;
@@ -372,7 +372,7 @@ main {
         padding: 14px 28px; }
   main section:nth-child(3) {
     padding: 71px 0 0 0;
-    background-color: #FFF; }
+    background-color: #fff; }
     main section:nth-child(3) .arrow {
       width: 19px;
       height: 21px;
@@ -389,13 +389,17 @@ main {
       margin-bottom: 24px;
       font-family: Montserrat;
       margin: 2% 0%; }
+    main section:nth-child(3) #entree1, main section:nth-child(3) #plat1, main section:nth-child(3) #dessert1,
+    main section:nth-child(3) #entree2, main section:nth-child(3) #plat2, main section:nth-child(3) #dessert2,
+    main section:nth-child(3) #plat3, main section:nth-child(3) #dessert3 {
+      display: none; }
     main section:nth-child(3) #menus {
       margin: 47px 0; }
     main section:nth-child(3) svg {
       font-weight: bold;
       max-width: 500px;
       height: auto;
-      margin-bottom: 3%;
+      margin-bottom: 4%;
       margin-left: 5px;
       font-family: Montserrat; }
     main section:nth-child(3) img {
@@ -407,9 +411,9 @@ main {
       font-family: Montserrat;
       margin: 2% 0;
       line-height: 51px;
+      border-radius: 2px;
       background-color: #6B614D;
-      color: #fff;
-      border-radius: 2px; }
+      color: #fff; }
     main section:nth-child(3) h3 {
       font-size: 17px;
       text-transform: uppercase;
@@ -422,6 +426,9 @@ main {
       line-height: 30px;
       font-family: Montserrat;
       margin: 3% 0; }
+    main section:nth-child(3) p.title {
+      background-color: #e0d2b1;
+      color: #6B614D; }
     main section:nth-child(3) li {
       padding-bottom: 15px;
       list-style-type: circle;
@@ -458,19 +465,15 @@ main {
       font-weight: bold;
       max-width: 500px;
       height: auto;
-      margin-bottom: 3%;
-      margin-left: -4px;
+      margin-left: 62px;
       font-family: Montserrat; }
     main section:nth-child(4) img {
       width: auto;
       height: 380px; }
     main section:nth-child(4) h2 {
-      position: relative;
-      display: inline-block;
       text-transform: uppercase;
       font-size: 29px;
-      margin: 48px 0 35px 0; }
-    main section:nth-child(4) h2:hover {
+      margin: 48px 0 35px 0;
       background-color: #6B614D;
       color: #fff;
       border-radius: 2px;
@@ -483,12 +486,13 @@ main {
       font-weight: 400; }
     main section:nth-child(4) li {
       padding-bottom: 15px;
-      list-style-type: circle; }
+      list-style-type: circle;
+      text-align: left; }
     main section:nth-child(4) .title {
       font-size: 20px;
-      line-height: 30px;
+      line-height: 51px;
       font-family: Montserrat;
-      margin: 2% 0%; }
+      margin: 8% 0%; }
     main section:nth-child(4) .desc {
       font-size: 15px;
       line-height: 30px;
@@ -511,15 +515,17 @@ main {
     background-color: #FFF; }
     main section:nth-child(5) .home-subtitle {
       font-size: 17px; }
-    main section:nth-child(5) #compo2, main section:nth-child(5) #compo3, main section:nth-child(5) #compo4, main section:nth-child(5) #compo5, main section:nth-child(5) #compo6, main section:nth-child(5) #meatlist, main section:nth-child(5) #poissonsdemer {
+    main section:nth-child(5) #compo1, main section:nth-child(5) #compo2, main section:nth-child(5) #compo3, main section:nth-child(5) #compo4, main section:nth-child(5) #compo5, main section:nth-child(5) #compo6,
+    main section:nth-child(5) #huitres, main section:nth-child(5) #crustaces, main section:nth-child(5) #poissonsdemer, main section:nth-child(5) #homards, main section:nth-child(5) #epicerie,
+    main section:nth-child(5) #meatlist, main section:nth-child(5) h5, main section:nth-child(5) p {
       display: none; }
     main section:nth-child(5) svg {
       font-weight: bold;
       max-width: 500px;
       height: auto;
-      margin-bottom: 3%;
       margin-left: -4px;
-      font-family: Montserrat; }
+      font-family: Montserrat;
+      margin-bottom: 8%; }
     main section:nth-child(5) img {
       width: auto;
       height: 380px; }
@@ -530,34 +536,48 @@ main {
       margin-bottom: 20px;
       font-weight: 400; }
     main section:nth-child(5) h4 {
-      position: relative;
       font-size: 32px;
-      line-height: 30px;
+      line-height: 46px;
       font-family: Montserrat;
-      margin: 6% 0 4% 0; }
+      margin: 0% 0 2% 0;
+      background-color: #6B614D;
+      color: #fff;
+      border-radius: 2px;
+      text-align: center; }
     main section:nth-child(5) h5 {
       font-weight: 400;
       font-size: 26px;
-      line-height: 30px;
+      line-height: 37px;
       font-family: Montserrat;
-      margin: 6% 0%; }
-    main section:nth-child(5) h4:hover, main section:nth-child(5) h5:hover, main section:nth-child(5) p.title:hover {
-      background-color: #6B614D;
-      color: #fff;
-      border-radius: 2px; }
+      margin: 4% 15%;
+      background-color: #e0d2b1;
+      color: #6b614d;
+      border-radius: 2px;
+      text-align: center; }
     main section:nth-child(5) li {
       padding-bottom: 15px;
-      list-style-type: circle; }
+      list-style-type: circle;
+      text-align: left; }
     main section:nth-child(5) .title {
       font-size: 18px;
       line-height: 30px;
       font-family: Montserrat;
-      margin: 2% 0%; }
+      background-color: #e0d2b1;
+      color: #6b614d;
+      width: 70%;
+      margin: 29px auto;
+      border-radius: 2px; }
     main section:nth-child(5) .desc {
       font-size: 15px;
       line-height: 30px;
       font-family: Montserrat;
       margin: 2% 0%; }
+    main section:nth-child(5) strong {
+      font-size: 25px;
+      text-align: center;
+      font-weight: bolder;
+      display: block;
+      margin: 40px 0; }
     main section:nth-child(5) button {
       border: 2px solid #000000;
       background-color: transparent; }
@@ -582,13 +602,13 @@ main {
       padding: 1px 0 0 4px; }
     main section:nth-child(6) .compotitle {
       display: none; }
-    main section:nth-child(6) #platsid h2, main section:nth-child(6) #compositions h3, main section:nth-child(6) #huitres h3, main section:nth-child(6) #btn4up, main section:nth-child(6) #btn5up, main section:nth-child(6) #btn6up, main section:nth-child(6) #btn7up, main section:nth-child(6) #btn8up, main section:nth-child(6) #btn9up, main section:nth-child(6) #compo1, main section:nth-child(6) #compo2, main section:nth-child(6) #compo3, main section:nth-child(6) #compo4, main section:nth-child(6) #compo5, main section:nth-child(6) #compo6, main section:nth-child(6) #homemade ul, main section:nth-child(6) #icecream ul {
+    main section:nth-child(6) #homemade ul, main section:nth-child(6) #icecream ul {
       display: none; }
     main section:nth-child(6) svg {
       font-weight: bold;
       max-width: 500px;
       height: auto;
-      margin-bottom: 3%;
+      margin-bottom: 6%;
       margin-left: -4px;
       font-family: Montserrat; }
     main section:nth-child(6) img {
@@ -601,11 +621,14 @@ main {
       margin-bottom: 20px;
       font-weight: 400; }
     main section:nth-child(6) h2 {
-      position: relative;
       display: inline-block;
       text-transform: uppercase;
       font-size: 29px;
-      margin: 48px 0 35px 0; }
+      margin: 48px 0 35px 0;
+      background-color: #6B614D;
+      color: #fff;
+      border-radius: 2px;
+      width: 100%; }
     main section:nth-child(6) h2:hover {
       background-color: #6B614D;
       color: #fff;
@@ -617,7 +640,7 @@ main {
       text-align: left; }
     main section:nth-child(6) .title {
       font-size: 20px;
-      line-height: 30px;
+      line-height: 51px;
       font-family: Montserrat;
       margin: 2% 0%; }
     main section:nth-child(6) .desc {
@@ -649,10 +672,8 @@ main {
       padding: 1px 0 0 4px; }
     main section:last-child .compotitle {
       display: none; }
-    main section:last-child #platsid h2, main section:last-child #compositions h3, main section:last-child #huitres h3, main section:last-child #btn4up, main section:last-child #btn5up, main section:last-child #btn6up, main section:last-child #btn7up, main section:last-child #btn8up, main section:last-child #btn9up, main section:last-child #compo1, main section:last-child #compo2, main section:last-child #compo3, main section:last-child #compo4, main section:last-child #compo5, main section:last-child #compo6, main section:last-child #boisson1 ul, main section:last-child #boisson2 ul, main section:last-child #boisson3 ul, main section:last-child #boisson4 ul {
+    main section:last-child #drink1 ul, main section:last-child #drink2 ul, main section:last-child #drink3 ul, main section:last-child #drink4 ul {
       display: none; }
-    main section:last-child #drink {
-      margin: 3% 0; }
     main section:last-child svg {
       font-weight: bold;
       max-width: 500px;
@@ -684,9 +705,13 @@ main {
       text-align: left; }
     main section:last-child .title {
       font-size: 25px;
-      line-height: 30px;
+      line-height: 51px;
       font-family: Montserrat;
-      margin: 2% 0%; }
+      margin: 2% 0%;
+      background-color: #6B614D;
+      color: #fff;
+      border-radius: 2px;
+      width: 100%; }
     main section:last-child .desc {
       font-size: 15px;
       line-height: 30px;
@@ -814,13 +839,6 @@ footer {
   footer {
     height: 110px; } }
 /* MEDIA QUERIES MAX WIDTH 1200PX*/
-@media all and (max-width: 1200px) {
-  main section:nth-child(2) img {
-    margin: 75px 0 0 -30px;
-    width: 260px; }
-
-  main section:nth-child(4) .container {
-    width: 100%; } }
 /* MEDIA QUERIES MAX WIDTH 992PX */
 @media all and (max-width: 992px) {
   .show {
@@ -829,42 +847,8 @@ footer {
   .hide {
     display: none; }
 
-  .hovermenu2, .hovermenu4 {
-    margin-top: 40px; }
-
-  #swiperrestaurant {
-    height: 300px; }
-
   header .progressContainer {
     top: 69px; }
-
-  main section:first-child h1 {
-    font-size: 60px; }
-
-  main section:first-child h2 {
-    font-size: 25px; }
-
-  main section:nth-child(5) {
-    height: 550px; }
-    main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
-      display: none; }
-    main section:nth-child(5) div.img {
-      display: none; }
-    main section:nth-child(5) img {
-      display: none; }
-    main section:nth-child(5) button {
-      width: 100%;
-      margin-top: 10px; }
-
-  main section:last-child {
-    height: 980px; }
-    main section:last-child #contact {
-      position: absolute;
-      top: 600px;
-      left: 20px;
-      height: 400px; }
-    main section:last-child #map {
-      height: 570px; }
 
   footer {
     height: 130px; }
@@ -882,104 +866,6 @@ footer {
   #progress {
     display: none; }
 
-  main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
-    margin-bottom: 80px; }
-  main section:nth-child(3) article:nth-child(2) h3 {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) svg {
-    margin-left: 50px; }
-  main section:nth-child(3) article:nth-child(2) .title {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) .desc {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) button {
-    right: 28%; }
-  main section:nth-child(3) article:nth-child(3) img {
-    margin-bottom: 30px; }
-  main section:nth-child(3) article:nth-child(3) h3 {
-    text-align: center;
-    margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) svg {
-    margin-left: 240px; }
-  main section:nth-child(3) article:nth-child(3) .title {
-    text-align: center;
-    margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) .desc {
-    text-align: center;
-    margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) button {
-    left: 28%; }
-  main section:nth-child(3) article:nth-child(4) div:first-child.col-lg-12 {
-    margin-bottom: 80px; }
-  main section:nth-child(3) article:nth-child(4) h3 {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) svg {
-    margin-left: 58px; }
-  main section:nth-child(3) article:nth-child(4) .title {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) .desc {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) button {
-    right: 28%; }
-
-  main section:nth-child(4) {
-    margin-bottom: 0; }
-    main section:nth-child(4) article:nth-child(2) svg {
-      margin-left: 11%;
-      margin-top: 0; }
-    main section:nth-child(4) article:nth-child(2) h3 {
-      text-align: center;
-      margin-right: 0; }
-    main section:nth-child(4) article:nth-child(3) svg {
-      margin-left: 37%;
-      margin-top: 4.7%; }
-    main section:nth-child(4) article:nth-child(3) h3 {
-      text-align: center;
-      margin-left: 0; }
-    main section:nth-child(4) article:nth-child(4) svg {
-      margin-left: 12%;
-      margin-top: 0; }
-    main section:nth-child(4) article:nth-child(4) h3 {
-      text-align: center;
-      margin-right: 0; }
-    main section:nth-child(4) article:nth-child(5) svg {
-      margin-left: 40%;
-      margin-top: 4.7%; }
-    main section:nth-child(4) article:nth-child(5) h3 {
-      text-align: center;
-      margin-left: 0; }
-
-  main section:last-child article:last-child h3 {
-    text-align: center;
-    margin-right: 0; }
-  main section:last-child article:last-child svg {
-    margin-left: 18%; }
-  main section:last-child article:last-child .title {
-    text-align: center;
-    margin-right: 0; }
-  main section:last-child article:last-child .desc {
-    text-align: center;
-    margin-right: 0; }
-
-  main section:nth-child(2) img {
-    width: 50%;
-    margin: 9% 24%; }
-
-  main section:nth-child(3) article:nth-child(2) h3 {
-    text-align: center; }
-
-  main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
-    display: none; }
-  main section:nth-child(5) button {
-    width: 70%;
-    margin-top: 10px; }
-
   footer .btn-credits {
     padding: 15% 0%;
     margin-left: -17%; } }
@@ -989,98 +875,11 @@ footer {
   #progress {
     display: none; }
 
-  main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
-    margin-bottom: 80px; }
-  main section:nth-child(3) article:nth-child(2) h3 {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) svg {
-    margin-left: 40px; }
-  main section:nth-child(3) article:nth-child(2) .title {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) .desc {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) button {
-    right: 28%; }
-  main section:nth-child(3) article:nth-child(3) img {
-    margin-bottom: 30px; }
-  main section:nth-child(3) article:nth-child(3) h3 {
-    text-align: center;
-    margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) svg {
-    margin-left: 230px; }
-  main section:nth-child(3) article:nth-child(3) .title {
-    text-align: center;
-    margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) .desc {
-    text-align: center;
-    margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) button {
-    left: 28%; }
-  main section:nth-child(3) article:nth-child(4) div:first-child.col-lg-12 {
-    margin-bottom: 80px; }
-  main section:nth-child(3) article:nth-child(4) h3 {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) svg {
-    margin-left: 65px; }
-  main section:nth-child(3) article:nth-child(4) .title {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) .desc {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) button {
-    right: 28%; }
-
-  main section:nth-child(4) {
-    margin-bottom: 0; }
-    main section:nth-child(4) article:nth-child(2) svg {
-      margin-left: 4%; }
-    main section:nth-child(4) article:nth-child(2) h3 {
-      text-align: center;
-      margin-right: 0; }
-    main section:nth-child(4) article:nth-child(3) svg {
-      margin-left: 35%; }
-    main section:nth-child(4) article:nth-child(3) h3 {
-      text-align: center;
-      margin-left: 0; }
-    main section:nth-child(4) article:nth-child(4) svg {
-      margin-left: 7%; }
-    main section:nth-child(4) article:nth-child(4) h3 {
-      text-align: center;
-      margin-right: 0; }
-    main section:nth-child(4) article:nth-child(5) svg {
-      margin-left: 38%; }
-    main section:nth-child(4) article:nth-child(5) h3 {
-      text-align: center;
-      margin-left: 0; }
-
-  main section:last-child article:last-child h3 {
-    text-align: center;
-    margin-right: 0; }
-  main section:last-child article:last-child svg {
-    margin-left: 12%; }
-  main section:last-child article:last-child .title {
-    text-align: center;
-    margin-right: 0; }
-  main section:last-child article:last-child .desc {
-    text-align: center;
-    margin-right: 0; }
-
   .show {
     display: block; }
 
   .hide {
     display: none; }
-
-  .hovermenu2, .hovermenu4 {
-    margin-top: 40px; }
-
-  #swiperrestaurant {
-    height: 300px; }
 
   header .progressContainer {
     top: 69px; }
@@ -1090,63 +889,14 @@ footer {
     position: absolute;
     right: -322%; }
 
-  main section:first-child h1 {
-    font-size: 60px; }
+  main section:nth-child(5) .title {
+    width: 70%; }
 
-  main section:first-child h2 {
-    font-size: 20px; }
-
-  main section:nth-child(2) img {
-    margin: 0% 25%;
-    width: 50%; }
-
-  main section:nth-child(3) #swiperrestaurant {
-    height: 45%; }
-
-  main section:nth-child(5) {
-    margin-top: 10px;
-    height: 600px; }
-    main section:nth-child(5) .description {
-      margin: 40px 0; }
-    main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
-      display: none; }
-    main section:nth-child(5) div.swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets {
-      top: 30px; }
-    main section:nth-child(5) img {
-      display: none; }
-    main section:nth-child(5) button {
-      padding-top: 10px;
-      width: 75%; }
-    main section:nth-child(5) #about h3 {
-      margin-right: 47.3%; }
-    main section:nth-child(5) #about svg {
-      margin: 0 142px 0 70px;
-      width: 65%; }
-    main section:nth-child(5) #about p.title {
-      margin-right: 26%; }
-    main section:nth-child(5) #about p.desc {
-      margin-right: 10%;
-      text-align: center; }
-    main section:nth-child(5) #about button {
-      margin-right: 13%; }
-    main section:nth-child(5) #ecaille h3 {
-      margin-left: 40.3%; }
-    main section:nth-child(5) #ecaille svg {
-      margin-left: 25.7%; }
-    main section:nth-child(5) #ecaille p.title {
-      margin-left: 13%; }
-    main section:nth-child(5) #ecaille p.desc {
-      margin-right: 10%;
-      text-align: center; }
-    main section:nth-child(5) #ecaille button {
-      margin-right: 13%; }
-
-  main section:last-child #contact {
-    height: 370px; }
+  main section:nth-child(5) h5 {
+    width: 80%; }
 
   footer {
-    height: 160px;
-    margin-top: 400px; }
+    height: 160px; }
     footer .btn-credits {
       padding: 7% 0; } }
 /* MEDIA QUERIES MAX WIDTH 380PX */
@@ -1159,113 +909,6 @@ footer {
 
   #progress {
     display: none; }
-
-  main section:first-child #headerdesc {
-    padding-top: 200px; }
-  main section:first-child h1 {
-    font-size: 46px; }
-
-  main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
-    margin-bottom: 80px; }
-  main section:nth-child(3) article:nth-child(2) h3 {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) svg {
-    margin-left: -50px; }
-  main section:nth-child(3) article:nth-child(2) .title {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) .desc {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) img {
-    height: auto; }
-  main section:nth-child(3) article:nth-child(2) button {
-    right: 8%; }
-  main section:nth-child(3) article:nth-child(3) img {
-    margin-bottom: 30px;
-    height: auto; }
-  main section:nth-child(3) article:nth-child(3) h3 {
-    text-align: center;
-    margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) svg {
-    margin: 0 auto;
-    margin-left: 80px;
-    margin-right: -70px; }
-  main section:nth-child(3) article:nth-child(3) .title {
-    text-align: center;
-    margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) .desc {
-    text-align: center;
-    margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) button {
-    left: 8%; }
-  main section:nth-child(3) article:nth-child(4) div:first-child.col-lg-12 {
-    margin-bottom: 80px; }
-  main section:nth-child(3) article:nth-child(4) h3 {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) svg {
-    margin-left: -35px;
-    margin-right: 60px; }
-  main section:nth-child(3) article:nth-child(4) .title {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) .desc {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) img {
-    height: auto; }
-  main section:nth-child(3) article:nth-child(4) button {
-    right: 8%; }
-
-  main section:nth-child(4) {
-    margin-bottom: 0; }
-    main section:nth-child(4) article:nth-child(2) svg {
-      margin-left: -136px;
-      margin-right: 90px; }
-    main section:nth-child(4) article:nth-child(2) h3 {
-      text-align: center;
-      margin-right: 0; }
-    main section:nth-child(4) article:nth-child(2) img {
-      height: auto; }
-    main section:nth-child(4) article:nth-child(3) svg {
-      margin-left: 57px;
-      margin-right: -120px; }
-    main section:nth-child(4) article:nth-child(3) h3 {
-      text-align: center;
-      margin-left: 0; }
-    main section:nth-child(4) article:nth-child(3) img {
-      height: auto; }
-    main section:nth-child(4) article:nth-child(4) svg {
-      margin-left: -110px;
-      margin-right: 50px; }
-    main section:nth-child(4) article:nth-child(4) h3 {
-      text-align: center;
-      margin-right: 0; }
-    main section:nth-child(4) article:nth-child(4) img {
-      height: auto; }
-    main section:nth-child(4) article:nth-child(5) svg {
-      margin-left: 90px;
-      margin-right: -140px; }
-    main section:nth-child(4) article:nth-child(5) h3 {
-      text-align: center;
-      margin-left: 0; }
-    main section:nth-child(4) article:nth-child(5) img {
-      height: auto; }
-
-  main section:last-child article:last-child h3 {
-    text-align: center;
-    margin-right: 0; }
-  main section:last-child article:last-child svg {
-    margin-left: -20px;
-    margin-right: -10px; }
-  main section:last-child article:last-child .title {
-    text-align: center;
-    margin-right: 0; }
-  main section:last-child article:last-child .desc {
-    text-align: center;
-    margin-right: 0; }
 
   footer {
     height: 268px; }

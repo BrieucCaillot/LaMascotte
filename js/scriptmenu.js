@@ -1,4 +1,41 @@
 jQuery(document).ready(function($) {
+
+	// SCROLL TO MENUS
+	$("#menusvgnav").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#menusvg").offset().top},
+          'slow');
+    });
+
+    // SCROLL TO ENTRÉES
+	$("#entreesvgnav").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#entreesvg").offset().top},
+          'slow');
+    });
+
+    // SCROLL TO PLATS
+	$("#platsvgnav").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#platsvg").offset().top},
+          'slow');
+    });
+
+    // SCROLL TO DESSERTS
+	$("#dessertsvgnav").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#dessertsvg").offset().top},
+          'slow');
+    });
+
+    // SCROLL TO BOISSONS
+	$("#drinksvgnav").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#drinksvg").offset().top},
+          'slow');
+    });
+
+
 	
 	// LES MENUS 
 	$("#menusvg").click(function(){

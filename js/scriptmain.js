@@ -1,10 +1,6 @@
 $(document).ready(function() {
 
-    // SCROLL DIV DESKTOP
-    // $("#contacter").click(function() {
-    //     $(document).scrollTo('#contact', 500);
-    // });
-
+    //SCROLL TO CONTACT DIV
     $("#contacter").click(function() {
       $('html,body').animate({
           scrollTop: $("#contact").offset().top},
