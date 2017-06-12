@@ -1,0 +1,1341 @@
+<!-- 
+
+#title            : LA MASCOTTE RESTAURANT MENU PAGE
+#description      : La Mascotte's Website proudly made by:
+#author           : Brieuc CAILLOT
+#date             : 2017 16 04
+#version          : V1
+#usage            : HTML
+#notes            : Only working on search engine
+
+=============================================================-->
+
+<html lang="en">
+<head> 
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Brasserie typiquement Montmartroise, La Mascotte à Montmartre vous accueille 7 jours sur 7, de 8h à 23h30 au 52 Rue des Abbesses : 01 46 06 28 15." />
+    <meta name="keywords" content="La Mascotte, Menu, Restaurant, Montmartre">
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!--LINK-->
+    <link rel="icon" href="../assets/images/commonfavicon.ico">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/reset.css"/>
+    <link rel="stylesheet" href="../assets/css/menu.css"/>
+    
+    <!--JQUERY-->
+    <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    <script type="text/javascript" src="../assets/js/scriptmenu.js"></script>
+
+    <title>La Carte - La Mascotte</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+                        <div id="logo">
+                            <a href="../index.html">
+                                <img src="../assets/images/common/logobeige.png" alt="logo la mascotte">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hide col-md-7 text-center">
+                        <nav class="hover-effect">
+                            <ul>
+                                <li><a href="../index.html">ACCUEIL</a></li>
+                                <li><a href="about.html">À PROPOS</a></li>
+                                <li><a href="menu.html">MENU</a></li>
+                                <li><a href="booking.html">RÉSERVER</a></li>
+                                <li><a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/">LIVRAISON</a></li>
+                                <li><a id="contact" href="../index.html#contact2">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 text-center">
+                        <div id="headersocial">
+                            <a href="https://www.facebook.com/LaMascotteMontmartre/" target="_blank">
+                                <img src="../assets/images/common/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="https://www.instagram.com/lamascottemontmartre/" target="_blank">
+                                <img src="../assets/images/common/instagram.svg" alt="facebook">
+                            </a>
+                            <a href="">
+                                <img src="../assets/images/common/engflag.png" alt="english">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="progressContainer"><div id="progress" class="progress"></div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-nav text-center show">
+        <div class="row">
+            <div class="col-md-12">
+                <a id="homenav" href="../index.html" class="col-2 btn btn-accueil">
+                    <span class="btn-inside">
+                        <img src="../assets/images/mobilenav/home.png" alt="accueil">
+                        <span class="text">Accueil</span>
+                    </span>
+                </a>
+                <a id="aboutnav" href="about.html" class="col-2 btn btn-about">
+                    <span class="btn-inside">
+                        <img src="../assets/images/mobilenav/about.png" alt="a propos">
+                        <span class="text">À propos</span>
+                    </span>
+                </a>
+                <a id="cartenav" href="menu.html" class="col-2 btn btn-menu">
+                    <span class="btn-inside">
+                        <img src="../assets/images/mobilenav/fish.png" alt="menu">
+                        <span class="text">La Carte</span>
+                    </span>
+                </a>
+                <a id="booknav" href="booking.html" class="col-2 btn btn-booking">
+                    <span class="btn-inside">
+                        <img src="../assets/images/mobilenav/phone.png" alt="reservation">
+                        <span class="text">Réserver</span>
+                    </span>
+                </a>
+                <a id="ordernav" href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/" class="col-2 btn btn-delivery">
+                    <span class="btn-inside">
+                        <img src="../assets/images/mobilenav/delivery2.png" alt="livraison">
+                        <span class="text">Livraison</span>
+                    </span>
+                </a>
+                <a id="contactnav" href="../index.html#googlemap" class="col-2 btn btn-contact">
+                    <span class="btn-inside">
+                        <img src="../assets/images/mobilenav/marker.png" alt="localisation">
+                        <span class="text">Contact</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--MAIN-->
+    <main>
+        <!--HEADER LA CARTE-->
+        <section>
+            <div class="container">
+                <div id="headerdesc" class="col-md-12 text-center">
+                    <div class="row">
+                        <h1>
+                            LA CARTE
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <a href="booking.html">
+                            <button class="button button--nina" data-text="R É S E R V E R">
+                                <span>R</span>
+                                <span>É</span>
+                                <span>S</span>
+                                <span>E</span>
+                                <span>R</span>
+                                <span>V</span>
+                                <span>E</span>
+                                <span>R</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--NAV CARTE-->
+        <section id="carte">
+            <div class="container text-center">
+                <div class="col-md-12">
+                    <div class="row">
+                        <!-- MENUS -->
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <h3 id="h3menu" class="home-subtitle">
+                                MENUS
+                            </h3>
+                            <svg id="menusvgnav" viewbox="-30 0 160 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LES MENUS</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LES MENUS</text>
+                            </svg>
+                        </div>
+                        <!--ENTRÉES -->
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <h3 class="home-subtitle">
+                                STARTER
+                            </h3>
+                            <svg id="entreesvgnav" viewbox="-29 0 160 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LES ENTRÉES</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LES ENTRÉES</text>
+                            </svg>
+                        </div>
+                        <!--PLATS-->
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <h3 class="home-subtitle">
+                                PLATS
+                            </h3>
+                            <svg id="platsvgnav" viewbox="-26 0 153 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LES PLATS</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LES PLATS</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--DESSERTS-->
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <h3 class="home-subtitle">DESSERTS</h3>
+                            <svg id="dessertsvgnav" viewbox="-27 0 153 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LES DESSERTS</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LES DESSERTS</text>
+                            </svg>
+                        </div>
+                        <!--BOISSONS-->
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <h3 class="home-subtitle">DRINKS</h3>
+                            <svg id="drinksvgnav" viewbox="-26 0 153 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LES BOISSONS</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LES BOISSONS</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--LES MENUS-->
+        <section>
+            <div class="container text-center">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3  id="h3menu" class="home-subtitle">
+                                MENUS
+                            </h3>
+                            <svg id="menusvg" viewbox="-28 0 160 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LES MENUS</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LES MENUS</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <!--MENU #1-->
+                    <div class="row">
+                        <div id="menu1" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h2>Le menu "Mascotte" : 49€</h2>
+                            <p>
+                                Une entrée, un plat, un dessert
+                            </p>
+                        </div>
+                    </div>
+                    <!--MENU #1 DISPLAY-->
+                    <div id="menus1display" class="row">
+                        <div id="entree1" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <p class="title">
+                                ENTRÉES :
+                            </p>
+                            <ul class="desc">
+                                <li>
+                                    Pâté en croûte de campagne, moutarde de crémone
+                                </li>
+                                <li>
+                                    Coques blanches de nos côtes en salade de charlotte tièdes, vinaigre de…
+                                </li>
+                                <li>
+                                    Gelée de lapin sauté chasseur, sauce aigre douce et germe de poireaux
+                                </li>
+                                <li>
+                                    Friture d’encornets à la sauce tartare
+                                </li>
+                                <li>
+                                    Ravioles traditionnelles de Royan à la sauce poulette
+                                </li>
+                                <li>
+                                    Les six gros escargots de Bourgogne en persillade
+                                </li>
+                                <li>
+                                    La soupe de poissons de roche de Bretagne, sa rouille et ses croûtons à l’ail
+                                </li>
+                                <li>
+                                    Entrée du jour *
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="plat1" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <p class="title">
+                                PLATS : 
+                            </p>
+                            <ul class="desc">
+                                <li>
+                                    Epais de colin en croûte de noisette, épinards frais à la crème
+                                </li>
+                                <li>
+                                    Fish and chips, vinaigre de malt et sauce tartare, frites au couteau
+                                </li>
+                                <li>
+                                    Palette de porc fermier confite, jus et endives chicorée au pommeau
+                                </li>
+                                <li>
+                                    Paleron de bœuf, confit au vin rouge, carottes des sables en mousseline infusée au thym
+                                </li>
+                                <li>
+                                    Tartare de bœuf d’Aubrac, frites au couteau ou salades mélangées
+                                </li>
+                                <li>
+                                    Le « litre » de moules à la Normande et frites au couteau
+                                </li>
+                                <li>
+                                    Plat du jour *
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="dessert1" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <p class="title">
+                                DESSERTS : 
+                            </p>
+                            <ul class="desc">
+                                <li>
+                                    Un fromage au choix sur le plateau
+                                </li>
+                                <li>
+                                    Caillé de chèvre artisanal de la fromagerie du Tertre en Anjou : <br>- façon salée Échalotes ou fines herbes fraîches
+                                    <br> - façon sucrée Coulis de fruits rouges ou miel
+                                </li>
+                                <li>
+                                    Cœur coulant au praliné noisette, glace caramel au beurre salé de la maison Berthillon
+                                </li>
+                                <li>
+                                    Poire Williams en verrine rafraîchit par son coulis, sauce chocolat « Guayaquil » servie chaude
+                                </li>
+                                <li>
+                                    Dessert du jour
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--MENU #2-->
+                    <div class="row">
+                        <div id="menu2" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h2 class="text-center">
+                                Le menu "Cocotte" : 32€
+                            </h2>
+                            <p>
+                                Servi uniquement le midi en semaine, jamais les jours fériés
+                                <br>
+                                Une entrée et un plat, ou un plat et un dessert
+                                <br>
+                                Un 25 cl de vin ou une 1/2 d’eau
+                            </p>
+                        </div>
+                    </div>
+                    <!--MENU #2 DISPLAY-->
+                    <div id="menus2display" class="row">
+                        <div id="entree2" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <p class="title">
+                                ENTRÉES :
+                            </p>
+                            <ul class="desc">
+                                <li>
+                                    Pâté en croûte de campagne, moutarde de crémone
+                                </li>
+                                <li>
+                                    Coques blanches de nos côtes en salade de charlotte tièdes, vinaigre de…
+                                </li>
+                                <li>
+                                    Gelée de lapin sauté chasseur, sauce aigre douce et germe de poireaux
+                                </li>
+                                <li>
+                                    Friture d’encornets à la sauce tartare
+                                </li>
+                                <li>
+                                    Ravioles traditionnelles de Royan à la sauce poulette
+                                </li>
+                                <li>
+                                    Les six gros escargots de Bourgogne en persillade
+                                </li>
+                                <li>
+                                    La soupe de poissons de roche de Bretagne, sa rouille et ses croûtons à l’ail
+                                </li>
+                                <li>
+                                    Entrée du jour *
+                                </li>
+                            </ul>
+                        </div>    
+                        <div id="plat2" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <p class="title">
+                                PLATS : 
+                            </p>
+                            <ul class="desc">
+                                <li>
+                                    Epais de colin en croûte de noisette, épinards frais à la crème
+                                </li>
+                                <li>
+                                    Fish and chips, vinaigre de malt et sauce tartare, frites au couteau
+                                </li>
+                                <li>
+                                    Palette de porc fermier confite, jus et endives chicorée au pommeau
+                                </li>
+                                <li>
+                                    Paleron de bœuf, confit au vin rouge, carottes des sables en mousseline infusée au thym
+                                </li>
+                                <li>
+                                    Tartare de bœuf d’Aubrac, frites au couteau ou salades mélangées
+                                </li>
+                                <li>
+                                    Le « litre » de moules à la Normande et frites au couteau
+                                </li>
+                                <li>
+                                    Plat du jour *
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="dessert2" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <p class="title">
+                                DESSERTS : 
+                            </p>
+                            <ul class="desc">
+                                <li>
+                                    Un fromage au choix sur le plateau
+                                </li>
+                                <li>
+                                    Caillé de chèvre artisanal de la fromagerie du Tertre en Anjou : <br>- façon salée Échalotes ou fines herbes fraîches
+                                    <br> - façon sucrée Coulis de fruits rouges ou miel
+                                </li>
+                                <li>
+                                    Cœur coulant au praliné noisette, glace caramel au beurre salé de la maison Berthillon
+                                </li>
+                                <li>
+                                    Poire Williams en verrine rafraîchit par son coulis, sauce chocolat « Guayaquil » servie chaude
+                                </li>
+                                <li>
+                                    Dessert du jour
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--MENU #3-->
+                    <div class="row">
+                        <div id="menu3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h2 class="text-center">
+                                Le menu "Marmotte" : 22€
+                            </h2>
+                            <p>
+                                Un plat, un dessert, une boisson
+                                <br>
+                                Un jus d’orange ou un Coca
+                                <br>
+                                Pour les petits
+                            </p>
+                        </div>
+                    </div>
+                    <!--MENU #3 DISPLAY-->
+                    <div id="menus3display" class="row">
+                        <div id="plat3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <p class="title">
+                                PLATS : 
+                            </p>
+                            <ul class="desc">
+                                <li>
+                                    Fish and chips à la sauce tartare avec au choix <br>- frites maison, <br>- nuggets de poulet maison, frites
+                                </li>
+                            </ul>
+                        </div>              
+                        <div id="dessert3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <p class="title">
+                                DESSERTS : 
+                            </p>
+                            <ul class="desc">
+                                <li>
+                                    Boule de glace de la «Maison Berthillon» 
+                                </li>
+                                <li>
+                                    Poire Williams en verrine
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <!--LES ENTRÉES -->
+        <section>
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="home-subtitle text-center">STARTER</h3>
+                            <svg id="entreesvg" viewbox="-29 0 160 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LES ENTRÉES</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LES ENTRÉES</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="entrees" class="row">
+                        <!--ENTRÉE FROIDE-->
+                        <div id="entreecold" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <h2 class="title text-center">
+                                ENTRÉES FROIDES
+                            </h2>
+                            <ul class="desc">
+                                <li>
+                                    Mariné de Saint Jacques de Granville au ponzu et sel bleu de Perse, crumpet servi chaud 18€
+                                </li>
+                                <li>
+                                    Pâté en croûte de campagne, moutarde de crémone 15€
+                                </li>
+                                <li>
+                                    Ballotin de foie gras d’oie, cuit à basse température, coing confit au poivre… de Tasmanie et pain grillé 17€
+                                </li>
+                                <li>
+                                    Coques blanches de nos côtes en salade de charlotte tièdes, vinaigre de… pomme bio améa et huile d’olive de l’Atlas 16€
+                                </li>
+                                <li>
+                                    Gelée de lapin sauté chasseur, sauce aigre douce et germe de poireaux 14€
+                                </li>
+                            </ul>
+                        </div>
+                        <!--ENTRÉE CHAUD-->
+                        <div id="entreehot" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <h2 class="title text-center">
+                                ENTRÉES CHAUDES
+                            </h2>
+                            <ul class="desc">
+                                <li>
+                                    Vol au vent de ris de veau aux champignons 18€
+                                </li>
+                                <li>
+                                    Pizzette de langoustines bretonnes, caviar d’aubergines fumées, lamelles… de truffes noires mélanosporum 22€
+                                </li>
+                                <li>
+                                    Friture d’encornets, sauce tartare 15€
+                                </li>
+                                <li>
+                                    Œufs bio de poule en meurette, à la façon d’Aurélien, notre chef 16€
+                                </li>
+                                <li>
+                                    Traditionnelles ravioles de Royan label rouge à la sauce poulette 15€
+                                </li>
+                                <li>
+                                    Les six gros escargots de Bourgogne en persillade 19€
+                                </li>
+                                <li>
+                                    La soupe de poissons de roche de Bretagne, sa rouille et ses croûtons à l’ail 16€
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--LES PLATS-->
+        <section>
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row">
+                        <!--PLATS-->
+                        <div class="col-md-6 text-center">
+                            <h3 class="home-subtitle">PLATS</h3>
+                            <svg id="platsvg" viewbox="-26 0 153 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LES PLATS</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LES PLATS</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- FRUITS DE MER-->
+                    <div id="fdm" class="row">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                            <h4>
+                                LES FRUITS DE MER
+                            </h4>
+                        </div>
+                    </div>
+                    <div id="fdmdisplay" class="row">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h5>LES COMPOSITIONS</h5>
+                        </div>
+                        <!--#LEFT LES COMPOSITIONS DISPLAY -->
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <p id="compo1" class="title text-center compotitle">
+                                Le royal mascotte : 185 €
+                            </p>
+                            <div id="compo1display" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <ul class="desc">
+                                    <li>
+                                        3 Belons n° 00
+                                    </li>
+                                    <li>
+                                        3 Spéciales Tarbouriech n° 2
+                                    </li>
+                                    <li>
+                                        3 Spéciales « Ostra Regal » n° 3
+                                    </li>
+                                    <li>
+                                        3 Seven ou papillon rose
+                                    </li>
+                                    <li>
+                                        3 Huîtres de Cancale n° 1
+                                    </li>
+                                    <li>
+                                        3 Spéciales d’Isigny n° 3
+                                    </li>
+                                    <li>
+                                        2 Clams
+                                    </li>
+                                    <li>
+                                        2 Praires
+                                    </li>
+                                    <li>
+                                        2 Palourdes
+                                    </li>
+                                    <li>
+                                        4 Moules
+                                    </li>
+                                    <li>
+                                        4 Amandes
+                                    </li>
+                                    <li>
+                                        6 Grosses crevettes de Madagascar
+                                    </li>
+                                    <li>
+                                        1 Portion de grosses crevettes grises
+                                    </li>
+                                    <li>
+                                        1 Portion de gros bigorneaux
+                                    </li>
+                                    <li>
+                                        1 Portion de bulots
+                                    </li>
+                                    <li>
+                                        4 Langoustines
+                                    </li>
+                                    <li>
+                                        2 Demi tourteaux
+                                    </li>
+                                    <li>
+                                        1 Homard
+                                    </li>
+                                </ul>
+                            </div>
+                            <p id="compo2" class="title text-center compotitle">
+                                Le plateau mascotte : 145 €
+                            </p>
+                            <div id="compo2display" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <ul class="desc">
+                                    <li>
+                                        2 Belons n° 00
+                                    </li>
+                                    <li>
+                                        4 Fines de Bouzigues n° 3
+                                    </li>
+                                    <li>
+                                        4 Huîtres de Cancale n° 1
+                                    </li>
+                                    <li>
+                                        4 Fines de Claire n° 3
+                                    </li>
+                                    <li>
+                                        4 Pleine Mer de Blainville n° 2
+                                    </li>
+                                    <li>
+                                        2 Clams
+                                    </li>
+                                    <li>
+                                        2 Praires
+                                    </li>
+                                    <li>
+                                        2 Palourdes
+                                    </li>
+                                    <li>
+                                        4 Moules
+                                    </li>
+                                    <li>
+                                        4 Amandes
+                                    </li>
+                                    <li>
+                                        6 Crevettes roses de Madagascar
+                                    </li>
+                                    <li>
+                                        1 Portion de grosses crevettes grises
+                                    </li>
+                                    <li>
+                                        1 Portion de gros bigorneaux
+                                    </li>
+                                    <li>
+                                        1 Portion de bulots
+                                    </li>
+                                    <li>
+                                        4 Langoustines
+                                    </li>
+                                    <li>
+                                        2 Demi tourteaux
+                                    </li>
+                                    <li>
+                                        Supplément Homard : + 35€
+                                    </li>
+                                </ul>
+                            </div>
+                            <p id="compo3" class="title text-center compotitle">
+                                L'escale de la mascotte : 95 €
+                            </p>
+                            <div id="compo3display" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <ul class="desc">
+                                    <li>
+                                        6 Fines de Cancale n° 4
+                                    </li>
+                                    <li>
+                                        6 Pleine Mer de Blainville n° 2
+                                    </li>
+                                    <li>
+                                        2 Palourdes
+                                    </li>
+                                    <li>
+                                        6 Moules
+                                    </li>
+                                    <li>
+                                        6 Amandes
+                                    </li>
+                                    <li>
+                                        6 Crevettes roses
+                                    </li>
+                                    <li>
+                                        1 Portion de grosses crevettes grises
+                                    </li>
+                                    <li>
+                                        1 Portion de gros bigorneaux
+                                    </li>
+                                    <li>
+                                        1 Portion de bulots
+                                    </li>
+                                    <li>
+                                        2 Langoustines
+                                    </li>
+                                    <li>
+                                        2 Demi tourteaux
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--#RIGHT LES COMPOSITIONS DISPLAY -->
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <p id="compo4" class="title text-center compotitle">
+                                À la decouverte des crus d'exceptions : 87 €
+                            </p>
+                            <div id="compo4display" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <ul class="desc">
+                                    <li>
+                                        3 Belons n° 00
+                                    </li>
+                                    <li>
+                                        3 Spéciales Tarbouriech n° 2
+                                    </li>
+                                    <li>
+                                        3 Spéciales « Ostra Regal » n° 3
+                                    </li>
+                                    <li>
+                                        3 Seven ou papillon rose
+                                    </li>
+                                    <li>
+                                        3 Huîtres de Cancale n° 1
+                                    </li>
+                                    <li>
+                                        3 Spéciales d’Isigny n° 3
+                                    </li>
+                                </ul>
+                            </div>
+                            <p id="compo5" class="title text-center compotitle">
+                                Le tour des parc à huîtres : 68 €
+                            </p>
+                            <div id="compo5display" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <ul class="desc">
+                                    <li>
+                                        6 Pleine Mer de Blainville n° 2
+                                    </li>
+                                    <li>
+                                        6 Fines de Cancale n° 4
+                                    </li>
+                                    <li>
+                                        6 Fines de Bouzigues n° 3
+                                    </li>
+                                    <li>
+                                        6 Fines de Claire n° 3
+                                    </li>
+                                </ul>
+                            </div>
+                            <p id="compo6" class="title text-center compotitle">
+                                L'assiette de fruits de mer : 33 €
+                            </p>
+                            <div id="compo6display" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <ul class="desc">
+                                    <li>
+                                        3 Fines de Cancale n°4
+                                    </li>
+                                    <li>
+                                        3 Palourdes
+                                    </li>
+                                    <li>
+                                        3 Moules
+                                    </li>
+                                    <li>
+                                        3 Amandes
+                                    </li>
+                                    <li>
+                                        3 Crevettes Roses
+                                    </li>
+                                    <li>
+                                        1 Portion de bulots
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pdm" class="row">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <!--LES POISSONS ET FRUITS DE MER DISPLAY-->
+                            <div>
+                                <h5>POISSONS ET FRUITS DE MER</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pdmdisplay" class="row">
+                        <!--#LEFT POISSONS DE MER-->
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <!--LES HUITRES-->
+                            <p id="huitres" class="title text-center compotitle">
+                                Les Huitres  *vendues par 6
+                            </p>
+                            <div id="huitresdisplay" class="col-md-12">
+                                <strong>
+                                    BASSIN DE MARÈNNE-OLÉRON<br>
+                                </strong>
+                                <ul class="desc">
+                                    <li>
+                                        DAVID HERVE « le cabanon de l’huître » dans les marais de Saint Just 
+                                        <br>
+                                        Les Fines de Claire 
+                                        <br>— Moyennes n° 3 19.2€ 
+                                        <br>
+                                    </li>
+                                    <li>
+                                        Maison GILLARDEAU a Bourcefranc le Chapus 
+                                        <br>
+                                        Les Spéciales Gillardeau
+                                        <br>— Moyennes n° 3 25,8€
+                                    </li>
+                                </ul>
+                                <strong>
+                                    LES HUÎTRES DE BRETAGNE
+                                </strong>
+                                <ul class="desc">
+                                    <li>
+                                        JEAN D’CANCALE (Naissain Naturel)
+                                        <br>Les Fines de Cancale 
+                                        <br>— Très Grosses n° 1 18,6€ 
+                                        <br>— Moyennes n° 3 17,4€ 
+                                        <br>— Moyennes n° 4 15,6€ 
+                                    </li>
+                                    <li>
+                                        Les Plates de Bretagne
+                                        <br>— Très Gros « 00 » 33,6€
+                                    </li>
+                                </ul>
+                                <strong>
+                                    LES HUÎTRES DE NORMANDIE
+                                </strong>
+                                <ul class="desc">
+                                    <li>
+                                        THALASSA TRADITION A BLAINVILLE (Naissain Naturel)
+                                        <br>Les Pleine Mer de Blainville 
+                                        <br>— Grosses n°2 18,6€
+                                    </li>
+                                    <li>
+                                        Les Spéciales d’Isigny 
+                                        <br>— Moyennes n°3 18,6€
+                                    </li>
+                                </ul>
+                                <strong>
+                                    LES HÛITRES DE L'ÉTANG DE THAU EN MÉDITÉRANNÉE
+                                </strong>
+                                <ul class="desc">
+                                    <li>
+                                        Les «huîtres roses et solaires» de la Maison TARBOURIECH à Marseillan
+                                        <br>Spéciales «Roses et Solaires»
+                                        <br>— Grosses n° 2 33,6€
+                                    </li>
+                                    <li>
+                                        La « Seven de Sète » ou « papillon rose » 
+                                        <br>— Petites n°5 26,7€
+                                    </li>
+                                    <li>
+                                        Les Fines de Bouzigues 
+                                        <br>— Moyennes n°3 17,4€
+                                    </li>
+                                </ul>
+                                <strong>
+                                    LES HUÎTRES DE «BANNOW BAIE» EN IRLANDE
+                                </strong>
+                                <ul class="desc">
+                                    <li>
+                                        Naissains et Producteurs français sur le plus beau terroir d’Irlande 
+                                        <br>« l’ OSTRA REGAL » sud-est Irlande 
+                                        <br>— Moyennes n° 3 25,8€
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--CRUSTACÉS ET COQUILLAGES-->      
+                            <p id="crustaces" class="title text-center compotitle">
+                                Les crustacés et les coquillages
+                            </p>
+                            <div id="crustacesdisplay" class="col-md-12">
+                                <ul class="desc">
+                                    <li>Crevettes roses de Dakar 12.5€</li>
+                                    <li>La langoustine 4.5€</li>
+                                    <li>Crevettes roses de Madagascar 15€</li>
+                                    <li>Le tourteau 18€</li>
+                                    <li>Grosses crevettes de Madagascar 17€</li>
+                                    <li>La palourde 2,8€</li>
+                                    <li>Crevettes grises Jumbo 10,5€</li>
+                                    <li>La praire (en saison) 2,8€</li>
+                                    <li>La portion de bulots 8€</li>
+                                    <li>L’amande 1,5€</li>
+                                    <li>La portion de bigorneaux 9€</li>
+                                    <li>La moule 1,5€</li>
+                                    <li>Le clams 6€</li>
+                                </ul>
+                            </div>
+                            <!--LES POISSONS DE MER-->
+                            <p id="poissonsdemer" class="title text-center compotitle">
+                                Les Poissons de mer
+                            </p>
+                            <div id="poissonsdemerdisplay" class="col-md-12">
+                                <ul class="desc">
+                                    <li>
+                                        Choucroute de La Mascotte aux poissons 35€
+                                    </li>
+                                    <li>
+                                        Epais de colin en croûte de noisette, épinards frais à la crème 29€
+                                    </li>
+                                    <li>
+                                        Pétales de lotte braisées au Sauternes, riso liées aux sucs d’étrille et brunoise maraîchère 33€
+                                    </li>
+                                    <li>
+                                        Fish and chips, vinaigre de malt et sauce tartare, frites maison 28€
+                                    </li>
+                                    <li>
+                                        Belle sole de Bretagne en meunière et purée à l’ancienne 44€
+                                    </li>
+                                    <li>
+                                        Le « litre » de moules à la Normande et frites maison 25€
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--#RIGHT POISSONS DE MER-->
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <!--LES HOMARDS-->
+                            <p id="homards" class="title text-center compotitle">
+                                Les Homards
+                            </p>
+                            <div id="homardsdisplay" class="col-md-12">
+                                <ul class="desc">
+                                    <li>Homard Breton vivant Les 100g 14€</li>
+                                    <li>Homard Canadien vivant Les 100g 11€</li>
+                                    <li>Langouste vivante sur commande selon cours</li>
+                                </ul>
+                            </div>
+                            <!--LES PRODUITS DE NOTRE EPICERIE FINE-->      
+                            <p id="epicerie" class="title text-center compotitle">
+                                Les Produits de notre Epicerie Fine de la Mer
+                            </p>
+                            <div id="epiceriedisplay" class="col-md-12">
+                                <ul class="desc">
+                                    <li>
+                                        Mariné de coquilles Saint Jacques de Granville au ponzu et sel bleu de Perse, … crumpet servi chaud 18€
+                                    </li>
+                                    <li>
+                                        Pâté en croûte de campagne, moutarde de crémone 15€
+                                    </li>
+                                    <li>
+                                        Ballotin de foie gras d’oie, cuit à basse température, coing confit au poivre… de Tasmanie et pain grillé 17€
+                                    </li>
+                                    <li>
+                                        Coques blanches de nos côtes en salade de charlotte tièdes, vinaigre de… pomme bio améa et huile d’olive de l’Atlas 16€
+                                    </li>
+                                    <li>
+                                        Gelée de lapin sauté chasseur, sauce aigre douce et germe de poireaux 14€
+                                    </li>
+                                </ul>
+                            </div>  
+                        </div>
+                    </div>
+                    <div id="meat" class="row">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <!--LES VIANDES-->
+                            <div>
+                                <h4>LES VIANDES</h4>
+                            </div>
+                            <!--LES VIANDES DISPLAY-->
+                            <div id="meatdisplay" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                <ul class="desc">
+                                    <li>
+                                        Beau cassoulet maison 34€
+                                    </li>
+                                    <li>
+                                        Paleron de bœuf, confit au vin rouge, carottes des sables en mousseline infusée au thym 29€
+                                    </li>
+                                    <li>
+                                        Canard français laqué par nos soins aux quatre épices, jus kécap, aligot de l’Aubrac 32€
+                                    </li>
+                                    <li>
+                                        Belle entrecôte d’Angus à la plancha, crème de camembert et frites maison 33€
+                                    </li>
+                                    <li>
+                                        Palette de porc fermier confite, jus et endives chicorée au pommeau 29€
+                                    </li>
+                                    <li>
+                                        Tartare de bœuf d’Aubrac, frites maison ou salades mélées 28€
+                                    </li>
+                                    <li>
+                                        L’ assiette d’aligot ou de légumes de saison 12€
+                                    </li>
+                                    <li>
+                                        Changement de garniture aligot ou légumes de saison 7€
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--LES DESSERTS-->
+        <section>
+            <div class="container text-center">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="home-subtitle">DESSERTS</h3>
+                            <svg id="dessertsvg" viewbox="-29 0 160 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LES DESSERTS</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LES DESSERTS</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--FAITS MAISONS-->
+                        <div id="homemade" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <h2 class="title text-center">
+                                Faits maisons
+                            </h2>
+                            <ul class="desc">
+                                <li>
+                                    Caillé de chèvre frais de la « Fromagerie du Tertre » à Fougeré en Anjou ... façon sucrée : coulis de fruits rouges ou miel 10€
+                                </li>
+                                <li>
+                                    Crêpes flambées au Grand Marnier 14 €
+                                </li>
+                                <li>
+                                    Profitéroles aux choux croquants et glace vanille de la maison Berthillon, sauce au chocolat 22€
+                                </li>
+                                <li>
+                                    Poire Williams en verrine rafraîchit par son coulis, chocolat chaud « Guayaquil » 14€
+                                </li>
+                                <li>
+                                    Cœur coulant au praliné noisette et sa glace de la maison Berthillon 15€
+                                </li>
+                                <li>
+                                    Millefeuille à la crème légère vanillée de Madagascar 15€
+                                </li>
+                                <li>
+                                    Le café gourmand de La Mascotte 14€
+                                </li>
+                            </ul>
+                        </div>
+                        <!--GLACES ET SORBETS-->
+                        <div id="icecream" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6" > 
+                            <h2 class="title text-center">
+                                Glaces et sorbets Berthillon
+                            </h2>
+                            <ul class="desc">
+                                <li>
+                                    La coupe trois parfums 15€
+                                </li>
+                                <li>
+                                    Vol au vent de ris de veau aux champignons 18€
+                                </li>
+                                <li>
+                                    La palette de Montmartre : 4 parfums au choix, coulis de fruits rouges ou chocolat chaud, chantilly 18€
+                                </li>
+                                <li>
+                                    Le sorbet poire et son verre d’alcool de poire 16€
+                                </li>
+                                <li>
+                                    Le sorbet pomme verte et son verre de Calvados 16€
+                                </li>
+                                <li>
+                                    Le sorbet cassis et son verre de crème de cassis 16€
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--LES BOISSONS-->
+        <section>
+            <div class="container text-center">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="home-subtitle">DRINKS</h3>
+                            <svg id="drinksvg" viewbox="-29 0 160 20">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="5%" stop-color="#326384"/>
+                                        <stop offset="95%" stop-color="#123752"/>
+                                    </linearGradient>
+                                    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                            <animateTransform attributeName="transform" type="translate" begin="0s" dur="1.5s" from="0,0" to="40,0" repeatCount="indefinite" />
+                                        </path>
+                                    </pattern>
+                                </defs>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">LES BOISSONS</text>
+                                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">LES BOISSONS</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <!--DRINK #1 & #2-->
+                    <div class="row">
+                        <!--DRINK #1 À DECOUVRIR DISPLAY-->
+                        <div id="drink1" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <h2 class="title text-center">
+                                À DECOUVRIR
+                            </h2>
+                            <ul class="desc">
+                                <li>
+                                    Absinthe de Montmartre à la "Fontaine" 8.35€
+                                </li>
+                                <li>
+                                    Muscat du Cap Corse - Domaine de Catarelli 2015 9€
+                                </li>
+                                <li>
+                                    Coteaux de l’Aubance - Domaine Richou 8.5€
+                                </li>
+                                <li>
+                                    Rivesaltes 2012 – Domaine Vaquer à Tresserre 11€
+                                </li>
+                                <li>
+                                    Rivesaltes Ambré Hors d’Age – 25 ans – Domaine de Vaquer à Tresserre 15€
+                                </li>
+                            </ul>
+                        </div>
+                        <!--DRINK #2 CHAMPAGNE DISPLAY-->
+                        <div id="drink2" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <h2 class="title text-center">
+                                CHAMPAGNE
+                            </h2>
+                            <ul class="desc">
+                                <li>
+                                    Mariné de Saint Jacques de Granville au ponzu et sel bleu de Perse, crumpet servi chaud 18€
+                                </li>
+                                <li>
+                                    Vol au vent de ris de veau aux champignons 18 €
+                                </li>
+                                <li>
+                                    Pizzette de langoustines bretonnes, caviar d'aubergines fumées, lamelles de truffes noires mélanosporum 22 €
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--DRINK #3 & #4-->
+                    <div class="row">
+                        <!--DRINK #3 KIRS DISPLAY-->
+                        <div id="drink3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <h2 class="title text-center">
+                                KIRS
+                            </h2>
+                            <ul class="desc">
+                                <li>
+                                   Le Kir « Mascotte » Blanc pétillant à la crème de cassis, de mûre ou de pêche 10€
+                                </li>
+                                <li>
+                                    Le Kir Royal Champagne à la crème de cassis, de mûre ou de pêche 13.5€
+                                </li>
+                            </ul>
+                        </div>
+                        <!--DRINK #4 LES COCKTAILS DISPLAY-->
+                        <div id="drink4" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <h2 class="title text-center">
+                                LES COCKTAILS
+                            </h2>
+                            <ul class="desc">
+                                <li>
+                                   L'Americano 13.5€
+                                </li>
+                                <li>
+                                    Le Spritz 11€
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container text-center">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-5">
+                        <a href="credits.html" class="btn btn-credits">Crédits &amp; Mentions légales</a>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-5 col-lg-5">
+                        <form class="form-newsletter" method="post" action="">
+                        <label for="email">Newsletter :</label>
+                        <input type="text" class="form-email input-text" placeholder="Votre email" name="ne" id="ne">
+                        <span class="border-newsletter"><span class="border"></span></span>
+                        <input type="submit" class="btn btn-submit" value="OK">
+                        <div class="form-message valid">
+                            <p>
+                                Votre inscription a bien &eacute;t&eacute; prise en compte.
+                            </p>
+                        </div>
+                        <div class="form-message error valid-error">
+                            <p>
+                                Merci de saisir un e-mail valide.
+                            </p>
+                        </div>
+                        <div class="form-message error post-error">
+                            <p>
+                                Probl&egrave;me technique, veuillez r&eacute;essayer ult&eacute;rieurement.
+                            </p>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                        <a href="../index.html">
+                            <img src="../assets/images/common/logobrown.png" alt="Restaurant La Mascotte" class="footer-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+
+</body>
+</html>
