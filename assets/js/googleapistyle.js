@@ -11,7 +11,7 @@ function initMap() {
     });
     marker = new google.maps.Marker({
         map: map,
-        icon: 'assets/images/main/mascottelogomapp.png',
+        icon: 'static/images/main/mascottelogomapp.png',
         draggable: true,
         animation: google.maps.Animation.DROP,
         position: {lat: 48.885720, lng: 2.335444}
