@@ -194,14 +194,14 @@
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-8">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <form action="#" method="post">
+                                    <form action="/booking" method="POST">
                                         <!-- Col Left-->
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <span class="input input--shoko">
-                                                    <input class="input__field input__field--shoko" type="text" name="date" id="reservation-date">
+                                                    <input class="input__field input__field--shoko" type="text" name="date_booking" id="date_booking">
                                                     <label class="input__label input__label--shoko" for="reservation-date">
-                                                        <span class="input__label-content input__label-content--shoko">Dâte</span>
+                                                        <span class="input__label-content input__label-content--shoko">Date</span>
                                                     </label>
                                                     <svg class="graphic graphic--shoko" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
                                                         <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
@@ -211,7 +211,7 @@
                                             </div>
                                             <div class="col-md-3">
                                                 <span class="input input--shoko">
-                                                    <input class="input__field input__field--shoko" type="text" name="personne" id="personne">
+                                                    <input class="input__field input__field--shoko" type="number" min="0" max="20" name="persons" id="persons">
                                                     <label class="input__label input__label--shoko" for="reservation-date">
                                                         <span class="input__label-content input__label-content--shoko">Personne</span>
                                                     </label>
@@ -223,7 +223,7 @@
                                             </div>
                                             <div class="col-md-3">
                                                 <span class="input input--shoko">
-                                                    <input class="input__field input__field--shoko" type="text" name="time" id="reservation-time">
+                                                    <input class="input__field input__field--shoko" type="text" name="time_booking" id="time_booking">
                                                     <label class="input__label input__label--shoko" for="reservation-date">
                                                         <span class="input__label-content input__label-content--shoko">Heure</span>
                                                     </label>
@@ -235,7 +235,7 @@
                                             </div>
                                             <div class="col-md-3">
                                                 <span class="input input--shoko">
-                                                    <input class="input__field input__field--shoko" type="text" name="name" id="name">
+                                                    <input class="input__field input__field--shoko" type="text" name="lastname" id="lastname">
                                                     <label class="input__label input__label--shoko" for="reservation-date">
                                                         <span class="input__label-content input__label-content--shoko">Nom</span>
                                                     </label>
@@ -249,7 +249,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <span class="input input--shoko">
-                                                    <input class="input__field input__field--shoko" type="text" name="phone" id="phone">
+                                                    <input class="input__field input__field--shoko" type="tel" name="tel" id="tel">
                                                     <label class="input__label input__label--shoko" for="reservation-date">
                                                         <span class="input__label-content input__label-content--shoko">Téléphone</span>
                                                     </label>
@@ -261,7 +261,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <span class="input input--shoko">
-                                                    <input class="input__field input__field--shoko" type="text" name="email" id="email">
+                                                    <input class="input__field input__field--shoko" type="email" name="email" id="email">
                                                     <label class="input__label input__label--shoko" for="reservation-date">
                                                         <span class="input__label-content input__label-content--shoko">Email</span>
                                                     </label>
@@ -274,7 +274,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <textarea class="col-md-12" name="notice" id="notice" placeholder="INFORMATIONS COMPLÉMENTAIRES"></textarea>
+                                                <textarea class="col-md-12" name="infos" id="infos" placeholder="INFORMATIONS COMPLÉMENTAIRES"></textarea>
                                             </div>
                                         </div>
                                         <div class="row">
