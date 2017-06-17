@@ -3,13 +3,18 @@ USE lamascotte;
 
 CREATE TABLE booking (
 	`id` INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-	`lastname`VARCHAR(30),
+	`lastname` VARCHAR(30),
 	`date_booking` DATE,
 	`time_booking` VARCHAR(5),
-	`persons`INT(2) CHECK (persons>=1 AND persons<=20),
+	`persons` INT(2) CHECK (persons>=1 AND persons<=20),
 	`email` VARCHAR(70),
-	`tel`INT(20),
-	`infos`VARCHAR(700)
+	`tel` INT(20),
+	`infos` VARCHAR(700)
+);
+
+CREATE TABLE newsletter (
+	`id`INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	`email` VARCHAR(70)
 );
 
 INSERT INTO booking (lastname, date_booking, time_booking, persons, email, tel, infos) VALUES 
