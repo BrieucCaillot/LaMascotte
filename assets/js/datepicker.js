@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 	$( function() {
         $(function() {
-            $( "#reservation-date" ).datepicker({
+            $( "#date_booking" ).datepicker({
             altField: "#datepicker",
             closeText: 'Fermer',
             prevText: 'Précédent',
@@ -13,11 +13,17 @@ jQuery(document).ready(function($) {
             dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
             dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
             weekHeader: 'Sem.',
-            dateFormat: 'dd-mm-yy'
+            dateFormat: 'yy-mm-dd',
+            onSelect : function(dateText, inst){
+                console.log('date selected');
+                console.log(inst);
+                $("#date_booking:input").addClass('input--filled');
+                $("#datespan").addClass('input--filled');
+            }
             });
         });
         $("#anim").on( "change", function() {
-          $("#reservation-date").datepicker( "option", "showAnim", $( this ).val() );
+          $("#date_booking").datepicker( "option", "showAnim", $( this ).val() );
         });
     });
 });
