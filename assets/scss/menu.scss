@@ -6,6 +6,7 @@ body {
 	font-family : roboto;
 	-webkit-transition: 0.5s; /* Safari */
     transition: 0.5s;
+    overflow-x: hidden;
 
 	.button {
 		position: relative;
@@ -376,7 +377,7 @@ header {
 
 /* MAIN */
 main {
-
+	
 	/* HEADER LA CARTE */
 	section:first-child {
 		height: 500px;
@@ -509,6 +510,7 @@ main {
 	section:nth-child(3) {
 		padding: 71px 0 0 0;
 		background-color: #fff;
+		position: relative;
 		
 		.arrow {
 			width: 19px;
@@ -554,6 +556,14 @@ main {
 		img {
 			width: auto;
 			height: 380px;
+		}
+
+		.arrowsvg {
+		    width: 40px;
+		    height: auto;
+		    position: absolute;
+		    right: 7%;
+		    top: 25px;
 		}
 
 		h2 {
@@ -616,6 +626,7 @@ main {
 
 	/* LES ENTREES */
 	section:nth-child(4) {
+		position: relative;
 		padding: 71px 0 0 0;		
 		background-color: #FFF;
 
@@ -670,6 +681,14 @@ main {
 			font-weight: 400;
 		}
 
+		.arrowsvg {
+		    width: 40px;
+		    height: auto;
+		    position: absolute;
+		    top: 24px;
+		    right: 7%;
+		}
+
 		li {
 			padding-bottom: 15px;
     		list-style-type: circle;
@@ -710,6 +729,7 @@ main {
 	section:nth-child(5) {
 		padding: 71px 0 0 0;
 		background-color: #FFF;
+		position: relative;
 
 		.home-subtitle {
 			font-size: 17px;
@@ -733,6 +753,22 @@ main {
 		img {
 			width: auto;
 			height: 380px;
+		}
+
+		.arrowsvg {
+		    width: 40px;
+		    height: auto;
+		    position: absolute;
+		    top: 13px;
+		    right: 7%;
+		}
+
+		.arrowsvgplats {
+			width: 31px;
+		    height: auto;
+		    position: absolute;
+		    top: 13px;
+		    right: 19%;
 		}
 
 		h3 {
@@ -817,6 +853,7 @@ main {
 
 	/* LES DESSERTS */
 	section:nth-child(6) {
+		position: relative;
 		padding: 71px 0 0 0;
 		background-color: #FFF;
 
@@ -851,6 +888,14 @@ main {
 		img {
 			width: auto;
 			height: 380px;
+		}
+
+		.arrowsvg {
+		    width: 40px;
+		    height: auto;
+		    position: absolute;
+		    top: 14px;
+		    right: 10%;
 		}
 
 		h3 {
@@ -918,6 +963,7 @@ main {
 	
 	/* LES BOISSONS */
 	section:last-child {
+		position: relative;
 		padding: 72px 0;
 		background-color: #FFF;
 
@@ -952,6 +998,14 @@ main {
 		img {
 			width: auto;
 			height: 380px;
+		}
+
+		.arrowsvg {
+		    width: 40px;
+		    height: auto;
+		    position: absolute;
+		    top: 15px;
+		    right: 7%;
 		}
 
 		h3 {
@@ -1143,8 +1197,38 @@ footer {
 
 /************** RESPONSIVE ***************/
 
-/* MEDIA QUERIES MAX WIDTH 1319PX MIN WIDTH 920PX */
-@media all and (max-width : 1319px) and (min-width: 920px) {
+/* MEDIA QUERIES MAX WIDTH 1325PX */
+@media all and (max-width : 1325px) {
+
+	#headersocial {
+		position: absolute;
+		right: 30%;
+	}
+
+	header {
+
+		.progressContainer {
+			top: 69px;
+		}
+
+		nav ul li {
+			font-size: 16px;
+		}
+	}
+
+	footer {
+		height: 110px;
+	}
+}
+
+/* MEDIA QUERIES MAX WIDTH 1237PX*/
+@media all and (max-width : 1237px) {
+	main section:nth-child(2) {
+		img {
+			margin: 75px 0 0 -30px;
+			width: 260px
+		}
+	}
 
 	#headersocial {
 		position: absolute;
@@ -1159,34 +1243,9 @@ footer {
 		display: none;
 	}
 
-	header .progressContainer {
-		top: 69px;
-	}
-
-	footer {
-		height: 110px;
-	}
-}
-
-/* MEDIA QUERIES MAX WIDTH 992PX */
-@media all and (max-width : 992px) {
-	.show {
-		display: block;
-	}
-
-	.hide {
-		display: none;
-	}
-
-	header .progressContainer {
-		top: 69px;
-	}
-
-	footer {
-		height: 130px;
-
-		.btn-credits {
-			padding: 10% 0;
+	main section:nth-child(4) {
+		.container {
+			width: 100%;
 		}
 	}
 }
@@ -1249,12 +1308,32 @@ footer {
 		background-position: top;
 	}
 
-	main section:nth-child(3) svg {
-		margin-left: -40px;
+	main section:nth-child(3) {
+		svg {
+			margin-left: -40px;
+		}
+
+		.arrowsvg {
+		    width: 40px;
+		    height: auto;
+		    position: absolute;
+		    top: 20px;
+		    right: 7%;
+		}
 	}
 
-	main section:nth-child(4) svg {
-		margin-left: -20px;
+	main section:nth-child(4) {
+		svg {
+			margin-left: -20px;
+		}
+
+		.arrowsvg {
+		    width: 40px;
+		    height: auto;
+		    position: absolute;
+		    top: 33px;
+		    right: 7%;
+		}
 	}
 
 	main section:nth-child(5) { 
@@ -1266,8 +1345,44 @@ footer {
 			width: 70%;
 		}
 
+		.arrowsvg {
+		    width: 40px;
+		    height: auto;
+		    position: absolute;
+		    top: 10px;
+		    right: 7%;
+		}
+
+		.arrowsvgplats {
+			width: 25px;
+		    height: auto;
+		    position: absolute;
+		    top: 13.5px;
+		    right: 17.4%;
+		}
+
 		svg {
 			margin-left: -60px;
+		}
+	}
+
+	main section:nth-child(6) {
+		.arrowsvg {
+		    width: 40px;
+		    height: auto;
+		    position: absolute;
+		    top: 20px;
+		    right: 7%;
+		}
+	}
+
+	main section:last-child {
+		.arrowsvg {
+		    width: 40px;
+		    height: auto;
+		    position: absolute;
+		    top: 20px;
+		    right: 7%;
 		}
 	}
 
@@ -1275,7 +1390,7 @@ footer {
 		height: 160px;
 
 		.btn-credits {
-			padding: 7% 0;
+		    margin: 7px 0px 0px -10px;
 		}
 	}
 }
@@ -1290,7 +1405,7 @@ footer {
 		display: none;
 	}
 
-	#progress {
+	#progress, .arrowsvg, .arrowsvgplats {
 		display: none;
 	}
 
@@ -1329,7 +1444,8 @@ footer {
 	}
 
 	footer {
-		height: 268px;
+		height: 290px;
+		margin-top: -60px;
 
 		.form-newsletter {
 			margin-right: 11px;
