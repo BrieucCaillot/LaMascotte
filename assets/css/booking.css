@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: roboto; }
+  font-family: roboto;
+  overflow-x: hidden; }
   body .button {
     position: relative;
     display: block;
@@ -543,8 +544,25 @@ footer {
     bottom: -20px; }
 
 /************** RESPONSIVE ***************/
-/* MEDIA QUERIES MAX WIDTH 1319PX MIN WIDTH 920PX */
-@media all and (max-width: 1319px) and (min-width: 920px) {
+/* MEDIA QUERIES MAX WIDTH 1325PX */
+@media all and (max-width: 1325px) {
+  #headersocial {
+    position: absolute;
+    right: 30%; }
+
+  header .progressContainer {
+    top: 69px; }
+  header nav ul li {
+    font-size: 16px; }
+
+  footer {
+    height: 110px; } }
+/* MEDIA QUERIES MAX WIDTH 1237PX*/
+@media all and (max-width: 1237px) {
+  main section:nth-child(2) img {
+    margin: 75px 0 0 -30px;
+    width: 260px; }
+
   #headersocial {
     position: absolute;
     right: -290%; }
@@ -555,26 +573,8 @@ footer {
   .hide {
     display: none; }
 
-  header .progressContainer {
-    top: 69px; }
-
-  footer {
-    height: 110px; } }
-/* MEDIA QUERIES MAX WIDTH 992PX */
-@media all and (max-width: 992px) {
-  header .progressContainer {
-    top: 69px; }
-
-  .show {
-    display: block; }
-
-  .hide {
-    display: none; }
-
-  footer {
-    height: 130px; }
-    footer .btn-credits {
-      padding: 10% 0; } }
+  main section:nth-child(4) .container {
+    width: 100%; } }
 @media all and (max-width: 992px) and (min-width: 780px) {
   body {
     overflow-x: hidden;
@@ -600,6 +600,9 @@ footer {
 @media all and (max-width: 780px) {
   overflow-x: hidden;
   #progress {
+    display: none; }
+
+  .progress {
     display: none; }
 
   .show {
@@ -632,7 +635,7 @@ footer {
     margin-top: 30px;
     height: 160px; }
     footer .btn-credits {
-      padding: 7% 0; } }
+      margin: 7px 0px 0px -10px; } }
 /* MEDIA QUERIES MAX WIDTH 380PX */
 @media all and (max-width: 380px) {
   body {
@@ -660,7 +663,7 @@ footer {
     font-size: 15px; }
 
   footer {
-    height: 268px; }
+    height: 290px; }
     footer .form-newsletter {
       margin-right: 11px; }
       footer .form-newsletter label {
