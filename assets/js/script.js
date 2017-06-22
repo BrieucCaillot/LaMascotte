@@ -1,35 +1,21 @@
 $(document).ready(function() {
 
-    // SCROLL DIV ABOUT
-    $("#about").click(function() {
-      $('html,body').animate({
-          scrollTop: $("#placesection").offset().top},
-          'slow');
+    // FIXED MENU 
+    // call headerfixed function on load
+    $(function(){
+        headerfixed();
+        $(window).scroll(headerfixed);
     });
 
-    // SCROLL DIV HISTORY
-    $("#history").click(function() {
-      $('html,body').animate({
-          scrollTop: $("#historysection").offset().top},
-          'slow');
-    });
-
-    // SCROLL DIV NEWS
-    $("#news").click(function() {
-      $('html,body').animate({
-          scrollTop: $("#newssection").offset().top},
-          'slow');
-    });
-
-    /* FIXED MENU */
-    $(document).on("scroll", function() {
-
-        if ($(document).scrollTop()>80) {
+    // header fixed function
+    function headerfixed () {
+        if ($(window).scrollTop()>80) {
 
             $("header").css({
                 "z-index": "200",
                 "min-height": "60px",
                 "background-color": "rgb(107, 151, 127)",
+                // "background-color": "#556147"
             });
 
             $("header nav").css({
@@ -47,7 +33,6 @@ $(document).ready(function() {
             $("header #headersocial").css({
                 "padding": '20px 0',
             });
-            
         } else {
             $("header").css({
                 "position": "",
@@ -77,7 +62,7 @@ $(document).ready(function() {
                 "padding": '',
             });
         }
-    });
+    }; 
 
     // PROGRESS BAR ON SCROLL
     function updateProgress(num1, num2){

@@ -4,7 +4,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
 var fs = require('fs');
-var port = 1337;
+var port = 8080;
 
 // mysql connection
 var connection = function(){
@@ -29,7 +29,7 @@ var connection = function(){
 // app get
 	// get on '/index.html'
 	app.get('/', function(req, res){
-		res.sendFile(__dirname + '/index.html');
+		res.sendFile(__dirname + '/views/index.html');
 	});
 
 	//get on 'about.html'
@@ -42,7 +42,6 @@ var connection = function(){
 		res.sendFile(__dirname + '/views/menu.html');
 	});
 
-
 	// get on 'booking.html'
 		// get booking.html
 		app.get('/booking', function(req, res){
@@ -51,7 +50,7 @@ var connection = function(){
 
 	// get on 'contact on index.html'
 	app.get('/#contact', function(req, res){
-		res.sendFile(__dirname + '/index.html/#contact');
+		res.sendFile(__dirname + '/views/index.html/#contact');
 	});
 
 	// get on 'credits.html'
