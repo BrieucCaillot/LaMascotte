@@ -40,7 +40,9 @@ jQuery(document).ready(function($) {
 		// DISPLAY NONE ALL
 		$("#menusvg").click(function() {
 			$("#entree1, #plat1, #dessert1, #entree2, #plat2, #dessert2, #plat3, #dessert3").fadeOut();
-			$(".arrowsvg").attr('src', '../static/images/menu/arrowdown2.svg');
+			$("#menu1 .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
+			$("#menu2 .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
+			$("#menu3 .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
 		});
 		/* MENU MASCOTTE */
 			$("#menu1 h2").click(function(){
@@ -80,6 +82,8 @@ jQuery(document).ready(function($) {
 		//DISPLAY NONE ALL
 	 	$("#entreesvg").click(function(){
 			$("#entreecold ul, #entreehot ul").fadeOut();
+			$("#entreecold .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
+			$("#entreehot .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
 		});
 		// ENTREEFROIDE
 		$("#entreecold h2").click(function(){
@@ -108,6 +112,10 @@ jQuery(document).ready(function($) {
 		//DISPLAY NONE ALL
 	 	$("#platsvg").click(function(){
 			$("#compo1display, #compo2display, #compo3display, #compo4display, #compo5display, #compo6display ,#fdmdisplay h5, #fdmdisplay p, #pdm h5, #pdmdisplay p, #huitresdisplay, #crustacesdisplay, #poissonsdemerdisplay, #homardsdisplay, #epiceriedisplay, #meatdisplay").fadeOut();
+			$("#fdm .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
+			$("#fdmdisplay .arrowsvgplats").attr('src', '../static/images/menu/arrowdown2.svg').removeClass('opened').addClass('closed');
+			$("#pdm .arrowsvgplats").attr('src', '../static/images/menu/arrowdown2.svg').removeClass('opened').addClass('closed');
+			$("#meat .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
 		}); 	
 		// LES FRUITS DE MER
 			$("#fdm h4").click(function(){
@@ -123,6 +131,9 @@ jQuery(document).ready(function($) {
 					$("#fdm img.arrowsvg").removeClass('opened').addClass('closed');
 					$("#fdm img.arrowsvg").attr('src', '../static/images/menu/arrowdown.svg');
 				}
+				$("#fdmdisplay .arrowsvgplats").attr('src', '../static/images/menu/arrowdown2.svg').removeClass('opened').addClass('closed');
+				$("#pdm .arrowsvgplats").attr('src', '../static/images/menu/arrowdown2.svg').removeClass('opened').addClass('closed');
+				$("#meat .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
 			});
 			// LES COMPOSITIONS
 				// DISPLAY NONE
@@ -198,12 +209,21 @@ jQuery(document).ready(function($) {
 		// LES VIANDES
 			$("#meat h4").click(function(){
 				$("#meatdisplay").fadeToggle();
+				if ($("#meat img.arrowsvg").hasClass('closed')) {
+						$("#meat img.arrowsvg").removeClass('closed').addClass('opened');
+						$("#meat img.arrowsvg").attr('src', '../static/images/menu/arrowup.svg');
+					} else if ($("#meat img.arrowsvg").hasClass('opened')) {
+						$("#meat img.arrowsvg").removeClass('opened').addClass('closed');
+						$("#meat img.arrowsvg").attr('src', '../static/images/menu/arrowdown.svg');
+					}
 			});
 
 	// LES DESSERTS
 		//DISPLAY NONE ALL
 	 	$("#dessertsvg").click(function(){
 			$("#homemade ul, #icecream ul").fadeOut();
+			$("#homemade .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
+			$("#icecream .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
 		});
 		// FAITS MAISON
 			$("#homemade").click(function(){
@@ -232,6 +252,10 @@ jQuery(document).ready(function($) {
 		//DISPLAY NONE ALL
 	 	$("#drinksvg").click(function(){
 			$("#drink1 ul, #drink2 ul, #drink3 ul, #drink4 ul").fadeOut();
+			$("#drink1 .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
+			$("#drink2 .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
+			$("#drink3 .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
+			$("#drink4 .arrowsvg").attr('src', '../static/images/menu/arrowdown.svg').removeClass('opened').addClass('closed');
 		});
 		// À DÉCOUVRIR
 			$("#drink1").click(function(){

@@ -3,6 +3,12 @@ body {
   padding: 0;
   font-family: roboto;
   overflow-x: hidden; }
+  body .menudevice {
+    font-size: 70px;
+    color: #2A6993;
+    margin: 0 auto;
+    text-align: center;
+    display: none; }
   body .button {
     position: relative;
     display: block;
@@ -265,10 +271,10 @@ header {
     width: 17px;
     padding-top: 4px; }
   .mobile-nav .text {
-    font-size: 10px;
+    font-size: 13px;
     bottom: 8px;
     position: absolute;
-    top: 80%;
+    top: 73%;
     left: 50%;
     transform: translate(-50%, -50%); }
 
@@ -838,6 +844,12 @@ footer {
   #progress {
     display: none; }
 
+  svg {
+    display: none; }
+
+  body .menudevice {
+    display: block; }
+
   .show {
     display: block; }
 
@@ -858,28 +870,32 @@ footer {
     position: absolute;
     right: -322%; }
 
-  main section:first-child h1 {
-    font-size: 60px; }
-  main section:first-child h2 {
-    font-size: 20px; }
-  main section:first-child #headerdesc {
-    padding: 350px 0px; }
+  main section:first-child {
+    background-position: 35% 100%; }
+    main section:first-child h1 {
+      font-size: 60px; }
+    main section:first-child h2 {
+      font-size: 23px; }
+    main section:first-child #headerdesc {
+      padding: 350px 0px; }
 
   main section:nth-child(2) img {
     margin: 0% 25%;
     width: 50%; }
 
   main section:nth-child(3) #swiperrestaurant {
-    height: 45%; }
+    height: 38%; }
 
-  main section:nth-child(4) img:last-child {
-    height: 30%; }
+  main section:nth-child(4) {
+    margin: 10% 0; }
+    main section:nth-child(4) img:last-child {
+      height: 25%; }
 
   main section:nth-child(5) {
     margin-top: 10px;
-    height: 600px; }
+    height: 490px; }
     main section:nth-child(5) .description {
-      margin: 40px 0; }
+      margin: -40px 0; }
     main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
       display: none; }
     main section:nth-child(5) div.swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets {
@@ -891,27 +907,41 @@ footer {
       width: 75%; }
     main section:nth-child(5) #about h3 {
       margin-right: 47.3%; }
+    main section:nth-child(5) #about h4.menudevice {
+      font-size: 50px;
+      margin: 20px 0 20px -60px; }
     main section:nth-child(5) #about svg {
       margin: 0 142px 0 70px;
       width: 65%; }
     main section:nth-child(5) #about p.title {
       margin-right: 26%; }
     main section:nth-child(5) #about p.desc {
-      margin-right: 10%;
-      text-align: center; }
+      margin: 0 auto;
+      margin-left: 50px;
+      margin-bottom: 30px;
+      text-align: center;
+      width: 80%; }
     main section:nth-child(5) #about button {
       margin-right: 13%; }
-    main section:nth-child(5) #ecaille h3 {
-      margin-left: 40.3%; }
-    main section:nth-child(5) #ecaille svg {
-      margin-left: 25.7%; }
-    main section:nth-child(5) #ecaille p.title {
-      margin-left: 13%; }
-    main section:nth-child(5) #ecaille p.desc {
-      margin-right: 10%;
-      text-align: center; }
-    main section:nth-child(5) #ecaille button {
-      margin-right: 13%; }
+    main section:nth-child(5) #ecaille {
+      margin-top: 25px; }
+      main section:nth-child(5) #ecaille h3 {
+        margin-left: 40.3%; }
+      main section:nth-child(5) #ecaille h4.menudevice {
+        font-size: 50px;
+        margin: 20px 0 20px -60px; }
+      main section:nth-child(5) #ecaille svg {
+        margin-left: 25.7%; }
+      main section:nth-child(5) #ecaille p.title {
+        margin-left: 13%; }
+      main section:nth-child(5) #ecaille p.desc {
+        margin: 0 auto;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 90%; }
+      main section:nth-child(5) #ecaille button {
+        margin-right: 13%; }
 
   main section:last-child #contact {
     height: 370px; }
@@ -931,12 +961,21 @@ footer {
   #progress {
     display: none; }
 
+  .mobile-nav .text {
+    font-size: 10px;
+    bottom: 8px;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
   main section:first-child #headerdesc {
     padding-top: 200px; }
   main section:first-child h1 {
-    font-size: 36px; }
+    font-size: 45px; }
   main section:first-child h2 {
-    font-size: 19px; }
+    font-size: 19px;
+    line-height: 26px; }
 
   main section:nth-child(2) svg {
     margin-bottom: 30px; }
@@ -954,7 +993,7 @@ footer {
       width: 100%;
       padding: 0; }
     main section:nth-child(3) #swiperrestaurant {
-      height: 45%; }
+      height: 35%; }
       main section:nth-child(3) #swiperrestaurant div.swiper-button-prev {
         margin-left: -10%; }
       main section:nth-child(3) #swiperrestaurant div.swiper-button-next {

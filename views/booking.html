@@ -161,8 +161,10 @@
                                         </path>
                                     </pattern>
                                 </defs>
-                                <text text-anchor="middle" x="50" y="15" fill="url(#wave)"  fill-opacity="0.6">FORMULAIRE</text>
-                                <text text-anchor="middle" x="50" y="15" fill="url(#gradient)" fill-opacity="0.5">FORMULAIRE</text>
+                                <a href="javascript:void(0)">
+                                    <text text-anchor="middle" x="50" y="15" fill="url(#wave)"  fill-opacity="0.6">FORMULAIRE</text>
+                                    <text text-anchor="middle" x="50" y="15" fill="url(#gradient)" fill-opacity="0.5">FORMULAIRE</text>
+                                </a>
                             </svg>
                             <p>
                                 REMPLISSEZ LE FORMULAIRE<br>POUR RÉSERVER
@@ -176,7 +178,6 @@
         <!--FORM-->
         <section>
             <div class="container">
-                <!--for redirect in a new page change : 'action="#"' with : 'action="send-reservation.php"'-->
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3">
@@ -223,7 +224,7 @@
                                             </div>
                                             <div class="col-md-3">
                                                 <span id="timespan" class="input input--shoko">
-                                                    <input class="input__field input__field--shoko" type="time" name="time_booking" id="time_booking">
+                                                    <input class="input__field input__field--shoko" type="text" placeholder="12:00 - 23:00" name="time_booking" id="time_booking">
                                                     <label class="input__label input__label--shoko" for="reservation-date">
                                                         <span class="input__label-content input__label-content--shoko">Heure</span>
                                                     </label>

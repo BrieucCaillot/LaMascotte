@@ -266,10 +266,10 @@ header {
     width: 17px;
     padding-top: 4px; }
   .mobile-nav .text {
-    font-size: 10px;
+    font-size: 13px;
     bottom: 8px;
     position: absolute;
-    top: 80%;
+    top: 73%;
     left: 50%;
     transform: translate(-50%, -50%); }
 
@@ -286,17 +286,18 @@ main {
     height: 500px;
     background: url("../images/menu/background.jpg") no-repeat;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: 130% -70px;
     background-size: cover; }
     main section:first-child #headerdesc {
-      padding: 185px 0px; }
+      padding: 150px 0px; }
     main section:first-child h1 {
-      font-size: 60px;
+      font-size: 70px;
       color: #FFF;
       z-index: 2;
       font-family: Montserrat;
       margin: 0 auto;
-      padding: 20px 0; }
+      padding: 30px 0;
+      letter-spacing: 8px; }
     main section:first-child button {
       border: 2px solid #ffffff;
       z-index: 2;
@@ -410,7 +411,7 @@ main {
       height: auto;
       position: absolute;
       right: 7%;
-      top: 25px; }
+      top: 33px; }
     main section:nth-child(3) h2 {
       text-transform: uppercase;
       font-size: 22px;
@@ -418,7 +419,7 @@ main {
       margin: 2% 0;
       line-height: 51px;
       border-radius: 2px;
-      background-color: #6B614D;
+      background-color: #6B614A;
       color: #fff; }
     main section:nth-child(3) h3 {
       font-size: 17px;
@@ -431,10 +432,11 @@ main {
       font-size: 16px;
       line-height: 30px;
       font-family: Montserrat;
-      margin: 3% 0; }
+      margin: 3% 0 0 0; }
     main section:nth-child(3) p.title {
       background-color: #e0d2b1;
-      color: #6B614D; }
+      color: #6B614D;
+      border-radius: 2px; }
     main section:nth-child(3) li {
       padding-bottom: 15px;
       list-style-type: circle;
@@ -482,7 +484,7 @@ main {
       text-transform: uppercase;
       font-size: 29px;
       margin: 4% 0 0% 0;
-      background-color: #6B614D;
+      background-color: #6b614a;
       color: #fff;
       border-radius: 2px;
       width: 100%; }
@@ -496,7 +498,7 @@ main {
       width: 40px;
       height: auto;
       position: absolute;
-      top: 24px;
+      top: 32px;
       right: 7%; }
     main section:nth-child(4) li {
       padding-bottom: 15px;
@@ -547,13 +549,13 @@ main {
       width: 40px;
       height: auto;
       position: absolute;
-      top: 13px;
+      top: 17px;
       right: 7%; }
     main section:nth-child(5) .arrowsvgplats {
       width: 31px;
       height: auto;
       position: absolute;
-      top: 13px;
+      top: 17px;
       right: 19%; }
     main section:nth-child(5) h3 {
       font-size: 17px;
@@ -566,7 +568,7 @@ main {
       line-height: 46px;
       font-family: Montserrat;
       margin: 1% 0 1% 0;
-      background-color: #6B614D;
+      background-color: #6b614a;
       color: #fff;
       border-radius: 2px;
       text-align: center; }
@@ -645,8 +647,8 @@ main {
       width: 40px;
       height: auto;
       position: absolute;
-      top: 14px;
-      right: 10%; }
+      top: 19px;
+      right: 7%; }
     main section:nth-child(6) h3 {
       font-size: 22px;
       text-transform: uppercase;
@@ -658,7 +660,7 @@ main {
       text-transform: uppercase;
       font-size: 29px;
       margin: 48px 0 35px 0;
-      background-color: #6B614D;
+      background-color: #6b614a;
       color: #fff;
       border-radius: 2px;
       width: 100%; }
@@ -722,7 +724,7 @@ main {
       width: 40px;
       height: auto;
       position: absolute;
-      top: 15px;
+      top: 20px;
       right: 7%; }
     main section:last-child h3 {
       font-size: 22px;
@@ -748,7 +750,7 @@ main {
       line-height: 51px;
       font-family: Montserrat;
       margin: 2% 0%;
-      background-color: #6B614D;
+      background-color: #6b614a;
       color: #fff;
       border-radius: 2px;
       width: 100%; }
@@ -930,9 +932,10 @@ footer {
     right: -322%; }
 
   main section:first-child {
-    background: url("../images/menu/backgrounddevice.jpg") no-repeat;
-    background-size: cover;
-    background-position: top; }
+    background-position: 0% 0%;
+    background-size: 200%; }
+    main section:first-child h1 {
+      font-size: 60px; }
 
   main section:nth-child(3) svg {
     margin-left: -40px; }
@@ -997,13 +1000,49 @@ footer {
   header #headersocial {
     display: none; }
 
-  #progress, .arrowsvg, .arrowsvgplats {
+  #progress, .arrowsvgplats {
     display: none; }
 
+  .mobile-nav .text {
+    font-size: 10px;
+    bottom: 8px;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+  .arrowsvg {
+    width: 10px; }
+
+  main section:first-child {
+    height: 91%;
+    background-size: 338% 100%;
+    background-position: 64% 40%; }
+    main section:first-child #headerdesc {
+      padding-top: 220px; }
+    main section:first-child h1 {
+      font-size: 45px; }
+
+  main section:nth-child(3) .arrowsvg {
+    right: 8%;
+    top: 20px;
+    width: 24px; }
+  main section:nth-child(3) h2 {
+    font-size: 16px; }
+  main section:nth-child(3) p {
+    font-size: 14px; }
   main section:nth-child(3) svg {
     margin-left: 0px;
     margin-right: -10px; }
 
+  main section:nth-child(4) .arrowsvg {
+    right: 8%;
+    top: 26px;
+    width: 24px; }
+  main section:nth-child(4) h2 {
+    font-size: 16px; }
+  main section:nth-child(4) p {
+    font-size: 14px; }
   main section:nth-child(4) svg {
     margin-left: 0px;
     margin-right: 3px; }
@@ -1011,8 +1050,16 @@ footer {
   main section:nth-child(5) svg {
     margin-left: 0px;
     margin-right: 3px; }
+  main section:nth-child(5) .arrowsvg {
+    right: 8%;
+    top: 15px;
+    width: 24px; }
+  main section:nth-child(5) h4 {
+    font-size: 20px; }
+  main section:nth-child(5) p {
+    font-size: 14px; }
   main section:nth-child(5) h5 {
-    font-size: 20px;
+    font-size: 18px;
     width: 85%;
     margin-left: 30px; }
   main section:nth-child(5) .title {
@@ -1021,6 +1068,24 @@ footer {
     margin-left: 38px; }
   main section:nth-child(5) #compo3, main section:nth-child(5) #poissonsdemer {
     margin-bottom: 0px; }
+
+  main section:nth-child(6) .arrowsvg {
+    right: 8%;
+    top: 20px;
+    width: 24px; }
+  main section:nth-child(6) h4 {
+    font-size: 20px; }
+  main section:nth-child(6) p {
+    font-size: 14px; }
+
+  main section:last-child .arrowsvg {
+    right: 8%;
+    top: 21px;
+    width: 24px; }
+  main section:last-child h4 {
+    font-size: 20px; }
+  main section:last-child p {
+    font-size: 14px; }
 
   footer {
     height: 290px;

@@ -147,10 +147,10 @@ header {
     width: 17px;
     padding-top: 4px; }
   .mobile-nav .text {
-    font-size: 10px;
+    font-size: 13px;
     bottom: 8px;
     position: absolute;
-    top: 80%;
+    top: 73%;
     left: 50%;
     transform: translate(-50%, -50%); }
 
@@ -340,6 +340,16 @@ footer {
   .hide {
     display: none; }
 
+  main section:first-child {
+    background-size: 140% 60%;
+    background-position: 30% 0%; }
+    main section:first-child #headerdesc {
+      padding-top: 120px; }
+    main section:first-child h1 {
+      width: 90%;
+      line-height: 90px;
+      font-size: 60px; }
+
   main section:last-child img {
     width: 50%; }
   main section:last-child p {
@@ -370,6 +380,23 @@ footer {
 
   #progress {
     display: none; }
+
+  .mobile-nav .text {
+    font-size: 10px;
+    bottom: 8px;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+  main section:first-child {
+    height: 91%;
+    background-size: 350% 110%; }
+    main section:first-child #headerdesc {
+      padding-top: 160px; }
+    main section:first-child h1 {
+      font-size: 45px;
+      line-height: 70px; }
 
   main section:last-child img {
     width: 70%;

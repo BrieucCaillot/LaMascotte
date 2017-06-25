@@ -366,12 +366,12 @@ header {
 	}
 
 	.text {
-		font-size: 10px;
-		bottom: 8px;
-		position: absolute;
-		top: 80%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		font-size: 13px;
+	    bottom: 8px;
+	    position: absolute;
+	    top: 73%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
 	}
 }
 
@@ -385,26 +385,28 @@ main {
 		background-size: cover;
 		background-attachment: fixed;
 		height: 500px;
-		background-position: 50% 100%;
+		background-position: bottom;
 
 		#headerdesc {
-			padding: 185px 0px;
+			padding: 165px 0px;
 		}
 
 		h1 {
-			font-size: 60px;
+			font-size: 70px;
 			color: #FFF;
 			z-index: 2;
 			font-family: Montserrat;
 			margin: 0 auto;
 			padding: 20px 0;
+			letter-spacing: 8px;
+			width: 50%;
 		}
 	}
 
 	/* FORM TEXT */
 	section:nth-child(2) {
 		padding: 72px 0;
-		background-color: #FFF;
+		background-color: #f4f4f4;
 		
 		svg {
 			font-weight:bold;
@@ -424,6 +426,7 @@ main {
 	/* FORM */
 	section:nth-child(3) {
 		background-color: #FFF;
+		margin: 39px 0;
 		
 		h3 {
 			font-size: 27px;
@@ -850,10 +853,17 @@ footer {
 	main section:first-child {
 		background: url("../images/booking/background.jpg") no-repeat;
 		background-size: cover;
-	}
 
-	main section:nth-child(2) {
-		padding-bottom: 4%;
+		h1 {
+			width: 70%;
+			line-height: 90px;
+			font-size: 60px;
+		}
+
+		#headerdesc {
+			padding: 150px 0;
+		}
+
 	}
 
 	main section:nth-child(3) {
@@ -890,16 +900,28 @@ footer {
 		display: none;
 	}
 
+	.mobile-nav .text {
+		font-size: 10px;
+		bottom: 8px;
+		position: absolute;
+		top: 73%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
 	main section:first-child {
+		height: 91%;
+	    background-size: 260% 100%;
+    	background-position: 56% 100%;
 
 		#headerdesc {
-			padding-top: 170px;
+			padding-top: 200px;
 		}
 
 		h1 {
-			font-size : 46px;
-			line-height: 60px;
-			width: 80%;
+			font-size : 45px;
+			line-height: 70px;
+			width: 100%;
 		}
 	}
 
