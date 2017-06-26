@@ -4,9 +4,64 @@ body {
 	margin : 0;
 	padding: 0;
 	font-family : roboto;
-	-webkit-transition: 0.5s; /* Safari */
-    transition: 0.5s;
     overflow-x: hidden;
+
+	svg {
+	    font-weight: bold;
+	    max-width: 500px;
+	    height: auto;
+	    margin-left: 5px;
+	    font-family: Roboto;
+	    margin: 0 auto;
+	    display: block;
+	    margin-bottom: 40px;
+	}
+
+    .menudevice {
+		font-size: 60px;
+		color: #2A6993;
+		margin: 0 auto;
+		text-align: center;
+		display: none;
+	}
+
+	.opened {
+	    text-transform: uppercase;
+	    font-size: 25px;
+        font-family: Roboto;
+	    margin: 0 0 2% 0;
+	    line-height: 51px;
+	    border-radius: 2px;
+	    color: #F4F4F4;
+	    background: #2A6993 url(../images/menu/arrowup.svg) no-repeat;
+	    background-position: 97% 5px;
+	    background-size: 70px 30px;
+	    cursor: pointer;
+	    opacity: 0.9;
+	    text-align: center;
+	}
+
+	.closed {
+		text-transform: uppercase;
+	    font-size: 25px;
+        font-family: Roboto;
+        margin: 0 0 2% 0;
+	    line-height: 51px;
+	    border-radius: 2px;
+	    color: #2A6993;
+		background: #F4F4F4 url(../images/menu/arrowdown.svg) no-repeat;
+		background-position: 97% 5px;
+	    background-size: 70px 30px;
+		color: #2A6993;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.closed:hover {
+		background-color: #2A6993;
+		color: #fff;;
+		opacity: 0.9;
+	}
 
 	.button {
 		position: relative;
@@ -152,7 +207,6 @@ body {
 	    font-size: 100%;
 	    margin: 0;
 	}
-
 }
 
 /* HEADER */
@@ -366,12 +420,12 @@ header {
 	}
 
 	.text {
-		font-size: 10px;
-		bottom: 8px;
-		position: absolute;
-		top: 80%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		font-size: 13px;
+	    bottom: 8px;
+	    position: absolute;
+	    top: 73%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
 	}
 }
 
@@ -383,20 +437,20 @@ main {
 		height: 500px;
 		background: url("../images/menu/background.jpg") no-repeat;
 		background-attachment: fixed;
-		background-position: bottom;
+		background-position: 80% -190px;
 		background-size: cover;
 
 		#headerdesc {
-			padding: 185px 0px;
+			padding: 150px 0px;
 		}
 
 		h1 {
-			font-size: 60px;
+			font-size: 70px;
 			color: #FFF;
 			z-index: 2;
-			font-family: Montserrat;
+			padding: 30px 0;
+			letter-spacing: 8px;
 			margin: 0 auto;
-			padding: 20px 0;
 		}
 
 		button {
@@ -436,26 +490,13 @@ main {
 	section:nth-child(2) {
 		padding: 50px 0 50px 0;
 		background-color: #F4F4F4;
-		
 
 		.row {
 			padding: 1% 0;
 		}
 
-		.arrow {
-			width: 19px;
-		    height: 21px;
-		    display: none;
-		    padding: 1px 0 0 4px;
-		}
-
-		svg {
-			font-weight:bold;
-			max-width: 410px;
-			height:auto;
-			margin-bottom: 3%;
-			margin-left:-5px;
-			font-family: Montserrat;
+		#dessertsvgnav, #drinksvgnav {
+			width: 400px;
 		}
 
 		img {
@@ -511,18 +552,10 @@ main {
 		padding: 71px 0 0 0;
 		background-color: #fff;
 		position: relative;
-		
-		.arrow {
-			width: 19px;
-		    height: 21px;
-		    display: none;
-		    padding: 1px 0 0 4px;
-		}
 
 		.title {
 			font-size: 20px;
 			line-height: 30px;
-			font-family: Montserrat;
 			margin: 2% 0%;
 		}
 		
@@ -530,13 +563,13 @@ main {
 			font-size: 15px;
 			line-height: 30px;
 			margin-bottom: 24px;
-			font-family: Montserrat;
 			margin: 2% 0%;
 		}
 
 		#entree1, #plat1, #dessert1,
 		#entree2, #plat2, #dessert2,
-		#plat3, #dessert3 {
+		#plat3, #dessert3, 
+		#aboutmascotte, #aboutcocotte, #aboutmarmotte {
 			display: none;
 		}
 
@@ -544,37 +577,9 @@ main {
 			margin: 47px 0;
 		}
 
-		svg {
-			font-weight:bold;
-			max-width: 500px;
-			height:auto;
-			margin-bottom: 4%;
-			margin-left:5px;
-			font-family: Montserrat;
-		}
-
 		img {
 			width: auto;
 			height: 380px;
-		}
-
-		.arrowsvg {
-		    width: 40px;
-		    height: auto;
-		    position: absolute;
-		    right: 7%;
-		    top: 25px;
-		}
-
-		h2 {
-			text-transform: uppercase;
-			font-size: 22px;
-			font-family: Montserrat;
-			margin: 2% 0;
-			line-height: 51px;
-			border-radius: 2px;
-			background-color: #6B614D;
-			color: #fff;
 		}
 
 		h3 {
@@ -589,15 +594,14 @@ main {
 			text-align: center;
 			font-size: 16px;
 			line-height: 30px;
-			font-family: Montserrat;
-			margin: 3% 0;
+			margin: 3% 0 1% 0;
 		}
 
 		p.title {
-			background-color: #e0d2b1;
-			color: #6B614D;
+			background-color: #f4f4f4;
+			color: #2a6993;
+			border-radius: 2px;
 		}
-
 		
 		li {
 			padding-bottom: 15px;
@@ -634,13 +638,6 @@ main {
 			font-size: 17px;
 		}
 
-		.arrow {
-			width: 19px;
-			height: 21px;
-			display: none;
-			padding: 1px 0 0 4px;
-		}
-
 		.compotitle {
 			display: none;
 		}
@@ -649,28 +646,9 @@ main {
 			display: none;
 		}
 
-		svg {
-			font-weight:bold;
-			max-width: 500px;
-			height: auto;
-			margin-left: 62px;
-			font-family: Montserrat;
-			margin-bottom: 4%;
-		}
-
 		img {
 			width: auto;
 			height: 380px;
-		}
-
-		h2 {
-			text-transform: uppercase;
-			font-size: 29px;
-			margin: 4% 0 0% 0;
-			background-color: #6B614D;
-			color: #fff;
-			border-radius: 2px;
-			width: 100%;
 		}
 
 		h3 {
@@ -681,14 +659,6 @@ main {
 			font-weight: 400;
 		}
 
-		.arrowsvg {
-		    width: 40px;
-		    height: auto;
-		    position: absolute;
-		    top: 24px;
-		    right: 7%;
-		}
-
 		li {
 			padding-bottom: 15px;
     		list-style-type: circle;
@@ -696,15 +666,13 @@ main {
 		}
 
 		.title {
-			font-size: 20px;
+			font-size: 25px;
 			line-height: 51px;
-			font-family: Montserrat;
 		}
 		
 		.desc {
 			font-size: 15px;
 		    line-height: 30px;
-		    font-family: Montserrat;
 		    margin: 2% 0%;
 		}
 
@@ -741,34 +709,9 @@ main {
 			display: none;
 		}
 
-		svg {
-			font-weight:bold;
-			max-width: 500px;
-			height:auto;
-			margin-left:-4px;
-			font-family: Montserrat;
-			margin-bottom:8%;
-		}
-
 		img {
 			width: auto;
 			height: 380px;
-		}
-
-		.arrowsvg {
-		    width: 40px;
-		    height: auto;
-		    position: absolute;
-		    top: 13px;
-		    right: 7%;
-		}
-
-		.arrowsvgplats {
-			width: 31px;
-		    height: auto;
-		    position: absolute;
-		    top: 13px;
-		    right: 19%;
 		}
 
 		h3 {
@@ -779,27 +722,14 @@ main {
 		    font-weight: 400;
 		}
 
-		h4 {
-			font-size: 27px;
-			line-height: 46px;
-			font-family: Montserrat;
-			margin: 1% 0 1% 0;
-			background-color: #6B614D;
-			color: #fff;
-			border-radius: 2px;
-			text-align: center;
-		}
-
 		h5 {
 			font-weight: 400;
-			font-size: 26px;
+			font-size: 22px;
 			line-height: 37px;
-			font-family: Montserrat;
-			margin: 1% 15%;
-			background-color: #e0d2b1;
-			color: #6b614d;
-			border-radius: 2px;
-			text-align: center;
+			background-position: 95% -40%;
+			width: 72%;
+			margin: 0 auto;
+			margin-bottom: 2%;
 		}
 
 		li {
@@ -809,20 +739,19 @@ main {
 		}
 
 		.title {
-		    font-size: 18px;
+		    font-size: 19px;
 			line-height: 30px;
-			font-family: Montserrat;
-			background-color: #e0d2b1;
-			color: #6b614d;
+			background-color: #f4f4f4;
+			color: #2a6993;
 		    width: 70%;
 		    margin: 29px auto;
 		    border-radius: 2px;
+		    cursor: pointer;
 		}
 		
 		.desc {
 		    font-size: 15px;
 		    line-height: 30px;
-		    font-family: Montserrat;
 		    margin: 2% 0%;
 		}
 
@@ -861,13 +790,6 @@ main {
 			font-size: 17px;
 		}
 
-		.arrow {
-			width: 19px;
-			height: 21px;
-			display: none;
-			padding: 1px 0 0 4px;
-		}
-
 		.compotitle {
 			display: none;
 		}
@@ -876,52 +798,16 @@ main {
 			display: none;
 		}
 
-		svg {
-			font-weight:bold;
-			max-width: 500px;
-			height:auto;
-			margin-bottom: 6%;
-			margin-left:-4px;
-			font-family: Montserrat;
-		}
-
 		img {
 			width: auto;
 			height: 380px;
 		}
-
-		.arrowsvg {
-		    width: 40px;
-		    height: auto;
-		    position: absolute;
-		    top: 14px;
-		    right: 10%;
-		}
-
 		h3 {
 			font-size: 22px;
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			margin-bottom: 20px;
 			font-weight: 400;
-		}
-
-		h2 {
-			display: inline-block;
-			text-transform: uppercase;
-			font-size: 29px;
-			margin: 48px 0 35px 0;
-			background-color: #6B614D;
-			color: #fff;
-			border-radius: 2px;
-			width: 100%;
-		}
-
-		h2:hover {
-			background-color: #6B614D;
-			color: #fff;
-			border-radius: 2px;
-			width: 100%;
 		}
 
 		li {
@@ -931,16 +817,14 @@ main {
 		}
 
 		.title {
-			font-size: 20px;
+			font-size: 25px;
 		    line-height: 51px;
-		    font-family: Montserrat;
 		    margin: 2% 0%;
 		}
 		
 		.desc {
 			font-size: 15px;
 		    line-height: 30px;
-		    font-family: Montserrat;
 		    margin: 2% 0%;
 		}
 
@@ -971,13 +855,6 @@ main {
 			font-size: 17px;
 		}
 
-		.arrow {
-			width: 19px;
-			height: 21px;
-			display: none;
-			padding: 1px 0 0 4px;
-		}
-
 		.compotitle {
 			display: none;
 		}
@@ -986,26 +863,9 @@ main {
 			display: none;
 		}
 
-		svg {
-			font-weight:bold;
-			max-width: 500px;
-			height:auto;
-			margin-bottom: 3%;
-			margin-left:-4px;
-			font-family: Montserrat;
-		}
-
 		img {
 			width: auto;
 			height: 380px;
-		}
-
-		.arrowsvg {
-		    width: 40px;
-		    height: auto;
-		    position: absolute;
-		    top: 15px;
-		    right: 7%;
 		}
 
 		h3 {
@@ -1016,19 +876,6 @@ main {
 			font-weight: 400;
 		}
 
-		h2 {
-			text-transform: uppercase;
-			font-size: 29px;
-			margin: 48px 0 35px 0;
-		}
-
-		h2:hover {
-			background-color: #6B614D;
-			color: #fff;
-			border-radius: 2px;
-			width: 100%;
-		}
-
 		li {
 			padding-bottom: 15px;
 			list-style-type: circle;
@@ -1036,21 +883,19 @@ main {
 		}
 
 		.title {
-			font-size: 20px;
+			font-size: 25px;
 		    line-height: 51px;
-		    font-family: Montserrat;
 		    margin: 2% 0%;
-			background-color: #6B614D;
-			color: #fff;
+			background-color: #F4F4F4;
+			color: #2A6993;
 			border-radius: 2px;
 			width: 100%;
 		}
 		
 		.desc {
-			font-size: 15px;
-		    line-height: 30px;
-		    font-family: Montserrat;
-		    margin: 2% 0%;
+			margin: 2% 0%;
+			line-height: 30px;
+		    font-size: 15px;
 		}
 
 		button {
@@ -1069,7 +914,6 @@ main {
 			}
 		}
 	}
-
 }
 
 /* FOOTER */
@@ -1097,7 +941,6 @@ footer {
 	    display: inline-block;
 	    margin-right: 50px;
 	    text-transform: uppercase;
-	    text-decoration: none;
 	    color: #0e2046;
 	    padding: 3.5%;
 	}
@@ -1224,6 +1067,13 @@ footer {
 /* MEDIA QUERIES MAX WIDTH 1237PX*/
 @media all and (max-width : 1237px) {
 	main section:nth-child(2) {
+
+		main section:nth-child(2) {
+			#menusvgnav, #entreesvgnav, #platsvgnav, #dessertsvgnav, #drinksvgnav {
+				width: 500px;
+			}
+		}
+
 		img {
 			margin: 75px 0 0 -30px;
 			width: 260px
@@ -1242,14 +1092,9 @@ footer {
 	.hide {
 		display: none;
 	}
-
-	main section:nth-child(4) {
-		.container {
-			width: 100%;
-		}
-	}
 }
 
+/* MEDIA QUERIES MAX WIDTH 992PX & MIN WIDTH 780PX*/
 @media all and (max-width: 992px) and (min-width: 780px) {
 
 	body {
@@ -1266,9 +1111,23 @@ footer {
 		display: none;
 	}
 
+	main section:first-child {
+		background: url("../images/menu/backgroundresponsive.jpg") no-repeat;
+	}
+
+	main section:nth-child(2) {
+		#menusvgnav, #entreesvgnav, #platsvgnav, #dessertsvgnav, #drinksvgnav {
+			width: 500px;
+		}
+	}
+
+	
+
 	footer {
+		height: 130px;
+
 		.btn-credits {
-			padding: 15% 0%;
+			padding: 10% 0%;
 			margin-left: -17%
 		}
 	}
@@ -1302,10 +1161,35 @@ footer {
 		right: -322%;
 	}
 
+	body svg {
+		display: none;
+	}
+
+	body .menudevice {
+		display: block;
+	}
+
 	main section:first-child {
-		background: url("../images/menu/backgrounddevice.jpg") no-repeat;
-		background-size: cover;
-		background-position: top;
+		background-position: 0% 0%;
+		background-size: 200%;
+
+		h1 {
+			font-size: 60px;
+		}
+	}
+
+	main section:nth-child(2) {
+		h3 {
+			margin-top: 30px;
+		}
+
+		#h3menu {
+			margin-top: 0;
+		}
+
+		#navcarte {
+			margin-top: 14px;
+		}
 	}
 
 	main section:nth-child(3) {
@@ -1313,12 +1197,8 @@ footer {
 			margin-left: -40px;
 		}
 
-		.arrowsvg {
-		    width: 40px;
-		    height: auto;
-		    position: absolute;
-		    top: 20px;
-		    right: 7%;
+		h4.menudevice {
+			margin-bottom: 20px;
 		}
 	}
 
@@ -1327,38 +1207,25 @@ footer {
 			margin-left: -20px;
 		}
 
-		.arrowsvg {
-		    width: 40px;
-		    height: auto;
-		    position: absolute;
-		    top: 33px;
-		    right: 7%;
+		h4.menudevice {
+			margin-bottom: 40px;
 		}
 	}
 
 	main section:nth-child(5) { 
-		.title {
-			width: 65%;
-		}
 
 		h5 {
 			width: 70%;
 		}
 
-		.arrowsvg {
-		    width: 40px;
-		    height: auto;
-		    position: absolute;
-		    top: 10px;
-		    right: 7%;
-		}
-
-		.arrowsvgplats {
-			width: 25px;
-		    height: auto;
-		    position: absolute;
-		    top: 13.5px;
-		    right: 17.4%;
+		h4.menudevice {
+			font-size: 60px;
+			color: #2A6993;
+			margin: 0 auto;
+			text-align: center;
+			margin-bottom: 40px;
+			background: none;
+			font-family: Roboto;
 		}
 
 		svg {
@@ -1367,22 +1234,16 @@ footer {
 	}
 
 	main section:nth-child(6) {
-		.arrowsvg {
-		    width: 40px;
-		    height: auto;
-		    position: absolute;
-		    top: 20px;
-		    right: 7%;
+		
+		h4.menudevice {
+			margin-bottom: 40px;
 		}
 	}
 
 	main section:last-child {
-		.arrowsvg {
-		    width: 40px;
-		    height: auto;
-		    position: absolute;
-		    top: 20px;
-		    right: 7%;
+
+		h4.menudevice {
+			margin-bottom: 40px;
 		}
 	}
 
@@ -1391,6 +1252,7 @@ footer {
 
 		.btn-credits {
 		    margin: 7px 0px 0px -10px;
+		    padding: 10% 0;
 		}
 	}
 }
@@ -1399,24 +1261,127 @@ footer {
 @media all and (max-width : 380px) {
 	body {
 		overflow-x :hidden;
+		
+		h4.menudevice {
+			font-size: 35px;
+			color: #2A6993;
+			margin: 0 auto;
+			text-align: center;
+			display: block;
+		}
+
+		.opened {
+		    text-transform: uppercase;
+		    font-size: 25px;
+		    margin: 0 0 2% 0;
+		    line-height: 51px;
+		    border-radius: 2px;
+		    color: #F4F4F4;
+		    background: #2A6993 url(../images/menu/arrowup.svg) no-repeat;
+            background-position: 96% 8px;
+    		background-size: 20px 30px;
+		    cursor: pointer;
+		    opacity: 0.9;
+		    text-align: center;
+		}
+
+		.closed {
+			text-transform: uppercase;
+		    font-size: 25px;
+	        margin: 0 0 2% 0;
+		    line-height: 51px;
+		    border-radius: 2px;
+		    color: #2A6993;
+			background: #F4F4F4 url(../images/menu/arrowdown.svg) no-repeat;
+	        background-position: 96% 8px;
+			background-size: 20px 30px;
+			color: #2A6993;
+			cursor: pointer;
+			text-align: center;
+		}
+
 	}
 
 	header #headersocial {
 		display: none;
 	}
 
-	#progress, .arrowsvg, .arrowsvgplats {
+	#progress {
 		display: none;
 	}
 
-	main section:nth-child(3) svg {
-		margin-left: 0px;
-		margin-right: -10px;
+	.mobile-nav .text {
+		font-size: 10px;
+		bottom: 8px;
+		position: absolute;
+		top: 73%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 
-	main section:nth-child(4) svg {
-		margin-left: 0px;
-		margin-right: 3px;
+	main section:first-child {
+		height: 91%;
+	    background-size: 338% 100%;
+    	background-position: 64% 40%;
+
+		#headerdesc {
+			padding-top: 220px;
+		}
+
+		h1 {
+			font-size : 50px;
+		}
+	}
+
+	main section:nth-child(3) {
+
+		h2 {
+			font-size: 16px;
+			margin-top: 23px;
+		}
+
+		h4 {
+			font-size: 40px;
+		}
+
+		p {
+			font-size: 14px;
+		}
+
+		svg {
+			margin-left: 0px;
+			margin-right: -10px;
+		}
+
+		ul li {
+			font-size: 12px;
+		}
+
+	}
+
+	main section:nth-child(4) {
+
+		h2 {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+
+		h4 {
+			font-size: 40px;
+		}
+
+		p {
+			font-size: 14px;
+		}
+
+		svg {
+			margin-left: 0px;
+			margin-right: 3px;
+		}
+
+		ul li {
+			font-size: 12px;
+		}
 	}
 
 	main section:nth-child(5) {
@@ -1426,10 +1391,32 @@ footer {
 			margin-right: 3px;
 		}
 
-		h5 {
+		p {
+			font-size: 10px;
+		}
+
+		ul li {
+			font-size: 12px;
+		}
+
+		h4.menudevice {
+			font-size: 40px;
+		}
+
+		#meat h4 {
+			margin-top: 15px;
+		}
+
+		h4 {
 			font-size: 20px;
-			width: 85%;
-			margin-left: 30px;
+		}
+
+		h5 {
+		    font-size: 18px;
+		    width: 88%;
+		    margin: 0 auto;
+		    background-image: none;
+		    margin-top: 13px;
 		}
 
 		.title {
@@ -1440,6 +1427,52 @@ footer {
 
 		#compo3, #poissonsdemer {
 			margin-bottom: 0px;
+		}
+	}
+
+	main section:nth-child(6) {
+
+		h4.menudevice {
+			font-size: 40px;
+		}
+		
+		h2 {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 12px;
+		}
+
+		ul li {
+			font-size: 10px;
+		}
+
+	}
+
+	main section:last-child {
+
+		h4.menudevice {
+			font-size: 40px;
+		}
+
+		h4 {
+			margin-top: 20px;
+			font-size: 20px;
+		}
+		
+		h2 {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 12px;
+		}
+
+		ul li {
+			font-size: 10px;
 		}
 	}
 

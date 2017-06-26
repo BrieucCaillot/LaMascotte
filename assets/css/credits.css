@@ -147,10 +147,10 @@ header {
     width: 17px;
     padding-top: 4px; }
   .mobile-nav .text {
-    font-size: 10px;
+    font-size: 13px;
     bottom: 8px;
     position: absolute;
-    top: 80%;
+    top: 73%;
     left: 50%;
     transform: translate(-50%, -50%); }
 
@@ -165,7 +165,6 @@ main section:first-child {
     font-size: 60px;
     color: #FFF;
     z-index: 2;
-    font-family: Montserrat;
     margin: 0 auto;
     padding: 50px 0; }
 main section:last-child {
@@ -181,9 +180,9 @@ main section:last-child {
     font-size: 20px;
     font-weight: bold; }
   main section:last-child p {
-    line-height: 36px;
+    line-height: 46px;
     font-weight: 100;
-    font-size: 17px;
+    font-size: 20px;
     padding: 18% 0; }
 
 /* FOOTER */
@@ -306,10 +305,16 @@ footer {
   header .progressContainer {
     top: 69px; }
 
+  h1 {
+    width: 90%;
+    line-height: 90px;
+    font-size: 60px; }
+
   footer {
     height: 130px; }
     footer .btn-credits {
-      padding: 10% 0; } }
+      padding: 10% 0;
+      margin: 7px 0px 0px -10px; } }
 @media all and (max-width: 992px) and (min-width: 780px) {
   body {
     overflow-x: hidden;
@@ -321,6 +326,11 @@ footer {
 
   #progress {
     display: none; }
+
+  h1 {
+    width: 90%;
+    line-height: 90px;
+    font-size: 60px; }
 
   main section:last-child img {
     width: 50%; }
@@ -340,10 +350,22 @@ footer {
   .hide {
     display: none; }
 
+  main section:first-child {
+    background-size: 140% 60%;
+    background-position: 30% 0%; }
+    main section:first-child #headerdesc {
+      padding-top: 120px; }
+    main section:first-child h1 {
+      width: 90%;
+      line-height: 90px;
+      font-size: 60px; }
+
   main section:last-child img {
     width: 50%; }
   main section:last-child p {
-    padding: 5% 0; }
+    padding: 5% 0;
+    font-size: 23px;
+    line-height: 60px; }
 
   header .progressContainer {
     top: 69px; }
@@ -359,7 +381,8 @@ footer {
     margin-top: 400px; }
     main
     footer .btn-credits {
-      padding: 7% 0; } }
+      margin: 7px 0px 0px -10px;
+      padding: 10% 0; } }
 /* MEDIA QUERIES MAX WIDTH 380PX */
 @media all and (max-width: 380px) {
   body {
@@ -371,11 +394,30 @@ footer {
   #progress {
     display: none; }
 
+  .mobile-nav .text {
+    font-size: 10px;
+    bottom: 8px;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+  main section:first-child {
+    height: 91%;
+    background-size: 350% 110%; }
+    main section:first-child #headerdesc {
+      padding-top: 160px; }
+    main section:first-child h1 {
+      font-size: 45px;
+      line-height: 70px; }
+
   main section:last-child img {
     width: 70%;
     margin-left: -2%; }
   main section:last-child p {
-    padding: 5% 0; }
+    padding: 5% 0;
+    font-size: 17px;
+    line-height: 50px; }
 
   footer {
     height: 268px; }

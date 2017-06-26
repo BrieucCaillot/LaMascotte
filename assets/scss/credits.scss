@@ -218,12 +218,12 @@ header {
 	}
 
 	.text {
-		font-size: 10px;
-		bottom: 8px;
-		position: absolute;
-		top: 80%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		font-size: 13px;
+	    bottom: 8px;
+	    position: absolute;
+	    top: 73%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
 	}
 }
 
@@ -243,7 +243,6 @@ main {
 			font-size: 60px;
 			color: #FFF;
 			z-index: 2;
-			font-family: Montserrat;
 			margin: 0 auto;
 			padding: 50px 0;
 		}
@@ -269,9 +268,9 @@ main {
 		}
 
 		p {
-			line-height: 36px;
+			line-height: 46px;
 			font-weight: 100;
-			font-size: 17px;
+			font-size: 20px;
 			padding: 18% 0;
 		}
 	}
@@ -445,11 +444,18 @@ footer {
 		top: 69px;
 	}
 
+	h1 {
+	    width: 90%;
+	    line-height: 90px;
+	    font-size: 60px;
+	}
+
 	footer {
 		height: 130px;
 
 		.btn-credits {
 			padding: 10% 0;
+			margin: 7px 0px 0px -10px;
 		}
 	}
 }
@@ -468,6 +474,12 @@ footer {
 
 	#progress {
 		display: none;
+	}
+
+	h1 {
+	    width: 90%;
+	    line-height: 90px;
+	    font-size: 60px;
 	}
 
 	main section:last-child {
@@ -500,6 +512,21 @@ footer {
 		display: none;
 	}
 
+	main section:first-child {
+	    background-size: 140% 60%;
+    	background-position: 30% 0%;
+
+		#headerdesc {
+			padding-top: 120px;
+		}
+
+		h1 {
+		    width: 90%;
+		    line-height: 90px;
+		    font-size: 60px;
+		}
+	}
+
 	main section:last-child {
 		img {
 			width: 50%;
@@ -507,10 +534,10 @@ footer {
 
 		p {
 			padding: 5% 0;
+			font-size: 23px;
+			line-height: 60px;
 		}
 	} 
-
-
 
 	header .progressContainer {
 		top: 69px;
@@ -529,7 +556,8 @@ footer {
 		margin-top: 400px;
 
 		.btn-credits {
-			padding: 7% 0;
+			margin: 7px 0px 0px -10px;
+			padding: 10% 0;
 		}
 	}
 }
@@ -547,6 +575,29 @@ footer {
 	#progress {
 		display: none;
 	}
+
+	.mobile-nav .text {
+		font-size: 10px;
+		bottom: 8px;
+		position: absolute;
+		top: 73%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	main section:first-child {
+		height: 91%;
+		background-size: 350% 110%;
+
+		#headerdesc {
+			padding-top: 160px;
+		}
+
+		h1 {
+			font-size : 45px;
+			line-height: 70px;
+		}
+	}
 	
 	main section:last-child {
 		img {
@@ -556,6 +607,8 @@ footer {
 
 		p {
 			padding: 5% 0;
+			font-size: 17px;
+			line-height: 50px;
 		}
 	} 
 

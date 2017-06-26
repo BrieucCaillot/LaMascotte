@@ -2,10 +2,54 @@ body {
   margin: 0;
   padding: 0;
   font-family: roboto;
-  -webkit-transition: 0.5s;
-  /* Safari */
-  transition: 0.5s;
   overflow-x: hidden; }
+  body svg {
+    font-weight: bold;
+    max-width: 500px;
+    height: auto;
+    margin-left: 5px;
+    font-family: Roboto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 40px; }
+  body .menudevice {
+    font-size: 60px;
+    color: #2A6993;
+    margin: 0 auto;
+    text-align: center;
+    display: none; }
+  body .opened {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: Roboto;
+    margin: 0 0 2% 0;
+    line-height: 51px;
+    border-radius: 2px;
+    color: #F4F4F4;
+    background: #2A6993 url(../images/menu/arrowup.svg) no-repeat;
+    background-position: 97% 5px;
+    background-size: 70px 30px;
+    cursor: pointer;
+    opacity: 0.9;
+    text-align: center; }
+  body .closed {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: Roboto;
+    margin: 0 0 2% 0;
+    line-height: 51px;
+    border-radius: 2px;
+    color: #2A6993;
+    background: #F4F4F4 url(../images/menu/arrowdown.svg) no-repeat;
+    background-position: 97% 5px;
+    background-size: 70px 30px;
+    color: #2A6993;
+    cursor: pointer;
+    text-align: center; }
+  body .closed:hover {
+    background-color: #2A6993;
+    color: #fff;
+    opacity: 0.9; }
   body .button {
     position: relative;
     display: block;
@@ -266,10 +310,10 @@ header {
     width: 17px;
     padding-top: 4px; }
   .mobile-nav .text {
-    font-size: 10px;
+    font-size: 13px;
     bottom: 8px;
     position: absolute;
-    top: 80%;
+    top: 73%;
     left: 50%;
     transform: translate(-50%, -50%); }
 
@@ -286,17 +330,17 @@ main {
     height: 500px;
     background: url("../images/menu/background.jpg") no-repeat;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: 80% -190px;
     background-size: cover; }
     main section:first-child #headerdesc {
-      padding: 185px 0px; }
+      padding: 150px 0px; }
     main section:first-child h1 {
-      font-size: 60px;
+      font-size: 70px;
       color: #FFF;
       z-index: 2;
-      font-family: Montserrat;
-      margin: 0 auto;
-      padding: 20px 0; }
+      padding: 30px 0;
+      letter-spacing: 8px;
+      margin: 0 auto; }
     main section:first-child button {
       border: 2px solid #ffffff;
       z-index: 2;
@@ -324,18 +368,8 @@ main {
     background-color: #F4F4F4; }
     main section:nth-child(2) .row {
       padding: 1% 0; }
-    main section:nth-child(2) .arrow {
-      width: 19px;
-      height: 21px;
-      display: none;
-      padding: 1px 0 0 4px; }
-    main section:nth-child(2) svg {
-      font-weight: bold;
-      max-width: 410px;
-      height: auto;
-      margin-bottom: 3%;
-      margin-left: -5px;
-      font-family: Montserrat; }
+    main section:nth-child(2) #dessertsvgnav, main section:nth-child(2) #drinksvgnav {
+      width: 400px; }
     main section:nth-child(2) img {
       width: auto;
       height: 380px; }
@@ -373,53 +407,25 @@ main {
     padding: 71px 0 0 0;
     background-color: #fff;
     position: relative; }
-    main section:nth-child(3) .arrow {
-      width: 19px;
-      height: 21px;
-      display: none;
-      padding: 1px 0 0 4px; }
     main section:nth-child(3) .title {
       font-size: 20px;
       line-height: 30px;
-      font-family: Montserrat;
       margin: 2% 0%; }
     main section:nth-child(3) .desc {
       font-size: 15px;
       line-height: 30px;
       margin-bottom: 24px;
-      font-family: Montserrat;
       margin: 2% 0%; }
     main section:nth-child(3) #entree1, main section:nth-child(3) #plat1, main section:nth-child(3) #dessert1,
     main section:nth-child(3) #entree2, main section:nth-child(3) #plat2, main section:nth-child(3) #dessert2,
-    main section:nth-child(3) #plat3, main section:nth-child(3) #dessert3 {
+    main section:nth-child(3) #plat3, main section:nth-child(3) #dessert3,
+    main section:nth-child(3) #aboutmascotte, main section:nth-child(3) #aboutcocotte, main section:nth-child(3) #aboutmarmotte {
       display: none; }
     main section:nth-child(3) #menus {
       margin: 47px 0; }
-    main section:nth-child(3) svg {
-      font-weight: bold;
-      max-width: 500px;
-      height: auto;
-      margin-bottom: 4%;
-      margin-left: 5px;
-      font-family: Montserrat; }
     main section:nth-child(3) img {
       width: auto;
       height: 380px; }
-    main section:nth-child(3) .arrowsvg {
-      width: 40px;
-      height: auto;
-      position: absolute;
-      right: 7%;
-      top: 25px; }
-    main section:nth-child(3) h2 {
-      text-transform: uppercase;
-      font-size: 22px;
-      font-family: Montserrat;
-      margin: 2% 0;
-      line-height: 51px;
-      border-radius: 2px;
-      background-color: #6B614D;
-      color: #fff; }
     main section:nth-child(3) h3 {
       font-size: 17px;
       text-transform: uppercase;
@@ -430,11 +436,11 @@ main {
       text-align: center;
       font-size: 16px;
       line-height: 30px;
-      font-family: Montserrat;
-      margin: 3% 0; }
+      margin: 3% 0 1% 0; }
     main section:nth-child(3) p.title {
-      background-color: #e0d2b1;
-      color: #6B614D; }
+      background-color: #f4f4f4;
+      color: #2a6993;
+      border-radius: 2px; }
     main section:nth-child(3) li {
       padding-bottom: 15px;
       list-style-type: circle;
@@ -459,57 +465,29 @@ main {
     background-color: #FFF; }
     main section:nth-child(4) .home-subtitle {
       font-size: 17px; }
-    main section:nth-child(4) .arrow {
-      width: 19px;
-      height: 21px;
-      display: none;
-      padding: 1px 0 0 4px; }
     main section:nth-child(4) .compotitle {
       display: none; }
     main section:nth-child(4) #entreecold ul, main section:nth-child(4) #entreehot ul {
       display: none; }
-    main section:nth-child(4) svg {
-      font-weight: bold;
-      max-width: 500px;
-      height: auto;
-      margin-left: 62px;
-      font-family: Montserrat;
-      margin-bottom: 4%; }
     main section:nth-child(4) img {
       width: auto;
       height: 380px; }
-    main section:nth-child(4) h2 {
-      text-transform: uppercase;
-      font-size: 29px;
-      margin: 4% 0 0% 0;
-      background-color: #6B614D;
-      color: #fff;
-      border-radius: 2px;
-      width: 100%; }
     main section:nth-child(4) h3 {
       font-size: 22px;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 20px;
       font-weight: 400; }
-    main section:nth-child(4) .arrowsvg {
-      width: 40px;
-      height: auto;
-      position: absolute;
-      top: 24px;
-      right: 7%; }
     main section:nth-child(4) li {
       padding-bottom: 15px;
       list-style-type: circle;
       text-align: left; }
     main section:nth-child(4) .title {
-      font-size: 20px;
-      line-height: 51px;
-      font-family: Montserrat; }
+      font-size: 25px;
+      line-height: 51px; }
     main section:nth-child(4) .desc {
       font-size: 15px;
       line-height: 30px;
-      font-family: Montserrat;
       margin: 2% 0%; }
     main section:nth-child(4) button {
       border: 2px solid #000000;
@@ -533,70 +511,39 @@ main {
     main section:nth-child(5) #huitresdisplay, main section:nth-child(5) #crustacesdisplay, main section:nth-child(5) #poissonsdemerdisplay, main section:nth-child(5) #homardsdisplay, main section:nth-child(5) #epiceriedisplay,
     main section:nth-child(5) #meatdisplay, main section:nth-child(5) h5, main section:nth-child(5) p {
       display: none; }
-    main section:nth-child(5) svg {
-      font-weight: bold;
-      max-width: 500px;
-      height: auto;
-      margin-left: -4px;
-      font-family: Montserrat;
-      margin-bottom: 8%; }
     main section:nth-child(5) img {
       width: auto;
       height: 380px; }
-    main section:nth-child(5) .arrowsvg {
-      width: 40px;
-      height: auto;
-      position: absolute;
-      top: 13px;
-      right: 7%; }
-    main section:nth-child(5) .arrowsvgplats {
-      width: 31px;
-      height: auto;
-      position: absolute;
-      top: 13px;
-      right: 19%; }
     main section:nth-child(5) h3 {
       font-size: 17px;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 20px;
       font-weight: 400; }
-    main section:nth-child(5) h4 {
-      font-size: 27px;
-      line-height: 46px;
-      font-family: Montserrat;
-      margin: 1% 0 1% 0;
-      background-color: #6B614D;
-      color: #fff;
-      border-radius: 2px;
-      text-align: center; }
     main section:nth-child(5) h5 {
       font-weight: 400;
-      font-size: 26px;
+      font-size: 22px;
       line-height: 37px;
-      font-family: Montserrat;
-      margin: 1% 15%;
-      background-color: #e0d2b1;
-      color: #6b614d;
-      border-radius: 2px;
-      text-align: center; }
+      background-position: 95% -40%;
+      width: 72%;
+      margin: 0 auto;
+      margin-bottom: 2%; }
     main section:nth-child(5) li {
       padding-bottom: 15px;
       list-style-type: circle;
       text-align: left; }
     main section:nth-child(5) .title {
-      font-size: 18px;
+      font-size: 19px;
       line-height: 30px;
-      font-family: Montserrat;
-      background-color: #e0d2b1;
-      color: #6b614d;
+      background-color: #f4f4f4;
+      color: #2a6993;
       width: 70%;
       margin: 29px auto;
-      border-radius: 2px; }
+      border-radius: 2px;
+      cursor: pointer; }
     main section:nth-child(5) .desc {
       font-size: 15px;
       line-height: 30px;
-      font-family: Montserrat;
       margin: 2% 0%; }
     main section:nth-child(5) strong {
       font-size: 25px;
@@ -622,64 +569,30 @@ main {
     background-color: #FFF; }
     main section:nth-child(6) .home-subtitle {
       font-size: 17px; }
-    main section:nth-child(6) .arrow {
-      width: 19px;
-      height: 21px;
-      display: none;
-      padding: 1px 0 0 4px; }
     main section:nth-child(6) .compotitle {
       display: none; }
     main section:nth-child(6) #homemade ul, main section:nth-child(6) #icecream ul {
       display: none; }
-    main section:nth-child(6) svg {
-      font-weight: bold;
-      max-width: 500px;
-      height: auto;
-      margin-bottom: 6%;
-      margin-left: -4px;
-      font-family: Montserrat; }
     main section:nth-child(6) img {
       width: auto;
       height: 380px; }
-    main section:nth-child(6) .arrowsvg {
-      width: 40px;
-      height: auto;
-      position: absolute;
-      top: 14px;
-      right: 10%; }
     main section:nth-child(6) h3 {
       font-size: 22px;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 20px;
       font-weight: 400; }
-    main section:nth-child(6) h2 {
-      display: inline-block;
-      text-transform: uppercase;
-      font-size: 29px;
-      margin: 48px 0 35px 0;
-      background-color: #6B614D;
-      color: #fff;
-      border-radius: 2px;
-      width: 100%; }
-    main section:nth-child(6) h2:hover {
-      background-color: #6B614D;
-      color: #fff;
-      border-radius: 2px;
-      width: 100%; }
     main section:nth-child(6) li {
       padding-bottom: 15px;
       list-style-type: circle;
       text-align: left; }
     main section:nth-child(6) .title {
-      font-size: 20px;
+      font-size: 25px;
       line-height: 51px;
-      font-family: Montserrat;
       margin: 2% 0%; }
     main section:nth-child(6) .desc {
       font-size: 15px;
       line-height: 30px;
-      font-family: Montserrat;
       margin: 2% 0%; }
     main section:nth-child(6) button {
       border: 2px solid #000000;
@@ -699,64 +612,35 @@ main {
     background-color: #FFF; }
     main section:last-child .home-subtitle {
       font-size: 17px; }
-    main section:last-child .arrow {
-      width: 19px;
-      height: 21px;
-      display: none;
-      padding: 1px 0 0 4px; }
     main section:last-child .compotitle {
       display: none; }
     main section:last-child #drink1 ul, main section:last-child #drink2 ul, main section:last-child #drink3 ul, main section:last-child #drink4 ul {
       display: none; }
-    main section:last-child svg {
-      font-weight: bold;
-      max-width: 500px;
-      height: auto;
-      margin-bottom: 3%;
-      margin-left: -4px;
-      font-family: Montserrat; }
     main section:last-child img {
       width: auto;
       height: 380px; }
-    main section:last-child .arrowsvg {
-      width: 40px;
-      height: auto;
-      position: absolute;
-      top: 15px;
-      right: 7%; }
     main section:last-child h3 {
       font-size: 22px;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 20px;
       font-weight: 400; }
-    main section:last-child h2 {
-      text-transform: uppercase;
-      font-size: 29px;
-      margin: 48px 0 35px 0; }
-    main section:last-child h2:hover {
-      background-color: #6B614D;
-      color: #fff;
-      border-radius: 2px;
-      width: 100%; }
     main section:last-child li {
       padding-bottom: 15px;
       list-style-type: circle;
       text-align: left; }
     main section:last-child .title {
-      font-size: 20px;
+      font-size: 25px;
       line-height: 51px;
-      font-family: Montserrat;
       margin: 2% 0%;
-      background-color: #6B614D;
-      color: #fff;
+      background-color: #F4F4F4;
+      color: #2A6993;
       border-radius: 2px;
       width: 100%; }
     main section:last-child .desc {
-      font-size: 15px;
+      margin: 2% 0%;
       line-height: 30px;
-      font-family: Montserrat;
-      margin: 2% 0%; }
+      font-size: 15px; }
     main section:last-child button {
       border: 2px solid #000000;
       background-color: transparent; }
@@ -790,7 +674,6 @@ footer {
     display: inline-block;
     margin-right: 50px;
     text-transform: uppercase;
-    text-decoration: none;
     color: #0e2046;
     padding: 3.5%; }
   footer .form-newsletter {
@@ -876,6 +759,8 @@ footer {
     height: 110px; } }
 /* MEDIA QUERIES MAX WIDTH 1237PX*/
 @media all and (max-width: 1237px) {
+  main section:nth-child(2) main section:nth-child(2) #menusvgnav, main section:nth-child(2) main section:nth-child(2) #entreesvgnav, main section:nth-child(2) main section:nth-child(2) #platsvgnav, main section:nth-child(2) main section:nth-child(2) #dessertsvgnav, main section:nth-child(2) main section:nth-child(2) #drinksvgnav {
+    width: 500px; }
   main section:nth-child(2) img {
     margin: 75px 0 0 -30px;
     width: 260px; }
@@ -888,10 +773,8 @@ footer {
     display: block; }
 
   .hide {
-    display: none; }
-
-  main section:nth-child(4) .container {
-    width: 100%; } }
+    display: none; } }
+/* MEDIA QUERIES MAX WIDTH 992PX & MIN WIDTH 780PX*/
 @media all and (max-width: 992px) and (min-width: 780px) {
   body {
     overflow-x: hidden;
@@ -904,9 +787,17 @@ footer {
   #progress {
     display: none; }
 
-  footer .btn-credits {
-    padding: 15% 0%;
-    margin-left: -17%; } }
+  main section:first-child {
+    background: url("../images/menu/backgroundresponsive.jpg") no-repeat; }
+
+  main section:nth-child(2) #menusvgnav, main section:nth-child(2) #entreesvgnav, main section:nth-child(2) #platsvgnav, main section:nth-child(2) #dessertsvgnav, main section:nth-child(2) #drinksvgnav {
+    width: 500px; }
+
+  footer {
+    height: 130px; }
+    footer .btn-credits {
+      padding: 10% 0%;
+      margin-left: -17%; } }
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width: 780px) {
   body {
@@ -929,98 +820,193 @@ footer {
     position: absolute;
     right: -322%; }
 
+  body svg {
+    display: none; }
+
+  body .menudevice {
+    display: block; }
+
   main section:first-child {
-    background: url("../images/menu/backgrounddevice.jpg") no-repeat;
-    background-size: cover;
-    background-position: top; }
+    background-position: 0% 0%;
+    background-size: 200%; }
+    main section:first-child h1 {
+      font-size: 60px; }
+
+  main section:nth-child(2) h3 {
+    margin-top: 30px; }
+  main section:nth-child(2) #h3menu {
+    margin-top: 0; }
+  main section:nth-child(2) #navcarte {
+    margin-top: 14px; }
 
   main section:nth-child(3) svg {
     margin-left: -40px; }
-  main section:nth-child(3) .arrowsvg {
-    width: 40px;
-    height: auto;
-    position: absolute;
-    top: 20px;
-    right: 7%; }
+  main section:nth-child(3) h4.menudevice {
+    margin-bottom: 20px; }
 
   main section:nth-child(4) svg {
     margin-left: -20px; }
-  main section:nth-child(4) .arrowsvg {
-    width: 40px;
-    height: auto;
-    position: absolute;
-    top: 33px;
-    right: 7%; }
+  main section:nth-child(4) h4.menudevice {
+    margin-bottom: 40px; }
 
-  main section:nth-child(5) .title {
-    width: 65%; }
   main section:nth-child(5) h5 {
     width: 70%; }
-  main section:nth-child(5) .arrowsvg {
-    width: 40px;
-    height: auto;
-    position: absolute;
-    top: 10px;
-    right: 7%; }
-  main section:nth-child(5) .arrowsvgplats {
-    width: 25px;
-    height: auto;
-    position: absolute;
-    top: 13.5px;
-    right: 17.4%; }
+  main section:nth-child(5) h4.menudevice {
+    font-size: 60px;
+    color: #2A6993;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+    background: none;
+    font-family: Roboto; }
   main section:nth-child(5) svg {
     margin-left: -60px; }
 
-  main section:nth-child(6) .arrowsvg {
-    width: 40px;
-    height: auto;
-    position: absolute;
-    top: 20px;
-    right: 7%; }
+  main section:nth-child(6) h4.menudevice {
+    margin-bottom: 40px; }
 
-  main section:last-child .arrowsvg {
-    width: 40px;
-    height: auto;
-    position: absolute;
-    top: 20px;
-    right: 7%; }
+  main section:last-child h4.menudevice {
+    margin-bottom: 40px; }
 
   footer {
     height: 160px; }
     footer .btn-credits {
-      margin: 7px 0px 0px -10px; } }
+      margin: 7px 0px 0px -10px;
+      padding: 10% 0; } }
 /* MEDIA QUERIES MAX WIDTH 380PX */
 @media all and (max-width: 380px) {
   body {
     overflow-x: hidden; }
+    body h4.menudevice {
+      font-size: 35px;
+      color: #2A6993;
+      margin: 0 auto;
+      text-align: center;
+      display: block; }
+    body .opened {
+      text-transform: uppercase;
+      font-size: 25px;
+      margin: 0 0 2% 0;
+      line-height: 51px;
+      border-radius: 2px;
+      color: #F4F4F4;
+      background: #2A6993 url(../images/menu/arrowup.svg) no-repeat;
+      background-position: 96% 8px;
+      background-size: 20px 30px;
+      cursor: pointer;
+      opacity: 0.9;
+      text-align: center; }
+    body .closed {
+      text-transform: uppercase;
+      font-size: 25px;
+      margin: 0 0 2% 0;
+      line-height: 51px;
+      border-radius: 2px;
+      color: #2A6993;
+      background: #F4F4F4 url(../images/menu/arrowdown.svg) no-repeat;
+      background-position: 96% 8px;
+      background-size: 20px 30px;
+      color: #2A6993;
+      cursor: pointer;
+      text-align: center; }
 
   header #headersocial {
     display: none; }
 
-  #progress, .arrowsvg, .arrowsvgplats {
+  #progress {
     display: none; }
 
+  .mobile-nav .text {
+    font-size: 10px;
+    bottom: 8px;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+  main section:first-child {
+    height: 91%;
+    background-size: 338% 100%;
+    background-position: 64% 40%; }
+    main section:first-child #headerdesc {
+      padding-top: 220px; }
+    main section:first-child h1 {
+      font-size: 50px; }
+
+  main section:nth-child(3) h2 {
+    font-size: 16px;
+    margin-top: 23px; }
+  main section:nth-child(3) h4 {
+    font-size: 40px; }
+  main section:nth-child(3) p {
+    font-size: 14px; }
   main section:nth-child(3) svg {
     margin-left: 0px;
     margin-right: -10px; }
+  main section:nth-child(3) ul li {
+    font-size: 12px; }
 
+  main section:nth-child(4) h2 {
+    font-size: 20px;
+    margin-bottom: 30px; }
+  main section:nth-child(4) h4 {
+    font-size: 40px; }
+  main section:nth-child(4) p {
+    font-size: 14px; }
   main section:nth-child(4) svg {
     margin-left: 0px;
     margin-right: 3px; }
+  main section:nth-child(4) ul li {
+    font-size: 12px; }
 
   main section:nth-child(5) svg {
     margin-left: 0px;
     margin-right: 3px; }
+  main section:nth-child(5) p {
+    font-size: 10px; }
+  main section:nth-child(5) ul li {
+    font-size: 12px; }
+  main section:nth-child(5) h4.menudevice {
+    font-size: 40px; }
+  main section:nth-child(5) #meat h4 {
+    margin-top: 15px; }
+  main section:nth-child(5) h4 {
+    font-size: 20px; }
   main section:nth-child(5) h5 {
-    font-size: 20px;
-    width: 85%;
-    margin-left: 30px; }
+    font-size: 18px;
+    width: 88%;
+    margin: 0 auto;
+    background-image: none;
+    margin-top: 13px; }
   main section:nth-child(5) .title {
     font-size: 15px;
     width: 80%;
     margin-left: 38px; }
   main section:nth-child(5) #compo3, main section:nth-child(5) #poissonsdemer {
     margin-bottom: 0px; }
+
+  main section:nth-child(6) h4.menudevice {
+    font-size: 40px; }
+  main section:nth-child(6) h2 {
+    font-size: 20px;
+    margin-bottom: 30px; }
+  main section:nth-child(6) p {
+    font-size: 12px; }
+  main section:nth-child(6) ul li {
+    font-size: 10px; }
+
+  main section:last-child h4.menudevice {
+    font-size: 40px; }
+  main section:last-child h4 {
+    margin-top: 20px;
+    font-size: 20px; }
+  main section:last-child h2 {
+    font-size: 20px;
+    margin-bottom: 30px; }
+  main section:last-child p {
+    font-size: 12px; }
+  main section:last-child ul li {
+    font-size: 10px; }
 
   footer {
     height: 290px;
