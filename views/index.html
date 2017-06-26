@@ -227,8 +227,8 @@
                 keyboardControl: true,
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
-                spaceBetween: 30,
-                effect: 'fade',
+                spaceBetween: 10,
+                effect: 'coverflow',
                 autoplay: 6000,
                 speed: 2000
                 });
@@ -242,7 +242,8 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="text-center">
                             <h3 class="home-subtitle">Découvrez</h3>
-                            <svg viewbox="-10 0 120 20">
+                            <h4 class="menudevice">LE MENU</h4>
+                            <svg id="#menusvg" viewbox="-10 0 120 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                         <stop offset="5%" stop-color="#326384"/>
@@ -254,20 +255,21 @@
                                         </path>
                                     </pattern>
                                 </defs>
-                                <text 
-                                text-anchor="middle" x="50" y="15" fill="url(#wave)" fill-opacity="0.6">LE MENU
-                                </text>
-                                <text 
-                                text-anchor="middle" x="50" y="15" fill="url(#gradient)" fill-opacity="0.5">LE MENU
-                                </text>
+                                <a href="/menu">
+                                    <text 
+                                    text-anchor="middle" x="50" y="15" fill="url(#wave)" fill-opacity="0.6">LE MENU
+                                    </text>
+                                    <text 
+                                    text-anchor="middle" x="50" y="15" fill="url(#gradient)" fill-opacity="0.5">LE MENU
+                                    </text>
+                                </a>
                             </svg>
                         </div>
                     </div> 
                 </div>
                 <div class="row" style="margin-top: 70px">
                     <div class="col-12 col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 hovermenu1">
-                        <!-- <img src="../static/images/main/soup.svg" alt=""> -->
-                        <h2>ENTRÉE</h2>
+                        <h2>ENTRÉES</h2>
                         <a href="/menu">
                             <button class="button button--nina" data-text="V O I R &nbsp; P L U S">
                                 <span>V</span>
@@ -284,7 +286,7 @@
                         <img src="../static/images/main/menu1.jpg" alt="">
                     </div>
                     <div class="col-12 col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6 hovermenu2">
-                        <h2>PLAT</h2>
+                        <h2>PLATS</h2>
                         <a href="/menu">
                             <button class="button button--nina" data-text="V O I R &nbsp; P L U S">
                                 <span>V</span>
@@ -303,7 +305,7 @@
                 </div>
                 <div class="row" style="margin-top: 30px">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 hovermenu3">
-                        <h2>DESSERT</h2>
+                        <h2>DESSERTS</h2>
                         <a href="/menu">
                             <button class="button button--nina" data-text="V O I R &nbsp; P L U S">
                                 <span>V</span>
@@ -352,7 +354,8 @@
                                     <div class="row">
                                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-5 text-right description">
                                             <h3 class="home-subtitle">Histoire</h3>
-                                            <svg viewbox="-7 0 120 20">
+                                            <h4 class="menudevice">LA MASCOTTE</h4>
+                                            <svg viewbox="-12 0 120 20">
                                                 <defs>
                                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                                                         <stop offset="5%" stop-color="#326384"/>
@@ -364,12 +367,14 @@
                                                         </path>
                                                     </pattern>
                                                 </defs>
-                                                <text 
-                                                    text-anchor="middle" x="50" y="15" font-family="Montserrat" fill="url(#wave)"  fill-opacity="0.6">LA MASCOTTE
-                                                </text>
-                                                <text 
-                                                    text-anchor="middle" x="50" y="15" font-family="Montserrat" fill="url(#gradient)" fill-opacity="0.5">LA MASCOTTE
-                                                </text>
+                                                    <a href="/about">
+                                                    <text 
+                                                        text-anchor="middle" x="50" y="15" fill="url(#wave)" fill-opacity="0.6">LA MASCOTTE
+                                                    </text>
+                                                    <text 
+                                                        text-anchor="middle" x="50" y="15" fill="url(#gradient)" fill-opacity="0.5">LA MASCOTTE
+                                                    </text>
+                                                </a>
                                             </svg>
                                             <p class="title">
                                                 Restaurant historique au coeur de Montmartre 
@@ -426,6 +431,7 @@
                                         </div>
                                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-5 description">
                                             <h3 class="home-subtitle">Dégustez</h3>
+                                            <h4 class="menudevice">L' ÉCAILLE</h4>
                                             <svg viewbox="16.5 0 120 20">
                                                 <defs>
                                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -438,12 +444,14 @@
                                                         </path>
                                                     </pattern>
                                                 </defs>
-                                                <text 
-                                                    text-anchor="middle" x="50" y="15" font-family="Montserrat" fill="url(#wave)"  fill-opacity="0.6">L'ÉCAILLE
-                                                </text>
-                                                <text 
-                                                    text-anchor="middle" x="50" y="15" font-family="Montserrat" fill="url(#gradient)" fill-opacity="0.5">L'ÉCAILLE
-                                                </text>
+                                                <a href="/about">
+                                                    <text 
+                                                        text-anchor="middle" x="50" y="15" fill="url(#wave)"  fill-opacity="0.6">L' ÉCAILLE
+                                                    </text>
+                                                    <text 
+                                                        text-anchor="middle" x="50" y="15" fill="url(#gradient)" fill-opacity="0.5">L' ÉCAILLE
+                                                    </text>
+                                                </a>
                                             </svg>
                                             <p class="title">
                                                 Dégustations, ventes à emporter, livraison de fruits de mer 
@@ -451,18 +459,6 @@
                                             <p class="desc">
                                                 C’est un zinc de quartier, à la clientèle mélangée et haute en couleur. On y retrouve l’ambiance d’un Montmartre de légende, sans la nostalgie d’un passé qui est ici toujours bien vivant. Et bon vivant.
                                             </p>
-                                            <a href="/booking">
-                                                <button class="button button--nina" data-text="R É S E R V E R">
-                                                    <span>R</span>
-                                                    <span>É</span>
-                                                    <span>S</span>
-                                                    <span>E</span>
-                                                    <span>R</span>
-                                                    <span>V</span>
-                                                    <span>E</span>
-                                                    <span>R</span>
-                                                </button>
-                                            </a>
                                             <a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/">
                                                 <button class="button button--nina" data-text="C O M M A N D E R">
                                                     <span>C</span>
@@ -474,6 +470,24 @@
                                                     <span>D</span>
                                                     <span>E</span>
                                                     <span>R</span>
+                                                </button>
+                                            </a>
+                                            <a href="/about">
+                                                <button class="button button--nina" data-text="E N &nbsp; S A V O I R &nbsp; P L U S">
+                                                    <span>E</span>
+                                                    <span>N</span>
+                                                    <span> </span>
+                                                    <span>S</span>
+                                                    <span>A</span>
+                                                    <span>V</span>
+                                                    <span>O</span>
+                                                    <span>I</span>
+                                                    <span>R</span>
+                                                    <span> </span>
+                                                    <span>P</span>
+                                                    <span>L</span>
+                                                    <span>U</span>
+                                                    <span>S</span>
                                                 </button>
                                             </a>
                                         </div>

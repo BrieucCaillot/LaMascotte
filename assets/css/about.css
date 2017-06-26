@@ -5,6 +5,12 @@ body {
   overflow-x: hidden; }
   body .row-reverse {
     flex-direction: row-reverse; }
+  body .menudevice {
+    font-size: 60px;
+    color: #2A6993;
+    margin: 0 auto;
+    text-align: center;
+    display: none; }
   body .button {
     position: relative;
     display: block;
@@ -265,10 +271,10 @@ header {
     width: 17px;
     padding-top: 4px; }
   .mobile-nav .text {
-    font-size: 10px;
+    font-size: 13px;
     bottom: 8px;
     position: absolute;
-    top: 80%;
+    top: 73%;
     left: 50%;
     transform: translate(-50%, -50%); }
 
@@ -280,19 +286,20 @@ main {
   /* HISTOIRE */
   /* L'ACTUALITE*/ }
   main section:first-child {
+    height: 500px;
     background: url("../images/about/background.jpg") no-repeat;
-    background-size: cover;
     background-attachment: fixed;
-    background-position: top; }
+    background-position: top;
+    background-size: cover; }
     main section:first-child #headerdesc {
-      padding: 185px 0px; }
+      padding: 150px 0px; }
     main section:first-child h1 {
-      font-size: 60px;
+      font-size: 70px;
       color: #FFF;
       z-index: 2;
-      font-family: Montserrat;
       margin: 0 auto;
-      padding: 20px 0; }
+      padding: 30px 0;
+      letter-spacing: 8px; }
     main section:first-child button {
       border: 2px solid #ffffff;
       z-index: 2;
@@ -331,7 +338,7 @@ main {
       height: auto;
       margin-bottom: 3%;
       margin-left: -5px;
-      font-family: Montserrat; }
+      font-family: Roboto; }
     main section:nth-child(2) img {
       width: auto;
       height: 380px; }
@@ -374,7 +381,7 @@ main {
     /* BAR */
     /*L'ECAILLE */ }
     main section:nth-child(3) svg {
-      font-family: montserrat;
+      font-family: Roboto;
       font-weight: bold;
       max-width: 480px;
       height: auto;
@@ -387,12 +394,14 @@ main {
     main section:nth-child(3) article:nth-child(2) {
       padding: 50px 0;
       background-color: #FFF; }
+      main section:nth-child(3) article:nth-child(2) #restaurantdisplay, main section:nth-child(3) article:nth-child(2) #restaurantreduce {
+        display: none; }
       main section:nth-child(3) article:nth-child(2) svg {
-        font-weight: bold;
-        max-width: 500px;
         height: auto;
-        font-family: Montserrat;
-        margin: 0px 0 4.7% 130px; }
+        margin: 0 auto;
+        margin-left: 160px;
+        margin-bottom: 3%;
+        margin-right: -20px; }
       main section:nth-child(3) article:nth-child(2) img {
         width: 100%;
         height: 380px; }
@@ -401,7 +410,7 @@ main {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin: 0px 40px 4.7% 0;
+        margin: 0px 40px 3% 0;
         text-align: right; }
       main section:nth-child(3) article:nth-child(2) h2 {
         position: relative;
@@ -417,16 +426,19 @@ main {
       main section:nth-child(3) article:nth-child(2) .desc {
         font-size: 15px;
         line-height: 35px;
-        margin: 0 40px 4.7% 0;
-        text-align: right; }
+        text-align: right;
+        width: 90%;
+        margin: 0 40px 4.7% 4%; }
       main section:nth-child(3) article:nth-child(2) .button--nina {
-        padding: 3.5px 28px;
         color: #6B614D;
         font-size: 14px;
         margin-right: 40px;
-        outline: 0; }
+        outline: 0;
+        padding: 3.5px 28px; }
         main section:nth-child(3) article:nth-child(2) .button--nina span {
           font-size: 12px; }
+      main section:nth-child(3) article:nth-child(2) #restaurantreduce {
+        float: right; }
       main section:nth-child(3) article:nth-child(2) button {
         border: 2px solid #6B614D;
         background-color: transparent; }
@@ -447,12 +459,14 @@ main {
     main section:nth-child(3) article:nth-child(3) {
       padding: 50px 0;
       background-color: #FFF; }
+      main section:nth-child(3) article:nth-child(3) #bardisplay, main section:nth-child(3) article:nth-child(3) #barreduce {
+        display: none; }
       main section:nth-child(3) article:nth-child(3) svg {
-        font-weight: bold;
         height: auto;
-        font-family: Montserrat;
-        margin: 0 0 3% 10px;
-        max-width: 400px; }
+        margin-left: 0px;
+        margin-bottom: 3%;
+        margin-right: 240px;
+        display: block; }
       main section:nth-child(3) article:nth-child(3) img {
         height: 380px;
         width: 100%; }
@@ -461,7 +475,7 @@ main {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin: 0 0 20px 40px; }
+        margin: 0 0 3% 40px; }
       main section:nth-child(3) article:nth-child(3) h2 {
         position: relative;
         display: inline-block;
@@ -504,13 +518,15 @@ main {
     main section:nth-child(3) article:last-child {
       padding: 50px 0;
       background-color: #FFF; }
+      main section:nth-child(3) article:last-child #ecailledisplay, main section:nth-child(3) article:last-child #ecaillereduce {
+        display: none; }
+      main section:nth-child(3) article:last-child #ecaillereduce {
+        float: right; }
       main section:nth-child(3) article:last-child svg {
         font-weight: bold;
         max-width: 400px;
         height: auto;
-        margin-bottom: 3%;
-        margin-left: 34%;
-        font-family: Montserrat; }
+        margin: 0 0 3% 215px; }
       main section:nth-child(3) article:last-child img {
         width: 100%;
         height: 380px; }
@@ -519,7 +535,7 @@ main {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin: 0 40px 4.7% 0;
+        margin: 0 40px 3% 0;
         text-align: right; }
       main section:nth-child(3) article:last-child h2 {
         position: relative;
@@ -569,7 +585,6 @@ main {
     /* 2006 */
     /* 2017 */ }
     main section:nth-child(4) svg {
-      font-family: montserrat;
       font-weight: bold;
       max-width: 480px;
       height: auto;
@@ -586,13 +601,12 @@ main {
         font-weight: bold;
         max-width: 400px;
         height: auto;
-        font-family: Montserrat;
-        margin: 12% 0% 4% -38%; }
-      main section:nth-child(4) article:nth-child(2) h3 {
+        margin: 12% 0% 3% -38%; }
+      main section:nth-child(4) article:nth-child(2) p.desc {
         font-size: 15px;
         line-height: 35px;
         letter-spacing: 0;
-        margin: 0 40px 4.7% 5%;
+        margin: 0 38px 4.7% 5%;
         text-align: left; }
       main section:nth-child(4) article:nth-child(2) img {
         width: 100%;
@@ -605,9 +619,8 @@ main {
         max-width: 400px;
         height: auto;
         margin-left: -28px;
-        font-family: Montserrat;
         margin: 16% 0 3% 34%; }
-      main section:nth-child(4) article:nth-child(3) h3 {
+      main section:nth-child(4) article:nth-child(3) p.desc {
         font-size: 15px;
         line-height: 35px;
         letter-spacing: 0;
@@ -623,9 +636,8 @@ main {
         font-weight: bold;
         max-width: 400px;
         height: auto;
-        font-family: Montserrat;
-        margin: 9% 0% 3% 3%; }
-      main section:nth-child(4) article:nth-child(4) h3 {
+        margin: 9% 0% 3% 2%; }
+      main section:nth-child(4) article:nth-child(4) p.desc {
         font-size: 15px;
         line-height: 35px;
         letter-spacing: 0;
@@ -641,9 +653,8 @@ main {
         font-weight: bold;
         max-width: 400px;
         height: auto;
-        font-family: Montserrat;
-        margin: 19% 0 3% 31%; }
-      main section:nth-child(4) article:last-child h3 {
+        margin: 12% 0 3% 31%; }
+      main section:nth-child(4) article:last-child p.desc {
         font-size: 15px;
         line-height: 35px;
         letter-spacing: 0;
@@ -655,7 +666,6 @@ main {
   main section:last-child {
     margin: 72px 0; }
     main section:last-child svg {
-      font-family: montserrat;
       font-weight: bold;
       max-width: 480px;
       height: auto; }
@@ -666,7 +676,7 @@ main {
       letter-spacing: 2px; }
     main section:last-child img {
       width: 100%;
-      height: 380px; }
+      height: 320px; }
     main section:last-child article:last-child {
       padding: 50px 0;
       background-color: #FFF; }
@@ -675,8 +685,7 @@ main {
         max-width: 470px;
         height: auto;
         margin-bottom: 3%;
-        margin-left: 25%;
-        font-family: Montserrat; }
+        margin-left: 25%; }
       main section:last-child article:last-child img {
         width: auto;
         margin: 0 auto;
@@ -853,6 +862,17 @@ footer {
     width: 100%; } }
 /* MEDIA QUERIES MAX WIDTH 992PX */
 @media all and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+    width: 100%; }
+
+  #headersocial {
+    position: absolute;
+    right: -290%; }
+
+  #progress {
+    display: none; }
+
   .show {
     display: block; }
 
@@ -874,44 +894,25 @@ footer {
   main section:first-child h2 {
     font-size: 25px; }
 
-  main section:nth-child(5) {
-    height: 550px; }
-    main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
-      display: none; }
-    main section:nth-child(5) div.img {
-      display: none; }
-    main section:nth-child(5) img {
-      display: none; }
-    main section:nth-child(5) button {
-      width: 100%;
-      margin-top: 10px; }
+  main section:nth-child(2) img {
+    width: 50%;
+    margin: 9% 24%; }
 
-  main section:last-child {
-    height: 980px; }
-    main section:last-child #contact {
-      position: absolute;
-      top: 600px;
-      left: 20px;
-      height: 400px; }
-    main section:last-child #map {
-      height: 570px; }
-
-  footer {
-    height: 130px; }
-    footer .btn-credits {
-      padding: 10% 0; } }
-@media all and (max-width: 992px) and (min-width: 780px) {
-  body {
-    overflow-x: hidden;
-    width: 100%; }
-
-  #headersocial {
-    position: absolute;
-    right: -290%; }
-
-  #progress {
-    display: none; }
-
+  main section:nth-child(3) #restaurantseemore {
+    left: -180px;
+    margin-bottom: 50px; }
+  main section:nth-child(3) #restaurantreduce {
+    left: -200px;
+    margin-bottom: 50px; }
+  main section:nth-child(3) #barseemore {
+    right: -180px;
+    margin-bottom: 50px; }
+  main section:nth-child(3) #barreduce {
+    left: 200px;
+    margin-bottom: 50px; }
+  main section:nth-child(3) #ecailleseemore {
+    left: -180px;
+    margin-bottom: 50px; }
   main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
     margin-bottom: 80px; }
   main section:nth-child(3) article:nth-child(2) h3 {
@@ -932,6 +933,8 @@ footer {
     margin-left: 0; }
   main section:nth-child(3) article:nth-child(3) svg {
     margin-left: 240px; }
+  main section:nth-child(3) article:nth-child(3) #restaurantseemore {
+    display: none; }
   main section:nth-child(3) article:nth-child(3) .title {
     text-align: center;
     margin-left: 0; }
@@ -960,53 +963,65 @@ footer {
     main section:nth-child(4) article:nth-child(2) h3 {
       text-align: center;
       margin-right: 0; }
-    main section:nth-child(4) article:nth-child(3) svg {
-      margin-left: 37%;
-      margin-top: 4.7%; }
-    main section:nth-child(4) article:nth-child(3) h3 {
-      text-align: center;
-      margin-left: 0; }
-    main section:nth-child(4) article:nth-child(4) svg {
-      margin-left: 12%;
-      margin-top: 0; }
-    main section:nth-child(4) article:nth-child(4) h3 {
+    main section:nth-child(4) article:nth-child(2) img {
+      width: 70%;
+      height: 380px;
+      margin: 0 auto;
+      display: block; }
+    main section:nth-child(4) article:nth-child(3) img {
+      width: 70%;
+      height: 380px;
+      margin: 0 auto;
+      display: block; }
+    main section:nth-child(4) article:nth-child(4) img {
+      width: 70%;
+      height: 380px;
+      margin: 0 auto;
+      display: block; }
+    main section:nth-child(4) article:nth-child(5) img {
+      width: 70%;
+      height: 380px;
+      margin: 0 auto;
+      display: block; }
+
+  main section:nth-child(5) {
+    height: 550px; }
+    main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
+      display: none; }
+    main section:nth-child(5) div.img {
+      display: none; }
+    main section:nth-child(5) img {
+      display: none; }
+    main section:nth-child(5) button {
+      width: 100%;
+      margin-top: 10px; }
+
+  main section:last-child {
+    height: 980px; }
+    main section:last-child #contact {
+      position: absolute;
+      top: 600px;
+      left: 20px;
+      height: 400px; }
+    main section:last-child #map {
+      height: 570px; }
+    main section:last-child article:last-child h3 {
       text-align: center;
       margin-right: 0; }
-    main section:nth-child(4) article:nth-child(5) svg {
-      margin-left: 40%;
-      margin-top: 4.7%; }
-    main section:nth-child(4) article:nth-child(5) h3 {
+    main section:last-child article:last-child svg {
+      margin-left: 18%; }
+    main section:last-child article:last-child .title {
       text-align: center;
-      margin-left: 0; }
+      margin-right: 0; }
+    main section:last-child article:last-child .desc {
+      text-align: center;
+      margin-right: 0; }
 
-  main section:last-child article:last-child h3 {
-    text-align: center;
-    margin-right: 0; }
-  main section:last-child article:last-child svg {
-    margin-left: 18%; }
-  main section:last-child article:last-child .title {
-    text-align: center;
-    margin-right: 0; }
-  main section:last-child article:last-child .desc {
-    text-align: center;
-    margin-right: 0; }
-
-  main section:nth-child(2) img {
-    width: 50%;
-    margin: 9% 24%; }
-
-  main section:nth-child(3) article:nth-child(2) h3 {
-    text-align: center; }
-
-  main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
-    display: none; }
-  main section:nth-child(5) button {
-    width: 70%;
-    margin-top: 10px; }
-
-  footer .btn-credits {
-    padding: 15% 0%;
-    margin-left: -17%; } }
+  footer {
+    height: 130px; }
+    footer .btn-credits {
+      padding: 10% 0%;
+      margin-left: -17%; } }
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width: 780px) {
   body {
@@ -1022,6 +1037,17 @@ footer {
 
   #progress {
     display: none; }
+
+  body svg {
+    display: none; }
+
+  body .menudevice {
+    display: block; }
+
+  .menudevice {
+    font-size: 70px;
+    color: #2A6993;
+    display: block; }
 
   div.row-reverse {
     flex-direction: row; }
@@ -1040,23 +1066,40 @@ footer {
     main section:first-child h2 {
       font-size: 20px; }
 
+  main section:nth-child(2) h3 {
+    margin-top: 20px; }
+  main section:nth-child(2) #h3menu {
+    margin-top: -5px; }
+
+  main section:nth-child(3) h4.menudevice {
+    font-size: 80px; }
+  main section:nth-child(3) article:nth-child(2) h4.menudevice {
+    font-size: 55px;
+    margin-bottom: 20px; }
   main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
     margin-bottom: 80px; }
   main section:nth-child(3) article:nth-child(2) img {
     margin-top: 5%; }
   main section:nth-child(3) article:nth-child(2) h3 {
+    margin-top: 30px;
     text-align: center;
     margin-right: 0; }
   main section:nth-child(3) article:nth-child(2) svg {
     margin-left: 40px; }
-  main section:nth-child(3) article:nth-child(2) .title {
+  main section:nth-child(3) article:nth-child(2) p.title {
     text-align: center;
     margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) .desc {
+  main section:nth-child(3) article:nth-child(2) p.desc {
+    margin: 0 auto;
+    margin-left: 60px;
+    margin-bottom: 30px;
     text-align: center;
-    margin-right: 0; }
+    width: 80%; }
   main section:nth-child(3) article:nth-child(2) button {
     right: 28%; }
+  main section:nth-child(3) article:nth-child(3) h4.menudevice {
+    font-size: 55px;
+    margin-bottom: 20px; }
   main section:nth-child(3) article:nth-child(3) img {
     margin-top: 5%;
     margin-bottom: 15px; }
@@ -1064,15 +1107,23 @@ footer {
     text-align: center;
     margin-left: 0; }
   main section:nth-child(3) article:nth-child(3) svg {
-    margin-left: 230px; }
-  main section:nth-child(3) article:nth-child(3) .title {
+    display: none; }
+  main section:nth-child(3) article:nth-child(3) #barreduce {
+    left: 210px; }
+  main section:nth-child(3) article:nth-child(3) p.title {
     text-align: center;
     margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) .desc {
+  main section:nth-child(3) article:nth-child(3) p.desc {
+    margin: 0 auto;
+    margin-left: 60px;
+    margin-bottom: 30px;
     text-align: center;
-    margin-left: 0; }
+    width: 80%; }
   main section:nth-child(3) article:nth-child(3) button {
     left: 28%; }
+  main section:nth-child(3) article:nth-child(4) h4.menudevice {
+    font-size: 55px;
+    margin-bottom: 20px; }
   main section:nth-child(3) article:nth-child(4) div:first-child.col-lg-12 {
     margin-bottom: 80px; }
   main section:nth-child(3) article:nth-child(4) img {
@@ -1083,66 +1134,103 @@ footer {
     margin-right: 0; }
   main section:nth-child(3) article:nth-child(4) svg {
     margin-left: 65px; }
-  main section:nth-child(3) article:nth-child(4) .title {
+  main section:nth-child(3) article:nth-child(4) p.title {
     text-align: center;
     margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) .desc {
+  main section:nth-child(3) article:nth-child(4) p.desc {
+    margin: 0 auto;
+    margin-left: 60px;
+    margin-bottom: 30px;
     text-align: center;
-    margin-right: 0; }
+    width: 80%; }
   main section:nth-child(3) article:nth-child(4) button {
     right: 28%; }
 
   main section:nth-child(4) {
     margin-bottom: 0; }
-    main section:nth-child(4) article:nth-child(2) svg {
-      margin-left: 4%;
-      margin-top: 1%; }
-    main section:nth-child(4) article:nth-child(2) h3 {
+    main section:nth-child(4) h4.menudevice {
+      font-size: 80px; }
+    main section:nth-child(4) article:nth-child(2) {
+      padding: 80px 0 50px 0; }
+      main section:nth-child(4) article:nth-child(2) h4.menudevice {
+        font-size: 55px;
+        margin-bottom: 20px; }
+      main section:nth-child(4) article:nth-child(2) h3 {
+        margin: 0 auto;
+        margin-left: 70px;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 80%; }
+      main section:nth-child(4) article:nth-child(2) p.desc {
+        font-size: 15px;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+        margin-bottom: 30px; }
+      main section:nth-child(4) article:nth-child(2) img {
+        width: 90%; }
+    main section:nth-child(4) article:nth-child(3) h4.menudevice {
+      font-size: 55px;
+      margin-bottom: 20px; }
+    main section:nth-child(4) article:nth-child(3) p.desc {
+      font-size: 15px;
+      margin: 0 auto;
       text-align: center;
-      margin-left: 0;
-      margin-right: 0; }
-    main section:nth-child(4) article:nth-child(3) svg {
-      margin-left: 5%;
-      margin-top: 1%; }
-    main section:nth-child(4) article:nth-child(3) h3 {
+      width: 80%;
+      margin-bottom: 30px; }
+    main section:nth-child(4) article:nth-child(3) img {
+      width: 90%; }
+    main section:nth-child(4) article:nth-child(4) h4.menudevice {
+      font-size: 55px;
+      margin-bottom: 20px; }
+    main section:nth-child(4) article:nth-child(4) p.desc {
+      font-size: 15px;
+      margin: 0 auto;
       text-align: center;
-      margin-left: 0;
-      margin-right: 0; }
-    main section:nth-child(4) article:nth-child(4) svg {
-      margin-left: 40%;
-      margin-right: 0;
-      margin-top: 1%; }
-    main section:nth-child(4) article:nth-child(4) h3 {
+      width: 80%;
+      margin-bottom: 30px; }
+    main section:nth-child(4) article:nth-child(4) img {
+      width: 90%; }
+    main section:nth-child(4) article:nth-child(5) h4.menudevice {
+      font-size: 55px;
+      margin-bottom: 20px; }
+    main section:nth-child(4) article:nth-child(5) p.desc {
+      font-size: 15px;
+      margin: 0 auto;
       text-align: center;
-      margin-right: 0;
-      margin-left: 0; }
-    main section:nth-child(4) article:nth-child(5) svg {
-      margin-left: 3%;
-      margin-top: 1%; }
-    main section:nth-child(4) article:nth-child(5) h3 {
-      text-align: center;
-      margin-left: 0;
-      margin-right: 0; }
+      width: 80%;
+      margin-bottom: 30px; }
+    main section:nth-child(4) article:nth-child(5) img {
+      width: 90%; }
 
-  main section:nth-child(5) {
-    margin-top: 10px;
+  main section:last-child {
+    margin-top: 60px;
     height: 600px; }
-
-  main section:last-child article:last-child h3 {
-    text-align: center;
-    margin-right: 0; }
-  main section:last-child article:last-child svg {
-    margin-left: 12%; }
-  main section:last-child article:last-child .title {
-    text-align: center;
-    margin-right: 0; }
-  main section:last-child article:last-child .desc {
-    text-align: center;
-    margin-right: 0; }
+    main section:last-child h4.menudevice {
+      font-size: 80px;
+      margin-bottom: 50px;
+      margin-top: 20px; }
+    main section:last-child article:last-child h4.menudevice {
+      font-size: 50px;
+      margin-bottom: 20px;
+      margin-top: -20px; }
+    main section:last-child article:last-child p.title {
+      text-align: center;
+      margin-right: 0; }
+    main section:last-child article:last-child p.desc {
+      margin: 0 auto;
+      margin-left: 60px;
+      margin-bottom: 30px;
+      text-align: center;
+      width: 80%; }
+    main section:last-child article:last-child img {
+      margin-top: 20px;
+      width: 50%;
+      height: 70%; }
 
   footer {
     height: 160px;
-    margin-top: 300px; }
+    margin-top: 410px; }
     footer .btn-credits {
       margin: 7px 0px 0px -10px; } }
 /* MEDIA QUERIES MAX WIDTH 380PX */
@@ -1156,118 +1244,258 @@ footer {
   #progress {
     display: none; }
 
-  main section:first-child #headerdesc {
-    padding-top: 200px; }
-  main section:first-child h1 {
-    font-size: 46px; }
+  body .menudevice {
+    font-size: 35px; }
 
-  main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
-    margin-bottom: 80px; }
-  main section:nth-child(3) article:nth-child(2) h3 {
+  .mobile-nav .text {
+    font-size: 10px;
+    bottom: 8px;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+  main section:first-child {
+    height: 91%;
+    background-size: 350% 110%; }
+    main section:first-child #headerdesc {
+      padding-top: 220px; }
+    main section:first-child h1 {
+      font-size: 45px; }
+
+  main section:nth-child(2) h3 {
+    margin-top: 20px;
     text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) svg {
-    margin-left: -50px; }
-  main section:nth-child(3) article:nth-child(2) .title {
+    margin-left: 0;
+    font-size: 12px; }
+
+  main section:nth-child(3) h4.menudevice {
+    font-size: 55px; }
+  main section:nth-child(3) h3 {
+    margin-top: 20px;
     text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) .desc {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(2) img {
-    height: auto; }
-  main section:nth-child(3) article:nth-child(2) button.button--nina {
-    margin: 0 -90px 30px 140px; }
-  main section:nth-child(3) article:nth-child(3) img {
-    margin-bottom: 30px;
-    height: auto; }
-  main section:nth-child(3) article:nth-child(3) h3 {
-    text-align: center;
-    margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) svg {
-    margin: 0 auto;
-    margin-left: 80px;
-    margin-right: -70px; }
-  main section:nth-child(3) article:nth-child(3) .title {
-    text-align: center;
-    margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) .desc {
-    text-align: center;
-    margin-left: 0; }
-  main section:nth-child(3) article:nth-child(3) button.button--nina {
-    margin: 0 90px 30px -30px; }
-  main section:nth-child(3) article:nth-child(4) div:first-child.col-lg-12 {
-    margin-bottom: 80px; }
-  main section:nth-child(3) article:nth-child(4) h3 {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) svg {
-    margin-left: -35px;
-    margin-right: 60px; }
-  main section:nth-child(3) article:nth-child(4) .title {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) .desc {
-    text-align: center;
-    margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) img {
-    height: auto; }
-  main section:nth-child(3) article:nth-child(4) button.button--nina {
-    margin: 0 -90px 30px 140px; }
+    margin-left: 0;
+    font-size: 12px; }
+  main section:nth-child(3) article:nth-child(2) {
+    padding: 50px 0; }
+    main section:nth-child(3) article:nth-child(2) #restaurantseemore {
+      margin: 0 auto;
+      display: block;
+      left: 0;
+      margin-top: 20px;
+      margin-bottom: 40px; }
+    main section:nth-child(3) article:nth-child(2) #restaurantreduce {
+      margin-top: 20px;
+      margin-right: -125px; }
+    main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
+      margin-bottom: 80px; }
+    main section:nth-child(3) article:nth-child(2) h3 {
+      margin-top: 20px;
+      text-align: center;
+      margin-left: 0;
+      font-size: 12px; }
+    main section:nth-child(3) article:nth-child(2) h4.menudevice {
+      font-size: 35px; }
+    main section:nth-child(3) article:nth-child(2) p.title {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      font-size: 13px;
+      margin-bottom: 3%; }
+    main section:nth-child(3) article:nth-child(2) p.desc {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      line-height: 20px;
+      font-size: 10px;
+      line-height: 25px; }
+    main section:nth-child(3) article:nth-child(2) img {
+      height: auto; }
+    main section:nth-child(3) article:nth-child(2) button.button--nina {
+      margin: 0 -90px 30px 140px; }
+  main section:nth-child(3) article:nth-child(3) {
+    padding: 25px 0; }
+    main section:nth-child(3) article:nth-child(3) svg {
+      display: none; }
+    main section:nth-child(3) article:nth-child(3) img {
+      margin-bottom: 30px;
+      height: auto; }
+    main section:nth-child(3) article:nth-child(3) h3 {
+      margin-top: 20px;
+      text-align: center;
+      margin-left: 0;
+      font-size: 12px; }
+    main section:nth-child(3) article:nth-child(3) h4.menudevice {
+      font-size: 35px; }
+    main section:nth-child(3) article:nth-child(3) p.title {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      font-size: 13px;
+      margin-bottom: 3%; }
+    main section:nth-child(3) article:nth-child(3) p.desc {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      line-height: 20px;
+      font-size: 10px;
+      line-height: 25px; }
+    main section:nth-child(3) article:nth-child(3) #barseemore {
+      margin: 0 auto;
+      display: block;
+      left: 0;
+      margin-top: 20px;
+      margin-bottom: 40px; }
+    main section:nth-child(3) article:nth-child(3) #barreduce {
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-left: -140px;
+      margin-bottom: 40px; }
+    main section:nth-child(3) article:nth-child(3) button.button--nina {
+      margin: 0 90px 30px -30px; }
+  main section:nth-child(3) article:nth-child(4) {
+    padding: 25px 0; }
+    main section:nth-child(3) article:nth-child(4) div:first-child.col-lg-12 {
+      margin-bottom: 80px; }
+    main section:nth-child(3) article:nth-child(4) h3 {
+      margin-top: 20px;
+      text-align: center;
+      margin-left: 0;
+      font-size: 12px; }
+    main section:nth-child(3) article:nth-child(4) h4.menudevice {
+      font-size: 35px; }
+    main section:nth-child(3) article:nth-child(4) svg {
+      margin-left: -35px;
+      margin-right: 60px; }
+    main section:nth-child(3) article:nth-child(4) p.title {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      font-size: 13px;
+      margin-bottom: 3%;
+      width: 90%; }
+    main section:nth-child(3) article:nth-child(4) p.desc {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      line-height: 20px;
+      font-size: 10px;
+      line-height: 25px; }
+    main section:nth-child(3) article:nth-child(4) img {
+      height: auto; }
+    main section:nth-child(3) article:nth-child(4) #ecailleseemore {
+      margin: 0 auto;
+      display: block;
+      left: 0;
+      margin-top: 20px;
+      margin-bottom: 40px; }
+    main section:nth-child(3) article:nth-child(4) #ecaillereduce {
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-right: -17px;
+      margin-bottom: 40px; }
+    main section:nth-child(3) article:nth-child(4) button.button--nina {
+      margin: 0 -90px 30px 140px; }
 
   main section:nth-child(4) {
     margin-bottom: 0; }
-    main section:nth-child(4) article:nth-child(2) svg {
-      margin-left: -136px;
-      margin-right: 90px; }
-    main section:nth-child(4) article:nth-child(2) h3 {
-      text-align: center;
-      margin-right: 0; }
-    main section:nth-child(4) article:nth-child(2) img {
-      height: auto; }
-    main section:nth-child(4) article:nth-child(3) svg {
-      margin-left: -108px;
-      margin-right: 90px; }
-    main section:nth-child(4) article:nth-child(3) h3 {
-      text-align: center;
-      margin-left: 0; }
-    main section:nth-child(4) article:nth-child(3) img {
-      height: auto; }
-    main section:nth-child(4) article:nth-child(4) svg {
-      margin-left: 87px;
-      margin-right: -120px; }
-    main section:nth-child(4) article:nth-child(4) h3 {
-      text-align: center;
-      margin-right: 0; }
-    main section:nth-child(4) article:nth-child(4) img {
-      height: auto; }
-    main section:nth-child(4) article:nth-child(5) svg {
-      margin-right: 104px;
-      margin-left: -98px; }
-    main section:nth-child(4) article:nth-child(5) h3 {
-      text-align: center;
-      margin-left: 0; }
-    main section:nth-child(4) article:nth-child(5) img {
-      height: auto; }
+    main section:nth-child(4) h4.menudevice {
+      font-size: 55px; }
+    main section:nth-child(4) article:nth-child(2) {
+      padding: 50px 0 25px 0; }
+      main section:nth-child(4) article:nth-child(2) h4.menudevice {
+        font-size: 35px; }
+      main section:nth-child(4) article:nth-child(2) p.desc {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        line-height: 20px;
+        font-size: 10px;
+        line-height: 25px;
+        margin-bottom: 30px; }
+      main section:nth-child(4) article:nth-child(2) h3 {
+        text-align: center;
+        margin-right: 0; }
+      main section:nth-child(4) article:nth-child(2) img {
+        height: auto; }
+    main section:nth-child(4) article:nth-child(3) {
+      padding: 25px 0; }
+      main section:nth-child(4) article:nth-child(3) h4.menudevice {
+        font-size: 35px; }
+      main section:nth-child(4) article:nth-child(3) p.desc {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        line-height: 20px;
+        font-size: 10px;
+        line-height: 25px;
+        margin-bottom: 30px; }
+      main section:nth-child(4) article:nth-child(3) h3 {
+        text-align: center;
+        margin-left: 0; }
+      main section:nth-child(4) article:nth-child(3) img {
+        height: auto; }
+    main section:nth-child(4) article:nth-child(4) {
+      padding: 25px 0; }
+      main section:nth-child(4) article:nth-child(4) h4.menudevice {
+        font-size: 35px; }
+      main section:nth-child(4) article:nth-child(4) p.desc {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        line-height: 20px;
+        font-size: 10px;
+        line-height: 25px;
+        margin-bottom: 30px; }
+      main section:nth-child(4) article:nth-child(4) h3 {
+        text-align: center;
+        margin-right: 0; }
+      main section:nth-child(4) article:nth-child(4) img {
+        height: auto; }
+    main section:nth-child(4) article:nth-child(5) {
+      padding: 25px 0; }
+      main section:nth-child(4) article:nth-child(5) h4.menudevice {
+        font-size: 35px; }
+      main section:nth-child(4) article:nth-child(5) p.desc {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        line-height: 20px;
+        font-size: 10px;
+        line-height: 25px;
+        margin-bottom: 30px; }
+      main section:nth-child(4) article:nth-child(5) h3 {
+        text-align: center;
+        margin-left: 0; }
+      main section:nth-child(4) article:nth-child(5) img {
+        height: auto; }
 
-  main section:last-child article:last-child h3 {
+  main section:last-child h4.menudevice {
+    font-size: 55px; }
+  main section:last-child article:last-child h4.menudevice {
+    font-size: 35px; }
+  main section:last-child article:last-child img {
+    height: 250px;
+    width: 180px;
+    margin-top: 30px; }
+  main section:last-child article:last-child p.title {
     text-align: center;
-    margin-right: 0; }
-  main section:last-child article:last-child svg {
-    margin-left: -20px;
-    margin-right: -10px; }
-  main section:last-child article:last-child .title {
+    margin: 0 auto;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 3%;
+    width: 90%; }
+  main section:last-child article:last-child p.desc {
     text-align: center;
-    margin-right: 0;
-    margin-top: 6%; }
-  main section:last-child article:last-child .desc {
-    text-align: center;
-    margin-right: 0;
-    margin-top: 13%; }
+    margin: 0 auto;
+    display: block;
+    line-height: 20px;
+    font-size: 10px;
+    line-height: 25px; }
 
   footer {
     height: 290px;
-    margin-top: 422px; }
+    margin-top: 160px; }
     footer .form-newsletter {
       margin-right: 11px; }
       footer .form-newsletter label {

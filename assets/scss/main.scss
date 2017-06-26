@@ -6,6 +6,13 @@ body {
 	font-family : roboto;
 	overflow-x: hidden;
 
+	.menudevice {
+		font-size: 70px;
+    	color: #2A6993;
+    	margin: 0 auto;
+    	text-align: center;
+		display: none;
+	}
 
 	.button {
 		position: relative;
@@ -22,7 +29,7 @@ body {
 	    color: #fff;
 	    margin: 0 auto;
 		overflow: hidden;
-		font-family: Roboto;;
+		font-family: Roboto;
 		-webkit-transition: background-color 0.3s;
 		transition: background-color 0.3s;
 		padding: 4px 28px;
@@ -366,10 +373,10 @@ header {
 	}
 
 	.text {
-		font-size: 10px;
+		font-size: 13px;
 		bottom: 8px;
 		position: absolute;
-		top: 80%;
+		top: 73%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
@@ -383,11 +390,9 @@ main {
 		background: url("../images/main/background.jpg") no-repeat;
 		background-size: cover;
 		letter-spacing: 9px;
-		font-family: Montserrat;
-		height: 100%;
 
 		#headerdesc {
-			padding: 255px 0px;
+			padding: 255px 0px 255px 0px;
 		}
 
 		h1 {
@@ -397,7 +402,6 @@ main {
 			width: 83%;
 			text-align: center;
 			margin: 0 auto;
-			font-weight: 500;
 		}
 
 		h2 {
@@ -466,7 +470,6 @@ main {
 		a {
 			margin: 0 auto;
 		}
-		
 	}
 
 	/* DESCRIPTION */
@@ -529,8 +532,6 @@ main {
 		}
 
 		svg {
-			font-family: montserrat;
-			font-weight:bold;
 			max-width:480px;
 			height:auto;
 		}
@@ -546,7 +547,7 @@ main {
 		}
 
 		img:last-child {
-			height: 350px;
+			height: 290px;
 			width: inherit;
 		}
 
@@ -576,9 +577,8 @@ main {
 		    z-index: 3;
 		    font-size: 35px;
 		    color: #fff;
-		    font-weight: lighter;
+		    font-weight: 400;
 		    letter-spacing: 10px;
-		    font-family: montserrat;
 		}
 		
 		p:last-child {
@@ -654,10 +654,9 @@ main {
 			padding: 15px 0;
 
 			svg {
-				font-weight:bold;
 				height:auto;
 				margin-bottom:3%;
-				margin-left:26%;
+				margin-left:150px;
 				font-size:14px;
 			}
 
@@ -756,10 +755,9 @@ main {
 			padding: 15px 0;
 
 			svg {
-				font-weight:bold;
 				height:auto;
 				margin-bottom:3%;
-				margin-left:3%;
+				margin-left:8px;
 				font-size:12px;
 			}
 
@@ -1047,7 +1045,9 @@ footer {
 @media all and (max-width : 1237px) {
 	main section:nth-child(2) {
 		img {
-			margin: 75px 0 0 -30px;
+			margin: 0 auto;
+			margin-top: 20px;
+			display: block;
 			width: 260px
 		}
 	}
@@ -1150,7 +1150,6 @@ footer {
 
 @media all and (max-width: 992px) and (min-width: 780px) {
 
-
 	#headersocial {
 		position: absolute;
 		right: -290%;
@@ -1191,6 +1190,14 @@ footer {
 		display: none;
 	}
 
+	svg {
+		display: none;
+	}
+
+	body .menudevice {
+		display: block;
+	}
+
 	.show {
 		display: block;
 	}
@@ -1218,16 +1225,18 @@ footer {
 	}
 
 	main section:first-child {
+		background-position: 35% 100%;
+
 		h1 {
 			font-size: 60px;
 		}
 
 		h2 {
-			font-size: 20px;
+			font-size: 23px;
 		}
 
 		#headerdesc {
-	    	padding: 350px 0px;
+	    	padding: 390px 0px;
 		}
 	}
 
@@ -1239,21 +1248,22 @@ footer {
 	main section:nth-child(3) {
 
 		#swiperrestaurant {
-			height: 45%;
+			height: 38%;
 		}
 	}
 
-	main section:nth-child(4) img:last-child{
-		height: 30%;
+	main section:nth-child(4) {
+
+		margin: 10% 0;
+
+		img:last-child{
+			height: 28%;
+		}
 	}
 
 	main section:nth-child(5) {
 		margin-top: 10px;
-		height: 600px;
-
-		.description {
-			margin: 40px 0;
-		}
+		height: 490px;
 
 		.swiper-button-next, .swiper-button-prev {
 			display: none;
@@ -1273,8 +1283,14 @@ footer {
 		}
 
 		#about {
+
 			h3 {
-				margin-right: 47.3%;
+				margin: 0 47.3% 9px 0;
+			}
+
+			h4.menudevice {
+				font-size: 40px;
+				margin: 3% -2% 4% -10%;
 			}
 
 			svg {
@@ -1286,9 +1302,13 @@ footer {
 				margin-right: 26%;
 			}
 
-			p.desc {
-				margin-right: 10%;
+			.desc {
+				margin: 0 auto;
+				display: block;
+				margin-left: 22px;
+				margin-bottom: 30px;
 				text-align: center;
+				width: 80%;
 			}
 
 			button {
@@ -1297,8 +1317,16 @@ footer {
 		}
 
 		#ecaille {
+			margin-top: 15px;
+			padding: 0 0;
+
 			h3 {
 				margin-left: 40.3%;
+			}
+
+			h4.menudevice {
+				font-size: 40px;
+				margin: 3% -2% 4% -10%;
 			}
 
 			svg {
@@ -1310,8 +1338,11 @@ footer {
 			}
 
 			p.desc {
-				margin-right: 10%;
+				margin: 0 auto;
+				margin-left: 10px;
+				margin-bottom: 30px;
 				text-align: center;
+				width: 90%;
 			}
 
 			button {
@@ -1339,6 +1370,11 @@ footer {
 @media all and (max-width : 380px) {
 	body {
 		overflow-x :hidden;
+
+		.menudevice {
+			font-size: 50px;
+		}
+
 	}
 
 	header #headersocial {
@@ -1349,23 +1385,32 @@ footer {
 		display: none;
 	}
 
-	main section:first-child {
+	.mobile-nav .text {
+		font-size: 10px;
+		bottom: 8px;
+		position: absolute;
+		top: 73%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 
+	main section:first-child {
+		
 		#headerdesc {
 			padding-top: 200px;
 		}
 
 		h1 {
-			font-size : 36px;
+			font-size : 45px;
 		}
 
 		h2 {
 			font-size : 19px;
+			line-height: 26px;
 		}
 	}
 
 	main section:nth-child(2) {
-
 		svg {
 			margin-bottom: 30px;
 		}
@@ -1393,7 +1438,7 @@ footer {
 		}
 
 		#swiperrestaurant {
-			height: 45%;
+			height: 35%;
 
 			div.swiper-button-prev {
 				margin-left: -10%;
@@ -1406,7 +1451,6 @@ footer {
 	}
 
 	main section:nth-child(4) {
-
 		h2 {
 			font-size: 30px;
 		}
