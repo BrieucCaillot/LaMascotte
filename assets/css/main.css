@@ -289,19 +289,16 @@ main {
   main section:first-child {
     background: url("../images/main/background.jpg") no-repeat;
     background-size: cover;
-    letter-spacing: 9px;
-    font-family: Montserrat;
-    height: 100%; }
+    letter-spacing: 9px; }
     main section:first-child #headerdesc {
-      padding: 255px 0px; }
+      padding: 255px 0px 255px 0px; }
     main section:first-child h1 {
       color: #fff;
       z-index: 2;
       font-size: 80px;
       width: 83%;
       text-align: center;
-      margin: 0 auto;
-      font-weight: 500; }
+      margin: 0 auto; }
     main section:first-child h2 {
       font-size: 30px;
       color: white;
@@ -386,8 +383,6 @@ main {
       main section:nth-child(4) .button--nina span {
         font-size: 12px; }
     main section:nth-child(4) svg {
-      font-family: montserrat;
-      font-weight: bold;
       max-width: 480px;
       height: auto; }
     main section:nth-child(4) img:first-child {
@@ -399,7 +394,7 @@ main {
       color: #ffffff;
       width: 55px; }
     main section:nth-child(4) img:last-child {
-      height: 350px;
+      height: 290px;
       width: inherit; }
     main section:nth-child(4) .menuhover {
       -webkit-transition: all 0.3s ease;
@@ -423,9 +418,8 @@ main {
       z-index: 3;
       font-size: 35px;
       color: #fff;
-      font-weight: lighter;
-      letter-spacing: 10px;
-      font-family: montserrat; }
+      font-weight: 400;
+      letter-spacing: 10px; }
     main section:nth-child(4) p:last-child {
       font-size: 15px;
       font-style: italic;
@@ -476,10 +470,9 @@ main {
       background-color: #FFF;
       padding: 15px 0; }
       main section:nth-child(5) #about svg {
-        font-weight: bold;
         height: auto;
         margin-bottom: 3%;
-        margin-left: 26%;
+        margin-left: 150px;
         font-size: 14px; }
       main section:nth-child(5) #about img {
         width: 100%;
@@ -551,10 +544,9 @@ main {
       background-color: #FFF;
       padding: 15px 0; }
       main section:nth-child(5) #ecaille svg {
-        font-weight: bold;
         height: auto;
         margin-bottom: 3%;
-        margin-left: 3%;
+        margin-left: 8px;
         font-size: 12px; }
       main section:nth-child(5) #ecaille img {
         height: 380px;
@@ -754,7 +746,9 @@ footer {
 /* MEDIA QUERIES MAX WIDTH 1237PX*/
 @media all and (max-width: 1237px) {
   main section:nth-child(2) img {
-    margin: 75px 0 0 -30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
     width: 260px; }
 
   #headersocial {
@@ -877,7 +871,7 @@ footer {
     main section:first-child h2 {
       font-size: 23px; }
     main section:first-child #headerdesc {
-      padding: 350px 0px; }
+      padding: 390px 0px; }
 
   main section:nth-child(2) img {
     margin: 0% 25%;
@@ -889,13 +883,11 @@ footer {
   main section:nth-child(4) {
     margin: 10% 0; }
     main section:nth-child(4) img:last-child {
-      height: 25%; }
+      height: 28%; }
 
   main section:nth-child(5) {
     margin-top: 10px;
     height: 490px; }
-    main section:nth-child(5) .description {
-      margin: -40px 0; }
     main section:nth-child(5) .swiper-button-next, main section:nth-child(5) .swiper-button-prev {
       display: none; }
     main section:nth-child(5) div.swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets {
@@ -906,30 +898,32 @@ footer {
       padding-top: 10px;
       width: 75%; }
     main section:nth-child(5) #about h3 {
-      margin-right: 47.3%; }
+      margin: 0 47.3% 9px 0; }
     main section:nth-child(5) #about h4.menudevice {
-      font-size: 50px;
-      margin: 20px 0 20px -60px; }
+      font-size: 40px;
+      margin: 3% -2% 4% -10%; }
     main section:nth-child(5) #about svg {
       margin: 0 142px 0 70px;
       width: 65%; }
     main section:nth-child(5) #about p.title {
       margin-right: 26%; }
-    main section:nth-child(5) #about p.desc {
+    main section:nth-child(5) #about .desc {
       margin: 0 auto;
-      margin-left: 50px;
+      display: block;
+      margin-left: 22px;
       margin-bottom: 30px;
       text-align: center;
       width: 80%; }
     main section:nth-child(5) #about button {
       margin-right: 13%; }
     main section:nth-child(5) #ecaille {
-      margin-top: 25px; }
+      margin-top: 15px;
+      padding: 0 0; }
       main section:nth-child(5) #ecaille h3 {
         margin-left: 40.3%; }
       main section:nth-child(5) #ecaille h4.menudevice {
-        font-size: 50px;
-        margin: 20px 0 20px -60px; }
+        font-size: 40px;
+        margin: 3% -2% 4% -10%; }
       main section:nth-child(5) #ecaille svg {
         margin-left: 25.7%; }
       main section:nth-child(5) #ecaille p.title {
@@ -954,6 +948,8 @@ footer {
 @media all and (max-width: 380px) {
   body {
     overflow-x: hidden; }
+    body .menudevice {
+      font-size: 50px; }
 
   header #headersocial {
     display: none; }

@@ -164,6 +164,7 @@
                             <h3 id="h3menu" class="home-subtitle">
                                 LA CARTE
                             </h3>
+                            <h4 id="menunavclickable" class="menudevice">LES MENUS</h4>
                             <svg id="menusvgnav" viewbox="-30 0 160 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -187,6 +188,7 @@
                             <h3 class="home-subtitle">
                                 LA CARTE
                             </h3>
+                            <h4 id="cartenavclickable" class="menudevice">LES ENTRÉES</h4>
                             <svg id="entreesvgnav" viewbox="-29 0 160 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -210,6 +212,7 @@
                             <h3 class="home-subtitle">
                                 LA CARTE
                             </h3>
+                            <h4 id="platsnavclickable" class="menudevice">LES PLATS</h4>
                             <svg id="platsvgnav" viewbox="-26 0 153 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -232,7 +235,8 @@
                     <div class="row">
                         <!--DESSERTS-->
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <h3 class="home-subtitle">LA CARTE</h3>
+                            <h3 id="navcarte" class="home-subtitle">LA CARTE</h3>
+                            <h4 id="dessertsnavclickable" class="menudevice">LES DESSERTS</h4>
                             <svg id="dessertsvgnav" viewbox="-27 0 153 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -254,6 +258,7 @@
                         <!--BOISSONS-->
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
                             <h3 class="home-subtitle">LA CARTE</h3>
+                            <h4 id="drinksnavclickable" class="menudevice">LES BOISSONS</h4>
                             <svg id="drinksvgnav" viewbox="-26 0 153 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -282,10 +287,11 @@
             <div class="container text-center">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h3  id="h3menu" class="home-subtitle">
                                 LA CARTE
                             </h3>
+                            <h4 class="menudevice">LES MENUS</h4>
                             <svg id="menusvg" viewbox="-28 0 160 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -308,12 +314,10 @@
                     <!--MENU #1-->
                     <div class="row">
                         <div id="menu1" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <h2>Le menu "Mascotte" : 49€
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                </a>
+                            <h2 class="closed">Le menu "Mascotte" : 49€
+                                
                             </h2>
-                            <p>
+                            <p id="aboutmascotte">
                                 Une entrée, un plat, un dessert
                             </p>
                         </div>
@@ -406,13 +410,11 @@
                     <!--MENU #2-->
                     <div class="row">
                         <div id="menu2" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <h2 class="text-center">
+                            <h2 class="closed text-center">
                                 Le menu "Cocotte" : 32€
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                </a>
+                                
                             </h2>
-                            <p>
+                            <p id="aboutcocotte">
                                 Servi uniquement le midi en semaine, jamais les jours fériés
                                 <br>
                                 Une entrée et un plat, ou un plat et un dessert
@@ -509,13 +511,11 @@
                     <!--MENU #3-->
                     <div class="row">
                         <div id="menu3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <h2 class="text-center">
+                            <h2 class=" closed text-center">
                                 Le menu "Marmotte" : 22€
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                </a>
+                                
                             </h2>
-                            <p>
+                            <p id="aboutmarmotte">
                                 Un plat, un dessert, une boisson
                                 <br>
                                 Un jus d’orange ou un Coca
@@ -559,8 +559,9 @@
             <div class="container">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h3 class="home-subtitle text-center">LA CARTE</h3>
+                            <h4 class="menudevice">LES ENTRÉES</h4>
                             <svg id="entreesvg" viewbox="-29 0 160 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -583,11 +584,8 @@
                     <div id="entrees" class="row">
                         <!--ENTRÉE FROIDE-->
                         <div id="entreecold" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <h2 class="title text-center">
+                            <h2 class="closed text-center">
                                 ENTRÉES FROIDES
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                </a>
                             </h2>
                             <ul class="desc">
                                 <li>
@@ -609,11 +607,8 @@
                         </div>
                         <!--ENTRÉE CHAUD-->
                         <div id="entreehot" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <h2 class="title text-center">
+                            <h2 class="closed text-center">
                                 ENTRÉES CHAUDES
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                </a>
                             </h2>
                             <ul class="desc">
                                 <li>
@@ -648,10 +643,11 @@
         <section>
             <div class="container">
                 <div class="col-md-12">
-                    <div class="row">
-                        <!--PLATS-->
-                        <div class="col-md-6 text-center">
-                            <h3 class="home-subtitle">LA CARTE</h3>
+                    <!--PLATS-->
+                    <div class="row">               
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h3 class="home-subtitle text-center">LA CARTE</h3>
+                            <h4 class="menudevice">LES PLATS</h4>
                             <svg id="platsvg" viewbox="-26 0 153 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -674,21 +670,15 @@
                     <!-- FRUITS DE MER-->
                     <div id="fdm" class="row">
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-                            <h4>
+                            <h4 class="closed">
                                 LES FRUITS DE MER
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                </a>
                             </h4>
                         </div>
                     </div>
                     <div id="fdmdisplay" class="row">
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <h5>
+                            <h5 class="closed">
                                 LES COMPOSITIONS
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvgplats closed" src="../static/images/menu/arrowdown2.svg" alt="">
-                                </a>
                             </h5>
                         </div>
                         <!--#LEFT LES COMPOSITIONS DISPLAY -->
@@ -930,11 +920,8 @@
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <!--LES POISSONS ET FRUITS DE MER DISPLAY-->
                             <div>
-                                <h5>
+                                <h5 class="closed">
                                     POISSONS ET FRUITS DE MER
-                                    <a href="javascript:void(0)">
-                                        <img class="arrowsvgplats closed" src="../static/images/menu/arrowdown2.svg" alt="">
-                                    </a>
                                 </h5>
                             </div>
                         </div>
@@ -1114,11 +1101,8 @@
                         <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <!--LES VIANDES-->
                             <div>
-                                <h4>
+                                <h4 class="closed">
                                     LES VIANDES
-                                    <a href="javascript:void(0)">
-                                        <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                    </a>
                                 </h4>
                             </div>
                             <!--LES VIANDES DISPLAY-->
@@ -1161,8 +1145,9 @@
             <div class="container text-center">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h3 class="home-subtitle">LA CARTE</h3>
+                            <h4 class="menudevice">LES DESSERTS</h4>
                             <svg id="dessertsvg" viewbox="-29 0 160 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -1185,11 +1170,8 @@
                     <div class="row">
                         <!--FAITS MAISONS-->
                         <div id="homemade" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <h2 class="title text-center">
-                                Faits maisons
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                </a>
+                            <h2 class="closed text-center">
+                                Faits maisons               
                             </h2>
                             <ul class="desc">
                                 <li>
@@ -1217,11 +1199,8 @@
                         </div>
                         <!--GLACES ET SORBETS-->
                         <div id="icecream" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6" > 
-                            <h2 class="title text-center">
+                            <h2 class="closed text-center">
                                 Glaces & sorbets
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                </a>
                             </h2>
                             <ul class="desc">
                                 <li>
@@ -1251,8 +1230,9 @@
             <div class="container text-center">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h3 class="home-subtitle">LA CARTE</h3>
+                            <h4 class="menudevice">LES BOISSONS</h4>
                             <svg id="drinksvg" viewbox="-29 0 160 20">
                                 <defs>
                                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
@@ -1276,12 +1256,9 @@
                     <div class="row">
                         <!--DRINK #1 À DECOUVRIR DISPLAY-->
                         <div id="drink1" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <h2 class="title text-center">
+                            <h4 class="closed text-center">
                                 À DECOUVRIR
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                </a>
-                            </h2>
+                            </h4>
                             <ul class="desc">
                                 <li>
                                     Absinthe de Montmartre à la "Fontaine" 8.35€
@@ -1302,12 +1279,9 @@
                         </div>
                         <!--DRINK #2 CHAMPAGNE DISPLAY-->
                         <div id="drink2" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <h2 class="title text-center">
-                                CHAMPAGNE
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                </a>
-                            </h2>
+                            <h4 class="closed text-center">
+                                CHAMPAGNE 
+                            </h4>
                             <ul class="desc">
                                 <li>
                                     RoberDelph, « Domaine Denis Robert » - La bouteille: 55€ - La coupe 12€
@@ -1328,12 +1302,9 @@
                     <div class="row">
                         <!--DRINK #3 KIRS DISPLAY-->
                         <div id="drink3" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <h2 class="title text-center">
+                            <h4 class="closed text-center">
                                 KIRS
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                </a>
-                            </h2>
+                            </h4>
                             <ul class="desc">
                                 <li>
                                    Le Kir « Mascotte » Blanc pétillant à la crème de cassis, de mûre ou de pêche 10€
@@ -1345,12 +1316,9 @@
                         </div>
                         <!--DRINK #4 LES COCKTAILS DISPLAY-->
                         <div id="drink4" class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                            <h2 class="title text-center">
+                            <h4 class="closed text-center">
                                 LES COCKTAILS
-                                <a href="javascript:void(0)">
-                                    <img class="arrowsvg closed" src="../static/images/menu/arrowdown.svg" alt="">
-                                </a>
-                            </h2>
+                            </h4>
                             <ul class="desc">
                                 <li>
                                    L'Americano 13.5€

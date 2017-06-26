@@ -395,7 +395,6 @@ main {
 			font-size: 70px;
 			color: #FFF;
 			z-index: 2;
-			font-family: Montserrat;
 			margin: 0 auto;
 			padding: 20px 0;
 			letter-spacing: 8px;
@@ -414,7 +413,7 @@ main {
 			height:auto;
 			margin-bottom: 3%;
 			margin-left:-16px;
-			font-family: Montserrat;
+			margin-top: 20px;
 		}
 
 		p {
@@ -882,6 +881,7 @@ footer {
 
 		.btn-credits {
 		    margin: 7px 0px 0px -10px;
+		    padding: 10% 0;
 		}
 	}
 }
