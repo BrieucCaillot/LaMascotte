@@ -166,7 +166,7 @@ main section:first-child {
     color: #FFF;
     z-index: 2;
     margin: 0 auto;
-    padding: 50px 0; }
+    padding: 60px 0; }
 main section:last-child {
   background-color: #F4F4F4;
   padding: 60px 0;
@@ -175,7 +175,7 @@ main section:last-child {
     width: 90%; }
   main section:last-child img {
     width: 76%;
-    margin: 7%; }
+    margin: 13% 30%; }
   main section:last-child span {
     font-size: 20px;
     font-weight: bold; }
@@ -183,7 +183,7 @@ main section:last-child {
     line-height: 46px;
     font-weight: 100;
     font-size: 20px;
-    padding: 18% 0; }
+    padding: 14% 10%; }
 
 /* FOOTER */
 footer {
@@ -361,7 +361,9 @@ footer {
       font-size: 60px; }
 
   main section:last-child img {
-    width: 50%; }
+    width: 50%;
+    margin: 0 auto;
+    display: block; }
   main section:last-child p {
     padding: 5% 0;
     font-size: 23px;
@@ -383,8 +385,8 @@ footer {
     footer .btn-credits {
       margin: 7px 0px 0px -10px;
       padding: 10% 0; } }
-/* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width: 380px) {
+/* MEDIA QUERIES MAX WIDTH 414PX */
+@media all and (max-width: 414px) {
   body {
     overflow-x: hidden; }
 
@@ -403,7 +405,7 @@ footer {
     transform: translate(-50%, -50%); }
 
   main section:first-child {
-    height: 91%;
+    height: 92%;
     background-size: 350% 110%; }
     main section:first-child #headerdesc {
       padding-top: 160px; }
@@ -413,9 +415,9 @@ footer {
 
   main section:last-child img {
     width: 70%;
-    margin-left: -2%; }
+    margin: 0 auto; }
   main section:last-child p {
-    padding: 5% 0;
+    padding: 15% 0 0 0;
     font-size: 17px;
     line-height: 50px; }
 
