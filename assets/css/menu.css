@@ -330,7 +330,7 @@ main {
     height: 500px;
     background: url("../images/menu/background.jpg") no-repeat;
     background-attachment: fixed;
-    background-position: 80% -190px;
+    background-position: 100% 77%;
     background-size: cover; }
     main section:first-child #headerdesc {
       padding: 150px 0px; }
@@ -834,6 +834,8 @@ footer {
 
   main section:nth-child(2) h3 {
     margin-top: 30px; }
+  main section:nth-child(2) #dessertnav {
+    width: 500px; }
   main section:nth-child(2) #h3menu {
     margin-top: 0; }
   main section:nth-child(2) #navcarte {
@@ -842,7 +844,7 @@ footer {
   main section:nth-child(3) svg {
     margin-left: -40px; }
   main section:nth-child(3) h4.menudevice {
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
 
   main section:nth-child(4) svg {
     margin-left: -20px; }
@@ -873,8 +875,8 @@ footer {
     footer .btn-credits {
       margin: 7px 0px 0px -10px;
       padding: 10% 0; } }
-/* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width: 380px) {
+/* MEDIA QUERIES MAX WIDTH 414PX */
+@media all and (max-width: 414px) {
   body {
     overflow-x: hidden; }
     body h4.menudevice {
@@ -925,7 +927,7 @@ footer {
     transform: translate(-50%, -50%); }
 
   main section:first-child {
-    height: 91%;
+    height: 92%;
     background-size: 338% 100%;
     background-position: 64% 40%; }
     main section:first-child #headerdesc {

@@ -1043,6 +1043,7 @@ footer {
 
 /* MEDIA QUERIES MAX WIDTH 1237PX*/
 @media all and (max-width : 1237px) {
+
 	main section:nth-child(2) {
 		img {
 			margin: 0 auto;
@@ -1087,20 +1088,33 @@ footer {
 		margin-top: 40px;
 	}
 
-	#swiperrestaurant {
-		height: 300px;
-	}
-
 	header .progressContainer {
 		top: 69px;
 	}
 
-	main section:first-child h1 {
-		font-size: 60px;
+	main section:first-child {
+
+		h1 {
+			font-size: 60px;
+		}
+
+		h2 {
+			font-size: 25px;
+		}
 	}
 
-	main section:first-child h2 {
-		font-size: 25px;
+	main section:nth-child(3) {
+		#swiperrestaurant {
+			height: 400px;
+		}
+	}
+
+	main section:nth-child(4) {
+		img:last-child {
+			width: 80%;
+			margin: 0 auto;
+			display: block;
+		}
 	}
 
 	main section:nth-child(5) {
@@ -1236,7 +1250,7 @@ footer {
 		}
 
 		#headerdesc {
-	    	padding: 390px 0px;
+	    	padding: 50% 0%;
 		}
 	}
 
@@ -1248,16 +1262,15 @@ footer {
 	main section:nth-child(3) {
 
 		#swiperrestaurant {
-			height: 38%;
+			height: 390px;
 		}
 	}
 
 	main section:nth-child(4) {
-
 		margin: 10% 0;
 
 		img:last-child{
-			height: 28%;
+			height: 250px;
 		}
 	}
 
@@ -1366,8 +1379,8 @@ footer {
 	}
 }
 
-/* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width : 380px) {
+/* MEDIA QUERIES MAX WIDTH 414PX */
+@media all and (max-width : 414px) {
 	body {
 		overflow-x :hidden;
 
@@ -1395,18 +1408,21 @@ footer {
 	}
 
 	main section:first-child {
+		height: 92%;
 		
 		#headerdesc {
-			padding-top: 200px;
+			padding-top: 170px;
 		}
 
 		h1 {
 			font-size : 45px;
+			line-height: 70px;
 		}
 
 		h2 {
 			font-size : 19px;
-			line-height: 26px;
+			line-height: 40px;
+			width: 75%;
 		}
 	}
 
