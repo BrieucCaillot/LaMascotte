@@ -289,8 +289,8 @@ main {
     height: 500px;
     background: url("../images/about/background.jpg") no-repeat;
     background-attachment: fixed;
-    background-position: top;
-    background-size: cover; }
+    background-position: 100% -80px;
+    background-size: 100% 100%; }
     main section:first-child #headerdesc {
       padding: 150px 0px; }
     main section:first-child h1 {
@@ -888,8 +888,11 @@ footer {
   header .progressContainer {
     top: 69px; }
 
-  main section:first-child h1 {
-    font-size: 60px; }
+  main section:first-child {
+    background-position: 100% -120px;
+    background-size: 110% 740px; }
+    main section:first-child h1 {
+      font-size: 60px; }
 
   main section:first-child h2 {
     font-size: 25px; }
@@ -1079,7 +1082,9 @@ footer {
   main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
     margin-bottom: 80px; }
   main section:nth-child(3) article:nth-child(2) img {
-    margin-top: 5%; }
+    margin-top: 5%;
+    width: 120%;
+    margin-left: -8%; }
   main section:nth-child(3) article:nth-child(2) h3 {
     margin-top: 30px;
     text-align: center;
@@ -1102,14 +1107,14 @@ footer {
     margin-bottom: 20px; }
   main section:nth-child(3) article:nth-child(3) img {
     margin-top: 5%;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    width: 120%;
+    margin-left: -8%; }
   main section:nth-child(3) article:nth-child(3) h3 {
     text-align: center;
     margin-left: 0; }
   main section:nth-child(3) article:nth-child(3) svg {
     display: none; }
-  main section:nth-child(3) article:nth-child(3) #barreduce {
-    left: 210px; }
   main section:nth-child(3) article:nth-child(3) p.title {
     text-align: center;
     margin-left: 0; }
@@ -1128,7 +1133,9 @@ footer {
     margin-bottom: 80px; }
   main section:nth-child(3) article:nth-child(4) img {
     margin-top: 5%;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    width: 120%;
+    margin-left: -8%; }
   main section:nth-child(3) article:nth-child(4) h3 {
     text-align: center;
     margin-right: 0; }
@@ -1145,6 +1152,25 @@ footer {
     width: 80%; }
   main section:nth-child(3) article:nth-child(4) button {
     right: 28%; }
+  main section:nth-child(3) article:last-child #ecaillereduce {
+    float: none;
+    left: 34%;
+    margin-bottom: 40px; }
+  main section:nth-child(3) #restaurantseemore {
+    left: -18%;
+    margin-bottom: 50px; }
+  main section:nth-child(3) #restaurantreduce {
+    left: -20%;
+    margin-bottom: 50px; }
+  main section:nth-child(3) #barseemore {
+    left: 20%;
+    margin-bottom: 50px; }
+  main section:nth-child(3) #barreduce {
+    left: 25%;
+    margin-bottom: 50px; }
+  main section:nth-child(3) #ecailleseemore {
+    left: -18%;
+    margin-bottom: 50px; }
 
   main section:nth-child(4) {
     margin-bottom: 0; }
@@ -1233,8 +1259,8 @@ footer {
     margin-top: 410px; }
     footer .btn-credits {
       margin: 7px 0px 0px -10px; } }
-/* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width: 380px) {
+/* MEDIA QUERIES MAX WIDTH 414PX */
+@media all and (max-width: 414px) {
   body {
     overflow-x: hidden; }
 
@@ -1256,7 +1282,7 @@ footer {
     transform: translate(-50%, -50%); }
 
   main section:first-child {
-    height: 91%;
+    height: 92%;
     background-size: 350% 110%; }
     main section:first-child #headerdesc {
       padding-top: 220px; }
@@ -1275,7 +1301,7 @@ footer {
     margin-top: 20px;
     text-align: center;
     margin-left: 0;
-    font-size: 12px; }
+    font-size: 16px; }
   main section:nth-child(3) article:nth-child(2) {
     padding: 50px 0; }
     main section:nth-child(3) article:nth-child(2) #restaurantseemore {
@@ -1285,8 +1311,10 @@ footer {
       margin-top: 20px;
       margin-bottom: 40px; }
     main section:nth-child(3) article:nth-child(2) #restaurantreduce {
+      margin: 0 auto;
       margin-top: 20px;
-      margin-right: -125px; }
+      margin-bottom: 40px;
+      left: -25%; }
     main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
       margin-bottom: 80px; }
     main section:nth-child(3) article:nth-child(2) h3 {
@@ -1342,14 +1370,13 @@ footer {
       line-height: 25px; }
     main section:nth-child(3) article:nth-child(3) #barseemore {
       margin: 0 auto;
-      display: block;
       left: 0;
       margin-top: 20px;
       margin-bottom: 40px; }
     main section:nth-child(3) article:nth-child(3) #barreduce {
       margin: 0 auto;
       margin-top: 20px;
-      margin-left: -140px;
+      left: 25%;
       margin-bottom: 40px; }
     main section:nth-child(3) article:nth-child(3) button.button--nina {
       margin: 0 90px 30px -30px; }
@@ -1373,7 +1400,7 @@ footer {
       display: block;
       font-size: 13px;
       margin-bottom: 3%;
-      width: 90%; }
+      width: 75%; }
     main section:nth-child(3) article:nth-child(4) p.desc {
       text-align: center;
       margin: 0 auto;
@@ -1392,7 +1419,7 @@ footer {
     main section:nth-child(3) article:nth-child(4) #ecaillereduce {
       margin: 0 auto;
       margin-top: 20px;
-      margin-right: -17px;
+      left: -25%;
       margin-bottom: 40px; }
     main section:nth-child(3) article:nth-child(4) button.button--nina {
       margin: 0 -90px 30px 140px; }
@@ -1401,6 +1428,11 @@ footer {
     margin-bottom: 0; }
     main section:nth-child(4) h4.menudevice {
       font-size: 55px; }
+    main section:nth-child(4) h3 {
+      margin-top: 20px;
+      text-align: center;
+      margin-left: 0;
+      font-size: 16px; }
     main section:nth-child(4) article:nth-child(2) {
       padding: 50px 0 25px 0; }
       main section:nth-child(4) article:nth-child(2) h4.menudevice {
@@ -1471,7 +1503,13 @@ footer {
         height: auto; }
 
   main section:last-child h4.menudevice {
-    font-size: 55px; }
+    font-size: 55px;
+    margin-bottom: 30px; }
+  main section:last-child h3 {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 0;
+    font-size: 16px; }
   main section:last-child article:last-child h4.menudevice {
     font-size: 35px; }
   main section:last-child article:last-child img {

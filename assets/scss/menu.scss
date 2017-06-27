@@ -437,7 +437,7 @@ main {
 		height: 500px;
 		background: url("../images/menu/background.jpg") no-repeat;
 		background-attachment: fixed;
-		background-position: 80% -190px;
+		background-position: 100% 77%;
 		background-size: cover;
 
 		#headerdesc {
@@ -1183,6 +1183,10 @@ footer {
 			margin-top: 30px;
 		}
 
+		#dessertnav {
+			width: 500px;
+		}
+
 		#h3menu {
 			margin-top: 0;
 		}
@@ -1198,7 +1202,7 @@ footer {
 		}
 
 		h4.menudevice {
-			margin-bottom: 20px;
+			margin-bottom: 40px;
 		}
 	}
 
@@ -1257,8 +1261,8 @@ footer {
 	}
 }
 
-/* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width : 380px) {
+/* MEDIA QUERIES MAX WIDTH 414PX */
+@media all and (max-width : 414px) {
 	body {
 		overflow-x :hidden;
 		
@@ -1320,7 +1324,7 @@ footer {
 	}
 
 	main section:first-child {
-		height: 91%;
+		height: 92%;
 	    background-size: 338% 100%;
     	background-position: 64% 40%;
 

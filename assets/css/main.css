@@ -774,17 +774,21 @@ footer {
   .hovermenu2, .hovermenu4 {
     margin-top: 40px; }
 
-  #swiperrestaurant {
-    height: 300px; }
-
   header .progressContainer {
     top: 69px; }
 
   main section:first-child h1 {
     font-size: 60px; }
-
   main section:first-child h2 {
     font-size: 25px; }
+
+  main section:nth-child(3) #swiperrestaurant {
+    height: 400px; }
+
+  main section:nth-child(4) img:last-child {
+    width: 80%;
+    margin: 0 auto;
+    display: block; }
 
   main section:nth-child(5) {
     height: 550px; }
@@ -871,19 +875,19 @@ footer {
     main section:first-child h2 {
       font-size: 23px; }
     main section:first-child #headerdesc {
-      padding: 390px 0px; }
+      padding: 50% 0%; }
 
   main section:nth-child(2) img {
     margin: 0% 25%;
     width: 50%; }
 
   main section:nth-child(3) #swiperrestaurant {
-    height: 38%; }
+    height: 390px; }
 
   main section:nth-child(4) {
     margin: 10% 0; }
     main section:nth-child(4) img:last-child {
-      height: 28%; }
+      height: 250px; }
 
   main section:nth-child(5) {
     margin-top: 10px;
@@ -944,8 +948,8 @@ footer {
     height: 160px; }
     footer .btn-credits {
       margin: 7px 0px 0px -10px; } }
-/* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width: 380px) {
+/* MEDIA QUERIES MAX WIDTH 414PX */
+@media all and (max-width: 414px) {
   body {
     overflow-x: hidden; }
     body .menudevice {
@@ -965,13 +969,17 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%); }
 
-  main section:first-child #headerdesc {
-    padding-top: 200px; }
-  main section:first-child h1 {
-    font-size: 45px; }
-  main section:first-child h2 {
-    font-size: 19px;
-    line-height: 26px; }
+  main section:first-child {
+    height: 92%; }
+    main section:first-child #headerdesc {
+      padding-top: 170px; }
+    main section:first-child h1 {
+      font-size: 45px;
+      line-height: 70px; }
+    main section:first-child h2 {
+      font-size: 19px;
+      line-height: 40px;
+      width: 75%; }
 
   main section:nth-child(2) svg {
     margin-bottom: 30px; }

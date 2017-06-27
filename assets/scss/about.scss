@@ -392,8 +392,8 @@ main {
 		height: 500px;
 		background: url("../images/about/background.jpg") no-repeat;
 		background-attachment: fixed;
-		background-position: top;
-		background-size: cover;
+		background-position: 100% -80px;
+		background-size: 100% 100%;
 		
 		#headerdesc {
 			padding: 150px 0px;
@@ -1264,12 +1264,19 @@ footer {
 		top: 69px;
 	}
 
-	main section:first-child h1 {
-		font-size: 60px;
+	main section:first-child {
+	    background-position: 100% -120px;
+    	background-size: 110% 740px;
+
+		h1 {
+			font-size: 60px;
+		}
 	}
 
-	main section:first-child h2 {
-		font-size: 25px;
+	main section:first-child {
+		h2 {
+			font-size: 25px;
+		}
 	}
 
 	main section:nth-child(2) img {
@@ -1584,6 +1591,8 @@ footer {
 
 			img {
 				margin-top: 5%;
+				width: 120%;
+				margin-left: -8%;
 			}
 			
 			h3 {
@@ -1624,6 +1633,8 @@ footer {
 			img {
 				margin-top: 5%;
 				margin-bottom: 15px;
+				width: 120%;
+				margin-left: -8%;
 			}
 			
 			h3 {
@@ -1633,10 +1644,6 @@ footer {
 
 			svg {
 				display: none;
-			}
-
-			#barreduce {
-				left: 210px;
 			}
 
 			p.title {
@@ -1670,6 +1677,8 @@ footer {
 			img {
 				margin-top: 5%;
 				margin-bottom: 15px;
+				width: 120%;
+				margin-left: -8%;
 			}
 			
 			h3 {
@@ -1697,6 +1706,39 @@ footer {
 			button {
 				right: 28%;
 			}
+		}
+
+		article:last-child {
+			#ecaillereduce {
+				float: none;
+				left: 34%;
+				margin-bottom: 40px;
+			}
+		}
+
+		#restaurantseemore {
+			left: -18%;
+			margin-bottom:50px; 
+		}
+
+		#restaurantreduce {
+			left: -20%;
+			margin-bottom: 50px;
+		}
+
+		#barseemore {
+			left: 20%;
+			margin-bottom: 50px;
+		}
+
+		#barreduce {
+			left: 25%;
+			margin-bottom: 50px;
+		}
+
+		#ecailleseemore {
+			left: -18%;
+			margin-bottom: 50px;
 		}
 	}
 
@@ -1846,8 +1888,8 @@ footer {
 	}
 }
 
-/* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width : 380px) {
+/* MEDIA QUERIES MAX WIDTH 414PX */
+@media all and (max-width : 414px) {
 	body {
 		overflow-x :hidden;
 	}
@@ -1874,7 +1916,7 @@ footer {
 	}
 
 	main section:first-child {
-		height: 91%;
+		height: 92%;
 		background-size: 350% 110%;
 
 		#headerdesc {
@@ -1907,7 +1949,7 @@ footer {
 			margin-top: 20px;
 			text-align: center;
 			margin-left: 0;
-			font-size: 12px;
+			font-size: 16px;
 		}
 
 		article:nth-child(2) {
@@ -1922,8 +1964,10 @@ footer {
 			}
 
 			#restaurantreduce {
+				margin: 0 auto;
 				margin-top: 20px;
-				margin-right: -125px;
+				margin-bottom: 40px;
+				left: -25%;
 			}
 
 			div:first-child.col-lg-12 {
@@ -2009,7 +2053,6 @@ footer {
 
 			#barseemore {
 				margin: 0 auto;
-				display: block;
 				left: 0;
 				margin-top: 20px;
 				margin-bottom: 40px;
@@ -2018,7 +2061,7 @@ footer {
 			#barreduce {
 				margin: 0 auto;
 				margin-top: 20px;
-				margin-left: -140px;
+				left: 25%;
 				margin-bottom: 40px;
 			}
 
@@ -2056,7 +2099,7 @@ footer {
 				display: block;
 				font-size: 13px;
 				margin-bottom: 3%;
-				width: 90%;
+				width: 75%;
 			}
 
 			p.desc {
@@ -2083,7 +2126,7 @@ footer {
 			#ecaillereduce {
 				margin: 0 auto;
 				margin-top: 20px;
-				margin-right: -17px;
+				left: -25%;
 				margin-bottom: 40px;
 			}
 
@@ -2098,6 +2141,13 @@ footer {
 
 		h4.menudevice {
 			font-size: 55px;
+		}
+
+		h3 {
+			margin-top: 20px;
+			text-align: center;
+			margin-left: 0;
+			font-size: 16px;
 		}
 
 		article:nth-child(2){
@@ -2213,6 +2263,14 @@ footer {
 
 		h4.menudevice {
 			font-size: 55px;
+			margin-bottom: 30px;
+		}
+
+		h3 {
+			margin-top: 20px;
+			text-align: center;
+			margin-left: 0;
+			font-size: 16px;
 		}
 
 		article:last-child {

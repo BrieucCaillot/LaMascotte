@@ -6,6 +6,15 @@ body {
 	font-family : roboto;
 	overflow-x: hidden;
 
+	.menudevice {
+	    font-size: 45px;
+	    color: #2A6993;
+	    margin: 0 auto;
+	    text-align: center;
+	    padding: 20px 0;
+	    display: none;
+	}
+
 	.button {
 		position: relative;
 	    display: block;
@@ -827,6 +836,10 @@ footer {
 		display: none;
 	}
 
+	body .menudevice {
+	    display: block;
+	}
+
 	.progress {
 		display: none;
 	}
@@ -865,6 +878,12 @@ footer {
 
 	}
 
+	main section:nth-child(2) {
+		svg {
+			display: none;
+		}
+	}
+
 	main section:nth-child(3) {
 		h3 {
 			padding: 4% 0;
@@ -873,6 +892,7 @@ footer {
 		p {
 			padding-bottom: 3%;
 		}
+
 	}
 
 	footer {
@@ -886,8 +906,8 @@ footer {
 	}
 }
 
-/* MEDIA QUERIES MAX WIDTH 380PX */
-@media all and (max-width : 380px) {
+/* MEDIA QUERIES MAX WIDTH 414PX */
+@media all and (max-width : 414px) {
 	body {
 		overflow-x :hidden;
 	}
@@ -910,18 +930,18 @@ footer {
 	}
 
 	main section:first-child {
-		height: 91%;
+		height: 92%;
 	    background-size: 260% 100%;
     	background-position: 56% 100%;
 
 		#headerdesc {
-			padding-top: 200px;
+			padding-top: 220px;
 		}
 
 		h1 {
 			font-size : 45px;
 			line-height: 70px;
-			width: 100%;
+			width: 90%;
 		}
 	}
 
