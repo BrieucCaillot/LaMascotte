@@ -881,8 +881,10 @@ footer {
     margin: 0% 25%;
     width: 50%; }
 
-  main section:nth-child(3) #swiperrestaurant {
-    height: 390px; }
+  main section:nth-child(3) {
+    margin-top: 40px; }
+    main section:nth-child(3) #swiperrestaurant {
+      height: 390px; }
 
   main section:nth-child(4) {
     margin: 10% 0; }
