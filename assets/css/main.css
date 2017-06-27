@@ -950,10 +950,8 @@ footer {
       margin: 7px 0px 0px -10px; } }
 /* MEDIA QUERIES MAX WIDTH 414PX */
 @media all and (max-width: 414px) {
-  body {
-    overflow-x: hidden; }
-    body .menudevice {
-      font-size: 50px; }
+  body .menudevice {
+    font-size: 50px; }
 
   header #headersocial {
     display: none; }
@@ -997,20 +995,26 @@ footer {
       width: 100%;
       padding: 0; }
     main section:nth-child(3) #swiperrestaurant {
-      height: 35%; }
+      height: 230px; }
       main section:nth-child(3) #swiperrestaurant div.swiper-button-prev {
-        margin-left: -10%; }
+        margin-left: -10%;
+        background-position: 20% 10%;
+        background-size: 35px; }
       main section:nth-child(3) #swiperrestaurant div.swiper-button-next {
-        margin-right: -10%; }
+        margin-right: -10%;
+        background-position: 80% 10%;
+        background-size: 35px; }
 
   main section:nth-child(4) h2 {
-    font-size: 30px; }
+    font-size: 25px;
+    top: 31%; }
   main section:nth-child(4) .button--nina {
     padding: 3.5px 15px;
     color: #fff;
     font-size: 14px; }
   main section:nth-child(4) img:last-child {
-    height: 30%; }
+    height: 30%;
+    width: 100%; }
 
   main section:nth-child(5) {
     height: 425px; }

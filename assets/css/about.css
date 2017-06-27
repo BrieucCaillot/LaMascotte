@@ -1083,8 +1083,8 @@ footer {
     margin-bottom: 80px; }
   main section:nth-child(3) article:nth-child(2) img {
     margin-top: 5%;
-    width: 120%;
-    margin-left: -8%; }
+    width: 100%;
+    margin-left: 0%; }
   main section:nth-child(3) article:nth-child(2) h3 {
     margin-top: 30px;
     text-align: center;
@@ -1108,8 +1108,8 @@ footer {
   main section:nth-child(3) article:nth-child(3) img {
     margin-top: 5%;
     margin-bottom: 15px;
-    width: 120%;
-    margin-left: -8%; }
+    width: 100%;
+    margin-left: 0%; }
   main section:nth-child(3) article:nth-child(3) h3 {
     text-align: center;
     margin-left: 0; }
@@ -1134,8 +1134,8 @@ footer {
   main section:nth-child(3) article:nth-child(4) img {
     margin-top: 5%;
     margin-bottom: 15px;
-    width: 120%;
-    margin-left: -8%; }
+    width: 100%;
+    margin-left: 0%; }
   main section:nth-child(3) article:nth-child(4) h3 {
     text-align: center;
     margin-right: 0; }
@@ -1154,22 +1154,22 @@ footer {
     right: 28%; }
   main section:nth-child(3) article:last-child #ecaillereduce {
     float: none;
-    left: 34%;
+    left: 36.8%;
     margin-bottom: 40px; }
   main section:nth-child(3) #restaurantseemore {
-    left: -18%;
+    left: -26%;
     margin-bottom: 50px; }
   main section:nth-child(3) #restaurantreduce {
-    left: -20%;
+    left: -31%;
     margin-bottom: 50px; }
   main section:nth-child(3) #barseemore {
-    left: 20%;
+    left: 27.4%;
     margin-bottom: 50px; }
   main section:nth-child(3) #barreduce {
-    left: 25%;
+    left: 30.8%;
     margin-bottom: 50px; }
   main section:nth-child(3) #ecailleseemore {
-    left: -18%;
+    left: -27.7%;
     margin-bottom: 50px; }
 
   main section:nth-child(4) {
@@ -1314,7 +1314,7 @@ footer {
       margin: 0 auto;
       margin-top: 20px;
       margin-bottom: 40px;
-      left: -25%; }
+      left: -22.5%; }
     main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
       margin-bottom: 80px; }
     main section:nth-child(3) article:nth-child(2) h3 {
@@ -1376,7 +1376,7 @@ footer {
     main section:nth-child(3) article:nth-child(3) #barreduce {
       margin: 0 auto;
       margin-top: 20px;
-      left: 25%;
+      left: 22.5%;
       margin-bottom: 40px; }
     main section:nth-child(3) article:nth-child(3) button.button--nina {
       margin: 0 90px 30px -30px; }
@@ -1400,7 +1400,8 @@ footer {
       display: block;
       font-size: 13px;
       margin-bottom: 3%;
-      width: 75%; }
+      width: 75%;
+      line-height: 20px; }
     main section:nth-child(3) article:nth-child(4) p.desc {
       text-align: center;
       margin: 0 auto;
@@ -1419,7 +1420,7 @@ footer {
     main section:nth-child(3) article:nth-child(4) #ecaillereduce {
       margin: 0 auto;
       margin-top: 20px;
-      left: -25%;
+      left: 22.5%;
       margin-bottom: 40px; }
     main section:nth-child(3) article:nth-child(4) button.button--nina {
       margin: 0 -90px 30px 140px; }

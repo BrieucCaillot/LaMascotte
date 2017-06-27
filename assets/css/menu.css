@@ -928,7 +928,7 @@ footer {
 
   main section:first-child {
     height: 92%;
-    background-size: 338% 100%;
+    background-size: cover;
     background-position: 64% 40%; }
     main section:first-child #headerdesc {
       padding-top: 220px; }

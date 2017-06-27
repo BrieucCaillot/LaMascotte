@@ -1591,8 +1591,8 @@ footer {
 
 			img {
 				margin-top: 5%;
-				width: 120%;
-				margin-left: -8%;
+				width: 100%;
+    			margin-left: 0%;
 			}
 			
 			h3 {
@@ -1633,8 +1633,8 @@ footer {
 			img {
 				margin-top: 5%;
 				margin-bottom: 15px;
-				width: 120%;
-				margin-left: -8%;
+				width: 100%;
+    			margin-left: 0%;
 			}
 			
 			h3 {
@@ -1677,8 +1677,8 @@ footer {
 			img {
 				margin-top: 5%;
 				margin-bottom: 15px;
-				width: 120%;
-				margin-left: -8%;
+				width: 100%;
+    			margin-left: 0%;
 			}
 			
 			h3 {
@@ -1711,34 +1711,34 @@ footer {
 		article:last-child {
 			#ecaillereduce {
 				float: none;
-				left: 34%;
+				left: 36.8%;
 				margin-bottom: 40px;
 			}
 		}
 
 		#restaurantseemore {
-			left: -18%;
+			left: -26%;
 			margin-bottom:50px; 
 		}
 
 		#restaurantreduce {
-			left: -20%;
+			left: -31%;
 			margin-bottom: 50px;
 		}
 
 		#barseemore {
-			left: 20%;
-			margin-bottom: 50px;
+			left: 27.4%;
+			margin-bottom:50px; 
 		}
 
 		#barreduce {
-			left: 25%;
+			left: 30.8%;
 			margin-bottom: 50px;
 		}
 
 		#ecailleseemore {
-			left: -18%;
-			margin-bottom: 50px;
+			left: -27.7%;
+			margin-bottom:50px; 
 		}
 	}
 
@@ -1967,7 +1967,7 @@ footer {
 				margin: 0 auto;
 				margin-top: 20px;
 				margin-bottom: 40px;
-				left: -25%;
+				left: -22.5%;
 			}
 
 			div:first-child.col-lg-12 {
@@ -2061,7 +2061,7 @@ footer {
 			#barreduce {
 				margin: 0 auto;
 				margin-top: 20px;
-				left: 25%;
+				left: 22.5%;
 				margin-bottom: 40px;
 			}
 
@@ -2100,6 +2100,7 @@ footer {
 				font-size: 13px;
 				margin-bottom: 3%;
 				width: 75%;
+				line-height: 20px;
 			}
 
 			p.desc {
@@ -2126,7 +2127,7 @@ footer {
 			#ecaillereduce {
 				margin: 0 auto;
 				margin-top: 20px;
-				left: -25%;
+				left: 22.5%;
 				margin-bottom: 40px;
 			}
 

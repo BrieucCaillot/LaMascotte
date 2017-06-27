@@ -1382,12 +1382,9 @@ footer {
 /* MEDIA QUERIES MAX WIDTH 414PX */
 @media all and (max-width : 414px) {
 	body {
-		overflow-x :hidden;
-
 		.menudevice {
 			font-size: 50px;
 		}
-
 	}
 
 	header #headersocial {
@@ -1454,21 +1451,26 @@ footer {
 		}
 
 		#swiperrestaurant {
-			height: 35%;
+			height: 230px;
 
 			div.swiper-button-prev {
 				margin-left: -10%;
+				background-position: 20% 10%;
+				background-size: 35px;
 			}
 
 			div.swiper-button-next {
 				margin-right: -10%;
+				background-position: 80% 10%;
+				background-size: 35px;
 			}
 		}
 	}
 
 	main section:nth-child(4) {
 		h2 {
-			font-size: 30px;
+			font-size: 25px;
+			top: 31%
 		}
 
 		.button--nina {
@@ -1479,6 +1481,7 @@ footer {
 
 		img:last-child {
 			height: 30%;
+			width: 100%;
 		}
 	}
 
