@@ -385,6 +385,8 @@ main {
     main section:nth-child(4) svg {
       max-width: 480px;
       height: auto; }
+    main section:nth-child(4) .hovermenu3, main section:nth-child(4) .hovermenu4 {
+      margin-top: 30px; }
     main section:nth-child(4) img:first-child {
       position: absolute;
       top: 28%;
@@ -771,7 +773,7 @@ footer {
   .hide {
     display: none; }
 
-  .hovermenu2, .hovermenu4 {
+  .hovermenu2, .hovermenu3, .hovermenu4 {
     margin-top: 40px; }
 
   header .progressContainer {
@@ -854,7 +856,7 @@ footer {
   .hide {
     display: none; }
 
-  .hovermenu2, .hovermenu4 {
+  .hovermenu2, .hovermenu3, .hovermenu4 {
     margin-top: 40px; }
 
   #swiperrestaurant {
@@ -972,7 +974,7 @@ footer {
   main section:first-child {
     height: 92%; }
     main section:first-child #headerdesc {
-      padding-top: 170px; }
+      padding-top: 130px; }
     main section:first-child h1 {
       font-size: 45px;
       line-height: 70px; }
@@ -1017,6 +1019,8 @@ footer {
   main section:nth-child(4) img:last-child {
     height: 30%;
     width: 100%; }
+  main section:nth-child(4) .hovermenu2 {
+    margin-top: 30px; }
 
   main section:nth-child(5) {
     height: 425px; }

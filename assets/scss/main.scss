@@ -536,6 +536,10 @@ main {
 			height:auto;
 		}
 
+		.hovermenu3, .hovermenu4 {
+			margin-top: 30px;
+		}
+
 		img:first-child {
 			position: absolute;
 		    top: 28%;
@@ -1084,7 +1088,7 @@ footer {
 		display: none;
 	}
 
-	.hovermenu2, .hovermenu4 {
+	.hovermenu2, .hovermenu3, .hovermenu4 {
 		margin-top: 40px;
 	}
 
@@ -1220,7 +1224,7 @@ footer {
 		display: none;
 	}
 
-	.hovermenu2, .hovermenu4 {
+	.hovermenu2, .hovermenu3, .hovermenu4 {
 		margin-top: 40px;
 	}
 
@@ -1409,7 +1413,7 @@ footer {
 		height: 92%;
 		
 		#headerdesc {
-			padding-top: 170px;
+			padding-top: 130px;
 		}
 
 		h1 {
@@ -1483,6 +1487,10 @@ footer {
 		img:last-child {
 			height: 30%;
 			width: 100%;
+		}
+
+		.hovermenu2 {
+			margin-top: 30px;
 		}
 	}
 

@@ -289,8 +289,8 @@ main {
     height: 500px;
     background: url("../images/about/background.jpg") no-repeat;
     background-attachment: fixed;
-    background-position: 100% -80px;
-    background-size: 100% 100%; }
+    background-position: 50% top;
+    background-size: 100% 100vh; }
     main section:first-child #headerdesc {
       padding: 150px 0px; }
     main section:first-child h1 {
@@ -889,8 +889,8 @@ footer {
     top: 69px; }
 
   main section:first-child {
-    background-position: 100% -120px;
-    background-size: 110% 740px; }
+    background-position: 50% top;
+    background-size: 100% 80vh; }
     main section:first-child h1 {
       font-size: 60px; }
 
@@ -1285,7 +1285,7 @@ footer {
     height: 92%;
     background-size: 350% 110%; }
     main section:first-child #headerdesc {
-      padding-top: 220px; }
+      padding-top: 170px; }
     main section:first-child h1 {
       font-size: 45px; }
 

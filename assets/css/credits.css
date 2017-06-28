@@ -406,9 +406,10 @@ footer {
 
   main section:first-child {
     height: 92%;
-    background-size: 350% 110%; }
+    background-size: 510% 100%;
+    background-position: 68% 80%; }
     main section:first-child #headerdesc {
-      padding-top: 160px; }
+      padding-top: 120px; }
     main section:first-child h1 {
       font-size: 45px;
       line-height: 70px; }

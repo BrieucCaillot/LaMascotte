@@ -392,8 +392,8 @@ main {
 		height: 500px;
 		background: url("../images/about/background.jpg") no-repeat;
 		background-attachment: fixed;
-		background-position: 100% -80px;
-		background-size: 100% 100%;
+    	background-position: 50% top;
+    	background-size: 100% 100vh;
 		
 		#headerdesc {
 			padding: 150px 0px;
@@ -1265,8 +1265,8 @@ footer {
 	}
 
 	main section:first-child {
-	    background-position: 100% -120px;
-    	background-size: 110% 740px;
+	    background-position: 50% top;
+    	background-size: 100% 80vh;
 
 		h1 {
 			font-size: 60px;
@@ -1920,7 +1920,7 @@ footer {
 		background-size: 350% 110%;
 
 		#headerdesc {
-			padding-top: 220px;
+			padding-top: 170px;
 		}
 
 		h1 {
