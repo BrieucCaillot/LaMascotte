@@ -376,7 +376,8 @@ main {
         text-transform: uppercase;
         padding: 14px 28px; }
   main section:nth-child(3) {
-    margin: 72px 0;
+    margin-top: 72px;
+    margin-bottom: 72px;
     /* RESTAURANT */
     /* BAR */
     /*L'ECAILLE */ }
@@ -401,7 +402,7 @@ main {
         margin: 0 auto;
         margin-left: 160px;
         margin-bottom: 3%;
-        margin-right: -20px; }
+        margin-right: -2%; }
       main section:nth-child(3) article:nth-child(2) img {
         width: 100%;
         height: 380px; }
@@ -432,13 +433,21 @@ main {
       main section:nth-child(3) article:nth-child(2) .button--nina {
         color: #6B614D;
         font-size: 14px;
-        margin-right: 40px;
         outline: 0;
         padding: 3.5px 28px; }
         main section:nth-child(3) article:nth-child(2) .button--nina span {
           font-size: 12px; }
-      main section:nth-child(3) article:nth-child(2) #restaurantreduce {
+      main section:nth-child(3) article:nth-child(2) #restaurantseemenu {
+        display: inline-block;
         float: right; }
+      main section:nth-child(3) article:nth-child(2) #restaurantseemore {
+        display: inline-block;
+        margin-left: 40px;
+        float: right;
+        margin-right: 40px; }
+      main section:nth-child(3) article:nth-child(2) #restaurantreduce {
+        float: right;
+        margin-right: 40px; }
       main section:nth-child(3) article:nth-child(2) button {
         border: 2px solid #6B614D;
         background-color: transparent; }
@@ -465,7 +474,7 @@ main {
         height: auto;
         margin-left: 0px;
         margin-bottom: 3%;
-        margin-right: 240px;
+        margin-right: 35%;
         display: block; }
       main section:nth-child(3) article:nth-child(3) img {
         height: 380px;
@@ -497,6 +506,12 @@ main {
         outline: 0; }
         main section:nth-child(3) article:nth-child(3) .button--nina span {
           font-size: 12px; }
+      main section:nth-child(3) article:nth-child(3) #barseecarte {
+        display: inline-block;
+        float: left; }
+      main section:nth-child(3) article:nth-child(3) #barseemore {
+        display: inline-block;
+        float: left; }
       main section:nth-child(3) article:nth-child(3) button {
         border: 2px solid #6B614D;
         background-color: transparent;
@@ -520,13 +535,11 @@ main {
       background-color: #FFF; }
       main section:nth-child(3) article:last-child #ecailledisplay, main section:nth-child(3) article:last-child #ecaillereduce {
         display: none; }
-      main section:nth-child(3) article:last-child #ecaillereduce {
-        float: right; }
       main section:nth-child(3) article:last-child svg {
         font-weight: bold;
         max-width: 400px;
         height: auto;
-        margin: 0 0 3% 215px; }
+        margin: 0 0 3% 31%; }
       main section:nth-child(3) article:last-child img {
         width: 100%;
         height: 380px; }
@@ -557,10 +570,20 @@ main {
         padding: 3.5px 28px;
         color: #6B614D;
         font-size: 14px;
-        margin-right: 40px;
         outline: 0; }
         main section:nth-child(3) article:last-child .button--nina span {
           font-size: 12px; }
+      main section:nth-child(3) article:last-child #ecailleseecarte {
+        display: inline-block;
+        float: right; }
+      main section:nth-child(3) article:last-child #ecailleseemore {
+        display: inline-block;
+        margin-left: 40px;
+        float: right;
+        margin-right: 40px; }
+      main section:nth-child(3) article:last-child #ecaillereduce {
+        float: right;
+        margin-right: 40px; }
       main section:nth-child(3) article:last-child button {
         border: 2px solid #6B614D;
         background-color: transparent; }
@@ -579,7 +602,8 @@ main {
         main section:nth-child(3) article:last-child button:hover a {
           color: #fff; }
   main section:nth-child(4) {
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
     /* 1935 */
     /* 2000 */
     /* 2006 */
@@ -664,7 +688,8 @@ main {
         width: 100%;
         height: 380px; }
   main section:last-child {
-    margin: 72px 0; }
+    margin-top: 72px;
+    margin-bottom: 72px; }
     main section:last-child svg {
       font-weight: bold;
       max-width: 480px;
@@ -844,10 +869,6 @@ footer {
     height: 110px; } }
 /* MEDIA QUERIES MAX WIDTH 1237PX*/
 @media all and (max-width: 1237px) {
-  main section:nth-child(2) img {
-    margin: 75px 0 0 -30px;
-    width: 260px; }
-
   #headersocial {
     position: absolute;
     right: -290%; }
@@ -857,6 +878,10 @@ footer {
 
   .hide {
     display: none; }
+
+  main section:nth-child(2) img {
+    margin: 75px 0 0 -30px;
+    width: 260px; }
 
   main section:nth-child(4) .container {
     width: 100%; } }
@@ -916,6 +941,12 @@ footer {
   main section:nth-child(3) #ecailleseemore {
     left: -180px;
     margin-bottom: 50px; }
+  main section:nth-child(3) #ecailleseecarte {
+    margin-right: -203px;
+    margin-left: -40px; }
+  main section:nth-child(3) #ecailleseemore {
+    margin-left: 0px;
+    margin-right: 130px; }
   main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
     margin-bottom: 80px; }
   main section:nth-child(3) article:nth-child(2) h3 {
@@ -929,34 +960,47 @@ footer {
   main section:nth-child(3) article:nth-child(2) .desc {
     text-align: center;
     margin-right: 0; }
+  main section:nth-child(3) article:nth-child(2) #restaurantseemenu {
+    margin-right: -303px; }
+  main section:nth-child(3) article:nth-child(2) #restaurantseemore {
+    margin-right: 160px; }
   main section:nth-child(3) article:nth-child(3) img {
     margin-bottom: 30px; }
   main section:nth-child(3) article:nth-child(3) h3 {
     text-align: center;
     margin-left: 0; }
   main section:nth-child(3) article:nth-child(3) svg {
-    margin-left: 240px; }
-  main section:nth-child(3) article:nth-child(3) #restaurantseemore {
-    display: none; }
+    margin-left: 215px;
+    margin-right: 51px; }
   main section:nth-child(3) article:nth-child(3) .title {
     text-align: center;
     margin-left: 0; }
   main section:nth-child(3) article:nth-child(3) .desc {
     text-align: center;
     margin-left: 0; }
-  main section:nth-child(3) article:nth-child(4) div:first-child.col-lg-12 {
+  main section:nth-child(3) article:nth-child(3) #barseecarte {
+    margin-right: -33px;
+    float: left; }
+  main section:nth-child(3) article:nth-child(3) #barseemore {
+    float: left;
+    margin-right: 175px;
+    margin-left: -75px; }
+  main section:nth-child(3) article:last-child div:first-child.col-lg-12 {
     margin-bottom: 80px; }
-  main section:nth-child(3) article:nth-child(4) h3 {
+  main section:nth-child(3) article:last-child h3 {
     text-align: center;
     margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) svg {
+  main section:nth-child(3) article:last-child svg {
     margin-left: 58px; }
-  main section:nth-child(3) article:nth-child(4) .title {
+  main section:nth-child(3) article:last-child .title {
     text-align: center;
     margin-right: 0; }
-  main section:nth-child(3) article:nth-child(4) .desc {
+  main section:nth-child(3) article:last-child .desc {
     text-align: center;
     margin-right: 0; }
+  main section:nth-child(3) article:last-child #ecailleseemore {
+    margin-left: -70px;
+    margin-right: 160px; }
 
   main section:nth-child(4) {
     margin-bottom: 0; }
@@ -1102,6 +1146,10 @@ footer {
     width: 80%; }
   main section:nth-child(3) article:nth-child(2) button {
     right: 28%; }
+  main section:nth-child(3) article:nth-child(2) #restaurantseemore {
+    margin-right: 160px; }
+  main section:nth-child(3) article:nth-child(2) #restaurantseemenu {
+    margin-right: -490px; }
   main section:nth-child(3) article:nth-child(3) h4.menudevice {
     font-size: 55px;
     margin-bottom: 20px; }
@@ -1126,6 +1174,10 @@ footer {
     width: 80%; }
   main section:nth-child(3) article:nth-child(3) button {
     left: 28%; }
+  main section:nth-child(3) article:nth-child(3) #barseemore {
+    margin-left: -80px; }
+  main section:nth-child(3) article:nth-child(3) #barseecarte {
+    margin-left: -135px; }
   main section:nth-child(3) article:nth-child(4) h4.menudevice {
     font-size: 55px;
     margin-bottom: 20px; }
@@ -1152,9 +1204,13 @@ footer {
     width: 80%; }
   main section:nth-child(3) article:nth-child(4) button {
     right: 28%; }
+  main section:nth-child(3) article:nth-child(4) #ecailleseemore {
+    margin-right: 165px; }
+  main section:nth-child(3) article:nth-child(4) #ecailleseecarte {
+    margin-right: -394px; }
   main section:nth-child(3) article:last-child #ecaillereduce {
     float: none;
-    left: 36.8%;
+    left: 36.7%;
     margin-bottom: 40px; }
   main section:nth-child(3) #restaurantseemore {
     left: -27.7%;
@@ -1307,14 +1363,17 @@ footer {
     main section:nth-child(3) article:nth-child(2) #restaurantseemore {
       margin: 0 auto;
       display: block;
-      left: 0;
+      left: -17%;
       margin-top: 20px;
-      margin-bottom: 40px; }
+      margin-bottom: 10px; }
+    main section:nth-child(3) article:nth-child(2) #restaurantseemenu {
+      margin-right: -11%;
+      width: 215px; }
     main section:nth-child(3) article:nth-child(2) #restaurantreduce {
       margin: 0 auto;
       margin-top: 20px;
       margin-bottom: 40px;
-      left: -22.5%; }
+      left: -23.3%; }
     main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
       margin-bottom: 80px; }
     main section:nth-child(3) article:nth-child(2) h3 {
@@ -1370,13 +1429,16 @@ footer {
       line-height: 25px; }
     main section:nth-child(3) article:nth-child(3) #barseemore {
       margin: 0 auto;
-      left: 0;
+      left: 17%;
       margin-top: 20px;
-      margin-bottom: 40px; }
+      margin-bottom: 10px; }
+    main section:nth-child(3) article:nth-child(3) #barseecarte {
+      margin-left: -11%;
+      width: 215px; }
     main section:nth-child(3) article:nth-child(3) #barreduce {
       margin: 0 auto;
       margin-top: 20px;
-      left: 22.5%;
+      left: 23.3%;
       margin-bottom: 40px; }
     main section:nth-child(3) article:nth-child(3) button.button--nina {
       margin: 0 90px 30px -30px; }
@@ -1414,13 +1476,16 @@ footer {
     main section:nth-child(3) article:nth-child(4) #ecailleseemore {
       margin: 0 auto;
       display: block;
-      left: 0;
+      left: -17%;
       margin-top: 20px;
-      margin-bottom: 40px; }
+      margin-bottom: 10px; }
+    main section:nth-child(3) article:nth-child(4) #ecailleseecarte {
+      margin-right: -11%;
+      width: 215px; }
     main section:nth-child(3) article:nth-child(4) #ecaillereduce {
       margin: 0 auto;
       margin-top: 20px;
-      left: 22.5%;
+      left: 23.3%;
       margin-bottom: 40px; }
     main section:nth-child(3) article:nth-child(4) button.button--nina {
       margin: 0 -90px 30px 140px; }
@@ -1543,5 +1608,145 @@ footer {
       padding: 8% 13%; }
     footer img {
       margin-top: 20px; } }
+/* MEDIA QUERIES MAX WIDTH 375PX */
+@media all and (max-width: 375px) {
+  main section:nth-child(3) h4.menudevice {
+    font-size: 55px; }
+  main section:nth-child(3) h3 {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 0;
+    font-size: 16px; }
+  main section:nth-child(3) article:nth-child(2) {
+    padding: 50px 0; }
+    main section:nth-child(3) article:nth-child(2) #restaurantseemore {
+      margin: 0 auto;
+      display: block;
+      left: -9.3vw;
+      margin-top: 20px;
+      margin-bottom: 10px; }
+    main section:nth-child(3) article:nth-child(2) #restaurantseemenu {
+      margin-right: -11.9vw;
+      width: 215px; }
+    main section:nth-child(3) article:nth-child(2) #restaurantreduce {
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      left: -20.1%; }
+    main section:nth-child(3) article:nth-child(2) div:first-child.col-lg-12 {
+      margin-bottom: 80px; }
+    main section:nth-child(3) article:nth-child(2) h3 {
+      margin-top: 20px;
+      text-align: center;
+      margin-left: 0;
+      font-size: 12px; }
+    main section:nth-child(3) article:nth-child(2) h4.menudevice {
+      font-size: 35px; }
+    main section:nth-child(3) article:nth-child(2) p.title {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      font-size: 13px;
+      margin-bottom: 3%; }
+    main section:nth-child(3) article:nth-child(2) p.desc {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      line-height: 20px;
+      font-size: 10px;
+      line-height: 25px; }
+    main section:nth-child(3) article:nth-child(2) img {
+      height: auto; }
+    main section:nth-child(3) article:nth-child(2) button.button--nina {
+      margin: 0 -90px 30px 140px; }
+  main section:nth-child(3) article:nth-child(3) {
+    padding: 25px 0; }
+    main section:nth-child(3) article:nth-child(3) svg {
+      display: none; }
+    main section:nth-child(3) article:nth-child(3) img {
+      margin-bottom: 30px;
+      height: auto; }
+    main section:nth-child(3) article:nth-child(3) h3 {
+      margin-top: 20px;
+      text-align: center;
+      margin-left: 0;
+      font-size: 12px; }
+    main section:nth-child(3) article:nth-child(3) h4.menudevice {
+      font-size: 35px; }
+    main section:nth-child(3) article:nth-child(3) p.title {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      font-size: 13px;
+      margin-bottom: 3%; }
+    main section:nth-child(3) article:nth-child(3) p.desc {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      line-height: 20px;
+      font-size: 10px;
+      line-height: 25px; }
+    main section:nth-child(3) article:nth-child(3) #barseemore {
+      margin: 0 auto;
+      left: 9.3vw;
+      margin-top: 20px;
+      margin-bottom: 10px; }
+    main section:nth-child(3) article:nth-child(3) #barseecarte {
+      margin-left: -11.9vw;
+      width: 215px; }
+    main section:nth-child(3) article:nth-child(3) #barreduce {
+      margin: 0 auto;
+      margin-top: 20px;
+      left: 20.1%;
+      margin-bottom: 40px; }
+    main section:nth-child(3) article:nth-child(3) button.button--nina {
+      margin: 0 90px 30px -30px; }
+  main section:nth-child(3) article:nth-child(4) {
+    padding: 25px 0; }
+    main section:nth-child(3) article:nth-child(4) div:first-child.col-lg-12 {
+      margin-bottom: 80px; }
+    main section:nth-child(3) article:nth-child(4) h3 {
+      margin-top: 20px;
+      text-align: center;
+      margin-left: 0;
+      font-size: 12px; }
+    main section:nth-child(3) article:nth-child(4) h4.menudevice {
+      font-size: 35px; }
+    main section:nth-child(3) article:nth-child(4) svg {
+      margin-left: -35px;
+      margin-right: 60px; }
+    main section:nth-child(3) article:nth-child(4) p.title {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      font-size: 13px;
+      margin-bottom: 3%;
+      width: 75%;
+      line-height: 20px; }
+    main section:nth-child(3) article:nth-child(4) p.desc {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      line-height: 20px;
+      font-size: 10px;
+      line-height: 25px; }
+    main section:nth-child(3) article:nth-child(4) img {
+      height: auto; }
+    main section:nth-child(3) article:nth-child(4) #ecailleseemore {
+      margin: 0 auto;
+      display: block;
+      left: -9.3vw;
+      margin-top: 20px;
+      margin-bottom: 10px; }
+    main section:nth-child(3) article:nth-child(4) #ecailleseecarte {
+      margin-right: -11.9vw;
+      width: 215px; }
+    main section:nth-child(3) article:nth-child(4) #ecaillereduce {
+      margin: 0 auto;
+      margin-top: 20px;
+      left: 20.1%;
+      margin-bottom: 40px; }
+    main section:nth-child(3) article:nth-child(4) button.button--nina {
+      margin: 0 -90px 30px 140px; } }
 
 /*# sourceMappingURL=about.css.map */

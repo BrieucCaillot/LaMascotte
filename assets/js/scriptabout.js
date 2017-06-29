@@ -46,12 +46,14 @@ $(document).ready(function() {
             $("#restaurantdisplay").show();
             $(this).hide();
             $("#restaurantreduce").show();
+            $("#restaurantseemenu").hide();
         });
 
         $("#restaurantreduce").on('click', function(){
             $("#restaurantdisplay").hide();
             $(this).hide();
             $("#restaurantseemore").show();
+            $("#restaurantseemenu").show();
         });
 
         // BAR
@@ -59,12 +61,14 @@ $(document).ready(function() {
             $("#bardisplay").show();
             $(this).hide();
             $("#barreduce").show();
+            $("#barseecarte").hide();
         });
 
         $("#barreduce").on('click', function(){
             $("#bardisplay").hide();
             $(this).hide();
             $("#barseemore").show();
+            $("#barseecarte").show();
         });
 
         // BAR
@@ -72,12 +76,14 @@ $(document).ready(function() {
             $("#ecailledisplay").show();
             $(this).hide();
             $("#ecaillereduce").show();
+            $("#ecailleseecarte").hide();
         });
 
         $("#ecaillereduce").on('click', function(){
             $("#ecailledisplay").hide();
             $(this).hide();
             $("#ecailleseemore").show();
+            $("#ecailleseecarte").show();
         });
 
 });

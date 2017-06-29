@@ -174,16 +174,27 @@ main section:last-child {
   main section:last-child .container {
     width: 90%; }
   main section:last-child img {
-    width: 76%;
-    margin: 13% 30%; }
+    width: 56%;
+    margin: 13% 20%; }
   main section:last-child span {
     font-size: 20px;
     font-weight: bold; }
-  main section:last-child p {
+  main section:last-child p#credits {
     line-height: 46px;
     font-weight: 100;
-    font-size: 20px;
-    padding: 14% 10%; }
+    font-size: 17px;
+    padding: 16% 0 0 0; }
+  main section:last-child p.mentionslegales {
+    line-height: 46px;
+    font-weight: 100;
+    font-size: 17px;
+    padding: 10% 0 0 0;
+    width: 90%; }
+    main section:last-child p.mentionslegales strong {
+      color: #2A6993;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 35px; }
 
 /* FOOTER */
 footer {
@@ -334,6 +345,24 @@ footer {
 
   main section:last-child img {
     width: 50%; }
+  main section:last-child p#credits {
+    line-height: 35px;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 16% 0 0 0;
+    width: 100%; }
+  main section:last-child p.mentionslegales {
+    line-height: 35px;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 10% 0 0 0;
+    width: 100%; }
+    main section:last-child p.mentionslegales strong {
+      color: #2A6993;
+      margin: 0 auto;
+      font-size: 55px;
+      line-height: 62px;
+      margin-bottom: 20px; }
 
   footer .btn-credits {
     padding: 15% 0%;
@@ -368,6 +397,24 @@ footer {
     padding: 5% 0;
     font-size: 23px;
     line-height: 60px; }
+  main section:last-child p#credits {
+    line-height: 35px;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 16% 0 0 0;
+    width: 100%; }
+  main section:last-child p.mentionslegales {
+    line-height: 35px;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 10% 0 0 0;
+    width: 100%; }
+    main section:last-child p.mentionslegales strong {
+      color: #2A6993;
+      margin: 0 auto;
+      font-size: 55px;
+      line-height: 62px;
+      margin-bottom: 20px; }
 
   header .progressContainer {
     top: 69px; }
@@ -421,6 +468,24 @@ footer {
     padding: 15% 0 0 0;
     font-size: 17px;
     line-height: 50px; }
+  main section:last-child p#credits {
+    line-height: 25px;
+    font-weight: 100;
+    font-size: 10px;
+    padding: 16% 0 0 0;
+    width: 100%; }
+  main section:last-child p.mentionslegales {
+    line-height: 25px;
+    font-weight: 100;
+    font-size: 10px;
+    padding: 10% 0 0 0;
+    width: 100%; }
+    main section:last-child p.mentionslegales strong {
+      color: #2A6993;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 25px;
+      line-height: 34px; }
 
   footer {
     height: 268px; }
