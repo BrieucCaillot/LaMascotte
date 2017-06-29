@@ -4,11 +4,10 @@ body {
   font-family: roboto;
   overflow-x: hidden; }
   body .menudevice {
-    font-size: 70px;
+    font-size: 60px;
     color: #2A6993;
     margin: 0 auto;
-    text-align: center;
-    display: none; }
+    text-align: center; }
   body .button {
     position: relative;
     display: block;
@@ -382,9 +381,6 @@ main {
       font-size: 14px; }
       main section:nth-child(4) .button--nina span {
         font-size: 12px; }
-    main section:nth-child(4) svg {
-      max-width: 480px;
-      height: auto; }
     main section:nth-child(4) .hovermenu3, main section:nth-child(4) .hovermenu4 {
       margin-top: 30px; }
     main section:nth-child(4) img:first-child {
@@ -471,11 +467,6 @@ main {
     main section:nth-child(5) #about {
       background-color: #FFF;
       padding: 15px 0; }
-      main section:nth-child(5) #about svg {
-        height: auto;
-        margin-bottom: 3%;
-        margin-left: 150px;
-        font-size: 14px; }
       main section:nth-child(5) #about img {
         width: 100%;
         height: 380px; }
@@ -484,13 +475,11 @@ main {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin: 3% 40px 9px 0; }
-      main section:nth-child(5) #about h2 {
-        position: relative;
-        display: inline-block;
-        margin-bottom: 36px;
-        text-transform: uppercase;
-        font-size: 40px; }
+        margin: 5% 40px 9px 0; }
+      main section:nth-child(5) #about h4 {
+        margin: 20px 40px 9px 0;
+        font-size: 50px;
+        text-align: right; }
       main section:nth-child(5) #about .title {
         font-size: 20px;
         margin-bottom: 6%;
@@ -545,11 +534,6 @@ main {
     main section:nth-child(5) #ecaille {
       background-color: #FFF;
       padding: 15px 0; }
-      main section:nth-child(5) #ecaille svg {
-        height: auto;
-        margin-bottom: 3%;
-        margin-left: 8px;
-        font-size: 12px; }
       main section:nth-child(5) #ecaille img {
         height: 380px;
         width: 100%; }
@@ -558,13 +542,11 @@ main {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin: 0 0 9px 40px; }
-      main section:nth-child(5) #ecaille h2 {
-        position: relative;
-        display: inline-block;
-        margin-bottom: 36px;
-        text-transform: uppercase;
-        font-size: 40px; }
+        margin: 5% 0 9px 40px; }
+      main section:nth-child(5) #ecaille h4 {
+        margin: 20px 0 9px 40px;
+        font-size: 50px;
+        text-align: left; }
       main section:nth-child(5) #ecaille .title {
         font-size: 20px;
         line-height: 30px;
@@ -844,9 +826,6 @@ footer {
   #progress {
     display: none; }
 
-  svg {
-    display: none; }
-
   body .menudevice {
     display: block; }
 
@@ -909,7 +888,9 @@ footer {
       margin: 0 50% 9px 0; }
     main section:nth-child(5) #about h4.menudevice {
       font-size: 40px;
-      margin: 3% 0% 4% -12%; }
+      margin: 0 auto;
+      text-align: center;
+      margin-left: -33px; }
     main section:nth-child(5) #about p.title {
       margin-right: 28.6%; }
     main section:nth-child(5) #about .desc {
@@ -925,10 +906,13 @@ footer {
       margin-top: 15px;
       padding: 0 0; }
       main section:nth-child(5) #ecaille h3 {
+        margin-top: 0;
         margin-left: 37.5%; }
       main section:nth-child(5) #ecaille h4.menudevice {
         font-size: 40px;
-        margin: 3% 0% 4% -12%; }
+        margin: 0 auto;
+        text-align: center;
+        margin-right: 33px; }
       main section:nth-child(5) #ecaille p.title {
         margin-left: 9.5%; }
       main section:nth-child(5) #ecaille p.desc {
@@ -978,8 +962,6 @@ footer {
       line-height: 40px;
       width: 75%; }
 
-  main section:nth-child(2) svg {
-    margin-bottom: 30px; }
   main section:nth-child(2) img {
     margin: 0% 13%;
     width: 72%; }
@@ -1019,9 +1001,6 @@ footer {
 
   main section:nth-child(5) {
     height: 425px; }
-    main section:nth-child(5) #about svg {
-      margin-left: 10%;
-      margin-right: 20%; }
     main section:nth-child(5) #about button {
       margin-right: 17.8%;
       width: 56%; }
@@ -1035,8 +1014,6 @@ footer {
     main section:nth-child(5) #about p.desc {
       font-size: 9px;
       line-height: 20px; }
-    main section:nth-child(5) #ecaille svg {
-      margin-right: 2%; }
     main section:nth-child(5) #ecaille button {
       width: 56%;
       margin-left: 9%; }

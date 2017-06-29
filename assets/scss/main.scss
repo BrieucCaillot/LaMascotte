@@ -7,11 +7,10 @@ body {
 	overflow-x: hidden;
 
 	.menudevice {
-		font-size: 70px;
+		font-size: 60px;
     	color: #2A6993;
-    	margin: 0 auto;
-    	text-align: center;
-		display: none;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	.button {
@@ -531,11 +530,6 @@ main {
 			}
 		}
 
-		svg {
-			max-width:480px;
-			height:auto;
-		}
-
 		.hovermenu3, .hovermenu4 {
 			margin-top: 30px;
 		}
@@ -657,13 +651,6 @@ main {
 			background-color: #FFF;
 			padding: 15px 0;
 
-			svg {
-				height:auto;
-				margin-bottom:3%;
-				margin-left:150px;
-				font-size:14px;
-			}
-
 			img {
 				width: 100%;
 				height: 380px;
@@ -674,15 +661,13 @@ main {
 			    font-weight: 400;
 			    text-transform: uppercase;
 			    letter-spacing: 2px;
-				margin: 3% 40px 9px 0;
+				margin: 5% 40px 9px 0;
 			}
 
-			h2 {
-				position: relative;
-			    display: inline-block;
-			    margin-bottom: 36px;
-			    text-transform: uppercase;
-			    font-size: 40px;
+			h4 {
+				margin: 20px 40px 9px 0;
+				font-size: 50px;
+				text-align: right;
 			}
 
 			.title {
@@ -758,13 +743,6 @@ main {
 			background-color: #FFF;
 			padding: 15px 0;
 
-			svg {
-				height:auto;
-				margin-bottom:3%;
-				margin-left:8px;
-				font-size:12px;
-			}
-
 			img {
 				height: 380px;
 				width: 100%;
@@ -775,15 +753,13 @@ main {
 			    font-weight: 400;
 			    text-transform: uppercase;
 			    letter-spacing: 2px;
-			    margin: 0 0 9px 40px;
+			    margin: 5% 0 9px 40px;
 			}
 
-			h2 {
-				position: relative;
-			    display: inline-block;
-			    margin-bottom: 36px;
-			    text-transform: uppercase;
-			    font-size: 40px;
+			h4 {
+				margin: 20px 0 9px 40px;
+				font-size: 50px;
+				text-align: left;
 			}
 
 			.title {
@@ -1208,10 +1184,6 @@ footer {
 		display: none;
 	}
 
-	svg {
-		display: none;
-	}
-
 	body .menudevice {
 		display: block;
 	}
@@ -1308,7 +1280,9 @@ footer {
 
 			h4.menudevice {
 				font-size: 40px;
-				margin: 3% 0% 4% -12%;
+				margin: 0 auto;
+				text-align: center;
+				margin-left: -33px
 			}
 
 			p.title {
@@ -1334,12 +1308,15 @@ footer {
 			padding: 0 0;
 
 			h3 {
+				margin-top: 0;
 				margin-left: 37.5%;
 			}
 
 			h4.menudevice {
 				font-size: 40px;
-				margin: 3% 0% 4% -12%;
+				margin: 0 auto;
+				text-align: center;
+				margin-right: 33px;
 			}
 
 			p.title {
@@ -1420,9 +1397,6 @@ footer {
 	}
 
 	main section:nth-child(2) {
-		svg {
-			margin-bottom: 30px;
-		}
 
 		img {
 	    	margin: 0% 13%;
@@ -1489,10 +1463,6 @@ footer {
 		height: 425px;
 
 		#about {
-			svg {
-				margin-left : 10%;
-				margin-right : 20%;
-			}
 
 			button {
 				margin-right: 17.8%;
@@ -1517,9 +1487,6 @@ footer {
 		}
 
 		#ecaille {
-			svg {
-				margin-right : 2%;
-			}
 
 			button {
 				width: 56%;

@@ -6,23 +6,11 @@ body {
 	font-family : roboto;
     overflow-x: hidden;
 
-	svg {
-	    font-weight: bold;
-	    max-width: 500px;
-	    height: auto;
-	    margin-left: 5px;
-	    font-family: Roboto;
-	    margin: 0 auto;
-	    display: block;
-	    margin-bottom: 40px;
-	}
-
     .menudevice {
 		font-size: 60px;
 		color: #2A6993;
 		margin: 0 auto;
 		text-align: center;
-		display: none;
 	}
 
 	.opened {
@@ -488,15 +476,11 @@ main {
 
 	/* NAV CARTE */
 	section:nth-child(2) {
-		padding: 50px 0 50px 0;
+		padding: 50px 0;
 		background-color: #F4F4F4;
 
 		.row {
 			padding: 1% 0;
-		}
-
-		#dessertsvgnav, #drinksvgnav {
-			width: 400px;
 		}
 
 		img {
@@ -508,15 +492,12 @@ main {
 			font-size: 17px;
 			text-transform: uppercase;
 			letter-spacing: 2px;
-			margin-bottom: 20px;
+			margin: 10px 0;
 			font-weight: 400;
 		}
 
-		h2 {
-			display: inline-block;
-			text-transform: uppercase;
-			font-size: 29px;
-			margin: 48px 0 36px 0;
+	 	h4 {
+		   	font-size: 50px;
 		}
 
 		p {
@@ -573,10 +554,6 @@ main {
 			display: none;
 		}
 
-		#menus {
-			margin: 47px 0;
-		}
-
 		img {
 			width: auto;
 			height: 380px;
@@ -588,6 +565,10 @@ main {
 			letter-spacing: 2px;
 			margin-bottom: 20px;
 			font-weight: 400;
+		}
+
+		h4 {
+			margin-bottom: 3%;
 		}
 
 		p {
@@ -659,6 +640,10 @@ main {
 			font-weight: 400;
 		}
 
+		h4 {
+			margin-bottom: 3%;
+		}
+
 		li {
 			padding-bottom: 15px;
     		list-style-type: circle;
@@ -720,6 +705,10 @@ main {
 		    letter-spacing: 2px;
 		    margin-bottom: 20px;
 		    font-weight: 400;
+		}
+
+		h4 {
+			margin-bottom: 3%;
 		}
 
 		h5 {
@@ -810,6 +799,10 @@ main {
 			font-weight: 400;
 		}
 
+		h4 {
+			margin-bottom: 3%;
+		}
+
 		li {
 			padding-bottom: 15px;
 			list-style-type: circle;
@@ -874,6 +867,10 @@ main {
 			letter-spacing: 2px;
 			margin-bottom: 20px;
 			font-weight: 400;
+		}
+
+		h4 {
+			margin-bottom: 3%;
 		}
 
 		li {
@@ -1068,12 +1065,6 @@ footer {
 @media all and (max-width : 1237px) {
 	main section:nth-child(2) {
 
-		main section:nth-child(2) {
-			#menusvgnav, #entreesvgnav, #platsvgnav, #dessertsvgnav, #drinksvgnav {
-				width: 500px;
-			}
-		}
-
 		img {
 			margin: 75px 0 0 -30px;
 			width: 260px
@@ -1116,12 +1107,10 @@ footer {
 	}
 
 	main section:nth-child(2) {
-		#menusvgnav, #entreesvgnav, #platsvgnav, #dessertsvgnav, #drinksvgnav {
-			width: 500px;
+		h4 {
+			margin: 3% 0;
 		}
 	}
-
-	
 
 	footer {
 		height: 130px;
@@ -1161,10 +1150,6 @@ footer {
 		right: -322%;
 	}
 
-	body svg {
-		display: none;
-	}
-
 	body .menudevice {
 		display: block;
 	}
@@ -1197,9 +1182,6 @@ footer {
 	}
 
 	main section:nth-child(3) {
-		svg {
-			margin-left: -40px;
-		}
 
 		h4.menudevice {
 			margin-bottom: 40px;
@@ -1207,9 +1189,6 @@ footer {
 	}
 
 	main section:nth-child(4) {
-		svg {
-			margin-left: -20px;
-		}
 
 		h4.menudevice {
 			margin-bottom: 40px;
@@ -1232,9 +1211,6 @@ footer {
 			font-family: Roboto;
 		}
 
-		svg {
-			margin-left: -60px;
-		}
 	}
 
 	main section:nth-child(6) {
@@ -1338,6 +1314,10 @@ footer {
 		}
 	}
 
+	main section:nth-child(2) h4 {
+		font-size: 46px;
+	}
+
 	main section:nth-child(3) {
 
 		h2 {
@@ -1351,11 +1331,6 @@ footer {
 
 		p {
 			font-size: 14px;
-		}
-
-		svg {
-			margin-left: 0px;
-			margin-right: -10px;
 		}
 
 		ul li {
@@ -1379,22 +1354,12 @@ footer {
 			font-size: 14px;
 		}
 
-		svg {
-			margin-left: 0px;
-			margin-right: 3px;
-		}
-
 		ul li {
 			font-size: 12px;
 		}
 	}
 
 	main section:nth-child(5) {
-
-		svg {
-			margin-left: 0px;
-			margin-right: 3px;
-		}
 
 		p {
 			font-size: 10px;

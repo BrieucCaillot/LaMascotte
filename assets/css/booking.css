@@ -4,12 +4,11 @@ body {
   font-family: roboto;
   overflow-x: hidden; }
   body .menudevice {
-    font-size: 45px;
+    font-size: 50px;
     color: #2A6993;
     margin: 0 auto;
     text-align: center;
-    padding: 20px 0;
-    display: none; }
+    padding: 20px 0; }
   body .button {
     position: relative;
     display: block;
@@ -304,15 +303,14 @@ main {
   main section:nth-child(2) {
     padding: 72px 0;
     background-color: #f4f4f4; }
-    main section:nth-child(2) svg {
-      font-weight: bold;
-      max-width: 450px;
-      height: auto;
-      margin-bottom: 3%;
-      margin-left: -16px;
-      margin-top: 20px; }
+    main section:nth-child(2) h3 {
+      font-size: 17px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 0px;
+      font-weight: 400; }
     main section:nth-child(2) p {
-      font-size: 22px;
+      font-size: 18px;
       line-height: 35px; }
   main section:nth-child(3) {
     background-color: #FFF;
@@ -602,6 +600,11 @@ footer {
   #progress {
     display: none; }
 
+  main section:nth-child(3) h3 {
+    padding: 20px 0; }
+  main section:nth-child(3) p {
+    padding-bottom: 20px; }
+
   footer .btn-credits {
     padding: 15% 0%;
     margin-left: -17%; } }
@@ -640,9 +643,6 @@ footer {
       font-size: 60px; }
     main section:first-child #headerdesc {
       padding: 150px 0; }
-
-  main section:nth-child(2) svg {
-    display: none; }
 
   main section:nth-child(3) h3 {
     padding: 4% 0; }

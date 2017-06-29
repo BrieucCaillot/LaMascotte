@@ -3,21 +3,11 @@ body {
   padding: 0;
   font-family: roboto;
   overflow-x: hidden; }
-  body svg {
-    font-weight: bold;
-    max-width: 500px;
-    height: auto;
-    margin-left: 5px;
-    font-family: Roboto;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 40px; }
   body .menudevice {
     font-size: 60px;
     color: #2A6993;
     margin: 0 auto;
-    text-align: center;
-    display: none; }
+    text-align: center; }
   body .opened {
     text-transform: uppercase;
     font-size: 25px;
@@ -364,12 +354,10 @@ main {
     main section:first-child a {
       margin: 0 auto; }
   main section:nth-child(2) {
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
     background-color: #F4F4F4; }
     main section:nth-child(2) .row {
       padding: 1% 0; }
-    main section:nth-child(2) #dessertsvgnav, main section:nth-child(2) #drinksvgnav {
-      width: 400px; }
     main section:nth-child(2) img {
       width: auto;
       height: 380px; }
@@ -377,13 +365,10 @@ main {
       font-size: 17px;
       text-transform: uppercase;
       letter-spacing: 2px;
-      margin-bottom: 20px;
+      margin: 10px 0;
       font-weight: 400; }
-    main section:nth-child(2) h2 {
-      display: inline-block;
-      text-transform: uppercase;
-      font-size: 29px;
-      margin: 48px 0 36px 0; }
+    main section:nth-child(2) h4 {
+      font-size: 50px; }
     main section:nth-child(2) p {
       text-align: center;
       margin-bottom: 4%;
@@ -421,8 +406,6 @@ main {
     main section:nth-child(3) #plat3, main section:nth-child(3) #dessert3,
     main section:nth-child(3) #aboutmascotte, main section:nth-child(3) #aboutcocotte, main section:nth-child(3) #aboutmarmotte {
       display: none; }
-    main section:nth-child(3) #menus {
-      margin: 47px 0; }
     main section:nth-child(3) img {
       width: auto;
       height: 380px; }
@@ -432,6 +415,8 @@ main {
       letter-spacing: 2px;
       margin-bottom: 20px;
       font-weight: 400; }
+    main section:nth-child(3) h4 {
+      margin-bottom: 3%; }
     main section:nth-child(3) p {
       text-align: center;
       font-size: 16px;
@@ -478,6 +463,8 @@ main {
       letter-spacing: 2px;
       margin-bottom: 20px;
       font-weight: 400; }
+    main section:nth-child(4) h4 {
+      margin-bottom: 3%; }
     main section:nth-child(4) li {
       padding-bottom: 15px;
       list-style-type: circle;
@@ -520,6 +507,8 @@ main {
       letter-spacing: 2px;
       margin-bottom: 20px;
       font-weight: 400; }
+    main section:nth-child(5) h4 {
+      margin-bottom: 3%; }
     main section:nth-child(5) h5 {
       font-weight: 400;
       font-size: 22px;
@@ -582,6 +571,8 @@ main {
       letter-spacing: 2px;
       margin-bottom: 20px;
       font-weight: 400; }
+    main section:nth-child(6) h4 {
+      margin-bottom: 3%; }
     main section:nth-child(6) li {
       padding-bottom: 15px;
       list-style-type: circle;
@@ -625,6 +616,8 @@ main {
       letter-spacing: 2px;
       margin-bottom: 20px;
       font-weight: 400; }
+    main section:last-child h4 {
+      margin-bottom: 3%; }
     main section:last-child li {
       padding-bottom: 15px;
       list-style-type: circle;
@@ -759,8 +752,6 @@ footer {
     height: 110px; } }
 /* MEDIA QUERIES MAX WIDTH 1237PX*/
 @media all and (max-width: 1237px) {
-  main section:nth-child(2) main section:nth-child(2) #menusvgnav, main section:nth-child(2) main section:nth-child(2) #entreesvgnav, main section:nth-child(2) main section:nth-child(2) #platsvgnav, main section:nth-child(2) main section:nth-child(2) #dessertsvgnav, main section:nth-child(2) main section:nth-child(2) #drinksvgnav {
-    width: 500px; }
   main section:nth-child(2) img {
     margin: 75px 0 0 -30px;
     width: 260px; }
@@ -790,8 +781,8 @@ footer {
   main section:first-child {
     background: url("../images/menu/backgroundresponsive.jpg") no-repeat; }
 
-  main section:nth-child(2) #menusvgnav, main section:nth-child(2) #entreesvgnav, main section:nth-child(2) #platsvgnav, main section:nth-child(2) #dessertsvgnav, main section:nth-child(2) #drinksvgnav {
-    width: 500px; }
+  main section:nth-child(2) h4 {
+    margin: 3% 0; }
 
   footer {
     height: 130px; }
@@ -820,9 +811,6 @@ footer {
     position: absolute;
     right: -322%; }
 
-  body svg {
-    display: none; }
-
   body .menudevice {
     display: block; }
 
@@ -841,13 +829,9 @@ footer {
   main section:nth-child(2) #navcarte {
     margin-top: 14px; }
 
-  main section:nth-child(3) svg {
-    margin-left: -40px; }
   main section:nth-child(3) h4.menudevice {
     margin-bottom: 40px; }
 
-  main section:nth-child(4) svg {
-    margin-left: -20px; }
   main section:nth-child(4) h4.menudevice {
     margin-bottom: 40px; }
 
@@ -861,8 +845,6 @@ footer {
     margin-bottom: 40px;
     background: none;
     font-family: Roboto; }
-  main section:nth-child(5) svg {
-    margin-left: -60px; }
 
   main section:nth-child(6) h4.menudevice {
     margin-bottom: 40px; }
@@ -936,6 +918,9 @@ footer {
     main section:first-child h1 {
       font-size: 50px; }
 
+  main section:nth-child(2) h4 {
+    font-size: 46px; }
+
   main section:nth-child(3) h2 {
     font-size: 16px;
     margin-top: 23px; }
@@ -943,9 +928,6 @@ footer {
     font-size: 40px; }
   main section:nth-child(3) p {
     font-size: 14px; }
-  main section:nth-child(3) svg {
-    margin-left: 0px;
-    margin-right: -10px; }
   main section:nth-child(3) ul li {
     font-size: 12px; }
 
@@ -956,15 +938,9 @@ footer {
     font-size: 40px; }
   main section:nth-child(4) p {
     font-size: 14px; }
-  main section:nth-child(4) svg {
-    margin-left: 0px;
-    margin-right: 3px; }
   main section:nth-child(4) ul li {
     font-size: 12px; }
 
-  main section:nth-child(5) svg {
-    margin-left: 0px;
-    margin-right: 3px; }
   main section:nth-child(5) p {
     font-size: 10px; }
   main section:nth-child(5) ul li {
