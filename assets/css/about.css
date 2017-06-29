@@ -368,7 +368,7 @@ main {
     /* BAR */
     /*L'ECAILLE */ }
     main section:nth-child(3) h3 {
-      font-size: 17px;
+      font-size: 20px;
       font-weight: 400;
       margin-bottom: 20px;
       letter-spacing: 2px; }
@@ -1113,7 +1113,8 @@ footer {
       font-size: 20px; }
 
   main section:nth-child(2) h3 {
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-size: 20px; }
   main section:nth-child(2) #h3menu {
     margin-top: -5px; }
 
@@ -1223,6 +1224,8 @@ footer {
 
   main section:nth-child(4) {
     margin-bottom: 0; }
+    main section:nth-child(4) h3 {
+      font-size: 20px; }
     main section:nth-child(4) h4.menudevice {
       font-size: 80px; }
     main section:nth-child(4) article:nth-child(2) {
@@ -1297,6 +1300,8 @@ footer {
   main section:last-child {
     margin-top: 60px;
     height: 600px; }
+    main section:last-child h3 {
+      font-size: 20px; }
     main section:last-child h4.menudevice {
       font-size: 80px;
       margin-bottom: 50px;

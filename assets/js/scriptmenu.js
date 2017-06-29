@@ -2,12 +2,6 @@ jQuery(document).ready(function($) {
 
 	// SCROLLS
 		// SCROLL TO MENUS
-			$("#menusvgnav").click(function() {
-		      	$('html,body').animate({
-	          		scrollTop: $("main section:nth-child(3)").offset().top},
-		          	'slow');
-		    });
-
 		    $("#menunavclickable").click(function() {
 		      	$('html,body').animate({
 		          	scrollTop: $("main section:nth-child(3)").offset().top},
@@ -15,12 +9,6 @@ jQuery(document).ready(function($) {
 		    });
 
 	    // SCROLL TO ENTRÉES
-			$("#entreesvgnav").click(function() {
-		      	$('html,body').animate({
-		          	scrollTop: $("main section:nth-child(4)").offset().top},
-		          	'slow');
-		    });
-
 		    $("#cartenavclickable").click(function() {
 		      	$('html,body').animate({
 		          	scrollTop: $("main section:nth-child(4)").offset().top},
@@ -28,12 +16,6 @@ jQuery(document).ready(function($) {
 		    });
 
 	    // SCROLL TO PLATS
-			$("#platsvgnav").click(function() {
-		      	$('html,body').animate({
-		          	scrollTop: $("main section:nth-child(5)").offset().top},
-		          	'slow');
-		    });
-
 		    $("#platsnavclickable").click(function() {
 		      	$('html,body').animate({
 		          	scrollTop: $("main section:nth-child(5)").offset().top},
@@ -41,12 +23,6 @@ jQuery(document).ready(function($) {
 		    });
 
 	    // SCROLL TO DESSERTS
-			$("#dessertsvgnav").click(function() {
-		      	$('html,body').animate({
-		          	scrollTop: $("main section:nth-child(6)").offset().top},
-		          	'slow');
-		    });
-
 		    $("#dessertsnavclickable").click(function() {
 		      	$('html,body').animate({
 		          	scrollTop: $("main section:nth-child(6)").offset().top},
@@ -54,17 +30,10 @@ jQuery(document).ready(function($) {
 		    });
 
 	    // SCROLL TO BOISSONS
-			$("#drinksvgnav").click(function() {
-		      	$('html,body').animate({
-		          	scrollTop: $("main section:nth-child(7)").offset().top},
-		          	'slow');
-		    });
-
 		    $("#drinksnavclickable").click(function() {
 		      	$('html,body').animate({
 		          	scrollTop: $("main section:nth-child(7)").offset().top},
 		          	'slow');
-		      	console.log('plats')
 		    });
 	
 	// LES MENUS 

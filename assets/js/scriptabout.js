@@ -2,12 +2,6 @@ $(document).ready(function() {
 
     // SCROLL
         // SCROLL DIV ABOUT
-        $("#about").click(function() {
-          $('html,body').animate({
-              scrollTop: $("#placesection").offset().top},
-              'slow');
-        });
-
         $("#aboutdevice").click(function() {
           $('html,body').animate({
               scrollTop: $("#placesection").offset().top},
@@ -15,12 +9,6 @@ $(document).ready(function() {
         });
 
         // SCROLL DIV HISTORY
-        $("#history").click(function() {
-          $('html,body').animate({
-              scrollTop: $("#historysection").offset().top},
-              'slow');
-        });
-
         $("#historydevice").click(function() {
           $('html,body').animate({
               scrollTop: $("#historysection").offset().top},
@@ -28,12 +16,6 @@ $(document).ready(function() {
         });
 
         // SCROLL DIV NEWS
-        $("#news").click(function() {
-          $('html,body').animate({
-              scrollTop: $("#newssection").offset().top},
-              'slow');
-        });
-
         $("#newsdevice").click(function() {
           $('html,body').animate({
               scrollTop: $("#newssection").offset().top},

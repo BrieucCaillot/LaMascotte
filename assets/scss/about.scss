@@ -507,7 +507,7 @@ main {
 		margin-bottom: 72px;
 		
 		h3 {
-		    font-size: 17px;
+		    font-size: 20px;
 		    font-weight: 400;
 		    margin-bottom: 20px;
 		    letter-spacing: 2px;
@@ -1651,6 +1651,7 @@ footer {
 	main section:nth-child(2) {
 		h3 {
 			margin-top: 20px;
+			font-size: 20px;
 		}
 
 		#h3menu {
@@ -1842,6 +1843,10 @@ footer {
 	main section:nth-child(4) {
 		margin-bottom: 0;
 
+		h3 {
+			font-size: 20px;
+		}
+
 		h4.menudevice {
 			font-size: 80px;
 		}
@@ -1959,6 +1964,10 @@ footer {
 	main section:last-child {
 		margin-top: 60px;
 		height: 600px;
+
+		h3 {
+			font-size: 20px;
+		}
 
 		h4.menudevice {
 		    font-size: 80px;
