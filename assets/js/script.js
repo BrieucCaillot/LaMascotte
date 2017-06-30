@@ -15,7 +15,6 @@ $(document).ready(function() {
                 "z-index": "200",
                 "min-height": "60px",
                 "background-color": "rgb(107, 151, 127)",
-                // "background-color": "#556147"
             });
 
             $("header nav").css({
