@@ -1161,7 +1161,8 @@ footer {
     text-align: center;
     margin-right: 0;
     font-size: 25px;
-    line-height: 40px; }
+    line-height: 40px;
+    font-weight: 300; }
   main section:nth-child(3) article:nth-child(2) p.desc {
     margin: 0 auto;
     margin-left: 30px;
@@ -1190,7 +1191,8 @@ footer {
     text-align: center;
     margin-left: 0;
     font-size: 25px;
-    line-height: 40px; }
+    line-height: 40px;
+    font-weight: 300; }
   main section:nth-child(3) article:nth-child(3) p.desc {
     margin: 0 auto;
     margin-left: 30px;
@@ -1222,7 +1224,8 @@ footer {
     margin-left: 90px;
     font-size: 25px;
     line-height: 40px;
-    width: 70%; }
+    width: 70%;
+    font-weight: 300; }
   main section:nth-child(3) article:nth-child(4) p.desc {
     margin: 0 auto;
     margin-left: 30px;
@@ -1354,7 +1357,8 @@ footer {
         text-align: center;
         margin-right: 0;
         font-size: 25px;
-        line-height: 40px; }
+        line-height: 40px;
+        font-weight: 300; }
       main section:last-child article p.desc {
         margin: 0 auto;
         margin-left: 60px;
@@ -1927,10 +1931,11 @@ footer {
     font-size: 13px;
     line-height: 30px; }
   main section:last-child article button {
-    margin-top: 20px; }
+    margin-top: 20px;
+    height: 49px; }
 
   footer {
     height: 286px;
-    margin-top: 1150px; } }
+    margin-top: 1190px; } }
 
 /*# sourceMappingURL=about.css.map */

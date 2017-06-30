@@ -1720,7 +1720,8 @@ footer {
 				text-align: center;
 				margin-right: 0;
 				font-size: 25px;
-				line-height: 40px;
+				line-height: 40px;	
+    			font-weight: 300;
 			}
 
 			p.desc {
@@ -1769,6 +1770,7 @@ footer {
 				margin-left: 0;
 				font-size: 25px;
 				line-height: 40px;
+				font-weight: 300;
 			}
 
 			p.desc {
@@ -1821,6 +1823,7 @@ footer {
 				font-size: 25px;
 				line-height: 40px;
 				width: 70%;
+				font-weight: 300;
 			}
 
 			p.desc {
@@ -2032,6 +2035,7 @@ footer {
 				margin-right: 0;
 				font-size: 25px;
 				line-height: 40px;
+				font-weight: 300;
 			}
 
 			p.desc {
@@ -2898,12 +2902,13 @@ footer {
 
 			button {
 				margin-top: 20px;
+				height: 49px;
 			}
 		}
 	}
 
 	footer {
 		height: 286px;
-		margin-top: 1150px;
+		margin-top: 1190px;
 	}
 }

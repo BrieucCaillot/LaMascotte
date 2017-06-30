@@ -22,6 +22,13 @@ $(document).ready(function() {
               'slow');
         });
 
+        // SCROLL TO NEWSLETTER FOOTER
+        $(".buttonnewsletter").click(function(){
+            $('html,body').animate({
+              scrollTop: $("footer").offset().top},
+              'slow');
+        });
+
     // SEE MORE
         // RESTAURANT
         $("#restaurantseemore").on('click', function(){

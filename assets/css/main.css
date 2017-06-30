@@ -1015,7 +1015,7 @@ footer {
     margin-top: 30px; }
 
   main section:nth-child(5) {
-    height: 65%; }
+    height: 480px; }
     main section:nth-child(5) #about button {
       margin-right: 17.8%;
       width: 56%; }
@@ -1023,7 +1023,7 @@ footer {
       margin-right: 43%;
       font-size: 12px; }
     main section:nth-child(5) #about h4.menudevice {
-      margin-left: -40px; }
+      margin-left: -35px; }
     main section:nth-child(5) #about p.title {
       font-size: 20px;
       margin-right: 40px;
@@ -1066,7 +1066,8 @@ footer {
     font-size: 16px; }
 
   footer {
-    height: 290px; }
+    height: 290px;
+    margin-top: -30px; }
     footer .form-newsletter {
       margin-right: 11px; }
       footer .form-newsletter label {
@@ -1076,8 +1077,5 @@ footer {
     footer img {
       margin-top: 20px;
       margin-left: 93px; } }
-@media all and (max-width: 375px) {
-  main section:nth-child(5) {
-    height: 70%; } }
 
 /*# sourceMappingURL=main.css.map */

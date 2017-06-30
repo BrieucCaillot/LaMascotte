@@ -1480,7 +1480,7 @@ footer {
 	}
 
 	main section:nth-child(5) {
-		height: 65%;
+		height: 480px;
 
 		#about {
 
@@ -1495,7 +1495,7 @@ footer {
 			}
 
 			h4.menudevice {
-				margin-left: -40px;
+				margin-left: -35px;
 			}
 
 			p.title {
@@ -1570,6 +1570,7 @@ footer {
 
 	footer {
 		height: 290px;
+		margin-top: -30px;
 
 		.form-newsletter {
 			margin-right: 11px;
@@ -1587,11 +1588,5 @@ footer {
 			margin-top: 20px;
 			margin-left: 93px;
 		}
-	}
-}
-
-@media all and (max-width : 375px) {
-	main section:nth-child(5) {
-		height: 70%;
 	}
 }
