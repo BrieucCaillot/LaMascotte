@@ -552,8 +552,8 @@ footer {
 	}
 
 	main section:first-child {
-	    background-size: 140% 60%;
-    	background-position: 30% 0%;
+		background: url("../images/credits/backgroundresponsive.jpg") no-repeat;
+	    background-size: cover;
 
 		#headerdesc {
 			padding-top: 120px;
@@ -652,8 +652,8 @@ footer {
 
 	main section:first-child {
 		height: 92%;
-		background-size: 510% 100%;
-		background-position: 68% 80%;
+		background-size: cover;
+		background-position: right;
 
 		#headerdesc {
 			padding-top: 120px;

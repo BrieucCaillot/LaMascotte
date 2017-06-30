@@ -380,8 +380,8 @@ footer {
     display: none; }
 
   main section:first-child {
-    background-size: 140% 60%;
-    background-position: 30% 0%; }
+    background: url("../images/credits/backgroundresponsive.jpg") no-repeat;
+    background-size: cover; }
     main section:first-child #headerdesc {
       padding-top: 120px; }
     main section:first-child h1 {
@@ -453,8 +453,8 @@ footer {
 
   main section:first-child {
     height: 92%;
-    background-size: 510% 100%;
-    background-position: 68% 80%; }
+    background-size: cover;
+    background-position: right; }
     main section:first-child #headerdesc {
       padding-top: 120px; }
     main section:first-child h1 {
