@@ -114,6 +114,21 @@ body {
   body .button--nina:hover > span:nth-child(14) {
     -webkit-transition-delay: 0.63s;
     transition-delay: 0.63s; }
+  body .button--nina:hover > span:nth-child(15) {
+    -webkit-transition-delay: 0.675s;
+    transition-delay: 0.67 0.5s; }
+  body .button--nina:hover > span:nth-child(16) {
+    -webkit-transition-delay: 0.72s;
+    transition-delay: 0.72s; }
+  body .button--nina:hover > span:nth-child(17) {
+    -webkit-transition-delay: 0.765s;
+    transition-delay: 0.76 0.5s; }
+  body .button--nina:hover > span:nth-child(18) {
+    -webkit-transition-delay: 0.81s;
+    transition-delay: 0.81s; }
+  body .button--nina:hover > span:nth-child(19) {
+    -webkit-transition-delay: 0.855s;
+    transition-delay: 0.855s; }
   body button, body html input[type="button"], body input[type="reset"], body input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer; }
@@ -374,7 +389,7 @@ main {
       margin-bottom: 20px;
       letter-spacing: 2px; }
     main section:nth-child(3) article:nth-child(2) {
-      padding: 50px 0;
+      padding: 70px 0;
       background-color: #FFF; }
       main section:nth-child(3) article:nth-child(2) #restaurantdisplay, main section:nth-child(3) article:nth-child(2) #restaurantreduce {
         display: none; }
@@ -396,7 +411,8 @@ main {
         font-size: 20px;
         line-height: 30px;
         margin: 0 40px 4.7% 0;
-        text-align: right; }
+        text-align: right;
+        font-weight: 900; }
       main section:nth-child(3) article:nth-child(2) .desc {
         font-size: 15px;
         line-height: 35px;
@@ -459,7 +475,8 @@ main {
       main section:nth-child(3) article:nth-child(3) .title {
         font-size: 20px;
         line-height: 30px;
-        margin: 0 0 4.7% 40px; }
+        margin: 0 0 4.7% 40px;
+        font-weight: 900; }
       main section:nth-child(3) article:nth-child(3) .desc {
         font-size: 15px;
         line-height: 35px;
@@ -518,7 +535,8 @@ main {
         font-size: 20px;
         line-height: 30px;
         margin: 0 40px 4.7% 0;
-        text-align: right; }
+        text-align: right;
+        font-weight: 900; }
       main section:nth-child(3) article:last-child .desc {
         font-size: 15px;
         line-height: 35px;
@@ -572,7 +590,7 @@ main {
       margin-bottom: 20px;
       letter-spacing: 2px; }
     main section:nth-child(4) article:nth-child(2) {
-      padding: 50px 0;
+      padding: 70px 0;
       background-color: #FFF; }
       main section:nth-child(4) article:nth-child(2) h3 {
         font-size: 17px;
@@ -653,7 +671,7 @@ main {
       main section:nth-child(4) article:last-child h4 {
         font-size: 50px;
         text-align: right;
-        margin: 0 25.5px 17px 0; }
+        margin: 0 29.5px 17px 0; }
       main section:nth-child(4) article:last-child p.desc {
         font-size: 15px;
         line-height: 35px;
@@ -674,60 +692,61 @@ main {
     main section:last-child img {
       width: 100%;
       height: 320px; }
-    main section:last-child article:last-child {
-      padding: 50px 0;
-      background-color: #FFF; }
-      main section:last-child article:last-child img {
-        width: auto;
+    main section:last-child article {
+      padding: 70px 0;
+      background-color: #ffffff; }
+      main section:last-child article img {
+        width: 300px;
+        height: 400px;
         margin: 0 auto;
-        display: block;
-        margin-top: 2%; }
-      main section:last-child article:last-child h3 {
+        display: block; }
+      main section:last-child article h3 {
         font-size: 17px;
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin: 0 40px 3% 0;
+        margin: 0% 40px 3% 0;
         text-align: right; }
-      main section:last-child article:last-child h4 {
-        margin: 0 auto;
+      main section:last-child article h4 {
         font-size: 45px;
         text-align: right;
-        margin: 0 40px 3% 0; }
-      main section:last-child article:last-child .title {
+        margin-right: 40px;
+        margin-bottom: 3%; }
+      main section:last-child article .title {
         font-size: 20px;
         line-height: 30px;
         margin: 0 40px 4.7% 0;
-        text-align: right; }
-      main section:last-child article:last-child .desc {
+        text-align: right;
+        font-weight: 900; }
+      main section:last-child article .desc {
         font-size: 15px;
         line-height: 35px;
         margin: 0 40px 4.7% 0;
         text-align: right; }
-      main section:last-child article:last-child .button--nina {
+      main section:last-child article .button--nina {
         padding: 3.5px 28px;
-        color: #6B614D;
+        color: #6b614d;
         font-size: 14px;
         margin-right: 40px; }
-        main section:last-child article:last-child .button--nina span {
+        main section:last-child article .button--nina span {
           font-size: 12px; }
-      main section:last-child article:last-child button {
-        border: 2px solid #6B614D;
+      main section:last-child article button {
+        border: 2px solid #6b614d;
         background-color: transparent; }
-        main section:last-child article:last-child button a {
+        main section:last-child article button a {
           text-decoration: none;
-          color: #000;
+          color: #000000;
           font-size: 11px;
           letter-spacing: 2px;
           font-weight: initial;
           display: inline-block;
           text-transform: uppercase;
           padding: 14px 28px; }
-      main section:last-child article:last-child button:hover {
-        background-color: #6B614D;
-        color: #fff; }
-        main section:last-child article:last-child button:hover a {
-          color: #fff; }
+      main section:last-child article button:hover {
+        background-color: #6b614d;
+        color: #ffffff; }
+        main section:last-child article button:hover a {
+          color: #ffffff; }
 
 /* FOOTER */
 footer {
@@ -916,7 +935,8 @@ footer {
     margin-right: 0; }
   main section:nth-child(3) article:nth-child(2) .title {
     text-align: center;
-    margin-right: 0; }
+    margin-right: 0;
+    font-weight: 900; }
   main section:nth-child(3) article:nth-child(2) .desc {
     text-align: center;
     margin-right: 0; }
@@ -934,7 +954,8 @@ footer {
     margin-left: 0; }
   main section:nth-child(3) article:nth-child(3) .title {
     text-align: center;
-    margin-left: 0; }
+    margin-left: 0;
+    font-weight: 900; }
   main section:nth-child(3) article:nth-child(3) .desc {
     text-align: center;
     margin-left: 0; }
@@ -955,7 +976,8 @@ footer {
     margin-right: 0; }
   main section:nth-child(3) article:last-child .title {
     text-align: center;
-    margin-right: 0; }
+    margin-right: 0;
+    font-weight: 900; }
   main section:nth-child(3) article:last-child .desc {
     text-align: center;
     margin-right: 0; }
@@ -1052,18 +1074,19 @@ footer {
       height: 400px; }
     main section:last-child #map {
       height: 570px; }
-    main section:last-child article:last-child h3 {
+    main section:last-child article h3 {
       margin-right: 0;
       text-align: center;
       margin-bottom: 7%; }
-    main section:last-child article:last-child h4 {
+    main section:last-child article h4 {
       margin: 0 auto;
       text-align: center;
       margin-bottom: 3%; }
-    main section:last-child article:last-child .title {
+    main section:last-child article .title {
       text-align: center;
-      margin-right: 0; }
-    main section:last-child article:last-child .desc {
+      margin-right: 0;
+      font-weight: 900; }
+    main section:last-child article .desc {
       text-align: center;
       margin-right: 0; }
 
@@ -1136,13 +1159,16 @@ footer {
     margin-right: 0; }
   main section:nth-child(3) article:nth-child(2) p.title {
     text-align: center;
-    margin-right: 0; }
+    margin-right: 0;
+    font-size: 25px;
+    line-height: 40px; }
   main section:nth-child(3) article:nth-child(2) p.desc {
     margin: 0 auto;
-    margin-left: 60px;
+    margin-left: 30px;
     margin-bottom: 30px;
     text-align: center;
-    width: 80%; }
+    width: 90%;
+    font-size: 18px; }
   main section:nth-child(3) article:nth-child(2) button {
     right: 28%; }
   main section:nth-child(3) article:nth-child(2) #restaurantseemore {
@@ -1162,13 +1188,16 @@ footer {
     margin-left: 0; }
   main section:nth-child(3) article:nth-child(3) p.title {
     text-align: center;
-    margin-left: 0; }
+    margin-left: 0;
+    font-size: 25px;
+    line-height: 40px; }
   main section:nth-child(3) article:nth-child(3) p.desc {
     margin: 0 auto;
-    margin-left: 60px;
+    margin-left: 30px;
     margin-bottom: 30px;
     text-align: center;
-    width: 80%; }
+    width: 90%;
+    font-size: 18px; }
   main section:nth-child(3) article:nth-child(3) button {
     left: 28%; }
   main section:nth-child(3) article:nth-child(3) #barseemore {
@@ -1190,13 +1219,17 @@ footer {
     margin-right: 0; }
   main section:nth-child(3) article:nth-child(4) p.title {
     text-align: center;
-    margin-right: 0; }
+    margin-left: 90px;
+    font-size: 25px;
+    line-height: 40px;
+    width: 70%; }
   main section:nth-child(3) article:nth-child(4) p.desc {
     margin: 0 auto;
-    margin-left: 60px;
+    margin-left: 30px;
     margin-bottom: 30px;
     text-align: center;
-    width: 80%; }
+    width: 90%;
+    font-size: 20px; }
   main section:nth-child(3) article:nth-child(4) button {
     right: 28%; }
   main section:nth-child(3) article:nth-child(4) #ecailleseemore {
@@ -1243,7 +1276,8 @@ footer {
         margin: 0 auto;
         text-align: center;
         width: 80%;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        font-size: 20px; }
       main section:nth-child(4) article:nth-child(2) img {
         width: 100%; }
     main section:nth-child(4) article:nth-child(3) {
@@ -1260,7 +1294,8 @@ footer {
         margin: 0 auto;
         text-align: center;
         width: 80%;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        font-size: 20px; }
       main section:nth-child(4) article:nth-child(3) img {
         width: 100%; }
     main section:nth-child(4) article:nth-child(4) {
@@ -1277,7 +1312,8 @@ footer {
         margin: 0 auto;
         text-align: center;
         width: 80%;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        font-size: 20px; }
       main section:nth-child(4) article:nth-child(4) img {
         width: 100%; }
     main section:nth-child(4) article:nth-child(5) {
@@ -1294,7 +1330,8 @@ footer {
         margin: 0 auto;
         text-align: center;
         width: 80%;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        font-size: 20px; }
       main section:nth-child(4) article:nth-child(5) img {
         width: 100%; }
 
@@ -1307,27 +1344,35 @@ footer {
       font-size: 80px;
       margin-bottom: 50px;
       margin-top: 20px; }
-    main section:last-child article:last-child h4.menudevice {
-      font-size: 50px;
-      margin-bottom: 20px;
-      margin-top: -20px; }
-    main section:last-child article:last-child p.title {
-      text-align: center;
-      margin-right: 0; }
-    main section:last-child article:last-child p.desc {
-      margin: 0 auto;
-      margin-left: 60px;
-      margin-bottom: 30px;
-      text-align: center;
-      width: 80%; }
-    main section:last-child article:last-child img {
-      margin-top: 20px;
-      width: 50%;
-      height: 70%; }
+    main section:last-child article {
+      padding: 40px 0; }
+      main section:last-child article h4.menudevice {
+        font-size: 50px;
+        margin-bottom: 20px;
+        margin-top: -20px; }
+      main section:last-child article p.title {
+        text-align: center;
+        margin-right: 0;
+        font-size: 25px;
+        line-height: 40px; }
+      main section:last-child article p.desc {
+        margin: 0 auto;
+        margin-left: 60px;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 80%;
+        font-size: 20px; }
+      main section:last-child article button {
+        margin: 40px 0 30px 158px;
+        width: 50%; }
+      main section:last-child article img {
+        margin-top: 20px;
+        width: 50%;
+        height: 70%; }
 
   footer {
     height: 160px;
-    margin-top: 490px; }
+    margin-top: 1700px; }
     footer .btn-credits {
       margin: 7px 0px 0px -10px; } }
 /* MEDIA QUERIES MAX WIDTH 414PX */
@@ -1401,15 +1446,18 @@ footer {
       text-align: center;
       margin: 0 auto;
       display: block;
-      font-size: 13px;
-      margin-bottom: 3%; }
+      font-size: 20px;
+      margin-bottom: 3%;
+      font-weight: 400;
+      line-height: 30px; }
     main section:nth-child(3) article:nth-child(2) p.desc {
       text-align: center;
       margin: 0 auto;
       display: block;
       line-height: 20px;
-      font-size: 10px;
-      line-height: 25px; }
+      font-size: 13px;
+      line-height: 30px;
+      width: 100%; }
     main section:nth-child(3) article:nth-child(2) img {
       height: auto;
       width: 128%;
@@ -1434,15 +1482,19 @@ footer {
       text-align: center;
       margin: 0 auto;
       display: block;
-      font-size: 13px;
-      margin-bottom: 3%; }
+      font-size: 20px;
+      margin-bottom: 3%;
+      font-weight: 400;
+      line-height: 30px;
+      width: 80%; }
     main section:nth-child(3) article:nth-child(3) p.desc {
       text-align: center;
       margin: 0 auto;
       display: block;
       line-height: 20px;
-      font-size: 10px;
-      line-height: 25px; }
+      font-size: 13px;
+      line-height: 30px;
+      width: 100%; }
     main section:nth-child(3) article:nth-child(3) #barseemore {
       margin: 0 auto;
       left: 17%;
@@ -1474,17 +1526,19 @@ footer {
       text-align: center;
       margin: 0 auto;
       display: block;
-      font-size: 13px;
+      font-size: 20px;
       margin-bottom: 3%;
-      width: 75%;
-      line-height: 20px; }
+      font-weight: 400;
+      line-height: 30px;
+      width: 80%; }
     main section:nth-child(3) article:nth-child(4) p.desc {
       text-align: center;
       margin: 0 auto;
       display: block;
       line-height: 20px;
-      font-size: 10px;
-      line-height: 25px; }
+      font-size: 13px;
+      line-height: 30px;
+      width: 100%; }
     main section:nth-child(3) article:nth-child(4) img {
       height: auto;
       width: 128%;
@@ -1507,7 +1561,8 @@ footer {
       margin: 0 -90px 30px 140px; }
 
   main section:nth-child(4) {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: -20px; }
     main section:nth-child(4) h4.menudevice {
       font-size: 55px; }
     main section:nth-child(4) h3 {
@@ -1524,8 +1579,9 @@ footer {
         margin: 0 auto;
         display: block;
         line-height: 20px;
-        font-size: 10px;
-        line-height: 25px;
+        font-size: 13px;
+        line-height: 30px;
+        width: 100%;
         margin-bottom: 30px; }
       main section:nth-child(4) article:nth-child(2) h3 {
         text-align: center;
@@ -1535,7 +1591,7 @@ footer {
         width: 129%;
         margin-left: -44.5px; }
     main section:nth-child(4) article:nth-child(3) {
-      padding: 25px 0; }
+      padding: 50px 0 25px 0; }
       main section:nth-child(4) article:nth-child(3) h4.menudevice {
         font-size: 35px; }
       main section:nth-child(4) article:nth-child(3) p.desc {
@@ -1543,8 +1599,9 @@ footer {
         margin: 0 auto;
         display: block;
         line-height: 20px;
-        font-size: 10px;
-        line-height: 25px;
+        font-size: 13px;
+        line-height: 30px;
+        width: 100%;
         margin-bottom: 30px; }
       main section:nth-child(4) article:nth-child(3) h3 {
         text-align: center;
@@ -1554,7 +1611,7 @@ footer {
         width: 128%;
         margin-left: -46px; }
     main section:nth-child(4) article:nth-child(4) {
-      padding: 25px 0; }
+      padding: 50px 0 25px 0; }
       main section:nth-child(4) article:nth-child(4) h4.menudevice {
         font-size: 35px; }
       main section:nth-child(4) article:nth-child(4) p.desc {
@@ -1562,8 +1619,9 @@ footer {
         margin: 0 auto;
         display: block;
         line-height: 20px;
-        font-size: 10px;
-        line-height: 25px;
+        font-size: 13px;
+        line-height: 30px;
+        width: 100%;
         margin-bottom: 30px; }
       main section:nth-child(4) article:nth-child(4) h3 {
         text-align: center;
@@ -1573,7 +1631,7 @@ footer {
         width: 128%;
         margin-left: -45px; }
     main section:nth-child(4) article:nth-child(5) {
-      padding: 25px 0; }
+      padding: 50px 0 25px 0; }
       main section:nth-child(4) article:nth-child(5) h4.menudevice {
         font-size: 35px; }
       main section:nth-child(4) article:nth-child(5) p.desc {
@@ -1581,8 +1639,9 @@ footer {
         margin: 0 auto;
         display: block;
         line-height: 20px;
-        font-size: 10px;
-        line-height: 25px;
+        font-size: 13px;
+        line-height: 30px;
+        width: 100%;
         margin-bottom: 30px; }
       main section:nth-child(4) article:nth-child(5) h3 {
         text-align: center;
@@ -1600,32 +1659,44 @@ footer {
     text-align: center;
     margin-left: 0;
     font-size: 16px; }
-  main section:last-child article:last-child h4.menudevice {
-    font-size: 35px; }
-  main section:last-child article:last-child h3 {
-    margin-bottom: 13%; }
-  main section:last-child article:last-child img {
-    height: 250px;
-    width: 180px;
-    margin-top: 30px; }
-  main section:last-child article:last-child p.title {
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    font-size: 13px;
-    margin-bottom: 3%;
-    width: 90%; }
-  main section:last-child article:last-child p.desc {
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    line-height: 20px;
-    font-size: 10px;
-    line-height: 25px; }
+  main section:last-child article {
+    padding: 25px 0; }
+    main section:last-child article h4.menudevice {
+      font-size: 35px; }
+    main section:last-child article h3 {
+      margin-bottom: 13%; }
+    main section:last-child article img {
+      height: 250px;
+      width: 180px;
+      margin-top: 30px; }
+    main section:last-child article p.title {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      font-size: 18px;
+      margin-bottom: 20px;
+      width: 90%;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 20px; }
+    main section:last-child article p.desc {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      line-height: 20px;
+      font-size: 13px;
+      line-height: 30px;
+      width: 100%; }
+    main section:last-child article button {
+      height: 53px;
+      margin-left: 30px;
+      margin-bottom: 0px;
+      margin-top: 20px;
+      width: 80%; }
 
   footer {
     height: 290px;
-    margin-top: 200px; }
+    margin-top: 1160px; }
     footer .form-newsletter {
       margin-right: 11px; }
       footer .form-newsletter label {
@@ -1672,15 +1743,17 @@ footer {
       text-align: center;
       margin: 0 auto;
       display: block;
-      font-size: 13px;
-      margin-bottom: 3%; }
+      font-size: 20pxpx;
+      margin-bottom: 3%;
+      font-weight: 900;
+      line-height: 30px; }
     main section:nth-child(3) article:nth-child(2) p.desc {
       text-align: center;
       margin: 0 auto;
       display: block;
       line-height: 20px;
-      font-size: 10px;
-      line-height: 25px; }
+      font-size: 13px;
+      line-height: 30px; }
     main section:nth-child(3) article:nth-child(2) img {
       height: auto;
       width: 132%;
@@ -1704,15 +1777,17 @@ footer {
       text-align: center;
       margin: 0 auto;
       display: block;
-      font-size: 13px;
-      margin-bottom: 3%; }
+      font-size: 20pxpx;
+      margin-bottom: 3%;
+      font-weight: 900;
+      line-height: 30px; }
     main section:nth-child(3) article:nth-child(3) p.desc {
       text-align: center;
       margin: 0 auto;
       display: block;
       line-height: 20px;
-      font-size: 10px;
-      line-height: 25px; }
+      font-size: 13px;
+      line-height: 30px; }
     main section:nth-child(3) article:nth-child(3) #barseemore {
       margin: 0 auto;
       left: 9.3vw;
@@ -1744,17 +1819,17 @@ footer {
       text-align: center;
       margin: 0 auto;
       display: block;
-      font-size: 13px;
+      font-size: 20pxpx;
       margin-bottom: 3%;
-      width: 75%;
-      line-height: 20px; }
+      font-weight: 900;
+      line-height: 30px; }
     main section:nth-child(3) article:nth-child(4) p.desc {
       text-align: center;
       margin: 0 auto;
       display: block;
       line-height: 20px;
-      font-size: 10px;
-      line-height: 25px; }
+      font-size: 13px;
+      line-height: 30px; }
     main section:nth-child(3) article:nth-child(4) img {
       height: auto;
       width: 132%;
@@ -1779,6 +1854,14 @@ footer {
   main section:nth-child(4) article:nth-child(2) h3 {
     font-size: 12px;
     margin-left: 5px; }
+  main section:nth-child(4) article:nth-child(2) p.desc {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    line-height: 20px;
+    font-size: 13px;
+    line-height: 30px;
+    margin-bottom: 30px; }
   main section:nth-child(4) article:nth-child(2) img {
     height: auto;
     width: 133%;
@@ -1786,6 +1869,14 @@ footer {
   main section:nth-child(4) article:nth-child(3) h3 {
     font-size: 12px;
     margin-left: 5px; }
+  main section:nth-child(4) article:nth-child(3) p.desc {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    line-height: 20px;
+    font-size: 13px;
+    line-height: 30px;
+    margin-bottom: 30px; }
   main section:nth-child(4) article:nth-child(3) img {
     height: auto;
     width: 134%;
@@ -1793,6 +1884,14 @@ footer {
   main section:nth-child(4) article:nth-child(4) h3 {
     font-size: 12px;
     margin-left: 5px; }
+  main section:nth-child(4) article:nth-child(4) p.desc {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    line-height: 20px;
+    font-size: 13px;
+    line-height: 30px;
+    margin-bottom: 30px; }
   main section:nth-child(4) article:nth-child(4) img {
     height: auto;
     width: 132%;
@@ -1800,20 +1899,38 @@ footer {
   main section:nth-child(4) article:nth-child(5) h3 {
     font-size: 12px;
     margin-left: 5px; }
+  main section:nth-child(4) article:nth-child(5) p.desc {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    line-height: 20px;
+    font-size: 13px;
+    line-height: 30px;
+    margin-bottom: 30px; }
   main section:nth-child(4) article:nth-child(5) img {
     height: auto;
     width: 132%;
     margin-left: -45px; }
 
-  main section:last-child article:last-child h3 {
+  main section:last-child article h3 {
     font-size: 12px;
     margin-left: 5px; }
-  main section:last-child article:last-child p.title {
-    width: 110%;
-    margin-left: -18px; }
+  main section:last-child article p.title {
+    width: 100%;
+    margin-left: -1px;
+    font-weight: 900; }
+  main section:last-child article p.desc {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    line-height: 20px;
+    font-size: 13px;
+    line-height: 30px; }
+  main section:last-child article button {
+    margin-top: 20px; }
 
   footer {
     height: 286px;
-    margin-top: 210px; } }
+    margin-top: 1150px; } }
 
 /*# sourceMappingURL=about.css.map */

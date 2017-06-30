@@ -145,6 +145,26 @@ body {
 		-webkit-transition-delay: 0.63s;
 		transition-delay: 0.63s;
 	}
+	.button--nina:hover > span:nth-child(15) {
+		-webkit-transition-delay: 0.675s;
+		transition-delay: 0.67.5s;
+	}
+	.button--nina:hover > span:nth-child(16) {
+		-webkit-transition-delay: 0.72s;
+		transition-delay: 0.72s;
+	}
+	.button--nina:hover > span:nth-child(17) {
+		-webkit-transition-delay: 0.765s;
+		transition-delay: 0.76.5s;
+	}
+	.button--nina:hover > span:nth-child(18) {
+		-webkit-transition-delay: 0.81s;
+		transition-delay: 0.81s;
+	}
+	.button--nina:hover > span:nth-child(19) {
+		-webkit-transition-delay: 0.855s;
+		transition-delay: 0.855s;
+	}
 
 	button, html input[type="button"], input[type="reset"], input[type="submit"] {
 	    -webkit-appearance: button;
@@ -516,7 +536,7 @@ main {
 
 		/* RESTAURANT */
 		article:nth-child(2) {
-			padding: 50px 0;
+			padding: 70px 0;
 			background-color: #FFF;
 
 			#restaurantdisplay, #restaurantreduce {
@@ -548,6 +568,7 @@ main {
 				line-height: 30px;
 				margin: 0 40px 4.7% 0;
 				text-align: right;
+				font-weight: 900;
 			}
 			
 			.desc {
@@ -644,6 +665,7 @@ main {
 				font-size: 20px;
 				line-height: 30px;
 				margin: 0 0 4.7% 40px;
+				font-weight: 900;
 			}
 			
 			.desc {
@@ -734,6 +756,7 @@ main {
 				line-height: 30px;
 				margin: 0 40px 4.7% 0;
 				text-align: right;
+				font-weight: 900;
 			}
 			
 			.desc {
@@ -812,7 +835,7 @@ main {
 
 		/* 1935 */
 		article:nth-child(2) {
-			padding: 50px 0;
+			padding: 70px 0;
 			background-color: #FFF;
 
 			h3 {
@@ -929,7 +952,7 @@ main {
 			h4 {
 				font-size: 50px;
 				text-align: right;
-				margin: 0 25.5px 17px 0;
+				margin: 0 29.5px 17px 0;
 			}
 			
 			p.desc {
@@ -964,15 +987,15 @@ main {
 			height: 320px;
 		}
 
-		article:last-child {
-			padding: 50px 0;
-			background-color: #FFF;
+		article {
+			padding: 70px 0;
+			background-color: #ffffff;
 
 			img {
-				width: auto;
+				width: 300px;
+				height: 400px;
 				margin: 0 auto;
 				display: block;
-				margin-top: 2%
 			}
 
 			h3 {
@@ -980,15 +1003,15 @@ main {
 			    font-weight: 400;
 			    text-transform: uppercase;
 			    letter-spacing: 2px;
-				margin: 0 40px 3% 0;
+				margin:0% 40px 3% 0;
 				text-align: right;
 			}
 
 			h4 {
-				margin: 0 auto;
 				font-size: 45px;
 				text-align: right;
-				margin: 0 40px 3% 0;
+				margin-right: 40px;
+				margin-bottom: 3%;
 			}
 
 			.title {
@@ -996,6 +1019,7 @@ main {
 			    line-height: 30px;
 			    margin: 0 40px 4.7% 0;
 				text-align: right;
+				font-weight: 900;
 			}
 			
 			.desc {
@@ -1007,7 +1031,7 @@ main {
 
 			.button--nina {
 				padding: 3.5px 28px;
-				color: #6B614D;
+				color: #6b614d;
 				font-size: 14px;
 				margin-right: 40px;
 
@@ -1017,12 +1041,12 @@ main {
 			}
 
 			button {
-			    border: 2px solid #6B614D;
+			    border: 2px solid #6b614d;
 			    background-color: transparent;
 
 				a {
 					text-decoration: none;
-				    color: #000;
+				    color: #000000;
 				    font-size: 11px;
 				    letter-spacing: 2px;
 				    font-weight: initial;
@@ -1033,11 +1057,11 @@ main {
 			}
 
 			button:hover {
-				background-color: #6B614D;
-				color: #fff;
+				background-color: #6b614d;
+				color: #ffffff;
 
 				a {
-					color: #fff;
+					color: #ffffff;
 				}
 			}
 		}
@@ -1325,6 +1349,7 @@ footer {
 			.title {
 				text-align: center;
 				margin-right: 0;
+				font-weight: 900;
 			}
 
 			.desc {
@@ -1360,6 +1385,7 @@ footer {
 			.title {
 				text-align: center;
 				margin-left: 0;
+				font-weight: 900;
 			}
 
 			.desc {
@@ -1398,6 +1424,7 @@ footer {
 			.title {
 				text-align: center;
 				margin-right: 0;
+				font-weight: 900;
 			}
 
 			.desc {
@@ -1559,7 +1586,7 @@ footer {
 			height: 570px;
 		}
 
-		article:last-child {
+		article {
 			h3 {
 				margin-right: 0;
 				text-align: center;
@@ -1575,6 +1602,7 @@ footer {
 			.title {
 				text-align: center;
 				margin-right: 0;
+				font-weight: 900;
 			}
 
 			.desc {
@@ -1691,14 +1719,17 @@ footer {
 			p.title {
 				text-align: center;
 				margin-right: 0;
+				font-size: 25px;
+				line-height: 40px;
 			}
 
 			p.desc {
 				margin: 0 auto;
-				margin-left: 60px;
+				margin-left: 30px;
 				margin-bottom: 30px;
 				text-align: center;
-				width: 80%;
+				width: 90%;
+				font-size: 18px;
 			}
 
 			button {
@@ -1736,14 +1767,17 @@ footer {
 			p.title {
 				text-align: center;
 				margin-left: 0;
+				font-size: 25px;
+				line-height: 40px;
 			}
 
 			p.desc {
 				margin: 0 auto;
-				margin-left: 60px;
+				margin-left: 30px;
 				margin-bottom: 30px;
 				text-align: center;
-				width: 80%;
+				width: 90%;
+				font-size: 18px;
 			}	
 
 			button {
@@ -1783,15 +1817,19 @@ footer {
 
 			p.title {
 				text-align: center;
-				margin-right: 0;
+				margin-left: 90px;
+				font-size: 25px;
+				line-height: 40px;
+				width: 70%;
 			}
 
 			p.desc {
 				margin: 0 auto;
-				margin-left: 60px;
+				margin-left: 30px;
 				margin-bottom: 30px;
 				text-align: center;
-				width: 80%;
+				width: 90%;
+				font-size: 20px;
 			}
 
 			button {
@@ -1872,6 +1910,7 @@ footer {
 				text-align: center;
 				width: 80%;
 				margin-bottom: 30px;
+				font-size: 20px;
 			}
 
 			img {
@@ -1899,6 +1938,7 @@ footer {
 				text-align: center;
 				width: 80%;
 				margin-bottom: 30px;
+				font-size: 20px;
 			}
 
 			img {
@@ -1926,6 +1966,7 @@ footer {
 				text-align: center;
 				width: 80%;
 				margin-bottom: 30px;
+				font-size: 20px;
 			}
 
 			img {
@@ -1954,6 +1995,7 @@ footer {
 				text-align: center;
 				width: 80%;
 				margin-bottom: 30px;
+				font-size: 20px;
 			}
 
 			img {
@@ -1976,7 +2018,8 @@ footer {
 		    margin-top: 20px;
 		}
 
-		article:last-child {
+		article {
+			padding: 40px 0; 
 
 			h4.menudevice {
 			    font-size: 50px;
@@ -1987,6 +2030,8 @@ footer {
 			p.title {
 				text-align: center;
 				margin-right: 0;
+				font-size: 25px;
+				line-height: 40px;
 			}
 
 			p.desc {
@@ -1995,6 +2040,12 @@ footer {
 				margin-bottom: 30px;
 				text-align: center;
 				width: 80%;
+				font-size: 20px;
+			}
+
+			button {
+				margin: 40px 0 30px 158px;
+				width: 50%;
 			}
 
 			img {
@@ -2007,7 +2058,7 @@ footer {
 
 	footer {
 		height: 160px;
-		margin-top: 490px;
+		margin-top: 1700px;
 
 		.btn-credits {
 		    margin: 7px 0px 0px -10px;
@@ -2062,7 +2113,6 @@ footer {
 			text-align: center;
 			margin-left: 0;
 		}
-
 	}
 
 	main section:nth-child(3) {
@@ -2120,8 +2170,10 @@ footer {
 				text-align: center;
 				margin: 0 auto;
 				display: block;
-				font-size: 13px;
+				font-size: 20px;
 				margin-bottom: 3%;
+				font-weight: 400;
+				line-height: 30px;
 			}
 
 			p.desc {
@@ -2129,8 +2181,9 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 			}
 
 			img {
@@ -2169,8 +2222,11 @@ footer {
 				text-align: center;
 				margin: 0 auto;
 				display: block;
-				font-size: 13px;
+				font-size: 20px;
 				margin-bottom: 3%;
+				font-weight: 400;
+				line-height: 30px;
+				width: 80%;
 			}
 
 			p.desc {
@@ -2178,8 +2234,9 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 			}
 
 			#barseemore {
@@ -2229,10 +2286,11 @@ footer {
 				text-align: center;
 				margin: 0 auto;
 				display: block;
-				font-size: 13px;
+				font-size: 20px;
 				margin-bottom: 3%;
-				width: 75%;
-				line-height: 20px;
+				font-weight: 400;
+				line-height: 30px;
+				width: 80%;
 			}
 
 			p.desc {
@@ -2240,8 +2298,9 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 			}
 
 			img {
@@ -2278,6 +2337,7 @@ footer {
 
 	main section:nth-child(4) {
 		margin-bottom: 0;
+		margin-top: -20px;
 
 		h4.menudevice {
 			font-size: 55px;
@@ -2302,8 +2362,9 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 				margin-bottom: 30px;
 			}
 
@@ -2320,7 +2381,7 @@ footer {
 		}
 
 		article:nth-child(3){
-			padding: 25px 0;
+			padding: 50px 0 25px 0;
 
 			h4.menudevice {
 				font-size: 35px;
@@ -2331,8 +2392,9 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 				margin-bottom: 30px;
 			}
 
@@ -2349,7 +2411,7 @@ footer {
 		}
 
 		article:nth-child(4){
-			padding: 25px 0;
+			padding: 50px 0 25px 0;
 
 			h4.menudevice {
 				font-size: 35px;
@@ -2360,8 +2422,9 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 				margin-bottom: 30px;
 			}
 
@@ -2378,7 +2441,7 @@ footer {
 		}
 
 		article:nth-child(5){
-			padding: 25px 0;
+			padding: 50px 0 25px 0;
 
 			h4.menudevice {
 				font-size: 35px;
@@ -2389,8 +2452,9 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 				margin-bottom: 30px;
 			}
 
@@ -2421,7 +2485,9 @@ footer {
 			font-size: 16px;
 		}
 
-		article:last-child {
+		article {
+			padding: 25px 0;
+
 			h4.menudevice {
 				font-size: 35px;
 			}
@@ -2440,9 +2506,12 @@ footer {
 				text-align: center;
 				margin: 0 auto;
 				display: block;
-				font-size: 13px;
-				margin-bottom: 3%;
+				font-size: 18px;
+				margin-bottom: 20px;
 				width: 90%;
+				font-weight: 400;
+				line-height: 30px;
+				margin-bottom: 20px;
 			}
 
 			p.desc {
@@ -2450,8 +2519,17 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
+			}
+
+			button {
+				height: 53px;
+				margin-left: 30px;
+				margin-bottom: 0px;
+				margin-top: 20px;
+				width: 80%;
 			}
 		}
 	}
@@ -2459,7 +2537,7 @@ footer {
 	footer {
 
 		height: 290px;
-		margin-top: 200px;
+		margin-top: 1160px;
 
 		.form-newsletter {
 			margin-right: 11px;
@@ -2536,8 +2614,10 @@ footer {
 				text-align: center;
 				margin: 0 auto;
 				display: block;
-				font-size: 13px;
+				font-size: 20pxpx;
 				margin-bottom: 3%;
+				font-weight: 900;
+				line-height: 30px;
 			}
 
 			p.desc {
@@ -2545,8 +2625,8 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
 			}
 
 			img {
@@ -2584,8 +2664,10 @@ footer {
 				text-align: center;
 				margin: 0 auto;
 				display: block;
-				font-size: 13px;
+				font-size: 20pxpx;
 				margin-bottom: 3%;
+				font-weight: 900;
+				line-height: 30px;
 			}
 
 			p.desc {
@@ -2593,8 +2675,8 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
 			}
 
 			#barseemore {
@@ -2644,10 +2726,10 @@ footer {
 				text-align: center;
 				margin: 0 auto;
 				display: block;
-				font-size: 13px;
+				font-size: 20pxpx;
 				margin-bottom: 3%;
-				width: 75%;
-				line-height: 20px;
+				font-weight: 900;
+				line-height: 30px;
 			}
 
 			p.desc {
@@ -2655,8 +2737,8 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
 			}
 
 			img {
@@ -2700,6 +2782,16 @@ footer {
 				margin-left: 5px
 			}
 
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+				margin-bottom: 30px;
+			}
+
 			img {
     			height: auto;
     			width: 133%;
@@ -2712,6 +2804,16 @@ footer {
 			h3 {
 				font-size: 12px;
 				margin-left: 5px
+			}
+
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+				margin-bottom: 30px;
 			}
 
 			img {
@@ -2728,6 +2830,16 @@ footer {
 				margin-left: 5px
 			}
 
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+				margin-bottom: 30px;
+			}
+
 			img {
     			height: auto;
     			width: 132%;
@@ -2742,6 +2854,16 @@ footer {
 				margin-left: 5px
 			}
 
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+				margin-bottom: 30px;
+			}
+
 			img {
     			height: auto;
     			width: 132%;
@@ -2750,21 +2872,38 @@ footer {
 		}
 	}
 
-	main section:last-child article:last-child {
+	main section:last-child {
 
-		h3 {
-			font-size: 12px;
-			margin-left: 5px
-		}
+		article {
 
-		p.title {
-			width: 110%;
-			margin-left: -18px
+			h3 {
+				font-size: 12px;
+				margin-left: 5px
+			}
+
+			p.title {
+				width: 100%;
+				margin-left: -1px;
+				font-weight: 900;
+			}
+
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+			}
+
+			button {
+				margin-top: 20px;
+			}
 		}
 	}
 
 	footer {
 		height: 286px;
-		margin-top: 210px;
+		margin-top: 1150px;
 	}
 }

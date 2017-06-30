@@ -98,22 +98,20 @@ jQuery(document).ready(function($) {
 
 	// LES PLATS
 		//DISPLAY NONE ALL
-	 	$("main section:nth-child(5) h4").click(function(){
+	 	$("main section:nth-child(5) h4.menudevice").click(function(){
 			$("#compo1display, #compo2display, #compo3display, #compo4display, #compo5display, #compo6display ,#fdmdisplay h5, #fdmdisplay p, #pdm h5, #pdmdisplay p, #huitresdisplay, #crustacesdisplay, #poissonsdemerdisplay, #homardsdisplay, #epiceriedisplay, #meatdisplay").fadeOut();
 			$("#fdm h4, #fdmdisplay h5, #pdm h5, #meat h4").removeClass('opened').addClass('closed');
 		}); 	
 		// LES FRUITS DE MER
 			$("#fdm h4").click(function(){
-				$("#fdmdisplay h5").fadeToggle();
-				$("#pdm h5").fadeToggle();
+				$("#fdmdisplay h5, #pdm h5").fadeToggle();
+				$("#fdmdisplay h5, #pdm h5").removeClass('opened').addClass('closed');
 				$("#fdmdisplay p, #pdmdisplay p, #compo1display, #compo2display, #compo3display, #compo4display, #compo5display, #compo6display, #huitresdisplay, #crustacesdisplay, #poissonsdemerdisplay, #homardsdisplay, #epiceriedisplay").fadeOut();
 				if ($(this).hasClass('closed')) {
 					$(this).removeClass('closed').addClass('opened');
 				} else if ($(this).hasClass('opened')) {
 					$(this).removeClass('opened').addClass('closed');
 				}
-				$("#fdmdisplay h5").removeClass('opened').addClass('closed');
-				$("#pdm h5").removeClass('opened').addClass('closed');
 			});
 			// LES COMPOSITIONS
 				// DISPLAY NONE

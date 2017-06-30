@@ -484,7 +484,8 @@ main {
         font-size: 20px;
         margin-bottom: 6%;
         line-height: 30px;
-        margin: 0 7% 4% 0%; }
+        margin: 0 7% 4% 0%;
+        font-weight: 900; }
       main section:nth-child(5) #about .desc {
         font-size: 15px;
         line-height: 35px;
@@ -550,7 +551,8 @@ main {
       main section:nth-child(5) #ecaille .title {
         font-size: 20px;
         line-height: 30px;
-        margin: 0 0 4% 7%; }
+        margin: 0 0 4% 7%;
+        font-weight: 900; }
       main section:nth-child(5) #ecaille .desc {
         font-size: 15px;
         line-height: 35px;
@@ -858,6 +860,8 @@ footer {
     main section:first-child #headerdesc {
       padding: 50% 0%; }
 
+  main section:nth-child(2) p {
+    font-size: 18px; }
   main section:nth-child(2) img {
     margin: 0% 25%;
     width: 50%; }
@@ -890,16 +894,21 @@ footer {
       font-size: 40px;
       margin: 0 auto;
       text-align: center;
-      margin-left: -33px; }
+      margin-left: -90px;
+      margin-bottom: 20px; }
     main section:nth-child(5) #about p.title {
-      margin-right: 28.6%; }
-    main section:nth-child(5) #about .desc {
+      margin-right: 22%;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 40px;
+      margin-bottom: 10px; }
+    main section:nth-child(5) #about p.desc {
       margin: 0 auto;
-      display: block;
-      margin-left: 4%;
+      margin-left: -1.2%;
       margin-bottom: 30px;
       text-align: center;
-      width: 80%; }
+      width: 90%;
+      font-size: 18px; }
     main section:nth-child(5) #about button {
       margin-right: 14.5%; }
     main section:nth-child(5) #ecaille {
@@ -912,15 +921,21 @@ footer {
         font-size: 40px;
         margin: 0 auto;
         text-align: center;
-        margin-right: 33px; }
+        margin-right: 103px;
+        margin-bottom: 20px; }
       main section:nth-child(5) #ecaille p.title {
-        margin-left: 9.5%; }
+        margin-left: 0.9%;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 10px; }
       main section:nth-child(5) #ecaille p.desc {
         margin: 0 auto;
         margin-left: -1.2%;
         margin-bottom: 30px;
         text-align: center;
-        width: 90%; }
+        width: 90%;
+        font-size: 18px; }
       main section:nth-child(5) #ecaille button {
         margin-left: 2.4%; }
 
@@ -1000,41 +1015,50 @@ footer {
     margin-top: 30px; }
 
   main section:nth-child(5) {
-    height: 425px; }
+    height: 65%; }
     main section:nth-child(5) #about button {
       margin-right: 17.8%;
       width: 56%; }
     main section:nth-child(5) #about h3 {
       margin-right: 43%;
       font-size: 12px; }
+    main section:nth-child(5) #about h4.menudevice {
+      margin-left: -40px; }
     main section:nth-child(5) #about p.title {
-      font-size: 11px;
+      font-size: 20px;
       margin-right: 40px;
-      text-align: center; }
+      text-align: center;
+      font-weight: 400;
+      line-height: 30px; }
     main section:nth-child(5) #about p.desc {
-      font-size: 9px;
-      line-height: 20px; }
+      font-size: 13px;
+      line-height: 30px;
+      margin-bottom: 10px; }
     main section:nth-child(5) #ecaille button {
       width: 56%;
       margin-left: 9%; }
     main section:nth-child(5) #ecaille h3 {
       font-size: 12px;
-      margin-left: 36%; }
+      margin-left: 37%; }
+    main section:nth-child(5) #ecaille h4.menudevice {
+      margin-right: 30px; }
     main section:nth-child(5) #ecaille p.title {
-      font-size: 11px;
-      margin-right: 10%;
+      font-size: 20px;
+      margin-right: 9%;
       margin-left: 0%;
-      text-align: center; }
+      text-align: center;
+      font-weight: 400;
+      line-height: 30px; }
     main section:nth-child(5) #ecaille p.desc {
-      font-size: 9px;
-      line-height: 20px;
-      margin-left: 0%;
-      text-align: center; }
+      font-size: 13px;
+      line-height: 30px;
+      margin-bottom: 10px; }
 
   #googlemap #contact h4 {
     font-size: 27px; }
   #googlemap #contact h5 {
-    font-size: 16px; }
+    font-size: 18px;
+    font-weight: 400; }
   #googlemap #contact p {
     font-size: 13px;
     width: 89%; }
@@ -1052,5 +1076,8 @@ footer {
     footer img {
       margin-top: 20px;
       margin-left: 93px; } }
+@media all and (max-width: 375px) {
+  main section:nth-child(5) {
+    height: 70%; } }
 
 /*# sourceMappingURL=main.css.map */

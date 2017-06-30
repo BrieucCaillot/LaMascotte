@@ -647,10 +647,11 @@ footer {
   main section:nth-child(3) h3 {
     padding: 4% 0; }
   main section:nth-child(3) p {
-    padding-bottom: 3%; }
+    padding-bottom: 5%;
+    font-size: 18px; }
 
   footer {
-    margin-top: 30px;
+    margin-top: 60px;
     height: 160px; }
     footer .btn-credits {
       margin: 7px 0px 0px -10px;
