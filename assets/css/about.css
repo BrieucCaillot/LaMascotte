@@ -880,9 +880,6 @@ footer {
     position: absolute;
     right: -290%; }
 
-  #progress {
-    display: none; }
-
   .show {
     display: block; }
 
@@ -894,9 +891,6 @@ footer {
 
   #swiperrestaurant {
     height: 300px; }
-
-  header .progressContainer {
-    top: 69px; }
 
   main section:first-child {
     background-position: 50% top;
@@ -1100,16 +1094,10 @@ footer {
   body {
     overflow-x: hidden; }
 
-  header .progressContainer {
-    top: 69px; }
-
   header #headersocial {
     width: 100px;
     position: absolute;
     right: -322%; }
-
-  #progress {
-    display: none; }
 
   body .menudevice {
     display: block; }
@@ -1385,9 +1373,6 @@ footer {
     overflow-x: hidden; }
 
   header #headersocial {
-    display: none; }
-
-  #progress {
     display: none; }
 
   body .menudevice {

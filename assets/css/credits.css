@@ -1,4 +1,3 @@
-/* FOOTER */
 body {
   margin: 0;
   padding: 0;
@@ -304,7 +303,6 @@ footer {
 
   footer {
     height: 110px; } }
-/* MEDIA QUERIES MAX WIDTH 1200PX*/
 /* MEDIA QUERIES MAX WIDTH 992PX */
 @media all and (max-width: 992px) {
   .show {
@@ -312,9 +310,6 @@ footer {
 
   .hide {
     display: none; }
-
-  header .progressContainer {
-    top: 69px; }
 
   h1 {
     width: 90%;
@@ -334,9 +329,6 @@ footer {
   #headersocial {
     position: absolute;
     right: -290%; }
-
-  #progress {
-    display: none; }
 
   h1 {
     width: 90%;
@@ -370,14 +362,16 @@ footer {
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width: 780px) {
   overflow-x: hidden;
-  #progress {
-    display: none; }
-
   .show {
     display: block; }
 
   .hide {
     display: none; }
+
+  header #headersocial {
+    width: 100px;
+    position: absolute;
+    right: -322%; }
 
   main section:first-child {
     background: url("../images/credits/backgroundresponsive.jpg") no-repeat;
@@ -400,7 +394,7 @@ footer {
   main section:last-child p#credits {
     line-height: 35px;
     font-weight: 100;
-    font-size: 15px;
+    font-size: 18px;
     padding: 16% 0 0 0;
     width: 100%; }
   main section:last-child p.mentionslegales {
@@ -416,14 +410,6 @@ footer {
       line-height: 62px;
       margin-bottom: 20px; }
 
-  header .progressContainer {
-    top: 69px; }
-
-  header #headersocial {
-    width: 100px;
-    position: absolute;
-    right: -322%; }
-
   main
   footer {
     height: 160px;
@@ -438,9 +424,6 @@ footer {
     overflow-x: hidden; }
 
   header #headersocial {
-    display: none; }
-
-  #progress {
     display: none; }
 
   .mobile-nav .text {

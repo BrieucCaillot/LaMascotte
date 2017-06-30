@@ -92,8 +92,10 @@ $(document).ready(function() {
 
     // PROGRESS BAR ON SCROLL
     function updateProgress(num1, num2){
-        var percent = Math.ceil( num1 / num2 * 100 ) + '%';
-        document.getElementById('progress').style.width = percent;
+        if ($(window).width() > 992) {
+            var percent = Math.ceil( num1 / num2 * 100 ) + '%';
+            document.getElementById('progress').style.width = percent;
+        }
     }
 
     window.addEventListener('scroll', function(){

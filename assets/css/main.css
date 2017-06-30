@@ -760,9 +760,6 @@ footer {
   .hovermenu2, .hovermenu3, .hovermenu4 {
     margin-top: 40px; }
 
-  header .progressContainer {
-    top: 69px; }
-
   main section:first-child h1 {
     font-size: 60px; }
   main section:first-child h2 {
@@ -807,9 +804,6 @@ footer {
     position: absolute;
     right: -290%; }
 
-  #progress {
-    display: none; }
-
   main section:nth-child(2) img {
     width: 50%;
     margin: 9% 24%; }
@@ -825,9 +819,6 @@ footer {
     margin-left: -17%; } }
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width: 780px) {
-  #progress {
-    display: none; }
-
   body .menudevice {
     display: block; }
 

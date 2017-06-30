@@ -782,9 +782,6 @@ footer {
     position: absolute;
     right: -290%; }
 
-  #progress {
-    display: none; }
-
   main section:first-child {
     background: url("../images/menu/backgroundresponsive.jpg") no-repeat; }
 
@@ -801,17 +798,11 @@ footer {
   body {
     overflow-x: hidden; }
 
-  #progress {
-    display: none; }
-
   .show {
     display: block; }
 
   .hide {
     display: none; }
-
-  header .progressContainer {
-    top: 69px; }
 
   header #headersocial {
     width: 100px;
@@ -917,9 +908,6 @@ footer {
       text-align: center; }
 
   header #headersocial {
-    display: none; }
-
-  #progress {
     display: none; }
 
   .mobile-nav .text {

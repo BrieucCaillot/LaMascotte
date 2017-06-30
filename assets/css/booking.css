@@ -597,9 +597,6 @@ footer {
     position: absolute;
     right: -290%; }
 
-  #progress {
-    display: none; }
-
   main section:nth-child(3) h3 {
     padding: 20px 0; }
   main section:nth-child(3) p {
@@ -611,14 +608,8 @@ footer {
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width: 780px) {
   overflow-x: hidden;
-  #progress {
-    display: none; }
-
   body .menudevice {
     display: block; }
-
-  .progress {
-    display: none; }
 
   .show {
     display: block; }
@@ -662,9 +653,6 @@ footer {
     overflow-x: hidden; }
 
   header #headersocial {
-    display: none; }
-
-  #progress {
     display: none; }
 
   .mobile-nav .text {

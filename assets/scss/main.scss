@@ -1,5 +1,3 @@
-@import "variables";
-
 body {
 	margin : 0;
 	padding: 0;
@@ -1070,10 +1068,6 @@ footer {
 		margin-top: 40px;
 	}
 
-	header .progressContainer {
-		top: 69px;
-	}
-
 	main section:first-child {
 
 		h1 {
@@ -1151,10 +1145,6 @@ footer {
 		right: -290%;
 	}
 
-	#progress {
-		display: none;
-	}
-
 	main section:nth-child(2) img {
 		width: 50%;
 		margin: 9% 24%;
@@ -1181,10 +1171,6 @@ footer {
 
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width : 780px) {
-
-	#progress {
-		display: none;
-	}
 
 	body .menudevice {
 		display: block;
