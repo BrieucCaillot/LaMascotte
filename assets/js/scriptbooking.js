@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+    // SCROLL DIV ABOUT
+        $("h4.menudevice").click(function() {
+          $('html,body').animate({
+              scrollTop: $("main section:nth-child(3)").offset().top},
+              'slow');
+        });
+
+
     // FORM INPUT CLASS FILLED
     
     /*!

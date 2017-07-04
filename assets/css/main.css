@@ -365,6 +365,8 @@ main {
     margin-top: 4%; }
     main section:nth-child(3) #swiperrestaurant {
       height: 670px; }
+      main section:nth-child(3) #swiperrestaurant div.container {
+        width: 1100px; }
       main section:nth-child(3) #swiperrestaurant .next {
         background: url("../images/main/arrowright.svg") no-repeat;
         background-size: 100% 100%; }
@@ -485,7 +487,7 @@ main {
         margin-bottom: 6%;
         line-height: 30px;
         margin: 0 7% 4% 0%;
-        font-weight: 900; }
+        font-weight: 400; }
       main section:nth-child(5) #about .desc {
         font-size: 15px;
         line-height: 35px;
@@ -552,7 +554,7 @@ main {
         font-size: 20px;
         line-height: 30px;
         margin: 0 0 4% 7%;
-        font-weight: 900; }
+        font-weight: 400; }
       main section:nth-child(5) #ecaille .desc {
         font-size: 15px;
         line-height: 35px;
@@ -609,7 +611,7 @@ main {
       height: 419px;
       background-color: #fff;
       z-index: 2;
-      padding: 3%;
+      padding: 50px;
       line-height: 25px; }
       main section:last-child #contact h4 {
         font-size: 37px;

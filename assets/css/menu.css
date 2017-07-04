@@ -321,8 +321,8 @@ main {
     height: 500px;
     background: url("../images/menu/background.jpg") no-repeat;
     background-attachment: fixed;
-    background-position: 100% 172%;
-    background-size: cover; }
+    background-size: cover;
+    background-position: 0 100%; }
     main section:first-child #headerdesc {
       padding: 150px 0px; }
     main section:first-child h1 {

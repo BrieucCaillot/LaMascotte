@@ -471,7 +471,8 @@ footer {
       line-height: 34px; }
 
   footer {
-    height: 268px; }
+    margin-top: 0px;
+    height: 288px; }
     footer .form-newsletter {
       margin-right: 11px; }
       footer .form-newsletter label {

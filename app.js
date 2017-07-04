@@ -82,7 +82,7 @@ var connection = function(){
 	    if (req.body.newsletter.length > 0 && req.body.newsletter.match(regExpEmail)) {
 	    	co.query(q, function (error, results, fields){
 	            if (error) return console.log(error);
-	            res.status(201).send("Vous êtes maintenant inscrit à la newsletter du site. Vous receverez désormais sur l'email " + req.body.newsletter.value + " l'actualité de votre restaurant La Mascotte.");
+	            res.status(201).send("Vous êtes maintenant inscrit à la newsletter du site. Vous receverez désormais sur l'email " + req.body.newsletter + " l'actualité de votre restaurant La Mascotte.");
 	        	console.log(results);
 	        });
 	    } else {
