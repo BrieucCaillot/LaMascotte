@@ -11,7 +11,7 @@ https://drive.google.com/drive/folders/0BzxUjzqv90RMb0c0eEdvNjRYeW8?usp=sharing
 
 Cloud9 : 
 
-https://ide.c9.io/brieuckyo/lamascotte
+https://lamascotte-brieuckyo.c9users.io
 
 Informations :
 -------------
