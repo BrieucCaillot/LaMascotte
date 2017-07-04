@@ -1,5 +1,3 @@
-@import "variables";
-
 body {
 	margin : 0;
 	padding: 0;
@@ -15,7 +13,6 @@ body {
 		color: #2A6993;
 		margin: 0 auto;
 		text-align: center;
-		display: none;
 	}
 
 	.button {
@@ -145,6 +142,26 @@ body {
 	.button--nina:hover > span:nth-child(14) {
 		-webkit-transition-delay: 0.63s;
 		transition-delay: 0.63s;
+	}
+	.button--nina:hover > span:nth-child(15) {
+		-webkit-transition-delay: 0.675s;
+		transition-delay: 0.67.5s;
+	}
+	.button--nina:hover > span:nth-child(16) {
+		-webkit-transition-delay: 0.72s;
+		transition-delay: 0.72s;
+	}
+	.button--nina:hover > span:nth-child(17) {
+		-webkit-transition-delay: 0.765s;
+		transition-delay: 0.76.5s;
+	}
+	.button--nina:hover > span:nth-child(18) {
+		-webkit-transition-delay: 0.81s;
+		transition-delay: 0.81s;
+	}
+	.button--nina:hover > span:nth-child(19) {
+		-webkit-transition-delay: 0.855s;
+		transition-delay: 0.855s;
 	}
 
 	button, html input[type="button"], input[type="reset"], input[type="submit"] {
@@ -392,8 +409,8 @@ main {
 		height: 500px;
 		background: url("../images/about/background.jpg") no-repeat;
 		background-attachment: fixed;
-		background-position: 100% -80px;
-		background-size: 100% 100%;
+    	background-position: 50% top;
+    	background-size: 100% 100vh;
 		
 		#headerdesc {
 			padding: 150px 0px;
@@ -442,7 +459,7 @@ main {
 
 	/* NAV */
 	section:nth-child(2) {
-		padding: 50px 0 50px 0;
+		padding: 50px 0;
 		background-color: #F4F4F4;
 		position: relative;
 
@@ -457,15 +474,6 @@ main {
 		    padding: 1px 0 0 4px;
 		}
 
-		svg {
-			font-weight:bold;
-			max-width: 500px;
-			height:auto;
-			margin-bottom: 3%;
-			margin-left:-5px;
-			font-family: Roboto;
-		}
-
 		img {
 			width: auto;
 			height: 380px;
@@ -475,18 +483,13 @@ main {
 			font-size: 17px;
 			text-transform: uppercase;
 			letter-spacing: 2px;
-			margin-bottom: 20px;
+			margin: 10px 0;
 			font-weight: 400;
-			/*position: absolute;
-			top: 45%;*/
 		}
 
-		h2 {
-			position: relative;
-			display: inline-block;
-			text-transform: uppercase;
-			font-size: 29px;
-			margin: 48px 0 36px 0;
+		h4 {
+			font-size: 50px;
+			cursor: pointer;
 		}
 
 		p {
@@ -519,18 +522,11 @@ main {
 
 	/* LE LIEU */
 	section:nth-child(3) {
-		margin: 72px 0;
-
-		svg {
-		    font-family: Roboto;
-		    font-weight: bold;
-		    max-width: 480px;
-		    height: auto;
-		    margin-bottom: 2%;
-		}
+		margin-top: 72px;
+		margin-bottom: 72px;
 		
 		h3 {
-		    font-size: 17px;
+		    font-size: 20px;
 		    font-weight: 400;
 		    margin-bottom: 20px;
 		    letter-spacing: 2px;
@@ -538,19 +534,11 @@ main {
 
 		/* RESTAURANT */
 		article:nth-child(2) {
-			padding: 50px 0;
+			padding: 70px 0;
 			background-color: #FFF;
 
 			#restaurantdisplay, #restaurantreduce {
 				display: none;
-			}
-		
-			svg {
-				height:auto;
-				margin:0 auto;
-				margin-left:160px;
-				margin-bottom:3%;
-				margin-right:-20px;
 			}
 
 			img {
@@ -563,16 +551,14 @@ main {
 			    font-weight: 400;
 			    text-transform: uppercase;
 			    letter-spacing: 2px;
-				margin: 0px 40px 3% 0;
+				margin: 4% 40px 9px 0;
 				text-align: right;
 			}
 
-			h2 {
-				position: relative;
-			    display: inline-block;
-			    margin-bottom: 36px;
-			    text-transform: uppercase;
-			    font-size: 40px;
+			h4 {
+				font-size: 50px;
+				text-align: right;
+				margin: 20px 40px 9px 0;
 			}
 
 			.title {
@@ -580,6 +566,7 @@ main {
 				line-height: 30px;
 				margin: 0 40px 4.7% 0;
 				text-align: right;
+				font-weight: 900;
 			}
 			
 			.desc {
@@ -593,7 +580,6 @@ main {
 			.button--nina {
 				color: #6B614D;
 				font-size: 14px;
-				margin-right: 40px;
 				outline: 0;
 				padding: 3.5px 28px;
 
@@ -601,9 +587,22 @@ main {
 					font-size: 12px;
 				}
 			}
+			
+			#restaurantseemenu {
+				display: inline-block;
+				float: right;
+			}
+			
+			#restaurantseemore {
+				display: inline-block;
+				margin-left: 40px;
+				float: right;
+				margin-right: 40px;
+			}
 
 			#restaurantreduce {
 				float: right;
+				margin-right: 40px;
 			}
 
 			button {
@@ -641,14 +640,6 @@ main {
 				display: none;
 			}
 
-			svg {
-			    height: auto;
-			    margin-left: 0px;
-			    margin-bottom: 3%;
-		        margin-right: 240px;
-			    display: block;
-			}
-
 			img {
 				height: 380px;
 				width: 100%;
@@ -659,21 +650,20 @@ main {
 			    font-weight: 400;
 			    text-transform: uppercase;
 			    letter-spacing: 2px;
-			    margin: 0 0 3% 40px;
+			    margin: 3.5% 0 3% 40px;
 			}
 
-			h2 {
-				position: relative;
-			    display: inline-block;
-			    margin-bottom: 36px;
-			    text-transform: uppercase;
-			    font-size: 40px;
+			h4 {
+				font-size: 50px;
+				text-align: left;
+				margin: 20px 0 9px 40px;
 			}
 
 			.title {
 				font-size: 20px;
 				line-height: 30px;
 				margin: 0 0 4.7% 40px;
+				font-weight: 900;
 			}
 			
 			.desc {
@@ -691,6 +681,16 @@ main {
 				span {
 					font-size: 12px;
 				}
+			}
+
+			#barseecarte {
+				display: inline-block;
+				float: left;
+			}
+
+			#barseemore {
+				display: inline-block;
+				float: left;
 			}
 
 			button {
@@ -729,17 +729,6 @@ main {
 				display: none;
 			}
 
-			#ecaillereduce {
-				float: right;
-			}
-
-			svg {
-				font-weight:bold;
-				max-width:400px;
-				height:auto;
-				margin:0 0 3% 215px;
-			}
-
 			img {
 				width: 100%;
 				height: 380px;
@@ -750,16 +739,14 @@ main {
 			    font-weight: 400;
 			    text-transform: uppercase;
 			    letter-spacing: 2px;
-				margin: 0 40px 3% 0;
+				margin: 3.5% 40px 3% 0;
 				text-align: right;
 			}
 
-			h2 {
-				position: relative;
-			    display: inline-block;
-			    margin-bottom: 36px;
-			    text-transform: uppercase;
-			    font-size: 40px;
+			h4 {
+				font-size: 50px;
+				text-align: right;
+				margin: 20px 40px 9px 0;
 			}
 
 			.title {
@@ -767,6 +754,7 @@ main {
 				line-height: 30px;
 				margin: 0 40px 4.7% 0;
 				text-align: right;
+				font-weight: 900;
 			}
 			
 			.desc {
@@ -780,12 +768,28 @@ main {
 				padding: 3.5px 28px;
 				color: #6B614D;
 				font-size: 14px;
-				margin-right: 40px;
 				outline: 0;
 
 				span {
 					font-size: 12px;
 				}
+			}
+
+			#ecailleseecarte {
+				display: inline-block;
+				float: right;
+			}
+
+			#ecailleseemore {
+				display: inline-block;
+				margin-left: 40px;
+				float: right;
+				margin-right: 40px;
+			}
+
+			#ecaillereduce {
+				float: right;
+				margin-right: 40px;
 			}
 
 			button {
@@ -817,14 +821,8 @@ main {
 	
 	/* HISTOIRE */
 	section:nth-child(4) {
-		margin: 50px 0;
-
-		svg {
-		    font-weight: bold;
-		    max-width: 480px;
-		    height: auto;
-		    margin-bottom: 1%;
-		}
+		margin-top: 50px;
+		margin-bottom: 50px;
 		
 		h3 {
 		    font-size: 17px;
@@ -835,14 +833,22 @@ main {
 
 		/* 1935 */
 		article:nth-child(2) {
-			padding: 50px 0;
+			padding: 70px 0;
 			background-color: #FFF;
 
-			svg {
-				font-weight:bold;
-				max-width:400px;
-				height:auto;
-				margin:12% 0% 3% -38%;
+			h3 {
+				font-size: 17px;
+			    font-weight: 400;
+			    text-transform: uppercase;
+			    letter-spacing: 2px;
+				margin: 12% 0 3% 28px;
+				text-align: left;
+			}
+
+			h4 {
+				font-size: 50px;
+				text-align: left;
+				margin: 0 0 17px 25.5px;
 			}
 
 			p.desc {
@@ -863,13 +869,20 @@ main {
 		article:nth-child(3) {
 			background-color: #FFF;
 			padding: 50px 0;
-			
-			svg {
-				font-weight:bold;
-				max-width:400px;
-				height:auto;
-				margin-left:-28px;
-				margin:16% 0 3% 34%;
+
+			h3 {
+				font-size: 17px;
+			    font-weight: 400;
+			    text-transform: uppercase;
+			    letter-spacing: 2px;
+				margin: 14.5% 28px 3% 0;
+				text-align: right;
+			}
+
+			h4 {
+				font-size: 50px;
+				text-align: right;
+				margin: 0 25.5px 17px 0;
 			}
 
 			p.desc {
@@ -891,11 +904,19 @@ main {
 			padding: 50px 0;
 			background-color: #FFF;
 
-			svg {
-				font-weight:bold;
-				max-width:400px;
-				height:auto;
-				margin: 9% 0% 3% 2%;
+			h3 {
+				font-size: 17px;
+			    font-weight: 400;
+			    text-transform: uppercase;
+			    letter-spacing: 2px;
+				margin: 9% 0 3% 28px;
+				text-align: left;
+			}
+
+			h4 {
+				font-size: 50px;
+				text-align: left;
+				margin: 0 0 17px 25.5px;
 			}
 
 			p.desc {
@@ -916,14 +937,22 @@ main {
 		article:last-child {
 			padding: 50px 0;
 			background-color: #FFF;
-			
-			svg {
-				font-weight:bold;
-				max-width:400px;
-				height:auto;
-				margin:12% 0 3% 31%;
+
+			h3 {
+				font-size: 17px;
+			    font-weight: 400;
+			    text-transform: uppercase;
+			    letter-spacing: 2px;
+				margin: 9.5% 28px 3% 0;
+				text-align: right;
 			}
 
+			h4 {
+				font-size: 50px;
+				text-align: right;
+				margin: 0 29.5px 17px 0;
+			}
+			
 			p.desc {
 				font-size: 15px;
 	    		line-height: 35px;
@@ -941,13 +970,8 @@ main {
 
 	/* L'ACTUALITE*/
 	section:last-child {
-		margin: 72px 0;
-
-		svg {
-		    font-weight: bold;
-		    max-width: 480px;
-		    height: auto;
-		}
+		margin-top: 72px;
+		margin-bottom: 72px;
 		
 		h3 {
 		    font-size: 17px;
@@ -961,20 +985,13 @@ main {
 			height: 320px;
 		}
 
-		article:last-child {
-			padding: 50px 0;
-			background-color: #FFF;
-
-			svg {
-			    font-weight: bold;
-			    max-width: 470px;
-			    height: auto;
-			    margin-bottom: 3%;
-			    margin-left: 25%;
-			}
+		article {
+			padding: 70px 0;
+			background-color: #ffffff;
 
 			img {
-				width: auto;
+				width: 300px;
+				height: 400px;
 				margin: 0 auto;
 				display: block;
 			}
@@ -984,16 +1001,15 @@ main {
 			    font-weight: 400;
 			    text-transform: uppercase;
 			    letter-spacing: 2px;
-				margin: 0 40px 4.7% 0;
+				margin:0% 40px 3% 0;
 				text-align: right;
 			}
 
-			h2 {
-				position: relative;
-			    display: inline-block;
-			    margin-bottom: 36px;
-			    text-transform: uppercase;
-			    font-size: 40px;
+			h4 {
+				font-size: 45px;
+				text-align: right;
+				margin-right: 40px;
+				margin-bottom: 3%;
 			}
 
 			.title {
@@ -1001,6 +1017,7 @@ main {
 			    line-height: 30px;
 			    margin: 0 40px 4.7% 0;
 				text-align: right;
+				font-weight: 900;
 			}
 			
 			.desc {
@@ -1012,7 +1029,7 @@ main {
 
 			.button--nina {
 				padding: 3.5px 28px;
-				color: #6B614D;
+				color: #6b614d;
 				font-size: 14px;
 				margin-right: 40px;
 
@@ -1022,12 +1039,12 @@ main {
 			}
 
 			button {
-			    border: 2px solid #6B614D;
+			    border: 2px solid #6b614d;
 			    background-color: transparent;
 
 				a {
 					text-decoration: none;
-				    color: #000;
+				    color: #000000;
 				    font-size: 11px;
 				    letter-spacing: 2px;
 				    font-weight: initial;
@@ -1038,11 +1055,11 @@ main {
 			}
 
 			button:hover {
-				background-color: #6B614D;
-				color: #fff;
+				background-color: #6b614d;
+				color: #ffffff;
 
 				a {
-					color: #fff;
+					color: #ffffff;
 				}
 			}
 		}
@@ -1200,13 +1217,6 @@ footer {
 
 /* MEDIA QUERIES MAX WIDTH 1237PX*/
 @media all and (max-width : 1237px) {
-	main section:nth-child(2) {
-		img {
-			margin: 75px 0 0 -30px;
-			width: 260px
-		}
-	}
-
 	#headersocial {
 		position: absolute;
 		right: -290%;
@@ -1218,6 +1228,14 @@ footer {
 
 	.hide {
 		display: none;
+	}
+
+	main section:nth-child(2) {
+
+		img {
+			margin: 75px 0 0 -30px;
+			width: 260px
+		}
 	}
 
 	main section:nth-child(4) {
@@ -1240,10 +1258,6 @@ footer {
 		right: -290%;
 	}
 
-	#progress {
-		display: none;
-	}
-
 	.show {
 		display: block;
 	}
@@ -1260,28 +1274,19 @@ footer {
 		height: 300px;
 	}
 
-	header .progressContainer {
-		top: 69px;
-	}
-
 	main section:first-child {
-	    background-position: 100% -120px;
-    	background-size: 110% 740px;
+	    background-position: 50% top;
+    	background-size: 100% 80vh;
 
 		h1 {
 			font-size: 60px;
 		}
 	}
 
-	main section:first-child {
-		h2 {
-			font-size: 25px;
+	main section:nth-child(2) {
+		h4 {
+			margin: 3% 0;
 		}
-	}
-
-	main section:nth-child(2) img {
-		width: 50%;
-		margin: 9% 24%;
 	}
 
 	main section:nth-child(3) {
@@ -1291,7 +1296,7 @@ footer {
 		}
 
 		#restaurantreduce {
-			left: -200px;
+			left: -197px;
 			margin-bottom: 50px;
 		}
 
@@ -1301,12 +1306,17 @@ footer {
 		}
 
 		#barreduce {
-			left: 200px;
+			left: 180px;
 			margin-bottom: 50px;
 		}
 
 		#ecailleseemore {
 			left: -180px;
+			margin-bottom: 50px;
+		}
+
+		#ecaillereduce {
+			left: -197px;
 			margin-bottom: 50px;
 		}
 
@@ -1321,18 +1331,28 @@ footer {
 				margin-right: 0;
 			}
 
-			svg {
-				margin-left: 50px;
+			h4 {
+				text-align: center;
+				margin-right: 0;
 			}
 
 			.title {
 				text-align: center;
 				margin-right: 0;
+				font-weight: 900;
 			}
 
 			.desc {
 				text-align: center;
 				margin-right: 0;
+			}
+
+			#restaurantseemenu {
+				margin-right: -47%;
+			}
+
+			#restaurantseemore {
+				margin-right: 22.8%; 
 			}
 		}
 
@@ -1347,26 +1367,35 @@ footer {
 				margin-left: 0;
 			}
 
-			svg {
-				margin-left: 240px;
-			}
-
-			#restaurantseemore {
-				display: none;
+			h4 {
+				text-align: center;
+				margin-left: 0;
 			}
 
 			.title {
 				text-align: center;
 				margin-left: 0;
+				font-weight: 900;
 			}
 
 			.desc {
 				text-align: center;
 				margin-left: 0;
 			}
+
+			#barseecarte {
+				margin-right: -30%;
+				float: left;
+			}
+
+			#barseemore {
+				float: left;
+			    margin-right: 27%;
+    			margin-left: -14.3%; 
+			}
 		}
 
-		article:nth-child(4) {
+		article:last-child {
 
 			div:first-child.col-lg-12 {
 				margin-bottom: 80px;
@@ -1377,19 +1406,30 @@ footer {
 				margin-right: 0;
 			}
 
-			svg {
-				margin-left: 58px;
+			h4 {
+				text-align: center;
+				margin-right: 0;
 			}
 
 			.title {
 				text-align: center;
 				margin-right: 0;
+				font-weight: 900;
 			}
 
 			.desc {
 				text-align: center;
 				margin-right: 0;
 			}
+
+			#ecailleseecarte {
+				margin-right: -48.5%;
+			}
+
+			#ecailleseemore {
+    			margin-right: 22.8%;
+			}
+
 		}
 	}
 
@@ -1397,43 +1437,107 @@ footer {
 		margin-bottom: 0;
 
 		article:nth-child(2){
-			svg {
-				margin-left: 11%;
-				margin-top : 0;
-			}
-
 			h3 {
+				margin: 0 auto;
 				text-align: center;
-				margin-right: 0;
+				margin: 3% 0;
+			}
+
+			h4 {
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			p.desc {
+				margin: 0 auto;
+				text-align: center;
+				margin: 3% 0 7% 0;
+			}
+
+			img {
+			    width: 100%;
+			    height: 380px;
+			    margin: 0 auto;
+			    display: block;
 			}
 		}
 
-		article:nth-child(2) img {
-		    width: 70%;
-		    height: 380px;
-		    margin: 0 auto;
-		    display: block;
+		article:nth-child(3){
+			h3 {
+				margin: 0 auto;
+				text-align: center;
+				margin: 3% 0;
+			}
+
+			h4 {
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			p.desc {
+				margin: 0 auto;
+				text-align: center;
+				margin: 3% 0 7% 0;
+			}
+
+			img {
+			    width: 100%;
+			    height: 380px;
+			    margin: 0 auto;
+			    display: block;
+			}
 		}
 
-		article:nth-child(3) img {
-		    width: 70%;
-		    height: 380px;
-		    margin: 0 auto;
-		    display: block;
+		article:nth-child(4){
+			h3 {
+				margin: 0 auto;
+				text-align: center;
+				margin: 3% 0;
+			}
+
+			h4 {
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			p.desc {
+				margin: 0 auto;
+				text-align: center;
+				margin: 3% 0 7% 0;
+			}
+
+			img {
+			    width: 100%;
+			    height: 380px;
+			    margin: 0 auto;
+			    display: block;
+			}
 		}
 
-		article:nth-child(4) img {
-		    width: 70%;
-		    height: 380px;
-		    margin: 0 auto;
-		    display: block;
-		}
+		article:nth-child(5){
+			h3 {
+				margin: 0 auto;
+				text-align: center;
+				margin: 3% 0;
+			}
 
-		article:nth-child(5) img {
-		    width: 70%;
-		    height: 380px;
-		    margin: 0 auto;
-		    display: block;
+			h4 {
+				margin: 0 auto;
+				text-align: center;
+			}
+
+			p.desc {
+				margin: 0 auto;
+				text-align: center;
+				margin: 3% 0 7% 0;
+			}
+
+			img {
+			    width: 100%;
+			    height: 380px;
+			    margin: 0 auto;
+			    display: block;
+			}
 		}
 	}
 
@@ -1459,7 +1563,7 @@ footer {
 	}
 
 	main section:last-child {
-		height: 980px;
+		height: 820px;
 
 		#contact {
 			position: absolute;
@@ -1472,19 +1576,23 @@ footer {
 			height: 570px;
 		}
 
-		article:last-child {
+		article {
 			h3 {
-				text-align: center;
 				margin-right: 0;
+				text-align: center;
+				margin-bottom: 7%;
 			}
 
-			svg {
-				margin-left: 18%;
+			h4 {
+				margin: 0 auto;
+				text-align: center;
+				margin-bottom: 3%;
 			}
 
 			.title {
 				text-align: center;
 				margin-right: 0;
+				font-weight: 900;
 			}
 
 			.desc {
@@ -1510,22 +1618,10 @@ footer {
 		overflow-x: hidden;
 	}
 
-	header .progressContainer {
-		top: 69px;
-	}
-
 	header #headersocial {
 		width: 100px;
 		position: absolute;
 		right: -322%;
-	}
-
-	#progress {
-		display: none;
-	}
-
-	body svg {
-		display: none;
 	}
 
 	body .menudevice {
@@ -1566,6 +1662,7 @@ footer {
 	main section:nth-child(2) {
 		h3 {
 			margin-top: 20px;
+			font-size: 20px;
 		}
 
 		#h3menu {
@@ -1591,8 +1688,8 @@ footer {
 
 			img {
 				margin-top: 5%;
-				width: 120%;
-				margin-left: -8%;
+				width: 100%;
+    			margin-left: 0%;
 			}
 			
 			h3 {
@@ -1601,25 +1698,33 @@ footer {
 				margin-right: 0;
 			}
 
-			svg {
-				margin-left: 40px;
-			}
-
 			p.title {
 				text-align: center;
 				margin-right: 0;
+				font-size: 25px;
+				line-height: 40px;	
+    			font-weight: 300;
 			}
 
 			p.desc {
 				margin: 0 auto;
-				margin-left: 60px;
+				margin-left: 30px;
 				margin-bottom: 30px;
 				text-align: center;
-				width: 80%;
+				width: 90%;
+				font-size: 18px;
 			}
 
 			button {
 				right: 28%;
+			}
+
+			#restaurantseemore {
+				margin-right: 160px;
+			}
+
+			#restaurantseemenu {
+				margin-right: -490px;
 			}
 		}
 
@@ -1633,8 +1738,8 @@ footer {
 			img {
 				margin-top: 5%;
 				margin-bottom: 15px;
-				width: 120%;
-				margin-left: -8%;
+				width: 100%;
+    			margin-left: 0%;
 			}
 			
 			h3 {
@@ -1642,25 +1747,33 @@ footer {
 				margin-left: 0;
 			}
 
-			svg {
-				display: none;
-			}
-
 			p.title {
 				text-align: center;
 				margin-left: 0;
+				font-size: 25px;
+				line-height: 40px;
+				font-weight: 300;
 			}
 
 			p.desc {
 				margin: 0 auto;
-				margin-left: 60px;
+				margin-left: 30px;
 				margin-bottom: 30px;
 				text-align: center;
-				width: 80%;
+				width: 90%;
+				font-size: 18px;
 			}	
 
 			button {
 				left: 28%;
+			}
+
+			#barseemore {
+				margin-left: -91px;
+			}
+
+			#barseecarte {
+				margin-left: -133px;
 			}
 		}
 
@@ -1677,8 +1790,8 @@ footer {
 			img {
 				margin-top: 5%;
 				margin-bottom: 15px;
-				width: 120%;
-				margin-left: -8%;
+				width: 100%;
+    			margin-left: 0%;
 			}
 			
 			h3 {
@@ -1686,64 +1799,77 @@ footer {
 				margin-right: 0;
 			}
 
-			svg {
-				margin-left: 65px;
-			}
-
 			p.title {
 				text-align: center;
-				margin-right: 0;
+				margin-left: 90px;
+				font-size: 25px;
+				line-height: 40px;
+				width: 70%;
+				font-weight: 300;
 			}
 
 			p.desc {
 				margin: 0 auto;
-				margin-left: 60px;
+				margin-left: 30px;
 				margin-bottom: 30px;
 				text-align: center;
-				width: 80%;
+				width: 90%;
+				font-size: 20px;
 			}
 
 			button {
 				right: 28%;
+			}
+
+			#ecailleseemore {
+				margin-right: 160px;
+			}
+
+			#ecailleseecarte {
+				margin-right: -499px;
 			}
 		}
 
 		article:last-child {
 			#ecaillereduce {
 				float: none;
-				left: 34%;
+				left: 36.7%;
 				margin-bottom: 40px;
 			}
 		}
 
 		#restaurantseemore {
-			left: -18%;
+			left: -27.7%;
 			margin-bottom:50px; 
 		}
 
 		#restaurantreduce {
-			left: -20%;
+			left: -31%;
 			margin-bottom: 50px;
 		}
 
 		#barseemore {
-			left: 20%;
-			margin-bottom: 50px;
+			left: 27.4%;
+			margin-bottom:50px; 
 		}
 
 		#barreduce {
-			left: 25%;
+			left: 30.8%;
 			margin-bottom: 50px;
 		}
 
 		#ecailleseemore {
-			left: -18%;
-			margin-bottom: 50px;
+			left: -27.7%;
+			margin-bottom:50px; 
 		}
 	}
 
 	main section:nth-child(4) {
 		margin-bottom: 0;
+
+		h3 {
+			font-size: 20px;
+		}
 
 		h4.menudevice {
 			font-size: 80px;
@@ -1759,10 +1885,8 @@ footer {
 
 			h3 {
 				margin: 0 auto;
-				margin-left: 70px;
-				margin-bottom: 30px;
 				text-align: center;
-				width: 80%;
+				margin-bottom: 3%;
 			}
 
 			p.desc {
@@ -1771,18 +1895,26 @@ footer {
 				text-align: center;
 				width: 80%;
 				margin-bottom: 30px;
+				font-size: 20px;
 			}
 
 			img {
-			    width: 90%;
+			    width: 100%;
 			}
 		}
 
 		article:nth-child(3) {
-			
+			padding: 80px 0 50px 0;
+
 			h4.menudevice {
 			    font-size: 55px;
 			    margin-bottom: 20px;
+			}
+
+			h3 {
+				margin: 0 auto;
+				text-align: center;
+				margin-bottom: 3%;
 			}
 
 			p.desc {
@@ -1791,18 +1923,26 @@ footer {
 				text-align: center;
 				width: 80%;
 				margin-bottom: 30px;
+				font-size: 20px;
 			}
 
 			img {
-			    width: 90%;
+			    width: 100%;
 			}
 		}
 
 		article:nth-child(4) {
+			padding: 80px 0 50px 0;
 
 			h4.menudevice {
 			    font-size: 55px;
 			    margin-bottom: 20px;
+			}
+
+			h3 {
+				margin: 0 auto;
+				text-align: center;
+				margin-bottom: 3%;
 			}
 
 			p.desc {
@@ -1811,18 +1951,27 @@ footer {
 				text-align: center;
 				width: 80%;
 				margin-bottom: 30px;
+				font-size: 20px;
 			}
 
 			img {
-		    	width: 90%;
+			    width: 100%;
 			}
 		}
 
 		article:nth-child(5) {
 
+			padding: 80px 0 50px 0;
+
 			h4.menudevice {
 			    font-size: 55px;
 			    margin-bottom: 20px;
+			}
+
+			h3 {
+				margin: 0 auto;
+				text-align: center;
+				margin-bottom: 3%;
 			}
 
 			p.desc {
@@ -1831,10 +1980,11 @@ footer {
 				text-align: center;
 				width: 80%;
 				margin-bottom: 30px;
+				font-size: 20px;
 			}
 
 			img {
-			    width: 90%;
+			    width: 100%;
 			}
 		}
 	}
@@ -1843,13 +1993,18 @@ footer {
 		margin-top: 60px;
 		height: 600px;
 
+		h3 {
+			font-size: 20px;
+		}
+
 		h4.menudevice {
 		    font-size: 80px;
 		    margin-bottom: 50px;
 		    margin-top: 20px;
 		}
 
-		article:last-child {
+		article {
+			padding: 40px 0; 
 
 			h4.menudevice {
 			    font-size: 50px;
@@ -1860,6 +2015,9 @@ footer {
 			p.title {
 				text-align: center;
 				margin-right: 0;
+				font-size: 25px;
+				line-height: 40px;
+				font-weight: 300;
 			}
 
 			p.desc {
@@ -1868,6 +2026,12 @@ footer {
 				margin-bottom: 30px;
 				text-align: center;
 				width: 80%;
+				font-size: 20px;
+			}
+
+			button {
+				margin: 40px 0 30px 158px;
+				width: 50%;
 			}
 
 			img {
@@ -1880,7 +2044,7 @@ footer {
 
 	footer {
 		height: 160px;
-		margin-top: 410px;
+		margin-top: 1700px;
 
 		.btn-credits {
 		    margin: 7px 0px 0px -10px;
@@ -1895,10 +2059,6 @@ footer {
 	}
 
 	header #headersocial {
-		display: none;
-	}
-
-	#progress {
 		display: none;
 	}
 
@@ -1920,7 +2080,7 @@ footer {
 		background-size: 350% 110%;
 
 		#headerdesc {
-			padding-top: 220px;
+			padding-top: 170px;
 		}
 
 		h1 {
@@ -1934,9 +2094,7 @@ footer {
 			margin-top: 20px;
 			text-align: center;
 			margin-left: 0;
-			font-size: 12px;
 		}
-
 	}
 
 	main section:nth-child(3) {
@@ -1958,16 +2116,21 @@ footer {
 			#restaurantseemore {
 				margin: 0 auto;
 				display: block;
-				left: 0;
+				left: -17%;
 				margin-top: 20px;
-				margin-bottom: 40px;
+				margin-bottom: 10px;
+			}
+
+			#restaurantseemenu {
+				margin-right: -11%;
+				width: 215px;
 			}
 
 			#restaurantreduce {
 				margin: 0 auto;
 				margin-top: 20px;
 				margin-bottom: 40px;
-				left: -25%;
+				left: -23.3%;
 			}
 
 			div:first-child.col-lg-12 {
@@ -1989,8 +2152,10 @@ footer {
 				text-align: center;
 				margin: 0 auto;
 				display: block;
-				font-size: 13px;
+				font-size: 20px;
 				margin-bottom: 3%;
+				font-weight: 400;
+				line-height: 30px;
 			}
 
 			p.desc {
@@ -1998,12 +2163,15 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 			}
 
 			img {
 				height: auto;
+			    width: 128%;
+    			margin-left: -45px;
 			}
 
 			button.button--nina {
@@ -2014,13 +2182,11 @@ footer {
 		article:nth-child(3) {
 			padding: 25px 0;
 
-			svg {
-				display: none;
-			}
-
 			img {
 				margin-bottom: 30px;
 				height: auto;
+			 	width: 128%;
+    			margin-left: -45px;
 			}
 			
 			h3 {
@@ -2038,8 +2204,11 @@ footer {
 				text-align: center;
 				margin: 0 auto;
 				display: block;
-				font-size: 13px;
+				font-size: 20px;
 				margin-bottom: 3%;
+				font-weight: 400;
+				line-height: 30px;
+				width: 80%;
 			}
 
 			p.desc {
@@ -2047,21 +2216,28 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 			}
 
 			#barseemore {
 				margin: 0 auto;
-				left: 0;
+				left: 17%;
 				margin-top: 20px;
-				margin-bottom: 40px;
+				margin-bottom: 10px;
+			}
+
+			#barseecarte {
+				margin-left: -77.5%;
+				margin-top: 80px;
+				width: 215px;
 			}
 
 			#barreduce {
 				margin: 0 auto;
 				margin-top: 20px;
-				left: 25%;
+				left: 23.3%;
 				margin-bottom: 40px;
 			}
 
@@ -2088,18 +2264,15 @@ footer {
 				font-size: 35px;
 			}
 
-			svg {
-				margin-left: -35px;
-				margin-right: 60px;
-			}
-
 			p.title {
 				text-align: center;
 				margin: 0 auto;
 				display: block;
-				font-size: 13px;
+				font-size: 20px;
 				margin-bottom: 3%;
-				width: 75%;
+				font-weight: 400;
+				line-height: 30px;
+				width: 80%;
 			}
 
 			p.desc {
@@ -2107,26 +2280,34 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 			}
 
 			img {
 				height: auto;
+				width: 128%;
+    			margin-left: -45px;
 			}
 
 			#ecailleseemore {
 				margin: 0 auto;
 				display: block;
-				left: 0;
+				left: -17%;
 				margin-top: 20px;
-				margin-bottom: 40px;
+				margin-bottom: 10px;
+			}
+
+			#ecailleseecarte {
+				margin-right: -11%;
+				width: 215px;
 			}
 
 			#ecaillereduce {
 				margin: 0 auto;
 				margin-top: 20px;
-				left: -25%;
+				left: 23.3%;
 				margin-bottom: 40px;
 			}
 
@@ -2138,6 +2319,7 @@ footer {
 
 	main section:nth-child(4) {
 		margin-bottom: 0;
+		margin-top: -20px;
 
 		h4.menudevice {
 			font-size: 55px;
@@ -2162,8 +2344,9 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 				margin-bottom: 30px;
 			}
 
@@ -2173,12 +2356,14 @@ footer {
 			}
 
 			img {
-				height: auto;
+    			height: auto;
+    			width: 129%;
+    			margin-left: -44.5px;
 			}
 		}
 
 		article:nth-child(3){
-			padding: 25px 0;
+			padding: 50px 0 25px 0;
 
 			h4.menudevice {
 				font-size: 35px;
@@ -2189,8 +2374,9 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 				margin-bottom: 30px;
 			}
 
@@ -2200,12 +2386,14 @@ footer {
 			}
 
 			img {
-				height: auto;
+    			height: auto;
+    			width: 128%;
+    			margin-left: -46px;
 			}
 		}
 
 		article:nth-child(4){
-			padding: 25px 0;
+			padding: 50px 0 25px 0;
 
 			h4.menudevice {
 				font-size: 35px;
@@ -2216,8 +2404,9 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 				margin-bottom: 30px;
 			}
 
@@ -2227,12 +2416,14 @@ footer {
 			}
 
 			img {
-				height: auto;
+    			height: auto;
+    			width: 128%;
+    			margin-left: -45px;
 			}
 		}
 
 		article:nth-child(5){
-			padding: 25px 0;
+			padding: 50px 0 25px 0;
 
 			h4.menudevice {
 				font-size: 35px;
@@ -2243,8 +2434,9 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
 				margin-bottom: 30px;
 			}
 
@@ -2254,7 +2446,9 @@ footer {
 			}
 
 			img {
-				height: auto;
+    			height: auto;
+    			width: 128%;
+    			margin-left: -45px;
 			}
 		}
 	}
@@ -2273,9 +2467,15 @@ footer {
 			font-size: 16px;
 		}
 
-		article:last-child {
+		article {
+			padding: 25px 0;
+
 			h4.menudevice {
 				font-size: 35px;
+			}
+
+			h3 {
+				margin-bottom: 13%;
 			}
 
 			img {
@@ -2288,9 +2488,12 @@ footer {
 				text-align: center;
 				margin: 0 auto;
 				display: block;
-				font-size: 13px;
-				margin-bottom: 3%;
+				font-size: 18px;
+				margin-bottom: 20px;
 				width: 90%;
+				font-weight: 400;
+				line-height: 30px;
+				margin-bottom: 20px;
 			}
 
 			p.desc {
@@ -2298,8 +2501,17 @@ footer {
 				margin: 0 auto;
 				display: block;
 				line-height: 20px;
-				font-size: 10px;
-				line-height: 25px;
+				font-size: 13px;
+				line-height: 30px;
+				width: 100%;
+			}
+
+			button {
+				height: 53px;
+				margin-left: 30px;
+				margin-bottom: 0px;
+				margin-top: 20px;
+				width: 80%;
 			}
 		}
 	}
@@ -2307,7 +2519,7 @@ footer {
 	footer {
 
 		height: 290px;
-		margin-top: 160px;
+		margin-top: 1160px;
 
 		.form-newsletter {
 			margin-right: 11px;
@@ -2324,5 +2536,357 @@ footer {
 		img {
 			margin-top: 20px;
 		}
+	}
+}
+
+/* MEDIA QUERIES MAX WIDTH 375PX */
+@media all and (max-width : 375px) {
+	main section:nth-child(3) {
+
+		h4.menudevice {
+			font-size: 55px;
+		}
+
+		h3 {
+			margin-top: 20px;
+			text-align: center;
+			margin-left: 0;
+			font-size: 16px;
+		}
+
+		article:nth-child(2) {
+			padding: 50px 0;
+
+			#restaurantseemore {
+				margin: 0 auto;
+				display: block;
+				left: -9.3vw;
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+
+			#restaurantseemenu {
+				margin-right: -11.9vw;
+				width: 215px;
+			}
+
+			#restaurantreduce {
+				margin: 0 auto;
+				margin-top: 20px;
+				margin-bottom: 40px;
+				left: -20.1%;
+			}
+
+			div:first-child.col-lg-12 {
+				margin-bottom: 80px;
+			}
+			
+			h3 {
+				margin-top: 20px;
+				text-align: center;
+				margin-left: 0;
+				font-size: 12px;
+			}
+
+			h4.menudevice {
+				font-size: 35px;
+			}
+
+			p.title {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				font-size: 20pxpx;
+				margin-bottom: 3%;
+				font-weight: 900;
+				line-height: 30px;
+			}
+
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+			}
+
+			img {
+    			height: auto;
+    			width: 132%;
+    			margin-left: -46px;
+			}
+
+			button.button--nina {
+				margin: 0 -90px 30px 140px
+			}
+		}
+
+		article:nth-child(3) {
+			padding: 25px 0;
+
+			img {
+    			height: auto;
+    			width: 132%;
+    			margin-left: -46px;
+			}
+			
+			h3 {
+				margin-top: 20px;
+				text-align: center;
+				margin-left: 0;
+				font-size: 12px;
+			}
+
+			h4.menudevice {
+				font-size: 35px;
+			}
+
+			p.title {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				font-size: 20pxpx;
+				margin-bottom: 3%;
+				font-weight: 900;
+				line-height: 30px;
+			}
+
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+			}
+
+			#barseemore {
+				margin: 0 auto;
+				left: 9.3vw;
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+
+			#barseecarte {
+				margin-left: -11.9vw;
+				width: 215px;
+				margin-top: 0px
+			}
+
+			#barreduce {
+				margin: 0 auto;
+				margin-top: 20px;
+				left: 20.1%;
+				margin-bottom: 40px;
+			}
+
+			button.button--nina {
+				margin: 0 90px 30px -30px
+			}
+		}
+
+		article:nth-child(4) {
+			padding: 25px 0;
+
+			div:first-child.col-lg-12 {
+				margin-bottom: 80px;
+			}
+			
+			h3 {
+				margin-top: 20px;
+				text-align: center;
+				margin-left: 0;
+				font-size: 12px;
+			}
+
+			h4.menudevice {
+				font-size: 35px;
+			}
+
+			p.title {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				font-size: 20pxpx;
+				margin-bottom: 3%;
+				font-weight: 900;
+				line-height: 30px;
+			}
+
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+			}
+
+			img {
+    			height: auto;
+    			width: 132%;
+    			margin-left: -46px;
+			}
+
+			#ecailleseemore {
+				margin: 0 auto;
+				display: block;
+				left: -9.3vw;
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+
+			#ecailleseecarte {
+				margin-right: -11.9vw;
+				width: 215px;
+			}
+
+			#ecaillereduce {
+				margin: 0 auto;
+				margin-top: 20px;
+				left: 20.1%;
+				margin-bottom: 40px;
+			}
+
+			button.button--nina {
+				margin: 0 -90px 30px 140px
+			}
+		}
+	}
+
+	main section:nth-child(4) {
+
+		article:nth-child(2){
+			
+			h3 {
+				font-size: 12px;
+				margin-left: 5px
+			}
+
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+				margin-bottom: 30px;
+			}
+
+			img {
+    			height: auto;
+    			width: 133%;
+    			margin-left: -45px;
+			}
+		}
+
+		article:nth-child(3){
+
+			h3 {
+				font-size: 12px;
+				margin-left: 5px
+			}
+
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+				margin-bottom: 30px;
+			}
+
+			img {
+    			height: auto;
+    			width: 134%;
+    			margin-left: -47px;
+			}
+		}
+
+		article:nth-child(4){
+
+			h3 {
+				font-size: 12px;
+				margin-left: 5px
+			}
+
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+				margin-bottom: 30px;
+			}
+
+			img {
+    			height: auto;
+    			width: 132%;
+    			margin-left: -45px;
+			}
+		}
+
+		article:nth-child(5){
+
+			h3 {
+				font-size: 12px;
+				margin-left: 5px
+			}
+
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+				margin-bottom: 30px;
+			}
+
+			img {
+    			height: auto;
+    			width: 132%;
+    			margin-left: -45px;
+			}
+		}
+	}
+
+	main section:last-child {
+
+		article {
+
+			h3 {
+				font-size: 12px;
+				margin-left: 5px
+			}
+
+			p.title {
+				width: 100%;
+				margin-left: -1px;
+				font-weight: 900;
+			}
+
+			p.desc {
+				text-align: center;
+				margin: 0 auto;
+				display: block;
+				line-height: 20px;
+				font-size: 13px;
+				line-height: 30px;
+			}
+
+			button {
+				margin-top: 20px;
+				height: 49px;
+			}
+		}
+	}
+
+	footer {
+		height: 286px;
+		margin-top: 1190px;
 	}
 }

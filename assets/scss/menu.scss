@@ -1,28 +1,15 @@
-@import "variables";
-
 body {
 	margin : 0;
 	padding: 0;
 	font-family : roboto;
     overflow-x: hidden;
 
-	svg {
-	    font-weight: bold;
-	    max-width: 500px;
-	    height: auto;
-	    margin-left: 5px;
-	    font-family: Roboto;
-	    margin: 0 auto;
-	    display: block;
-	    margin-bottom: 40px;
-	}
-
     .menudevice {
 		font-size: 60px;
 		color: #2A6993;
 		margin: 0 auto;
 		text-align: center;
-		display: none;
+		cursor: pointer;
 	}
 
 	.opened {
@@ -437,8 +424,8 @@ main {
 		height: 500px;
 		background: url("../images/menu/background.jpg") no-repeat;
 		background-attachment: fixed;
-		background-position: 100% 77%;
 		background-size: cover;
+		background-position: 0 100%;
 
 		#headerdesc {
 			padding: 150px 0px;
@@ -488,15 +475,11 @@ main {
 
 	/* NAV CARTE */
 	section:nth-child(2) {
-		padding: 50px 0 50px 0;
+		padding: 50px 0;
 		background-color: #F4F4F4;
 
 		.row {
 			padding: 1% 0;
-		}
-
-		#dessertsvgnav, #drinksvgnav {
-			width: 400px;
 		}
 
 		img {
@@ -508,15 +491,12 @@ main {
 			font-size: 17px;
 			text-transform: uppercase;
 			letter-spacing: 2px;
-			margin-bottom: 20px;
+			margin: 10px 0;
 			font-weight: 400;
 		}
 
-		h2 {
-			display: inline-block;
-			text-transform: uppercase;
-			font-size: 29px;
-			margin: 48px 0 36px 0;
+	 	h4 {
+		   	font-size: 50px;
 		}
 
 		p {
@@ -557,6 +537,7 @@ main {
 			font-size: 20px;
 			line-height: 30px;
 			margin: 2% 0%;
+			font-weight: 900;
 		}
 		
 		.desc {
@@ -573,10 +554,6 @@ main {
 			display: none;
 		}
 
-		#menus {
-			margin: 47px 0;
-		}
-
 		img {
 			width: auto;
 			height: 380px;
@@ -590,6 +567,10 @@ main {
 			font-weight: 400;
 		}
 
+		h4 {
+			margin-bottom: 3%;
+		}
+
 		p {
 			text-align: center;
 			font-size: 16px;
@@ -601,6 +582,7 @@ main {
 			background-color: #f4f4f4;
 			color: #2a6993;
 			border-radius: 2px;
+			font-weight: 900;
 		}
 		
 		li {
@@ -659,6 +641,10 @@ main {
 			font-weight: 400;
 		}
 
+		h4 {
+			margin-bottom: 3%;
+		}
+
 		li {
 			padding-bottom: 15px;
     		list-style-type: circle;
@@ -668,6 +654,7 @@ main {
 		.title {
 			font-size: 25px;
 			line-height: 51px;
+			font-weight: 900;
 		}
 		
 		.desc {
@@ -722,6 +709,10 @@ main {
 		    font-weight: 400;
 		}
 
+		h4 {
+			margin-bottom: 3%;
+		}
+
 		h5 {
 			font-weight: 400;
 			font-size: 22px;
@@ -747,6 +738,7 @@ main {
 		    margin: 29px auto;
 		    border-radius: 2px;
 		    cursor: pointer;
+		    font-weight: 900;
 		}
 		
 		.desc {
@@ -810,6 +802,10 @@ main {
 			font-weight: 400;
 		}
 
+		h4 {
+			margin-bottom: 3%;
+		}
+
 		li {
 			padding-bottom: 15px;
 			list-style-type: circle;
@@ -820,6 +816,7 @@ main {
 			font-size: 25px;
 		    line-height: 51px;
 		    margin: 2% 0%;
+		    font-weight: 900;
 		}
 		
 		.desc {
@@ -876,6 +873,10 @@ main {
 			font-weight: 400;
 		}
 
+		h4 {
+			margin-bottom: 3%;
+		}
+
 		li {
 			padding-bottom: 15px;
 			list-style-type: circle;
@@ -890,6 +891,7 @@ main {
 			color: #2A6993;
 			border-radius: 2px;
 			width: 100%;
+			font-weight: 900;
 		}
 		
 		.desc {
@@ -1068,12 +1070,6 @@ footer {
 @media all and (max-width : 1237px) {
 	main section:nth-child(2) {
 
-		main section:nth-child(2) {
-			#menusvgnav, #entreesvgnav, #platsvgnav, #dessertsvgnav, #drinksvgnav {
-				width: 500px;
-			}
-		}
-
 		img {
 			margin: 75px 0 0 -30px;
 			width: 260px
@@ -1107,21 +1103,15 @@ footer {
 		right: -290%;
 	}
 
-	#progress {
-		display: none;
-	}
-
 	main section:first-child {
 		background: url("../images/menu/backgroundresponsive.jpg") no-repeat;
 	}
 
 	main section:nth-child(2) {
-		#menusvgnav, #entreesvgnav, #platsvgnav, #dessertsvgnav, #drinksvgnav {
-			width: 500px;
+		h4 {
+			margin: 3% 0;
 		}
 	}
-
-	
 
 	footer {
 		height: 130px;
@@ -1139,10 +1129,6 @@ footer {
 		overflow-x :hidden;
 	}
 
-	#progress {
-		display: none;
-	}
-
 	.show {
 		display: block;
 	}
@@ -1151,18 +1137,10 @@ footer {
 		display: none;
 	}
 
-	header .progressContainer {
-		top: 69px;
-	}
-
 	header #headersocial {
 		width: 100px;
 		position: absolute;
 		right: -322%;
-	}
-
-	body svg {
-		display: none;
 	}
 
 	body .menudevice {
@@ -1197,22 +1175,29 @@ footer {
 	}
 
 	main section:nth-child(3) {
-		svg {
-			margin-left: -40px;
-		}
 
 		h4.menudevice {
 			margin-bottom: 40px;
+		}
+
+		p {
+			font-size: 23px;
+			font-weight: 900;
+		}
+
+		ul li {
+			font-size: 18px;
 		}
 	}
 
 	main section:nth-child(4) {
-		svg {
-			margin-left: -20px;
-		}
 
 		h4.menudevice {
 			margin-bottom: 40px;
+		}
+
+		ul li {
+			font-size: 18px;
 		}
 	}
 
@@ -1232,9 +1217,14 @@ footer {
 			font-family: Roboto;
 		}
 
-		svg {
-			margin-left: -60px;
+		p#homards {
+			margin-top: 0;
 		}
+
+		ul li {
+			font-size: 18px;
+		}
+
 	}
 
 	main section:nth-child(6) {
@@ -1242,12 +1232,20 @@ footer {
 		h4.menudevice {
 			margin-bottom: 40px;
 		}
+
+		ul li {
+			font-size: 18px;
+		}
 	}
 
 	main section:last-child {
 
 		h4.menudevice {
 			margin-bottom: 40px;
+		}
+
+		ul li {
+			font-size: 18px;
 		}
 	}
 
@@ -1310,10 +1308,6 @@ footer {
 		display: none;
 	}
 
-	#progress {
-		display: none;
-	}
-
 	.mobile-nav .text {
 		font-size: 10px;
 		bottom: 8px;
@@ -1325,16 +1319,21 @@ footer {
 
 	main section:first-child {
 		height: 92%;
-	    background-size: 338% 100%;
-    	background-position: 64% 40%;
+	    background: url(../images/menu/backgroundresponsive.jpg) no-repeat;
+	    background-size: cover;
+    	background-position: 36% 40%;
 
 		#headerdesc {
-			padding-top: 220px;
+			padding-top: 170px;
 		}
 
 		h1 {
 			font-size : 50px;
 		}
+	}
+
+	main section:nth-child(2) h4 {
+		font-size: 46px;
 	}
 
 	main section:nth-child(3) {
@@ -1352,15 +1351,13 @@ footer {
 			font-size: 14px;
 		}
 
-		svg {
-			margin-left: 0px;
-			margin-right: -10px;
-		}
-
 		ul li {
-			font-size: 12px;
+			font-size: 13px;
 		}
 
+		.title {
+			font-size: 19px;
+		}
 	}
 
 	main section:nth-child(4) {
@@ -1378,29 +1375,19 @@ footer {
 			font-size: 14px;
 		}
 
-		svg {
-			margin-left: 0px;
-			margin-right: 3px;
-		}
-
 		ul li {
-			font-size: 12px;
+			font-size: 13px;
 		}
 	}
 
 	main section:nth-child(5) {
-
-		svg {
-			margin-left: 0px;
-			margin-right: 3px;
-		}
 
 		p {
 			font-size: 10px;
 		}
 
 		ul li {
-			font-size: 12px;
+			font-size: 13px;
 		}
 
 		h4.menudevice {
@@ -1425,8 +1412,9 @@ footer {
 
 		.title {
 			font-size: 15px;
-			width: 80%;
-			margin-left: 38px;
+			width: 85%;
+			margin-left: 28px;
+			font-weight: 900;
 		}
 
 		#compo3, #poissonsdemer {
@@ -1450,9 +1438,8 @@ footer {
 		}
 
 		ul li {
-			font-size: 10px;
+			font-size: 13px;
 		}
-
 	}
 
 	main section:last-child {
@@ -1476,7 +1463,7 @@ footer {
 		}
 
 		ul li {
-			font-size: 10px;
+			font-size: 13px;
 		}
 	}
 

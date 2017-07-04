@@ -4,11 +4,10 @@ body {
   font-family: roboto;
   overflow-x: hidden; }
   body .menudevice {
-    font-size: 70px;
+    font-size: 60px;
     color: #2A6993;
     margin: 0 auto;
-    text-align: center;
-    display: none; }
+    text-align: center; }
   body .button {
     position: relative;
     display: block;
@@ -366,6 +365,8 @@ main {
     margin-top: 4%; }
     main section:nth-child(3) #swiperrestaurant {
       height: 670px; }
+      main section:nth-child(3) #swiperrestaurant div.container {
+        width: 1100px; }
       main section:nth-child(3) #swiperrestaurant .next {
         background: url("../images/main/arrowright.svg") no-repeat;
         background-size: 100% 100%; }
@@ -382,9 +383,8 @@ main {
       font-size: 14px; }
       main section:nth-child(4) .button--nina span {
         font-size: 12px; }
-    main section:nth-child(4) svg {
-      max-width: 480px;
-      height: auto; }
+    main section:nth-child(4) .hovermenu3, main section:nth-child(4) .hovermenu4 {
+      margin-top: 30px; }
     main section:nth-child(4) img:first-child {
       position: absolute;
       top: 28%;
@@ -469,11 +469,6 @@ main {
     main section:nth-child(5) #about {
       background-color: #FFF;
       padding: 15px 0; }
-      main section:nth-child(5) #about svg {
-        height: auto;
-        margin-bottom: 3%;
-        margin-left: 150px;
-        font-size: 14px; }
       main section:nth-child(5) #about img {
         width: 100%;
         height: 380px; }
@@ -482,18 +477,17 @@ main {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin: 3% 40px 9px 0; }
-      main section:nth-child(5) #about h2 {
-        position: relative;
-        display: inline-block;
-        margin-bottom: 36px;
-        text-transform: uppercase;
-        font-size: 40px; }
+        margin: 5% 40px 9px 0; }
+      main section:nth-child(5) #about h4 {
+        margin: 20px 40px 9px 0;
+        font-size: 50px;
+        text-align: right; }
       main section:nth-child(5) #about .title {
         font-size: 20px;
         margin-bottom: 6%;
         line-height: 30px;
-        margin: 0 7% 4% 0%; }
+        margin: 0 7% 4% 0%;
+        font-weight: 400; }
       main section:nth-child(5) #about .desc {
         font-size: 15px;
         line-height: 35px;
@@ -543,11 +537,6 @@ main {
     main section:nth-child(5) #ecaille {
       background-color: #FFF;
       padding: 15px 0; }
-      main section:nth-child(5) #ecaille svg {
-        height: auto;
-        margin-bottom: 3%;
-        margin-left: 8px;
-        font-size: 12px; }
       main section:nth-child(5) #ecaille img {
         height: 380px;
         width: 100%; }
@@ -556,17 +545,16 @@ main {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin: 0 0 9px 40px; }
-      main section:nth-child(5) #ecaille h2 {
-        position: relative;
-        display: inline-block;
-        margin-bottom: 36px;
-        text-transform: uppercase;
-        font-size: 40px; }
+        margin: 5% 0 9px 40px; }
+      main section:nth-child(5) #ecaille h4 {
+        margin: 20px 0 9px 40px;
+        font-size: 50px;
+        text-align: left; }
       main section:nth-child(5) #ecaille .title {
         font-size: 20px;
         line-height: 30px;
-        margin: 0 0 4% 7%; }
+        margin: 0 0 4% 7%;
+        font-weight: 400; }
       main section:nth-child(5) #ecaille .desc {
         font-size: 15px;
         line-height: 35px;
@@ -623,7 +611,7 @@ main {
       height: 419px;
       background-color: #fff;
       z-index: 2;
-      padding: 3%;
+      padding: 50px;
       line-height: 25px; }
       main section:last-child #contact h4 {
         font-size: 37px;
@@ -771,11 +759,8 @@ footer {
   .hide {
     display: none; }
 
-  .hovermenu2, .hovermenu4 {
+  .hovermenu2, .hovermenu3, .hovermenu4 {
     margin-top: 40px; }
-
-  header .progressContainer {
-    top: 69px; }
 
   main section:first-child h1 {
     font-size: 60px; }
@@ -821,9 +806,6 @@ footer {
     position: absolute;
     right: -290%; }
 
-  #progress {
-    display: none; }
-
   main section:nth-child(2) img {
     width: 50%;
     margin: 9% 24%; }
@@ -839,12 +821,6 @@ footer {
     margin-left: -17%; } }
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width: 780px) {
-  #progress {
-    display: none; }
-
-  svg {
-    display: none; }
-
   body .menudevice {
     display: block; }
 
@@ -855,7 +831,7 @@ footer {
     display: none; }
 
   .hovermenu2, .hovermenu4 {
-    margin-top: 40px; }
+    margin-top: 30px; }
 
   #swiperrestaurant {
     height: 300px; }
@@ -877,12 +853,16 @@ footer {
     main section:first-child #headerdesc {
       padding: 50% 0%; }
 
+  main section:nth-child(2) p {
+    font-size: 18px; }
   main section:nth-child(2) img {
     margin: 0% 25%;
     width: 50%; }
 
-  main section:nth-child(3) #swiperrestaurant {
-    height: 390px; }
+  main section:nth-child(3) {
+    margin-top: 40px; }
+    main section:nth-child(3) #swiperrestaurant {
+      height: 390px; }
 
   main section:nth-child(4) {
     margin: 10% 0; }
@@ -902,44 +882,55 @@ footer {
       padding-top: 10px;
       width: 75%; }
     main section:nth-child(5) #about h3 {
-      margin: 0 47.3% 9px 0; }
+      margin: 0 50% 9px 0; }
     main section:nth-child(5) #about h4.menudevice {
       font-size: 40px;
-      margin: 3% -2% 4% -10%; }
-    main section:nth-child(5) #about svg {
-      margin: 0 142px 0 70px;
-      width: 65%; }
-    main section:nth-child(5) #about p.title {
-      margin-right: 26%; }
-    main section:nth-child(5) #about .desc {
       margin: 0 auto;
-      display: block;
-      margin-left: 22px;
+      text-align: center;
+      margin-left: -90px;
+      margin-bottom: 20px; }
+    main section:nth-child(5) #about p.title {
+      margin-right: 22%;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 40px;
+      margin-bottom: 10px; }
+    main section:nth-child(5) #about p.desc {
+      margin: 0 auto;
+      margin-left: -1.2%;
       margin-bottom: 30px;
       text-align: center;
-      width: 80%; }
+      width: 90%;
+      font-size: 18px; }
     main section:nth-child(5) #about button {
-      margin-right: 13%; }
+      margin-right: 14.5%; }
     main section:nth-child(5) #ecaille {
       margin-top: 15px;
       padding: 0 0; }
       main section:nth-child(5) #ecaille h3 {
-        margin-left: 40.3%; }
+        margin-top: 0;
+        margin-left: 37.5%; }
       main section:nth-child(5) #ecaille h4.menudevice {
         font-size: 40px;
-        margin: 3% -2% 4% -10%; }
-      main section:nth-child(5) #ecaille svg {
-        margin-left: 25.7%; }
+        margin: 0 auto;
+        text-align: center;
+        margin-right: 103px;
+        margin-bottom: 20px; }
       main section:nth-child(5) #ecaille p.title {
-        margin-left: 13%; }
+        margin-left: 0.9%;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 10px; }
       main section:nth-child(5) #ecaille p.desc {
         margin: 0 auto;
-        margin-left: 10px;
+        margin-left: -1.2%;
         margin-bottom: 30px;
         text-align: center;
-        width: 90%; }
+        width: 90%;
+        font-size: 18px; }
       main section:nth-child(5) #ecaille button {
-        margin-right: 13%; }
+        margin-left: 2.4%; }
 
   main section:last-child #contact {
     height: 370px; }
@@ -950,10 +941,8 @@ footer {
       margin: 7px 0px 0px -10px; } }
 /* MEDIA QUERIES MAX WIDTH 414PX */
 @media all and (max-width: 414px) {
-  body {
-    overflow-x: hidden; }
-    body .menudevice {
-      font-size: 50px; }
+  body .menudevice {
+    font-size: 50px; }
 
   header #headersocial {
     display: none; }
@@ -972,17 +961,15 @@ footer {
   main section:first-child {
     height: 92%; }
     main section:first-child #headerdesc {
-      padding-top: 170px; }
+      padding-top: 130px; }
     main section:first-child h1 {
       font-size: 45px;
       line-height: 70px; }
     main section:first-child h2 {
-      font-size: 19px;
+      font-size: 20px;
       line-height: 40px;
       width: 75%; }
 
-  main section:nth-child(2) svg {
-    margin-bottom: 30px; }
   main section:nth-child(2) img {
     margin: 0% 13%;
     width: 72%; }
@@ -997,62 +984,74 @@ footer {
       width: 100%;
       padding: 0; }
     main section:nth-child(3) #swiperrestaurant {
-      height: 35%; }
+      height: 230px; }
       main section:nth-child(3) #swiperrestaurant div.swiper-button-prev {
-        margin-left: -10%; }
+        margin-left: -10%;
+        background-position: 20% 10%;
+        background-size: 35px; }
       main section:nth-child(3) #swiperrestaurant div.swiper-button-next {
-        margin-right: -10%; }
+        margin-right: -10%;
+        background-position: 80% 10%;
+        background-size: 35px; }
 
   main section:nth-child(4) h2 {
-    font-size: 30px; }
+    font-size: 25px;
+    top: 31%; }
   main section:nth-child(4) .button--nina {
     padding: 3.5px 15px;
     color: #fff;
     font-size: 14px; }
   main section:nth-child(4) img:last-child {
-    height: 30%; }
+    height: 30%;
+    width: 100%; }
+  main section:nth-child(4) .hovermenu2 {
+    margin-top: 30px; }
 
   main section:nth-child(5) {
-    height: 425px; }
-    main section:nth-child(5) #about svg {
-      margin-left: 10%;
-      margin-right: 20%; }
+    height: 480px; }
     main section:nth-child(5) #about button {
       margin-right: 17.8%;
       width: 56%; }
     main section:nth-child(5) #about h3 {
       margin-right: 43%;
       font-size: 12px; }
+    main section:nth-child(5) #about h4.menudevice {
+      margin-left: -35px; }
     main section:nth-child(5) #about p.title {
-      font-size: 11px;
+      font-size: 20px;
       margin-right: 40px;
-      text-align: center; }
+      text-align: center;
+      font-weight: 400;
+      line-height: 30px; }
     main section:nth-child(5) #about p.desc {
-      font-size: 9px;
-      line-height: 20px; }
-    main section:nth-child(5) #ecaille svg {
-      margin-right: 2%; }
+      font-size: 13px;
+      line-height: 30px;
+      margin-bottom: 10px; }
     main section:nth-child(5) #ecaille button {
       width: 56%;
       margin-left: 9%; }
     main section:nth-child(5) #ecaille h3 {
       font-size: 12px;
-      margin-left: 36%; }
+      margin-left: 37%; }
+    main section:nth-child(5) #ecaille h4.menudevice {
+      margin-right: 30px; }
     main section:nth-child(5) #ecaille p.title {
-      font-size: 11px;
-      margin-right: 10%;
+      font-size: 20px;
+      margin-right: 9%;
       margin-left: 0%;
-      text-align: center; }
+      text-align: center;
+      font-weight: 400;
+      line-height: 30px; }
     main section:nth-child(5) #ecaille p.desc {
-      font-size: 9px;
-      line-height: 20px;
-      margin-left: 0%;
-      text-align: center; }
+      font-size: 13px;
+      line-height: 30px;
+      margin-bottom: 10px; }
 
   #googlemap #contact h4 {
     font-size: 27px; }
   #googlemap #contact h5 {
-    font-size: 16px; }
+    font-size: 18px;
+    font-weight: 400; }
   #googlemap #contact p {
     font-size: 13px;
     width: 89%; }
@@ -1060,7 +1059,8 @@ footer {
     font-size: 16px; }
 
   footer {
-    height: 290px; }
+    height: 290px;
+    margin-top: -30px; }
     footer .form-newsletter {
       margin-right: 11px; }
       footer .form-newsletter label {
