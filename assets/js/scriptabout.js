@@ -2,12 +2,6 @@ $(document).ready(function() {
 
     // SCROLL
         // SCROLL DIV ABOUT
-        $("#about").click(function() {
-          $('html,body').animate({
-              scrollTop: $("#placesection").offset().top},
-              'slow');
-        });
-
         $("#aboutdevice").click(function() {
           $('html,body').animate({
               scrollTop: $("#placesection").offset().top},
@@ -15,12 +9,6 @@ $(document).ready(function() {
         });
 
         // SCROLL DIV HISTORY
-        $("#history").click(function() {
-          $('html,body').animate({
-              scrollTop: $("#historysection").offset().top},
-              'slow');
-        });
-
         $("#historydevice").click(function() {
           $('html,body').animate({
               scrollTop: $("#historysection").offset().top},
@@ -28,15 +16,16 @@ $(document).ready(function() {
         });
 
         // SCROLL DIV NEWS
-        $("#news").click(function() {
+        $("#newsdevice").click(function() {
           $('html,body').animate({
               scrollTop: $("#newssection").offset().top},
               'slow');
         });
 
-        $("#newsdevice").click(function() {
-          $('html,body').animate({
-              scrollTop: $("#newssection").offset().top},
+        // SCROLL TO NEWSLETTER FOOTER
+        $(".buttonnewsletter").click(function(){
+            $('html,body').animate({
+              scrollTop: $("footer").offset().top},
               'slow');
         });
 
@@ -46,12 +35,14 @@ $(document).ready(function() {
             $("#restaurantdisplay").show();
             $(this).hide();
             $("#restaurantreduce").show();
+            $("#restaurantseemenu").hide();
         });
 
         $("#restaurantreduce").on('click', function(){
             $("#restaurantdisplay").hide();
             $(this).hide();
             $("#restaurantseemore").show();
+            $("#restaurantseemenu").show();
         });
 
         // BAR
@@ -59,12 +50,14 @@ $(document).ready(function() {
             $("#bardisplay").show();
             $(this).hide();
             $("#barreduce").show();
+            $("#barseecarte").hide();
         });
 
         $("#barreduce").on('click', function(){
             $("#bardisplay").hide();
             $(this).hide();
             $("#barseemore").show();
+            $("#barseecarte").show();
         });
 
         // BAR
@@ -72,12 +65,14 @@ $(document).ready(function() {
             $("#ecailledisplay").show();
             $(this).hide();
             $("#ecaillereduce").show();
+            $("#ecailleseecarte").hide();
         });
 
         $("#ecaillereduce").on('click', function(){
             $("#ecailledisplay").hide();
             $(this).hide();
             $("#ecailleseemore").show();
+            $("#ecailleseecarte").show();
         });
 
 });

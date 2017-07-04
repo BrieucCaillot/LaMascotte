@@ -4,12 +4,12 @@ body {
   font-family: roboto;
   overflow-x: hidden; }
   body .menudevice {
-    font-size: 45px;
+    font-size: 50px;
     color: #2A6993;
     margin: 0 auto;
     text-align: center;
     padding: 20px 0;
-    display: none; }
+    cursor: pointer; }
   body .button {
     position: relative;
     display: block;
@@ -304,15 +304,14 @@ main {
   main section:nth-child(2) {
     padding: 72px 0;
     background-color: #f4f4f4; }
-    main section:nth-child(2) svg {
-      font-weight: bold;
-      max-width: 450px;
-      height: auto;
-      margin-bottom: 3%;
-      margin-left: -16px;
-      margin-top: 20px; }
+    main section:nth-child(2) h3 {
+      font-size: 17px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 0px;
+      font-weight: 400; }
     main section:nth-child(2) p {
-      font-size: 22px;
+      font-size: 18px;
       line-height: 35px; }
   main section:nth-child(3) {
     background-color: #FFF;
@@ -599,8 +598,10 @@ footer {
     position: absolute;
     right: -290%; }
 
-  #progress {
-    display: none; }
+  main section:nth-child(3) h3 {
+    padding: 20px 0; }
+  main section:nth-child(3) p {
+    padding-bottom: 20px; }
 
   footer .btn-credits {
     padding: 15% 0%;
@@ -608,14 +609,8 @@ footer {
 /* MEDIA QUERIES MAX WIDTH 780PX */
 @media all and (max-width: 780px) {
   overflow-x: hidden;
-  #progress {
-    display: none; }
-
   body .menudevice {
     display: block; }
-
-  .progress {
-    display: none; }
 
   .show {
     display: block; }
@@ -641,16 +636,14 @@ footer {
     main section:first-child #headerdesc {
       padding: 150px 0; }
 
-  main section:nth-child(2) svg {
-    display: none; }
-
   main section:nth-child(3) h3 {
     padding: 4% 0; }
   main section:nth-child(3) p {
-    padding-bottom: 3%; }
+    padding-bottom: 5%;
+    font-size: 18px; }
 
   footer {
-    margin-top: 30px;
+    margin-top: 60px;
     height: 160px; }
     footer .btn-credits {
       margin: 7px 0px 0px -10px;
@@ -661,9 +654,6 @@ footer {
     overflow-x: hidden; }
 
   header #headersocial {
-    display: none; }
-
-  #progress {
     display: none; }
 
   .mobile-nav .text {
@@ -679,7 +669,7 @@ footer {
     background-size: 260% 100%;
     background-position: 56% 100%; }
     main section:first-child #headerdesc {
-      padding-top: 220px; }
+      padding-top: 175px; }
     main section:first-child h1 {
       font-size: 45px;
       line-height: 70px;

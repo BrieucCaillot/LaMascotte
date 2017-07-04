@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+    // SCROLL DIV ABOUT
+        $("h4.menudevice").click(function() {
+          $('html,body').animate({
+              scrollTop: $("main section:nth-child(3)").offset().top},
+              'slow');
+        });
+
+
     // FORM INPUT CLASS FILLED
     
     /*!
@@ -131,7 +139,6 @@ $(document).ready(function() {
     $('#time_booking:input').focus(function() {
         if (($("#timespan").hasClass('input--filled')) && ($('#time_booking:input').length>0)){
             $("#time_booking:input").css('opacity', '100');
-            console.log('ON MARCHE PAS NOUS');
         }
     });
 
@@ -140,12 +147,10 @@ $(document).ready(function() {
             $("#time_booking:input").removeClass('input--filled');
             $("#timespan").removeClass('input--filled');
             $("#time_booking:input").css('opacity', '0');
-            console.log('lel')
         } else {
             $("#time_booking:input").addClass('input--filled');
             $("#timespan").addClass('input--filled');
             $("#time_booking:input").css('opacity', '100');
-            console.log('lel2')
         }
     });
 

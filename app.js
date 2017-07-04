@@ -25,6 +25,7 @@ var connection = function(){
 	app.use('/static/css', express.static(__dirname + '/assets/css'));
 	app.use('/static/js', express.static(__dirname + '/assets/js'));
 	app.use('/static/images', express.static(__dirname + '/assets/images'));
+	app.use('/static/pdf', express.static(__dirname + '/assets/pdf'));
 
 // app get
 	// get on '/index.html'
@@ -35,6 +36,16 @@ var connection = function(){
 	//get on 'about.html'
 	app.get('/about', function(req, res){
 		res.sendFile(__dirname + '/views/about.html');
+	});
+
+	//get on 'carte_vins'
+	app.get('/carte_vins', function(req, res){
+		res.sendFile(__dirname + '/assets/pdf/cartedesvins.pdf');
+	});
+
+	//get on 'carte_ecaille'
+	app.get('/carte_ecaille', function(req, res){
+		res.sendFile(__dirname + '/assets/pdf/carteecaille.pdf');
 	});
 
 	// get on 'menu.html'
@@ -71,7 +82,7 @@ var connection = function(){
 	    if (req.body.newsletter.length > 0 && req.body.newsletter.match(regExpEmail)) {
 	    	co.query(q, function (error, results, fields){
 	            if (error) return console.log(error);
-	            res.status(201).send("Vous êtes maintenant inscrit à la newsletter du site. Vous receverez désormais sur l'email " + req.body.newsletter.value + " l'actualité de votre restaurant La Mascotte.");
+	            res.status(201).send("Vous êtes maintenant inscrit à la newsletter du site. Vous receverez désormais sur l'email " + req.body.newsletter + " l'actualité de votre restaurant La Mascotte.");
 	        	console.log(results);
 	        });
 	    } else {
