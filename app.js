@@ -3,6 +3,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
+var ejs = require('ejs');
 var fs = require('fs');
 var port = 8080;
 
@@ -27,15 +28,22 @@ var connection = function(){
 	app.use('/static/images', express.static(__dirname + '/assets/images'));
 	app.use('/static/pdf', express.static(__dirname + '/assets/pdf'));
 
-// app get
-	// get on '/index.html'
+	// set the view engine to ejs
+	app.set('view engine', 'ejs');
+
+	var params = {
+    	sitename    : 'La Mascotte Restaurant'
+	};
+
+// app get & use res.render to load up an ejs view file
+	// get on '/index.ejs'
 	app.get('/', function(req, res){
-		res.sendFile(__dirname + '/views/index.html');
+		res.render(__dirname + '/views/pages/main', {params:params});
 	});
 
-	//get on 'about.html'
+	//get on 'about.ejs'
 	app.get('/about', function(req, res){
-		res.sendFile(__dirname + '/views/about.html');
+		res.render(__dirname + '/views/pages/about', {params:params});
 	});
 
 	//get on 'carte_vins'
@@ -48,25 +56,19 @@ var connection = function(){
 		res.sendFile(__dirname + '/assets/pdf/carteecaille.pdf');
 	});
 
-	// get on 'menu.html'
+	// get on 'menu.ejs'
 	app.get('/menu', function(req, res){
-		res.sendFile(__dirname + '/views/menu.html');
+		res.render (__dirname + '/views/pages/menu', {params:params});
 	});
 
-	// get on 'booking.html'
-		// get booking.html
-		app.get('/booking', function(req, res){
-			res.sendFile(__dirname + '/views/booking.html');
-		});
-
-	// get on 'contact on index.html'
-	app.get('/#contact', function(req, res){
-		res.sendFile(__dirname + '/views/index.html/#contact');
+	// get on 'booking.ejs'
+	app.get('/booking', function(req, res){
+		res.render(__dirname + '/views/pages/booking', {params:params});
 	});
 
-	// get on 'credits.html'
+	// get on 'credits.ejs'
 	app.get('/credits', function(req, res){
-		res.sendFile(__dirname + '/views/credits.html');
+		res.render(__dirname + '/views/pages/credits', {params:params});
 	});
 
 // app post
