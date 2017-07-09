@@ -1,130 +1,21 @@
-<!-- 
-
-#title            : LA MASCOTTE RESTAURANT BOOKING PAGE
-#description      : La Mascotte's Website proudly made by:
-#author           : Brieuc CAILLOT
-#date             : 2017 16 04
-#version          : V1
-#usage            : HTML
-#notes            : Only working on search engine
-
-=============================================================-->
+<%
+    var thispage = {
+        pagename    : 'Réservations',
+        pagecss     : 'booking',
+        pagejs      : 'scriptbooking'
+    }
+%>
 
 <html lang="fr">
-<head> 
+<head>
     <!--META-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="description" content="Brasserie typiquement Montmartroise, La Mascotte à Montmartre vous accueille 7 jours sur 7, de 8h à 23h30 au 52 Rue des Abbesses : 01 46 06 28 15." />
-    <meta name="keywords" content="La Mascotte, Réserver, Restaurant, Montmartre">
-
-    <!--FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-    <!--LINK-->
-    <link rel="icon" href="../static/images/common/favicon.ico">
-    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/css/reset.css"/>
-    <link rel="stylesheet" href="../static/css/booking.css"/>
+    <%- include('../tpl/head.ejs', { thispage:thispage }) %>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-
-    <!--SCRIPT-->
-    <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../static/js/script.js"></script>
-    <script type="text/javascript" src="../static/js/scriptbooking.js"></script>
-    <script type="text/javascript" src="../static/js/datepicker.js"></script>
-
-    <title>Réservation - La Mascotte</title>
+    <title><%= thispage.pagename %> - <%= params.sitename %></title>
 </head>
-
 <body>
     <!--HEADER-->
-    <header>
-        <div class="container">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-12 col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
-                        <div id="logo">
-                            <a href="/">
-                                <img src="../static/images/common/logobeige.png" alt="logo la mascotte">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="hide col-md-7 text-center">
-                        <nav class="hover-effect">
-                            <ul>
-                                <li><a href="/">ACCUEIL</a></li>
-                                <li><a href="/about">À PROPOS</a></li>
-                                <li><a href="/menu">MENU</a></li>
-                                <li><a href="/booking">RÉSERVER</a></li>
-                                <li><a href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/">LIVRAISON</a></li>
-                                <li><a id="contact" href="/#contact">CONTACT</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 text-center">
-                        <div id="headersocial">
-                            <a href="https://www.facebook.com/LaMascotteMontmartre/" target="_blank">
-                                <img src="../static/images/common/facebook.svg" alt="facebook">
-                            </a>
-                            <a href="https://www.instagram.com/lamascottemontmartre/" target="_blank">
-                                <img src="../static/images/common/instagram.svg" alt="facebook">
-                            </a>
-                            <a href="#">
-                                <img src="../static/images/common/engflag.png" alt="english">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="progressContainer"><div id="progress" class="progress"></div></div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="mobile-nav text-center show">
-        <div class="row">
-            <div class="col-md-12">
-                <a id="homenav" href="/" class="col-2 btn btn-accueil">
-                    <span class="btn-inside">
-                        <img src="../static/images/mobilenav/home.png" alt="accueil">
-                        <span class="text">Accueil</span>
-                    </span>
-                </a>
-                <a id="aboutnav" href="/about" class="col-2 btn btn-about">
-                    <span class="btn-inside">
-                        <img src="../static/images/mobilenav/about.png" alt="a propos">
-                        <span class="text">À propos</span>
-                    </span>
-                </a>
-                <a id="cartenav" href="/menu" class="col-2 btn btn-menu">
-                    <span class="btn-inside">
-                        <img src="../static/images/mobilenav/fish.png" alt="menu">
-                        <span class="text">La Carte</span>
-                    </span>
-                </a>
-                <a id="booknav" href="/booking" class="col-2 btn btn-booking">
-                    <span class="btn-inside">
-                        <img src="../static/images/mobilenav/phone.png" alt="reservation">
-                        <span class="text">Réserver</span>
-                    </span>
-                </a>
-                <a id="ordernav" href="http://www.la-mascotte-montmartre.com/livraison-fruits-de-mer/" class="col-2 btn btn-delivery">
-                    <span class="btn-inside">
-                        <img src="../static/images/mobilenav/delivery2.png" alt="livraison">
-                        <span class="text">Livraison</span>
-                    </span>
-                </a>
-                <a id="contactnav" href="/#contact" class="col-2 btn btn-contact">
-                    <span class="btn-inside">
-                        <img src="../static/images/mobilenav/marker.png" alt="localisation">
-                        <span class="text">Contact</span>
-                    </span>
-                </a>
-            </div>
-        </div>
-    </div>
+    <%- include('../tpl/header.ejs') %>
      
     <!--MAIN-->
     <main>
@@ -289,43 +180,13 @@
     </main>
 
     <!--FOOTER-->
-    <footer>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-5">
-                    <a href="/credits" class="btn btn-credits">Crédits &amp; Mentions légales</a>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-5 col-lg-5">
-                    <form class="form-newsletter" method="post" action="">
-                    <label for="email">Newsletter :</label>
-                    <input type="text" class="form-email input-text" placeholder="Votre email" name="newsletter" id="newsletter">
-                    <span class="border-newsletter"><span class="border"></span></span>
-                    <input type="submit" class="btn btn-submit" value="OK">
-                    <div class="form-message valid">
-                        <p>
-                            Votre inscription a bien &eacute;t&eacute; prise en compte.
-                        </p>
-                    </div>
-                    <div class="form-message error valid-error">
-                        <p>
-                            Merci de saisir un e-mail valide.
-                        </p>
-                    </div>
-                    <div class="form-message error post-error">
-                        <p>
-                            Probl&egrave;me technique, veuillez r&eacute;essayer ult&eacute;rieurement.
-                        </p>
-                    </div>
-                    </form>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
-                    <a href="/">
-                        <img src="../static/images/common/logobrown.png" alt="Restaurant La Mascotte" class="footer-logo">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <%- include('../tpl/footer.ejs') %>
 
+    <!--SCRIPT-->
+    <script alt="JQuery Library" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../static/js/script.js"></script>
+    <script type="text/javascript" src="../static/js/<%= thispage.pagejs %>.js"></script>
+    <script type="text/javascript" src="../static/js/datepicker.js"></script>
 </body>
 </html>
