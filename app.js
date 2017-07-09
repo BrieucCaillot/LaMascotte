@@ -56,7 +56,7 @@ var connection = function(){
 		res.sendFile(__dirname + '/assets/pdf/carteecaille.pdf');
 	});
 
-	// get on 'menu.html'
+	// get on 'menu.ejs'
 	app.get('/menu', function(req, res){
 		res.render (__dirname + '/views/pages/menu', {params:params});
 	});
@@ -66,7 +66,7 @@ var connection = function(){
 		res.render(__dirname + '/views/pages/booking', {params:params});
 	});
 
-	// get on 'credits.html'
+	// get on 'credits.ejs'
 	app.get('/credits', function(req, res){
 		res.render(__dirname + '/views/pages/credits', {params:params});
 	});
